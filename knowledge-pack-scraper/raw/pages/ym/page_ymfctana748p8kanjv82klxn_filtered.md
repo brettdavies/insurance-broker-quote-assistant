@@ -1,0 +1,1 @@
+Average homeowners insurance cost in Florida | Insure.com

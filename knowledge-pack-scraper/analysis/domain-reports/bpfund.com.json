@@ -1,0 +1,456 @@
+{
+  "domain": "bpfund.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.207390",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 60,
+      "frequency": 60.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 16,
+      "frequency": 16.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 38
+    },
+    {
+      "class": "wpex-clr",
+      "count": 34
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 25
+    },
+    {
+      "class": "wpex-icon",
+      "count": 23
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 21
+    },
+    {
+      "class": "link-inner",
+      "count": 21
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 17
+    },
+    {
+      "class": "wpex-flex",
+      "count": 15
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 11
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 11
+    },
+    {
+      "class": "widget",
+      "count": 10
+    },
+    {
+      "class": "glink",
+      "count": 10
+    },
+    {
+      "class": "nturl",
+      "count": 10
+    },
+    {
+      "class": "notranslate",
+      "count": 10
+    },
+    {
+      "class": "wpex-print-hidden",
+      "count": 9
+    },
+    {
+      "class": "wpex-flex-grow",
+      "count": 9
+    },
+    {
+      "class": "wpex-social-btn",
+      "count": 9
+    },
+    {
+      "class": "wpex-social-btn-flat",
+      "count": 9
+    },
+    {
+      "class": "wpex-social-bg",
+      "count": 9
+    },
+    {
+      "class": "footer-widget",
+      "count": 9
+    },
+    {
+      "class": "wpex-pb-40",
+      "count": 9
+    },
+    {
+      "class": "wpex-m-0",
+      "count": 8
+    },
+    {
+      "class": "wpex-last-mb-0",
+      "count": 8
+    },
+    {
+      "class": "wpex-mb-5",
+      "count": 8
+    },
+    {
+      "class": "container",
+      "count": 7
+    },
+    {
+      "class": "wpex-mb-20",
+      "count": 7
+    },
+    {
+      "class": "wpex-heading",
+      "count": 7
+    },
+    {
+      "class": "col",
+      "count": 7
+    },
+    {
+      "class": "wpex-text-md",
+      "count": 7
+    },
+    {
+      "class": "widget-title",
+      "count": 6
+    },
+    {
+      "class": "wpex-items-center",
+      "count": 5
+    },
+    {
+      "class": "wpex-mb-40",
+      "count": 5
+    },
+    {
+      "class": "wpex-mb-10",
+      "count": 5
+    },
+    {
+      "class": "wpex-rounded-full",
+      "count": 5
+    },
+    {
+      "class": "wpex-mr-10",
+      "count": 5
+    },
+    {
+      "class": "wpex-inline-block",
+      "count": 5
+    },
+    {
+      "class": "wpex-mr-5",
+      "count": 5
+    },
+    {
+      "class": "wpex-relative",
+      "count": 4
+    },
+    {
+      "class": "menu-item-object-post",
+      "count": 4
+    },
+    {
+      "class": "wpex-hidden",
+      "count": 4
+    },
+    {
+      "class": "wpex-text-2",
+      "count": 4
+    },
+    {
+      "class": "wpex-surface-2",
+      "count": 4
+    },
+    {
+      "class": "entry-title",
+      "count": 4
+    },
+    {
+      "class": "entry",
+      "count": 4
+    },
+    {
+      "class": "author-bio-social__item",
+      "count": 4
+    },
+    {
+      "class": "footer-box",
+      "count": 4
+    },
+    {
+      "class": "span_1_of_4",
+      "count": 4
+    },
+    {
+      "class": "menu-button",
+      "count": 3
+    },
+    {
+      "class": "wpex-absolute",
+      "count": 3
+    },
+    {
+      "class": "wpex-right-0",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "auto-trigger-next-css-css",
+      "count": 1
+    },
+    {
+      "id": "js_composer_front-css",
+      "count": 1
+    },
+    {
+      "id": "e2b-admin-ui-css-css",
+      "count": 1
+    },
+    {
+      "id": "chart-css-css",
+      "count": 1
+    },
+    {
+      "id": "mCustomScrollbar-css-css",
+      "count": 1
+    },
+    {
+      "id": "md-mortgage-calculator-css",
+      "count": 1
+    },
+    {
+      "id": "gf-mdext-mCustomScrollbar-css",
+      "count": 1
+    },
+    {
+      "id": "gf-mdext-css",
+      "count": 1
+    },
+    {
+      "id": "animate.css-css",
+      "count": 1
+    },
+    {
+      "id": "parent-style-css",
+      "count": 1
+    },
+    {
+      "id": "wpex-style-css",
+      "count": 1
+    },
+    {
+      "id": "wpex-mobile-menu-breakpoint-max-css",
+      "count": 1
+    },
+    {
+      "id": "wpex-mobile-menu-breakpoint-min-css",
+      "count": 1
+    },
+    {
+      "id": "vcex-shortcodes-css",
+      "count": 1
+    },
+    {
+      "id": "wpex-wpbakery-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "monsterinsights-frontend-script-js",
+      "count": 1
+    },
+    {
+      "id": "monsterinsights-frontend-script-js-extra",
+      "count": 1
+    },
+    {
+      "id": "gf-mdext-jquery-msc-contact-js",
+      "count": 1
+    },
+    {
+      "id": "gf-mdext-jquery-msc-js",
+      "count": 1
+    },
+    {
+      "id": "wpex-core-js-extra",
+      "count": 1
+    },
+    {
+      "id": "wpex-core-js",
+      "count": 1
+    },
+    {
+      "id": "wpex-inline-js-after",
+      "count": 1
+    },
+    {
+      "id": "wpex-search-drop_down-js",
+      "count": 1
+    },
+    {
+      "id": "wpex-sticky-header-js-extra",
+      "count": 1
+    },
+    {
+      "id": "wpex-sticky-header-js",
+      "count": 1
+    },
+    {
+      "id": "wpex-mobile-menu-sidr-js-extra",
+      "count": 1
+    },
+    {
+      "id": "wpex-mobile-menu-sidr-js",
+      "count": 1
+    },
+    {
+      "id": "wpex-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

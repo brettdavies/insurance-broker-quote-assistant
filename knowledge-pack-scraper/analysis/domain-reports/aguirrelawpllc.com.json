@@ -1,0 +1,454 @@
+{
+  "domain": "aguirrelawpllc.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.249167",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 74,
+      "frequency": 74.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 80,
+      "frequency": 80.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 63
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 59
+    },
+    {
+      "class": "gform_hidden",
+      "count": 50
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 45
+    },
+    {
+      "class": "gfield",
+      "count": 30
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 30
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 30
+    },
+    {
+      "class": "field_description_below",
+      "count": 30
+    },
+    {
+      "class": "field_validation_below",
+      "count": 30
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 28
+    },
+    {
+      "class": "ginput_container",
+      "count": 28
+    },
+    {
+      "class": "gfield_required",
+      "count": 22
+    },
+    {
+      "class": "ginput_container_text",
+      "count": 20
+    },
+    {
+      "class": "gfield--type-hidden",
+      "count": 16
+    },
+    {
+      "class": "gfield--input-type-hidden",
+      "count": 16
+    },
+    {
+      "class": "menu-item-object-post",
+      "count": 13
+    },
+    {
+      "class": "gfield_required_asterisk",
+      "count": 12
+    },
+    {
+      "class": "gfield_label",
+      "count": 12
+    },
+    {
+      "class": "gform-field-label",
+      "count": 12
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 10
+    },
+    {
+      "class": "large",
+      "count": 8
+    },
+    {
+      "class": "inline-svg",
+      "count": 6
+    },
+    {
+      "class": "replaced-svg",
+      "count": 5
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 4
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 4
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 4
+    },
+    {
+      "class": "sub-menu",
+      "count": 4
+    },
+    {
+      "class": "top_label",
+      "count": 4
+    },
+    {
+      "class": "gfield--type-text",
+      "count": 4
+    },
+    {
+      "class": "gfield--input-type-text",
+      "count": 4
+    },
+    {
+      "class": "gfield--width-half",
+      "count": 4
+    },
+    {
+      "class": "menu-item-home",
+      "count": 3
+    },
+    {
+      "class": "content",
+      "count": 3
+    },
+    {
+      "class": "phone-label",
+      "count": 2
+    },
+    {
+      "class": "mobile-only",
+      "count": 2
+    },
+    {
+      "class": "default-page-container",
+      "count": 2
+    },
+    {
+      "class": "hero-btn",
+      "count": 2
+    },
+    {
+      "class": "widget",
+      "count": 2
+    },
+    {
+      "class": "widget-title",
+      "count": 2
+    },
+    {
+      "class": "widget-toggle",
+      "count": 2
+    },
+    {
+      "class": "gf_browser_chrome",
+      "count": 2
+    },
+    {
+      "class": "gform_wrapper",
+      "count": 2
+    },
+    {
+      "class": "gravity-theme",
+      "count": 2
+    },
+    {
+      "class": "gform-theme--no-framework",
+      "count": 2
+    },
+    {
+      "class": "gform_anchor",
+      "count": 2
+    },
+    {
+      "class": "gform_heading",
+      "count": 2
+    },
+    {
+      "class": "gform_required_legend",
+      "count": 2
+    },
+    {
+      "class": "gform-body",
+      "count": 2
+    },
+    {
+      "class": "gform_body",
+      "count": 2
+    },
+    {
+      "class": "gform_fields",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 26
+    },
+    {
+      "id": "wp-block-library-inline-css",
+      "count": 1
+    },
+    {
+      "id": "responsive-background-css",
+      "count": 1
+    },
+    {
+      "id": "gform_basic-css",
+      "count": 1
+    },
+    {
+      "id": "home-testimonials-block-css",
+      "count": 1
+    },
+    {
+      "id": "home-content-three-css",
+      "count": 1
+    },
+    {
+      "id": "home-hero-css",
+      "count": 1
+    },
+    {
+      "id": "home-our-practice-areas-css",
+      "count": 1
+    },
+    {
+      "id": "home-awards-block-css",
+      "count": 1
+    },
+    {
+      "id": "home-content-two-block-css",
+      "count": 1
+    },
+    {
+      "id": "home-content-one-block-css",
+      "count": 1
+    },
+    {
+      "id": "home-selling-points-css",
+      "count": 1
+    },
+    {
+      "id": "carousel-css",
+      "count": 1
+    },
+    {
+      "id": "helpers-css",
+      "count": 1
+    },
+    {
+      "id": "video-css",
+      "count": 1
+    },
+    {
+      "id": "accordion-css",
+      "count": 1
+    },
+    {
+      "id": "animate-css",
+      "count": 1
+    },
+    {
+      "id": "slick-css",
+      "count": 1
+    },
+    {
+      "id": "hamburgers-css",
+      "count": 1
+    },
+    {
+      "id": "lity-css",
+      "count": 1
+    },
+    {
+      "id": "styles-master-css",
+      "count": 1
+    },
+    {
+      "id": "akismet-widget-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "bb2c488a8a75_container",
+      "count": 1
+    },
+    {
+      "id": "bb2c488a8a75",
+      "count": 1
+    },
+    {
+      "id": "bb2c488a8a75_container_slider",
+      "count": 1
+    },
+    {
+      "id": "main-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-162",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

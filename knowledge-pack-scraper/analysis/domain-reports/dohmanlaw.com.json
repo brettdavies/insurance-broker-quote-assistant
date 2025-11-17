@@ -1,0 +1,456 @@
+{
+  "domain": "dohmanlaw.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.748247",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "flex",
+      "count": 35
+    },
+    {
+      "class": "relative",
+      "count": 24
+    },
+    {
+      "class": "flex-col",
+      "count": 21
+    },
+    {
+      "class": "w-full",
+      "count": 16
+    },
+    {
+      "class": "items-center",
+      "count": 15
+    },
+    {
+      "class": "level-1",
+      "count": 15
+    },
+    {
+      "class": "text-white",
+      "count": 14
+    },
+    {
+      "class": "h-full",
+      "count": 13
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 12
+    },
+    {
+      "class": "animate-link",
+      "count": 11
+    },
+    {
+      "class": "w-max",
+      "count": 9
+    },
+    {
+      "class": "group",
+      "count": 9
+    },
+    {
+      "class": "z-0",
+      "count": 8
+    },
+    {
+      "class": "text-2xl",
+      "count": 8
+    },
+    {
+      "class": "uppercase",
+      "count": 8
+    },
+    {
+      "class": "overflow-hidden",
+      "count": 7
+    },
+    {
+      "class": "wpj-jtoc--item",
+      "count": 7
+    },
+    {
+      "class": "--jtoc-h2",
+      "count": 7
+    },
+    {
+      "class": "wpj-jtoc--item-content",
+      "count": 7
+    },
+    {
+      "class": "joli-heading",
+      "count": 7
+    },
+    {
+      "class": "jtoc-heading",
+      "count": 7
+    },
+    {
+      "class": "wp-block-list",
+      "count": 7
+    },
+    {
+      "class": "transition-transform",
+      "count": 6
+    },
+    {
+      "class": "hidden",
+      "count": 6
+    },
+    {
+      "class": "h-max",
+      "count": 6
+    },
+    {
+      "class": "font-display",
+      "count": 6
+    },
+    {
+      "class": "size-full",
+      "count": 6
+    },
+    {
+      "class": "box",
+      "count": 5
+    },
+    {
+      "class": "wrapper",
+      "count": 5
+    },
+    {
+      "class": "hover:bg-secondary/20",
+      "count": 5
+    },
+    {
+      "class": "link",
+      "count": 5
+    },
+    {
+      "class": "font-semibold",
+      "count": 5
+    },
+    {
+      "class": "bg-dark",
+      "count": 5
+    },
+    {
+      "class": "gap-x-2",
+      "count": 5
+    },
+    {
+      "class": "text-sm",
+      "count": 5
+    },
+    {
+      "class": "gap-y-4",
+      "count": 5
+    },
+    {
+      "class": "color",
+      "count": 5
+    },
+    {
+      "class": "justify-center",
+      "count": 4
+    },
+    {
+      "class": "select-none",
+      "count": 4
+    },
+    {
+      "class": "card",
+      "count": 4
+    },
+    {
+      "class": "text-primary",
+      "count": 4
+    },
+    {
+      "class": "block",
+      "count": 4
+    },
+    {
+      "class": "mt-6",
+      "count": 4
+    },
+    {
+      "class": "leading-none",
+      "count": 4
+    },
+    {
+      "class": "text-center",
+      "count": 4
+    },
+    {
+      "class": "col",
+      "count": 4
+    },
+    {
+      "class": "before:bg-gray-400",
+      "count": 4
+    },
+    {
+      "class": "duration-300",
+      "count": 3
+    },
+    {
+      "class": "gap-x-16",
+      "count": 3
+    },
+    {
+      "class": "drop",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "a",
+      "count": 2
+    },
+    {
+      "id": "XpFQCp-header",
+      "count": 1
+    },
+    {
+      "id": "ai:local:logo",
+      "count": 1
+    },
+    {
+      "id": "XpFQCp-links",
+      "count": 1
+    },
+    {
+      "id": "ai:local:chevron-down",
+      "count": 1
+    },
+    {
+      "id": "ai:local:chevron-right",
+      "count": 1
+    },
+    {
+      "id": "XpFQCp-btn",
+      "count": 1
+    },
+    {
+      "id": "ai:local:phone-call",
+      "count": 1
+    },
+    {
+      "id": "call-btn",
+      "count": 1
+    },
+    {
+      "id": "menu-btn",
+      "count": 1
+    },
+    {
+      "id": "menu-icon",
+      "count": 1
+    },
+    {
+      "id": "ai:local:menu",
+      "count": 1
+    },
+    {
+      "id": "x-icon",
+      "count": 1
+    },
+    {
+      "id": "ai:local:x",
+      "count": 1
+    },
+    {
+      "id": "menu",
+      "count": 1
+    },
+    {
+      "id": "Zsbn2f",
+      "count": 1
+    },
+    {
+      "id": "content-slot",
+      "count": 1
+    },
+    {
+      "id": "ai:local:tag",
+      "count": 1
+    },
+    {
+      "id": "ai:local:calendar",
+      "count": 1
+    },
+    {
+      "id": "ai:local:header-lines",
+      "count": 1
+    },
+    {
+      "id": "prose",
+      "count": 1
+    },
+    {
+      "id": "wpj-jtoc",
+      "count": 1
+    },
+    {
+      "id": "criminal-penalties-for-dui-with-bodily-injury",
+      "count": 1
+    },
+    {
+      "id": "dohmanlaw/wp-images/DUI-With-Bodily-Injury-in-Illinois-1/DUI-With-Bodily-Injury-in-Illinois-1.",
+      "count": 1
+    },
+    {
+      "id": "mandatory-alcohol-education-and-treatment-programs",
+      "count": 1
+    },
+    {
+      "id": "civil-consequences-of-dui-with-bodily-injury",
+      "count": 1
+    },
+    {
+      "id": "factors-that-affect-penalties-for-a-dui-with-injury",
+      "count": 1
+    },
+    {
+      "id": "dohmanlaw/wp-images/DUI-With-Bodily-Injury-in-Illinois-2/DUI-With-Bodily-Injury-in-Illinois-2.",
+      "count": 1
+    },
+    {
+      "id": "why-you-should-hire-a-lawyer-for-dui-with-bodily-injury-charges",
+      "count": 1
+    },
+    {
+      "id": "dohmanlaw/wp-images/DUI-With-Bodily-Injury-in-Illinois-3/DUI-With-Bodily-Injury-in-Illinois-3.",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

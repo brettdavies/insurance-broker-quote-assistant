@@ -1,0 +1,455 @@
+{
+  "domain": "dornsife.usc.edu",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.624201",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 325,
+      "frequency": 325.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 210
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 60
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 60
+    },
+    {
+      "class": "not-external",
+      "count": 29
+    },
+    {
+      "class": "submenu",
+      "count": 26
+    },
+    {
+      "class": "f--field",
+      "count": 25
+    },
+    {
+      "class": "has-submenu",
+      "count": 22
+    },
+    {
+      "class": "cc--component-container",
+      "count": 19
+    },
+    {
+      "class": "c--component",
+      "count": 19
+    },
+    {
+      "class": "submenu-wrapper",
+      "count": 17
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 17
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 17
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 17
+    },
+    {
+      "class": "link-arrow-wrapper",
+      "count": 17
+    },
+    {
+      "class": "arrow-toggle",
+      "count": 17
+    },
+    {
+      "class": "icon-wrapper",
+      "count": 15
+    },
+    {
+      "class": "button-back",
+      "count": 15
+    },
+    {
+      "class": "submenu-wrapper-inner",
+      "count": 12
+    },
+    {
+      "class": "ext",
+      "count": 10
+    },
+    {
+      "class": "submenus-wrapper",
+      "count": 9
+    },
+    {
+      "class": "submenus-wrapper-inner",
+      "count": 9
+    },
+    {
+      "class": "f--link",
+      "count": 8
+    },
+    {
+      "class": "link",
+      "count": 8
+    },
+    {
+      "class": "department-label",
+      "count": 8
+    },
+    {
+      "class": "swiper-slide",
+      "count": 8
+    },
+    {
+      "class": "f--description",
+      "count": 6
+    },
+    {
+      "class": "utility-button-wrapper",
+      "count": 5
+    },
+    {
+      "class": "information-for-toggle",
+      "count": 5
+    },
+    {
+      "class": "f--image",
+      "count": 5
+    },
+    {
+      "class": "interactive-content-pane-bullet",
+      "count": 4
+    },
+    {
+      "class": "side-nav-link",
+      "count": 4
+    },
+    {
+      "class": "pane-title",
+      "count": 4
+    },
+    {
+      "class": "mc--menu",
+      "count": 3
+    },
+    {
+      "class": "m--menu",
+      "count": 3
+    },
+    {
+      "class": "utility-button",
+      "count": 3
+    },
+    {
+      "class": "parent-item-title",
+      "count": 3
+    },
+    {
+      "class": "menu-container",
+      "count": 3
+    },
+    {
+      "class": "inner-wrapper",
+      "count": 3
+    },
+    {
+      "class": "f--section-title",
+      "count": 3
+    },
+    {
+      "class": "cc--spacer",
+      "count": 3
+    },
+    {
+      "class": "c--spacer",
+      "count": 3
+    },
+    {
+      "class": "icon-close",
+      "count": 2
+    },
+    {
+      "class": "fi--form-item",
+      "count": 2
+    },
+    {
+      "class": "utility-item-button",
+      "count": 2
+    },
+    {
+      "class": "menu-item-description",
+      "count": 2
+    },
+    {
+      "class": "lc--layout-container",
+      "count": 2
+    },
+    {
+      "class": "lc--full",
+      "count": 2
+    },
+    {
+      "class": "l--layout",
+      "count": 2
+    },
+    {
+      "class": "l--full",
+      "count": 2
+    },
+    {
+      "class": "lr--layout-region",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "uscd-style-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "uscd-style-google-fonts-css",
+      "count": 1
+    },
+    {
+      "id": "uscd-style-pattern-lab-css",
+      "count": 1
+    },
+    {
+      "id": "uscd-style-lity-css",
+      "count": 1
+    },
+    {
+      "id": "uscd-style-swiper-css",
+      "count": 1
+    },
+    {
+      "id": "l--main-header",
+      "count": 1
+    },
+    {
+      "id": "search-container",
+      "count": 1
+    },
+    {
+      "id": "dialog-title",
+      "count": 1
+    },
+    {
+      "id": "s",
+      "count": 1
+    },
+    {
+      "id": "usc-small-header-logo",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "post-4671",
+      "count": 1
+    },
+    {
+      "id": "swiper-wrapper-f39cbb68fb969328",
+      "count": 1
+    },
+    {
+      "id": "swiper-wrapper-e22140ad3054fd8d",
+      "count": 1
+    },
+    {
+      "id": "footer",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-jquery-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-jquery-once-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-what-input-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-ally-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-lazysizes-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-hover-intent-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-imagesloaded`-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-script-dp-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-main-menu-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-dci-menu-js",
+      "count": 1
+    },
+    {
+      "id": "uscd-header-js",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

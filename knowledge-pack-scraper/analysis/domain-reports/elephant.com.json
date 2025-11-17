@@ -1,0 +1,455 @@
+{
+  "domain": "elephant.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.314984",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 71,
+      "frequency": 71.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "nitro-offscreen",
+      "count": 100
+    },
+    {
+      "class": "menu-item",
+      "count": 61
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 49
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 47
+    },
+    {
+      "class": "sub",
+      "count": 38
+    },
+    {
+      "class": "nitropack-inline-script",
+      "count": 28
+    },
+    {
+      "class": "nitro-lazy",
+      "count": 20
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 12
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 12
+    },
+    {
+      "class": "sidebar-nav-link",
+      "count": 12
+    },
+    {
+      "class": "cls-1",
+      "count": 10
+    },
+    {
+      "class": "faq__card",
+      "count": 9
+    },
+    {
+      "class": "faq__question",
+      "count": 9
+    },
+    {
+      "class": "faq__toggle",
+      "count": 9
+    },
+    {
+      "class": "faq__answer",
+      "count": 9
+    },
+    {
+      "class": "menu-service",
+      "count": 6
+    },
+    {
+      "class": "btn",
+      "count": 5
+    },
+    {
+      "class": "content-container",
+      "count": 5
+    },
+    {
+      "class": "additional-product",
+      "count": 5
+    },
+    {
+      "class": "menu-label",
+      "count": 4
+    },
+    {
+      "class": "main-product",
+      "count": 4
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 3
+    },
+    {
+      "class": "sub-menu",
+      "count": 3
+    },
+    {
+      "class": "nav-bar__toggle-shape",
+      "count": 3
+    },
+    {
+      "class": "trustpilot-widget",
+      "count": 3
+    },
+    {
+      "class": "separator",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card--inline",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-image",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-image--inline",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-copy-wrap",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-copy-wrap--inline",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-heading",
+      "count": 3
+    },
+    {
+      "class": "card-grid__card-heading--inline",
+      "count": 3
+    },
+    {
+      "class": "site-footer__nav__list-container",
+      "count": 3
+    },
+    {
+      "class": "collapsible-content-container",
+      "count": 3
+    },
+    {
+      "class": "site-footer__nav__list-container__flex",
+      "count": 3
+    },
+    {
+      "class": "collapsible-content",
+      "count": 3
+    },
+    {
+      "class": "site-footer__nav-list",
+      "count": 3
+    },
+    {
+      "class": "ig-l0",
+      "count": 2
+    },
+    {
+      "class": "st0",
+      "count": 2
+    },
+    {
+      "class": "lazyloaded",
+      "count": 2
+    },
+    {
+      "class": "skip-nav__link",
+      "count": 2
+    },
+    {
+      "class": "js-navigation-root",
+      "count": 2
+    },
+    {
+      "class": "js-fixed-nav",
+      "count": 2
+    },
+    {
+      "class": "sub-menu__column",
+      "count": 2
+    },
+    {
+      "class": "menu-lower-padding",
+      "count": 2
+    },
+    {
+      "class": "menu-product-column",
+      "count": 2
+    },
+    {
+      "class": "tertiary-label",
+      "count": 2
+    },
+    {
+      "class": "no-pipe",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "5cefcdb18cbaad00017ee383",
+      "count": 3
+    },
+    {
+      "id": "087b8377286da2e1ddbabe25086ff81c-1",
+      "count": 2
+    },
+    {
+      "id": "8374666760657c1b56928b343a454570-1",
+      "count": 2
+    },
+    {
+      "id": "26f0b53464c047af27282f5619f302ff-1",
+      "count": 2
+    },
+    {
+      "id": "0e82601df3b34ce1165807ec12536358-1",
+      "count": 2
+    },
+    {
+      "id": "3842448aea24a9f2eadcce4083ecbde8-1",
+      "count": 2
+    },
+    {
+      "id": "8eda0a83d8747628f24c85b83340e7c5-1",
+      "count": 2
+    },
+    {
+      "id": "cef1f807936871763181586c90593831-1",
+      "count": 2
+    },
+    {
+      "id": "bb7103650227b8617e0517353fad482b-1",
+      "count": 2
+    },
+    {
+      "id": "63963885c3cc45df4204549dc354b85d-1",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-1",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-2",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-3",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-4",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-5",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-6",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-7",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-8",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-9",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-10",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-11",
+      "count": 2
+    },
+    {
+      "id": "087d1239537626fb31eee7def7a74e91-12",
+      "count": 2
+    },
+    {
+      "id": "5c8a7d4045c97af867300ab8c8e4ae21-1",
+      "count": 2
+    },
+    {
+      "id": "198bd5ce8487ab2d14dcea91cba3ff39-1",
+      "count": 2
+    },
+    {
+      "id": "5042016da8b09c955eb99ab78bdcbfda-1",
+      "count": 2
+    },
+    {
+      "id": "a4eef1962678ba87dd5348bb580f9660-1",
+      "count": 2
+    },
+    {
+      "id": "d2211989d8562776dfac9889aed1620b-1",
+      "count": 2
+    },
+    {
+      "id": "88ac33a98c379fb8713716ef9d2a0677-1",
+      "count": 2
+    },
+    {
+      "id": "8cfb21591a21ca72d221470b86879683-1",
+      "count": 2
+    },
+    {
+      "id": "nitro-script",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

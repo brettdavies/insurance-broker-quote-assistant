@@ -137,15 +137,9 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
     // If knowledgePackDir is already an absolute path, use it directly
     // Otherwise, resolve relative to project root (not apps/api)
     let resolvedKnowledgePackDir: string
-    if (knowledgePackDir.startsWith('/')) {
-      // Absolute path - use as-is
+    if (knowledgePackDir.startsWith('/') || knowledgePackDir.includes('__tests__')) {
+      // Absolute path or test directory path - use as-is
       resolvedKnowledgePackDir = knowledgePackDir
-    } else if (knowledgePackDir.includes('__tests__') || knowledgePackDir.includes('test_')) {
-      // Test directory path - resolve relative to current working directory
-      const projectRoot = process.cwd().includes('apps/api')
-        ? join(process.cwd(), '..', '..')
-        : process.cwd()
-      resolvedKnowledgePackDir = join(projectRoot, knowledgePackDir)
     } else {
       // Relative path - resolve relative to project root
       const projectRoot = process.cwd().includes('apps/api')

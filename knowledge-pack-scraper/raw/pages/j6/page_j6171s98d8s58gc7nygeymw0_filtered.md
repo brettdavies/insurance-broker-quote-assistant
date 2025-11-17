@@ -1,0 +1,79 @@
+[NEWS](/news/)
+
+# Can you buy home, flood insurance during hurricane season? What to know in Florida
+
+[Lianna Norman](https://www.palmbeachpost.com/staff/10117762002/lianna-norman/)
+
+USA TODAY NETWORK - Florida
+
+AI-assisted summary
+
+* Homeowners' insurance and flood insurance are typically sold as separate policies.
+* Most flood insurance policies have a 30-day waiting period before they become active.
+* It is difficult to get new homeowners' insurance during hurricane season, especially when a storm is approaching.
+
+The 2025 hurricane season may be past its peak, but there's still a little over a month of the season left and [major Hurricane Melissa](/story/weather/hurricane/2025/10/27/hurricane-melissa-trajectory-track-spaghetti-models-florida-update/86924991007/) is churning through the Caribbean. Of course, hurricane season means more potential for flooding, rain and wind damage.
+
+But if you're a homeowner without homeowners, flood or property insurance during hurricane season, it's the hardest time of year for finding coverage.
+
+Here's how flood insurance works in Florida, where and when to find a policy, and how many [types of home insurance policies](/story/news/state/2023/07/03/home-insurance-types-florida-homeowners-insurance-mobile-homes-condos/70374559007/) there are.
+
+## What happens if your house gets flooded and you don't have flood insurance?
+
+Since just an inch of water in your home could cost up to $25,000 or more to fix, what happens if you don't have flood insurance?
+
+If disaster hits, you don’t want to be left in the dark about any gaps in your policy coverage. For example, if you’re a new homeowner, you might not know that flood and home insurance are typically sold separately. Most home insurance policies don’t cover damages sustained from flooding. Although, flood insurance is often required to be able to obtain a mortgage.
+
+To familiarize yourself with what your policy or policies do and don’t cover and if there are costs you might be responsible for covering after the storm, re-read the “Exclusions” and “Duties After Loss” sections of your home or flood insurance policies.
+
+Homeowners who don't have flood insurance have the option to apply for [federal disaster assistance](https://www.fema.gov/) through a loan from the U.S. Small Business Administration if their home floods. But unlike payouts from insurance claims, federal disaster assistance loans have to be repaid.
+
+## How long does it take for flood insurance to be activated?
+
+According to a 2022 AAA survey, [53% of the people surveyed](/story/news/2023/05/31/florida-flood-insurance-facts-can-help-save-money/70272639007/) were unaware that flood insurance policies issued through FEMA do not take immediate effect. FEMA manages the National Flood Insurance Program, which manages a network of more than 50 insurance companies, including AAA.
+
+[Most flood insurance policies](https://myfloridacfo.com/division/consumers/storm/flood-disaster-faqs), including those issued through FEMA's network of insurance companies, have a 30-day waiting period before they take effect. There are some exceptions, for example, if you're renewing an existing policy.
+
+## Can you get home insurance in Florida during hurricane season?
+
+There are certain times when buying homeowners, flood or property insurance isn't possible in Florida. This is because most insurance companies place moratoriums on issuing new policies when a storm is on the way.
+
+When insurance companies issue a policy, they're hoping you won't have to file a claim. The likelier it is that you will file a claim for storm damages, the warier they are of issuing policies.
+
+This is why most insurance companies don't sell homeowners' insurance 24 hours to 48 hours before a storm is anticipated to hit the state. Rules around when you can and can't buy homeowners' insurance vary depending on which insurance provider you buy from, but is usually difficult to acquire during hurricane season no matter who you insure with.
+
+As of Oct. 27, 2025, buying [flood insurance through the National Flood Insurance Program (NFIP)](/story/news/local/land-environment/2025/10/22/nj-congressman-warns-that-shutdown-endangers-homeowners-in-flood-areas/86818313007/), which covers more than four million properties in the U.S., is not possible, as the government is shut down and the federal program is not currently writing new policies.
+
+## What are the different types of home insurance in Florida?
+
+* **HO-1, Basic form:**This is the most basic type of homeowners’ insurance you can buy. Since insurance plans that offer more coverage are only slightly more expensive than this basic plan, many home insurers choose not to carry HO-1 policies, according to the Florida Office of Insurance Regulation. HO-1 policies only cover damages on this list:
+  + fire or smoke
+  + Explosions
+  + Lightning
+  + hail and windstorms
+  + Theft
+  + Vandalism
+  + damage from vehicles
+  + damage from aircraft
+  + riots and civil commotion
+  + volcanic eruption.
+
+* **HO-2, Broad form:** HO-2 policies cover the same damages, or perils, that HO-1 policies cover, but extend coverage to personal belongings, covering accidental discharge or overflow of water or steam, falling objects, freezing of household systems like AC or heating, sudden and accidental damage from an artificially generated electrical current, sudden and accidental tearing apart, cracking, burning, or bulging of pipes and other household systems, as well as weight of ice, snow, or sleet. Some HO-2s cover personal liability as well.
+* **HO-3, Special form:** Unlike Ho-2 and Ho-1 policies, HO-3 policies cover damages that are not listed. HO-3s are open-peril policies, meaning unless the insurer excludes a peril from the policy, then the policy covers any kind of peril, listed or not. Although, most insurers exclude flooding and earthquake damages from HO-3s. HO-3s only include the home itself.
+* **HO-4, Tenant:** Most HO-4 policies cover the same named damages that HO-2 policies cover. HO-4s are known as renters insurance and provide coverage for tenants who want insurance. “The purpose of this kind of policy is to protect items within the dwelling, as well as any permanent fixtures like cabinets that were installed by the renter,” according to the Florida Office of Insurance Regulation.
+* **HO-5, Comprehensive form:**Like HO-3s, HO-5s are open-peril policies and can cover a variety of damages not specifically listed in the policy. The key difference is that HO-5s extend coverage beyond the home itself, to include personal items and have higher limits of coverage for more valuable belongings.
+* **HO-6, Condominium:**HO-6 policies are for condominium owners who want to insure their unit and personal belongings against damages, excluding flooding. Condo building associations typically have coverage for the building, but condo owners are responsible for anything inside their unit. According to Florida’s Office of Insurance Regulation, HO-6 policies generally provide coverage for building property, personal property, personal liability and loss of use.
+* **HO-7, Mobile home form:** HO-7s are similar to HO-3 policies. They’re typically open-peril policies and cover homes like RVs, trailers, sectional homes, and single-wide and double-wide mobile homes.
+* **HO-8, Older home form:** HO-8 policies usually cover homes that are at least 40 years old. Insurance companies usually use this type of home insurance to offer affordable coverage to people who own older homes because the building materials needed to repair old homes are often more expensive than the homes themselves. HO-8s are named-peril policies that cover the same damages listed in HO-1 policies, including coverage for personal property, liability, and loss of use from named perils.
+
+## Is there a hurricane coming to Florida?
+
+![Category 5 Hurricane Melissa, one of the most powerful October hurricanes on record in the Atlantic Ocean basin, moves slowly toward an expected landfall on Jamaica on the morning of Oct. 28, but tropical storm force winds already had begun on the afternoon of Oct. 27 when this satellite image was captured.]()
+
+There is a major hurricane churning over the Caribbean, but as of Oct. 28, no significant impacts are expected in Florida or on the U.S. East Coast.
+
+Hurricane Melissa became a Category 5 storm on the morning of Monday, Oct. 27, and is expected to leave devastating impacts in its wake as it moves over Jamaica and southeastern Cuba on Tuesday, before moving accross the southeastern Bahamas on Wednesday.
+
+## Stay informed. Get weather alerts via text
+
+Download your local site's app to ensure you're always connected to the news. And look for our [special subscription offers here](https://cm.usatodaynetwork.com/network-regional?region=florida).

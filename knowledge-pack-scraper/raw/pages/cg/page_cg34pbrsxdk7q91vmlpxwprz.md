@@ -1,0 +1,193 @@
+  * [Accessibility Tools](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/)
+  * [Skip to main content](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/#main)
+
+
+[ ![O'Mara Law Group logo](https://www.datocms-assets.com/147053/1733710209-logo.svg) ](https://www.omaralawgroup.com/)
+[Attorney Referrals](https://www.omaralawgroup.com/attorney-referrals/) [ Give O’Mara Law Group a phone call at  (407) 871-9398 ](tel:+14078719398) [Contact Us](https://www.omaralawgroup.com/contact/)
+  * [Home](https://www.omaralawgroup.com/)
+  * [Our Firm](https://www.omaralawgroup.com/our-firm/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Our Firm
+    * [Attorneys](https://www.omaralawgroup.com/our-firm/attorneys/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Attorneys
+      * [Mark M. O'Mara](https://www.omaralawgroup.com/our-firm/attorneys/mark-m-omara/)
+      * [Bert W. Barclay](https://www.omaralawgroup.com/our-firm/attorneys/bert-w-barclay/)
+      * [Brittany Staggs](https://www.omaralawgroup.com/our-firm/attorneys/brittany-staggs/)
+      * [Christopher Smith](https://www.omaralawgroup.com/our-firm/attorneys/christopher-smith/)
+    * [Staff](https://www.omaralawgroup.com/our-firm/staff/)
+  * [Family Law](https://www.omaralawgroup.com/orlando-family-lawyer/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Family Law
+    * [Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Divorce
+      * [Collaborative Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/collaborative-divorce/)
+      * [Contempt & Enforcement](https://www.omaralawgroup.com/orlando-divorce-attorney/contempt-enforcement/)
+      * [Contested Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/contested-divorce/)
+      * [Divorce Modifications](https://www.omaralawgroup.com/orlando-divorce-attorney/divorce-modifications/)
+      * [Divorce FAQ](https://www.omaralawgroup.com/orlando-divorce-attorney/faq/)
+      * [High Asset Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/high-asset-divorce/)
+      * [LGBT Same Sex Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/lgbt-same-sex-divorce/)
+      * [Mediation](https://www.omaralawgroup.com/orlando-divorce-attorney/mediation/)
+      * [Military Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/military/)
+      * [Parental Relocations](https://www.omaralawgroup.com/orlando-divorce-attorney/parental-relocations/)
+      * [Prenuptial Postnuptial Agreements](https://www.omaralawgroup.com/orlando-divorce-attorney/prenuptial-postnuptial-agreements/)
+      * [Property Division](https://www.omaralawgroup.com/orlando-divorce-attorney/property-division/)
+      * [Uncontested Divorce](https://www.omaralawgroup.com/orlando-divorce-attorney/uncontested-divorce/)
+      * [Alimony](https://www.omaralawgroup.com/orlando-alimony-lawyer/)
+    * [Child Custody](https://www.omaralawgroup.com/orlando-child-custody-lawyer/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Child Custody
+      * [Child Visitation](https://www.omaralawgroup.com/orlando-child-custody-lawyer/child-visitation/)
+      * [Custody Modification](https://www.omaralawgroup.com/orlando-child-custody-lawyer/custody-modification/)
+      * [Emergency Custody Order](https://www.omaralawgroup.com/orlando-child-custody-lawyer/emergency-custody-order/)
+      * [Father's Rights](https://www.omaralawgroup.com/orlando-child-custody-lawyer/fathers-rights/)
+      * [Full Custody](https://www.omaralawgroup.com/orlando-child-custody-lawyer/full-custody/)
+      * [Joint Custody](https://www.omaralawgroup.com/orlando-child-custody-lawyer/joint-custody/)
+      * [Paternity](https://www.omaralawgroup.com/orlando-child-custody-lawyer/paternity/)
+    * [Child Support](https://www.omaralawgroup.com/orlando-child-support-lawyer/)
+  * [Criminal Defense](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Criminal Defense
+    * [Assault](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/assault/)
+    * [Domestic Violence](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/domestic-violence/)
+    * [Drug Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/drug-crime/)
+    * [Criminal Defense FAQ](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/faq/)
+    * [Federal Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/federal-crime/)
+    * [Felonies](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/felony-lawyer/)
+    * [Forgery](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/forgery/)
+    * [Internet Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/internet-crimes/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Internet Crimes
+      * [Internet Sex Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/internet-crimes/sex-crimes/)
+    * [Juvenile Defense](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/juvenile-defense/)
+    * [Misdemeanor](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/misdemeanor/)
+    * [Murder / Homicide](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/murder-homicide/)
+    * [Probation Violation](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/probation-violation/)
+    * [Restraining Order](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/restraining-order/)
+    * [Sealing Expungement](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/sealing-expungement/)
+    * [Self Defense](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/self-defense/)
+    * [Sex Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/sex-crimes/)
+    * [Weapon Offenses](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/weapon-offense/)
+    * [White Collar Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/white-collar-crime/)
+    * [Internet Sex Crimes](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/internet-crimes/sex-crimes/)
+    * [2nd Amendment Cases](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/2nd-amendment/)
+    * [Child Pornography](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/child-pornography/)
+  * [DUI](https://www.omaralawgroup.com/orlando-dui-lawyer/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back DUI
+    * [DUI vs. DWI](https://www.omaralawgroup.com/orlando-dui-lawyer/dui-vs-dwi/)
+    * [Felony DUI](https://www.omaralawgroup.com/orlando-dui-lawyer/felony/)
+    * [DUI Manslaughter](https://www.omaralawgroup.com/orlando-dui-lawyer/dui-manslaughter/)
+    * [Vehicular Homicide](https://www.omaralawgroup.com/orlando-dui-lawyer/orland-vehicular-homicide-lawyer/)
+    * [Field Sobriety Test](https://www.omaralawgroup.com/orlando-dui-lawyer/field-sobriety-test/)
+    * [First Offense](https://www.omaralawgroup.com/orlando-dui-lawyer/first-offense/)
+    * [Second Offense](https://www.omaralawgroup.com/orlando-dui-lawyer/second-offense/)
+    * [Third Offense](https://www.omaralawgroup.com/orlando-dui-lawyer/third-offense/)
+    * [Fourth Offense](https://www.omaralawgroup.com/orlando-dui-lawyer/fourth-offense/)
+    * [Legal Limit](https://www.omaralawgroup.com/orlando-dui-lawyer/legal-limit/)
+    * [DUI Prevention](https://www.omaralawgroup.com/orlando-dui-lawyer/dui-prevention/)
+    * [Florida DUI Penalty Chart](https://www.omaralawgroup.com/orlando-dui-lawyer/florida-dui-penalty-chart/)
+  * [Fraud](https://www.omaralawgroup.com/orlando-fraud-attorney/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Fraud
+    * [Bank](https://www.omaralawgroup.com/orlando-fraud-attorney/bank/)
+    * [Embezzlement](https://www.omaralawgroup.com/orlando-fraud-attorney/embezzlement/)
+    * [Healthcare](https://www.omaralawgroup.com/orlando-fraud-attorney/healthcare/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Healthcare
+      * [Federal Healthcare](https://www.omaralawgroup.com/orlando-fraud-attorney/healthcare/federal/)
+    * [Identity Theft](https://www.omaralawgroup.com/orlando-fraud-attorney/identity-theft/)
+    * [Insurance](https://www.omaralawgroup.com/orlando-fraud-attorney/insurance/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Insurance
+      * [Federal Insurance](https://www.omaralawgroup.com/orlando-fraud-attorney/insurance/federal/)
+    * [Mail](https://www.omaralawgroup.com/orlando-fraud-attorney/mail/)
+    * [Money Laundering](https://www.omaralawgroup.com/orlando-fraud-attorney/money-laundering/)
+    * [Mortgage](https://www.omaralawgroup.com/orlando-fraud-attorney/mortgage/)
+    * [PPP](https://www.omaralawgroup.com/orlando-fraud-attorney/ppp/)
+    * [Securities](https://www.omaralawgroup.com/orlando-fraud-attorney/securities/)
+    * [Tax](https://www.omaralawgroup.com/orlando-fraud-attorney/tax/)
+    * [Wire](https://www.omaralawgroup.com/orlando-fraud-attorney/wire/)
+    * [Federal Healthcare](https://www.omaralawgroup.com/orlando-fraud-attorney/healthcare/federal/)
+    * [Federal Insurance](https://www.omaralawgroup.com/orlando-fraud-attorney/insurance/federal/)
+  * [Mass Torts](https://www.omaralawgroup.com/mass-torts-lawyer/)[▾](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/) _▾_ Back Mass Torts
+    * [Camp Lejeune Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/camp-lejeune-lawsuit/)
+    * [CPAP Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/cpap-lawsuit/)
+    * [Exactech Recall Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/exactech-recall-lawsuit/)
+    * [Paraquat Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/paraquat-lawsuit/)
+    * [PFAS Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/pfas-lawsuit/)
+    * [AFFF Lawsuit](https://www.omaralawgroup.com/mass-torts-lawyer/afff-lawsuit/)
+  * [Testimonials](https://www.omaralawgroup.com/testimonials/)
+  * [News & Media](https://www.omaralawgroup.com/news-videos/)
+  * [Blog](https://www.omaralawgroup.com/blog/)
+  * [Contact](https://www.omaralawgroup.com/contact/)
+  * [Attorney Referrals](https://www.omaralawgroup.com/attorney-referrals/)
+    * [](https://www.facebook.com/markomaralaw/ "O’Mara Law Group on Facebook")
+    * [](https://x.com/Markomaralaw "O’Mara Law Group on Twitter")
+    * [](https://www.youtube.com/channel/UCBfJH3YIapAJTB0EjjJxviQ "O’Mara Law Group on Youtube")
+    * [](https://www.linkedin.com/company/o-mara-law-group/ "O’Mara Law Group on Linkedin")
+    * [](https://www.instagram.com/omara_lawgroup/ "O’Mara Law Group on Instagram")
+    * [](https://www.tiktok.com/@itsmarkomara "O’Mara Law Group on Tiktok")
+[(407) 871-9398](tel:+14078719398)
+
+
+# What is the Crime of Vandalism in Florida? 
+  * [Home](https://www.omaralawgroup.com/)
+  * [Blog](https://www.omaralawgroup.com/blog/)
+  * [What Is The Crime Of Vandalism In Florida](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/)
+
+
+![Attorney Mark O'Mara helping a client](https://www.datocms-assets.com/147053/1734378117-blog-hero.png?auto=format,compress&w=2200)
+Panama City Beach, the St. Augustine Marina, and businesses along Florida Boulevard are just a few areas that saw an increase in vandalism over the recent Spring Break. This year, the number of vandalism incidents was so high that the vandals were called “entitled brats” by a number of media outlets. Vandalism is more than just merely acting out, though. Under Florida law, it is a crime and even the lowest possible charge could still result in jail time.
+## How is Vandalism Defined Under Florida Law?
+Vandalism, known as criminal mischief according to Section 806.13 of the Florida Statute, is defined as the malicious and willful destruction of personal or real property that belongs to someone else. Real property is immovable property, such as someone’s home or a commercial structure. Personal property, on the other hand, is that which can be moved, such as someone else’s vehicle. Many different types of criminal mischief are included in the statute. These include vandalism, graffiti, breakage, defacement, sabotage, and any other destructive acts.
+## Elements of Criminal Mischief
+Acts of vandalism and other types of criminal mischief are often done when there are few people in the area. As such, [law enforcement](https://www.omaralawgroup.com/blog/fleeing-law-enforcement-officers-in-florida/) often gets it wrong and charges the wrong person for the crime. It is important to remember that a charge is not a conviction. To secure a conviction for criminal mischief, the prosecution must prove certain elements of their case. These include:
+  * The defendant damaged personal or real property 
+  * The property was that of the alleged victim, and the prosecution must identify the victim 
+  * The defendant intentionally damaged the property and had malicious intent in doing so 
+
+
+The Florida courts have been divided when determining what constitutes intent in criminal mischief cases. Some use the concept of general intent, which is the intention of committing a crime. Others use specific intent, which is the intention of damaging property.
+## What are the Penalties for Criminal Mischief?
+The penalties for a criminal mischief conviction vary, depending on the value of the property damage. When the property damage is valued at less than $200, the crime is considered a second-degree misdemeanor. A conviction for this offense can result in up to 60 days in county jail.
+When the property damage is valued between $200 and $1,000, the offense is classified as a first-degree misdemeanor. A conviction for this type of charge is punishable by up to one year in jail. Charges that involve property damage valued at $1,000 or more are considered [third-degree felonies](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/felony-lawyer/). The most serious of criminal mischief crimes, a conviction can result in up to five years in prison.
+## Our Criminal Defense Lawyer in Orlando Can Help You Beat Your Charges
+If you have been charged with criminal mischief, our[ Orlando criminal lawyer](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/) at **O’Mara Law Group** can help you retain your freedom. We know that innocent people are charged all too often, and can build a strong case to give you the best chance of a favorable outcome. Call us today at **407-634-6604** or contact us online to request a consultation and to learn more about how we can help.
+* * *
+[Back to Blog](https://www.omaralawgroup.com/blog/)
+## [Get the Legal Help You Need Now](https://www.omaralawgroup.com/contact/)
+[Contact Us](https://www.omaralawgroup.com/contact/) [(407) 871-9398](tel:+14078719398)
+![Contact us media](https://www.omaralawgroup.com/blog/what-is-the-crime-of-vandalism-in-florida/)
+[Contact Us](https://www.omaralawgroup.com/contact/) [ Call O’Mara Law Group on the phone at  (407) 871-9398 ](tel:+14078719398)
+![Footer art media](https://www.datocms-assets.com/147053/1734471006-footer-art.svg)
+[ ![O'Mara Law Group logo](https://www.datocms-assets.com/147053/1733710209-logo.svg) ](https://www.omaralawgroup.com/)
+Contact Us
+[ 221 NE Ivanhoe Blvd.   
+Suite 200   
+Orlando, FL 32804 (opens in a new tab) ](https://maps.app.goo.gl/h2EBGAYNmXY98Peq5)
+[ Call O’Mara Law Group on the phone at  (407) 871-9398 ](tel:+14078719398)
+  * [](https://www.facebook.com/markomaralaw/ "O’Mara Law Group on Facebook")
+  * [](https://x.com/Markomaralaw "O’Mara Law Group on Twitter")
+  * [](https://www.youtube.com/channel/UCBfJH3YIapAJTB0EjjJxviQ "O’Mara Law Group on Youtube")
+  * [](https://www.linkedin.com/company/o-mara-law-group/ "O’Mara Law Group on Linkedin")
+  * [](https://www.instagram.com/omara_lawgroup/ "O’Mara Law Group on Instagram")
+  * [](https://www.tiktok.com/@itsmarkomara "O’Mara Law Group on Tiktok")
+
+
+Menu
+  * [Home](https://www.omaralawgroup.com/)
+  * [Our Firm](https://www.omaralawgroup.com/our-firm/)
+  * [Family Law](https://www.omaralawgroup.com/orlando-family-lawyer/)
+  * [Criminal Defense](https://www.omaralawgroup.com/orlando-criminal-defense-lawyer/)
+  * [DUI](https://www.omaralawgroup.com/orlando-dui-lawyer/)
+  * [Fraud](https://www.omaralawgroup.com/orlando-fraud-attorney/)
+  * [Mass Torts](https://www.omaralawgroup.com/mass-torts-lawyer/)
+  * [Testimonials](https://www.omaralawgroup.com/testimonials/)
+  * [News & Media](https://www.omaralawgroup.com/news-videos/)
+  * [Blog](https://www.omaralawgroup.com/blog/)
+  * [Contact](https://www.omaralawgroup.com/contact/)
+  * [Attorney Referrals](https://www.omaralawgroup.com/attorney-referrals/)
+    * [](https://www.facebook.com/markomaralaw/ "O’Mara Law Group on Facebook")
+    * [](https://x.com/Markomaralaw "O’Mara Law Group on Twitter")
+    * [](https://www.youtube.com/channel/UCBfJH3YIapAJTB0EjjJxviQ "O’Mara Law Group on Youtube")
+    * [](https://www.linkedin.com/company/o-mara-law-group/ "O’Mara Law Group on Linkedin")
+    * [](https://www.instagram.com/omara_lawgroup/ "O’Mara Law Group on Instagram")
+    * [](https://www.tiktok.com/@itsmarkomara "O’Mara Law Group on Tiktok")
+[(407) 871-9398](tel:+14078719398)
+
+
+© O’Mara Law Group. All Rights Reserved.
+[Terms & Conditions](https://www.omaralawgroup.com/terms-and-conditions/) [Privacy Policy](https://www.omaralawgroup.com/privacy-policy/) [Sitemap](https://www.omaralawgroup.com/sitemap/)
+[ by Studio III Marketing (opens in a new tab) ](https://www.studio3marketing.com/)
+**Accessibility:** If you are vision-impaired or have some other impairment covered by the Americans with Disabilities Act or a similar law, and you wish to discuss potential accommodations related to using this website, please contact our Accessibility Manager at [(407) 871-9398](tel:+14078719398). 
+[Contact Us](https://www.omaralawgroup.com/contact/)
+[![Click for live chat!](https://messenger.ngageics.com/ImageRetrievers/ChatButton.aspx?websiteid=186-106-207-233-28-57-104-57)](javascript:StartNgageChat\(\);)
+[ ![Chat bubble header image](https://messenger.ngageics.com/ImageRetrievers/GeneralImage.aspx?websiteid=186-106-207-233-28-57-104-57&imageHash=797A07930AED6F89788707E7E70D3AAF&width=48&height=48) live chat Get 24/7 Real-Time  
+Assistance. ![Chat bubble tail](https://messenger.ngageics.com/Images/Callout.png) ![Dismiss button](https://messenger.ngageics.com/Images/cancel.png) ](javascript:StartNgageChat\(\);)
+online now
+![Dismiss button](https://messenger.ngageics.com/Images/cancel.png)
+[ Hi! A live, real person is available 24/7 at no obligation. Live Chat is secure, free and easy. Start whenever you are ready. Start Chat ](javascript:StartNgageChat\(\); "chat-window-link")
+![Chat window tail](https://messenger.ngageics.com/Images/Callout-white.png)
+[Chat Popup Clicking on the Chat Popup opens a chat](javascript:StartNgageChat\(\);)
+[LIVE CHAT](javascript:StartNgageChat\(\);)

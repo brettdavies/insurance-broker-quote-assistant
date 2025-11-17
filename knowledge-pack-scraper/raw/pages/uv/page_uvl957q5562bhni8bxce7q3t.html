@@ -1,0 +1,1514 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+  <!-- Required meta tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link data-minify="1" rel="stylesheet" href="https://www.sharksatlaw.com/wp-content/cache/min/1/swiper@8/swiper-bundle.min.css?ver=1761742053">
+  <link data-minify="1" href="https://www.sharksatlaw.com/wp-content/cache/min/1/ajax/libs/font-awesome/6.4.0/css/all.min.css?ver=1761742053" rel="stylesheet">
+  <script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/swiper@8/swiper-bundle.min.js?ver=1761742054" data-rocket-defer="" defer=""></script>
+
+  <!-- wp_head begin -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained</title>
+<link crossorigin="" data-rocket-preconnect="" href="https://fonts.googleapis.com" rel="preconnect">
+<link data-rocket-preload="" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" media="all" onload="this.media='all'" rel="stylesheet">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&#038;family=Plus+Jakarta+Sans:wght@400;500;600;700&#038;display=swap"></noscript><link rel="preload" data-rocket-preload="" as="image" href="https://www.sharksatlaw.com/wp-content/uploads/2024/02/Biopage-BG.jpg" fetchpriority="high">
+	<meta name="description" content="Car accidents can have significant financial repercussions, especially when the at-fault driver’s insurance is insufficient to cover your expenses.">
+	<link rel="canonical" href="https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained">
+	<meta property="og:description" content="Car accidents can have significant financial repercussions, especially when the at-fault driver’s insurance is insufficient to cover your expenses.">
+	<meta property="og:url" content="https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/">
+	<meta property="og:site_name" content="Sharks At Law | The Memmen Law Firm">
+	<meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61556265354905">
+	<meta property="article:published_time" content="2024-05-30T06:07:47+00:00">
+	<meta property="article:modified_time" content="2024-11-19T10:49:44+00:00">
+	<meta property="og:image" content="https://www.sharksatlaw.com/wp-content/uploads/2024/05/Understanding-Underinsured-Motorist-Coverage_236845816-1.jpg">
+	<meta property="og:image:width" content="350">
+	<meta property="og:image:height" content="254">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="Sharks At Law">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Sharks At Law">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="3 minutes">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//code.responsivevoice.org">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.sharksatlaw.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" media="all">
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link data-minify="1" rel="stylesheet" id="sm-style-css" href="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/wp-show-more/wpsm-style.css?ver=1761742053" media="all">
+<link data-minify="1" rel="stylesheet" id="picostrap-styles-css" href="https://www.sharksatlaw.com/wp-content/cache/background-css/1/www.sharksatlaw.com/wp-content/cache/min/1/wp-content/themes/spk/css-output/bundle.css?ver=1761742053&amp;wpr_t=1762544738" media="all">
+<link data-minify="1" rel="stylesheet" id="spkac_widget-css" href="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/spk-accessibility/assets/css/spkac_widget.css?ver=1761742053" media="all">
+<script type="rocketlazyloadscript" data-rocket-src="https://www.sharksatlaw.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://www.sharksatlaw.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/themes/spk/js/jquery.js?ver=1761742054" id="funcations-js-js" data-rocket-defer="" defer=""></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N376TS7N');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="google-site-verification" content="4Zi8pMCoFnwfF3NEBcmb8uNOK6PduJkoJh5m00dO0qE">
+<!-- Schema & Structured Data For WP v1.52 - -->
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","@id":"https:\/\/www.sharksatlaw.com\/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.sharksatlaw.com","name":"Sharks At Law"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.sharksatlaw.com\/category\/general-blog\/","name":"General Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/www.sharksatlaw.com\/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained\/","name":"Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained"}}]}]
+</script>
+
+<link rel="icon" href="https://www.sharksatlaw.com/wp-content/uploads/2024/02/Favicon.png" sizes="32x32">
+<link rel="icon" href="https://www.sharksatlaw.com/wp-content/uploads/2024/02/Favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.sharksatlaw.com/wp-content/uploads/2024/02/Favicon.png">
+<meta name="msapplication-TileImage" content="https://www.sharksatlaw.com/wp-content/uploads/2024/02/Favicon.png">
+		<style id="wp-custom-css">
+			div#blog_post img, div#blog_post .item > a {
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+.hm_options{
+margin-top: 0px !important;
+}
+.consultation-option h6 {
+font-size: 15.5px !important;
+}
+}
+@media (max-width: 991.80px) {
+ul#menu-top-menu-1 > li > a {
+padding-top: 12px;
+padding-bottom: 12px;
+}
+.bg-primary {
+padding: 40px 0 !important;
+}
+.page-id-4192 .set-get-help-now{
+display: none !important
+}
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>  <!-- wp_head end -->
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.sec-title-head::after{--wpr-bg-8f786e72-4dbc-4f45-9792-a7be4f70bccc: url('https://www.sharksatlaw.com/wp-content/uploads/2023/10/Circle-With-Bar.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".sec-title-head","style":".sec-title-head::after{--wpr-bg-8f786e72-4dbc-4f45-9792-a7be4f70bccc: url('https:\/\/www.sharksatlaw.com\/wp-content\/uploads\/2023\/10\/Circle-With-Bar.png');}","hash":"8f786e72-4dbc-4f45-9792-a7be4f70bccc","url":"https:\/\/www.sharksatlaw.com\/wp-content\/uploads\/2023\/10\/Circle-With-Bar.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.20.0.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_preconnect_external_domains wpr_oci wpr_image_dimensions wpr_minify_css wpr_preload_links"><link href="https://www.google.com" rel="preconnect"></head>
+
+<body class="wp-singular post-template-default single single-post postid-8364 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-picostrap5 wp-child-theme-spk lc-custom-header lc-custom-footer">
+  
+  
+
+
+<header id="lc-header"><div>
+	<div class="header-setting">
+		<div class="container">
+			<div class="res-phone-setting inner-page-s d-lg-none d-block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+				</svg> Call For A Free Consultation - <a href="tel: (312) 210-7229"><strong>(312) 210-7229</strong></a>
+			</div>
+			<div class="res-phone-setting home-page-hed d-lg-none d-block">
+				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+				</svg> Call For A Free Consultation - <a href="tel: (312) 210-7229"><strong>(312) 210-7229</strong></a><hr>
+				<p class="social-location text-uppercase text-black mt-3">
+					Experienced Personal Injury Attorney IN<br> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+					</svg>  </a> <span>Illinois</span><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+					<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+					</svg> </a><span>WISCONSIN </span>
+				</p>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light p-0 top-bar  navbar-desk inner-page-hd">
+			<div class="container">
+				<div class="row header-row">
+					<div class="col-md-4 d-flex align-items-center">
+						<a class="navbar-brand pt-0" href="https://www.sharksatlaw.com/">
+							<img width="300" height="146" src="/wp-content/uploads/2024/02/logo-header.svg" class="d-inline-block align-top img-fluid img-logo wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes="">
+						</a>
+					</div>
+					<div class="col-md-8 d-flex p-0">
+
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1" aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse desk-menu" id="myNavbar1">
+							<div class="main-top-menu"> <!--  lc_nav_menu --> <ul id="menu-top-menu" class="navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nav-item nav-item-7764"><a href="https://www.sharksatlaw.com/" class="nav-link ">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8329"><a href="https://www.sharksatlaw.com/about-us" class="nav-link ">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8431"><a href="https://www.sharksatlaw.com/practice-areas" class="nav-link ">Practice Areas</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8135"><a href="https://www.sharksatlaw.com/faqs/" class="nav-link ">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8136"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Testimonials</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7766"><a href="https://www.sharksatlaw.com/client-testimonials/" class="dropdown-item ">Client Testimonials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8137"><a href="https://www.sharksatlaw.com/attorney-endorsements/" class="dropdown-item ">Attorney Endorsements</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8195"><a href="https://www.sharksatlaw.com/blog/" class="nav-link ">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8482"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Videos</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8483"><a href="https://www.sharksatlaw.com/video-category/personal-injury-videos/" class="dropdown-item ">Personal Injury Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8547"><a href="https://www.sharksatlaw.com/video-category/car-accident-videos/" class="dropdown-item ">Car Accident Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8594"><a href="https://www.sharksatlaw.com/video-category/medical-lien-videos/" class="dropdown-item ">Medical Lien Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7763"><a href="https://www.sharksatlaw.com/contact-us/" class="nav-link ">Contact Us</a></li>
+</ul> <!-- /lc_nav_menu --> </div>
+						</div>
+						<style>
+							.h-contact {
+								background: var(--primary-color);
+								position: absolute;
+								top: 0px;
+								padding: 6px 20px 8px 20px;
+								border-radius: 0 0 6px 6px;
+								right: 0;
+								/* font-size: 18px; */
+							}
+						</style>
+						<div class="header_button">
+							<p> 
+								<img width="20" height="20" src="/wp-content/uploads/2024/02/Layer-27.png" alt="Phone">
+								Call For A Free Consultation - <a href="tel: (312) 210-7229" class="text-white"><strong>(312) 210-7229</strong></a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light p-0 top-bar  navbar-desk home-header-sc">
+			<div class="container">
+				<div class="row header-row">
+					<div class="col-md-4 d-flex align-items-center">
+						<a class="navbar-brand pt-0 pb-0" href="https://www.sharksatlaw.com/">
+							<img width="320" height="90" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20320%2090'%3E%3C/svg%3E" class="d-inline-block align-top img-fluid img-logo wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes="" data-lazy-src="/wp-content/uploads/2024/06/The-Memmen-Law.png"><noscript><img width="320" height="90" src="/wp-content/uploads/2024/06/The-Memmen-Law.png" class="d-inline-block align-top img-fluid img-logo wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes=""></noscript>
+						</a>
+					</div>
+
+					<div class="col-md-8 p-0">
+						<p class="social-location d-flex justify-content-end align-items-center text-uppercase text-white mt-0">
+							Experienced Personal Injury Attorney IN <a href="https://maps.app.goo.gl/mPh5ebiwpf4avhuW8" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+							<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+							</svg>  </a> <span>Illinois</span><a href="https://maps.app.goo.gl/hHSi6HmSpje29tabA" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+							<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+							</svg> </a><span>WISCONSIN </span>
+						</p>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1" aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse desk-menu" id="myNavbar1">
+							<div class="main-top-menu"> <!--  lc_nav_menu --> <ul id="menu-top-menu-1" class="navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nav-item nav-item-7764"><a href="https://www.sharksatlaw.com/" class="nav-link ">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8329"><a href="https://www.sharksatlaw.com/about-us" class="nav-link ">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8431"><a href="https://www.sharksatlaw.com/practice-areas" class="nav-link ">Practice Areas</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8135"><a href="https://www.sharksatlaw.com/faqs/" class="nav-link ">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8136"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Testimonials</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7766"><a href="https://www.sharksatlaw.com/client-testimonials/" class="dropdown-item ">Client Testimonials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8137"><a href="https://www.sharksatlaw.com/attorney-endorsements/" class="dropdown-item ">Attorney Endorsements</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8195"><a href="https://www.sharksatlaw.com/blog/" class="nav-link ">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8482"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Videos</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8483"><a href="https://www.sharksatlaw.com/video-category/personal-injury-videos/" class="dropdown-item ">Personal Injury Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8547"><a href="https://www.sharksatlaw.com/video-category/car-accident-videos/" class="dropdown-item ">Car Accident Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8594"><a href="https://www.sharksatlaw.com/video-category/medical-lien-videos/" class="dropdown-item ">Medical Lien Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7763"><a href="https://www.sharksatlaw.com/contact-us/" class="nav-link ">Contact Us</a></li>
+</ul> <!-- /lc_nav_menu --> </div>
+						</div>
+						<style>
+							.h-contact {
+								background: var(--primary-color);
+								position: absolute;
+								top: 0px;
+								padding: 6px 20px 8px 20px;
+								border-radius: 0 0 6px 6px;
+								right: 0;
+								/* font-size: 18px; */
+							}
+						</style>
+						<div class="header_button">
+							<p class="text-black"> 
+								<img width="20" height="20" src="/wp-content/uploads/2024/02/Layer-27.png" alt="Phone">
+								Call For A Free Consultation - <a href="tel: (312) 210-7229" class="text-black"><strong>(312) 210-7229</strong></a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+	</div>
+
+
+	<nav class="res-menu navbar innner-page-sc navbar-expand-lg navbar-light bg-white top-bar d-lg-none d-block py-3">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-8 d-flex align-items-center"><a class="navbar-brand" href="https://www.sharksatlaw.com/">
+					<img width="200" height="97" src="/wp-content/uploads/2024/02/logo-header.svg" class="d-inline-block align-top img-fluid  wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes="">
+
+					</a></div>
+				<div class="col-4 text-end menu-button">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1" aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="collapse navbar-collapse py-0" id="myNavbar1">
+				<div class="main-top-menu me-auto"> <!--  lc_nav_menu --> <ul id="menu-top-menu-2" class="navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nav-item nav-item-7764"><a href="https://www.sharksatlaw.com/" class="nav-link ">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8329"><a href="https://www.sharksatlaw.com/about-us" class="nav-link ">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8431"><a href="https://www.sharksatlaw.com/practice-areas" class="nav-link ">Practice Areas</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8135"><a href="https://www.sharksatlaw.com/faqs/" class="nav-link ">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8136"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Testimonials</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7766"><a href="https://www.sharksatlaw.com/client-testimonials/" class="dropdown-item ">Client Testimonials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8137"><a href="https://www.sharksatlaw.com/attorney-endorsements/" class="dropdown-item ">Attorney Endorsements</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8195"><a href="https://www.sharksatlaw.com/blog/" class="nav-link ">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8482"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Videos</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8483"><a href="https://www.sharksatlaw.com/video-category/personal-injury-videos/" class="dropdown-item ">Personal Injury Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8547"><a href="https://www.sharksatlaw.com/video-category/car-accident-videos/" class="dropdown-item ">Car Accident Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8594"><a href="https://www.sharksatlaw.com/video-category/medical-lien-videos/" class="dropdown-item ">Medical Lien Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7763"><a href="https://www.sharksatlaw.com/contact-us/" class="nav-link ">Contact Us</a></li>
+</ul> <!-- /lc_nav_menu --> </div>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="res-menu home-page-muenu navbar navbar-expand-lg navbar-light bg-white top-bar d-lg-none d-block py-3">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-8 d-flex align-items-center"><a class="navbar-brand" href="https://www.sharksatlaw.com/">
+					<img width="200" height="56" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%2056'%3E%3C/svg%3E" class="d-inline-block align-top img-fluid  wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes="" data-lazy-src="/wp-content/uploads/2024/06/The-Memmen-Law.png"><noscript><img width="200" height="56" src="/wp-content/uploads/2024/06/The-Memmen-Law.png" class="d-inline-block align-top img-fluid  wp-image-7596" alt="Logo of Sharks at Law" srcset="" sizes=""></noscript>
+
+					</a></div>
+				<div class="col-4 text-end menu-button">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1" aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="collapse navbar-collapse py-0" id="myNavbar1">
+				<div class="main-top-menu me-auto"> <!--  lc_nav_menu --> <ul id="menu-top-menu-3" class="navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nav-item nav-item-7764"><a href="https://www.sharksatlaw.com/" class="nav-link ">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8329"><a href="https://www.sharksatlaw.com/about-us" class="nav-link ">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8431"><a href="https://www.sharksatlaw.com/practice-areas" class="nav-link ">Practice Areas</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8135"><a href="https://www.sharksatlaw.com/faqs/" class="nav-link ">FAQs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8136"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Testimonials</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7766"><a href="https://www.sharksatlaw.com/client-testimonials/" class="dropdown-item ">Client Testimonials</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8137"><a href="https://www.sharksatlaw.com/attorney-endorsements/" class="dropdown-item ">Attorney Endorsements</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8195"><a href="https://www.sharksatlaw.com/blog/" class="nav-link ">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8482"><a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Videos</a>
+<ul class="dropdown-menu  depth_0">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8483"><a href="https://www.sharksatlaw.com/video-category/personal-injury-videos/" class="dropdown-item ">Personal Injury Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8547"><a href="https://www.sharksatlaw.com/video-category/car-accident-videos/" class="dropdown-item ">Car Accident Videos</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-video-category nav-item nav-item-8594"><a href="https://www.sharksatlaw.com/video-category/medical-lien-videos/" class="dropdown-item ">Medical Lien Videos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7763"><a href="https://www.sharksatlaw.com/contact-us/" class="nav-link ">Contact Us</a></li>
+</ul> <!-- /lc_nav_menu --> </div>
+			</div>
+		</div>
+	</nav>
+
+
+	<style>
+		/*------------- top bar & menu-----------*/
+		/* 		ul#menu-top-menu-1 {
+		border-top: 1px solid #fff;
+		}
+		ul#menu-top-menu-2 {
+		border-top: 1px solid #fff;
+		} */
+		.header_button {
+			background: rgb(28 46 79 / 80%);
+			padding: 10px 15px 10px 25px;
+			margin: 0 auto;
+			position: absolute;
+			bottom: -48px;
+			right: 0px;
+			z-index: 111;
+		}
+		.home .social-location span{
+			font-size:20px;
+			color:#fff;
+			font-weight:bold;
+		}
+		.img-logo{
+			margin-bottom:-29px;
+		}
+		.header-row{
+			position: relative;
+		}
+		.social-location .navbar-expand-lg .navbar-nav{
+			margin:0 -15px;
+		}
+		.social-location a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: var(--white-color);
+			border: 1px solid var(--primary-color);
+			background: var(--primary-color);
+			padding: 6px;
+			height: 31px;
+			width: 31px;
+			border-radius: 50%;
+			margin: 0 15px;
+		}
+		.home .social-location  {
+			margin: revert;
+		}
+		.social-location a:hover{
+			background:transparent;
+		}
+		.social-location a svg {
+			fill: #fff;
+			font-size: 20px;
+		}
+		.header_button p{
+			color: #fff;
+			margin: 0;
+			font-size: 19px;
+		}
+		.header_button svg{
+			position: relative;
+			right: 8px;
+			font-size: 21px;
+			color: #DF283A;
+		}
+		.header_button a:hover{
+			color:var(--secondary-color) !important;
+		}
+		.home-header-sc .header_button{
+			background:#fff;
+		}
+		.home .home-header-sc {
+			display: block !important;
+			background: var(--secondary-color);
+		}
+		.home .home-header-sc .img-logo {
+			margin-bottom: 0;
+		}
+		.home #menu-top-menu-1 li a {
+			color: #fff;
+		}	
+		.home #menu-top-menu-1 li a:hover {
+			color: var(--primary-color);
+		}  
+		.home .dropdown-menu li a:hover {
+			color: #fff !important;
+		}
+		.home .inner-page-hd{
+			display:none !important;
+		}
+		.home .innner-page-sc{
+			display:none !important;
+		}
+		.inner-page-hd{
+			display:block !important;
+		}
+		.home .header-row {
+			position: relative;
+			padding: 25px 0;
+			align-items: center;
+		}
+		.home-header-sc{
+			display:none !important;
+		}
+		.desk-menu{
+			justify-content: end;
+			align-items: center;
+		}
+		.desk-menu ul li{
+			text-transform: capitalize;
+		}
+		.desk-menu ul > li:first-child {
+			padding-left: 0 !important;
+		}
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding: 0 8px;
+			color: var(--primary-color);
+			font-weight: 600;
+		}
+		.home .navbar-expand-lg .navbar-nav .nav-link {
+			padding: 0 9px;
+			color: var(--primary-color);
+			font-weight: 600;
+		}
+		.navbar-expand-lg .navbar-nav .nav-link:hover{
+			color:var(--secondary-color) !important;
+		}
+		.home .navbar-expand-lg .navbar-nav .nav-link:hover{
+			color: var(--primary-color) !important;
+		}
+		/*------------------Menu----------------*/
+		.dropdown .dropdown-menu {
+			display: none;
+			padding: 0;
+		}
+		.dropdown-menu[data-bs-popper] {
+			top: unset;
+			left: unset;
+		}
+		.header_button img {
+			position: relative;
+			left: -5px;
+			top: -1px;
+		}
+
+		.dropdown:hover>.dropdown-menu,
+		.dropend:hover>.dropdown-menu {
+			display: block;
+			margin-top: 0;
+			margin-left: 0;
+			border-radius: 0;
+		}
+		#menu-top-menu .dropdown-menu > li:last-child > a{
+			border-bottom:0;
+		}
+		.main-top-menu .dropdown-menu .dropdown-item {
+			border-bottom: 1px solid;
+			color: #fff;
+			background: var(--primary-color);
+		}
+
+		.main-top-menu .dropdown-menu .dropdown-item:hover {
+			background: var(--secondary-color);
+			color: #fff;
+		}
+		.desk-menu ul li > ul.dropdown-menu{
+			list-style:none;
+			margin:0;
+			padding:0;
+			position:absolute;
+			width: 250px;
+			opacity:0;
+			display:none;
+			z-index:999;
+		}
+		.desk-menu ul li > ul.dropdown-menu li:first-child{
+			border-top: none;
+		}
+		.desk-menu ul li > ul.dropdown-menu li:last-child{
+			border-bottom: none;
+		}
+		.desk-menu ul li > ul.dropdown-menu li{
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			text-align: left;
+		}
+		.desk-menu ul li > ul.dropdown-menu li a{
+			padding: 12px 15px;
+			font-size: 15px;
+			font-weight: 400;
+			text-transform: capitalize;
+			overflow-wrap: break-word;
+			text-wrap: balance;
+		}
+		.desk-menu ul li:hover > ul.dropdown-menu{
+			opacity:1;
+			display: block;
+		}
+		.desk-menu ul li > ul.dropdown-menu li > ul.dropdown-menu{
+			left: -247px;
+			top: -1px;
+		}
+		.desk-menu .dropend .dropdown-toggle{
+			margin-left: 0;
+		}
+		#menu-top-menu-1 a:focus-visible {
+			outline: none;
+		}
+
+		/*------------------Responsive-----------------*/
+
+		@media (min-width: 900px) and (max-width: 1199px){
+			.desk-menu ul li{
+				padding: 0 2px;
+				font-size:12px;
+			}
+			.navbar-expand-lg .navbar-nav .nav-link {
+				padding: 0 5px;
+
+			}
+			.home .navbar-expand-lg .navbar-nav .nav-link {
+				padding: 0 7px;
+
+			}
+
+		}
+		@media (max-width: 991.80px) {
+			div#myNavbar1 {
+				position: relative;
+				top: 17px;
+			}
+			.res-menu #menu-top-menu-2 {
+				background: var(--primary-color);
+				margin-bottom: 0px !important;
+			}
+			.home .home-page-muenu{
+				display:block;
+			}
+			a.navbar-brand {
+				padding: 0;
+			}
+			.home .home-page-hed{
+				display:block !important;
+			}
+			.home-page-hed{
+				display:none !important;
+			}
+			.home .social-location span {
+				font-size: 18px;
+				color: #000;
+			}
+			ul#menu-top-menu-2 > li > a {
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+			.res-phone-setting svg {
+				position: relative;
+				left: -1px;
+				top: -2px;
+			}
+			.inner-page-hd{
+				display:none !important;
+			}
+			.home .home-header-sc{
+				display:none !important;
+			}
+			.header-setting{
+				border-bottom: 0;
+			}
+			.free-consult {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.top-bar{
+				background-color: var(--secondary-color) !important;
+			}
+			.res-phone-setting {
+				text-align: center;
+				padding: 15px 0;
+			}
+			.res-phone-setting a{
+				display: inline-block;
+			}
+			.res-menu button{
+				background: #fff;
+			}
+
+			.res-menu #menu-top-menu-1 {
+				background: var(--primary-color);
+				margin-bottom: 0px !important;
+			}
+
+			.res-menu li.menu-item a:hover {
+				background: var(--secondary-color);
+			}
+			.main-top-menu .nav-link {
+				color: #fff !important;
+				margin: 0 8px;
+			}
+			.main-top-menu li.menu-item > a {
+				margin: 0;
+				padding-left: 10px !important;
+				padding-top:15px;
+				padding-bottom:15px;
+			}
+			.dropdown-menu li{
+				padding: 0;
+			}
+			.main-top-menu .navbar-nav .nav-link.active:hover,
+			.navbar-expand-lg .navbar-nav .nav-link:hover {
+				color: #fff !important;
+			}
+			.main-top-menu li:not(:last-child) {
+				border-bottom: 1px solid #fff;
+			}
+			.main-top-menu .dropdown-menu .dropdown-item {
+				color: #fff;
+				border-bottom: none;
+				padding-left: 20px !important;
+			}
+			.menu-button{
+				display: flex;
+				justify-content: end;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+		@media (max-width: 991.80px) {
+			.header-setting{
+				position:unset
+			}
+			.social-location a:hover {
+				background: var(--secondary-color);
+			}
+			.home .social-location {
+				margin: 0;
+				font-size:14px;			
+			}
+			.home .inner-page-s {
+				display:none !important;
+			}
+			.dropdown:hover>.dropdown-menu,
+			.dropend:hover>.dropdown-menu {
+				display: none;
+			}
+			.home-page-muenu{
+				display:none !important;
+			}
+			#menu-top-menu-3{
+				background:var(--primary-color)
+			}
+			ul#menu-top-menu-3 > li > a {
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+			.home .home-page-muenu{
+				display:block !important;
+			}
+			.dropdown-menu.show {
+				display: contents !important;
+			}
+			.res-menu ul li> span {
+				position: absolute;
+				right: 10px;
+				top: 16px;
+				color: #fff;
+				font-size: 12px;
+				padding: 0 20px;
+				cursor: pointer;
+			}
+			.dropdown-toggle::after{
+				display: none !important;
+			}
+
+		}
+
+	</style>
+</div>
+</header>
+
+
+
+                      <div class="inner_banner_section banner-image" style="background: url('https://www.sharksatlaw.com/wp-content/uploads/2024/02/Biopage-BG.jpg') no-repeat center bottom;">
+                        <div class="clearfix"></div>
+                                        <div class="container">
+              <div class="title-pad">
+                <h1 class="text-center m-o other_head">
+                                                        Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained                                                                                                            </h1>
+              </div>
+            </div>
+                            </div><div class="inner-page-outer-wrap pt-4">
+    <div class="container">
+                                <div class="clearfix"></div>
+                <div class="blog-summary-meta d-flex justify-content-left mb-2 px-0">
+                        <ul class="p-0 m-0">
+                                                            <li class="p-0 my-0 mr-1 d-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="text-primary" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+</svg>By: <span>Sharks At Law</span></li>
+                                                        </ul>
+                    </div>
+                <div class="clearfix"></div>
+                
+                                    <div class="custom_right">
+                        <img width="350" height="254" class="blog-summary-img alignright" src="https://www.sharksatlaw.com/wp-content/uploads/2024/05/Understanding-Underinsured-Motorist-Coverage_236845816-1.jpg" alt="Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained">
+                    </div>
+                                <div class="custom_left">
+                    <p>Car accidents can have significant financial repercussions, especially when the at-fault driver’s insurance is insufficient to cover your expenses. In Illinois and Wisconsin, underinsured motorist (UIM) coverage provides critical protection in such scenarios. As a leading personal injury law firm in Illinois and Wisconsin, we’re here to explain what underinsured motorist coverage is, why it’s important, and how it can benefit you.</p>
+<h2>What is Underinsured Motorist Coverage?</h2>
+<p>Underinsured motorist (UIM) coverage is a type of auto insurance that protects you when you’re involved in an accident with a driver whose liability insurance is insufficient to cover your damages. UIM coverage kicks in to bridge the gap between the at-fault driver’s insurance limits and your actual expenses. For instance, if you are badly injured in a crash with a driver who has only $25,000.00 in coverage, your UIM policy will step in to cover the rest of your injuries.&nbsp; In Illinois and Wisconsin, UIM coverage is typically bundled with uninsured motorist (UM) coverage to provide comprehensive protection.</p>
+<h2>Key Benefits of Underinsured Motorist Coverage</h2>
+<ol>
+<li>Medical Expenses: UIM coverage helps pay for your medical bills if the at-fault driver’s insurance is not enough. This includes emergency room visits, surgeries, rehabilitation, and other necessary medical treatments.</li>
+<li>Lost Wages: If your injuries prevent you from working, UIM coverage can compensate you for lost wages.</li>
+<li>Pain and Suffering: UIM coverage can also compensate you for pain and suffering caused by the accident. This includes compensation for physical pain, emotional distress, and a diminished quality of life.</li>
+<li>Loss of Normal Life: UM coverage can also compensate you for the way your injuries robbed you of your “normal life.” This includes things like missing out on a family vacation, being unable to help out with chores around the house, or missing out on social activities with friends.</li>
+</ol>
+<h2>How Does Underinsured Motorist Coverage Work in Illinois?</h2>
+<ol>
+<li>Mandatory Offer: Illinois law requires insurance companies to offer UIM coverage in all auto insurance policies. While it is not mandatory for drivers to purchase, it is strongly recommended for comprehensive protection.</li>
+<li>Filing a Claim: If you’re involved in an accident where the at-fault driver’s insurance is insufficient, you must file a claim with your own insurance company under your UIM coverage. Provide them with all relevant information, including the police report, medical records, and documentation of the other driver’s insurance limits.</li>
+<li>Determining Underinsurance: Your insurance company will verify the at-fault driver’s insurance coverage and compare it to your total damages. If their coverage is inadequate, your UIM coverage will cover the difference up to your policy limits.</li>
+<li>Settlement Process: After verifying the at-fault driver’s underinsurance, your insurance company will work with you to settle the claim. They will cover your medical expenses, lost wages, and other damages up to the limits of your UIM policy.</li>
+</ol>
+<h2>Why is Underinsured Motorist Coverage Important?</h2>
+<p>Even though Illinois requires drivers to carry liability insurance, the minimum coverage limits may not be enough to cover serious accidents. Medical expenses and vehicle repairs can quickly exceed these limits, leaving you with significant out-of-pocket costs. UIM coverage provides essential financial protection, ensuring you are adequately compensated even if the at-fault driver’s insurance falls short.</p>
+<h2>Conclusion</h2>
+<p>Underinsured motorist coverage is a crucial aspect of your auto insurance policy in Illinois. It offers an extra layer of protection, ensuring you are covered when the at-fault driver’s insurance is insufficient. If you have questions about your UIM coverage or need assistance with a claim, our experienced personal injury lawyers in Chicago are here to help. Contact us today for a <a href="https://www.sharksatlaw.com/contact-us/">free consultation</a> and let us guide you through the process to ensure you receive the compensation you deserve.</p>
+                </div>
+                    
+        <div class="clearfix"></div>
+            <div class="navigation-blog-detail-page">
+        <div class="row">
+            <div class="col text-start d-block"><a href="https://www.sharksatlaw.com/finding-a-top-personal-injury-lawyer-in-chicago-5-tips-and-tricks/" rel="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path></svg> Previous Post</a></div><div class="col text-end d-block"><a href="https://www.sharksatlaw.com/why-you-should-avoid-substandard-insurance-in-illinois-protecting-your-future/" rel="next">Next Post <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg></a></div>        </div>
+    </div>
+        <div class="clearfix"></div>
+        <div class="blog-detail-share-box py-2 mt-3 border-top border-bottom border-primary">
+            <div class="row">
+                <div class="col-sm-6 left align-self-center text-center text-sm-left">
+                    <h6 class="text-start text-secondary fw-bold m-0">Share This Article</h6>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <ul class="m-0 p-0 ">
+                        <li class="d-inline-block m-0 p-0">
+                            <a data-toggle="tooltip" title="Facebook" href="http://www.facebook.com/sharer.php?u=https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained//&amp;p[title]=Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path></svg></a>
+                        </li>
+                        <li class="d-inline-block m-0 p-0">
+                            <a href="http://twitter.com/home?status=Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/" title="Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path></svg></a>
+                        </li>
+                        <li class="d-inline-block m-0 p-0">
+                            <a href="http://linkedin.com/shareArticle?mini=true&amp;url=https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/&amp;title=Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained" title="LinkedIn" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></a>
+                        </li>
+                        <li class="d-inline-block m-0 p-0">
+                            <a href="mailto:?subject=Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained&amp;body=https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/" title="E-Mail" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"></path></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-----Bio Box Code--------------------->
+                        <div class="container">
+                
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="lc-block">
+					<div class="atty-bio-box m-auto d-table p-2 mt-4">
+						<div class="media d-inline-block d-md-flex d-sm-flex p-2">
+
+							<div class="media-body d-flex align-items-center">
+								<a href="https://www.sharksatlaw.com/">
+									<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2090%20387'%3E%3C/svg%3E" width="35" height="150" data-lazy-srcset="/wp-content/uploads/2024/02/Johnsonbox.svg 385w, /wp-content/uploads/2024/02/Johnsonbox.svg 298w, http://localhost:10144/wp-content/uploads/2023/10/Bio-Attroney-150x150.jpg 150w" data-lazy-sizes="(max-width: 385px) 100vw, 385px" alt="" class="wp-image-7832" data-lazy-src="/wp-content/uploads/2024/02/Johnsonbox.svg"><noscript><img src="/wp-content/uploads/2024/02/Johnsonbox.svg" width="90" height="387" srcset="/wp-content/uploads/2024/02/Johnsonbox.svg 385w, /wp-content/uploads/2024/02/Johnsonbox.svg 298w, http://localhost:10144/wp-content/uploads/2023/10/Bio-Attroney-150x150.jpg 150w" sizes="(max-width: 385px) 100vw, 385px" alt="" class="wp-image-7832"></noscript>
+								</a>
+								<p class="m-0 br-none-767 text-center mx-2" data-spkac-font-size="16"><strong>Call For A Free Consultation</strong><br> <a href="tel: (312) 210-7229"><strong>(312) 210-7229</strong></a>
+								</p>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		@media (max-width: 480px) {
+
+			.br-none-767 br{
+				display: none;
+			}
+		}
+	</style>
+</section>
+ 
+                </div>
+                		<section>
+<div class="set-get-help-now text-center d-flex justify-content-center mt-4 pt-2 d-lg-none d-md-none d-block">
+	<a href="/contact-us/" class="btn btn-primary btnall banner-btn">Get Help Now</a>
+</div>
+	<style>
+		.set-get-help-now a:hover{
+			background: var(--secondary-color) !important;
+			border-color: var(--secondary-color) !important;
+			color: #fff;
+		}
+	</style>
+</section>        <div class="clearfix"></div>
+
+            <div class="breadcrumb-wrap-outer py-4">
+            <div id="crumbs" xmlns:v="http://schema.org/#"><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://www.sharksatlaw.com/">Home</a></span> » <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://www.sharksatlaw.com/category/general-blog/">General Blog</a></span> » <span class="current">Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained  </span></div>        </div>
+        </div>
+</div>
+
+
+	
+
+
+<footer id="lc-footer"><div class="text-white bg-primary pt-0 pt-lg-4">
+	<div class="footer-inner">
+		<div class="container px-xl-0">
+			<div class="f-top-area">
+				<div class="col__left">
+					<div class="column__1">
+						<div class="lc-block">
+							<div class="footer-logo">
+								<a class="m-0" href="https://www.sharksatlaw.com/">
+									<img width="300" height="109" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%205464%201982'%3E%3C/svg%3E" class="d-inline-block align-top img-fluid mb-3 wp-image-7784" alt="Logo of Sharks at Law" srcset="" sizes="" data-lazy-src="/wp-content/uploads/2024/02/logo-footer.svg"><noscript><img width="5464" height="1982" src="/wp-content/uploads/2024/02/logo-footer.svg" class="d-inline-block align-top img-fluid mb-3 wp-image-7784" alt="Logo of Sharks at Law" srcset="" sizes=""></noscript>
+								</a>
+							</div>
+						</div>
+
+						<div class="lc-block contact-info-area mt-1 mb-2">
+							<div>
+								<strong class="fw-bold text-uppercase">Follow Us On<br></strong>
+
+							</div>
+						</div>
+						<div class="f-social-area mt-3 mb-2 ">
+							<div class="lc-block social-icons ">
+								<a class="" href="https://www.facebook.com/profile.php?id=61556265354905" target="_blank" rel="noopener">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="text-light">
+										<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+										</path>
+									</svg>
+								</a>
+
+								<a class="text-decoration-none" href="https://www.yelp.com/biz/memmen-law-firm-sharks-at-law-chicago" target="_blank" rel="noopener">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-light" viewBox="0 0 16 16" style="">
+										<path d="m4.188 10.095.736-.17a.824.824 0 0 0 .073-.02.813.813 0 0 0 .453-1.255 1.025 1.025 0 0 0-.3-.258 2.782 2.782 0 0 0-.428-.198l-.808-.295a76.035 76.035 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.143 2.143 0 0 0-.606-.116.723.723 0 0 0-.572.245 1.625 1.625 0 0 0-.105.132 1.555 1.555 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.785.785 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566.003.001Zm8.219-3.911a4.185 4.185 0 0 0-.8-1.14 1.602 1.602 0 0 0-.275-.21 1.591 1.591 0 0 0-.15-.073.723.723 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575-.34.345-.677.691-1.01 1.042l-.598.62a2.79 2.79 0 0 0-.298.365 1 1 0 0 0-.157.364.813.813 0 0 0 .007.301c0 .005.002.009.003.013a.812.812 0 0 0 .945.616.774.774 0 0 0 .074-.014l3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.787.787 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308ZM6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05c-.185.025-.37.06-.553.104a7.589 7.589 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857.022.01.045.018.068.025.15.057.313.068.469.032l.028-.007a.809.809 0 0 0 .377-.226.732.732 0 0 0 .053-.055Zm-.276 3.161a.737.737 0 0 0-.923-.234.976.976 0 0 0-.145.09 1.909 1.909 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705c-.29.395-.577.791-.861 1.193-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.73.73 0 0 0-.03.314c.013.11.05.217.108.312.031.047.064.093.1.138a1.548 1.548 0 0 0 .257.237 4.482 4.482 0 0 0 2.196.76 1.593 1.593 0 0 0 .349-.027 1.57 1.57 0 0 0 .163-.048.797.797 0 0 0 .278-.178.731.731 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821.025-.49.044-.98.06-1.469l.033-.87a2.09 2.09 0 0 0-.055-.623.93.93 0 0 0-.117-.27Zm5.783 1.362a2.199 2.199 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398-.43-.236-.86-.466-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a1.908 1.908 0 0 0-.466-.166.993.993 0 0 0-.17-.018.738.738 0 0 0-.725.616.946.946 0 0 0 .01.293c.038.204.13.406.224.583l.41.768c.228.434.459.864.696 1.294.152.28.28.52.398.719.023.037.048.077.068.112.145.239.261.39.379.497a.73.73 0 0 0 .596.201 1.55 1.55 0 0 0 .168-.029 1.584 1.584 0 0 0 .325-.129 4.06 4.06 0 0 0 .855-.64c.306-.3.577-.63.788-1.006.03-.053.055-.109.076-.165a1.58 1.58 0 0 0 .051-.161c.013-.056.022-.111.029-.168a.792.792 0 0 0-.038-.327.73.73 0 0 0-.165-.27Z">
+										</path>
+									</svg>
+								</a>
+
+								<a href="https://twitter.com/sharkesq?lang=en" target="_blank" rel="noopener">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+										<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
+									</svg>
+								</a>
+								<a href="https://www.linkedin.com/in/alexander-memmen-98a33712" target="_blank" rel="noopener">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+										<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+									</svg>
+								</a>
+								<a href="https://www.instagram.com/sharksatlaw/" target="_blank" rel="noopener">
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+										<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="lc-block">
+							<div class="py-3">
+								<strong class="fw-bold text-uppercase">Office Hours</strong>
+							</div>
+							<div>
+								<div class="office__hours d-flex">
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-clock mt-1 text-secondary" viewBox="0 0 16 16">
+										<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+										<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+									</svg>
+									<p>Mon - Fri (9:00am-5:00pm)<br> (Will Work After Hours When Clients Need Him)</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row mx-0 extra__sec">
+						<div class="col-sm-6 px-0">
+							<div class="lc-block">
+								<div>
+									<h5 class="text-light text-uppercase" data-spkac-font-size="24">Chicago Office</h5>
+								</div>
+							</div>
+
+							<div class="lc-block contact-info-area">
+								<div class="lc-block">
+									<div class="d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt mt-1 me-1 text-secondary" viewBox="0 0 16 16" data-spkac-font-size="14">
+											<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" data-spkac-font-size="14"></path>
+											<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" data-spkac-font-size="14"></path>
+										</svg>
+										<p class=""><!-- <strong class="text-light">Address:</strong> -->505 North La Salle Drive,<br> Suite 500 <br>Chicago, Illinois 60654</p>
+									</div>
+								</div>
+								<a href="https://maps.app.goo.gl/mPh5ebiwpf4avhuW8" class="map-direction my-2" target="_blank" rel="noopener" data-spkac-font-size="16">GET DIRECTIONS </a>
+								<div class="lc-block ph-clr py-3">
+									<div class="py- mb- d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone mt-1 me-2 text-secondary" viewBox="0 0 16 16">
+											<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+										</svg>
+										<p class="mb-0">
+											<strong class="text-white">Phone:</strong> <a href="tel: (312) 210-7229" class="">(312) 210-7229</a></p>
+									</div>
+									<div class="pt-2 pb-3 d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone mt-1 me-2 text-secondary" viewBox="0 0 16 16">
+											<path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"></path>
+											<path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"></path>
+										</svg>
+										<p><strong class="text-white">Fax:</strong> <a href="fax:(312) 210-7229">(312) 210-7229</a></p>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 px-0">
+							<div class="lc-block">
+								<div>
+									<h5 class="text-light text-uppercase" data-spkac-font-size="24">WISCONSIN Office</h5>
+								</div>
+							</div>
+
+							<div class="lc-block contact-info-area">
+								<div class="lc-block">
+									<div class="d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt mt-1 me-1 text-secondary" viewBox="0 0 16 16" data-spkac-font-size="14">
+											<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" data-spkac-font-size="14"></path>
+											<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" data-spkac-font-size="14"></path>
+										</svg>
+										<p class=""><!-- <strong class="text-light">Address:</strong> -->47 Park Place, <br> Suite 200F<br>
+Appleton, Wisconsin 54914</p>
+									</div>
+								</div>
+								<a href="https://maps.app.goo.gl/hHSi6HmSpje29tabA" class="map-direction my-2" target="_blank" rel="noopener" data-spkac-font-size="16">GET DIRECTIONS </a>
+								<div class="lc-block ph-clr py-3">
+									<div class="py- mb- d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone mt-1 me-2 text-secondary" viewBox="0 0 16 16">
+											<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+										</svg>
+										<p class="mb-0">
+											<strong class="text-white">Phone:</strong> <a href="tel: (312) 210-7229" class="">(312) 210-7229</a></p>
+									</div>
+									<div class="pt-2 pb-3 d-flex">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone mt-1 me-2 text-secondary" viewBox="0 0 16 16">
+											<path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"></path>
+											<path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"></path>
+										</svg>
+										<p><strong class="text-white">Fax:</strong> <a href="fax:(312) 794-1813">(312) 794-1813</a></p>
+
+									</div>
+								</div>
+
+							</div>
+
+
+
+						</div>
+						<div class="col-12 px-0">
+							<div class="lc-block mt-xl-3">
+								<div>
+									<h5 class="text-light text-uppercase" data-spkac-font-size="24">Quick Links</h5>
+								</div>
+							</div>
+
+							<div class="lc-block">
+								<div class="live-shortcode"> <!--  lc_nav_menu --> <ul id="menu-footer-menu" class="f-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home nav-item nav-item-7765"><a href="https://www.sharksatlaw.com/" class="nav-link ">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8164"><a href="https://www.sharksatlaw.com/truck-accidents/" class="nav-link ">Truck Accidents</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8169"><a href="https://www.sharksatlaw.com/wrongful-death/" class="nav-link ">Wrongful Death</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8173"><a href="https://www.sharksatlaw.com/contact-us/" class="nav-link ">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8372"><a href="https://www.sharksatlaw.com/meet-gus/" class="nav-link ">Meet Gus</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8166"><a href="https://www.sharksatlaw.com/personal-injury/" class="nav-link ">Personal Injury</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8168"><a href="https://www.sharksatlaw.com/motorcycle-accidents/" class="nav-link ">Motorcycle Accidents</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8171"><a href="https://www.sharksatlaw.com/terms-of-use/" class="nav-link ">Term Of Use</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8005"><a target="_blank" href="https://www.speakeasymarketinginc.com" class="nav-link ">Attorney Marketing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8165"><a href="https://www.sharksatlaw.com/car-accidents/" class="nav-link ">Car Accidents</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8167"><a href="https://www.sharksatlaw.com/slip-fall/" class="nav-link ">Slip &amp; Fall</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8172"><a href="https://www.sharksatlaw.com/privacy-policy/" class="nav-link ">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8170"><a href="https://www.sharksatlaw.com/accessibility-statement/" class="nav-link ">Accessibility Statement</a></li>
+</ul> <!-- /lc_nav_menu --> </div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<div class="col__right">
+					<div class="column__4">
+						<div class="lc-block">
+							<div>
+								<h5 class="text-light text-uppercase" data-spkac-font-size="24">Subscribe To Our Newsletter<br data-spkac-font-size="24"></h5>
+								<p class="c-form mt-4">
+									Please provide your name and email address to subscribe to our monthly newsletter.
+								</p>
+							</div>
+						</div>
+						<div class="lc-block mb-0 newsletter-form-area pt-2">
+							<div class="live-shortcode form-area"><form method="post" id="newsletter_form_5646523"><div id="nform_vaidator"></div><div class="row mlr-5">
+                            <div class="col-md-12 plr-5"><input type="text" name="name" class="news_box  py-1 px-1" placeholder="Please type your name here" id="name" value=""></div> 
+                            <div class="col-md-12 plr-5"><input type="text" name="email" class="news_box py-1 px-1" placeholder="Please type your email here" id="email" value=""></div>
+<div class="'col-md-12 pt-2 g_recapcha_div1 g-cap  plr-5">
+    <div class="g-recaptcha" name="g-recaptcha-response" data-sitekey="6Lft6HMpAAAAANH04fNGc6I-ICzGVxlfHrCboJQN"></div>
+</div> 
+                            <div class="col-md-2 plr-5"><button class="d-block btnall hvr-sweep-to-right" id="newsletter-submit">Submit</button></div>
+                        </div></form></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<hr class="footer pb-4">
+			<p class="footer-p text-center pb-4">
+				<strong>Disclaimer:</strong> Nothing Contained On This Website Constitutes Legal Advice. The Legal Process Is Incredibly Complex And The Explanations Above Are Simplified To Give A Basic Understanding. Nothing Contained In This Website Establishes An Lawyer-client Relationship. If You Would Like To Retain An Lawyer Please Call  <a href="tel: (312) 210-7229">(312) 210-7229</a>.
+			</p>
+
+		</div>
+		<div class="f-copy-right bg-success">
+			<div class="container ">
+				<div class="row">
+					<div class="col-12">
+						<div class="lc-block text-center text-light pt-md-4 pb-md-4 pt-3 pb-3 copyright-text">
+							<div>
+								<p data-spkac-font-size="15" class="mb-0 py-3 text-white">Copyright©2025. Sharks At Law. All Rights Reserved. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<style>
+	.col__left {
+		display: flex;
+	}
+	.footer-p{
+		font-size:14px
+	}
+	.footer-inner p {
+		margin-bottom: 0;
+	}
+	.footer-logo {
+		margin-bottom: 27px;
+	}
+	a.map-direction {
+		padding-top: 8px;
+	}
+
+	.footer_second-col .d-flex {
+		padding-top: 2px;
+	}
+	.contact-info-area p {
+		color: var(--warning-color) !important;
+	}
+	.contact-info-area {
+		font-size: 15px;
+	}
+	.lc-block.contact-info-area {
+		padding-top: 27px;
+	}
+	.f-social-area {
+		padding-top: 15px;
+	}
+	.same-cls{
+		margin-bottom: -10px;
+	}
+	.f-contact-detail {
+		padding: 0;
+		list-style-type: none;
+	}
+	.f-logo {
+		max-width: 280px;
+	}
+	.footer-p {
+		color: var(--warning-color) !important;
+	}
+	.f-bottom-text {
+		font-size: 15px;
+
+	}
+	.footer-inner a {
+		color: var(--warning-color);
+	}
+	.footer-inner a:hover {
+		color: var(--white-color);
+	}
+	.f-contact-detail li span {
+		color: var(--white-color);
+		font-weight: 700;
+	}
+	ul.f-nav li {
+		position: relative;
+		padding-left: 14px;
+		display: inline-block;
+	}
+	.office__hours svg {
+		width: 26px;
+		margin-right: 13px;
+	}
+	.footer-inner p {
+		margin-bottom: 0;
+		color: var(--warning-color) !important;
+	}
+	ul#menu-footer-menu {
+		column-count: 3;
+	}
+	ul.f-nav li::after {
+		position: absolute;
+		content: '\f111';
+		font: var(--fa-font-solid);
+		margin-left: 0;
+		font-size: 6px;
+		left: 0;
+		top: 11px;
+		color: var(--secondary-color);
+	}
+	ul.f-nav li a,
+	.f-nav li a.active {
+		padding: 2px 0 2px;
+		font-size: 15px;
+		color: var(--warning-color) !important;
+	}
+	ul.f-nav li a:hover {
+		color: var(--white-color) !important;
+	}
+	.footer-inner .phone-list a:hover{
+		color: var(--secondary-color) !important;
+	}
+	.map-direction {
+		border: none;
+		color: var(--secondary-color) !important;
+		border-radius: 4px;
+		font-weight: 700;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 16px;
+		text-decoration: underline;
+		margin:0px 0 0 20px !important;
+	}
+
+	.map-direction:hover {
+		color: var(--white-color) !important;
+	}
+	.footer-inner h5 {
+		margin-bottom: 12px;
+		font-size: 19px !important;
+	}
+	.footer-inner strong {
+		color: var(--white-color) !important;
+	}
+	.newsletter-form-area > p {
+		font-size: 15px;
+	}
+	.newsletter-form-area input {
+		margin-bottom: 0px !important;
+		max-width: 302px;
+		width: 100%;
+		background: #fff;
+		color: #000 !important;
+		height: 55px;
+	}
+	.newsletter-form-area {
+		max-width: 302px;
+	}
+	.newsletter-form-area input::placeholder {
+		color:  #848484;
+	}
+
+	.newsletter-form-area input input:focus{
+		color: var(--black-color);
+		background: var(--white-color);
+	}
+	.column__1 {
+		width: 33%;
+		padding-right: 30px;
+	}
+
+	.extra__sec {
+		width: 67%;
+		padding-left: 15px;
+	}
+	.social-icons a {
+		/* width: 45px;
+		height: 45px; */
+		background:transparent;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--white-color);
+		fill: var(--secondary-color);
+		border: 1px solid var(--secondary-color);
+		padding: 8px;
+		height: 40px;
+		width: 40px;
+	}
+	.social-icons a svg {
+		fill: var(--secondary-color);
+		font-size:20px;
+	}
+	.social-icons a:hover svg {
+		fill: var(--white-color);
+	}
+	.social-icons {
+		display: flex;
+		gap: 8px;
+	}
+	p.c-form {
+		font-size: 15px;
+		color: var(--warning-color);
+	}
+	.f-social-area h5 {
+		margin-bottom: 11px;
+		margin-top: 28px;
+	}
+	.f-top-area {
+		padding: 50px 0 0 0;
+	}
+	.copyright-text {
+		border-top: 1px solid var(--primary-color);
+		font-size: 15px;
+	}
+	.copyright-text p{
+		font-size: 16px;
+		color:#fff !important;
+	}
+	.footer-inner ul{
+		list-style-type: none;
+		padding: 0;
+	}
+	hr.footer.pb-4 {
+		margin: 6px 0;
+		color: inherit;
+		border: 0;
+		border-top: 1px solid #2E508D;
+		opacity: 1.25;
+	}
+	.f-top-area {
+		display: flex;
+	}
+
+	.col__left {
+		width: 74%;
+	}
+
+	.col__right {
+		width: 26%;
+	}
+	/* Media Queries Style */
+
+	@media (max-width: 1199.80px) {
+		.f-top-area {
+			padding: 25px 0 0 0;
+		}
+		.footer-inner h5 {
+			margin-bottom: 15px;
+			font-size: 16px !important;
+		}
+	}
+	@media (max-width: 991.80px) {
+		.col__right {
+			padding-top: 23px;
+		}
+		.footer-logo {
+			margin-bottom: 20px;
+		}
+		.footer-logo img {
+			max-width: 350px;
+		}
+		footer#lc-footer .bg-primary {
+			padding: 40px 0 0 0 !important;
+		}
+		.f-top-area {
+			padding: 10px 15px 38px;
+		}
+		.extra__sec {
+			padding-top: 33px !important;
+		}
+		.column__1 ,
+		.extra__sec{
+			width: 100%;
+			padding: 0px;
+		}
+		.f-top-area {
+			flex-wrap: wrap;
+		}
+		.col__left, .col__right {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+		.newsletter-form-area {
+			max-width: 100%;
+		}
+		.newsletter-form-area input {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	@media(max-width:767.80px){
+
+		ul#menu-footer-menu {
+			column-count: 2;
+		}
+		ul#menu-footer-menu li {
+			display: block;
+		}
+
+		.footer-logo {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: 575.80px) {
+		.footer-logo img {
+			max-width: 260px;
+		}
+		.f-top-area {
+			padding: 0px 15px 38px;
+		}
+	}
+	@media (max-width: 480.80px) {
+		ul#menu-footer-menu {
+			column-count: 1;
+		}
+	}
+
+</style></footer>
+
+
+
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/spk\/*","\/wp-content\/themes\/picostrap5\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<script type="rocketlazyloadscript" id="lc_script_tag" data-rocket-type="module"></script>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N376TS7N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><link data-minify="1" rel="stylesheet" id="lc-aos-css" href="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/livecanvas/modules/optin-extra-assets/aos.css?ver=1761742053" media="all">
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/livecanvas/modules/optin-extra-assets/aos-with-init.js?ver=1761742054" id="lc-aos-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/wp-show-more/wpsm-script.js?ver=1761742054" id="sm-script-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/what-happens-if-your-personal-injury-case-goes-to-mediation-in-illinois\/|\/wrongful-death-vs-survival-actions-in-illinois\/|\/video\/debunking-the-top-myths-about-car-accident-claims-in-illinois-chicago-car-accident-lawyer-explains\/|\/video\/what-are-the-potential-outcomes-of-a-personal-injury-lawsuit-chicago-car-accident-lawyer-explains\/|\/video\/how-do-settlement-negotiations-typically-proceed-in-illinois-chicago-car-accident-lawyer-explains\/|\/video\/what-is-the-role-of-depositions-in-a-personal-injury-lawsuit-chicago-car-accident-lawyer-explains\/|\/video\/what-to-expect-during-the-discovery-process-in-illinois-chicago-car-accident-lawyer-explains\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.sharksatlaw.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/themes/spk/js/custom.js?ver=1761742054" id="custom-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/responsivevoice.js?ver=1761742054" id="spkac_responsivevoice-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/spk-accessibility/assets/js/spkac_widget.js?ver=1761742054" id="spkac_main-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://www.sharksatlaw.com/wp-content/cache/min/1/wp-content/plugins/speak-api/js/speak-api-js-frontend.js?ver=1761742054" id="speakapi-frontend-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://www.sharksatlaw.com/wp-content/themes/spk/js/bootstrap.bundle.min.js#asyncload" id="bootstrap5-childtheme-js" data-rocket-defer="" defer=""></script>
+ 
+ 
+<div id="spack_toggle" class="spkac_icon_toggle p2" tabindex="1" style="background:#DD293C">
+        
+    <span class="spkac_tText">
+        <img width="34" height="36" class="spkac_inaImage" src="https://www.sharksatlaw.com/wp-content/plugins/spk-accessibility/assets/images/icons/accessibility-icon-trans.png" alt="Accessibility">
+    </span>
+    <span class="spkac_tText_alt"> 
+        <img width="34" height="36" class="spkac_inaImage" src="https://www.sharksatlaw.com/wp-content/plugins/spk-accessibility/assets/images/icons/accessibility-icon-trans.png" alt="Accessibility">
+    </span>
+    <!-- <img width="64" height="64"  class="spkac_aImage" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3C/svg%3E" data-lazy-src="https://www.sharksatlaw.com/wp-content/plugins/spk-accessibility/assets/images/spkac_active.png" /><noscript><img width="64" height="64"  class="spkac_aImage" src="https://www.sharksatlaw.com/wp-content/plugins/spk-accessibility/assets/images/spkac_active.png" /></noscript>--> 
+</div>
+<div class="spkac p2 spkac_hidden" id="spkac_widget">
+
+    <div class="spkac_head" style="background:#DD293C">
+        <span class="spkac_close_menu" role="button" title="Close the Accessibility Menu" tabindex="0">×</span> <span>Accessibility Menu</span> <span class="ctrl_u_title">CTRL+U</span></div>
+    <div class="spkac_middle">
+        <div>
+            <div class="spkac_menu">
+                <a class="spkac_menu_item_1" tabindex="1" data-class="s1" role="button" title="Enable enhanced keyboard navigation">
+                    <img class="spkac_option_img entered lazyloading" alt="Toggle enhanced keyboard navigation" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" data-ll-status="loading" width="300" height="150"><noscript><img class="spkac_option_img" alt="Toggle enhanced keyboard navigation" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMjguMTMycHgiIGhlaWdodD0iNzIuMDdweCIgdmlld0JveD0iMCAwIDEyOC4xMzIgNzIuMDciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOC4xMzIgNzIuMDciIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik02NC4xMjQsNzIuMDQzYy0xNi45MDgtMC4wMDEtMzMuODE1LTAuMDU0LTUwLjcyMywwLjAyN2MtNi4yMiwwLjAzLTEwLjUxNS0yLjYxOS0xMi43NjctOC40MDNDMC4yMDEsNjIuNTUzLDAuMTAyLDYxLjI1LDAuMSw2MC4wMzRDMC4wNjYsNDQuMjA5LDAuMjM3LDI4LjM4MiwwLjAwMSwxMi41NkMtMC4wOTgsNS44OTIsNS44NS0wLjA2LDEyLjQyNywwYzEzLjU3NSwwLjEyNCwyNy4xNTIsMC4wMzMsNDAuNzI4LDAuMDMzYzIwLjU3MiwwLDQxLjE0NSwwLjAzNCw2MS43MTctMC4wMTZjNi4xMDQtMC4wMTUsMTAuMzU2LDIuNTk2LDEyLjU1NCw4LjMxMmMwLjQzMSwxLjEyLDAuNjAyLDIuNDA1LDAuNjA1LDMuNjE0YzAuMDM5LDE1Ljk5MS0wLjExNiwzMS45ODUsMC4xMDEsNDcuOTczYzAuMDc5LDUuODI2LTUuNTM2LDEyLjE5OS0xMi4wMzUsMTIuMTUxYy0xMy40OTItMC4xLTI2Ljk4NS0wLjAyNi00MC40NzgtMC4wMjNDNzEuNzg3LDcyLjA0NSw2Ny45NTYsNzIuMDQ0LDY0LjEyNCw3Mi4wNDN6IE02NC4wNTYsOC4wNDVjLTE2LjkxMiwwLTMzLjgyNS0wLjAwNS01MC43MzcsMC4wMDRjLTMuODg4LDAuMDAyLTUuMjQ1LDEuMzU3LTUuMjQ3LDUuMjQyYy0wLjAwOSwxNS4xNjMtMC4wMSwzMC4zMjUsMCw0NS40ODhjMC4wMDMsMy44MzMsMS40MjcsNS4yNTgsNS4yNjMsNS4yNTljMzMuODI1LDAuMDA3LDY3LjY0OSwwLjAwNywxMDEuNDc0LDBjMy44NTEtMC4wMDEsNS4yNS0xLjQwMyw1LjI1Mi01LjI2YzAuMDA3LTE1LjA3OSwwLjAwNC0zMC4xNTktMC4wMDktNDUuMjM4Yy0wLjAwMy00LjIwNi0xLjMtNS40OTItNS41MDktNS40OTNDOTcuNzE0LDguMDQxLDgwLjg4NSw4LjA0NCw2NC4wNTYsOC4wNDV6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTY0LjA1Niw4LjA0NWMxNi44MjksMCwzMy42NTgtMC4wMDQsNTAuNDg3LDAuMDAyYzQuMjA5LDAuMDAxLDUuNTA2LDEuMjg3LDUuNTA5LDUuNDkzYzAuMDEyLDE1LjA3OSwwLjAxNiwzMC4xNTksMC4wMDksNDUuMjM4Yy0wLjAwMiwzLjg1Ni0xLjQwMSw1LjI1OS01LjI1Miw1LjI2Yy0zMy44MjUsMC4wMDctNjcuNjQ5LDAuMDA3LTEwMS40NzQsMGMtMy44MzYtMC4wMDEtNS4yNjEtMS40MjYtNS4yNjMtNS4yNTljLTAuMDEtMTUuMTYzLTAuMDEtMzAuMzI1LDAtNDUuNDg4YzAuMDAyLTMuODg1LDEuMzU5LTUuMjQsNS4yNDctNS4yNDJDMzAuMjMyLDguMDQsNDcuMTQ0LDguMDQ1LDY0LjA1Niw4LjA0NXogTTY0LjA1Niw1Ni4wNDNjNy45ODcsMCwxNS45NzUsMC4wMDQsMjMuOTYyLTAuMDAyYzMuNzM2LTAuMDAzLDQuMDQzLTAuMzExLDQuMDQ4LTMuOTRjMC4wMDUtMy43NDgtMC4yNy00LjA1NS0zLjkyMS00LjA1NmMtMTYuMTQxLTAuMDA3LTMyLjI4Mi0wLjAwNS00OC40MjMsMC4wMDRjLTMuMzcsMC4wMDItMy42NTgsMC4zNDEtMy42NTIsNC4wNTdjMC4wMDYsMy42MjcsMC4yNzgsMy45MjYsMy43NzQsMy45M0M0Ny45MTUsNTYuMDQ2LDU1Ljk4NSw1Ni4wNCw2NC4wNTYsNTYuMDQzeiBNMTA0LjIzLDU2LjA0M2MzLjUyOS0wLjAxMiwzLjg0My0wLjM0OSwzLjgzNy00LjExNGMtMC4wMDYtMy41OTUtMC4zMjQtMy45MDEtNC4wNDctMy44OTRjLTMuNjksMC4wMDctMy45NzIsMC4zMDktMy45NjEsNC4yMzlDMTAwLjA2OCw1NS43NTIsMTAwLjQwNCw1Ni4wNTYsMTA0LjIzLDU2LjA0M3ogTTIzLjkzMiw1Ni4wNDNjMy43ODYsMC4wMDgsNC4xMjEtMC4zMDIsNC4xMzQtMy44MTdjMC4wMTUtMy44NDItMC4yODgtNC4xOC0zLjc0OS00LjE5MmMtMy45NDctMC4wMTMtNC4yNSwwLjI2OC00LjI1OSwzLjk0MUMyMC4wNDksNTUuNzE0LDIwLjM1Niw1Ni4wMzUsMjMuOTMyLDU2LjA0M3ogTTEwMC4wNjUsMzUuODc0YzAuMDAyLDMuODk5LDAuMjY1LDQuMTcyLDQuMDIzLDQuMTY5YzMuNjUtMC4wMDMsMy45NzUtMC4zMjcsMy45NzgtMy45NzZjMC4wMDMtMy43Ni0wLjI3LTQuMDIzLTQuMTY4LTQuMDI1QzEwMC4zODksMzIuMDM5LDEwMC4wNjMsMzIuMzY2LDEwMC4wNjUsMzUuODc0eiBNODguMDU0LDMyLjA0NGMtMy42OTUsMC0zLjk4NCwwLjI4Ni0zLjk4NiwzLjk0OGMtMC4wMDMsMy43OSwwLjI2NCw0LjA1MSw0LjE0LDQuMDUzYzMuNTE2LDAuMDAyLDMuODYtMC4zMzksMy44NjEtMy44MjJDOTIuMDY5LDMyLjMxOCw5MS44MDUsMzIuMDQzLDg4LjA1NCwzMi4wNDR6IE02OC4wNjcsMzUuODIzYy0wLjAxNCwzLjg5LDAuMjcsNC4yMTQsMy43MTIsNC4yMjljMy45MzksMC4wMTcsNC4yODYtMC4zLDQuMjk2LTMuOTI0YzAuMDExLTMuNzY2LTAuMjgxLTQuMDc0LTMuODU3LTQuMDg0QzY4LjM4MywzMi4wMzQsNjguMDgsMzIuMzA5LDY4LjA2NywzNS44MjN6IE01NS44NzEsNDAuMDRjMy44NCwwLjAxNCw0LjE3OS0wLjI5MSw0LjE5My0zLjc1N2MwLjAxNS0zLjkzLTAuMjM0LTQuMjE2LTMuNjg4LTQuMjM1Yy0zLjk1Ni0wLjAyMi00LjI4NiwwLjI1Ni00LjMwNiwzLjYyM0M1Mi4wNDYsMzkuNzcsNTIuMjcsNDAuMDI3LDU1Ljg3MSw0MC4wNHogTTQ0LjA2NiwzNi4wOTljMC4wMDUtMy43MzYtMC4zMDUtNC4wNjEtMy44NzctNC4wNjVjLTMuODQ3LTAuMDA0LTQuMTMxLDAuMjc2LTQuMTMxLDQuMDcxYy0wLjAwMSwzLjYyNCwwLjMxOSwzLjkzOSw0LjAwMiwzLjkzOEM0My43MzQsNDAuMDQyLDQ0LjA2MiwzOS43Miw0NC4wNjYsMzYuMDk5eiBNMjguMDY2LDM2LjIzM2MwLjAxNS0zLjg5Ni0wLjI1NS00LjE3OS00LjAwMi00LjE5MWMtMy42NTctMC4wMTEtMy45OTIsMC4yOTUtNCwzLjY2N2MtMC4wMDksNC4wNTIsMC4yMzQsNC4zMjYsMy44NTgsNC4zMzRDMjcuNzE1LDQwLjA1MSwyOC4wNTMsMzkuNzQxLDI4LjA2NiwzNi4yMzN6IE0xMDQuMDE0LDI0LjA0NGMzLjY4LDAuMDEzLDQuMDQyLTAuMzExLDQuMDU1LTMuNjI4YzAuMDE2LTQuMDY1LTAuMjQzLTQuMzYxLTMuODIyLTQuMzcyYy0zLjg1OC0wLjAxMi00LjE2NSwwLjI2NC00LjE4LDMuNzU0QzEwMC4wNTEsMjMuNzQ5LDEwMC4zMTMsMjQuMDMxLDEwNC4wMTQsMjQuMDQ0eiBNODQuMDY3LDE5LjgyM2MtMC4wMTQsMy44OSwwLjI3LDQuMjE0LDMuNzEyLDQuMjI5YzMuOTM5LDAuMDE3LDQuMjg2LTAuMyw0LjI5Ni0zLjkyNGMwLjAxMS0zLjc2Ni0wLjI4MS00LjA3NC0zLjg1Ny00LjA4NEM4NC4zODMsMTYuMDM0LDg0LjA4LDE2LjMwOSw4NC4wNjcsMTkuODIzeiBNNzYuMDYzLDE5Ljg3NWMtMC4wMTEtMy41NzUtMC4yODYtMy44MzItNC4wOTMtMy44MjljLTMuNjI2LDAuMDAzLTMuOTA0LDAuMjktMy45LDQuMDNjMC4wMDQsMy43NDcsMC4yNDgsMy45NzcsNC4yMDcsMy45NjRDNzUuNzY3LDI0LjAyOSw3Ni4wNzUsMjMuNjksNzYuMDYzLDE5Ljg3NXogTTU2LjE4NywxNi4wMzVjLTMuODQ3LTAuMDA0LTQuMTI4LDAuMjc0LTQuMTI5LDQuMDczYzAsMy42MTcsMC4zMjQsMy45MzYsNC4wMDYsMy45MzVjMy42NzEtMC4wMDEsMy45OTgtMC4zMjQsNC4wMDItMy45NDdDNjAuMDcxLDE2LjM2Myw1OS43NjEsMTYuMDM4LDU2LjE4NywxNi4wMzV6IE00MC4wNDksMTYuMDQyYy0zLjY0NS0wLjAxLTMuOTc3LDAuMjk3LTMuOTg0LDMuNjgyYy0wLjAwOCw0LjAxOCwwLjI1Niw0LjMxMiwzLjg3NSw0LjMxOWMzLjc3OSwwLjAwNyw0LjExNC0wLjMwNCw0LjEyNy0zLjgyNkM0NC4wOCwxNi4zMzIsNDMuODEyLDE2LjA1Myw0MC4wNDksMTYuMDQyeiBNMjQuMjUzLDE2LjA0NGMtMy44NjEtMC4wMTMtNC4xNzEsMC4yNjQtNC4xODUsMy43NDhjLTAuMDE3LDMuOTUyLDAuMjUsNC4yMzksMy45NDEsNC4yNTNjMy42NzgsMC4wMTMsNC4wNDctMC4zMTYsNC4wNi0zLjYyMkMyOC4wODUsMTYuMzU1LDI3LjgyNCwxNi4wNTYsMjQuMjUzLDE2LjA0NHoiLz48cGF0aCBkPSJNNjQuMDU2LDU2LjA0MmMtOC4wNzEtMC4wMDItMTYuMTQxLDAuMDA1LTI0LjIxMi0wLjAwNWMtMy40OTctMC4wMDQtMy43NjgtMC4zMDItMy43NzQtMy45M2MtMC4wMDYtMy43MTcsMC4yODItNC4wNTYsMy42NTItNC4wNTdjMTYuMTQxLTAuMDA4LDMyLjI4Mi0wLjAxMSw0OC40MjMtMC4wMDRjMy42NSwwLjAwMiwzLjkyNiwwLjMwOCwzLjkyMSw0LjA1NmMtMC4wMDUsMy42MjktMC4zMTIsMy45MzctNC4wNDgsMy45NEM4MC4wMzEsNTYuMDQ3LDcyLjA0Myw1Ni4wNDMsNjQuMDU2LDU2LjA0MnoiLz48cGF0aCBkPSJNMTA0LjIzLDU2LjA0M2MtMy44MjUsMC4wMTMtNC4xNjItMC4yOTEtNC4xNzItMy43NjljLTAuMDEyLTMuOTI5LDAuMjcxLTQuMjMxLDMuOTYxLTQuMjM5YzMuNzIzLTAuMDA3LDQuMDQxLDAuMjk4LDQuMDQ3LDMuODk0QzEwOC4wNzMsNTUuNjk0LDEwNy43NTksNTYuMDMxLDEwNC4yMyw1Ni4wNDN6Ii8+PHBhdGggZD0iTTIzLjkzMiw1Ni4wNDNjLTMuNTc2LTAuMDA3LTMuODgyLTAuMzI5LTMuODc0LTQuMDY3YzAuMDA5LTMuNjc0LDAuMzEyLTMuOTU0LDQuMjU5LTMuOTQxYzMuNDYyLDAuMDExLDMuNzY0LDAuMzQ5LDMuNzQ5LDQuMTkyQzI4LjA1Myw1NS43NDEsMjcuNzE4LDU2LjA1MSwyMy45MzIsNTYuMDQzeiIvPjxwYXRoIGQ9Ik0xMDAuMDY1LDM1Ljg3NGMtMC4wMDItMy41MDgsMC4zMjQtMy44MzQsMy44MzQtMy44MzJjMy44OTgsMC4wMDIsNC4xNywwLjI2NSw0LjE2OCw0LjAyNWMtMC4wMDMsMy42NDktMC4zMjgsMy45NzQtMy45NzgsMy45NzZDMTAwLjMzLDQwLjA0NiwxMDAuMDY3LDM5Ljc3MywxMDAuMDY1LDM1Ljg3NHoiLz48cGF0aCBkPSJNODguMDU0LDMyLjA0NGMzLjc1MiwwLDQuMDE1LDAuMjc0LDQuMDE1LDQuMTc5YzAsMy40ODMtMC4zNDUsMy44MjQtMy44NjEsMy44MjJjLTMuODc3LTAuMDAyLTQuMTQzLTAuMjYzLTQuMTQtNC4wNTNDODQuMDcsMzIuMzMsODQuMzU4LDMyLjA0NCw4OC4wNTQsMzIuMDQ0eiIvPjxwYXRoIGQ9Ik02OC4wNjcsMzUuODIzYzAuMDEzLTMuNTE0LDAuMzE2LTMuNzg5LDQuMTUxLTMuNzc5YzMuNTc3LDAuMDEsMy44NjgsMC4zMTgsMy44NTcsNC4wODRjLTAuMDEsMy42MjUtMC4zNTcsMy45NDEtNC4yOTYsMy45MjRDNjguMzM3LDQwLjAzNyw2OC4wNTMsMzkuNzEzLDY4LjA2NywzNS44MjN6Ii8+PHBhdGggZD0iTTU1Ljg3MSw0MC4wNGMtMy42MDEtMC4wMTMtMy44MjUtMC4yNy0zLjgwMS00LjM3YzAuMDItMy4zNjcsMC4zNS0zLjY0NSw0LjMwNi0zLjYyM2MzLjQ1NCwwLjAxOSwzLjcwNCwwLjMwNSwzLjY4OCw0LjIzNUM2MC4wNSwzOS43NDksNTkuNzExLDQwLjA1Myw1NS44NzEsNDAuMDR6Ii8+PHBhdGggZD0iTTQ0LjA2NiwzNi4wOTljLTAuMDA1LDMuNjItMC4zMzIsMy45NDMtNC4wMDYsMy45NDRjLTMuNjgzLDAuMDAxLTQuMDAzLTAuMzEzLTQuMDAyLTMuOTM4YzAuMDAxLTMuNzk1LDAuMjg0LTQuMDc0LDQuMTMxLTQuMDcxQzQzLjc2MSwzMi4wMzgsNDQuMDcxLDMyLjM2Myw0NC4wNjYsMzYuMDk5eiIvPjxwYXRoIGQ9Ik0yOC4wNjYsMzYuMjMzYy0wLjAxNCwzLjUwOC0wLjM1MiwzLjgxOS00LjE0MywzLjgxYy0zLjYyNC0wLjAwOC0zLjg2OC0wLjI4Mi0zLjg1OC00LjMzNGMwLjAwOC0zLjM3MiwwLjM0Mi0zLjY3OCw0LTMuNjY3QzI3LjgxMSwzMi4wNTQsMjguMDgxLDMyLjMzNiwyOC4wNjYsMzYuMjMzeiIvPjxwYXRoIGQ9Ik0xMDQuMDE0LDI0LjA0NGMtMy43MDEtMC4wMTMtMy45NjMtMC4yOTUtMy45NDctNC4yNDZjMC4wMTQtMy40OSwwLjMyMi0zLjc2Nyw0LjE4LTMuNzU0YzMuNTc5LDAuMDEyLDMuODM4LDAuMzA3LDMuODIyLDQuMzcyQzEwOC4wNTYsMjMuNzMzLDEwNy42OTQsMjQuMDU3LDEwNC4wMTQsMjQuMDQ0eiIvPjxwYXRoIGQ9Ik04NC4wNjcsMTkuODIzYzAuMDEzLTMuNTE0LDAuMzE2LTMuNzg5LDQuMTUxLTMuNzc5YzMuNTc3LDAuMDEsMy44NjgsMC4zMTgsMy44NTcsNC4wODRjLTAuMDEsMy42MjUtMC4zNTcsMy45NDEtNC4yOTYsMy45MjRDODQuMzM3LDI0LjAzNyw4NC4wNTMsMjMuNzEzLDg0LjA2NywxOS44MjN6Ii8+PHBhdGggZD0iTTc2LjA2MywxOS44NzVjMC4wMTIsMy44MTQtMC4yOTYsNC4xNTMtMy43ODYsNC4xNjVjLTMuOTU5LDAuMDEzLTQuMjAzLTAuMjE3LTQuMjA3LTMuOTY0Yy0wLjAwNC0zLjc0LDAuMjczLTQuMDI3LDMuOS00LjAzQzc1Ljc3OCwxNi4wNDQsNzYuMDUyLDE2LjMwMSw3Ni4wNjMsMTkuODc1eiIvPjxwYXRoIGQ9Ik01Ni4xODcsMTYuMDM1YzMuNTc0LDAuMDAzLDMuODg0LDAuMzI4LDMuODgsNC4wNjJjLTAuMDA1LDMuNjIzLTAuMzMyLDMuOTQ2LTQuMDAyLDMuOTQ3Yy0zLjY4MSwwLjAwMS00LjAwNi0wLjMxOC00LjAwNi0zLjkzNUM1Mi4wNTksMTYuMzA5LDUyLjM0LDE2LjAzMSw1Ni4xODcsMTYuMDM1eiIvPjxwYXRoIGQ9Ik00MC4wNDksMTYuMDQyYzMuNzYzLDAuMDExLDQuMDMxLDAuMjksNC4wMTgsNC4xNzVjLTAuMDEyLDMuNTIyLTAuMzQ4LDMuODMzLTQuMTI3LDMuODI2Yy0zLjYxOS0wLjAwNy0zLjg4My0wLjMwMS0zLjg3NS00LjMxOUMzNi4wNzEsMTYuMzM5LDM2LjQwNCwxNi4wMzIsNDAuMDQ5LDE2LjA0MnoiLz48cGF0aCBkPSJNMjQuMjUzLDE2LjA0NGMzLjU3MiwwLjAxMiwzLjgzMywwLjMxMSwzLjgxNiw0LjM3OWMtMC4wMTMsMy4zMDUtMC4zODMsMy42MzUtNC4wNiwzLjYyMmMtMy42OTEtMC4wMTMtMy45NTgtMC4zMDEtMy45NDEtNC4yNTNDMjAuMDgyLDE2LjMwOCwyMC4zOTEsMTYuMDMxLDI0LjI1MywxNi4wNDR6Ii8+PC9zdmc+"></noscript> <span class="option-text">Keyboard Nav</span> <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript></a>
+                <a class="spkac_menu_item_2" data-class="s2" tabindex="1" role="button" title="Toggle big cursor">
+                    <img class="spkac_option_img" alt="Big cursor is enabled" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" width="300" height="150"><noscript><img class="spkac_option_img" alt="Big cursor is enabled" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyOS4xODhweCIgaGVpZ2h0PSI0My42MjVweCIgdmlld0JveD0iMCAwIDI5LjE4OCA0My42MjUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI5LjE4OCA0My42MjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0Q5REFEOSIgc3Ryb2tlLXdpZHRoPSIxLjE0MDYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRzPSIyLjgsNC41NDkgMjYuODQ3LDE5LjkwMiAxNi45NjQsMjIuNzAxIDI0LjIzOSwzNy43NDkgMTguMjc4LDQyLjAxNyA5Ljc0MSwzMC43MjQgMS4xMzgsMzUuODA5ICIvPjxnPjxnPjxnPjxwYXRoIGZpbGw9IiMyMTI2MjciIGQ9Ik0yOS4xNzUsMjEuMTU1YzAuMDcxLTAuNjEzLTAuMTY1LTEuMjUzLTAuNjM1LTEuNTczTDIuMTY1LDAuMjU4Yy0wLjQyNC0wLjMyLTAuOTg4LTAuMzQ2LTEuNDM1LTAuMDUzQzAuMjgyLDAuNDk3LDAsMS4wMywwLDEuNjE3djM0LjE3MWMwLDAuNjEzLDAuMzA2LDEuMTQ2LDAuNzc2LDEuNDM5YzAuNDcxLDAuMjY3LDEuMDU5LDAuMjEzLDEuNDgyLTAuMTZsNy40ODItNi4zNDRsNi44NDcsMTIuMTU1YzAuMjU5LDAuNDgsMC43MjksMC43NDYsMS4yLDAuNzQ2YzAuMjM1LDAsMC40OTQtMC4wOCwwLjcwNi0wLjIxM2w2Ljk4OC00LjU4NWMwLjMyOS0wLjIxMywwLjU2NS0wLjU4NiwwLjY1OS0xLjAxM2MwLjA5NC0wLjQyNiwwLjAyNC0wLjg4LTAuMTg4LTEuMjI2bC02LjM3Ni0xMS4zODJsOC42MTEtMi43NDVDMjguNzA1LDIyLjI3NCwyOS4xMDUsMjEuNzY4LDI5LjE3NSwyMS4xNTV6IE0xNi45NjQsMjIuNzAxYy0wLjQyNCwwLjEzMy0wLjc3NiwwLjUwNi0wLjk0MSwwLjk2Yy0wLjE2NSwwLjQ4LTAuMTE4LDEuMDEzLDAuMTE4LDEuNDM5bDYuNTg4LDExLjc4MWwtNC41NDEsMi45ODVsLTYuODk0LTEyLjMxNWMtMC4yMTItMC4zNzMtMC41NDEtMC42NC0wLjk0MS0wLjcyYy0wLjA5NC0wLjAyNy0wLjE2NS0wLjAyNy0wLjI1OS0wLjAyN2MtMC4zMDYsMC0wLjU4OCwwLjEwNy0wLjg0NywwLjMyTDIuOCwzMi41OVY0LjU0OWwyMS41OTksMTUuODA2TDE2Ljk2NCwyMi43MDF6Ii8+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg=="></noscript> <span class="option-text">Big Cursor</span> <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+
+                <a class="spkac_menu_item_3" tabindex="2" data-class="s3" role="button" title="Toggle contrast">
+                    <img class="spkac_option_img spkac_option_img_v1" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_option_img spkac_option_img_v1" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMjcuOTk3cHgiIGhlaWdodD0iMTAyLjA5MXB4IiB2aWV3Qm94PSIwIDAgMTI3Ljk5NyAxMDIuMDkxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjcuOTk3IDEwMi4wOTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik04MC40OTgsMzcuNTA4YzAtOC42NDgtNi42NTctMTUuNzMtMTUuMTI0LTE2LjQzVjQuMDA4aC02MS41djcwLjVoNjEuNXYtMjAuNTdDNzMuODQxLDUzLjIzOCw4MC40OTgsNDYuMTU2LDgwLjQ5OCwzNy41MDh6Ii8+PHBhdGggZD0iTTQ3LjQ5OCwzNy41MDhjMCw5LjExMyw3LjM4NywxNi41LDE2LjUsMTYuNXYtMzNDNTQuODg1LDIxLjAwOCw0Ny40OTgsMjguMzk2LDQ3LjQ5OCwzNy41MDh6Ii8+PHBhdGggZD0iTTEyNy45OTQsNS42MTRjLTAuMDAxLTQuMzkzLTEuMjAxLTUuNTk4LTUuNjEtNS41OTljLTE5LjQwOS0wLjAwNi0zOC44MTctMC4wMDMtNTguMjI2LTAuMDAzYzAtMC4wMDQsMC0wLjAwNywwLTAuMDExQzU5LjQxMSwwLDU0LjY2MywwLDQ5LjkxNSwwQzM0LjkyMSwwLjAwMywxOS45MjctMC4wMDQsNC45MzQsMC4wMmMtMy4yNCwwLjAwNS00LjkxNiwxLjQ0Ni00LjkxOCw0LjI3NGMtMC4wMjIsMjMuODIzLTAuMDE5LDQ3LjY0Ny0wLjAwMSw3MS40N2MwLjAwMiwyLjQwMSwxLjU3Nyw0LjA1NSwzLjk1Nyw0LjIxMWMxLjQ5MywwLjA5OCwyLjk5OCwwLjAzOCw0LjQ5NywwLjAzOGMxMy42NjEsMCwyNy4zMjIsMC4wMzEsNDAuOTgzLTAuMDQxYzEuOTY2LTAuMDEsMi43NDcsMC41MTksMi40NTgsMi41NTNjLTAuMzI4LDIuMzA2LTAuNTMxLDQuNjM1LTAuNjc2LDYuOTYyYy0wLjE5MiwzLjA5NS0xLjcwMyw1LjMxNy00LjI3Nyw2LjkwN2MtMS4yNzMsMC43ODYtMi41NTIsMS41NjQtMy44MjcsMi4zNDljLTAuOTA1LDAuNTU4LTIuMTk3LDEtMS45MDUsMi4zMDdjMC4zMywxLjQ3NywxLjc2NiwwLjk0NywyLjc1LDAuOTQ5YzEzLjMyOCwwLjAzNCwyNi42NTUsMC4wMzQsMzkuOTgzLDAuMDAxYzAuOTkzLTAuMDAyLDIuNDE2LDAuNTE5LDIuODA0LTAuODljMC4zNjEtMS4zMTMtMC44NzYtMS44OTktMS44NS0yLjMwNmMtNi4yMjQtMi42MDMtOC45NjItNy4zMjEtOC42NDUtMTMuOTYxYzAuMDI4LTAuNTc4LTAuMDI0LTEuMTc0LTAuMTM5LTEuNzQxYy0wLjQ3NS0yLjM1MSwwLjMxMi0zLjE3LDIuODM1LTMuMTVjMTQuNDEsMC4xMTQsMjguODIxLDAuMDU4LDQzLjIzMSwwLjA1M2M0LjYxNS0wLjAwMiw1LjgwMS0xLjE2MSw1LjgwMS01LjY2OUMxMjcuOTk3LDUxLjQyOCwxMjcuOTk4LDI4LjUyMSwxMjcuOTk0LDUuNjE0eiBNOC41MTEsNzIuMDQ4Yy0xLjk2OCwwLjAwMy0yLjU2My0wLjU2NC0yLjU1Ny0yLjU0N0M2LjAxOSw0OS4xNzUsNi4wMjksMjguODQ4LDUuOTQ2LDguNTIxQzUuOTM3LDYuMjcsNi44NDgsNS45NjksOC43NTYsNS45NzRjMTguNDEsMC4wNTQsMzYuODIxLDAuMDMyLDU1LjIzMSwwLjAzMmMwLDAuMDA1LDAsMC4wMSwwLDAuMDE1YzAuMDA0LDAsMC4wMDgsMCwwLjAxMSwwdjE0Ljk4N2M5LjExMywwLDE2LjUsNy4zODcsMTYuNSwxNi41YzAsOS4xMTMtNy4zODcsMTYuNS0xNi41LDE2LjV2MThDNDUuNTAzLDcyLjAwOSwyNy4wMDcsNzIuMDIyLDguNTExLDcyLjA0OHoiLz48L2c+PC9zdmc+"></noscript> <img class="spkac_option_img spkac_option_img_v2" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_option_img spkac_option_img_v2" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMjcuOTk3cHgiIGhlaWdodD0iMTAyLjA5MXB4IiB2aWV3Qm94PSIwIDAgMTI3Ljk5NyAxMDIuMDkxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjcuOTk3IDEwMi4wOTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0xMjcuOTk0LDUuNjE0Yy0wLjAwMS00LjM5My0xLjIwMS01LjU5OC01LjYxLTUuNTk5Yy0xOS40MDktMC4wMDYtMzguODE3LTAuMDAzLTU4LjIyNS0wLjAwM2MwLTAuMDA0LDAtMC4wMDcsMC0wLjAxMUM1OS40MTEsMCw1NC42NjMsMCw0OS45MTUsMEMzNC45MjEsMC4wMDMsMTkuOTI3LTAuMDA0LDQuOTM0LDAuMDJjLTMuMjQsMC4wMDUtNC45MTYsMS40NDYtNC45MTgsNC4yNzRjLTAuMDIyLDIzLjgyMy0wLjAxOSw0Ny42NDctMC4wMDEsNzEuNDdjMC4wMDIsMi40MDEsMS41NzcsNC4wNTUsMy45NTcsNC4yMTFjMS40OTMsMC4wOTgsMi45OTcsMC4wMzgsNC40OTcsMC4wMzhjMTMuNjYxLDAsMjcuMzIyLDAuMDMxLDQwLjk4My0wLjA0MWMxLjk2Ni0wLjAxLDIuNzQ3LDAuNTE5LDIuNDU4LDIuNTUzYy0wLjMyOCwyLjMwNi0wLjUzMSw0LjYzNS0wLjY3Niw2Ljk2MmMtMC4xOTIsMy4wOTUtMS43MDMsNS4zMTctNC4yNzcsNi45MDdjLTEuMjc0LDAuNzg2LTIuNTUyLDEuNTY0LTMuODI3LDIuMzQ5Yy0wLjkwNSwwLjU1OC0yLjE5NywxLTEuOTA1LDIuMzA3YzAuMzMsMS40NzcsMS43NjYsMC45NDcsMi43NSwwLjk0OWMxMy4zMjgsMC4wMzQsMjYuNjU1LDAuMDM0LDM5Ljk4MywwLjAwMWMwLjk5My0wLjAwMiwyLjQxNiwwLjUxOSwyLjgwNC0wLjg5YzAuMzYyLTEuMzEzLTAuODc2LTEuODk5LTEuODUtMi4zMDZjLTYuMjI0LTIuNjAzLTguOTYyLTcuMzIxLTguNjQ1LTEzLjk2MWMwLjAyOC0wLjU3OC0wLjAyNC0xLjE3NC0wLjEzOC0xLjc0MWMtMC40NzUtMi4zNTEsMC4zMTItMy4xNywyLjgzNS0zLjE1YzE0LjQxLDAuMTE0LDI4LjgyMSwwLjA1OCw0My4yMzEsMC4wNTNjNC42MTUtMC4wMDIsNS44MDEtMS4xNjEsNS44MDEtNS42NjlDMTI3Ljk5Nyw1MS40MjgsMTI3Ljk5NywyOC41MjEsMTI3Ljk5NCw1LjYxNHoiLz48Y2lyY2xlIGZpbGw9IiNGRkZGRkYiIGN4PSI2My45OTgiIGN5PSIzOS41MDgiIHI9IjEzLjUiLz48L3N2Zz4="></noscript> <img class="spkac_option_img spkac_option_img_v3 entered lazyloading" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" data-ll-status="loading" width="300" height="150"><noscript><img class="spkac_option_img spkac_option_img_v3" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxMjcuOTk3cHgiIGhlaWdodD0iMTAyLjA5MXB4IiB2aWV3Qm94PSIwIDAgMTI3Ljk5NyAxMDIuMDkxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjcuOTk3IDEwMi4wOTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjMuNzU5IiB5PSIzLjY3NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEyMC4zMzMiIGhlaWdodD0iNzEiLz48Zz48cGF0aCBkPSJNNjQuMTU5LDAuMDExYzE5LjQwOCwwLDM4LjgxNy0wLjAwNCw1OC4yMjUsMC4wMDNjNC40MDksMC4wMDEsNS42MDksMS4yMDYsNS42MSw1LjU5OWMwLjAwMywyMi45MDcsMC4wMDMsNDUuODE0LDAsNjguNzIxYy0wLjAwMSw0LjUwOC0xLjE4Niw1LjY2OC01LjgwMSw1LjY2OWMtMTQuNDExLDAuMDA1LTI4LjgyMiwwLjA2MS00My4yMzEtMC4wNTNjLTIuNTIzLTAuMDItMy4zMSwwLjc5OC0yLjgzNSwzLjE1YzAuMTE1LDAuNTY3LDAuMTY2LDEuMTYzLDAuMTM4LDEuNzQxYy0wLjMxNyw2LjY0LDIuNDIsMTEuMzU4LDguNjQ1LDEzLjk2MWMwLjk3NCwwLjQwNywyLjIxMiwwLjk5MywxLjg1LDIuMzA2Yy0wLjM4OCwxLjQwOS0xLjgxMSwwLjg4Ny0yLjgwNCwwLjg5Yy0xMy4zMjgsMC4wMzMtMjYuNjU1LDAuMDMzLTM5Ljk4My0wLjAwMWMtMC45ODMtMC4wMDMtMi40MTksMC41MjgtMi43NS0wLjk0OWMtMC4yOTItMS4zMDcsMS0xLjc0OSwxLjkwNS0yLjMwN2MxLjI3NC0wLjc4NSwyLjU1My0xLjU2MywzLjgyNy0yLjM0OWMyLjU3NC0xLjU5LDQuMDg2LTMuODEyLDQuMjc3LTYuOTA3YzAuMTQ0LTIuMzI2LDAuMzQ3LTQuNjU1LDAuNjc2LTYuOTYyYzAuMjktMi4wMzQtMC40OTItMi41NjMtMi40NTgtMi41NTNjLTEzLjY2MSwwLjA3My0yNy4zMjIsMC4wNDEtNDAuOTgzLDAuMDQxYy0xLjQ5OSwwLTMuMDAzLDAuMDYtNC40OTctMC4wMzhjLTIuMzgtMC4xNTYtMy45NTUtMS44MDktMy45NTctNC4yMTFDLTAuMDA0LDUxLjk0LTAuMDA2LDI4LjExNywwLjAxNSw0LjI5NEMwLjAxOCwxLjQ2NiwxLjY5NCwwLjAyNSw0LjkzNCwwLjAyQzE5LjkyNy0wLjAwNCwzNC45MjEsMC4wMDMsNDkuOTE1LDBDNTQuNjYzLDAsNTkuNDExLDAsNjQuMTU5LDBDNjQuMTU5LDAuMDA0LDY0LjE1OSwwLjAwOCw2NC4xNTksMC4wMTF6IE02My45ODcsNi4wMjFjMC0wLjAwNSwwLTAuMDEsMC0wLjAxNWMtMTguNDEsMC0zNi44MjEsMC4wMjItNTUuMjMxLTAuMDMyQzYuODQ4LDUuOTY5LDUuOTM3LDYuMjcsNS45NDYsOC41MjFjMC4wODIsMjAuMzI2LDAuMDczLDQwLjY1MywwLjAwOCw2MC45NzljLTAuMDA2LDEuOTgzLDAuNTg4LDIuNTQ5LDIuNTU3LDIuNTQ3YzM2Ljk4OC0wLjA1Miw3My45NzUtMC4wNTIsMTEwLjk2My0wLjAwMmMxLjk1OSwwLjAwMywyLjU2OS0wLjU0NSwyLjU2Mi0yLjUzOWMtMC4wNjctMjAuMjQzLTAuMDc0LTQwLjQ4NywwLjAwNC02MC43MjljMC4wMDgtMi4yMDQtMC42MjMtMi44MTQtMi44MjItMi44MDRDMTAwLjgwOCw2LjA1OCw4Mi4zOTcsNi4wMjEsNjMuOTg3LDYuMDIxeiIvPjwvZz48Y2lyY2xlIGN4PSI2My45OTgiIGN5PSIzOS41MDgiIHI9IjEzLjUiLz48L3N2Zz4="></noscript> 
+                    <span class="spkac_option_label_v0 option-text">Contrast +</span> 
+                    <span class="spkac_option_label_v1 option-text">Invert Colors</span> 
+                    <span class="spkac_option_label_v2 option-text">Dark Contrast</span> 
+                    <span class="spkac_option_label_v3 option-text">Light Contrast</span>
+                    <div id="spkac_contrast_state_1" class="spkac_one_of_three" title="Inverted colors enabled"></div>
+                    <div id="spkac_contrast_state_2" class="spkac_two_of_three" title="High contrast (dark) enabled"></div>
+                    <div id="spkac_contrast_state_3" class="spkac_three_of_three" title="High contrast (light) enabled"></div>
+                    <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s4" class="spkac_menu_item_4" tabindex="3" role="button" title="Increase text size">
+                    <img class="spkac_option_img" alt="Bigger text is enabled" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" width="300" height="150"><noscript><img class="spkac_option_img" alt="Bigger text is enabled" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0OS4wNzhweCIgaGVpZ2h0PSIzMi45NDNweCIgdmlld0JveD0iMCAwIDQ5LjA3OCAzMi45NDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5LjA3OCAzMi45NDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiMyMTI2MjciIGQ9Ik0yOC43MTcsOC45MzhoLTEuNjAxYy0wLjE0MS0wLjU1Ny0wLjM5My0xLjIxOC0wLjc1Ny0xLjk4NWMtMC4zNjQtMC43NjYtMC43NzEtMS40ODktMS4yMi0yLjE3MWMtMC40NjYtMC43MTItMC45NzQtMS4zMzQtMS41MjUtMS44NjljLTAuNTUxLTAuNTM0LTEuMDgyLTAuODQtMS41OTQtMC45MTdjLTAuNDgxLTAuMDYyLTEuMDg2LTAuMTA4LTEuODE1LTAuMTRjLTAuNzMtMC4wMy0xLjQwNC0wLjA0Ni0yLjAyNS0wLjA0NmgtMS4zNDl2MjYuMzVjMCwwLjUxMSwwLjEwOCwwLjk3OSwwLjMyNSwxLjQwNGMwLjIxNiwwLjQyNiwwLjU5NiwwLjc1NSwxLjEzOCwwLjk4N2MwLjI3OCwwLjEwOCwwLjg2MiwwLjI1NSwxLjc1MywwLjQ0MXMxLjU4MywwLjI4NywyLjA3NywwLjMwMnYxLjY0OEg2LjU2OXYtMS42NDhjMC40MzQtMC4wMzEsMS4wOTUtMC4wOTMsMS45ODYtMC4xODZjMC44ODktMC4wOTMsMS41MDQtMC4yMDksMS44NDUtMC4zNDhjMC41MS0wLjIwMSwwLjg4Ni0wLjQ5MSwxLjEyNi0wLjg3MWMwLjIzOS0wLjM3OSwwLjM1OS0wLjg4NSwwLjM1OS0xLjUyVjEuODExSDEwLjU0Yy0wLjQ4MSwwLTEuMDc3LDAuMDEyLTEuNzg5LDAuMDM1QzguMDQsMS44NjksNy4zNiwxLjkxOSw2LjcwOSwxLjk5N0M2LjE5OSwyLjA1OSw1LjY2OCwyLjM2NCw1LjEyLDIuOTE0Yy0wLjU1LDAuNTQ5LTEuMDU3LDEuMTcyLTEuNTIyLDEuODY5Yy0wLjQ2MywwLjY5Ny0wLjg3NCwxLjQzNi0xLjIzLDIuMjE3QzIuMDExLDcuNzgxLDEuNzY1LDguNDI3LDEuNjI1LDguOTM4SDBWMGgyOC43MTdWOC45Mzh6Ii8+PHBhdGggZmlsbD0iIzIxMjYyNyIgZD0iTTMyLjM4MywyMC44Mmw1Ljg3Ny01Ljg3NmwyLjQ3LTIuNDcxbDguMzQ3LDguMzQ3bC0yLjQ3LDIuNDcxbC01Ljg3Ny01Ljg2bC01Ljg3Nyw1Ljg2TDMyLjM4MywyMC44MnoiLz48L2c+PC9zdmc+"></noscript> <span class="option-text">Bigger Text</span>
+                    <div id="spkac_font_size_state_1" title="Text size is big" class="spkac_one_of_four"></div>
+                    <div id="spkac_font_size_state_2" title="Text size is bigger" class="spkac_two_of_four"></div>
+                    <div id="spkac_font_size_state_3" title="Text size is even bigger" class="spkac_three_of_four"></div>
+                    <div id="spkac_font_size_state_4" title="Text size is huge" class="spkac_four_of_four"></div>
+                    <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s5" class="spkac_menu_item_5" tabindex="4" role="button" title="Toggle color desaturation">
+                    <img class="spkac_option_img entered lazyloading" alt="Desaturate colors is enabled" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" data-ll-status="loading" width="300" height="150"><noscript><img class="spkac_option_img" alt="Desaturate colors is enabled" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0Mi4yMTFweCIgaGVpZ2h0PSI0Mi43NTZweCIgdmlld0JveD0iMCAwIDQyLjIxMSA0Mi43NTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQyLjIxMSA0Mi43NTYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiMzNDM2MzUiIGQ9Ik0xMi41MzQsMjcuNjQzYzAsMC4wMjctMC4wMDIsMC4wNTMtMC4wMDIsMC4wOGMwLDYuMDM0LDMuNTExLDExLjIzNSw4LjU3NCwxMy42MjhjLTEuOTA0LDAuOS00LjAyNiwxLjQwNi02LjI2NiwxLjQwNkM2LjY0NCw0Mi43NTYsMCwzNi4wMjUsMCwyNy43MjJjMC00Ljg1MSwyLjI3LTkuMTYzLDUuNzkxLTExLjkxMkM2LjA0LDIwLjc3MSw4LjY2NSwyNS4wOTQsMTIuNTM0LDI3LjY0M3oiLz48cGF0aCBmaWxsPSIjOTE5MjkxIiBkPSJNNDIuMjExLDI3LjcyM2MwLDguMzAzLTYuNjQ0LDE1LjAzNC0xNC44NCwxNS4wMzRjLTIuMjQsMC00LjM2Mi0wLjUwNi02LjI2Ni0xLjQwNmM1LjA2My0yLjM5Myw4LjU3NC03LjU5NCw4LjU3NC0xMy42MjhjMC0wLjI2MS0wLjAwNy0wLjUxOS0wLjAyLTAuNzc3YzMuNTAxLTIuNzM0LDUuNzY0LTcuMDE0LDUuNzg4LTExLjgzMkMzOS41MTgsMTcuNzk0LDQyLjIxMSwyMi40MzgsNDIuMjExLDI3LjcyM3oiLz48cGF0aCBmaWxsPSIjMDgwODA4IiBkPSJNMTIuNTMyLDI3LjcyM2MwLTAuMDI3LDAuMDAyLTAuMDUzLDAuMDAyLTAuMDhjMi4zMjUsMS41MzIsNS4wOTcsMi40MjUsOC4wNzcsMi40MjVjMy40MDcsMCw2LjU0NC0xLjE2Nyw5LjA0OS0zLjEyMmMwLjAxNCwwLjI1NywwLjAyLDAuNTE2LDAuMDIsMC43NzdjMCw2LjAzNC0zLjUxMSwxMS4yMzUtOC41NzQsMTMuNjI4QzE2LjA0MiwzOC45NTcsMTIuNTMyLDMzLjc1NiwxMi41MzIsMjcuNzIzeiIvPjxwYXRoIGZpbGw9IiNENUQ0RDQiIGQ9Ik0yMS4xMDUsMTQuMDk0Yy0xLjkwNC0wLjktNC4wMjYtMS40MDYtNi4yNjYtMS40MDZjLTMuNDA3LDAtNi41NDQsMS4xNjYtOS4wNDksMy4xMjJjLTAuMDEzLTAuMjU3LTAuMDItMC41MTYtMC4wMi0wLjc3NkM1Ljc3MSw2LjczMSwxMi40MTUsMCwyMC42MTEsMGM4LjE5NywwLDE0Ljg0LDYuNzMxLDE0Ljg0LDE1LjAzNGMwLDAuMDI3LTAuMDAyLDAuMDUzLTAuMDAyLDAuMDc5Yy0yLjMyNS0xLjUzMi01LjA5Ny0yLjQyNS04LjA3OC0yLjQyNUMyNS4xMzIsMTIuNjg4LDIzLjAwOSwxMy4xOTQsMjEuMTA1LDE0LjA5NHoiLz48cGF0aCBmaWxsPSIjNzI3Mzc0IiBkPSJNMjEuMTA1LDE0LjA5NGMtNS4wNDEsMi4zODMtOC41NDIsNy41NDktOC41NzIsMTMuNTQ5Yy0zLjg2OS0yLjU0OS02LjQ5NC02Ljg3Mi02Ljc0My0xMS44MzJjMi41MDUtMS45NTYsNS42NDItMy4xMjIsOS4wNDktMy4xMjJDMTcuMDc5LDEyLjY4OCwxOS4yMDIsMTMuMTk0LDIxLjEwNSwxNC4wOTR6Ii8+PHBhdGggZmlsbD0iI0IxQjBCMCIgZD0iTTI5LjY2LDI2Ljk0NmMtMC4yODYtNS43MDItMy43MDktMTAuNTYyLTguNTU1LTEyLjg1MmMxLjkwNC0wLjksNC4wMjYtMS40MDYsNi4yNjYtMS40MDZjMi45OCwwLDUuNzUzLDAuODkzLDguMDc3LDIuNDI1QzM1LjQyMywxOS45MzIsMzMuMTYxLDI0LjIxMiwyOS42NiwyNi45NDZ6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEyLjUzNCwyNy42NDNjMC4wMy02LDMuNTMtMTEuMTY2LDguNTcyLTEzLjU0OWM0Ljg0NSwyLjI5LDguMjY3LDcuMTUsOC41NTUsMTIuODUyYy0yLjUwNSwxLjk1NS01LjY0MiwzLjEyMi05LjA0OSwzLjEyMkMxNy42MzEsMzAuMDY4LDE0Ljg1OCwyOS4xNzUsMTIuNTM0LDI3LjY0M3oiLz48L2c+PC9zdmc+"></noscript> <span class="option-text">Desaturate</span> 
+                    <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s6" class="spkac_menu_item_6" tabindex="5" role="button" title="Toggle underline links">
+                    <img class="spkac_option_img" alt="Underline links is enabled" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" width="300" height="150"><noscript><img class="spkac_option_img" alt="Underline links is enabled" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1Ni43NDJweCIgaGVpZ2h0PSIzNy4yOTFweCIgdmlld0JveD0iMCAwIDU2Ljc0MiAzNy4yOTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU2Ljc0MiAzNy4yOTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxMjYyNyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSIxLjc3NSIgeTE9IjM1LjI5MSIgeDI9IjUzLjkwMSIgeTI9IjM1LjI5MSIvPjxwYXRoIGZpbGw9IiMyMTI2MjciIGQ9Ik00NC4xMzMsMjUuMjE5bC0xMi42MS0wLjAwMmMtNi45NjMsMC4wMDItMTIuNjA5LTUuNjQ0LTEyLjYwOC0xMi42MDhjLTAuMDAyLTEuMDk1LDAuMTg2LTIuMTQsMC40NDQtMy4xNTJsNS44NiwwYzAuMjgtMC4wMDEsMC41MzIsMC4wOSwwLjc5MSwwLjE2Yy0wLjQ5LDAuODk1LTAuNzkxLDEuOTA0LTAuNzkxLDIuOTkyYy0wLjAwMSwzLjQ3OCwyLjgyOSw2LjMwNCw2LjMwNCw2LjMwNGwxMi42MDgsMGMzLjQ3OSwwLDYuMzA3LTIuODI4LDYuMzA1LTYuMzA1YzAuMDAxLTMuNDc1LTIuODI3LTYuMzAzLTYuMzA0LTYuMzA0bC00LjQ4NiwwLjAwMkMzOC41MzYsMy43NzksMzYuNzY2LDEuNjI4LDM0LjU3OCwwbDkuNTU0LDBjNi45NjQsMC4wMDEsMTIuNjA5LDUuNjQ1LDEyLjYxLDEyLjYxQzU2Ljc0MSwxOS41NzMsNTEuMDk2LDI1LjIxOCw0NC4xMzMsMjUuMjE5eiBNMTcuMDk2LDE4LjkxNWwtNC40ODgsMC4wMDFjLTMuNDc1LTAuMDAxLTYuMzA0LTIuODI5LTYuMzA1LTYuMzA1YzAuMDAxLTMuNDc4LDIuODI5LTYuMzA2LDYuMzA2LTYuMzA2bDEyLjYwOSwwLjAwMWMzLjQ3OSwwLDYuMzA1LDIuODI3LDYuMzA0LDYuMzA0YzAsMS4wODYtMC4zMDEsMi4wOTUtMC43ODgsMi45OTFjMC4yNjEsMC4wNjksMC41MDksMC4xNjEsMC43ODgsMC4xNjFsNS44NTksMC4wMDFjMC4yNjQtMS4wMTIsMC40NDYtMi4wNTcsMC40NDUtMy4xNTNDMzcuODI5LDUuNjQ3LDMyLjE4MiwwLDI1LjIxOCwwTDEyLjYxLDBDNS42NDUsMC4wMDIsMC4wMDEsNS42NDYsMCwxMi42MWMwLjAwMSw2Ljk2Myw1LjY0NywxMi42MDgsMTIuNjA5LDEyLjYwOWw5LjU1NiwwQzE5Ljk3NSwyMy41OTIsMTguMjA3LDIxLjQzOSwxNy4wOTYsMTguOTE1eiIvPjwvZz48L3N2Zz4="></noscript> 
+                    <span class="option-text">Highlight Links</span> 
+                    <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s7" class="spkac_menu_item_7" tabindex="6" role="button" title="Toggle legible fonts">
+                    <img class="spkac_option_img entered lazyloading" alt="Legible fonts is enabled" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" data-ll-status="loading" width="300" height="150"><noscript><img class="spkac_option_img" alt="Legible fonts is enabled" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzNy43NXB4IiBoZWlnaHQ9IjI3LjY3MXB4IiB2aWV3Qm94PSIwIDAgMzcuNzUgMjcuNjcxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNy43NSAyNy42NzEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxnPjxwYXRoIGZpbGw9IiMyMTI2MjciIGQ9Ik0wLjAyNSwyNi4zNDdsNy45LTI1Ljg5M0M4LjAyNSwwLjE1MSw4LjIyOCwwLDguNTMsMGg1LjIxNmMwLjMwMiwwLDAuNTA0LDAuMTUxLDAuNjA1LDAuNDU0bDcuODI0LDI1Ljc0MmMwLjA1LDAuMTUxLDAuMDc2LDAuMjUyLDAuMDc2LDAuMzAzYzAsMC40MDQtMC4yMDIsMC42MDQtMC42MDQsMC42MDRoLTQuNzI2Yy0wLjI3OCwwLTAuNDY2LTAuMTUxLTAuNTY2LTAuNDUzbC0xLjMyNC00LjY0OUg3LjI0NUw1LjkyMiwyNi42NWMtMC4xMDEsMC4zMDEtMC4yOSwwLjQ1My0wLjU2NiwwLjQ1M0gwLjYzQzAuMTI2LDI3LjEwMy0wLjA3NiwyNi44NTIsMC4wMjUsMjYuMzQ3eiBNOC40NTQsMTYuOTczaDUuMzY4bC0yLjcyMS05LjUyNkw4LjQ1NCwxNi45NzN6IE0yMi40MDMsMjEuMTY4YzAuMS0yLjExNiwwLjc2OC0zLjcyOCwyLjAwNC00LjgzOGMxLjE1OS0xLjAzMiwyLjU2NC0xLjU0OSw0LjIxNS0xLjU0OWMxLjY1LDAsMy4wMTcsMC40NDIsNC4xMDEsMS4zMjR2LTEuMjFjMC0xLjg2NS0wLjk1OC0yLjc5Ny0yLjg3My0yLjc5N2MtMS40ODcsMC0yLjgzNSwwLjY0Mi00LjA0NCwxLjkyOGMtMC40NTQsMC4zNTMtMC43ODIsMC4zMDMtMC45ODMtMC4xNTFsLTEuNTUtMi41N2MtMC4xMDEtMC4zMDMtMC4wNS0wLjU1NCwwLjE1MS0wLjc1N2MwLjkzMi0wLjkzMSwxLjk5LTEuNjEyLDMuMTc1LTIuMDRjMS40MzYtMC42MDYsMy4wNzUtMC44MzMsNC45MTQtMC42ODFzMy4yNzYsMC43MTksNC4zMDksMS43MDJjMS4yODUsMS4xMzMsMS45MjgsMi43NTksMS45MjgsNC44NzVWMjYuNjVjMCwwLjQwMi0wLjIwMiwwLjYwNC0wLjYwNSwwLjYwNGgtMy43NDJjLTAuNDAzLDAtMC42My0wLjIwMi0wLjY4MS0wLjYwNHYtMC4zNzljLTEuMTg1LDAuOTMyLTIuNTU3LDEuMzk5LTQuMTIsMS4zOTljLTEuNjg5LTAuMDUyLTMuMDg3LTAuNjE4LTQuMTk2LTEuNzAyQzIzLjEyMSwyNC43NiwyMi40NTMsMjMuMTU5LDIyLjQwMywyMS4xNjh6IE0yNy40MzEsMjEuMjQ0YzAsMC43NTcsMC4yMTQsMS4zOTksMC42NDIsMS45MjhjMC43MywwLjYwNiwxLjU4OCwwLjgyLDIuNTcxLDAuNjQ0czEuNjc1LTAuNjA2LDIuMDc5LTEuMjg2di0yLjYwOGMtMC4zMjctMC42My0wLjc5NC0xLjAyMS0xLjM5OS0xLjE3MmMtMS40MzYtMC41MDMtMi41Mi0wLjMyNy0zLjI1MSwwLjUyOUMyNy42NDQsMTkuODU5LDI3LjQzMSwyMC41MTMsMjcuNDMxLDIxLjI0NHoiLz48L2c+PC9nPjwvc3ZnPg=="></noscript> 
+                    <span class="option-text">Legible Fonts</span> 
+                    <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s9" class="spkac_menu_item_8" tabindex="7" role="button" title="Enable voice reading of page text">
+                    <img class="spkac_option_img" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" width="300" height="150"><noscript><img class="spkac_option_img" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMDAgNjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwMCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTEuOSwzNkwxLjksMzZDMC45LDM2LDAsMzUuMSwwLDM0di04QzAsMjQuOSwwLjksMjQsMS45LDI0aDBDMywyNCwzLjksMjQuOSwzLjksMjZ2OEMzLjksMzUuMSwzLDM2LDEuOSwzNnoiLz4NCgk8cGF0aCBkPSJNMzQuMSwzNkwzNC4xLDM2Yy0xLjEsMC0xLjktMC45LTEuOS0xLjl2LThjMC0xLjEsMC45LTEuOSwxLjktMS45aDBjMS4xLDAsMS45LDAuOSwxLjksMS45djhDMzYsMzUuMSwzNS4yLDM2LDM0LjEsMzZ6Ii8+DQoJPHBhdGggZD0iTTk4LjEsMzZMOTguMSwzNmMtMS4xLDAtMS45LTAuOS0xLjktMS45di04YzAtMS4xLDAuOS0xLjksMS45LTEuOWgwYzEuMSwwLDEuOSwwLjksMS45LDEuOXY4QzEwMCwzNS4xLDk5LjEsMzYsOTguMSwzNnoiDQoJCS8+DQoJPHBhdGggZD0iTTEwLDQyLjFMMTAsNDIuMWMtMS4xLDAtMS45LTAuOS0xLjktMS45VjIwYzAtMS4xLDAuOS0xLjksMS45LTEuOWgwYzEuMSwwLDEuOSwwLjksMS45LDEuOXYyMC4xDQoJCUMxMS45LDQxLjIsMTEsNDIuMSwxMCw0Mi4xeiIvPg0KCTxwYXRoIGQ9Ik00Mi4xLDQyLjFMNDIuMSw0Mi4xYy0xLjEsMC0xLjktMC45LTEuOS0xLjlWMjBjMC0xLjEsMC45LTEuOSwxLjktMS45aDBjMS4xLDAsMS45LDAuOSwxLjksMS45djIwLjENCgkJQzQ0LjEsNDEuMiw0My4yLDQyLjEsNDIuMSw0Mi4xeiIvPg0KCTxwYXRoIGQ9Ik05MCw0Mi4xTDkwLDQyLjFjLTEuMSwwLTEuOS0wLjktMS45LTEuOVYyMGMwLTEuMSwwLjktMS45LDEuOS0xLjloMGMxLjEsMCwxLjksMC45LDEuOSwxLjl2MjAuMQ0KCQlDOTIsNDEuMiw5MS4xLDQyLjEsOTAsNDIuMXoiLz4NCgk8cGF0aCBkPSJNNzMuOSw0Mi4xTDczLjksNDIuMWMtMS4xLDAtMS45LTAuOS0xLjktMS45VjIwYzAtMS4xLDAuOS0xLjksMS45LTEuOWwwLDBjMS4xLDAsMS45LDAuOSwxLjksMS45djIwLjENCgkJQzc1LjksNDEuMiw3NSw0Mi4xLDczLjksNDIuMXoiLz4NCgk8cGF0aCBkPSJNMjYuMSw0Mi4xTDI2LjEsNDIuMWMtMS4xLDAtMS45LTAuOS0xLjktMS45VjIwYzAtMS4xLDAuOS0xLjksMS45LTEuOWgwYzEuMSwwLDEuOSwwLjksMS45LDEuOXYyMC4xDQoJCUMyOCw0MS4yLDI3LjEsNDIuMSwyNi4xLDQyLjF6Ii8+DQoJPHBhdGggZD0iTTE4LDQ5LjlMMTgsNDkuOWMtMS4xLDAtMS45LTAuOS0xLjktMS45VjEyLjFjMC0xLjEsMC45LTEuOSwxLjktMS45aDBjMS4xLDAsMS45LDAuOSwxLjksMS45djM1LjkNCgkJQzIwLDQ5LDE5LjEsNDkuOSwxOCw0OS45eiIvPg0KCTxwYXRoIGQ9Ik01MCw0OS45TDUwLDQ5LjljLTEuMSwwLTEuOS0wLjktMS45LTEuOVYxMi4xYzAtMS4xLDAuOS0xLjksMS45LTEuOWgwYzEuMSwwLDEuOSwwLjksMS45LDEuOXYzNS45DQoJCUM1MS45LDQ5LDUxLjEsNDkuOSw1MCw0OS45eiIvPg0KCTxwYXRoIGQ9Ik04Miw0OS45TDgyLDQ5LjljLTEuMSwwLTEuOS0wLjktMS45LTEuOVYxMi4xYzAtMS4xLDAuOS0xLjksMS45LTEuOWgwYzEuMSwwLDEuOSwwLjksMS45LDEuOXYzNS45DQoJCUM4My45LDQ5LDgzLDQ5LjksODIsNDkuOXoiLz4NCgk8cGF0aCBkPSJNNjUuOSw0OS45TDY1LjksNDkuOWMtMS4xLDAtMS45LTAuOS0xLjktMS45VjEyLjFjMC0xLjEsMC45LTEuOSwxLjktMS45aDBjMS4xLDAsMS45LDAuOSwxLjksMS45djM1LjkNCgkJQzY3LjgsNDksNjcsNDkuOSw2NS45LDQ5Ljl6Ii8+DQoJPHBhdGggZD0iTTU3LjksNjBMNTcuOSw2MGMtMS4xLDAtMS45LTAuOS0xLjktMS45VjEuOWMwLTEuMSwwLjktMS45LDEuOS0xLjloMGMxLjEsMCwxLjksMC45LDEuOSwxLjl2NTYuMQ0KCQlDNTkuOCw1OS4xLDU4LjksNjAsNTcuOSw2MHoiLz4NCjwvZz4NCjwvc3ZnPg0K"></noscript> <!----><span class="option-text" ng-if="!vm.isActive('spkac-s9')">Read page</span><!----> <!----> <img class="spkac_check" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src=""><noscript><img class="spkac_check" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS4zMDJweCIgaGVpZ2h0PSI0MS4zMDJweCIgdmlld0JveD0iMCAwIDQxLjMwMiA0MS4zMDIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQxLjMwMiA0MS4zMDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwLjY1MSIgY3k9IjIwLjY1MSIgcj0iMjAuNjUxIi8+PGc+PHBhdGggZmlsbD0iIzA5NDA2NSIgZD0iTTIwLjY1MSwyLjM2N2MzLjMxNSwwLDYuMzc1LDAuODE3LDkuMTc5LDIuNDVzNS4wMjIsMy44NTIsNi42NTYsNi42NTVjMS42MzMsMi44MDQsMi40NSw1Ljg2NCwyLjQ1LDkuMThzLTAuODE3LDYuMzc1LTIuNDUsOS4xNzljLTEuNjMzLDIuODAzLTMuODUyLDUuMDIxLTYuNjU2LDYuNjU2Yy0yLjgwMywxLjYzMy01Ljg2NCwyLjQ1LTkuMTc5LDIuNDVjLTMuMzE2LDAtNi4zNzUtMC44MTctOS4xNzktMi40NWMtMi44MDQtMS42MzQtNS4wMjMtMy44NTItNi42NTYtNi42NTZjLTEuNjMzLTIuODAzLTIuNDUtNS44NjMtMi40NS05LjE3OXMwLjgxNy02LjM3NSwyLjQ1LTkuMThjMS42MzMtMi44MDMsMy44NTEtNS4wMjEsNi42NTYtNi42NTVDMTQuMjc1LDMuMTgzLDE3LjMzNSwyLjM2NywyMC42NTEsMi4zNjd6IE0xMS44NzQsMTguNzEzbC0xLjk3NSwxLjkzOWMxLjczMSwxLjczMSwzLjMwMywzLjM1Miw0LjcxOCw0Ljg2M2MxLjQxNCwxLjUxMiwyLjQwMSwyLjYwOSwyLjk2MiwzLjI5MmwwLjgwNSwwLjk1bDAuODA0LTEuMzE2YzAuMzQxLTAuNTYxLDEuMDM2LTEuNTk3LDIuMDg1LTMuMTA5bDMuMDM1LTQuMzUxYzAuOTc1LTEuMzksMi4xMzMtMi44NCwzLjQ3NC00LjM1MmMxLjM0MS0xLjUxMiwyLjU0Ny0yLjc3OSwzLjYyMS0zLjgwM2MtMC40MzktMC44NTMtMC44NzgtMS4yNzktMS4zMTctMS4yNzljLTAuMjQ0LDAuMTQ2LTAuNjM0LDAuNDE1LTEuMTcsMC44MDRjLTAuNTM3LDAuMzkxLTEuOTE0LDEuNTcyLTQuMTMzLDMuNTQ3Yy0yLjIxOSwxLjk3NS00Ljc5MSw0LjQyNS03LjcxNiw3LjM1MUwxMS44NzQsMTguNzEzeiIvPjwvZz48L2c+PC9zdmc+"></noscript>
+                </a>
+                <a data-class="s10" class="spkac_menu_item_9 reset" tabindex="8" role="button" title="Reset all accessibility styles"><img class="spkac_option_img inline-image entered lazyloading" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="" data-ll-status="loading" width="300" height="150"><noscript><img class="spkac_option_img inline-image" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzMS4zNzhweCIgaGVpZ2h0PSIyOC44ODJweCIgdmlld0JveD0iMCAwIDMxLjM3OCAyOC44ODIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMxLjM3OCAyOC44ODIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiMxMDhhMDAiIGQ9Ik0wLjA1OSwxMS42ODFjMC4xMDMtMC4xNjQsMC4zMDktMC4yNDYsMC42MTctMC4yNDZoMi4xMjZjMC4zNS0xLjYyNCwwLjk1Ni0zLjEzNCwxLjgxOS00LjUzMmMwLjg2My0xLjM5NiwxLjkyMi0yLjYwOSwzLjE3NS0zLjYzN2MxLjI1My0xLjAyNywyLjY1MS0xLjgyOCw0LjE5My0yLjQwM0MxMy41MywwLjI4OCwxNS4xODQsMCwxNi45NTEsMGMxLjk1MiwwLDMuODExLDAuMzgsNS41NzksMS4xNDFjMS43NjgsMC43NTksMy4zMDksMS43NzgsNC42MjQsMy4wNWMxLjMxNCwxLjI3NCwyLjM0MiwyLjgxNiwzLjA4Miw0LjYyNGMwLjc0LDEuODA5LDEuMTIsMy42NjksMS4xNDEsNS41NzljMC4wMiwxLjkxMS0wLjM2LDMuNzgxLTEuMTQxLDUuNjExYy0wLjc4MSwxLjgzLTEuODA5LDMuMzctMy4wODIsNC42MjRjLTEuMjc0LDEuMjUzLTIuODE2LDIuMjgxLTQuNjI0LDMuMDgyYy0xLjgwOSwwLjgwMS0zLjY2OCwxLjE5Mi01LjU3OSwxLjE3MWMtMy4zMywwLTYuMjk5LTEuMDI3LTguOTA5LTMuMDgyYy0wLjQ5My0wLjM3LTAuNzcxLTAuODYzLTAuODMyLTEuNDhjLTAuMDYyLTAuNjE1LDAuMDkyLTEuMTcxLDAuNDYyLTEuNjY0YzAuMzctMC40OTMsMC44NjMtMC43NzEsMS40NzktMC44MzNjMC42MTYtMC4wNiwxLjE2MSwwLjA5NCwxLjYzNCwwLjQ2M2MxLjgyOSwxLjM5OCwzLjg4NCwyLjA5NSw2LjE2NSwyLjA5NWMxLjc4OCwwLDMuNDUzLTAuNDUyLDQuOTk0LTEuMzU2YzEuNTQxLTAuOTAzLDIuNzQzLTIuMTA1LDMuNjA2LTMuNjA2czEuMzA0LTMuMTc2LDEuMzI1LTUuMDI1YzAtMS4zMzUtMC4yNjgtMi42MTktMC44MDEtMy44NTNjLTAuNTM1LTEuMjMzLTEuMjMzLTIuMjkxLTIuMDk2LTMuMTc0Yy0wLjg2My0wLjg4My0xLjkyMi0xLjU5Mi0zLjE3NS0yLjEyN2MtMS4yNTQtMC41MzMtMi41MzktMC43OTEtMy44NTMtMC43NzFjLTIuMTk5LDAtNC4xNzIsMC42NDctNS45MTgsMS45NDJjLTEuNzQ3LDEuMjk2LTIuOTM5LDIuOTctMy41NzUsNS4wMjVoMS4zMjVjMC4zMDgsMCwwLjUxMywwLjA4MiwwLjYxNiwwLjI0NmMwLjEwMywwLjE2NiwwLjA3MiwwLjM4MS0wLjA5MiwwLjY0N2wtNC4xNjIsNi44MTNjLTAuMTI0LDAuMTY0LTAuMjY4LDAuMjQ2LTAuNDMxLDAuMjQ2Yy0wLjA2MiwwLTAuMTI0LTAuMDItMC4xODUtMC4wNjJjLTAuMDYyLTAuMDQtMC4xMTQtMC4wOC0wLjE1NS0wLjEyMmwtNC4yMjMtNi44NzVDLTAuMDEzLDEyLjA2My0wLjA0NCwxMS44NDcsMC4wNTksMTEuNjgxeiIvPjwvZz48L3N2Zz4="></noscript> <span class="option-text small">Reset All</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://www.sharksatlaw.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>	<script type="rocketlazyloadscript" data-rocket-src="https://www.google.com/recaptcha/api.js"></script>
+<script>window.addEventListener('DOMContentLoaded', function() {
+window.setTimeout(function () {
+   var jqueryScript = document.createElement('script');
+   jqueryScript.src = "//demo.attorney-chat-service.com/js/min/jquery.min.js";
+   document.head.appendChild(jqueryScript);
+   var mainScript = document.createElement('script');
+   mainScript.src = "//demo.attorney-chat-service.com/js/main.js";
+   mainScript.id = "sbinit";
+   document.head.appendChild(mainScript);
+}, 10000);
+});</script>
+	
+
+
+
+</body></html>

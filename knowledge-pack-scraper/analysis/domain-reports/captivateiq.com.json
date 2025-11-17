@@ -1,0 +1,455 @@
+{
+  "domain": "captivateiq.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:22.801401",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 20,
+      "frequency": 20.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cap-footer-item",
+      "count": 61
+    },
+    {
+      "class": "cap-footer-link",
+      "count": 60
+    },
+    {
+      "class": "w-inline-block",
+      "count": 52
+    },
+    {
+      "class": "cap-drop-left-link",
+      "count": 30
+    },
+    {
+      "class": "cap-dropdow-left-item",
+      "count": 19
+    },
+    {
+      "class": "cap-drop-right-title",
+      "count": 17
+    },
+    {
+      "class": "field",
+      "count": 17
+    },
+    {
+      "class": "hs-form-field",
+      "count": 17
+    },
+    {
+      "class": "input",
+      "count": 17
+    },
+    {
+      "class": "hs-input",
+      "count": 17
+    },
+    {
+      "class": "hs-fieldtype-text",
+      "count": 16
+    },
+    {
+      "class": "w-embed",
+      "count": 14
+    },
+    {
+      "class": "cap-btn-arrow",
+      "count": 13
+    },
+    {
+      "class": "cap-btn-arrow-circle",
+      "count": 13
+    },
+    {
+      "class": "cq-nav-link",
+      "count": 9
+    },
+    {
+      "class": "cap-drop-para",
+      "count": 9
+    },
+    {
+      "class": "large-0-0-40",
+      "count": 8
+    },
+    {
+      "class": "w-container",
+      "count": 8
+    },
+    {
+      "class": "cap-drop-title",
+      "count": 8
+    },
+    {
+      "class": "w-layout-blockcontainer",
+      "count": 7
+    },
+    {
+      "class": "cap-btn-arrow-2",
+      "count": 7
+    },
+    {
+      "class": "cap-footer-title",
+      "count": 7
+    },
+    {
+      "class": "cap-footer-title-link",
+      "count": 7
+    },
+    {
+      "class": "cap-footer-list",
+      "count": 7
+    },
+    {
+      "class": "cap-drop-link-block",
+      "count": 6
+    },
+    {
+      "class": "cap-drop-left-title",
+      "count": 6
+    },
+    {
+      "class": "half",
+      "count": 6
+    },
+    {
+      "class": "nav-span",
+      "count": 6
+    },
+    {
+      "class": "explainer-body_cta",
+      "count": 6
+    },
+    {
+      "class": "explainer-body_cta-image",
+      "count": 6
+    },
+    {
+      "class": "explainer-cta_content",
+      "count": 6
+    },
+    {
+      "class": "explainer-cta_text",
+      "count": 6
+    },
+    {
+      "class": "blog-post_toc-link-wrapper",
+      "count": 6
+    },
+    {
+      "class": "blog-post_toc-link",
+      "count": 6
+    },
+    {
+      "class": "w-dyn-item",
+      "count": 6
+    },
+    {
+      "class": "w-script",
+      "count": 5
+    },
+    {
+      "class": "swiper-slide",
+      "count": 5
+    },
+    {
+      "class": "explore-swiper-slide",
+      "count": 5
+    },
+    {
+      "class": "cap-explore-link",
+      "count": 5
+    },
+    {
+      "class": "cap-explore-img",
+      "count": 5
+    },
+    {
+      "class": "cap-object-fit",
+      "count": 5
+    },
+    {
+      "class": "cap-explore-txt",
+      "count": 5
+    },
+    {
+      "class": "cap-explore-title",
+      "count": 5
+    },
+    {
+      "class": "cap-explore-content",
+      "count": 5
+    },
+    {
+      "class": "position",
+      "count": 5
+    },
+    {
+      "class": "cap-footer-col",
+      "count": 5
+    },
+    {
+      "class": "buttonContainer-0-0-35",
+      "count": 4
+    },
+    {
+      "class": "root-0-0-45",
+      "count": 4
+    },
+    {
+      "class": "mutiny-button",
+      "count": 4
+    },
+    {
+      "class": "futura-0-0-39",
+      "count": 4
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "captivateiq",
+      "count": 2
+    },
+    {
+      "id": "1",
+      "count": 2
+    },
+    {
+      "id": "hsForm_41a1c314-3bcd-4d21-b5f9-93eb63b48f17",
+      "count": 2
+    },
+    {
+      "id": "www-widgetapi-script",
+      "count": 1
+    },
+    {
+      "id": "hs-form-style41a1c314-3bcd-4d21-b5f9-93eb63b48f17_c68076c6-5200-4e5b-897f-2984ab024f08",
+      "count": 1
+    },
+    {
+      "id": "mutiny-stylesheet-eb7e17e6-205a-4023-b775-3446930901db",
+      "count": 1
+    },
+    {
+      "id": "mutiny-preact-fec9cf3d-8923-42e5-8d85-3a8b6dba1f94",
+      "count": 1
+    },
+    {
+      "id": "54e0af04-1683-f831-9270-0016778f1cdd",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-0",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-0",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-1",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-1",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-toggle-2",
+      "count": 1
+    },
+    {
+      "id": "w-dropdown-list-2",
+      "count": 1
+    },
+    {
+      "id": "clip0_2170_2",
+      "count": 1
+    },
+    {
+      "id": "clip1_2170_2",
+      "count": 1
+    },
+    {
+      "id": "w-nav-overlay-0",
+      "count": 1
+    },
+    {
+      "id": "w-node-_2d0ee4bb-a835-dcc0-c206-dfae77a3b29f-44f25bb9",
+      "count": 1
+    },
+    {
+      "id": "w-node-_2d0ee4bb-a835-dcc0-c206-dfae77a3b2b6-44f25bb9",
+      "count": 1
+    },
+    {
+      "id": "w-node-_2d0ee4bb-a835-dcc0-c206-dfae77a3b2bb-44f25bb9",
+      "count": 1
+    },
+    {
+      "id": "what-is-a-sales-commission-rate",
+      "count": 1
+    },
+    {
+      "id": "how-are-sales-commission-rates-determined",
+      "count": 1
+    },
+    {
+      "id": "what-are-the-types-of-sales-commission-structures",
+      "count": 1
+    },
+    {
+      "id": "what-is-are-the-average-sales-commission-rates-by-industry",
+      "count": 1
+    },
+    {
+      "id": "technology-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "real-estate-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "insurance-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "finance-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "auto-commission-rates",
+      "count": 1
+    },
+    {
+      "id": "pharmaceutical-commission-rates",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

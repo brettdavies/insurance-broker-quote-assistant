@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0",
+  "generated": "2025-11-09T00:00:00Z",
+  "description": "IQuote Pro Knowledge Pack - Offline insurance data for broker assistant",
+  "purpose": "PEAK6 5-day demo project",
+  "stats": {
+    "carriers": 3,
+    "states": 5,
+    "products": 4,
+    "totalDataPoints": 0,
+    "totalSources": 0,
+    "pagesScraped": 2925,
+    "extractionMethod": "LLM-based (Claude Sonnet 4.5 or GPT-4o-mini)"
+  },
+  "coverage": {
+    "carriers": ["GEICO", "Progressive", "State Farm"],
+    "states": ["CA", "TX", "FL", "NY", "IL"],
+    "products": ["auto", "home", "renters", "umbrella"]
+  },
+  "sourceAuthority": {
+    "carrier_official": 5,
+    "state_regulatory": 4,
+    "industry_org": 3,
+    "financial_site": 2,
+    "unknown": 1
+  },
+  "compliance": {
+    "prohibitedStatements": 15,
+    "requiredDisclosures": {
+      "general": 5,
+      "byState": 10,
+      "byProduct": 12
+    }
+  },
+  "pipeline": {
+    "phase1": "URL Discovery (Brave API)",
+    "phase2": "Page Fetching (crawl4ai)",
+    "phase3": "Domain Analysis (HTML pattern detection)",
+    "phase4": "Page Filtering (content extraction)",
+    "phase5": "Data Extraction (LLM)",
+    "phase6": "Carrier Aggregation (deduplication)",
+    "phase7": "Knowledge Pack Assembly (transformation)"
+  },
+  "runtime": {
+    "loadMethod": "startup (async, non-blocking)",
+    "storage": "in-memory Maps for O(1) lookup",
+    "citationTracking": "entity-level sources with footnote format",
+    "offlineGuarantee": "no web access required at runtime"
+  },
+  "notes": [
+    "Data extracted from publicly available sources Nov 6-9, 2025",
+    "Synthetic data only - no real PII",
+    "Pricing estimates for demonstration purposes",
+    "All quotes require licensed agent review before binding",
+    "Knowledge pack should be updated monthly for accuracy"
+  ]
+}

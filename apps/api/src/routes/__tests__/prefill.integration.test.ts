@@ -119,7 +119,7 @@ describe('Prefill Integration with Routing Engine', () => {
 
     expect(prefill.routing.confidence).toBe(routeDecision.confidence)
     expect(prefill.routing.confidence).toBeGreaterThanOrEqual(0)
-    expect(prefill.routing.confidence).toBeLessThanOrEqual(100) // Confidence is 0-100 percentage
+    expect(prefill.routing.confidence).toBeLessThanOrEqual(1)
   })
 
   it('should handle routing with tied carriers', async () => {

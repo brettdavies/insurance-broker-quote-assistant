@@ -1,0 +1,131 @@
+[Skip to content](https://floridaallrisk.com/geico-home-insurance-florida-guide/#content)
+* [ (888) 880-9200 ](tel:8888809200)
+[ ](https://www.facebook.com/floridaallriskinsurance) [ ](https://www.linkedin.com/company/florida-all-risk-insurance-llc/) [ ](https://www.instagram.com/fl_all_risk_insurance/) [ ](https://www.google.com/maps/place/Florida+All+Risk+Insurance/@27.7706302,-82.7082176,17z/data=!3m1!4b1!4m6!3m5!1s0x88c317487b6a6d3b:0x62152fbfbd9dfc7c!8m2!3d27.7706302!4d-82.7082176!16s%2Fg%2F11h0y9gym6?entry=ttu) [ ](https://twitter.com/FloridaAllRisk)
+* [Home](https://floridaallrisk.com/)
+* [Insurance Products](https://floridaallrisk.com/insurance_products/)
+* [Auto Insurance](https://floridaallrisk.com/insurance_products/auto-insurance/)
+* [Business & Commercial Insurance](https://floridaallrisk.com/insurance_products/business/)
+* [Commercial Property Insurance](https://floridaallrisk.com/insurance_products/business/commercial-property/)
+* [General Liability Insurance](https://floridaallrisk.com/insurance_products/business/general-liability/)
+* [Workers’ Compensation Insurance](https://floridaallrisk.com/insurance_products/business/workers-comp/)
+* [Condominium Insurance](https://floridaallrisk.com/insurance_products/condo/)
+* [Flood Insurance](https://floridaallrisk.com/insurance_products/flood/)
+* [Group Health Insurance](https://floridaallrisk.com/insurance_products/group-health/)
+* [Homeowners Insurance](https://floridaallrisk.com/insurance_products/florida_homeowners_insurance/)
+* [Recreational Vehicle Insurance](https://floridaallrisk.com/insurance_products/rec-vehicle/)
+* [Strategic Partners](https://floridaallrisk.com/insurance_products/strategic-partners/)
+* [Trucking Insurance](https://floridaallrisk.com/insurance_products/trucking-insurance/)
+* [Watercraft & Boat Insurance](https://floridaallrisk.com/insurance_products/watercraft-boat-insurance/)
+* [Additional Insurance](https://floridaallrisk.com/insurance_products/additional-insurance/)
+* [Blog](https://floridaallrisk.com/blog/)
+* [Resources](https://floridaallrisk.com/carriers/)
+* [Carriers](https://floridaallrisk.com/carriers/)
+* [Insurance Claim Numbers](https://floridaallrisk.com/claims-numbers/)
+* [Refer A Friend](https://floridaallrisk.com/refer-a-friend/)
+* [About us](https://floridaallrisk.com/about-us/)
+* [Testimonials](https://floridaallrisk.com/testimonials/)
+* [Privacy Policy](https://floridaallrisk.com/privacy-policy/)
+* [Contact Us](https://floridaallrisk.com/contact-us/)
+* [Make a Payment](https://floridaallrisk.com/make-a-payment/)
+* [Become An Agent](https://floridaallrisk.com/become-an-agent/)
+* [Join Our Team](https://floridaallrisk.com/join-our-team/)
+* [Request A Quote](https://floridaallrisk.com/get-a-quote/)
+* [Text Opt-In](https://forms.bridge.insure/florida-all-risk-text-opt-in)
+* [Texting TOS & Privacy](https://floridaallrisk.com/texting-terms-of-service-and-privacy/)
+* [Home](https://floridaallrisk.com/)
+* [Insurance Products](https://floridaallrisk.com/insurance_products/)
+* [Auto Insurance](https://floridaallrisk.com/insurance_products/auto-insurance/)
+* [Business & Commercial Insurance](https://floridaallrisk.com/insurance_products/business/)
+* [Commercial Property Insurance](https://floridaallrisk.com/insurance_products/business/commercial-property/)
+* [General Liability Insurance](https://floridaallrisk.com/insurance_products/business/general-liability/)
+* [Workers’ Compensation Insurance](https://floridaallrisk.com/insurance_products/business/workers-comp/)
+* [Condominium Insurance](https://floridaallrisk.com/insurance_products/condo/)
+* [Flood Insurance](https://floridaallrisk.com/insurance_products/flood/)
+* [Group Health Insurance](https://floridaallrisk.com/insurance_products/group-health/)
+* [Homeowners Insurance](https://floridaallrisk.com/insurance_products/florida_homeowners_insurance/)
+* [Recreational Vehicle Insurance](https://floridaallrisk.com/insurance_products/rec-vehicle/)
+* [Strategic Partners](https://floridaallrisk.com/insurance_products/strategic-partners/)
+* [Trucking Insurance](https://floridaallrisk.com/insurance_products/trucking-insurance/)
+* [Watercraft & Boat Insurance](https://floridaallrisk.com/insurance_products/watercraft-boat-insurance/)
+* [Additional Insurance](https://floridaallrisk.com/insurance_products/additional-insurance/)
+* [Blog](https://floridaallrisk.com/blog/)
+* [Resources](https://floridaallrisk.com/carriers/)
+* [Carriers](https://floridaallrisk.com/carriers/)
+* [Insurance Claim Numbers](https://floridaallrisk.com/claims-numbers/)
+* [Refer A Friend](https://floridaallrisk.com/refer-a-friend/)
+* [About us](https://floridaallrisk.com/about-us/)
+* [Testimonials](https://floridaallrisk.com/testimonials/)
+* [Privacy Policy](https://floridaallrisk.com/privacy-policy/)
+* [Contact Us](https://floridaallrisk.com/contact-us/)
+* [Make a Payment](https://floridaallrisk.com/make-a-payment/)
+* [Become An Agent](https://floridaallrisk.com/become-an-agent/)
+* [Join Our Team](https://floridaallrisk.com/join-our-team/)
+* [Request A Quote](https://floridaallrisk.com/get-a-quote/)
+* [Text Opt-In](https://forms.bridge.insure/florida-all-risk-text-opt-in)
+* [Texting TOS & Privacy](https://floridaallrisk.com/texting-terms-of-service-and-privacy/)
+[![call us:, logo](https://floridaallrisk.com/wp-content/uploads/2024/07/Logo.webp) ](https://floridaallrisk.com)
+* [ (888) 880-9200 ](tel:8888809200)
+* [ What Can We Help You Cover?  ](https://floridaallrisk.com/geico-home-insurance-florida-guide/)
+* [ Auto ](https://floridaallrisk.com/insurance_products/auto-insurance/)
+* [ Home ](https://floridaallrisk.com/insurance_products/florida_homeowners_insurance/)
+* [ Business ](https://floridaallrisk.com/insurance_products/business/)
+* [ RV ](https://floridaallrisk.com/insurance_products/rec-vehicle/)
+*![Generic avatar image representing a user profile, relevant to Florida All Risk Insurance's focus on flood insurance risk assessment.](https://secure.gravatar.com/avatar/c6efe7469afee65cb5a28e1465b9e80bd4614cb8cd46f8c85314b9a1f9aa8597?s=96&d=mm&r=g) Jason Miller
+![wind mitigation inspection - home insurance in florida](https://floridaallrisk.com/geico-home-insurance-florida-guide/)
+* Hip roof shape
+* Strong roof-to-wall attachments (clips or straps)
+* A secondary water resistance barrier on the roof deck
+* Impact-rated windows or hurricane shutters
+* Properly rated and installed garage doors
+* Full name and date of birth
+* Address of the property to be insured
+* Occupancy type (primary, secondary, seasonal, rented)
+* Year the home was built and total square footage
+* Construction type (e.g., concrete block, wood frame)
+* Roof age, material, and shape (hip/gable/flat)
+* Foundation type and number of stories
+* Any additions or major renovations and year completed
+* Security system, smoke detectors, fire sprinklers
+* Wind mitigation features (clips/straps, roof deck attachment, secondary water barrier, opening protection)
+* Details from a wind mitigation inspection report, if available
+* Current or prior insurance carrier
+* Claims filed in the last 3–5 years (dates, types, amounts)
+* Pool, screened enclosures, trampolines, or other attractive nuisances
+* Dog ownership and any animal liability history
+* Target dwelling limit (or estimated replacement cost)
+* Personal property and liability limits
+* Standard and hurricane deductible amounts you can comfortably afford
+* Four-point inspection (for older homes)
+* Wind mitigation inspection
+* Recent roof permit or completion documents, if applicable
+* [ (888) 880-9200 ](tel:8888809200)
+First Last
+* [Blog](https://floridaallrisk.com/category/blog/)
+* [HVAC Insurance](https://floridaallrisk.com/category/hvac-insurance/)
+[![small farm insurance cost](https://floridaallrisk.com/wp-content/uploads/2025/11/small-farm-insurance-cost-image.jpg) ](https://floridaallrisk.com/small-farm-insurance-cost/)
+###  [ The Price of Protection: Unpacking Small Farm Insurance Expenses ](https://floridaallrisk.com/small-farm-insurance-cost/)
+[ Read More » ](https://floridaallrisk.com/small-farm-insurance-cost/)
+[![non owner car insurance florida](https://floridaallrisk.com/wp-content/uploads/2025/11/non-owner-car-insurance-florida-guide-image.jpg) ](https://floridaallrisk.com/non-owner-car-insurance-florida-guide/)
+###  [ The Complete Guide to Non-Owner Car Insurance Florida ](https://floridaallrisk.com/non-owner-car-insurance-florida-guide/)
+[ Read More » ](https://floridaallrisk.com/non-owner-car-insurance-florida-guide/)
+First Last
+What type of insurance are you looking for?
+This site is protected by reCAPTCHA and the Google [Privacy Policy](https://policies.google.com/privacy) and [Terms of Service](https://policies.google.com/terms) apply.
+©2024. All rights reserved. | [Insurance Agency Marketing](https://anthemsoftware.com/digital-marketing-for-insurance-agencies/)
+![home, logo footer](https://floridaallrisk.com/wp-content/uploads/2024/07/logo_footer.webp)
+* [Home](https://floridaallrisk.com/)
+* [Get a Quote](https://floridaallrisk.com/get-a-quote/)
+* [Our Carriers](https://floridaallrisk.com/carriers/)
+* [Blog](https://floridaallrisk.com/blog/)
+* [Products](https://floridaallrisk.com/insurance_products/)
+* [About Us](https://floridaallrisk.com/about-us/)
+* [Contact](https://floridaallrisk.com/contact-us/)
+* [Home](https://floridaallrisk.com/)
+* [Get a Quote](https://floridaallrisk.com/get-a-quote/)
+* [Our Carriers](https://floridaallrisk.com/carriers/)
+* [Blog](https://floridaallrisk.com/blog/)
+* [Products](https://floridaallrisk.com/insurance_products/)
+* [About Us](https://floridaallrisk.com/about-us/)
+* [Contact](https://floridaallrisk.com/contact-us/)
+* 7024 Central Avenue | Saint Petersburg, FL 33707
+P [(888) 880-9200](tel:8888809200) | F 941-757-2256

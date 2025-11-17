@@ -1,0 +1,456 @@
+{
+  "domain": "hunterfan.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.206136",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 12,
+      "frequency": 12.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 266,
+      "frequency": 266.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 361,
+      "frequency": 361.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 76,
+      "frequency": 76.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "icon",
+      "count": 343
+    },
+    {
+      "class": "list-menu__item",
+      "count": 279
+    },
+    {
+      "class": "visually-hidden",
+      "count": 261
+    },
+    {
+      "class": "icon-checkmark",
+      "count": 184
+    },
+    {
+      "class": "link",
+      "count": 136
+    },
+    {
+      "class": "link--text",
+      "count": 114
+    },
+    {
+      "class": "focus-inset",
+      "count": 108
+    },
+    {
+      "class": "no-js-hidden",
+      "count": 104
+    },
+    {
+      "class": "facets__item",
+      "count": 98
+    },
+    {
+      "class": "facet-checkbox",
+      "count": 98
+    },
+    {
+      "class": "mobile-facets__item",
+      "count": 98
+    },
+    {
+      "class": "mobile-facets__label",
+      "count": 98
+    },
+    {
+      "class": "mobile-facets__checkbox",
+      "count": 98
+    },
+    {
+      "class": "mobile-facets__highlight",
+      "count": 98
+    },
+    {
+      "class": "mobile-facet__count",
+      "count": 98
+    },
+    {
+      "class": "price-item",
+      "count": 96
+    },
+    {
+      "class": "hidden",
+      "count": 95
+    },
+    {
+      "class": "facet-label",
+      "count": 86
+    },
+    {
+      "class": "facet-count",
+      "count": 86
+    },
+    {
+      "class": "gradient",
+      "count": 78
+    },
+    {
+      "class": "visually-hidden--inline",
+      "count": 72
+    },
+    {
+      "class": "button",
+      "count": 61
+    },
+    {
+      "class": "icon-arrow",
+      "count": 54
+    },
+    {
+      "class": "menu-drawer__menu-item",
+      "count": 51
+    },
+    {
+      "class": "caption",
+      "count": 51
+    },
+    {
+      "class": "button--primary",
+      "count": 50
+    },
+    {
+      "class": "icon-caret",
+      "count": 49
+    },
+    {
+      "class": "caption-large",
+      "count": 48
+    },
+    {
+      "class": "card__content",
+      "count": 48
+    },
+    {
+      "class": "card__information",
+      "count": 48
+    },
+    {
+      "class": "card__heading",
+      "count": 48
+    },
+    {
+      "class": "full-unstyled-link",
+      "count": 48
+    },
+    {
+      "class": "price-item--regular",
+      "count": 48
+    },
+    {
+      "class": "price-item--last",
+      "count": 48
+    },
+    {
+      "class": "lvl-2",
+      "count": 46
+    },
+    {
+      "class": "list-unstyled",
+      "count": 44
+    },
+    {
+      "class": "show-more-item",
+      "count": 44
+    },
+    {
+      "class": "motion-reduce",
+      "count": 41
+    },
+    {
+      "class": "js-filter",
+      "count": 39
+    },
+    {
+      "class": "site-nav",
+      "count": 37
+    },
+    {
+      "class": "]]",
+      "count": 35
+    },
+    {
+      "class": "card-color",
+      "count": 34
+    },
+    {
+      "class": "list-menu__item--link",
+      "count": 32
+    },
+    {
+      "class": "underlined-link",
+      "count": 30
+    },
+    {
+      "class": "grid__item",
+      "count": 29
+    },
+    {
+      "class": "h5",
+      "count": 28
+    },
+    {
+      "class": "lvl-1",
+      "count": 28
+    },
+    {
+      "class": "light",
+      "count": 26
+    },
+    {
+      "class": "sp-compare-main",
+      "count": 25
+    },
+    {
+      "class": "compare-1",
+      "count": 25
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "[[ objectID ]]",
+      "count": 4
+    },
+    {
+      "id": "25946292284",
+      "count": 3
+    },
+    {
+      "id": "[[ queryID ]]",
+      "count": 3
+    },
+    {
+      "id": "childlink-shop-by-price",
+      "count": 2
+    },
+    {
+      "id": "template--25785562693764__product-grid",
+      "count": 2
+    },
+    {
+      "id": "algolia-add-to-cart-[[ objectID ]]",
+      "count": 2
+    },
+    {
+      "id": "shopify-digital-wallet",
+      "count": 1
+    },
+    {
+      "id": "in-context-paypal-metadata",
+      "count": 1
+    },
+    {
+      "id": "apple-pay-shop-capabilities",
+      "count": 1
+    },
+    {
+      "id": "shopify-features",
+      "count": 1
+    },
+    {
+      "id": "shop-js-analytics",
+      "count": 1
+    },
+    {
+      "id": "__st",
+      "count": 1
+    },
+    {
+      "id": "captcha-bootstrap",
+      "count": 1
+    },
+    {
+      "id": "shopify-accelerated-checkout-styles",
+      "count": 1
+    },
+    {
+      "id": "shopify-accelerated-checkout-cart",
+      "count": 1
+    },
+    {
+      "id": "sections-script",
+      "count": 1
+    },
+    {
+      "id": "web-pixels-manager-setup",
+      "count": 1
+    },
+    {
+      "id": "184522604676",
+      "count": 1
+    },
+    {
+      "id": "284098692",
+      "count": 1
+    },
+    {
+      "id": "swym-snippet",
+      "count": 1
+    },
+    {
+      "id": "safari-flasher-pre",
+      "count": 1
+    },
+    {
+      "id": "swym-product-view-defaults",
+      "count": 1
+    },
+    {
+      "id": "shopify-section-announcement-bar",
+      "count": 1
+    },
+    {
+      "id": "shopify-section-header",
+      "count": 1
+    },
+    {
+      "id": "icon-search",
+      "count": 1
+    },
+    {
+      "id": "icon-close",
+      "count": 1
+    },
+    {
+      "id": "Details-menu-drawer-container",
+      "count": 1
+    },
+    {
+      "id": "menu-drawer",
+      "count": 1
+    },
+    {
+      "id": "Details-menu-drawer-menu-item-10-ceiling-fans",
+      "count": 1
+    },
+    {
+      "id": "link-ceiling-fans",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

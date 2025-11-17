@@ -1,0 +1,454 @@
+{
+  "domain": "sprintlaw.co.uk",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.436907",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 45,
+      "frequency": 45.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 38,
+      "frequency": 38.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 39,
+      "frequency": 39.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 251,
+      "frequency": 251.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "gform_hidden",
+      "count": 203
+    },
+    {
+      "class": "gfield",
+      "count": 102
+    },
+    {
+      "class": "field_sublabel_below",
+      "count": 102
+    },
+    {
+      "class": "field_description_below",
+      "count": 102
+    },
+    {
+      "class": "field_validation_below",
+      "count": 102
+    },
+    {
+      "class": "gfield_visibility_visible",
+      "count": 100
+    },
+    {
+      "class": "gfield--no-description",
+      "count": 100
+    },
+    {
+      "class": "gfield--type-hidden",
+      "count": 88
+    },
+    {
+      "class": "gfield--input-type-hidden",
+      "count": 86
+    },
+    {
+      "class": "ginput_container",
+      "count": 40
+    },
+    {
+      "class": "menu-item",
+      "count": 31
+    },
+    {
+      "class": "ginput_container_text",
+      "count": 31
+    },
+    {
+      "class": "fa",
+      "count": 25
+    },
+    {
+      "class": "fa-star",
+      "count": 25
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 22
+    },
+    {
+      "class": "gfield_required",
+      "count": 18
+    },
+    {
+      "class": "get-to-know-the-team-item",
+      "count": 17
+    },
+    {
+      "class": "get-to-know-the-team-image",
+      "count": 17
+    },
+    {
+      "class": "get-to-know-the-team-details",
+      "count": 17
+    },
+    {
+      "class": "get-to-know-the-team-name",
+      "count": 17
+    },
+    {
+      "class": "get-to-know-the-team-position",
+      "count": 17
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 16
+    },
+    {
+      "class": "list-item",
+      "count": 16
+    },
+    {
+      "class": "gfield_label",
+      "count": 14
+    },
+    {
+      "class": "gform-field-label",
+      "count": 14
+    },
+    {
+      "class": "row",
+      "count": 12
+    },
+    {
+      "class": "hidden_label",
+      "count": 12
+    },
+    {
+      "class": "large",
+      "count": 12
+    },
+    {
+      "class": "blog-post__related_article_image_main",
+      "count": 12
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 9
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 9
+    },
+    {
+      "class": "gfield_contains_required",
+      "count": 9
+    },
+    {
+      "class": "btn",
+      "count": 9
+    },
+    {
+      "class": "item",
+      "count": 9
+    },
+    {
+      "class": "socials-item",
+      "count": 8
+    },
+    {
+      "class": "gfield_required_asterisk",
+      "count": 7
+    },
+    {
+      "class": "menu-item-object-industry",
+      "count": 6
+    },
+    {
+      "class": "text-center",
+      "count": 6
+    },
+    {
+      "class": "top_label",
+      "count": 6
+    },
+    {
+      "class": "gfct_add",
+      "count": 6
+    },
+    {
+      "class": "gfct-",
+      "count": 6
+    },
+    {
+      "class": "gfct_end",
+      "count": 6
+    },
+    {
+      "class": "blog-post__related_article_item",
+      "count": 6
+    },
+    {
+      "class": "blog-post__related_article_image",
+      "count": 6
+    },
+    {
+      "class": "blog-post__related_article_title",
+      "count": 6
+    },
+    {
+      "class": "blog-post__related_article_date",
+      "count": 6
+    },
+    {
+      "class": "widget_text",
+      "count": 6
+    },
+    {
+      "class": "widget",
+      "count": 6
+    },
+    {
+      "class": "widget_custom_html",
+      "count": 6
+    },
+    {
+      "class": "sidebar__widget",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "false",
+      "count": 38
+    },
+    {
+      "id": "ak_js_1",
+      "count": 2
+    },
+    {
+      "id": "device",
+      "count": 2
+    },
+    {
+      "id": "all_traffic_sources",
+      "count": 2
+    },
+    {
+      "id": "browser",
+      "count": 2
+    },
+    {
+      "id": "city",
+      "count": 2
+    },
+    {
+      "id": "country",
+      "count": 2
+    },
+    {
+      "id": "fc_campaign",
+      "count": 2
+    },
+    {
+      "id": "fc_channel",
+      "count": 2
+    },
+    {
+      "id": "fc_content",
+      "count": 2
+    },
+    {
+      "id": "fc_landing",
+      "count": 2
+    },
+    {
+      "id": "fc_medium",
+      "count": 2
+    },
+    {
+      "id": "fc_referrer",
+      "count": 2
+    },
+    {
+      "id": "fc_source",
+      "count": 2
+    },
+    {
+      "id": "fc_term",
+      "count": 2
+    },
+    {
+      "id": "GA_Client_ID",
+      "count": 2
+    },
+    {
+      "id": "ip_address",
+      "count": 2
+    },
+    {
+      "id": "lc_campaign",
+      "count": 2
+    },
+    {
+      "id": "region",
+      "count": 2
+    },
+    {
+      "id": "lc_channel",
+      "count": 2
+    },
+    {
+      "id": "lc_content",
+      "count": 2
+    },
+    {
+      "id": "lc_landing",
+      "count": 2
+    },
+    {
+      "id": "lc_medium",
+      "count": 2
+    },
+    {
+      "id": "lc_referrer",
+      "count": 2
+    },
+    {
+      "id": "lc_source",
+      "count": 2
+    },
+    {
+      "id": "lc_term",
+      "count": 2
+    },
+    {
+      "id": "latitude",
+      "count": 2
+    },
+    {
+      "id": "longitude",
+      "count": 2
+    },
+    {
+      "id": "page_visits",
+      "count": 2
+    },
+    {
+      "id": "OS",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

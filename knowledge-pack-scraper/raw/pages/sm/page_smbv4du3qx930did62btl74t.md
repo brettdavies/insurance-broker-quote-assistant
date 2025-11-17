@@ -1,0 +1,435 @@
+[Skip to content](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [What Is Vacant Home Insurance?](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-what-is-vacant-home-insurance)
+  * [How It Works](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-how-vacant-home-insurance-works)
+  * [When You Need It](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-when-do-i-need-vacant-home-insurance)
+  * [What It Covers](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-what-does-vacant-home-insurance-cover)
+  * [What It Does Not Cover](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-what-does-vacant-home-insurance-not-cover)
+  * [How to Get Vacant Home Insurance](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-how-to-get-vacant-home-insurance)
+  * [Cost](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-how-much-does-vacant-home-insurance-cost)
+  * [The Bottom Line](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120#toc-the-bottom-line)
+
+
+# Vacant Home Insurance: Do You Need It? What Does It Cover?
+By
+[Lorraine Roberte](https://www.investopedia.com/lorraine-roberte-5295876)
+[Full Bio](https://www.investopedia.com/lorraine-roberte-5295876)
+Lorraine Roberte is an insurance writer for Investopedia. As a personal finance writer, her expertise includes money management and insurance-related topics. She has written hundreds of reviews of insurance products. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Updated April 16, 2025
+Fact checked by
+[Bobby L. Hickman, FLMI CLU ](https://www.investopedia.com/bobby-hickman-7484540)
+Fact checked by Bobby L. Hickman, FLMI CLU 
+[Full Bio](https://www.investopedia.com/bobby-hickman-7484540)
+Bobby L. Hickman is a longtime business and financial journalist who brings decades of experience in insurance and financial services to his editor role at Investopedia. He has worked with insurance and financial services companies, such as AFLAC, Allstate, Confederation Life, Farm Bureau, SunLife, and others. His editorial clients include the Atlanta Business Chronicle and Advisors magazine. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Part of the Series 
+Complete Guide to Homeowners Insurance 
+[ What Is Homeowners Insurance and How Does It Work? ](https://www.investopedia.com/terms/h/homeowners-insurance.asp)
+  1. [ Beginner's Overview ](https://www.investopedia.com/insurance/homeowners-insurance-guide/)
+  2. [ How Much to Buy ](https://www.investopedia.com/how-much-homeowners-insurance-do-i-need-4783621)
+  3. [ The 80% Rule ](https://www.investopedia.com/ask/answers/06/80percentrule.asp)
+  4. [ Is Home Insurance Tax Deductible? ](https://www.investopedia.com/ask/answers/111315/homeowners-insurance-tax-deductible.asp)
+
+
+  1. [ HO5 Policy vs. HO3 Policy ](https://www.investopedia.com/articles/insurance/09/ho5-home-insurance.asp)
+  2. [ Additional Living Expense (ALE) ](https://www.investopedia.com/terms/a/add_living_expense_insurance.asp)
+  3. [ Coinsurance ](https://www.investopedia.com/terms/c/coinsurance-formula.asp)
+  4. [ Actual Cash Value ](https://www.investopedia.com/terms/a/actual-cash-value.asp)
+
+
+  1. [ What Is and Isn't Covered ](https://www.investopedia.com/financial-edge/1211/what-is-and-isnt-covered-by-homeowners-insurance.aspx)
+  2. [ Roof Replacement? ](https://www.investopedia.com/ask/answers/111815/does-homeowners-insurance-cover-roof-replacement.asp)
+  3. [ Broken Pipes? ](https://www.investopedia.com/ask/answers/111815/does-homeowners-insurance-cover-broken-pipes.asp)
+  4. [ Mold? ](https://www.investopedia.com/does-homeowners-insurance-cover-mold-4782771)
+  5. [ Fire? ](https://www.investopedia.com/terms/f/fire-insurance.asp)
+  6. [ Water Exclusion Clause ](https://www.investopedia.com/terms/w/water-exclusion-clause.asp)
+
+
+  1. [ Getting the Best Quotes on Homeowners Insurance ](https://www.investopedia.com/getting-the-best-quotes-on-homeowners-insurance-5074643)
+  2. [ How to Save on Homeowners Insurance ](https://www.investopedia.com/how-to-save-on-homeowners-insurance-5075164)
+
+
+  1. [ Hazard Insurance ](https://www.investopedia.com/terms/h/hazardinsurance.asp)
+  2. [ Flood Insurance ](https://www.investopedia.com/terms/f/flood-insurance.asp)
+  3. [ Lender-Required Flood Insurance ](https://www.investopedia.com/articles/insurance/10/understanding-lender-required-flood-insurance.asp)
+  4. [ Windstorm Insurance ](https://www.investopedia.com/terms/w/windstorm-insurance.asp)
+  5. [ Hurricane Deductible ](https://www.investopedia.com/terms/h/hurricane-deductible.asp)
+
+
+  1. [ Catastrophe Insurance ](https://www.investopedia.com/terms/c/catastrophe-insurance.asp)
+  2. [ Does Homeowners Insurance Cover Renovations? ](https://www.investopedia.com/does-homeowners-insurance-cover-renovations-5075411)
+  3. [ How to Insure Your Second Home ](https://www.investopedia.com/vacation-home-insurance-how-to-insure-your-second-home-5074122)
+  4. [ Vacant Home Insurance: Do You Need It? ](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120)
+CURRENT ARTICLE
+  5. [ Vandalism and Malicious Mischeif ](https://www.investopedia.com/terms/v/vandalism-and-malicious-mischief-insurance.asp)
+  6. [ Airbnb Insurance ](https://www.investopedia.com/articles/insurance/120816/does-your-homeowners-insurance-cover-airbnb.asp)
+
+
+  1. [ Is a Home Warranty Worth It? ](https://www.investopedia.com/articles/mortgages-real-estate/11/home-warranty-worth-it.asp)
+  2. [ Home Warranty vs. Home Insurance ](https://www.investopedia.com/home-warranty-vs-home-insurance-5081270)
+
+
+Close
+##  What Is Vacant Home Insurance? 
+Vacant home insurance covers homes that aren’t being lived in full-time and have no belongings inside. You should consider this insurance if you own an empty house. It’s different from a standard homeowners insurance policy, which covers a home you or a tenant lives in. 
+Vacant home insurance is sold as a standalone policy or an endorsement for an existing homeowners policy. 
+### Key Takeaways
+  * Vacant home insurance fills the gap when a home is empty and unoccupied. Standard homeowners policies often reduce or cancel coverage after 30 to 60 days of vacancy. 
+  * Vacancy insurance generally only covers structural damage from specific risks such as fire, wind, and explosions, with optional add-ons for theft, liability, and other structures.
+  * You can buy this insurance as an endorsement or a standalone policy. If adding as an endorsement, be sure to secure coverage before the vacancy clause in your current policy is triggered.
+  * These policies can be costly—sometimes as much as 60% more than a standard home insurance policy.
+
+
+##  How Vacant Home Insurance Works 
+A house is considered vacant if it’s unoccupied and unfurnished. That means there’s no furniture or personal belongings inside and no people live there. It’s different from being unoccupied, which is when a house is furnished but no one resides inside. 
+Standard [homeowners insurance policies](https://www.investopedia.com/terms/h/homeowners-insurance.asp) typically have a vacancy clause that kicks in after the home has been vacant for 30 to 60 days. At that point, your policy’s coverage may be pared down to only protect the structure from specific perils. 
+Depending on your contract, insurers can cancel your insurance or deny [claims](https://www.investopedia.com/terms/i/insurance_claim.asp) once the vacancy clause is triggered. However, they may not do this if you inform them beforehand and take precautions to secure the house. This could include making sure the heat or air conditioner is running, installing a security system, or having someone periodically pass by the house to check on it. 
+Vacant policies can vary in length, depending on what the insurer offers. Some renew every three to six months, while others renew annually. If you cancel early, you may be able to get a prorated refund. Some insurers can change a vacant home policy to a landlord or [owner-occupied](https://www.investopedia.com/terms/o/owner-occupant.asp) policy once tenants move in. 
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+##  When Do I Need Vacant Home Insurance? 
+Vacant home insurance should be considered any time a home will sit vacant for a month or two, or long enough to trigger the vacancy clause in your policy. Many situations can cause this, such as if you: 
+  * Move into a new home when you haven’t sold your old one
+  * Own a rental property but are between renters
+  * Are in the middle of a full-scale home renovation and have completely cleared out your house
+  * Move to an assisted care facility, emptying your home before selling
+  * Have a home you’re set to inherit tied up in probate after a parent passes away
+  * Are temporarily relocated for a job on a short-term assignment
+  * Are away on military leave, and your family moves with you to a base or nearby housing 
+  * Buy a home you plan on [flipping](https://www.investopedia.com/terms/f/flipping.asp) and won’t be living in
+
+
+##  What Does Vacant Home Insurance Cover? 
+Vacant home insurance typically covers the house's structure from specific threats, such as fire and lightning. Exact coverage varies by policy, but other perils it may cover include: 
+  * Explosions
+  * Windstorms
+  * Hail
+  * Smoke
+  * Water intrusion (sprinkler, leaky pipes)
+
+
+These policies may provide [named-perils coverage](https://www.investopedia.com/terms/n/named_perils.asp), so only perils specifically listed on the policy are covered. Some insurers allow you to customize your policy. Optional coverages that may be available as add-ons include: 
+  * Vandalism and malicious mischief
+  * Theft
+  * Liability
+  * Other structures and assets (garage, surrounding land)
+
+
+### Important
+Insurance for unoccupied homes may be covered under a vacant home policy, but not always. Make sure your home has the right coverage for your situation.
+##  What Does Vacant Home Insurance Not Cover? 
+Vacant home insurance typically doesn’t cover anything beyond the home’s structure, unless you add additional coverage. As previously mentioned, insurers may also ask that you meet certain requirements to be eligible for [insurance claims](https://www.investopedia.com/terms/i/insurance_claim.asp), such as keeping the home at a minimum temperature.1
+### Note
+You might be unable to add liability coverage if your home has certain risks, such as a swing set, trampoline, or swimming pool.2
+##  How to Get Vacant Home Insurance 
+You can get vacant home insurance as a policy endorsement (if your insurer offers it) or as a standalone policy. The endorsement is sometimes called a vacancy permit. Endorsements can change some of your current policy’s coverage until people live in the home again. Your home will be insured for some, but not all, of the perils covered in the standard policy. 
+### Important
+You must request a vacancy permit endorsement before your policy’s vacancy clause kicks in.
+If you need to buy a standalone policy, shop around and get quotes to compare prices. Companies such as Farmers, Foremost, and American Family Insurance offer vacant home insurance. 
+##  How Much Does Vacant Home Insurance Cost? 
+Vacant home insurance policies could cost as much as 60% more than a standard home insurance policy.3 The latest report from the Federal Insurance Office showed the average national premium for an _occupied_ home to be $1,737 after adjusting for inflation.4 Add 60% to that and it means an average _vacant_ home policy could cost about $2,779—surprising, considering the home is empty of people and things. 
+However, insurers see vacant homes as high risk. For instance, there’s no one there to turn off the water if a pipe breaks. Empty houses can also attract vandals and intruders who damage the property. 
+##  The Bottom Line 
+An empty house might look peaceful, but to insurers, it’s a magnet for trouble. Whether you're flipping a house, relocating, or just in between life chapters, vacant home insurance can save you from financial problems arising from an unattended house. Most standard homeowners policies have a vacancy clause, making this insurance essential for continued home protection. 
+If you know your home will be unoccupied for a while, talk to your insurer to see if they offer a policy endorsement and under what terms. If they don’t provide one, shop around for a policy, as they can be pricey. 
+Sponsored
+Maximize Your Retirement Income
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstSIDgjedezAF87sUoqQ_F97NnpVSnfPWXyblQ3ROCrR1v13E5nT8mqzfEnXFNZJ1ad9kJcWg7DK1N-PyTDvXtWgTiLdUGIxzU-8dp70Nsqhu6P-B3oTApndv2PrHLUedBwt2BQEG1GFNpKUWfx5ETBwoTLgnXmXc5S2UethmNhqJGdmyJNhlfmJJZQXEjwNEig3p3AiKtdX6Hl929mXosCFWnaC0U5Q2Foda07mwib36-udxz3ZCL5P3ah06M1db4wASolS5q_NsOoTNuwI4Losr9rp-6QqGQ_nTaxPMRjbjXjLShHXe5nqxYrkN6s8H2BraiU6lEbmYbfxzpBeL0egRJQGjX_Oh7Iz3u5qu5o-7TqXzmhpZ5Q90qtl4DDriyxfA0Dw7ccQq3_C7CzXbaz1DJSGn3qumb7ddrzrOcagTAm6JwwVTtEU389nH_mQm2Or7XQ-w&sai=AMfl-YQnRxHMcLI-v2VIGIZLm3KxGI11qToJK0DUHvDpVtgI8tT4GPlCWBbgaGKXj-nUaFDkQKV98eBfuXR7MKljmjigpxav86j4IeS6Uw8UwCkoweWqrufh6xa7kx1az-T5RSmtotFBUR7PtbfgUxTVvWcjM6H8MUT4rEcAoSrpFhh49DXk803lWxbUNKuZbw-ptl9oz2CecJCMEGWk1qguP9r2z0DENxXKQzv87n4WrGZIxmmpn84RG2rnZG2hLchl2VSlfwuaGWgxmuEe4gCQ6cuHhaHnEA&sig=Cg0ArKJSzIPTAbtg7-2qEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Taking a strategic approach to investing can help you [maximize your retirement income.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstSIDgjedezAF87sUoqQ_F97NnpVSnfPWXyblQ3ROCrR1v13E5nT8mqzfEnXFNZJ1ad9kJcWg7DK1N-PyTDvXtWgTiLdUGIxzU-8dp70Nsqhu6P-B3oTApndv2PrHLUedBwt2BQEG1GFNpKUWfx5ETBwoTLgnXmXc5S2UethmNhqJGdmyJNhlfmJJZQXEjwNEig3p3AiKtdX6Hl929mXosCFWnaC0U5Q2Foda07mwib36-udxz3ZCL5P3ah06M1db4wASolS5q_NsOoTNuwI4Losr9rp-6QqGQ_nTaxPMRjbjXjLShHXe5nqxYrkN6s8H2BraiU6lEbmYbfxzpBeL0egRJQGjX_Oh7Iz3u5qu5o-7TqXzmhpZ5Q90qtl4DDriyxfA0Dw7ccQq3_C7CzXbaz1DJSGn3qumb7ddrzrOcagTAm6JwwVTtEU389nH_mQm2Or7XQ-w&sai=AMfl-YQnRxHMcLI-v2VIGIZLm3KxGI11qToJK0DUHvDpVtgI8tT4GPlCWBbgaGKXj-nUaFDkQKV98eBfuXR7MKljmjigpxav86j4IeS6Uw8UwCkoweWqrufh6xa7kx1az-T5RSmtotFBUR7PtbfgUxTVvWcjM6H8MUT4rEcAoSrpFhh49DXk803lWxbUNKuZbw-ptl9oz2CecJCMEGWk1qguP9r2z0DENxXKQzv87n4WrGZIxmmpn84RG2rnZG2hLchl2VSlfwuaGWgxmuEe4gCQ6cuHhaHnEA&sig=Cg0ArKJSzIPTAbtg7-2qEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) Vanguard Personal Advisor® will work with you to build a customized financial plan that aligns with your goals. You’ll also benefit from innovative service at a low cost, and ongoing access to advisors. Learn more about how you can [access personal financial advice and start the conversation.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstSIDgjedezAF87sUoqQ_F97NnpVSnfPWXyblQ3ROCrR1v13E5nT8mqzfEnXFNZJ1ad9kJcWg7DK1N-PyTDvXtWgTiLdUGIxzU-8dp70Nsqhu6P-B3oTApndv2PrHLUedBwt2BQEG1GFNpKUWfx5ETBwoTLgnXmXc5S2UethmNhqJGdmyJNhlfmJJZQXEjwNEig3p3AiKtdX6Hl929mXosCFWnaC0U5Q2Foda07mwib36-udxz3ZCL5P3ah06M1db4wASolS5q_NsOoTNuwI4Losr9rp-6QqGQ_nTaxPMRjbjXjLShHXe5nqxYrkN6s8H2BraiU6lEbmYbfxzpBeL0egRJQGjX_Oh7Iz3u5qu5o-7TqXzmhpZ5Q90qtl4DDriyxfA0Dw7ccQq3_C7CzXbaz1DJSGn3qumb7ddrzrOcagTAm6JwwVTtEU389nH_mQm2Or7XQ-w&sai=AMfl-YQnRxHMcLI-v2VIGIZLm3KxGI11qToJK0DUHvDpVtgI8tT4GPlCWBbgaGKXj-nUaFDkQKV98eBfuXR7MKljmjigpxav86j4IeS6Uw8UwCkoweWqrufh6xa7kx1az-T5RSmtotFBUR7PtbfgUxTVvWcjM6H8MUT4rEcAoSrpFhh49DXk803lWxbUNKuZbw-ptl9oz2CecJCMEGWk1qguP9r2z0DENxXKQzv87n4WrGZIxmmpn84RG2rnZG2hLchl2VSlfwuaGWgxmuEe4gCQ6cuHhaHnEA&sig=Cg0ArKJSzIPTAbtg7-2qEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1)
+Paid non-client promotion.
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstSIDgjedezAF87sUoqQ_F97NnpVSnfPWXyblQ3ROCrR1v13E5nT8mqzfEnXFNZJ1ad9kJcWg7DK1N-PyTDvXtWgTiLdUGIxzU-8dp70Nsqhu6P-B3oTApndv2PrHLUedBwt2BQEG1GFNpKUWfx5ETBwoTLgnXmXc5S2UethmNhqJGdmyJNhlfmJJZQXEjwNEig3p3AiKtdX6Hl929mXosCFWnaC0U5Q2Foda07mwib36-udxz3ZCL5P3ah06M1db4wASolS5q_NsOoTNuwI4Losr9rp-6QqGQ_nTaxPMRjbjXjLShHXe5nqxYrkN6s8H2BraiU6lEbmYbfxzpBeL0egRJQGjX_Oh7Iz3u5qu5o-7TqXzmhpZ5Q90qtl4DDriyxfA0Dw7ccQq3_C7CzXbaz1DJSGn3qumb7ddrzrOcagTAm6JwwVTtEU389nH_mQm2Or7XQ-w&sai=AMfl-YQnRxHMcLI-v2VIGIZLm3KxGI11qToJK0DUHvDpVtgI8tT4GPlCWBbgaGKXj-nUaFDkQKV98eBfuXR7MKljmjigpxav86j4IeS6Uw8UwCkoweWqrufh6xa7kx1az-T5RSmtotFBUR7PtbfgUxTVvWcjM6H8MUT4rEcAoSrpFhh49DXk803lWxbUNKuZbw-ptl9oz2CecJCMEGWk1qguP9r2z0DENxXKQzv87n4WrGZIxmmpn84RG2rnZG2hLchl2VSlfwuaGWgxmuEe4gCQ6cuHhaHnEA&sig=Cg0ArKJSzIPTAbtg7-2qEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N510001.110872INVESTOPEDIAUS0/B23381186.385380135;dc_trk_aid=576309121;dc_trk_cid=208405767;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstSIDgjedezAF87sUoqQ_F97NnpVSnfPWXyblQ3ROCrR1v13E5nT8mqzfEnXFNZJ1ad9kJcWg7DK1N-PyTDvXtWgTiLdUGIxzU-8dp70Nsqhu6P-B3oTApndv2PrHLUedBwt2BQEG1GFNpKUWfx5ETBwoTLgnXmXc5S2UethmNhqJGdmyJNhlfmJJZQXEjwNEig3p3AiKtdX6Hl929mXosCFWnaC0U5Q2Foda07mwib36-udxz3ZCL5P3ah06M1db4wASolS5q_NsOoTNuwI4Losr9rp-6QqGQ_nTaxPMRjbjXjLShHXe5nqxYrkN6s8H2BraiU6lEbmYbfxzpBeL0egRJQGjX_Oh7Iz3u5qu5o-7TqXzmhpZ5Q90qtl4DDriyxfA0Dw7ccQq3_C7CzXbaz1DJSGn3qumb7ddrzrOcagTAm6JwwVTtEU389nH_mQm2Or7XQ-w&sai=AMfl-YQnRxHMcLI-v2VIGIZLm3KxGI11qToJK0DUHvDpVtgI8tT4GPlCWBbgaGKXj-nUaFDkQKV98eBfuXR7MKljmjigpxav86j4IeS6Uw8UwCkoweWqrufh6xa7kx1az-T5RSmtotFBUR7PtbfgUxTVvWcjM6H8MUT4rEcAoSrpFhh49DXk803lWxbUNKuZbw-ptl9oz2CecJCMEGWk1qguP9r2z0DENxXKQzv87n4WrGZIxmmpn84RG2rnZG2hLchl2VSlfwuaGWgxmuEe4gCQ6cuHhaHnEA&sig=Cg0ArKJSzIPTAbtg7-2qEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=)
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. National Association of Insurance Commissioners. “[Will My Homeowners Insurance Policy Cover Water Damage From a Burst Pipe?](https://content.naic.org/article/will-my-homeowners-insurance-policy-cover-water-damage-burst-pipe)”
+  2. US Assure. “[What Does Vacant Home Insurance Cover?](https://usassure.com/resources/articles/what-does-vacant-home-insurance-cover)”
+  3. Insurance Information Institute. “[A Vacant Home Still Needs Insurance](https://www.iii.org/press-release/a-vacant-home-still-needs-insurance-dont-be-caught-without-coverage-111909).”
+  4. Federal Insurance Office. “[Analyses of U.S. Homeowners Insurance Markets, 2018-2022: Climate-Related Risks and Other Factors](https://home.treasury.gov/system/files/311/Analyses_of_US_Homeowners_Insurance_Markets_2018-2022_Climate-Related_Risks_and_Other_Factors_0.pdf).” Page 13.
+
+
+Part of the Series 
+Complete Guide to Homeowners Insurance 
+[ What Is Homeowners Insurance and How Does It Work? ](https://www.investopedia.com/terms/h/homeowners-insurance.asp)
+  1. [ Beginner's Overview ](https://www.investopedia.com/insurance/homeowners-insurance-guide/)
+  2. [ How Much to Buy ](https://www.investopedia.com/how-much-homeowners-insurance-do-i-need-4783621)
+  3. [ The 80% Rule ](https://www.investopedia.com/ask/answers/06/80percentrule.asp)
+  4. [ Is Home Insurance Tax Deductible? ](https://www.investopedia.com/ask/answers/111315/homeowners-insurance-tax-deductible.asp)
+
+
+  1. [ HO5 Policy vs. HO3 Policy ](https://www.investopedia.com/articles/insurance/09/ho5-home-insurance.asp)
+  2. [ Additional Living Expense (ALE) ](https://www.investopedia.com/terms/a/add_living_expense_insurance.asp)
+  3. [ Coinsurance ](https://www.investopedia.com/terms/c/coinsurance-formula.asp)
+  4. [ Actual Cash Value ](https://www.investopedia.com/terms/a/actual-cash-value.asp)
+
+
+  1. [ What Is and Isn't Covered ](https://www.investopedia.com/financial-edge/1211/what-is-and-isnt-covered-by-homeowners-insurance.aspx)
+  2. [ Roof Replacement? ](https://www.investopedia.com/ask/answers/111815/does-homeowners-insurance-cover-roof-replacement.asp)
+  3. [ Broken Pipes? ](https://www.investopedia.com/ask/answers/111815/does-homeowners-insurance-cover-broken-pipes.asp)
+  4. [ Mold? ](https://www.investopedia.com/does-homeowners-insurance-cover-mold-4782771)
+  5. [ Fire? ](https://www.investopedia.com/terms/f/fire-insurance.asp)
+  6. [ Water Exclusion Clause ](https://www.investopedia.com/terms/w/water-exclusion-clause.asp)
+
+
+  1. [ Getting the Best Quotes on Homeowners Insurance ](https://www.investopedia.com/getting-the-best-quotes-on-homeowners-insurance-5074643)
+  2. [ How to Save on Homeowners Insurance ](https://www.investopedia.com/how-to-save-on-homeowners-insurance-5075164)
+
+
+  1. [ Hazard Insurance ](https://www.investopedia.com/terms/h/hazardinsurance.asp)
+  2. [ Flood Insurance ](https://www.investopedia.com/terms/f/flood-insurance.asp)
+  3. [ Lender-Required Flood Insurance ](https://www.investopedia.com/articles/insurance/10/understanding-lender-required-flood-insurance.asp)
+  4. [ Windstorm Insurance ](https://www.investopedia.com/terms/w/windstorm-insurance.asp)
+  5. [ Hurricane Deductible ](https://www.investopedia.com/terms/h/hurricane-deductible.asp)
+
+
+  1. [ Catastrophe Insurance ](https://www.investopedia.com/terms/c/catastrophe-insurance.asp)
+  2. [ Does Homeowners Insurance Cover Renovations? ](https://www.investopedia.com/does-homeowners-insurance-cover-renovations-5075411)
+  3. [ How to Insure Your Second Home ](https://www.investopedia.com/vacation-home-insurance-how-to-insure-your-second-home-5074122)
+  4. [ Vacant Home Insurance: Do You Need It? ](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120)
+CURRENT ARTICLE
+  5. [ Vandalism and Malicious Mischeif ](https://www.investopedia.com/terms/v/vandalism-and-malicious-mischief-insurance.asp)
+  6. [ Airbnb Insurance ](https://www.investopedia.com/articles/insurance/120816/does-your-homeowners-insurance-cover-airbnb.asp)
+
+
+  1. [ Is a Home Warranty Worth It? ](https://www.investopedia.com/articles/mortgages-real-estate/11/home-warranty-worth-it.asp)
+  2. [ Home Warranty vs. Home Insurance ](https://www.investopedia.com/home-warranty-vs-home-insurance-5081270)
+
+
+Read more
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Insurance](https://www.investopedia.com/insurance-4427716)
+  * [Home Insurance](https://www.investopedia.com/home-insurance-4427711)
+
+
+Partner Links
+## Related Articles
+[ Understanding the 80% Rule in Home Insurance Coverage ](https://www.investopedia.com/ask/answers/06/80percentrule.asp) [ Understanding Recoverable Depreciation in Home Insurance Policies ](https://www.investopedia.com/articles/taxes/090116/recoverable-depreciation-how-it-works.asp) [ Casualty Insurance: Types, Benefits, and Examples ](https://www.investopedia.com/terms/c/casualtyinsurance.asp) [ Personal Liability Insurance: Coverage, Benefits, and Key Facts ](https://www.investopedia.com/terms/c/comprehensive-personal-liability.asp) [ Understanding First-Loss Policies: Coverage, Pros, and Cons ](https://www.investopedia.com/terms/f/first-loss-policy.asp) [ The Mortgage Threat No One Talks About: When Your Homeowners Insurance Is Canceled ](https://www.investopedia.com/the-mortgage-threat-no-one-talks-about-when-your-homeowners-insurance-is-canceled-11812668) [ Borrowing Against Life Insurance: Pros, Cons, and How-Tos ](https://www.investopedia.com/articles/personal-finance/121914/understanding-life-insurance-loans.asp) [ Loan Protection Insurance: Benefits, Costs, and Considerations ](https://www.investopedia.com/articles/pf/08/loan-protection-insurance.asp)
+[ Compare Medicare Advantage and Supplement Plans for Optimal Coverage ](https://www.investopedia.com/articles/personal-finance/071014/medigap-vs-medicare-advantage-which-better.asp) [ Steps to Take When Your Insurance Claim is Denied ](https://www.investopedia.com/financial-edge/0211/what-to-do-when-insurance-companies-wont-pay.aspx) [ Insurers Are Cutting Medicare Advantage in 2026: How Hard Is Your County Being Hit?  ](https://www.investopedia.com/insurers-are-cutting-medicare-advantage-in-2026-how-hard-is-your-county-being-hit-11842858) [ Essential Disability Insurance Tips for Business Owners ](https://www.investopedia.com/articles/personal-finance/061214/disability-insurance-business-owners.asp) [ 5 Best Universal Life Insurance Companies of November 2025 ](https://www.investopedia.com/the-best-universal-life-insurance-8762927) [ Best Dental Insurance Companies for November 2025 ](https://www.investopedia.com/the-best-dental-insurance-companies-8763833) [ Borrow Money From Life Insurance: How It Works and Key Considerations ](https://www.investopedia.com/ask/answers/111314/how-can-i-borrow-money-my-life-insurance-policy.asp) [ Determine Your Ideal Life Insurance Coverage: A Comprehensive Guide ](https://www.investopedia.com/articles/pf/06/insureneeds.asp)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/vacant-home-insurance-do-you-need-it-what-does-it-cover-5074120)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=5074120&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fvacant-home-insurance-do-you-need-it-what-does-it-cover-5074120&Event=&Key1=4173514&Key2=4427760&Key3=4427716&Key4=4427711&Key5=)

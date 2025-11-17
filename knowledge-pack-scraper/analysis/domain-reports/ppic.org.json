@@ -1,0 +1,415 @@
+{
+  "domain": "ppic.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.166458",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 96,
+      "frequency": 96.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 9,
+      "frequency": 9.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "duration-200",
+      "count": 97
+    },
+    {
+      "class": "transition-colors",
+      "count": 92
+    },
+    {
+      "class": "w-full",
+      "count": 59
+    },
+    {
+      "class": "block",
+      "count": 54
+    },
+    {
+      "class": "text-sm",
+      "count": 53
+    },
+    {
+      "class": "logo-fill-gold",
+      "count": 49
+    },
+    {
+      "class": "hover:text-gray-mid",
+      "count": 46
+    },
+    {
+      "class": "hidden",
+      "count": 31
+    },
+    {
+      "class": "hover:text-gray-hover-light",
+      "count": 30
+    },
+    {
+      "class": "inline-block",
+      "count": 28
+    },
+    {
+      "class": "mb-3",
+      "count": 27
+    },
+    {
+      "class": "mb-4",
+      "count": 25
+    },
+    {
+      "class": "mb-1",
+      "count": 25
+    },
+    {
+      "class": "flex",
+      "count": 22
+    },
+    {
+      "class": "mb-2",
+      "count": 21
+    },
+    {
+      "class": "w-5",
+      "count": 21
+    },
+    {
+      "class": "h-5",
+      "count": 21
+    },
+    {
+      "class": "logo-fill-orange",
+      "count": 20
+    },
+    {
+      "class": "font-bold",
+      "count": 19
+    },
+    {
+      "class": "logo-stroke-gray",
+      "count": 18
+    },
+    {
+      "class": "fill-current",
+      "count": 18
+    },
+    {
+      "class": "text-gray-dark",
+      "count": 18
+    },
+    {
+      "class": "font-serif",
+      "count": 17
+    },
+    {
+      "class": "text-white",
+      "count": 17
+    },
+    {
+      "class": "perfmatters-lazy",
+      "count": 16
+    },
+    {
+      "class": "uppercase",
+      "count": 16
+    },
+    {
+      "class": "flex-wrap",
+      "count": 15
+    },
+    {
+      "class": "tracking-widest",
+      "count": 15
+    },
+    {
+      "class": "antialiased",
+      "count": 14
+    },
+    {
+      "class": "pointer-events-none",
+      "count": 13
+    },
+    {
+      "class": "flex-row",
+      "count": 13
+    },
+    {
+      "class": "relative",
+      "count": 13
+    },
+    {
+      "class": "border-gray-border",
+      "count": 12
+    },
+    {
+      "class": "px-4",
+      "count": 12
+    },
+    {
+      "class": "mb-6",
+      "count": 11
+    },
+    {
+      "class": "text-xs",
+      "count": 11
+    },
+    {
+      "class": "mx-auto",
+      "count": 10
+    },
+    {
+      "class": "lg:w-1/2",
+      "count": 10
+    },
+    {
+      "class": "p-6",
+      "count": 10
+    },
+    {
+      "class": "text-lg",
+      "count": 10
+    },
+    {
+      "class": "lg:flex",
+      "count": 9
+    },
+    {
+      "class": "shadow-halo",
+      "count": 9
+    },
+    {
+      "class": "content-center",
+      "count": 9
+    },
+    {
+      "class": "leading-none",
+      "count": 9
+    },
+    {
+      "class": "bg-white",
+      "count": 9
+    },
+    {
+      "class": "text-center",
+      "count": 9
+    },
+    {
+      "class": "lg:inline-block",
+      "count": 8
+    },
+    {
+      "class": "notch",
+      "count": 8
+    },
+    {
+      "class": "cursor-pointer",
+      "count": 8
+    },
+    {
+      "class": "text-gray-mid",
+      "count": 8
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "perfmatters-used-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "safe-svg-svg-icon-style-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "style-css",
+      "count": 1
+    },
+    {
+      "id": "exactmetrics-frontend-script-js",
+      "count": 1
+    },
+    {
+      "id": "exactmetrics-frontend-script-js-extra",
+      "count": 1
+    },
+    {
+      "id": "app-js",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "dom-slider",
+      "count": 1
+    },
+    {
+      "id": "top",
+      "count": 1
+    },
+    {
+      "id": "search-string",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "latest-research",
+      "count": 1
+    },
+    {
+      "id": "footer-js",
+      "count": 1
+    },
+    {
+      "id": "perfmatters-lazy-load-js-before",
+      "count": 1
+    },
+    {
+      "id": "perfmatters-lazy-load-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-js-after",
+      "count": 1
+    },
+    {
+      "id": "perfmatters-delayed-scripts-js",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

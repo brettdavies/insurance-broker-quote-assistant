@@ -1,0 +1,790 @@
+{
+  "websearch_id": "websearch_orv4g5utsuly15wwj4bqel3a",
+  "search_id": "search_zgqz4vx2i1ytz2zh4mrq15kl",
+  "timestamp": "2025-11-07T12:22:14.285460",
+  "startedAt": "2025-11-07T12:22:14.285460",
+  "completedAt": "2025-11-07T12:22:16.292149",
+  "durationSeconds": 2.01,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"GEICO\" \"defensive driving\" discount percentage",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"GEICO\" \"defensive driving\" discount percentage",
+      "show_strict_warning": false,
+      "cleaned": "GEICO defensive driving discount percentage",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "GEICO defensive driving discount percentage"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "How to Save With the GEICO Defensive Driving Discount",
+          "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-defensive-driver-discount",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "GEICO rewards drivers who complete a state-approved defensive driving course with a defensive driver discount of up to 15% on car insurance.",
+          "page_age": "2025-03-21T19:00:00",
+          "profile": {
+            "name": "Compare",
+            "url": "https://www.compare.com/auto-insurance/cheap-car-insurance/discounts/geico-defensive-driver-discount",
+            "long_name": "compare.com",
+            "img": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "compare.com",
+            "hostname": "www.compare.com",
+            "favicon": "https://imgs.search.brave.com/uMq8_oaJzVsXzJYZ7OLCCgcYkLV4980AijJknPKSJXM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNDMwZDNmM2Ey/MWYxOTk4YWQ0ZGE5/NzU5MWZiMmU4NWY4/ZDgyNTVmMzBkNWQ4/MjcyOThjY2I5NTgw/ZTkxN2Y1Ny93d3cu/Y29tcGFyZS5jb20v",
+            "path": "  \u203a auto insurance  \u203a cheap car insurance  \u203a discounts  \u203a geico defensive driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qqPbORVi2MY6Gblmi_s_rtwiZTiF9CjnE-36M8xtO3E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8yOTU1MDgvMTIw/MHg5MDAvNjc2NjMz/NTkzZi9tYW4tZHJp/dmluZy1oZXJvLmpw/Zw",
+            "original": "https://a.storyblok.com/f/295508/1200x900/676633593f/man-driving-hero.jpg",
+            "logo": false
+          },
+          "age": "March 21, 2025"
+        },
+        {
+          "title": "GEICO Defensive Driving Discount Course | New York | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/new-york/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "New York drivers are eligible for a 10% discount on their liability and collision premiums for three years after completing a DMV-approved defensive driving course.",
+          "page_age": "2025-10-29T10:37:45",
+          "profile": {
+            "name": "IMPROV\u00ae",
+            "url": "https://www.myimprov.com/geico/new-york/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico new york"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Best Defensive Driver Car Insurance Discounts in 2025 (Save up to 31% With These Companies) | Clearsurance",
+          "url": "https://clearsurance.com/blog/best-defensive-driver-car-insurance-discounts",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Progressive Insurance offers the highest cut at 31%, while Travelers comes in at 20%, and Geico and State Farm each offer 15%. Progressive leads with the biggest defensive driving discount at 31%, while Travelers offers 20%, and both Geico and ...",
+          "page_age": "2025-05-04T11:49:06",
+          "profile": {
+            "name": "Clearsurance -",
+            "url": "https://clearsurance.com/blog/best-defensive-driver-car-insurance-discounts",
+            "long_name": "clearsurance.com",
+            "img": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "clearsurance.com",
+            "hostname": "clearsurance.com",
+            "favicon": "https://imgs.search.brave.com/KcX9p4u9Y6Gb4ybHTKD6RJ7aDtcyBA1hsroH-6pxVKc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY1ZTZhMWJj/ODc5NjIzOTgzODAw/NjYzZDgzNGYzZDY0/MmFhMzA1YTcxNzc1/OTBjNTBmM2M0M2Fj/N2I5ZjkzZS9jbGVh/cnN1cmFuY2UuY29t/Lw",
+            "path": "  \u203a home  \u203a uncategorized"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YsFTeEpO78WIdIJPjw50GIZBo8LA9iXy7MjKgrVTOKU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9xdW90/ZS5jbGVhcnN1cmFu/Y2UuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAyL2Rl/ZmVuc2l2ZV9kcml2/aW5nX2NvdXJzZV9i/ZW5lZml0c18tX3Nx/dWFyZS5wbmc",
+            "original": "https://quote.clearsurance.com/wp-content/uploads/2025/02/defensive_driving_course_benefits_-_square.png",
+            "logo": false
+          },
+          "age": "May 4, 2025"
+        },
+        {
+          "title": "GEICO Defensive Driving Course Discount for 2025",
+          "url": "https://wallethub.com/answers/ci/geico-defensive-driving-course-1000035-2140684381/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, GEICO does offer a defensive driving course discount. Eligible drivers who complete a GEICO-approved defensive driving course can get a discount of up 10% on their GEICO car insurance premium, depending on their state of residence",
+          "page_age": "2025-03-21T18:10:32",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-defensive-driving-course-1000035-2140684381/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-defensive-driving-course-1000035-2140684381"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "March 21, 2025"
+        },
+        {
+          "title": "Geico Savings in New York | Ticket School",
+          "url": "https://ticketschool.com/courses/geico-ny/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The discount for completing a New York defensive driving course is good for three (3) years. After the three years is up, you are eligible to complete the course again to continue receiving the discount. The course can be taken by any GEICO insured who is the primary driver of a vehicle on ...",
+          "page_age": "2025-04-09T17:21:58",
+          "profile": {
+            "name": "TicketSchool",
+            "url": "https://ticketschool.com/courses/geico-ny/",
+            "long_name": "ticketschool.com",
+            "img": "https://imgs.search.brave.com/mPZDp3s6j24swA2TPeH-bghjASSKGB35OmxIQAh_Hxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDRiYTgyZThj/ZTFiOTNlNWQ3MzFk/NDE2ODViNDliZDk3/ZDE5Zjc5OWQwOGZk/NDRiNzA2OGY3ZTA3/NDU0ZTRmYi90aWNr/ZXRzY2hvb2wuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "ticketschool.com",
+            "hostname": "ticketschool.com",
+            "favicon": "https://imgs.search.brave.com/mPZDp3s6j24swA2TPeH-bghjASSKGB35OmxIQAh_Hxk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDRiYTgyZThj/ZTFiOTNlNWQ3MzFk/NDE2ODViNDliZDk3/ZDE5Zjc5OWQwOGZk/NDRiNzA2OGY3ZTA3/NDU0ZTRmYi90aWNr/ZXRzY2hvb2wuY29t/Lw",
+            "path": "\u203a courses  \u203a geico-ny"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Lqx8u-3PoPD4p57ft35j41bZNtyI2Fr0WEgW-NThCa4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90aWNr/ZXRzY2hvb2wuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE0/LzA4L1RTLVN0YXRl/U2VjdGlvbk5ld1lv/cmsuanBn",
+            "original": "https://ticketschool.com/wp-content/uploads/2014/08/TS-StateSectionNewYork.jpg",
+            "logo": false
+          },
+          "age": "April 9, 2025"
+        },
+        {
+          "title": "Save on Your GEICO Car Insurance",
+          "url": "https://www.drivesafe.com/geico/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The National Safety Council\u2019s prestigious curriculum has been used to successfully train over 80 million drivers. In most states GEICO will be electronically notified, please check with your GEICO agent for proper certificate processing. Your progress is bookmarked and saved to return where you left off. Check with GEICO to see if you qualify for the Defensive Driving Course discount and for specific information about requirements in your state.",
+          "page_age": "2025-07-31T14:37:50",
+          "profile": {
+            "name": "Drivesafe",
+            "url": "https://www.drivesafe.com/geico/",
+            "long_name": "drivesafe.com",
+            "img": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "drivesafe.com",
+            "hostname": "www.drivesafe.com",
+            "favicon": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8",
+            "path": "  \u203a home  \u203a save on your geico car insurance"
+          },
+          "age": "July 31, 2025"
+        },
+        {
+          "title": "r/Geico on Reddit: Defensive Driver Discount??",
+          "url": "https://www.reddit.com/r/Geico/comments/1iufl1h/defensive_driver_discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A space for current and ex employees of Geico to vent) Please no customers call 1-800-841-3000 for assistance ... Super discounted NY defensive driving course (10% off your auto insurance for three years - for $10)",
+          "page_age": "2025-02-21T01:59:35",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1iufl1h/defensive_driver_discount/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a defensive driver discount??"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "February 21, 2025"
+        },
+        {
+          "title": "How to Get Insurance Discounts with Defensive Driving - The Wiser Driver Driving School",
+          "url": "https://thewiserdriver.com/how-to-get-insurance-discounts-with-defensive-driving/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A defensive driving certification serves as a clear indicator of a lower-risk driver. For example: GEICO offers discounts of up to 15% in some states for drivers who complete these courses.",
+          "page_age": "2025-05-03T07:08:11",
+          "profile": {
+            "name": "Thewiserdriver",
+            "url": "https://thewiserdriver.com/how-to-get-insurance-discounts-with-defensive-driving/",
+            "long_name": "thewiserdriver.com",
+            "img": "https://imgs.search.brave.com/HHQIJyQO3MjG4fNihNzavxeZzfQ8DK9xfxnvNrjcdeE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTliYjhhNDMx/NzQ1NmQwZjg2Njdh/ODA0ZWFjZDNhZjQ2/Y2E3OGIyZjQ0NTNm/Y2Y5ZmI4NTBkZjY5/YjA0Mjg2YS90aGV3/aXNlcmRyaXZlci5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thewiserdriver.com",
+            "hostname": "thewiserdriver.com",
+            "favicon": "https://imgs.search.brave.com/HHQIJyQO3MjG4fNihNzavxeZzfQ8DK9xfxnvNrjcdeE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTliYjhhNDMx/NzQ1NmQwZjg2Njdh/ODA0ZWFjZDNhZjQ2/Y2E3OGIyZjQ0NTNm/Y2Y5ZmI4NTBkZjY5/YjA0Mjg2YS90aGV3/aXNlcmRyaXZlci5j/b20v",
+            "path": "  \u203a home  \u203a blog posts  \u203a how to get insurance discounts with defensive driving"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/l7JEnHkOpN4zojdzvvA3vGPjItv1v625kaV_sdI5ABU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90aGV3/aXNlcmRyaXZlci5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDUvSG93LXRv/LUdldC1JbnN1cmFu/Y2UtRGlzY291bnRz/LXdpdGgtRGVmZW5z/aXZlLURyaXZpbmdf/MTc0NjI1NjA4OC5q/cGVn",
+            "original": "https://thewiserdriver.com/wp-content/uploads/2025/05/How-to-Get-Insurance-Discounts-with-Defensive-Driving_1746256088.jpeg",
+            "logo": false
+          },
+          "age": "May 3, 2025"
+        },
+        {
+          "title": "GEICO Defensive Driving Discount Course | California | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/california/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our California defensive driving courses are considered a premier defensive driving course for anyone looking to help insurance rates and become a safer driver on the streets of California. Our Geico course is licensed by California and the DMV as well as our driver improvement course. Our course provides instruction for traffic school laws and California DMV lessons (also known as our online traffic course or our safety course). We are looking for safer drivers and that means an auto insurance discount for those with moving violations or traffic citations that successfully complete one of our online defensive driving courses online.",
+          "page_age": "2025-07-18T00:10:48",
+          "profile": {
+            "name": "IMPROV\u00ae",
+            "url": "https://www.myimprov.com/geico/california/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico california"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "July 18, 2025"
+        },
+        {
+          "title": "r/Geico on Reddit: Defensive Driving Discount",
+          "url": "https://www.reddit.com/r/Geico/comments/1j9xiae/defensive_driving_discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Isn\u2019t it a percentage? So if you have a cheaper policy or vehicle, it is less money. For some it is a bigger discount. Depends on how many cars. It also may depends by state. My state it\u2019s decent . More replies ... Questions about the (NJSC) defensive driving course.. ... One hotdog or one hamburger, not both. A space for current and ex employees of Geico to vent) Please no customers call 1-800-841-3000 for assistance",
+          "page_age": "2025-03-12T23:03:06",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Geico/comments/1j9xiae/defensive_driving_discount/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/geico  \u203a defensive driving discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/A5H_aQiEBuUODR0lNeU8iDfhrWUvO8oEmRGE_mcS_gM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cmVkZGl0c3RhdGlj/LmNvbS9pY29uLnBu/Zw",
+            "original": "https://www.redditstatic.com/icon.png",
+            "logo": true
+          },
+          "age": "March 12, 2025"
+        },
+        {
+          "title": "Geico Defensive Driving Course Review (2025) | AutoInsurance.org",
+          "url": "https://www.autoinsurance.org/geico-defensive-driving-course-everything-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Take the Geico defensive driving course online and save up to 10%. Learn how and compare discounts in our Geico defensive driving course review.",
+          "page_age": "2025-07-09T11:16:03",
+          "profile": {
+            "name": "AutoInsurance.org",
+            "url": "https://www.autoinsurance.org/geico-defensive-driving-course-everything-you-need-to-know/",
+            "long_name": "autoinsurance.org",
+            "img": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "autoinsurance.org",
+            "hostname": "www.autoinsurance.org",
+            "favicon": "https://imgs.search.brave.com/ERRhIXudy1pBBmHt2O9c1hjYG0b9hcxcnPI9TbGSB64/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDFhMzY5Y2Fj/MzQ0MjhkMDczOTBk/ZGJjZTYwNDA4NjBk/NzI4N2Q5OWIwMWM5/ZWFmOTc2N2YzZGYw/N2FjNjRmYS93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcv",
+            "path": "  \u203a home  \u203a how to choose an auto insurance company"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/d6olA3F3HxvYqX99eP-rZAqn-xQu7L2ZWfgna9my_BY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YXV0b2luc3VyYW5j/ZS5vcmcvaW1hZ2Vz/L0dlaWNvLWRlZmVu/c2l2ZS1kcml2aW5n/LWNvdXJzZS1yZXZp/ZXcucG5n",
+            "original": "https://www.autoinsurance.org/images/Geico-defensive-driving-course-review.png",
+            "logo": false
+          },
+          "age": "July 9, 2025"
+        },
+        {
+          "title": "Defensive Driving Discounts and Courses: What You Should Know | Insurify",
+          "url": "https://insurify.com/car-insurance/discounts/defensive-driving-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "You could save around 10% on your auto insurance premium and become a safer driver in the process. Defensive driving discounts vary by state and insurance company. Nationwide, for example, offers about 5% off on your insurance company, while ...",
+          "page_age": "2024-11-14T00:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/discounts/defensive-driving-discount/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a discounts  \u203a defensive driving discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ir0N5LfrVTLRc_x2CS42wMBJP6gWIHNjkhh4wF3f4hU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3MDAvNTFhZjk0/MmRkOC9kZWZlbnNp/dmUtZHJpdmluZy1j/bGFzcy5qcGc",
+            "original": "https://a.storyblok.com/f/162273/1000x700/51af942dd8/defensive-driving-class.jpg",
+            "logo": false
+          },
+          "age": "November 14, 2024"
+        },
+        {
+          "title": "GEICO Defensive Driving Discount Course | Maryland | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/maryland/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The discount can be applied to any GEICO primary driver who meets the age requirement. You can find the eligibility requirements here after selecting your state from the dropdown. It depends on your policy. Each insurance company sets their own rate. Every state has different rules and qualifications for defensive ...",
+          "page_age": "2025-06-09T23:59:28",
+          "profile": {
+            "name": "IMPROV\u00ae",
+            "url": "https://www.myimprov.com/geico/maryland/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico maryland"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "June 9, 2025"
+        },
+        {
+          "title": "Save on Your GEICO NY Car Insurance",
+          "url": "https://www.drivesafe.com/geicony/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your personal information is safe and secure throughout your entire experience. ... *100% Money Back Guarantee Policy: If you\u2019re not satisfied for any reason within 30 days of purchase and before course completion, we\u2019ll give you a full refund on your course. Help them save too.",
+          "page_age": "2025-08-08T13:12:10",
+          "profile": {
+            "name": "Drivesafe",
+            "url": "https://www.drivesafe.com/geicony/",
+            "long_name": "drivesafe.com",
+            "img": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "drivesafe.com",
+            "hostname": "www.drivesafe.com",
+            "favicon": "https://imgs.search.brave.com/cG8pcBuDY1B8gOlhEVVINbG9_UQTIuSPX03dy3tFPFU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWYxNTQ4YWYy/NTgxYzYzOWYzNGZl/OTc1OTFlY2VmYmY2/ZGU2Y2I3YzkxZTdk/ZjY0ZTdhZjdjYjRl/YTEzOTVlNC93d3cu/ZHJpdmVzYWZlLmNv/bS8",
+            "path": "  \u203a home  \u203a save on your geico ny car insurance"
+          },
+          "age": "August 8, 2025"
+        },
+        {
+          "title": "GEICO Mature Driver Discount",
+          "url": "https://wallethub.com/answers/ci/geico-mature-driver-discount-2140704834/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, GEICO does offer a defensive driving course discount. Eligible drivers who complete a GEICO-approved defensive driving course can get a discount of up 10% on their GEICO car insurance premium, depending on their state of residence.",
+          "page_age": "2024-12-03T13:11:22",
+          "profile": {
+            "name": "WalletHub",
+            "url": "https://wallethub.com/answers/ci/geico-mature-driver-discount-2140704834/",
+            "long_name": "wallethub.com",
+            "img": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "qa",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "wallethub.com",
+            "hostname": "wallethub.com",
+            "favicon": "https://imgs.search.brave.com/QcoeLj_LDgEmHautZpNiN6ErRUemf6i2NiQoMRYQ7Xs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI2YzEzNjRl/YjhmNmE3NDkwYzgz/NGZhODkyMWNjMmRi/MTJlYWQ1MzYwY2E2/NGY3ODI5NzVlODhm/YmIxYjQzMC93YWxs/ZXRodWIuY29tLw",
+            "path": "\u203a answers  \u203a ci  \u203a geico-mature-driver-discount-2140704834"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YnFsFD--_0DYDN63YU7RTh6E1ZINWtslBaGMBZrgzuI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGV0aHViLmNv/bS9pbWFnZXMvd2gy/MDE1L2Fuc3dlcnMv/d2FsbGV0aHViLWFu/c3dlcnNfVjMwYjE2/NmZfLnBuZw",
+            "original": "https://cdn.wallethub.com/images/wh2015/answers/wallethub-answers_V30b166f_.png",
+            "logo": false
+          },
+          "age": "December 3, 2024"
+        },
+        {
+          "title": "Defensive Driving Class: Is It Worth It? | TheTruthAboutInsurance.com",
+          "url": "https://www.thetruthaboutinsurance.com/defensive-driving-class-is-it-worth-it/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This course will only give you a discount on insurance, not reduce any of the points on your driver\u2019s license. This means the Geico driver safety course may not be worth much to you. ... Are driving schools worth it? We\u2019re glad you asked. There are a few major points of note when deciding if the defensive driving class is for you.",
+          "page_age": "2025-01-06T05:12:06",
+          "profile": {
+            "name": "Thetruthaboutinsurance",
+            "url": "https://www.thetruthaboutinsurance.com/defensive-driving-class-is-it-worth-it/",
+            "long_name": "thetruthaboutinsurance.com",
+            "img": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thetruthaboutinsurance.com",
+            "hostname": "www.thetruthaboutinsurance.com",
+            "favicon": "https://imgs.search.brave.com/hBd_FtEpvNv5EW-3CLomlsu-FwYBxgPjw7pSpcEWsmQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2M3MDc1NWIx/YmMwNzYwZmE2M2Vl/ZGMwNGJiZjg1YWNi/ODcxYTlhOWE1NmFj/ZDFmNGQyYzdiMjJm/ODc2YzQzMi93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20v",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a how much car insurance coverage do you need?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/m864ZOr0Mxt7aecQHbEswVAMJqR9eX8JfEhYabnbkUY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhldHJ1dGhhYm91/dGluc3VyYW5jZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMTIvYzhlMDlk/MTMtdHJ1dGhhYm91/dGlucy1sb2dvLnN2/Zw",
+            "original": "https://www.thetruthaboutinsurance.com/wp-content/uploads/2020/12/c8e09d13-truthaboutins-logo.svg",
+            "logo": true
+          },
+          "age": "January 6, 2025"
+        },
+        {
+          "title": "Defensive Driver Courses: Guide to Discounts (2025)",
+          "url": "https://www.moneygeek.com/insurance/auto/defensive-driver-courses/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The qualification requirements vary but almost always include taking a defensive driving course. How much you save depends on your driving history and age. ... Drivers under 25 and those over 55 to 60 years old are eligible for the discount in most states, though some states require insurers to offer this discount to drivers of all ages. The actual age that is eligible for discounts varies by provider. For instance, GEICO gives discounts to drivers over 50, while Farmers restricts discounts to drivers 65 or older.",
+          "page_age": "2025-10-30T15:52:19",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/defensive-driver-courses/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a defensive driver courses"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/8QJXLISo7Vl9jRP599MWAceSgnzIbW7nZJ3sXM3Flz0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTY0/NzgzOTIyOC9mZWF0/dXJlX2ltYWdlX2hv/d190b19nZXRfYV9k/ZWZlbnNpdmVfZHJp/dmluZ19kaXNjb3Vu/dF9Nb25leV9HZWVr/XzBjYjYwZDQ0MjIu/anBn",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1647839228/feature_image_how_to_get_a_defensive_driving_discount_Money_Geek_0cb60d4422.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Does GEICO give safe driver discounts for AARP program?",
+          "url": "https://www.carinsurance.com/aarp-defensive-driving.aspx",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Here are a few examples from various states of the types of classes accepted and the discount you can get: If you live in California, GEICO says you could save up to 5% on applicable coverages by taking a defensive driving course.",
+          "page_age": "2025-02-27T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/aarp-defensive-driving.aspx",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "\u203a aarp-defensive-driving.aspx"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Pa1nuzvkTnFZ23jKq2APQskuqWD56a1YvyxDpCS_JMU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS91cGxvYWRl/ZGZpbGVzL3NhZmUt/ZHJpdmVyLWRpc2Nv/dW50LmpwZw",
+            "original": "https://www.carinsurance.com/uploadedfiles/safe-driver-discount.jpg",
+            "logo": false
+          },
+          "age": "February 27, 2025"
+        },
+        {
+          "title": "Geico Mature Driver Discount | Traffic Safety Institute",
+          "url": "https://www.trafficsafetyinstitute.com/geico-mature-driver-discount/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "To get the mature driver discount in California or Florida, you need to be at least 55 years old, have a valid California or Florida driver\u2019s license, a clean driving record, and a Geico insurance policy on at least one vehicle. 2. Sign up for a California DMV-approved mature driver course or an FLHSMV-Approved mature driver course in Florida . These courses are sometimes also called defensive ...",
+          "page_age": "2025-08-04T16:39:54",
+          "profile": {
+            "name": "Traffic Safety Institute",
+            "url": "https://www.trafficsafetyinstitute.com/geico-mature-driver-discount/",
+            "long_name": "trafficsafetyinstitute.com",
+            "img": "https://imgs.search.brave.com/BvXhgS4T_A0PMYn75X8HmgmoD4EuGa9ujFVT81jojsk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODE1NTJiNzk3/OTYzZWMyYTBlY2Uy/ZjEyYTYxMTg3ZDk3/MjJjZWI0NDQ0MmRl/OTc5MzE5ZmFlYmI1/NmM1NjhmZS93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "trafficsafetyinstitute.com",
+            "hostname": "www.trafficsafetyinstitute.com",
+            "favicon": "https://imgs.search.brave.com/BvXhgS4T_A0PMYn75X8HmgmoD4EuGa9ujFVT81jojsk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODE1NTJiNzk3/OTYzZWMyYTBlY2Uy/ZjEyYTYxMTg3ZDk3/MjJjZWI0NDQ0MmRl/OTc5MzE5ZmFlYmI1/NmM1NjhmZS93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20v",
+            "path": "  \u203a home  \u203a geico mature driver discount"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/awoxxNFmqs0dz-Hz4R50zX_RoI6FcGhwfbTWWwrjTvM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dHJhZmZpY3NhZmV0/eWluc3RpdHV0ZS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMTAvNzgtR2Vp/Y28tTWF0dXJlLURy/aXZlci1EaXNjb3Vu/dC0wMS5wbmc",
+            "original": "https://www.trafficsafetyinstitute.com/wp-content/uploads/2023/10/78-Geico-Mature-Driver-Discount-01.png",
+            "logo": false
+          },
+          "age": "August 4, 2025"
+        },
+        {
+          "title": "GEICO Defensive Driving Discount Course | Connecticut | IMPROV\u00ae",
+          "url": "https://www.myimprov.com/geico/connecticut/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The discount can be applied to any GEICO primary driver who meets the age requirement. You can find the eligibility requirements here after selecting your state from the dropdown. It depends on your policy. Each insurance company sets their own rate. Every state has different rules and qualifications for defensive ...",
+          "page_age": "2025-07-18T00:47:48",
+          "profile": {
+            "name": "IMPROV",
+            "url": "https://www.myimprov.com/geico/connecticut/",
+            "long_name": "myimprov.com",
+            "img": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "myimprov.com",
+            "hostname": "www.myimprov.com",
+            "favicon": "https://imgs.search.brave.com/93IEcA2eGUc-v4HeBVaHzoxmIJbTaLAx_NfV3WraGDg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZThkNDY3NmUx/YTBiMmMyZjRmZmQy/MmNmM2Q3YzZhZTI2/ZjM5YjE3Mzk1MWQy/YjIwYzcxOWVlYWMy/YmMxMjNkZC93d3cu/bXlpbXByb3YuY29t/Lw",
+            "path": "  \u203a home  \u203a geico  \u203a geico connecticut"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/aYP23WH4JPLPKx6ixwDZkkYPA88YM9U_JFgYM7YmoOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bXlpbXByb3YuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9sb2dv/LWRhcmsud2VicA",
+            "original": "https://www.myimprov.com/wp-content/uploads/logo-dark.webp",
+            "logo": true
+          },
+          "age": "July 18, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

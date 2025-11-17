@@ -1,0 +1,455 @@
+{
+  "domain": "expertise.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.499137",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 41,
+      "frequency": 41.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "block",
+      "count": 343
+    },
+    {
+      "class": "text-blue",
+      "count": 185
+    },
+    {
+      "class": "no-underline",
+      "count": 184
+    },
+    {
+      "class": "hover:text-blue",
+      "count": 177
+    },
+    {
+      "class": "font-bold",
+      "count": 172
+    },
+    {
+      "class": "p-3",
+      "count": 152
+    },
+    {
+      "class": "hover:bg-blue",
+      "count": 151
+    },
+    {
+      "class": "hover:text-white",
+      "count": 151
+    },
+    {
+      "class": "Post_p__ojEXt",
+      "count": 79
+    },
+    {
+      "class": "rounded-b-lg",
+      "count": 26
+    },
+    {
+      "class": "Post_li__ya0fd",
+      "count": 25
+    },
+    {
+      "class": "flex",
+      "count": 21
+    },
+    {
+      "class": "items-center",
+      "count": 21
+    },
+    {
+      "class": "w-full",
+      "count": 20
+    },
+    {
+      "class": "Post_td__bLYt4",
+      "count": 20
+    },
+    {
+      "class": "relative",
+      "count": 19
+    },
+    {
+      "class": "py-2",
+      "count": 18
+    },
+    {
+      "class": "absolute",
+      "count": 15
+    },
+    {
+      "class": "text-xs",
+      "count": 15
+    },
+    {
+      "class": "bg-off-white",
+      "count": 14
+    },
+    {
+      "class": "overflow-auto",
+      "count": 14
+    },
+    {
+      "class": "px-1.5",
+      "count": 13
+    },
+    {
+      "class": "py-4",
+      "count": 13
+    },
+    {
+      "class": "hover:bg-off-white",
+      "count": 13
+    },
+    {
+      "class": "has-[+:hover]:bg-off-white",
+      "count": 13
+    },
+    {
+      "class": "peer",
+      "count": 13
+    },
+    {
+      "class": "NavMenuPanel_panel__lHghH",
+      "count": 13
+    },
+    {
+      "class": "top-full",
+      "count": 13
+    },
+    {
+      "class": "NavMenuPanel_scrollbar__Q7gQj",
+      "count": 13
+    },
+    {
+      "class": "max-h-[25rem]",
+      "count": 13
+    },
+    {
+      "class": "min-w-60",
+      "count": 13
+    },
+    {
+      "class": "max-w-max",
+      "count": 13
+    },
+    {
+      "class": "rounded-lg",
+      "count": 12
+    },
+    {
+      "class": "hover:rounded-none",
+      "count": 12
+    },
+    {
+      "class": "grid",
+      "count": 12
+    },
+    {
+      "class": "start-0",
+      "count": 11
+    },
+    {
+      "class": "text-white",
+      "count": 11
+    },
+    {
+      "class": "svg-inline--fa",
+      "count": 11
+    },
+    {
+      "class": "text-sm",
+      "count": 10
+    },
+    {
+      "class": "transition-all",
+      "count": 10
+    },
+    {
+      "class": "duration-200",
+      "count": 10
+    },
+    {
+      "class": "bg-white",
+      "count": 9
+    },
+    {
+      "class": "hidden",
+      "count": 9
+    },
+    {
+      "class": "whitespace-nowrap",
+      "count": 9
+    },
+    {
+      "class": "grid-flow-col",
+      "count": 9
+    },
+    {
+      "class": "Post_h2__lJ5Qo",
+      "count": 9
+    },
+    {
+      "class": "Post_h3__nVt6o",
+      "count": 9
+    },
+    {
+      "class": "hover:rounded-bl-lg",
+      "count": 8
+    },
+    {
+      "class": "justify-between",
+      "count": 8
+    },
+    {
+      "class": "lg:hidden",
+      "count": 7
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "main-header",
+      "count": 1
+    },
+    {
+      "id": "main-nav-secondary",
+      "count": 1
+    },
+    {
+      "id": "Breadcrumbs",
+      "count": 1
+    },
+    {
+      "id": "filter0_dd_97_1397",
+      "count": 1
+    },
+    {
+      "id": "paint0_linear_97_1397",
+      "count": 1
+    },
+    {
+      "id": "clip0_97_1397",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_56lfiv5ubt5ubsivb_",
+      "count": 1
+    },
+    {
+      "id": "Our-Take-on-State-Farm-Auto-Insurance",
+      "count": 1
+    },
+    {
+      "id": "_S_1_",
+      "count": 1
+    },
+    {
+      "id": "State-Farm-Auto-Insurance-at-a-Glance",
+      "count": 1
+    },
+    {
+      "id": "Where-State-Farm-stands-out",
+      "count": 1
+    },
+    {
+      "id": "State-Farm-compared-to-the-competition",
+      "count": 1
+    },
+    {
+      "id": "Available-discounts",
+      "count": 1
+    },
+    {
+      "id": "What-Auto-Insurance-Coverage-Options-Are-Available",
+      "count": 1
+    },
+    {
+      "id": "Collision-insurance",
+      "count": 1
+    },
+    {
+      "id": "Comprehensive-insurance",
+      "count": 1
+    },
+    {
+      "id": "Rental-insurance",
+      "count": 1
+    },
+    {
+      "id": "Rideshare-insurance",
+      "count": 1
+    },
+    {
+      "id": "Emergency-roadside-service",
+      "count": 1
+    },
+    {
+      "id": "Additional-coverage-options",
+      "count": 1
+    },
+    {
+      "id": "State-Farm-Auto-Insurance-Consumer-Experience",
+      "count": 1
+    },
+    {
+      "id": "Where-Can-You-Get-State-Farm-Auto-Insurance-in-the-United-States",
+      "count": 1
+    },
+    {
+      "id": "How-Much-Does-State-Farm-Auto-Insurance-Cost",
+      "count": 1
+    },
+    {
+      "id": "How-To-Buy-State-Farm-Car-Insurance",
+      "count": 1
+    },
+    {
+      "id": "State-Farm-Car-Insurance-FAQ",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_atjmlfiv5ubt5ubsivb_",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_itjmlfiv5ubt5ubsivb_",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_qtjmlfiv5ubt5ubsivb_",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_12tjmlfiv5ubt5ubsivb_",
+      "count": 1
+    },
+    {
+      "id": "radix-_R_1atjmlfiv5ubt5ubsivb_",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

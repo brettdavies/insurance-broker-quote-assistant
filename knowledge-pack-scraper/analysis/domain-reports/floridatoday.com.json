@@ -1,0 +1,456 @@
+{
+  "domain": "floridatoday.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:23.567722",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 22,
+      "frequency": 22.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "gnt_ft_a",
+      "count": 41
+    },
+    {
+      "class": "gnt_ar_b_ul_li",
+      "count": 18
+    },
+    {
+      "class": "gnt_ar_b_p",
+      "count": 16
+    },
+    {
+      "class": "gnt_x__c",
+      "count": 14
+    },
+    {
+      "class": "gnt_n_mn_ce",
+      "count": 13
+    },
+    {
+      "class": "gnt_x_sl",
+      "count": 13
+    },
+    {
+      "class": "gnt_x__lbl",
+      "count": 12
+    },
+    {
+      "class": "gnt_n_mn_l",
+      "count": 9
+    },
+    {
+      "class": "gnt_ss_a",
+      "count": 8
+    },
+    {
+      "class": "gnt_ss_a_svg",
+      "count": 8
+    },
+    {
+      "class": "gnt_ar_b_a",
+      "count": 7
+    },
+    {
+      "class": "gnt_ar_b_mt",
+      "count": 6
+    },
+    {
+      "class": "gnt_em",
+      "count": 5
+    },
+    {
+      "class": "gnt_em_cp_cw_a",
+      "count": 5
+    },
+    {
+      "class": "gnt_em_cp_cw_svg",
+      "count": 5
+    },
+    {
+      "class": "gnt_x_p",
+      "count": 5
+    },
+    {
+      "class": "gnt_ar_b_sp",
+      "count": 4
+    },
+    {
+      "class": "gnt_ar_b_sp_a",
+      "count": 4
+    },
+    {
+      "class": "gnt_x__al",
+      "count": 4
+    },
+    {
+      "class": "gnt_x_al",
+      "count": 4
+    },
+    {
+      "class": "gnt_x__st",
+      "count": 4
+    },
+    {
+      "class": "gnt_x_sl__st",
+      "count": 4
+    },
+    {
+      "class": "gnt_ft_ls",
+      "count": 4
+    },
+    {
+      "class": "gnt_sh_li",
+      "count": 3
+    },
+    {
+      "class": "gnt_ar_b_ul",
+      "count": 3
+    },
+    {
+      "class": "gnt_rr_xst",
+      "count": 3
+    },
+    {
+      "class": "pbs-style",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_sm",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_sm_a",
+      "count": 2
+    },
+    {
+      "class": "gnt_x__h",
+      "count": 2
+    },
+    {
+      "class": "gnt_cw_sl",
+      "count": 2
+    },
+    {
+      "class": "gnt_ss",
+      "count": 2
+    },
+    {
+      "class": "gnt_ss_a__sa",
+      "count": 2
+    },
+    {
+      "class": "gnt_tb",
+      "count": 2
+    },
+    {
+      "class": "gnt__hbd",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_dd__sz",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_us_dd_a__li",
+      "count": 2
+    },
+    {
+      "class": "gnt_n_us_dd_ba",
+      "count": 2
+    },
+    {
+      "class": "gnt_bb_svg",
+      "count": 1
+    },
+    {
+      "class": "exco-player",
+      "count": 1
+    },
+    {
+      "class": "gnt_n",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg_w",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sb",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_lg_svg",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sm__ne",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_sm__ne_a",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_mn",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_mn_l__fi",
+      "count": 1
+    },
+    {
+      "class": "gnt_n_mn_l__se",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "39f7ab9d-1d0b-4351-8d05-38e031d64777",
+      "count": 6
+    },
+    {
+      "id": "#gnt_xp__1",
+      "count": 2
+    },
+    {
+      "id": "exp_ac0d9b3d-66da-43ec-a0a6-05f266a73f33",
+      "count": 2
+    },
+    {
+      "id": "+F.gppas:",
+      "count": 2
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-container",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-content",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_external",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_facebook",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_twitter",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_email",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_shareapi",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_info",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_rightArrow",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_lg",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-brevard-C1028-adhesion-news-13-ac1",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-brevard-C1028-high_impact-news-1-ac1",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-brevard-C1028-banner_videoplayer-news-2-ac1",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-brevard-C1028-banner_videoplayer-dk-news-3-ac1",
+      "count": 1
+    },
+    {
+      "id": "gnt_xp__1",
+      "count": 1
+    },
+    {
+      "id": "video846830637b911a629-9ed3-4e40-bb00-502cb241494a",
+      "count": 1
+    },
+    {
+      "id": "~ad-slot-7103-fl-brevard-C1028-native-article_link-news-4-ac1",
+      "count": 1
+    },
+    {
+      "id": "~ad-slot-7103-fl-brevard-C1028-native-article_link-news-5-ac2",
+      "count": 1
+    },
+    {
+      "id": "gnt_atomsnc",
+      "count": 1
+    },
+    {
+      "id": "~ad-slot-7103-fl-brevard-C1028-native-article_link-news-6-ac3",
+      "count": 1
+    },
+    {
+      "id": "~ad-slot-7103-fl-brevard-C1028-native-article_link-news-7-ac4",
+      "count": 1
+    },
+    {
+      "id": "gnt_tbw_1",
+      "count": 1
+    },
+    {
+      "id": "ad-slot-7103-fl-brevard-C1028-poster-news-8-ac1",
+      "count": 1
+    },
+    {
+      "id": "gnt_tbw_2",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,35 @@
+# What Is SUM Coverage in New York?
+
+![Car shattered by a crash](https://www.dupeelaw.com/wp-content/uploads/2025/05/car-accident-200x200.jpeg "Car shattered by a crash")Auto insurance in New York is an alphabet soup of different types of coverage. First, there’s PIP, your no-fault Personal Injury Protection. Then there is liability insurance required to cover BIL (bodily injury liability) and PDL (property damage liability), which is essential if you cause serious injury to another person in a crash. Of course, you also need UM (uninsured motorist) and UIM (underinsured motorist) in case you get hit by a driver who is uninsured or doesn’t carry enough liability insurance to cover your serious injuries.
+
+New York auto insurance also includes yet another type of coverage to consider, and that’s SUM (supplementary uninsured/underinsured motorist). What is SUM, and how is it different from UM/UIM? Do you need it? Read on as we attempt to answer these questions. If you or a family member has been hurt in a crash in Orange County or the Hudson Valley, contact **Dupée & Monroe, P.C.**, to speak with our team of experienced [Goshen car accident lawyers](https://www.dupeelaw.com/personal-injury-attorney/car-accident/) with the skill and dedication to look out for your needs.
+
+## What Is SUM?
+
+Supplementary Uninsured/Underinsured Motorist (SUM) coverage is an optional add-on to your auto policy that significantly expands the protection of basic UM/UIM coverage. New York Insurance Law requires insurers to offer SUM coverage, but an insured may accept or decline it​. The legal basis for SUM is [Insurance Law §3420(f)(2)(A)](https://www.nysenate.gov/legislation/laws/ISC/3420), which directs policies to “provide supplementary uninsured/underinsured motorists insurance for bodily injury… up to the bodily injury liability limits of coverage… subject to a maximum of $250,000 per person and $500,000 per accident” or a $500,000 combined single limit. In other words, SUM lets you purchase UM/UIM coverage equal to your liability coverage (up to the statutory caps) far above the minimum required amount. For special vehicles (like stretch limos), even higher SUM limits apply.
+
+## How SUM expands protection
+
+Basic UM coverage in NY is capped at the minimums ($25,0000 per person and $50,000 per accident for injury, or $50,000 per person and $100,000 per accident for death) and applies only within the state. SUM goes beyond that. It covers not only injuries from uninsured motorists (like UM) but also from underinsured motorists – i.e. drivers whose liability limits are insufficient​. Critically, SUM is generally worded to apply anywhere in the United States (and Canada), not just in New York​. Thus, an accident in another state with a low-limit at-fault driver could be covered under your SUM endorsement even if basic UM/UIM would not.
+
+## Coverage limits and options
+
+With SUM, you can “buy up” to higher dollar limits. The endorsement allows additional coverage up to your policy’s BI liability limits (for example, $100,000/$300,000 or higher)​. The statutory ceiling is $250k/$500k per person/accident (or a single $500k limit), though insurers who offer high-limit umbrella policies may allow up to $1,500,000 for special cases​. Practically, if your liability is $100,000/$300,000, you could purchase SUM to those same levels. SUM must be offered at the time of sale or renewal, and the insurer must notify you in writing about the availability and limits of SUM coverage (at issuance and at least annually)​. You then may sign a written waiver to decline or choose lower SUM limits if you wish​.
+
+## Claim requirements for SUM
+
+SUM coverage only kicks in after all primary liability coverage is exhausted. This means you must first get the full payment under the at-fault driver’s policy, then under any UM/UIM limits you carry, before SUM pays. The law explicitly states that SUM will not pay unless “the limits of liability… are exhausted by payment of judgments or settlements.” Also, if the at-fault driver’s insurer delays or refuses to disclose its limits, the statute “tolls” the time for you to make a SUM claim. In practice, to claim SUM you’d document the at-fault insurer’s limits, settle or obtain a judgment for that amount, and then submit the excess loss to your SUM insurer.
+
+SUM is subject to the same non-stacking and priority rules as basic UM/UIM. You cannot combine (stack) SUM or UM limits from multiple vehicles to increase coverage​. If you’re covered by more than one policy (e.g. household members), you recover from the policy in priority (first, the policy for the vehicle you were in or named on, then others)​. Once you exhaust one policy, you may look to another – but the total recovery cannot exceed the highest applicable limit under any single policy.
+
+## Distinction from basic UM/UIM
+
+It’s important to emphasize that SUM coverage is optional. Mandatory UM/UIM coverage provides the statutory minimums, whereas SUM is additional. You will typically see SUM offered on your declaration page, with a statement explaining that it “…provides insurance protection… if [an insured] is injured” and the negligent motorist “has either no bodily injury or liability insurance, or less than the insurance you carry.” The form explains that “SUM coverage shall be equal to the level of the bodily injury liability coverage of your… policy unless you sign a waiver requesting lower coverage or declining coverage.”​ In other words, if you decline SUM, you drop back to only the minimum UM/UIM benefits. As this section of the law concludes, “You are urged to carefully consider this decision.”
+
+## Example of SUM in use
+
+Consider an insured who has only the minimum $25,000/$50,000 UM coverage. If that person is injured for, say, $100,000 by a hit-and-run driver, their insurer will pay only $25,000 under the UM policy. However, if a household member (e.g. a sibling) carries a separate policy with $100,000 SUM, the injured person can then claim under that SUM policy. As a Department of Financial Services advisory opinion illustrates, the victim could recover the remaining $75,000 from the SUM policy (for a total of $100,000)​. This example shows how SUM effectively raises the available coverage above the bare minimum.
+
+## Contact Dupée & Monroe to Maximize Your Compensation After an Orange County Car Accident
+
+Auto insurance requirements and options can be confusing, but the many variations only go to show that crash victims have many options after an accident. A knowledgeable and experienced New York car accident lawyer will be able to review your situation, explain your options, and help you get the most compensation available. For help after a car accident in Orange County or the Hudson Valley, [contact](https://www.dupeelaw.com/contact-us/) Dupée & Monroe, P.C., in Goshen for a free consultation.

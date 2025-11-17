@@ -1,0 +1,455 @@
+{
+  "domain": "hrblock.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.132519",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 65,
+      "frequency": 65.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 31,
+      "frequency": 31.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "hrb-link",
+      "count": 47
+    },
+    {
+      "class": "btn-auto",
+      "count": 47
+    },
+    {
+      "class": "reader",
+      "count": 26
+    },
+    {
+      "class": "right-arrow",
+      "count": 25
+    },
+    {
+      "class": "icon-svg",
+      "count": 16
+    },
+    {
+      "class": "menu-item",
+      "count": 16
+    },
+    {
+      "class": "btn-label",
+      "count": 15
+    },
+    {
+      "class": "icon",
+      "count": 15
+    },
+    {
+      "class": "wp-block-heading",
+      "count": 15
+    },
+    {
+      "class": "icon-btn",
+      "count": 14
+    },
+    {
+      "class": "column",
+      "count": 12
+    },
+    {
+      "class": "menu-item-detailed",
+      "count": 9
+    },
+    {
+      "class": "nav-item-image",
+      "count": 9
+    },
+    {
+      "class": "nav-item-label",
+      "count": 9
+    },
+    {
+      "class": "nav-item-description",
+      "count": 9
+    },
+    {
+      "class": "white",
+      "count": 8
+    },
+    {
+      "class": "icon-circle",
+      "count": 8
+    },
+    {
+      "class": "wp-block-button__link",
+      "count": 7
+    },
+    {
+      "class": "wp-element-button",
+      "count": 7
+    },
+    {
+      "class": "container",
+      "count": 6
+    },
+    {
+      "class": "share-tic-page--icon",
+      "count": 6
+    },
+    {
+      "class": "hydrated",
+      "count": 5
+    },
+    {
+      "class": "consent-button",
+      "count": 5
+    },
+    {
+      "class": "column-container",
+      "count": 5
+    },
+    {
+      "class": "btn",
+      "count": 5
+    },
+    {
+      "class": "has-submenu",
+      "count": 4
+    },
+    {
+      "class": "primary",
+      "count": 4
+    },
+    {
+      "class": "key-only",
+      "count": 4
+    },
+    {
+      "class": "sub-items-container",
+      "count": 4
+    },
+    {
+      "class": "nav-sub-items",
+      "count": 4
+    },
+    {
+      "class": "wp-block-list",
+      "count": 4
+    },
+    {
+      "class": "tic-related-topic-thumb",
+      "count": 4
+    },
+    {
+      "class": "tic-arrow-cta",
+      "count": 4
+    },
+    {
+      "class": "decline",
+      "count": 3
+    },
+    {
+      "class": "family-brand",
+      "count": 3
+    },
+    {
+      "class": "hide-large",
+      "count": 3
+    },
+    {
+      "class": "site-search",
+      "count": 3
+    },
+    {
+      "class": "tic-redesign-sandbox",
+      "count": 3
+    },
+    {
+      "class": "wp-block-create-block-hrb-article-cta",
+      "count": 3
+    },
+    {
+      "class": "hrb-article-cta--image",
+      "count": 3
+    },
+    {
+      "class": "hrb-article-cta--copy",
+      "count": 3
+    },
+    {
+      "class": "main-heading",
+      "count": 3
+    },
+    {
+      "class": "wp-block-button",
+      "count": 3
+    },
+    {
+      "class": "post",
+      "count": 3
+    },
+    {
+      "class": "tic-post-thumbnail",
+      "count": 3
+    },
+    {
+      "class": "tic-green-subhead",
+      "count": 3
+    },
+    {
+      "class": "tic-post-title",
+      "count": 3
+    },
+    {
+      "class": "icon-stroke-hover",
+      "count": 3
+    },
+    {
+      "class": "consent-banner",
+      "count": 2
+    },
+    {
+      "class": "consent-message",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "site-search",
+      "count": 3
+    },
+    {
+      "id": "disclaimer-list-0",
+      "count": 3
+    },
+    {
+      "id": "mp-idl",
+      "count": 2
+    },
+    {
+      "id": "consentBanner",
+      "count": 2
+    },
+    {
+      "id": "declineConsent",
+      "count": 2
+    },
+    {
+      "id": "acceptConsent",
+      "count": 2
+    },
+    {
+      "id": "closeBanner",
+      "count": 2
+    },
+    {
+      "id": "di-id-e61b1be0-3968a6db",
+      "count": 2
+    },
+    {
+      "id": "Vector",
+      "count": 2
+    },
+    {
+      "id": "Vector_2",
+      "count": 2
+    },
+    {
+      "id": "lifestages",
+      "count": 2
+    },
+    {
+      "id": "#lifestages",
+      "count": 2
+    },
+    {
+      "id": "work",
+      "count": 2
+    },
+    {
+      "id": "#work",
+      "count": 2
+    },
+    {
+      "id": "taxes101",
+      "count": 2
+    },
+    {
+      "id": "#taxes101",
+      "count": 2
+    },
+    {
+      "id": "taxbreaksandmoney",
+      "count": 2
+    },
+    {
+      "id": "#taxbreaksandmoney",
+      "count": 2
+    },
+    {
+      "id": "whatsnew",
+      "count": 2
+    },
+    {
+      "id": "#whatsnew",
+      "count": 2
+    },
+    {
+      "id": "di-id-26ab8ded-2fec74d3",
+      "count": 2
+    },
+    {
+      "id": "di-id-d3d561ba-41619883",
+      "count": 2
+    },
+    {
+      "id": "di-id-dfc5f797-e52a8b79",
+      "count": 2
+    },
+    {
+      "id": "mp-client-sdk",
+      "count": 1
+    },
+    {
+      "id": "decideLater",
+      "count": 1
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "eedee-gutenslider-init-css",
+      "count": 1
+    },
+    {
+      "id": "create-block-hrb-article-cta-style-inline-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main, [role=\"main\"]",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

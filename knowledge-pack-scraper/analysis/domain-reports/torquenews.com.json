@@ -1,0 +1,456 @@
+{
+  "domain": "torquenews.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:25.075912",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 32,
+      "frequency": 32.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 64,
+      "frequency": 64.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 15,
+      "frequency": 15.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 332,
+      "frequency": 332.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 33,
+      "frequency": 33.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "clearfix",
+      "count": 70
+    },
+    {
+      "class": "fa",
+      "count": 60
+    },
+    {
+      "class": "views-field",
+      "count": 51
+    },
+    {
+      "class": "field-content",
+      "count": 51
+    },
+    {
+      "class": "nav-link",
+      "count": 47
+    },
+    {
+      "class": "field",
+      "count": 42
+    },
+    {
+      "class": "field__item",
+      "count": 42
+    },
+    {
+      "class": "field--label-hidden",
+      "count": 41
+    },
+    {
+      "class": "permalink",
+      "count": 36
+    },
+    {
+      "class": "tag",
+      "count": 36
+    },
+    {
+      "class": "row",
+      "count": 34
+    },
+    {
+      "class": "nav",
+      "count": 33
+    },
+    {
+      "class": "text-formatted",
+      "count": 32
+    },
+    {
+      "class": "hidden",
+      "count": 31
+    },
+    {
+      "class": "field--type-text-long",
+      "count": 31
+    },
+    {
+      "class": "inline__links",
+      "count": 31
+    },
+    {
+      "class": "links",
+      "count": 31
+    },
+    {
+      "class": "inline",
+      "count": 31
+    },
+    {
+      "class": "links-inline",
+      "count": 31
+    },
+    {
+      "class": "comment",
+      "count": 30
+    },
+    {
+      "class": "js-comment",
+      "count": 30
+    },
+    {
+      "class": "by-anonymous",
+      "count": 30
+    },
+    {
+      "class": "by-viewer",
+      "count": 30
+    },
+    {
+      "class": "comment-author-picture",
+      "count": 30
+    },
+    {
+      "class": "col-sm-3",
+      "count": 30
+    },
+    {
+      "class": "col-md-2",
+      "count": 30
+    },
+    {
+      "class": "comment-content",
+      "count": 30
+    },
+    {
+      "class": "col-sm-9",
+      "count": 30
+    },
+    {
+      "class": "col-md-10",
+      "count": 30
+    },
+    {
+      "class": "comment__content",
+      "count": 30
+    },
+    {
+      "class": "comment_title",
+      "count": 30
+    },
+    {
+      "class": "comment__meta",
+      "count": 30
+    },
+    {
+      "class": "comment-author-name",
+      "count": 30
+    },
+    {
+      "class": "fa-user",
+      "count": 30
+    },
+    {
+      "class": "comment-created",
+      "count": 30
+    },
+    {
+      "class": "fa-clock-o",
+      "count": 30
+    },
+    {
+      "class": "comment__permalink",
+      "count": 30
+    },
+    {
+      "class": "field--name-comment-body",
+      "count": 30
+    },
+    {
+      "class": "comment-reply",
+      "count": 30
+    },
+    {
+      "class": "views-field-field-image-display",
+      "count": 17
+    },
+    {
+      "class": "image-style-views-block-preview",
+      "count": 17
+    },
+    {
+      "class": "views-field-title",
+      "count": 17
+    },
+    {
+      "class": "views-field-uid",
+      "count": 17
+    },
+    {
+      "class": "nav-item",
+      "count": 16
+    },
+    {
+      "class": "visually-hidden",
+      "count": 12
+    },
+    {
+      "class": "block",
+      "count": 7
+    },
+    {
+      "class": "adsbygoogle",
+      "count": 6
+    },
+    {
+      "class": "block-inner",
+      "count": 5
+    },
+    {
+      "class": "text-align-left",
+      "count": 5
+    },
+    {
+      "class": "adsense",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "0",
+      "count": 30
+    },
+    {
+      "id": "critical-css",
+      "count": 1
+    },
+    {
+      "id": "header-navbar-wrapper",
+      "count": 1
+    },
+    {
+      "id": "navbar-main",
+      "count": 1
+    },
+    {
+      "id": "block-tn-mainmenu",
+      "count": 1
+    },
+    {
+      "id": "block-tn-mainmenu-menu",
+      "count": 1
+    },
+    {
+      "id": "main-container",
+      "count": 1
+    },
+    {
+      "id": "content",
+      "count": 1
+    },
+    {
+      "id": "main-content",
+      "count": 1
+    },
+    {
+      "id": "block-tn-page-title",
+      "count": 1
+    },
+    {
+      "id": "block-tn-content",
+      "count": 1
+    },
+    {
+      "id": "55729",
+      "count": 1
+    },
+    {
+      "id": "aswift_1_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_1",
+      "count": 1
+    },
+    {
+      "id": "a!2",
+      "count": 1
+    },
+    {
+      "id": "aswift_2_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_2",
+      "count": 1
+    },
+    {
+      "id": "a!3",
+      "count": 1
+    },
+    {
+      "id": "aswift_3_host",
+      "count": 1
+    },
+    {
+      "id": "aswift_4_host",
+      "count": 1
+    },
+    {
+      "id": "comment-217107",
+      "count": 1
+    },
+    {
+      "id": "comment-217152",
+      "count": 1
+    },
+    {
+      "id": "aswift_5_host",
+      "count": 1
+    },
+    {
+      "id": "comment-217167",
+      "count": 1
+    },
+    {
+      "id": "comment-217196",
+      "count": 1
+    },
+    {
+      "id": "comment-217146",
+      "count": 1
+    },
+    {
+      "id": "comment-217153",
+      "count": 1
+    },
+    {
+      "id": "comment-217157",
+      "count": 1
+    },
+    {
+      "id": "comment-217319",
+      "count": 1
+    },
+    {
+      "id": "comment-217159",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, [role=\"main\"]",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

@@ -1,0 +1,748 @@
+{
+  "websearch_id": "websearch_f272odrlcbr2x6vykhiyvtxz",
+  "search_id": "search_ybjz1rhr465r56a2g8v3rput",
+  "timestamp": "2025-11-07T12:32:30.773982",
+  "startedAt": "2025-11-07T12:32:30.773982",
+  "completedAt": "2025-11-07T12:32:32.893553",
+  "durationSeconds": 2.12,
+  "urlsDiscoveredCount": 19,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"Illinois\" uninsured motorist required",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"Illinois\" uninsured motorist required",
+      "show_strict_warning": false,
+      "cleaned": "Illinois uninsured motorist required",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Illinois uninsured motorist required"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Auto Insurance Definitions - Illinois Department of Insurance",
+          "url": "https://idoi.illinois.gov/consumers/consumerinsurance/auto-definitions.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured Motorist Bodily Injury (UM) Coverage Covers you for your bodily injury caused by a hit-and-run driver or an at-fault driver who has no auto liability insurance. Currently, Illinois law requires uninsured motorist limits of at least $25,000 per person and $50,000 per accident.",
+          "page_age": "2024-11-10T01:02:27",
+          "profile": {
+            "name": "IDOI",
+            "url": "https://idoi.illinois.gov/consumers/consumerinsurance/auto-definitions.html",
+            "long_name": "idoi.illinois.gov",
+            "img": "https://imgs.search.brave.com/NDOP76V8bJ7c_monISGMaK4FlS1unkC_T8lwvss277c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3ZmE2YmYx/MWFiMDI0Y2U2ZTky/NjMzZGUwYTVlMjQ2/NTk1NWNjZWVjOGNh/YjNkOTdkNzdhYTNk/YWU4MWNiZi9pZG9p/LmlsbGlub2lzLmdv/di8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "idoi.illinois.gov",
+            "hostname": "idoi.illinois.gov",
+            "favicon": "https://imgs.search.brave.com/NDOP76V8bJ7c_monISGMaK4FlS1unkC_T8lwvss277c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3ZmE2YmYx/MWFiMDI0Y2U2ZTky/NjMzZGUwYTVlMjQ2/NTk1NWNjZWVjOGNh/YjNkOTdkNzdhYTNk/YWU4MWNiZi9pZG9p/LmlsbGlub2lzLmdv/di8",
+            "path": "  \u203a home - idoi  \u203a consumers  \u203a consumer insurance"
+          },
+          "age": "November 10, 2024"
+        },
+        {
+          "title": "Auto Insurance Shopping Guide",
+          "url": "https://idoi.illinois.gov/consumers/consumerinsurance/auto-insurance-shopping-guide.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Currently, Illinois uninsured motorist bodily injury minimum limits are $25,000 per person and $50,000 per accident. For additional premium, you may buy higher limits to pay for claims that exceed those amounts. Underinsured Motorist Bodily Injury Insurance (UIM) \u2013 Pays the difference between ...",
+          "page_age": "2024-11-10T01:00:46",
+          "profile": {
+            "name": "IDOI",
+            "url": "https://idoi.illinois.gov/consumers/consumerinsurance/auto-insurance-shopping-guide.html",
+            "long_name": "idoi.illinois.gov",
+            "img": "https://imgs.search.brave.com/NDOP76V8bJ7c_monISGMaK4FlS1unkC_T8lwvss277c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3ZmE2YmYx/MWFiMDI0Y2U2ZTky/NjMzZGUwYTVlMjQ2/NTk1NWNjZWVjOGNh/YjNkOTdkNzdhYTNk/YWU4MWNiZi9pZG9p/LmlsbGlub2lzLmdv/di8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "idoi.illinois.gov",
+            "hostname": "idoi.illinois.gov",
+            "favicon": "https://imgs.search.brave.com/NDOP76V8bJ7c_monISGMaK4FlS1unkC_T8lwvss277c/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjg3ZmE2YmYx/MWFiMDI0Y2U2ZTky/NjMzZGUwYTVlMjQ2/NTk1NWNjZWVjOGNh/YjNkOTdkNzdhYTNk/YWU4MWNiZi9pZG9p/LmlsbGlub2lzLmdv/di8",
+            "path": "  \u203a home - idoi  \u203a consumers  \u203a consumer insurance"
+          },
+          "age": "November 10, 2024"
+        },
+        {
+          "title": "Do I Need Uninsured Motorist Coverage in Illinois?",
+          "url": "https://blumenshinelawgroup.com/need-uninsured-motorist-coverage-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Uninsured motorist coverage is required in Illinois which is $25,000 per person, $50,000 per accident. 13% of drivers are uninsured. Get help",
+          "page_age": "2025-03-26T19:09:37",
+          "profile": {
+            "name": "Blumenshinelawgroup",
+            "url": "https://blumenshinelawgroup.com/need-uninsured-motorist-coverage-illinois/",
+            "long_name": "blumenshinelawgroup.com",
+            "img": "https://imgs.search.brave.com/xDEI3q3JfqePQ6T7Ye7UNhaReqjvmVW2nGoLK3i8obQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmExMzBmNzQ1/MmIyOGNmZjdkYjI1/MTNlZGRmMTQzOGNk/NzU0NDgyOWUzYmVk/M2E1ZWYxYmFhMDFh/MjlmYTljMi9ibHVt/ZW5zaGluZWxhd2dy/b3VwLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "blumenshinelawgroup.com",
+            "hostname": "blumenshinelawgroup.com",
+            "favicon": "https://imgs.search.brave.com/xDEI3q3JfqePQ6T7Ye7UNhaReqjvmVW2nGoLK3i8obQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmExMzBmNzQ1/MmIyOGNmZjdkYjI1/MTNlZGRmMTQzOGNk/NzU0NDgyOWUzYmVk/M2E1ZWYxYmFhMDFh/MjlmYTljMi9ibHVt/ZW5zaGluZWxhd2dy/b3VwLmNvbS8",
+            "path": "  \u203a home  \u203a insurance claims  \u203a do i need uninsured motorist coverage in illinois?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/YpZHWPfkEPcFQQ8jExjcslfkiuMPzHwxtX7BIhNyKeE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ibHVt/ZW5zaGluZWxhd2dy/b3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNy8wNC9V/bmluc3VyZWQtbW90/b3Jpc3QtcG9saWN5/LmpwZw",
+            "original": "https://blumenshinelawgroup.com/wp-content/uploads/2017/04/Uninsured-motorist-policy.jpg",
+            "logo": false
+          },
+          "age": "March 26, 2025"
+        },
+        {
+          "title": "Illinois Uninsured / Underinsured Motorist Claims | Naperville Car Accident Lawyers",
+          "url": "https://www.malmlegal.com/personal-injury/car-accidents/illinois-uninsured-underinsured-motorist-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Despite mandatory automobile insurance requirements in Illinois, many operators of motor vehicles are uninsured (have no insurance), or are underinsured (have an inadequate or minimal amount of insurance), for the damages they cause when they injure someone in a car accident. When an accident occurs, the client may have a claim for uninsured motorist or underinsured motorist benefits.",
+          "page_age": "2025-08-28T19:30:34",
+          "profile": {
+            "name": "Malmlegal",
+            "url": "https://www.malmlegal.com/personal-injury/car-accidents/illinois-uninsured-underinsured-motorist-claims/",
+            "long_name": "malmlegal.com",
+            "img": "https://imgs.search.brave.com/FVQj6-7Zfga1HYgXV9qcC1aFDBz_O35z61-Rem-Yves/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFiNzNhZTU3/MzRhZGQxNWI1N2Nh/NWVlNzkwY2U3MDQ3/NmNkZjM3ODNjNTJl/MzRlNWZhMTU1NWJl/MWU4OTUyNi93d3cu/bWFsbWxlZ2FsLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "malmlegal.com",
+            "hostname": "www.malmlegal.com",
+            "favicon": "https://imgs.search.brave.com/FVQj6-7Zfga1HYgXV9qcC1aFDBz_O35z61-Rem-Yves/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFiNzNhZTU3/MzRhZGQxNWI1N2Nh/NWVlNzkwY2U3MDQ3/NmNkZjM3ODNjNTJl/MzRlNWZhMTU1NWJl/MWU4OTUyNi93d3cu/bWFsbWxlZ2FsLmNv/bS8",
+            "path": "  \u203a home  \u203a naperville, il personal injury lawyers  \u203a car accidents  \u203a illinois uninsured / underinsured motorist claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0Iej2876YuRKWb8df9nLSXJRhPS5MBeT5fM0C50IMJ0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWFsbWxlZ2FsLmNv/bS9zdGF0aWMvMjAy/NC8wNS8yM19pbnN1/cmFuY2VpbmZvcm1h/dGlvbi5qcGc",
+            "original": "https://www.malmlegal.com/static/2024/05/23_insuranceinformation.jpg",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Coverage in Illinois | Free Consult",
+          "url": "https://www.chicagolawyer.com/blog/10-things-know-uninsured-motorist-coverage-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Even if the percentage of uninsured ... are aware of the risks, which is why the law requires all drivers to have uninsured motorist coverage as part of their insurance policy....",
+          "page_age": "2025-08-12T18:51:39",
+          "profile": {
+            "name": "Chicago Lawyer",
+            "url": "https://www.chicagolawyer.com/blog/10-things-know-uninsured-motorist-coverage-illinois/",
+            "long_name": "chicagolawyer.com",
+            "img": "https://imgs.search.brave.com/G5TpBkShat42lfer-9E6knppxfYdmiSPB_L8ZzoMmGs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjdjNWJiNDU5/OWEwNGFiZWRhYzMw/MjM5OGQwZmMxNGQ4/ZTE0YmNiYjkwZTBi/ZjI5NzBkYTdiYjM5/MjYyNjVhZS93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chicagolawyer.com",
+            "hostname": "www.chicagolawyer.com",
+            "favicon": "https://imgs.search.brave.com/G5TpBkShat42lfer-9E6knppxfYdmiSPB_L8ZzoMmGs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjdjNWJiNDU5/OWEwNGFiZWRhYzMw/MjM5OGQwZmMxNGQ4/ZTE0YmNiYjkwZTBi/ZjI5NzBkYTdiYjM5/MjYyNjVhZS93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20v",
+            "path": "  \u203a home  \u203a understanding uninsured motorist coverage in illinois"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/xtXDS2ulLXvZbOBL948Yn1iBlp8dBVkiuKy6F8khHC8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20vYmxvZy8x/MC10aGluZ3Mta25v/dy11bmluc3VyZWQt/bW90b3Jpc3QtY292/ZXJhZ2UtaWxsaW5v/aXMv",
+            "original": "https://www.chicagolawyer.com/blog/10-things-know-uninsured-motorist-coverage-illinois/",
+            "logo": false
+          },
+          "age": "August 12, 2025"
+        },
+        {
+          "title": "What Is Uninsured Motorist Coverage in Illinois? \u2014 Illinois Car Accident Lawyers",
+          "url": "https://www.chicago-injury-lawyer.org/what-is-uninsured-motorist-coverage/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This type of insurance steps in to cover medical bills, lost wages, and other damages that the at-fault uninsured driver cannot pay. Illinois law requires drivers to carry uninsured motorist coverage, making it a standard part of most auto insurance ...",
+          "page_age": "2024-12-18T22:47:24",
+          "profile": {
+            "name": "Chicago-injury-lawyer",
+            "url": "https://www.chicago-injury-lawyer.org/what-is-uninsured-motorist-coverage/",
+            "long_name": "chicago-injury-lawyer.org",
+            "img": "https://imgs.search.brave.com/WOundhNPRMlUw0h1fyoQINnzwGL2sHPxLR9paCPt4nA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGU4MDY5MjU3/OTMwNWE2ZDdmMjMx/NDU5N2I4M2IzMDk1/OGVjOWM1MWFjMmFk/MjMxMDI3M2QwNTI2/NzRhYzRjNi93d3cu/Y2hpY2Fnby1pbmp1/cnktbGF3eWVyLm9y/Zy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chicago-injury-lawyer.org",
+            "hostname": "www.chicago-injury-lawyer.org",
+            "favicon": "https://imgs.search.brave.com/WOundhNPRMlUw0h1fyoQINnzwGL2sHPxLR9paCPt4nA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGU4MDY5MjU3/OTMwNWE2ZDdmMjMx/NDU5N2I4M2IzMDk1/OGVjOWM1MWFjMmFk/MjMxMDI3M2QwNTI2/NzRhYzRjNi93d3cu/Y2hpY2Fnby1pbmp1/cnktbGF3eWVyLm9y/Zy8",
+            "path": "\u203a what-is-uninsured-motorist-coverage"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/JLKihBR62O-DZWaDlWjDikad-yCb7lC6XL-4E5LXlgA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hpY2Fnby1pbmp1/cnktbGF3eWVyLm9y/Zy9maWxlcy8yMDE4/LzA4L0pKTUxvZ28u/cG5n",
+            "original": "https://www.chicago-injury-lawyer.org/files/2018/08/JJMLogo.png",
+            "logo": true
+          },
+          "age": "December 18, 2024"
+        },
+        {
+          "title": "Illinois Car Insurance Laws (Updated 2025) | The Zebra",
+          "url": "https://www.thezebra.com/auto-insurance/illinois-car-insurance/state-laws-il/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Therefore, Illinois mandates all drivers carry uninsured motorist coverage to cover bodily injury if they are harmed in an accident in which an uninsured driver is at fault. Note that the only coverage required is bodily injury.",
+          "page_age": "2025-10-16T21:50:53",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/auto-insurance/illinois-car-insurance/state-laws-il/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a cheap car insurance  \u203a illinois car insurance  \u203a illinois car insurance laws"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/zOe5wtd5rDboI1OwFNflRsGIswhfV_n5u6tmU6AxCFo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9tZWRp/YS9wcm9kdWN0aW9u/L29yaWdpbmFsX2lt/YWdlcy9oZXJvLWlt/Zy1pbGxpbm9pcy5v/cmlnaW5hbC5qcGc",
+            "original": "https://cdn.thezebra.com/zfront/media/production/original_images/hero-img-illinois.original.jpg",
+            "logo": false
+          },
+          "age": "3 weeks ago"
+        },
+        {
+          "title": "UM/UIM: What Is Uninsured Motorist Coverage? | Progressive",
+          "url": "https://www.progressive.com/answers/uninsured-motorist-insurance/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "States that don&#x27;t require uninsured and underinsured motorist coverage may still offer the option to purchase it if it&#x27;s available. For example, Illinois requires both uninsured and underinsured motorist coverage.",
+          "page_age": "2025-07-07T13:32:22",
+          "profile": {
+            "name": "Progressive",
+            "url": "https://www.progressive.com/answers/uninsured-motorist-insurance/",
+            "long_name": "progressive.com",
+            "img": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "progressive.com",
+            "hostname": "www.progressive.com",
+            "favicon": "https://imgs.search.brave.com/pnyxmCg2U3qNUkfQ_b9JJaXqMNTKG33YZq6cvL-9Psc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFlZmE0NzMy/NTk3MjA3M2UxZWM3/Yzc4NjM2NmYxOTI1/ZDI0NTZmZGFlYWUy/MWViOGU5NjI0OTQy/ZDFlY2I1Mi93d3cu/cHJvZ3Jlc3NpdmUu/Y29tLw",
+            "path": "  \u203a home  \u203a answers  \u203a car insurance information  \u203a what is uninsured motorist coverage?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/LyCn973myTkT4qMtUVdlO7vQ4aUxGOLmGQNTSOPveOU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY29udGVudHN0/YWNrLmlvL3YzL2Fz/c2V0cy9ibHQ2MmQ0/MDU5MWIzNjUwZGEz/L2JsdGUyOTM0YWQx/NDNhNmE0OGMvNjBk/YjgxYTRhMWZmMzE1/OWI1OTM4NWY0L3Vu/aW5zdXJlZC1tb3Rv/cmlzdC1pbnN1cmFu/Y2UucG5n",
+            "original": "https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blte2934ad143a6a48c/60db81a4a1ff3159b59385f4/uninsured-motorist-insurance.png",
+            "logo": false
+          },
+          "age": "July 7, 2025"
+        },
+        {
+          "title": "Uninsured/Underinsured Motorist Accidents in Illinois: Your Legal Guide by MST Law",
+          "url": "https://www.mstlawfirm.com/no-insurance-accidents/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Illinois requires all auto insurance policies to include uninsured motorist (UM) coverage with a minimum of $25,000 per person and $50,000 per accident. However, these limits may not be enough for serious injuries.",
+          "page_age": "2025-05-26T17:51:31",
+          "profile": {
+            "name": "Mstlawfirm",
+            "url": "https://www.mstlawfirm.com/no-insurance-accidents/",
+            "long_name": "mstlawfirm.com",
+            "img": "https://imgs.search.brave.com/HOsBs3em7gv4-XBsJ-NVuCAxrVbrEuXWSzGSmrdm_U4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTk3NGRjOTJi/YTg3ZDIwYjA4NmRi/MmEzNTAxZWVkMTRm/ZmNlZDQ0MTllNGIw/OTBjNGMzZGU2NjEz/YzYxMTJhNi93d3cu/bXN0bGF3ZmlybS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mstlawfirm.com",
+            "hostname": "www.mstlawfirm.com",
+            "favicon": "https://imgs.search.brave.com/HOsBs3em7gv4-XBsJ-NVuCAxrVbrEuXWSzGSmrdm_U4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTk3NGRjOTJi/YTg3ZDIwYjA4NmRi/MmEzNTAxZWVkMTRm/ZmNlZDQ0MTllNGIw/OTBjNGMzZGU2NjEz/YzYxMTJhNi93d3cu/bXN0bGF3ZmlybS5j/b20v",
+            "path": "  \u203a home  \u203a no insurance accidents"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GL2VSb1C8hJX6jTfX8JN9aZAJXmazCB9LzLQg6wpAzk/rs:fit:200:200:1:0/g:ce/aHR0cDovL3d3dy5t/c3RsYXdmaXJtLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OC8wMy9zbGlkZTEu/anBn",
+            "original": "http://www.mstlawfirm.com/wp-content/uploads/2018/03/slide1.jpg",
+            "logo": false
+          },
+          "age": "May 26, 2025"
+        },
+        {
+          "title": "Illinois Car Insurance Minimums",
+          "url": "https://tpmblegal.com/illinois-car-insurance-minimums/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes, Illinois requires drivers to carry uninsured motorist coverage (UM). This coverage helps protect you if you are involved in a collision with a driver without insurance of their own.",
+          "page_age": "2025-01-22T23:58:25",
+          "profile": {
+            "name": "Tpmblegal",
+            "url": "https://tpmblegal.com/illinois-car-insurance-minimums/",
+            "long_name": "tpmblegal.com",
+            "img": "https://imgs.search.brave.com/AbFeHAKklFbzY8aEcciEowzjNc7HrpHtgM9WILUnrNg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY5YTMzNmQ2/ZGFlMzhlZmU3ZWVj/NDFjM2U0YjBiMTcy/MDU3NWFiNjlhMGE0/MGQ0MTE3MDc4YTJk/ZWExOWJmYy90cG1i/bGVnYWwuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tpmblegal.com",
+            "hostname": "tpmblegal.com",
+            "favicon": "https://imgs.search.brave.com/AbFeHAKklFbzY8aEcciEowzjNc7HrpHtgM9WILUnrNg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTY5YTMzNmQ2/ZGFlMzhlZmU3ZWVj/NDFjM2U0YjBiMTcy/MDU3NWFiNjlhMGE0/MGQ0MTE3MDc4YTJk/ZWExOWJmYy90cG1i/bGVnYWwuY29tLw",
+            "path": "  \u203a home  \u203a illinois car insurance minimums"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Ys9Xtz6UWstxceJi_sQM8_9GlCzbZI7_Bj5Vj1qfKzw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly90cG1i/bGVnYWwuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzAy/L1RQTUItTG9nby1l/MTcyNzM3MzY1MDU5/Ny5wbmc",
+            "original": "https://tpmblegal.com/wp-content/uploads/2024/02/TPMB-Logo-e1727373650597.png",
+            "logo": true
+          },
+          "age": "January 22, 2025"
+        },
+        {
+          "title": "Accidents Involving Uninsured/Underinsured Motorists",
+          "url": "https://www.salvilaw.com/car-accident-lawyer/accidents-involving-uninsured-underinsured-motorists/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Illinois currently requires bodily injury limits of at least $25,000 per person and $50,000 per accident. Furthermore, motorists must carry at least $20,000 per accident in property damage liability coverage.",
+          "page_age": "2025-02-25T17:09:42",
+          "profile": {
+            "name": "Salvi, Schostok & Pritchard P.C.",
+            "url": "https://www.salvilaw.com/car-accident-lawyer/accidents-involving-uninsured-underinsured-motorists/",
+            "long_name": "salvilaw.com",
+            "img": "https://imgs.search.brave.com/jywD3f2RNLzEsvuvEUj9OiE6QzclKHDWMk1B0y9c2rQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzdmZDFjNDA0/NjZmY2VhNzBiZmZl/N2IzMGUwNTZhYzlj/ZGEzN2I4YTc5MDE3/MGZhMWFkYmRlY2E2/Njk5Y2Y3Ni93d3cu/c2FsdmlsYXcuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "salvilaw.com",
+            "hostname": "www.salvilaw.com",
+            "favicon": "https://imgs.search.brave.com/jywD3f2RNLzEsvuvEUj9OiE6QzclKHDWMk1B0y9c2rQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYzdmZDFjNDA0/NjZmY2VhNzBiZmZl/N2IzMGUwNTZhYzlj/ZGEzN2I4YTc5MDE3/MGZhMWFkYmRlY2E2/Njk5Y2Y3Ni93d3cu/c2FsdmlsYXcuY29t/Lw",
+            "path": "  \u203a home  \u203a chicago car accident lawyer  \u203a accidents involving uninsured/underinsured motorists"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/RLdw4JqspYfvKVh_zYnHbPAXiPOPk2-6eZwxlKsZ7DE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2FsdmlsYXcuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzAyL0FjY2lkZW50/cy1JbnZvbHZpbmct/VW5pbnN1cmVkLVVu/ZGVyaW5zdXJlZC1N/b3RvcmlzdHMuanBn",
+            "original": "https://www.salvilaw.com/wp-content/uploads/2025/02/Accidents-Involving-Uninsured-Underinsured-Motorists.jpg",
+            "logo": false
+          },
+          "age": "February 25, 2025"
+        },
+        {
+          "title": "What Happens If the At-Fault Driver is Uninsured in IL?",
+          "url": "https://www.srtriallawyers.com/blog/2025/march/what-happens-if-the-at-fault-driver-is-uninsured/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Illinois requires all auto insurance policies to include Uninsured Motorist (UM) coverage unless explicitly waived in writing.",
+          "page_age": "2025-05-28T00:00:00",
+          "profile": {
+            "name": "Srtriallawyers",
+            "url": "https://www.srtriallawyers.com/blog/2025/march/what-happens-if-the-at-fault-driver-is-uninsured/",
+            "long_name": "srtriallawyers.com",
+            "img": "https://imgs.search.brave.com/WXmCrufieGOZhOgoJX3yRyQmV-5vfbre9Db-Rn4lFzQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTEyNjFlNjZk/YzhkYTg2NDBmZTE1/YzI2YWQzZTY2Njgw/ZjRhOWEyM2I5ZWIw/NGY5Y2JmYzkzNjU5/ZmUwZjA5MC93d3cu/c3J0cmlhbGxhd3ll/cnMuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "srtriallawyers.com",
+            "hostname": "www.srtriallawyers.com",
+            "favicon": "https://imgs.search.brave.com/WXmCrufieGOZhOgoJX3yRyQmV-5vfbre9Db-Rn4lFzQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTEyNjFlNjZk/YzhkYTg2NDBmZTE1/YzI2YWQzZTY2Njgw/ZjRhOWEyM2I5ZWIw/NGY5Y2JmYzkzNjU5/ZmUwZjA5MC93d3cu/c3J0cmlhbGxhd3ll/cnMuY29tLw",
+            "path": "\u203a blog  \u203a 2025  \u203a march  \u203a what-happens-if-the-at-fault-driver-is-uninsured"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/PCbYxom1FbOF1t9RbuyTXG-S30beu5aBJX58MfFDyro/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c3J0cmlhbGxhd3ll/cnMuY29tL2ltYWdl/cy9sb2dvcy9Mb2dv/LjI1MDYwMjEwMzEy/MTUucG5n",
+            "original": "https://www.srtriallawyers.com/images/logos/Logo.2506021031215.png",
+            "logo": true
+          },
+          "age": "May 28, 2025"
+        },
+        {
+          "title": "Understanding Underinsured Motorist Coverage in Illinois and Wisconsin: Essential Protection Explained",
+          "url": "https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Even though Illinois requires drivers to carry liability insurance, the minimum coverage limits may not be enough to cover serious accidents. Medical expenses and vehicle repairs can quickly exceed these limits, leaving you with significant out-of-pocket costs. UIM coverage provides essential financial protection, ensuring you are adequately compensated even if the at-fault driver\u2019s insurance falls short. Underinsured motorist coverage is a crucial aspect of your auto insurance policy in Illinois.",
+          "page_age": "2024-11-19T10:49:44",
+          "profile": {
+            "name": "Sharks At Law",
+            "url": "https://www.sharksatlaw.com/understanding-underinsured-motorist-coverage-in-illinois-and-wisconsin-essential-protection-explained/",
+            "long_name": "sharksatlaw.com",
+            "img": "https://imgs.search.brave.com/v9AwRQDgy3m0phHpnGNjXBthsrw_n11sV2f3Vwh8acg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGUwMzJiMDU4/NzJjZjU0YzJiMzRj/MjRhZGNkYzAyZDE4/MDg2NDU2OWFjODk1/Mjg0NzM4YTk5Njk0/OGQxMTI1NC93d3cu/c2hhcmtzYXRsYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sharksatlaw.com",
+            "hostname": "www.sharksatlaw.com",
+            "favicon": "https://imgs.search.brave.com/v9AwRQDgy3m0phHpnGNjXBthsrw_n11sV2f3Vwh8acg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGUwMzJiMDU4/NzJjZjU0YzJiMzRj/MjRhZGNkYzAyZDE4/MDg2NDU2OWFjODk1/Mjg0NzM4YTk5Njk0/OGQxMTI1NC93d3cu/c2hhcmtzYXRsYXcu/Y29tLw",
+            "path": "  \u203a sharks at law  \u203a general blog  \u203a understanding underinsured motorist coverage in illinois and wisconsin: essential protection explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uC-V5qRhoBfKbl_-sZ-QqH2LraN5J6BBl6sq2W6pNvs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2hhcmtzYXRsYXcu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzA1L1VuZGVy/c3RhbmRpbmctVW5k/ZXJpbnN1cmVkLU1v/dG9yaXN0LUNvdmVy/YWdlXzIzNjg0NTgx/Ni0xLmpwZw",
+            "original": "https://www.sharksatlaw.com/wp-content/uploads/2024/05/Understanding-Underinsured-Motorist-Coverage_236845816-1.jpg",
+            "logo": false
+          },
+          "age": "November 19, 2024"
+        },
+        {
+          "title": "Understanding Uninsured Motorist Coverage in Illinois and Wisconsin: What You Need to Know",
+          "url": "https://www.sharksatlaw.com/understanding-uninsured-motorist-coverage-in-illinois-and-wisconsin-what-you-need-to-know/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Mandatory Coverage: In Illinois, all auto insurance carriers must offer uninsured motorist coverage for bodily injury. The minimum required limits are $25,000 per person and $50,000 per accident. However, you have the option to purchase higher ...",
+          "page_age": "2024-11-19T10:48:31",
+          "profile": {
+            "name": "Sharks At Law",
+            "url": "https://www.sharksatlaw.com/understanding-uninsured-motorist-coverage-in-illinois-and-wisconsin-what-you-need-to-know/",
+            "long_name": "sharksatlaw.com",
+            "img": "https://imgs.search.brave.com/v9AwRQDgy3m0phHpnGNjXBthsrw_n11sV2f3Vwh8acg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGUwMzJiMDU4/NzJjZjU0YzJiMzRj/MjRhZGNkYzAyZDE4/MDg2NDU2OWFjODk1/Mjg0NzM4YTk5Njk0/OGQxMTI1NC93d3cu/c2hhcmtzYXRsYXcu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "sharksatlaw.com",
+            "hostname": "www.sharksatlaw.com",
+            "favicon": "https://imgs.search.brave.com/v9AwRQDgy3m0phHpnGNjXBthsrw_n11sV2f3Vwh8acg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGUwMzJiMDU4/NzJjZjU0YzJiMzRj/MjRhZGNkYzAyZDE4/MDg2NDU2OWFjODk1/Mjg0NzM4YTk5Njk0/OGQxMTI1NC93d3cu/c2hhcmtzYXRsYXcu/Y29tLw",
+            "path": "  \u203a sharks at law  \u203a blog  \u203a understanding uninsured motorist coverage in illinois and wisconsin: what you need to know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/h3tpqTpiK_q3R4gLJbUwtT6D42fNho_lCqZLdt5EfOs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2hhcmtzYXRsYXcu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzA1L1VuaW5z/dXJlZC1Nb3Rvcmlz/dC1Db3ZlcmFnZV8x/MzQ1Mzg1NzU2LTEu/anBn",
+            "original": "https://www.sharksatlaw.com/wp-content/uploads/2024/05/Uninsured-Motorist-Coverage_1345385756-1.jpg",
+            "logo": false
+          },
+          "age": "November 19, 2024"
+        },
+        {
+          "title": "Why Is Uninsured Motorist Coverage Important? | Illinois Car Accident Attorneys",
+          "url": "https://www.malmlegal.com/blog/why-uninsured-motorist-coverage-is-important/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It is typically included as part of your own auto insurance policy and helps cover damages like medical bills, lost wages, and pain and suffering. In Illinois, UM coverage is required by law, and the minimum limits for bodily injury are:",
+          "page_age": "2025-08-28T19:30:34",
+          "profile": {
+            "name": "Malmlegal",
+            "url": "https://www.malmlegal.com/blog/why-uninsured-motorist-coverage-is-important/",
+            "long_name": "malmlegal.com",
+            "img": "https://imgs.search.brave.com/FVQj6-7Zfga1HYgXV9qcC1aFDBz_O35z61-Rem-Yves/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFiNzNhZTU3/MzRhZGQxNWI1N2Nh/NWVlNzkwY2U3MDQ3/NmNkZjM3ODNjNTJl/MzRlNWZhMTU1NWJl/MWU4OTUyNi93d3cu/bWFsbWxlZ2FsLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "malmlegal.com",
+            "hostname": "www.malmlegal.com",
+            "favicon": "https://imgs.search.brave.com/FVQj6-7Zfga1HYgXV9qcC1aFDBz_O35z61-Rem-Yves/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWFiNzNhZTU3/MzRhZGQxNWI1N2Nh/NWVlNzkwY2U3MDQ3/NmNkZjM3ODNjNTJl/MzRlNWZhMTU1NWJl/MWU4OTUyNi93d3cu/bWFsbWxlZ2FsLmNv/bS8",
+            "path": "  \u203a home  \u203a why is uninsured motorist coverage important?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/0Iej2876YuRKWb8df9nLSXJRhPS5MBeT5fM0C50IMJ0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWFsbWxlZ2FsLmNv/bS9zdGF0aWMvMjAy/NC8wNS8yM19pbnN1/cmFuY2VpbmZvcm1h/dGlvbi5qcGc",
+            "original": "https://www.malmlegal.com/static/2024/05/23_insuranceinformation.jpg",
+            "logo": false
+          },
+          "age": "August 28, 2025"
+        },
+        {
+          "title": "What Are the Illinois Minimum Car Insurance Requirements? - Insure On The Spot",
+          "url": "https://www.insureonthespot.com/illinois-minimum-car-insurance-requirements/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "A: Illinois law requires a minimum of 25/50/20 liability insurance, which means $25,000 bodily injury liability per person, $50,000 per accident, and $20,000 property damage coverage. Additionally, Illinois requires uninsured motorist bodily injury coverage of 25/50.",
+          "page_age": "2025-06-25T16:32:30",
+          "profile": {
+            "name": "Insure On The Spot",
+            "url": "https://www.insureonthespot.com/illinois-minimum-car-insurance-requirements/",
+            "long_name": "insureonthespot.com",
+            "img": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insureonthespot.com",
+            "hostname": "www.insureonthespot.com",
+            "favicon": "https://imgs.search.brave.com/ZH_l3iIrD1V5_xmwua4x4SlKZZRpbhmyYEDeqdHdCDQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNTI3YjYxNTUz/MjA3OTY4ODg4MDVh/OWQ4YTI5MTJjN2Vl/MjE0MzQ0ODdkZDRk/NTUzNDcxYjczMzVl/MWNmYzI1NC93d3cu/aW5zdXJlb250aGVz/cG90LmNvbS8",
+            "path": "  \u203a home  \u203a tips & resources (articles)  \u203a what are the illinois minimum car insurance requirements?"
+          },
+          "age": "June 25, 2025"
+        },
+        {
+          "title": "Is an Uninsured Driver Automatically at Fault? | Accident with Uninsured Driver",
+          "url": "https://www.kryderlaw.com/faqs/is-an-uninsured-driver-automatically-at-fault/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "If these options don\u2019t fully cover your losses, you may be able to sue negligent uninsured drivers. Yes. Illinois law currently requires uninsured motorist limits of at least $25,000 per person and $50,000 per accident.",
+          "page_age": "2024-12-17T02:19:51",
+          "profile": {
+            "name": "Kryder Law",
+            "url": "https://www.kryderlaw.com/faqs/is-an-uninsured-driver-automatically-at-fault/",
+            "long_name": "kryderlaw.com",
+            "img": "https://imgs.search.brave.com/T8PTu3Nmimwew0gcFm5_h6tOkeReSL2-ZS3C3ObJztc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWZmMTM0MGU3/MWQyMGY1ZGM0YmNj/OWEyYjI2MjAzMjdj/NDI3YzVkZWEwNzc4/YTZhYTY1ZTZiM2Uy/MWNiYWJmOC93d3cu/a3J5ZGVybGF3LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "kryderlaw.com",
+            "hostname": "www.kryderlaw.com",
+            "favicon": "https://imgs.search.brave.com/T8PTu3Nmimwew0gcFm5_h6tOkeReSL2-ZS3C3ObJztc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWZmMTM0MGU3/MWQyMGY1ZGM0YmNj/OWEyYjI2MjAzMjdj/NDI3YzVkZWEwNzc4/YTZhYTY1ZTZiM2Uy/MWNiYWJmOC93d3cu/a3J5ZGVybGF3LmNv/bS8",
+            "path": "\u203a faqs  \u203a is-an-uninsured-driver-automatically-at-fault"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/BCWikU0rbfBmRFyjCHsTBa3UVIL3KkHMDIBYDB4rpak/rs:fit:200:200:1:0/g:ce/ZGF0YTppbWFnZS9z/dmcreG1sO25pdHJv/LWVtcHR5LWlkPU1U/RXlORG94TlRrPS0x/O2Jhc2U2NCxQSE4y/WnlCMmFXVjNRbTk0/UFNJd0lEQWdNamMx/SURFeE1DSWdkMmxr/ZEdnOUlqSTNOU0ln/YUdWcFoyaDBQU0l4/TVRBaUlIaHRiRzV6/UFNKb2RIUndPaTh2/ZDNkM0xuY3pMbTl5/Wnk4eU1EQXdMM04y/WnlJK1BDOXpkbWMr",
+            "original": "data:image/svg+xml;nitro-empty-id=MTEyNDoxNTk=-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjc1IDExMCIgd2lkdGg9IjI3NSIgaGVpZ2h0PSIxMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+",
+            "logo": false
+          },
+          "age": "December 17, 2024"
+        },
+        {
+          "title": "Uninsured Motorist Coverage for an IL Hit-and-Run | Staver",
+          "url": "https://www.chicagolawyer.com/blog/will-uninsured-motorist-coverage-apply-hit-run-accidents-illinois/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In Illinois, you are required to carry liability and property damage in case you hurt someone else or damage a vehicle in a car accident. These policies are not meant to fix your own car or pay for your own medical expenses.",
+          "page_age": "2025-08-16T03:01:54",
+          "profile": {
+            "name": "Chicago Lawyer",
+            "url": "https://www.chicagolawyer.com/blog/will-uninsured-motorist-coverage-apply-hit-run-accidents-illinois/",
+            "long_name": "chicagolawyer.com",
+            "img": "https://imgs.search.brave.com/G5TpBkShat42lfer-9E6knppxfYdmiSPB_L8ZzoMmGs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjdjNWJiNDU5/OWEwNGFiZWRhYzMw/MjM5OGQwZmMxNGQ4/ZTE0YmNiYjkwZTBi/ZjI5NzBkYTdiYjM5/MjYyNjVhZS93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "chicagolawyer.com",
+            "hostname": "www.chicagolawyer.com",
+            "favicon": "https://imgs.search.brave.com/G5TpBkShat42lfer-9E6knppxfYdmiSPB_L8ZzoMmGs/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjdjNWJiNDU5/OWEwNGFiZWRhYzMw/MjM5OGQwZmMxNGQ4/ZTE0YmNiYjkwZTBi/ZjI5NzBkYTdiYjM5/MjYyNjVhZS93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20v",
+            "path": "  \u203a home  \u203a will uninsured motorist coverage apply to a hit and run in illinois?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TrjBELzVGvqvlkeis_LU3ZyeUwMlZscQDoHhEIjwbYA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hpY2Fnb2xhd3ll/ci5jb20vYmxvZy93/aWxsLXVuaW5zdXJl/ZC1tb3RvcmlzdC1j/b3ZlcmFnZS1hcHBs/eS1oaXQtcnVuLWFj/Y2lkZW50cy1pbGxp/bm9pcy8",
+            "original": "https://www.chicagolawyer.com/blog/will-uninsured-motorist-coverage-apply-hit-run-accidents-illinois/",
+            "logo": false
+          },
+          "age": "August 16, 2025"
+        },
+        {
+          "title": "Uninsured Motorist Claims In Naperville, Illinois | Mathys & Schneid Personal Injury Lawyers",
+          "url": "https://www.mathyslaw.com/naperville-car-accident-lawyer/uninsured-motorist-claims/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Yes. Uninsured motorist coverage is required in Illinois.",
+          "page_age": "2025-06-16T09:28:16",
+          "profile": {
+            "name": "Mathyslaw",
+            "url": "https://www.mathyslaw.com/naperville-car-accident-lawyer/uninsured-motorist-claims/",
+            "long_name": "mathyslaw.com",
+            "img": "https://imgs.search.brave.com/Vc47F61eW5pOLk9m70bJtow1U5gFCybPNvINNNH2d1Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGFjM2MyYzRl/YWVlNzIyYjVhNWVi/MDQ5ZWFhYWFlNjFm/ZDlhZGQ5MzRhMGZh/MWJhYmFhMWIyNTQ5/NTQ5N2JiOS93d3cu/bWF0aHlzbGF3LmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "location",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "mathyslaw.com",
+            "hostname": "www.mathyslaw.com",
+            "favicon": "https://imgs.search.brave.com/Vc47F61eW5pOLk9m70bJtow1U5gFCybPNvINNNH2d1Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGFjM2MyYzRl/YWVlNzIyYjVhNWVi/MDQ5ZWFhYWFlNjFm/ZDlhZGQ5MzRhMGZh/MWJhYmFhMWIyNTQ5/NTQ5N2JiOS93d3cu/bWF0aHlzbGF3LmNv/bS8",
+            "path": "\u203a naperville-car-accident-lawyer  \u203a uninsured-motorist-claims"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ZJOKxTdtULimEPZEnqlANXFnOJyuUr6qOq7mqiLQOFQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWF0aHlzbGF3LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvc2l0/ZXMvMTUwMzkzNi8y/MDI1LzAyL01TX09H/X0lNRy5wbmc",
+            "original": "https://www.mathyslaw.com/wp-content/uploads/sites/1503936/2025/02/MS_OG_IMG.png",
+            "logo": false
+          },
+          "age": "June 16, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

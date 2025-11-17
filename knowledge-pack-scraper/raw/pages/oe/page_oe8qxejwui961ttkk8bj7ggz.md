@@ -1,0 +1,485 @@
+No disponible en español
+¡Lo sentimos! Esta página no está disponible en español. 
+Localiza a un agente
+Cancelar
+Aviso
+¡Lo sentimos! Esta página no está disponible en español.
+Continuar
+Cancelar
+[Skip to main content](https://www.statefarm.com/simple-insights/residence/how-to-budget-and-save-for-home-maintenance#oneX-main-content)
+[![State Farm Insurance and Financial Services](https://static1.st8fm.com/en_US/dxl-1x/prod/css/images/header/state-farm-logo-5.svg)](https://www.statefarm.com/)
+[ ![Simple Insights](https://static1.st8fm.com/en_US/img/logos/SimpleInsightsRed.svg) ](https://www.statefarm.com/simple-insights)
+[![State Farm Insurance and Financial Services](https://static1.st8fm.com/en_US/dxl-1x/prod/css/images/header/state-farm-logo-5.svg)](https://www.statefarm.com/)
+  * The Basics The Basics
+    * [Auto & vehicle](https://www.statefarm.com/simple-insights/auto-and-vehicles)
+    * [Banking](https://www.statefarm.com/simple-insights/banking)
+    * [Family](https://www.statefarm.com/simple-insights/family)
+    * [Residence](https://www.statefarm.com/simple-insights/residence)
+[Auto & vehicle](https://www.statefarm.com/simple-insights/auto-and-vehicles) [Banking](https://www.statefarm.com/simple-insights/banking) [Family](https://www.statefarm.com/simple-insights/family) [Residence](https://www.statefarm.com/simple-insights/residence)
+  * Planning Planning
+    * [College](https://www.statefarm.com/simple-insights/college)
+    * [Estate](https://www.statefarm.com/simple-insights/estate)
+    * [Financial](https://www.statefarm.com/simple-insights/financial)
+    * [Health](https://www.statefarm.com/simple-insights/health-insurance)
+    * [Insurance](https://www.statefarm.com/simple-insights/insurance)
+    * [Life Insurance](https://www.statefarm.com/simple-insights/life-insurance)
+    * [Retirement](https://www.statefarm.com/simple-insights/retirement)
+    * [Small Business](https://www.statefarm.com/simple-insights/small-business)
+[College](https://www.statefarm.com/simple-insights/college) [Estate](https://www.statefarm.com/simple-insights/estate) [Financial](https://www.statefarm.com/simple-insights/financial) [Health](https://www.statefarm.com/simple-insights/health-insurance) [Insurance](https://www.statefarm.com/simple-insights/insurance) [Life Insurance](https://www.statefarm.com/simple-insights/life-insurance) [Retirement](https://www.statefarm.com/simple-insights/retirement) [Small Business](https://www.statefarm.com/simple-insights/small-business)
+  * Life Moments Life Moments
+    * [Starting Out](https://www.statefarm.com/simple-insights/life-moments/starting-out)
+    * [Getting Married](https://www.statefarm.com/simple-insights/life-moments/getting-married)
+    * [First Time Home Buyer](https://www.statefarm.com/simple-insights/life-moments/first-time-home-buyer)
+    * [Adding a Child](https://www.statefarm.com/simple-insights/life-moments/adding-a-child)
+    * [Changing Jobs](https://www.statefarm.com/simple-insights/life-moments/changing-jobs)
+    * [Planning a Move](https://www.statefarm.com/simple-insights/life-moments/planning-a-move)
+    * [Newly Single](https://www.statefarm.com/simple-insights/life-moments/newly-single)
+    * [Relocating](https://www.statefarm.com/simple-insights/life-moments/relocating)
+    * [Empty Nester](https://www.statefarm.com/simple-insights/life-moments/empty-nester)
+[Starting Out](https://www.statefarm.com/simple-insights/life-moments/starting-out) [Getting Married](https://www.statefarm.com/simple-insights/life-moments/getting-married) [First Time Home Buyer](https://www.statefarm.com/simple-insights/life-moments/first-time-home-buyer) [Adding a Child](https://www.statefarm.com/simple-insights/life-moments/adding-a-child) [Changing Jobs](https://www.statefarm.com/simple-insights/life-moments/changing-jobs) [Planning a Move](https://www.statefarm.com/simple-insights/life-moments/planning-a-move) [Newly Single](https://www.statefarm.com/simple-insights/life-moments/newly-single) [Relocating](https://www.statefarm.com/simple-insights/life-moments/relocating) [Empty Nester](https://www.statefarm.com/simple-insights/life-moments/empty-nester)
+  * Smart Ideas Smart Ideas
+    * [Car Seat Safety ](https://www.statefarm.com/simple-insights/smart-ideas/car-seat-installation)
+    * [Manage Energy](https://www.statefarm.com/simple-insights/smart-ideas/energy-management)
+    * [ Smart Tech ](https://www.statefarm.com/simple-insights/smart-ideas/securing-your-home)
+    * [Starting Today](https://www.statefarm.com/simple-insights/smart-ideas/starting-today)
+[Car Seat Safety ](https://www.statefarm.com/simple-insights/smart-ideas/car-seat-installation) [Manage Energy](https://www.statefarm.com/simple-insights/smart-ideas/energy-management) [ Smart Tech ](https://www.statefarm.com/simple-insights/smart-ideas/securing-your-home) [Starting Today](https://www.statefarm.com/simple-insights/smart-ideas/starting-today)
+  * Safety Safety
+    * [Earthquake ](https://www.statefarm.com/simple-insights/safety/earthquake)
+    * [Fire Prevention](https://www.statefarm.com/simple-insights/safety/fire-prevention)
+    * [ Flood ](https://www.statefarm.com/simple-insights/safety/flood)
+    * [Hurricane ](https://www.statefarm.com/simple-insights/safety/hurricane)
+    * [Severe Weather](https://www.statefarm.com/simple-insights/safety/severe-weather)
+    * [Tornadoes](https://www.statefarm.com/simple-insights/safety/tornadoes)
+    * [ Wildfires ](https://www.statefarm.com/simple-insights/safety/wildfire)
+    * [Winter Storm](https://www.statefarm.com/simple-insights/safety/winter-storm)
+[Earthquake ](https://www.statefarm.com/simple-insights/safety/earthquake) [Fire Prevention](https://www.statefarm.com/simple-insights/safety/fire-prevention) [ Flood ](https://www.statefarm.com/simple-insights/safety/flood) [Hurricane ](https://www.statefarm.com/simple-insights/safety/hurricane) [Severe Weather](https://www.statefarm.com/simple-insights/safety/severe-weather) [Tornadoes](https://www.statefarm.com/simple-insights/safety/tornadoes) [ Wildfires ](https://www.statefarm.com/simple-insights/safety/wildfire) [Winter Storm](https://www.statefarm.com/simple-insights/safety/winter-storm)
+
+
+  * Main Menu
+  * Search
+  * [ Help ](https://www.statefarm.com/customer-care)
+  * [ Español ](https://es.statefarm.com/simple-insights/residencia/como-presupuestar-y-ahorrar-para-el-mantenimiento-de-vivienda)
+
+
+Back
+Search
+How can we help you?
+Search
+Start of main content
+  * [ Simple Insights  ](https://www.statefarm.com/simple-insights)
+  * [ Residence  ](https://www.statefarm.com/simple-insights/residence)
+  * How Much To Budget for Home Maintenance 
+
+
+![Man kneeling in front of the kitchen sink reading instructions a woman is holding. A toolbox is open beside the man.](https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/budget-for-home-maintenance_750.jpg)
+November 13, 2024 
+2 minute read
+# How much to budget for home maintenance
+Written by [State Farm® Editorial Team ](https://www.statefarm.com/simple-insights/editorial-team-and-process)
+Some knowledge and planning can help you be more prepared when it’s time for home repairs. 
+From the roof to the furnace (and every appliance in between), the average cost of home repairs for major house components can range from several hundred to thousands of dollars. While homeowners can't escape home maintenance or updates, they can help prevent those [financial surprises](https://www.statefarm.com/simple-insights/residence/homeowners-insurance-maintenance-repairs "Does homeowners insurance pay for home maintenance repairs") by preparing early for inevitable fixes. Here are some important things to consider and plan for.
+## How much should you save each year for maintenance on your home?
+Don't get caught with empty pockets. Try to set aside a portion of your [monthly budget](https://www.statefarm.com/simple-insights/financial/lets-get-going-on-that-budget "Budget and Start Saving Money Today") in a home repair or [emergency fund](https://www.statefarm.com/simple-insights/financial/building-an-emergency-fund-calculate-how-much-to-save "Building an Emergency Fund Calculate How Much to Save"). Keeping the money separate can also make it harder to [spend](https://www.statefarm.com/simple-insights/financial/how-to-create-better-spending-habits "The psychology of spending money and why you may be spending so much") it on something else. Even a small amount can quickly add up.
+Find the percentage that works best for your [budget](https://www.statefarm.com/simple-insights/financial/calculate-spendings-and-see-the-benefits-of-spending-less "Calculate spending and see the benefits of spending less") and set up automatic transfers into an emergency fund account. A rule of thumb is to set aside [1% - 4% of your home's value](https://www.investopedia.com/home-maintenance-budget-8608913#:~:text=The%20Percentage%20Rule,year%20for%20repairs%20and%20replacements. "External link: How Much Money to Budget for Home Maintenance") for a home maintenance fund. For example, for a home valued at $200,000, you would budget $2,000 to $8,000 per year to spend on annual upkeep.
+During times of uncertainty when the real estate market inflates home values, the square footage rule might work better for others. For instance, if you have a 3,000-square-foot house, you will want to save $3,000 for annual repairs and maintenance. Evaluate whether percentage or square footage works best for your budget.
+It can also be helpful to set some savings goals based on average home maintenance costs for replacement. Here are some approximate cost ranges (costs may vary depending on location and demand):
+  * [Roof (asphalt): $5,800 to over $13,000](https://www.homeadvisor.com/cost/roofing/install-a-roof/ "External Link: How Much Does It Cost To Replace A Roof")
+  * [Deck (wood/composite): $25-$50 per square foot](https://homeguide.com/costs/cost-to-build-a-deck "External Link: How much does it cost to build a deck")
+  * [Furnace: $2,000-$5,400](https://homeguide.com/costs/new-furnace-replacement-cost "External Link: How much does a new furnace cost to replace")
+  * [Central air conditioner: $3,900 to over $8,000](https://www.homeadvisor.com/cost/heating-and-cooling/install-an-ac-unit/ "External Link: How much does an AC unit cost")
+  * [Water heater (gas/electric): $800 to over $1,800](https://www.homeadvisor.com/cost/plumbing/install-a-water-heater/ "External Link: How much does a water heater replacement cost")
+  * [Garage door opener: $200 to over $500](https://www.angi.com/articles/how-much-does-garage-door-opener-cost.htm "External Link: How much does a garage door opener installation cost")
+  * [Windows: $230-$1,230 per window](https://www.architecturaldigest.com/reviews/windows/window-replacement-cost#:~:text=Window%20replacement%20costs%20typically%20range,brand%2C%20and%20any%20special%20features. "External Link: Window Replacement Cost")
+
+
+Appliance costs tend to vary based on brand and features, from about $400 to $1,000 for many items. However, higher-end options can cost several thousand dollars more than that.
+## Average lifespan of a house
+The lifespan of components in your house can vary based on several factors such as wear and tear, maintenance, location, usage, quality and material. Once you have determined how much to save, it can be helpful to prioritize your repairs based on age. For example, if your roof is 20 years old, you probably have just a few years before investing in a replacement. When it comes to a 5-year-old furnace, on the other hand, you may not need to save for another decade. Here are averages from various sources:
+  * [**Roof (asphalt shingles):** 20-30 years](https://www.architecturaldigest.com/reviews/roofing/how-long-does-a-roof-last "External link: How Long Do Roofs Last")
+  * [**Furnace:** 15-20 years](https://todayshomeowner.com/hvac/guides/how-long-should-furnace-last/ "External Link: How Long Should a Furnace Last")
+  * [**Central air conditioner:** 15-20 years](https://www.carrier.com/residential/en/us/products/air-conditioners/how-long-do-air-conditioners-last/ "External Link: How Long Does AC Units Last")
+  * [**Water heater (tank type):** 8-12 years](https://www.lowes.com/n/how-to/when-to-replace-a-water-heater "External Link: How to Decide Between Water Heater Repair and Replacement")
+  * [**Garage door opener:** 10-15 years](https://www.angi.com/articles/how-long-do-garage-door-openers-last.htm "External Link: How Long Can Garage Door Openers Last")
+  * [**Windows (wood):** 20 years](https://goasher.com/windows/how-long-do-windows-last/ "External Link: How Long Do Windows Last")
+
+
+According to [The Spruce](https://www.thespruce.com/lifespan-of-household-appliances-4158782 "External Link: How long major appliances should lasat and when to replace them"), appliances average:
+  * **Washing machine:** 10-11 years
+  * **Dryer:** 13 years
+  * **Refrigerator:** 14 years
+  * **Range:** 14 years
+  * **Dishwasher:** 9-10 years
+
+
+## Good maintenance practices
+Start taking action now to help minimize the potential financial burden of home repairs.
+  * **Perform routine maintenance.** To help prolong the life of your home's systems and [appliances](https://www.statefarm.com/simple-insights/residence/appliance-maintenance "Appliance maintenance to-dos for your home"), regular maintenance is important. Create a schedule for inspecting and cleaning components every [summer](https://www.statefarm.com/simple-insights/residence/summer-maintenance-for-your-home "Summer home maintenance checklist") and [fall](https://www.statefarm.com/simple-insights/residence/fall-home-maintenance-checklist "Fall home maintenance checklist"). Throughout the year, create a regular to-do list such as [replacing furnace filters](https://www.statefarm.com/simple-insights/residence/furnace-maintenance-must-knows "Furnace maintenance tips"), cleaning air vents, and testing smoke alarms and carbon monoxide detectors.
+  * **Make repairs a priority.** A minor issue can quickly escalate into an expensive problem. Even if a professional is required, repairs may generally be less costly than a replacement.
+
+
+Check out more [home maintenance](https://www.statefarm.com/simple-insights/residence/maintenance "Maintenance articles for spring") articles to help keep your home in good shape.
+® (including State Farm Mutual Automobile Insurance Company and its subsidiaries and affiliates). While we believe it to be reliable and accurate, we do not warrant the accuracy or reliability of the information. State Farm is not responsible for, and does not endorse or approve, either implicitly or explicitly, the content of any third party sites that might be hyperlinked from this page. The information is not intended to replace manuals, instructions or information provided by a manufacturer or the advice of a qualified professional, or to affect coverage under any applicable insurance policy. These suggestions are not a complete list of every loss control measure. State Farm makes no guarantees of results from use of this information. 
+##  Start a quote 
+#####  Select a product to start a quote. 
+Product name Select a product name from dropdown Auto Auto + Renters Motorcycle Homeowners Condo Owners Renters Small Business Life Medicare Supplement Supplemental Health Pet Insurance
+ZIP Code Enter 5 digit zip code Start a quote
+State select a value from drop down AK AL AR AZ CA CO CT DC DE FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT NC ND NE NH NJ NM NV NY OH OK OR PA RI SC SD TN TX UT VA VT WA WI WV WY Start a quote 
+Start a quote
+Start a quote
+##  Find agents near   
+you or contact us 
+#####  There’s one ready to offer personalized service to fit your specific needs.
+ZIP Code Enter 5 digit zip code FInd an agent 
+[ 844-364-0100 ](tel:+18443640100 "Phone Contact")
+###  Related articles 
+[ ![Man with a thin string bracelet pushing a button on a radon detector.](https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/340-radon-is-deadly-wide.jpg) ](https://www.statefarm.com/simple-insights/residence/radon-is-deadly-and-undetectable-without-the-right-tools)
+####  [ What is radon gas? ](https://www.statefarm.com/simple-insights/residence/radon-is-deadly-and-undetectable-without-the-right-tools)
+How to test for and treat your home for this colorless, odorless and dangerous gas.
+[ ![Couple loading dishwasher and discussing appliance maintenance.](https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/appliance-maintenance.jpg) ](https://www.statefarm.com/simple-insights/residence/appliance-maintenance)
+####  [ Appliance maintenance to-dos for your home ](https://www.statefarm.com/simple-insights/residence/appliance-maintenance)
+Each of your home's appliances and systems may function better with regular maintenance.
+[ ![Mother and daughter planting garden plants.](https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/622-summer-maintenance-wide.jpg) ](https://www.statefarm.com/simple-insights/residence/summer-maintenance-for-your-home)
+####  [ Summer home maintenance checklist ](https://www.statefarm.com/simple-insights/residence/summer-maintenance-for-your-home)
+Check out these interior and exterior home maintenance tips to consider while the weather is warm.
+[ ![Small boy helping with Fall yard maintenance by raking leaves.](https://www.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/167-essential-autumn-home-maintenance-checks-wide.jpg) ](https://www.statefarm.com/simple-insights/residence/fall-home-maintenance-checklist)
+####  [ Fall home maintenance checklist ](https://www.statefarm.com/simple-insights/residence/fall-home-maintenance-checklist)
+Autumn home maintenance projects, such as cleaning gutters and checking your heating system, help you prepare for winter weather.
+####  [ Residence ](https://www.statefarm.com/simple-insights/residence)
+  * ######  How Much To Budget for Home Maintenance 
+[ How Much To Budget for Home Maintenance ](https://www.statefarm.com/simple-insights/residence/how-to-budget-and-save-for-home-maintenance)
+  * ######  Related pages
+Related pages
+    * [What to do During an Earthquake](https://www.statefarm.com/simple-insights/residence/what-to-do-during-an-earthquake-loss-mit)
+    * [How To Prepare for a Hurricane](https://www.statefarm.com/simple-insights/residence/preparing-for-a-hurricane-loss-mit)
+    * [What to Do In a Tornado](https://www.statefarm.com/simple-insights/residence/what-to-do-in-a-tornado-loss-mit)
+    * [Ways to Stay Safe During a Severe Storm or Wind Event](https://www.statefarm.com/simple-insights/residence/ways-to-stay-safe-during-a-severe-wind-event-loss-mit)
+    * [Wildfire Safety Tips](https://www.statefarm.com/simple-insights/residence/wildfire-safety-tips-loss-mit)
+    * [Ideas on How To Prevent Pipes From Freezing](https://www.statefarm.com/simple-insights/residence/dont-let-pipes-freeze-and-steps-to-take-if-they-do-loss-mit)
+    * [DIY Tips for Winterizing Your Home](https://www.statefarm.com/simple-insights/residence/winterizing-your-home-loss-mit)
+    * [What To Do After an Earthquake](https://www.statefarm.com/simple-insights/residence/what-to-do-after-an-earthquake-loss-mit)
+    * [What to Do After a Tornado](https://www.statefarm.com/simple-insights/residence/what-to-do-after-a-tornado-loss-mit)
+    * [What To Do After a Hurricane](https://www.statefarm.com/simple-insights/residence/what-to-do-after-a-hurricane-loss-mit)
+    * [What To Do After a Wildfire](https://www.statefarm.com/simple-insights/residence/what-to-do-after-a-wildfire-loss-mit)
+    * [Buying And Selling](https://www.statefarm.com/simple-insights/residence/buying-and-selling)
+    * [Holiday Fire Safety Tips](https://www.statefarm.com/simple-insights/residence/holiday-fire-safety-tips)
+    * [How To Clear Snow Off The Roof](https://www.statefarm.com/simple-insights/residence/how-to-clear-snow-off-the-roof)
+    * [House Hunting](https://www.statefarm.com/simple-insights/residence/house-hunting)
+    * [Radon Is Deadly And Undetectable Without The Right Tools](https://www.statefarm.com/simple-insights/residence/radon-is-deadly-and-undetectable-without-the-right-tools)
+    * [Tsunami Safety Tips](https://www.statefarm.com/simple-insights/residence/tsunami-safety-tips)
+    * [How To Identify Poisonous Plants](https://www.statefarm.com/simple-insights/residence/how-to-identify-poisonous-plants)
+    * [Tips For Collectible Storage And Display](https://www.statefarm.com/simple-insights/residence/tips-for-collectible-storage-and-display)
+    * [Is a Natural Gas Detector Worth It?](https://www.statefarm.com/simple-insights/residence/natural-gas-detectors)
+    * [How to Deal with a Difficult Landlord](https://www.statefarm.com/simple-insights/residence/how-to-deal-with-difficult-landlord-issues)
+    * [11 Signs You Should Think About Rewiring Your Home](https://www.statefarm.com/simple-insights/residence/when-should-you-think-about-rewiring-your-home)
+    * [Spring Yard Cleanup Safety Tips](https://www.statefarm.com/simple-insights/residence/spring-yard-cleanup-safety-tips)
+    * [Stay Safe During Spring Cleaning](https://www.statefarm.com/simple-insights/residence/stay-safe-during-spring-cleaning)
+    * [What Causes Household Mold](https://www.statefarm.com/simple-insights/residence/what-causes-household-mold)
+    * [Pressure Washer Safety Tips](https://www.statefarm.com/simple-insights/residence/pressure-washing-101)
+    * [Extension Cord Safety: What to Do & What to Avoid](https://www.statefarm.com/simple-insights/residence/extension-cord-safety-what-to-do-and-what-to-avoid)
+    * [Weather](https://www.statefarm.com/simple-insights/residence/weather)
+    * [Prepare Your Home for Spring Weather and Severe Storms](https://www.statefarm.com/simple-insights/residence/prepare-your-home-for-spring-storms)
+    * [Things To Consider When Replacing a Roof](https://www.statefarm.com/simple-insights/residence/questions-to-consider-when-replacing-a-roof)
+    * [Writing A Rental Agreement](https://www.statefarm.com/simple-insights/residence/writing-a-rental-agreement)
+    * [Ways to Stay Safe During a Severe Storm or Wind Event](https://www.statefarm.com/simple-insights/residence/ways-to-stay-safe-during-a-severe-wind-event)
+    * [Home Alarm System Options](https://www.statefarm.com/simple-insights/residence/home-alarm-system-options)
+    * [Which Emergency Backup Generator is Right For You](https://www.statefarm.com/simple-insights/residence/which-emergency-backup-generators-is-right-for-you)
+    * [How To Kill Fruit Flies in 5 Easy Steps](https://www.statefarm.com/simple-insights/residence/how-to-kill-fruit-flies)
+    * [Use Your Hand Tools More Safely](https://www.statefarm.com/simple-insights/residence/use-your-hand-tools-more-safely)
+    * [What To Do in a Tornado](https://www.statefarm.com/simple-insights/residence/what-to-do-in-a-tornado)
+    * [What Is Individual Liability Insurance And What Does It Cover](https://www.statefarm.com/simple-insights/residence/what-is-individual-liability-insurance-and-what-does-it-cover)
+    * [Appliance Maintenance](https://www.statefarm.com/simple-insights/residence/appliance-maintenance)
+    * [How to Take a Screenshot or Clear Cache](https://www.statefarm.com/simple-insights/residence/how-to-screenshot-or-clear-cache)
+    * [Wildfire Safety Tips: What To Do Before and After](https://www.statefarm.com/simple-insights/residence/wildfire-safety-tips)
+    * [Fall Home Maintenance Checklist](https://www.statefarm.com/simple-insights/residence/fall-home-maintenance-checklist)
+    * [What To Do When Your Basement Floods](https://www.statefarm.com/simple-insights/residence/what-to-do-when-your-basement-floods)
+    * [Microwave Safety Beware Of Potential Dangers](https://www.statefarm.com/simple-insights/residence/microwave-safety-beware-of-potential-dangers)
+    * [Pay Off Mortgage Early](https://www.statefarm.com/simple-insights/residence/pay-off-mortgage-early)
+    * [How to Deal with Lead Paint](https://www.statefarm.com/simple-insights/residence/lead-poisoning-from-paint)
+    * [Strategies to Save for a Down Payment on a House](https://www.statefarm.com/simple-insights/residence/how-to-save-for-a-down-payment-on-a-house)
+    * [Home Buying Myths Busted](https://www.statefarm.com/simple-insights/residence/home-buying-myths-busted)
+    * [Ideas on How To Prevent Pipes From Freezing](https://www.statefarm.com/simple-insights/residence/dont-let-pipes-freeze-and-steps-to-take-if-they-do)
+    * [Good Neighbor As A Homeowner](https://www.statefarm.com/simple-insights/residence/good-neighbor-as-a-homeowner)
+    * [How Much Renters Insurance Do I Need?](https://www.statefarm.com/simple-insights/residence/how-much-renters-insurance-do-i-need)
+    * [Discover Urban Gardening](https://www.statefarm.com/simple-insights/residence/discover-urban-gardening)
+    * [Designing a Safe Room](https://www.statefarm.com/simple-insights/residence/safe-room-how-to-design)
+    * [Home Inventory: How To Create One](https://www.statefarm.com/simple-insights/residence/home-inventory-how-to-create-one)
+    * [Wood Stove and Space Heater Safety](https://www.statefarm.com/simple-insights/residence/space-heater-and-woodstove-safety)
+    * [Winter Sidewalk Safety](https://www.statefarm.com/simple-insights/residence/winter-sidewalk-safety)
+    * [Sump Pump Basics](https://www.statefarm.com/simple-insights/residence/sump-pump-basics)
+    * [Ways To Prevent Package Theft At Your Home](https://www.statefarm.com/simple-insights/residence/ways-to-prevent-package-theft-at-your-home)
+    * [How to Appraise and Insure Collectibles](https://www.statefarm.com/simple-insights/residence/how-to-appraise-and-insure-collectibles)
+    * [Preventative Plumbing Maintenance For Your Home](https://www.statefarm.com/simple-insights/residence/preventative-plumbing-maintenance-for-your-home)
+    * [Renting and Packing a Storage Unit](https://www.statefarm.com/simple-insights/residence/packing-the-perfect-rental-storage-unit)
+    * [How To Make Windows More Energy Efficient](https://www.statefarm.com/simple-insights/residence/how-to-make-windows-more-energy-efficient)
+    * [How To Eliminate Dust in Your House](https://www.statefarm.com/simple-insights/residence/how-to-get-rid-of-dust-in-your-house)
+    * [Are Electric Blankets Safe](https://www.statefarm.com/simple-insights/residence/are-electric-blankets-safe)
+    * [Help Protect Family From Electrical Fires](https://www.statefarm.com/simple-insights/residence/help-protect-family-from-electrical-fires)
+    * [Safer Door Hinges To Make Your Home More Secure](https://www.statefarm.com/simple-insights/residence/safer-door-hinges-to-make-your-home-more-secure)
+    * [Flooded Basement Common Causes](https://www.statefarm.com/simple-insights/residence/flooded-basement-common-causes)
+    * [Water in Basement](https://www.statefarm.com/simple-insights/residence/reduce-sewer-or-drain-losses-in-your-basement)
+    * [How to Clean Gutters Safely](https://www.statefarm.com/simple-insights/residence/stepbystep-guide-to-gutter-cleaning)
+    * [What Is Homeowners Insurance And What Does It Cover](https://www.statefarm.com/simple-insights/residence/what-is-homeowners-insurance-and-what-does-it-cover)
+    * [Clothes Dryer Maintenance Tips](https://www.statefarm.com/simple-insights/residence/how-to-care-for-your-clothes-dryer)
+    * [Signing a Lease: What You Need to Know](https://www.statefarm.com/simple-insights/residence/signing-a-rental-lease)
+    * [How To Choose a Neighborhood](https://www.statefarm.com/simple-insights/residence/how-to-choose-the-right-neighborhood)
+    * [Does Your Insurance Provide Coverage for Home Repairs?](https://www.statefarm.com/simple-insights/residence/homeowners-insurance-maintenance-repairs)
+    * [A Quick Review of Laundry Safety Tips](https://www.statefarm.com/simple-insights/residence/a-quick-and-dirty-laundry-room-safety-list)
+    * [How To Get Rid of Bed Bugs](https://www.statefarm.com/simple-insights/residence/what-to-do-if-you-find-bedbugs)
+    * [Preparing To Sell Your Home](https://www.statefarm.com/simple-insights/residence/preparing-to-sell-your-home)
+    * [Summer Home Maintenance Checklist](https://www.statefarm.com/simple-insights/residence/summer-maintenance-for-your-home)
+    * [Condo Living Pros And Cons](https://www.statefarm.com/simple-insights/residence/condo-living-pros-and-cons)
+    * [Do You Need Earthquake Insurance if You Don’t Live on the Coast?](https://www.statefarm.com/simple-insights/residence/do-you-need-earthquake-insurance)
+    * [Leaking Roof: Here’s What to Do](https://www.statefarm.com/simple-insights/residence/roof-leak)
+    * [Condo Insurance Basics](https://www.statefarm.com/simple-insights/residence/your-condo-unitowners-insurance-do-you-know-whats-really-covered)
+    * [Writing Rental Ads](https://www.statefarm.com/simple-insights/residence/writing-rental-ads)
+    * [Types of Senior Living: Help Your Loved Ones Decide](https://www.statefarm.com/simple-insights/residence/senior-housing-help-your-loved-ones-decide)
+    * [How To Prepare Your Furnace For Extreme Winter Cold](https://www.statefarm.com/simple-insights/residence/how-to-prepare-your-furnace-for-extreme-winter-cold)
+    * [Ways to Help Protect Your Vacant House After Moving](https://www.statefarm.com/simple-insights/residence/ways-to-protect-your-vacant-house-after-moving)
+    * [Maintenance](https://www.statefarm.com/simple-insights/residence/maintenance)
+    * [Raise Your Home's Worth With These Simple Appraisal Tips](https://www.statefarm.com/simple-insights/residence/raise-your-homes-worth-with-these-simple-appraisal-tips)
+    * [Do You Need a Real Estate Agent to Buy a House](https://www.statefarm.com/simple-insights/residence/do-you-really-need-a-real-estate-agent-to-buy-or-sell)
+    * [Simple Holiday Safety Tips](https://www.statefarm.com/simple-insights/residence/simple-holiday-safety-tips)
+    * [Beyond Trailers Buying Modern Manufactured Homes](https://www.statefarm.com/simple-insights/residence/beyond-trailers-buying-modern-manufactured-homes)
+    * [Home Inspection: What's Included and Not?](https://www.statefarm.com/simple-insights/residence/what-a-home-inspector-checks-for-and-whats-not-included)
+    * [Rent Fees Utilities Questions To Ask Your Landlord](https://www.statefarm.com/simple-insights/residence/rent-fees-utilities-questions-to-ask-your-landlord)
+    * [Charcoal And Gas Grilling Safety](https://www.statefarm.com/simple-insights/residence/charcoal-and-gas-grilling-safety)
+    * [Hurricane Evacuation and Preparedness Plan](https://www.statefarm.com/simple-insights/residence/hurricane-evacuation-plan)
+    * [Home Emergencies And How To Deal With Them Yourself](https://www.statefarm.com/simple-insights/residence/home-emergencies-and-how-to-deal-with-them-yourself)
+    * [How To Keep Birds Away From Your House](https://www.statefarm.com/simple-insights/residence/how-to-keep-birds-out-of-my-yard)
+    * [Pay Attention to Straight-Line Winds](https://www.statefarm.com/simple-insights/residence/pay-attention-to-straight-line-winds)
+    * [Moving Yourself Vs Hiring Movers](https://www.statefarm.com/simple-insights/residence/moving-yourself-vs-hiring-movers)
+    * [Personal Property and Casualty Insurance](https://www.statefarm.com/simple-insights/residence/personal-property-and-casualty-insurance)
+    * [Packing Tips For Moving](https://www.statefarm.com/simple-insights/residence/packing-tips-for-moving)
+    * [DIY Tips for Winterizing Your Home](https://www.statefarm.com/simple-insights/residence/winterizing-your-home)
+    * [What To Do After A Hurricane](https://www.statefarm.com/simple-insights/residence/what-to-do-after-a-hurricane)
+    * [Prevention](https://www.statefarm.com/simple-insights/residence/prevention)
+    * [Ideas To Celebrate Earth Day and Arbor Day](https://www.statefarm.com/simple-insights/residence/ideas-to-celebrate-earth-day-and-arbor-day)
+    * [What Not To Store Under A Sink](https://www.statefarm.com/simple-insights/residence/what-not-to-store-under-a-sink)
+    * [Tips to Help Prevent Burglary](https://www.statefarm.com/simple-insights/residence/pretend-you-are-home-and-more-ways-to-deter-burglary)
+    * [Tips for Utility Emergency Shut Off ](https://www.statefarm.com/simple-insights/residence/emergency-shut-off)
+    * [Power Outage Tips](https://www.statefarm.com/simple-insights/residence/power-outage-tips)
+    * [Smart Steps To Ladder Safety](https://www.statefarm.com/simple-insights/residence/smart-steps-to-ladder-safety)
+    * [Backyard Swimming Pool Safety Tips](https://www.statefarm.com/simple-insights/residence/backyard-swimming-pool-safety-tips)
+    * [Home Maintenance Ideas to Help Improve Curb Appeal](https://www.statefarm.com/simple-insights/residence/increase-the-curb-appeal-of-your-home)
+    * [How To Be Safe in a Hailstorm](https://www.statefarm.com/simple-insights/residence/staying-safe-in-a-hailstorm)
+    * [Portable Moving Containers](https://www.statefarm.com/simple-insights/residence/portable-moving-containers)
+    * [Minimize Excess Moisture](https://www.statefarm.com/simple-insights/residence/minimize-excess-moisture)
+    * [Why Chimney Cleaning Is Important](https://www.statefarm.com/simple-insights/residence/why-chimney-cleaning-is-important)
+    * [Common Rental Scams and Landlord Frauds](https://www.statefarm.com/simple-insights/residence/common-rental-and-landlord-scams)
+    * [Condo](https://www.statefarm.com/simple-insights/residence/condo)
+    * [The Ins And Outs Of Moving Insurance](https://www.statefarm.com/simple-insights/residence/the-ins-and-outs-of-moving-insurance)
+    * [What to Do After a House Fire](https://www.statefarm.com/simple-insights/residence/what-to-do-after-a-house-fire)
+    * [Insurance For A House Party](https://www.statefarm.com/simple-insights/residence/insurance-for-a-house-party)
+    * [What Are Landlords Responsible For? Learn Before You Move In.](https://www.statefarm.com/simple-insights/residence/questions-to-ask-your-landlord-about-maintenance)
+    * [Whole House Water Leak Detection Systems](https://www.statefarm.com/simple-insights/residence/water-leak-detection)
+    * [Prepare For Home Insurance Reviews](https://www.statefarm.com/simple-insights/residence/prepare-for-home-insurance-reviews)
+    * [Be Aware of These Household Electrical Hazards](https://www.statefarm.com/simple-insights/residence/watch-out-for-these-household-electrical-hazards)
+    * [Renters](https://www.statefarm.com/simple-insights/residence/renters)
+    * [Buying A Home](https://www.statefarm.com/simple-insights/residence/buying-a-home)
+    * [Manufactured](https://www.statefarm.com/simple-insights/residence/manufactured)
+    * [Compare Different Types Of Mortgages](https://www.statefarm.com/simple-insights/residence/compare-different-types-of-mortgages)
+    * [Young Kids And Window Safety](https://www.statefarm.com/simple-insights/residence/young-kids-and-window-safety)
+    * [Control Your Homes Safety With Your Smartphone](https://www.statefarm.com/simple-insights/residence/control-your-homes-safety-with-your-smartphone)
+    * [What Not to Store in the Garage](https://www.statefarm.com/simple-insights/residence/what-not-to-store-in-the-garage)
+    * [House Shopping: Rent vs. Buy?](https://www.statefarm.com/simple-insights/residence/house-shopping-rent-vs-buy)
+    * [Why Attic Ventilation Matters](https://www.statefarm.com/simple-insights/residence/why-attic-ventilation-matters)
+    * [Hurricane Survival Tips](https://www.statefarm.com/simple-insights/residence/hurricane-survival-tips)
+    * [How to Help Protect Yourself From Data Breaches](https://www.statefarm.com/simple-insights/residence/how-to-help-protect-yourself-from-data-breaches)
+    * [The Importance of Safety Glasses](https://www.statefarm.com/simple-insights/residence/when-should-i-grab-my-safety-glasses)
+    * [Putting Kitchen Safety First](https://www.statefarm.com/simple-insights/residence/putting-kitchen-safety-first)
+    * [Are Power Surges Damaging Your Electronics?](https://www.statefarm.com/simple-insights/residence/are-power-surges-damaging-your-electronics)
+    * [Energy Saving Tips For Winter](https://www.statefarm.com/simple-insights/residence/energy-saving-tips-for-winter)
+    * [Snowblower Maintenance & Storage Tips](https://www.statefarm.com/simple-insights/residence/snowblower-storage)
+    * [Backyard Structures and Home Insurance](https://www.statefarm.com/simple-insights/residence/backyard-structures-and-home-insurance)
+    * [Impact-Resistant Roofing Material That Stands Up to Nature](https://www.statefarm.com/simple-insights/residence/impact-resistant-roofing-materials)
+    * [Calculators](https://www.statefarm.com/simple-insights/residence/calculators)
+    * [Hidden Costs of Buying a Home](https://www.statefarm.com/simple-insights/residence/hidden-costs-of-buying-a-home)
+    * [Maintaining a Historic Home](https://www.statefarm.com/simple-insights/residence/to-do-list-historic-home-maintenance)
+    * [What To Know Before You Buy That Fixerupper](https://www.statefarm.com/simple-insights/residence/what-to-know-before-you-buy-that-fixerupper)
+    * [How To File a Renters Insurance Claim](https://www.statefarm.com/simple-insights/residence/how-to-file-a-renters-claim)
+    * [Create a Fire Escape Plan Today](https://www.statefarm.com/simple-insights/residence/prepare-a-home-fire-evacuation-plan-with-your-family)
+    * [Roof Maintenance Tips For Your Home](https://www.statefarm.com/simple-insights/residence/roof-maintenance-for-your-home)
+    * [Furnace Maintenance Must-Knows](https://www.statefarm.com/simple-insights/residence/furnace-maintenance-must-knows)
+    * [Questions To Ask A Mortgage Lender For A Home Loan](https://www.statefarm.com/simple-insights/residence/questions-to-ask-a-mortgage-lender-for-a-home-loan)
+    * [Pest Management And Wildlife Control Tips](https://www.statefarm.com/simple-insights/residence/pest-management-and-wildlife-control-tips)
+    * [Protect Your Home South Winter Vacation](https://www.statefarm.com/simple-insights/residence/protect-your-home-south-winter-vacation)
+    * [How to Prepare for an Earthquake](https://www.statefarm.com/simple-insights/residence/prepare-for-an-earthquake)
+    * [Ice Dams And Attic Condensation](https://www.statefarm.com/simple-insights/residence/ice-dams-and-attic-condensation)
+    * [Home Lightning Protection](https://www.statefarm.com/simple-insights/residence/lightning-protection-for-your-home)
+    * [Insurance](https://www.statefarm.com/simple-insights/residence/insurance)
+    * [Sauna Benefits And Safety Tips](https://www.statefarm.com/simple-insights/residence/sauna-benefits-and-safety-tips)
+    * [Metal Roof Pros and Cons](https://www.statefarm.com/simple-insights/residence/metal-roof-pros-and-cons)
+    * [Volcano Safety Tips](https://www.statefarm.com/simple-insights/residence/volcano-safety-tips-and-precautions)
+    * [Moving? Remember to Make Insurance Changes](https://www.statefarm.com/simple-insights/residence/moving-dont-forget-to-make-insurance-changes-too)
+    * [Protect Your Home Against Common Causes of House Fires](https://www.statefarm.com/simple-insights/residence/protect-your-home-against-these-common-causes-of-house-fires)
+    * [Conquer Home Humidity Problems With These Tips](https://www.statefarm.com/simple-insights/residence/conquer-home-humidity-problems-with-these-tips)
+    * [How To Deal With Noisy Neighbors or Issues - State Farm®](https://www.statefarm.com/simple-insights/residence/how-to-deal-with-an-apartment-neighbor-issue)
+    * [Fixed Rate Mortgage Vs Adjustable Rate Mortgage](https://www.statefarm.com/simple-insights/residence/fixed-rate-mortgage-vs-adjustable-rate-mortgage)
+    * [10 Washing Machine Maintenance Tips](https://www.statefarm.com/simple-insights/residence/steps-for-maintaining-your-washing-machine)
+    * [Diy Home Safety Audit](https://www.statefarm.com/simple-insights/residence/diy-home-safety-audit)
+    * [Rental Property Viewing Checklist](https://www.statefarm.com/simple-insights/residence/rental-property-viewing-checklist)
+    * [Home Safety Checklist](https://www.statefarm.com/simple-insights/residence/home-safe-home)
+    * [Help Save Trees From The Emerald Ash Borer](https://www.statefarm.com/simple-insights/residence/save-trees-from-the-emerald-ash-borer)
+    * [What To Do During An Earthquake](https://www.statefarm.com/simple-insights/residence/what-to-do-during-an-earthquake)
+    * [Replacement Cost vs Market Value](https://www.statefarm.com/simple-insights/residence/replacement-cost-vs-market-value)
+    * [Pet Hazards](https://www.statefarm.com/simple-insights/residence/pet-hazards)
+    * [Home Safes For Protection](https://www.statefarm.com/simple-insights/residence/home-safes-for-protection)
+    * [Does Insurance Cover Volcano Damage?](https://www.statefarm.com/simple-insights/residence/how-volcano-damage-is-covered-on-your-insurance)
+    * [Protect Your Home While on Vacation](https://www.statefarm.com/simple-insights/residence/ways-to-protect-your-home-when-you-travel)
+    * [Basement Storage Ideas and Tips](https://www.statefarm.com/simple-insights/residence/what-not-to-store-in-the-basement)
+    * [What Are the Different Types of Insurance?](https://www.statefarm.com/simple-insights/residence/what-are-all-the-different-types-of-insurance)
+    * [Home Closing Documents To Keep](https://www.statefarm.com/simple-insights/residence/home-closing-documents-to-keep)
+    * [How to Choose a Door Lock](https://www.statefarm.com/simple-insights/residence/how-to-choose-a-door-lock-and-be-sure-its-secure)
+    * [Steps To Buy a House](https://www.statefarm.com/simple-insights/residence/steps-to-buy-a-house)
+    * [Help Protect Yourself From Contractor Fraud](https://www.statefarm.com/simple-insights/residence/protect-yourself-from-contractor-fraud)
+    * [Essential Tips for Hurricane Preparedness](https://www.statefarm.com/simple-insights/residence/preparing-for-a-hurricane)
+    * [Household Hazards That May Be Surprising](https://www.statefarm.com/simple-insights/residence/surprising-household-hazards)
+    * [How To Get Rid of Nuisance Deer](https://www.statefarm.com/simple-insights/residence/how-to-get-rid-of-nuisance-deer)
+    * [Condo Maintenance Checklist](https://www.statefarm.com/simple-insights/residence/condo-maintenance-tips)
+    * [Reduce Your Home’s Carbon Footprint](https://www.statefarm.com/simple-insights/residence/reduce-your-homes-carbon-footprint)
+    * [Manufactured and Mobile Home Safety](https://www.statefarm.com/simple-insights/residence/manufactured-home-safety)
+    * [Energy savings](https://www.statefarm.com/simple-insights/residence/energy-savings)
+    * [Understanding Wind Mitigation and its Benefits](https://www.statefarm.com/simple-insights/residence/what-is-wind-mitigation)
+    * [What is a Homeowners Insurance Deductible?](https://www.statefarm.com/simple-insights/residence/what-is-a-homeowners-insurance-deductible)
+    * [What Is an Accessory Dwelling Unit? Top Reasons To Consider](https://www.statefarm.com/simple-insights/residence/accessory-dwelling-unit)
+    * [How to Add Value to Your Home](https://www.statefarm.com/simple-insights/residence/ways-to-add-value-to-your-home)
+    * [Building vs Buying a Home](https://www.statefarm.com/simple-insights/residence/building-vs-buying-a-home)
+    * [Understanding Landslides and Mudslides](https://www.statefarm.com/simple-insights/residence/landslides-and-mudslides)
+    * [When to DIY Home Improvements and When to Go Pro](https://www.statefarm.com/simple-insights/residence/when-to-diy-home-renovations-and-when-to-go-pro)
+    * [Fire Safety Equipment To Have at Home](https://www.statefarm.com/simple-insights/residence/fire-safety-equipment-for-home)
+    * [What to Know About Fire-Resistant Homes](https://www.statefarm.com/simple-insights/residence/fire-resistant-homes)
+    * [Flood Insurance: What To Know](https://www.statefarm.com/simple-insights/residence/do-i-need-flood-insurance)
+    * [How to Be Environmentally Friendly at Home & Save Energy](https://www.statefarm.com/simple-insights/residence/how-to-be-environmentally-friendly-at-home-and-save-on-energy-bills)
+    * [Home Security Gadgets to Consider](https://www.statefarm.com/simple-insights/residence/home-security-gadgets-to-consider)
+    * [What To Do When You Can’t Pay Your Mortgage](https://www.statefarm.com/simple-insights/residence/cant-pay-mortgage)
+    * [Safety Tips for Food Spoilage](https://www.statefarm.com/simple-insights/residence/food-spoilage)
+    * [What To Do if You Can’t Pay Your Rent](https://www.statefarm.com/simple-insights/residence/cant-pay-rent)
+    * [ Home Warranty](https://www.statefarm.com/simple-insights/residence/home-warranty)
+    * [Tips for Renting an Apartment or a House](https://www.statefarm.com/simple-insights/residence/tips-for-renting-an-apartment-or-a-house)
+    * [Does Renters Insurance Cover Hotel Stay](https://www.statefarm.com/simple-insights/residence/does-renters-insurance-cover-hotel-stay)
+    * [Is Renters Insurance Required?](https://www.statefarm.com/simple-insights/residence/is-renters-insurance-required)
+    * [Checklist for Moving Into a New House - State Farm®](https://www.statefarm.com/simple-insights/residence/checklist-for-moving-into-a-new-house)
+    * [How to Secure Your Smart Home Devices](https://www.statefarm.com/simple-insights/residence/how-to-secure-your-smart-home-devices)
+
+
+#####  Simple Insights 
+The Basics
+  * [Auto & vehicle ](https://www.statefarm.com/simple-insights/auto-and-vehicles)
+  * [Banking](https://www.statefarm.com/simple-insights/banking)
+  * [Family](https://www.statefarm.com/simple-insights/family)
+  * [Residence](https://www.statefarm.com/simple-insights/residence)
+
+
+Planning
+  * [College](https://www.statefarm.com/simple-insights/college)
+  * [Estate](https://www.statefarm.com/simple-insights/estate)
+  * [Financial](https://www.statefarm.com/simple-insights/financial)
+  * [Health](https://www.statefarm.com/simple-insights/health-insurance)
+  * [Insurance](https://www.statefarm.com/simple-insights/insurance)
+  * [Life Insurance](https://www.statefarm.com/simple-insights/life-insurance)
+  * [Retirement](https://www.statefarm.com/simple-insights/retirement)
+  * [Small Business](https://www.statefarm.com/simple-insights/small-business)
+
+
+Life Moments
+  * [Starting Out](https://www.statefarm.com/simple-insights/life-moments/starting-out)
+  * [Getting Married](https://www.statefarm.com/simple-insights/life-moments/getting-married)
+  * [First Time Home Buyer](https://www.statefarm.com/simple-insights/life-moments/first-time-home-buyer)
+  * [Adding a Child](https://www.statefarm.com/simple-insights/life-moments/adding-a-child)
+  * [Changing Jobs ](https://www.statefarm.com/simple-insights/life-moments/changing-jobs)
+  * [Planning a Move](https://www.statefarm.com/simple-insights/life-moments/planning-a-move)
+  * [Newly Single](https://www.statefarm.com/simple-insights/life-moments/newly-single)
+  * [Relocating](https://www.statefarm.com/simple-insights/life-moments/relocating)
+  * [Empty Nester](https://www.statefarm.com/simple-insights/life-moments/empty-nester)
+
+
+Smart Ideas
+  * [Car Seat Safety](https://www.statefarm.com/simple-insights/smart-ideas/car-seat-installation)
+  * [Manage Energy](https://www.statefarm.com/simple-insights/smart-ideas/energy-management)
+  * [Smart Tech](https://www.statefarm.com/simple-insights/smart-ideas/securing-your-home)
+  * [Starting Today](https://www.statefarm.com/simple-insights/smart-ideas/starting-today)
+
+
+Safety
+  * [Earthquake](https://www.statefarm.com/simple-insights/safety/earthquake)
+  * [Fire Prevention ](https://www.statefarm.com/simple-insights/safety/fire-prevention)
+  * [Flood](https://www.statefarm.com/simple-insights/safety/flood)
+  * [Hurricane](https://www.statefarm.com/simple-insights/safety/hurricane)
+  * [Severe Weather ](https://www.statefarm.com/simple-insights/safety/severe-weather)
+  * [Tornadoes](https://www.statefarm.com/simple-insights/safety/tornadoes)
+  * [Wildfires](https://www.statefarm.com/simple-insights/safety/wildfire)
+  * [Winter Storm](https://www.statefarm.com/simple-insights/safety/winter-storm)
+
+
+Like a good neighbor, State Farm is there.®
+Contact
+  * [Contact Us](https://www.statefarm.com/customer-care/contact-us)
+  * [File a Claim](https://reportloss.claims.statefarm.com/start-claim)
+  * [Get Roadside Assistance](https://www.statefarm.com/claims/get-roadside-assistance)
+
+
+Quick links
+  * [Pay Insurance Bill](https://financials.statefarm.com/guest-pay/)
+  * [Enroll in Autopay](https://financials.statefarm.com/AutomatedPaymentEnroll/autoPay_billPay_LiteAuth#1)
+  * [Go Paperless](https://paperless.statefarm.com)
+  * [Get Insurance ID Card](https://get-id-card.statefarm.com)
+  * [Business to Business (B2B)](https://b2b.statefarm.com/b2b-content)
+
+
+About
+  * [About State Farm](https://www.statefarm.com/about-us)
+  * [Community Involvement](https://www.statefarm.com/about-us/corporate-responsibility)
+  * [Environmental Sustainability](https://impact.statefarm.com/)
+  * [Innovation & Research](https://www.statefarm.com/about-us/innovation)
+  * [Newsroom](https://newsroom.statefarm.com/)
+
+
+Careers
+  * [Careers at State Farm](https://www.statefarm.com/careers)
+  * [Diversity & Inclusion](https://www.statefarm.com/about-us/diversity-inclusion)
+  * [Retirees](https://www.statefarm.com/retirees)
+
+
+Follow us
+  * [Facebook](https://www.facebook.com/statefarm "Opens in a new window")
+  * [X](https://www.x.com/statefarm "Opens in a new window")
+  * [Instagram](https://www.instagram.com/statefarm/ "Opens in a new window")
+  * [LinkedIn](https://www.linkedin.com/company/state_farm "Opens in a new window")
+  * [Flickr](https://www.flickr.com/photos/statefarm "Opens in a new window")
+  * [YouTube](https://www.youtube.com/c/statefarm "Opens in a new window")
+
+
+![State Farm Insurance and Financial Services](https://static1.st8fm.com/en_US/dxl-1x/prod/css/images/footer/SF_Logo_Vert.svg)
+[Español](https://www.statefarm.com/simple-insights/residence/how-to-budget-and-save-for-home-maintenance)
+  * [About our Ads](https://www.statefarm.com/customer-care/privacy-security/privacy/about-our-ads)
+  * [Privacy](https://www.statefarm.com/customer-care/privacy-security)
+  * [Security & Fraud](https://www.statefarm.com/customer-care/privacy-security/security)
+  * [Terms of Use](https://www.statefarm.com/customer-care/disclosures/terms-of-use)
+  * [Accessibility](https://www.statefarm.com/about-us/diversity-inclusion/accessibility-statement)
+  * [Site Map](https://www.statefarm.com/about-us/sitemap)
+  * Give Us Feedback
+
+
+[WA My Health My Data Act](https://www.statefarm.com/customer-care/privacy-security#WAMHMDA) [CA Notice at Collection](https://www.statefarm.com/customer-care/privacy-security/privacy/california-privacy-rights/notice-at-collection) [Do Not Sell or Share My Personal Information](https://www.statefarm.com/customer-care/privacy-security/privacy/california-privacy-rights/do-not-sell)
+© Copyright 2025, State Farm Mutual Automobile Insurance Company, Bloomington, IL
+![State Farm Insurance and Financial Services](https://static1.st8fm.com/en_US/dxl-1x/prod/css/images/footer/SF_Logo_Vert.svg)
+Opt-Out of Sale or Sharing (CA residents only)
+To exercise your right to opt out of the “sale” or “sharing,” as described in our opt-out notice, you will need to click on each “toggle” below and move it to the left, then click “save. As a reminder, your choice will only apply to the browser and device you are currently using to visit our websites. It will not apply to a different browser or device. If you visit our webpages using a different browser or device, you will need to exercise your choice for each browser or device.  
+  
+If you do not wish to exercise the right to opt-out with respect to all cookies, you can manage preferences as to individual categories. However, you must opt-out of all categories of cookies, as noted above, in order to prevent the “sale” or sharing of your personal information under the CCPA. Please be aware that when you turn off all categories of cookies, the way our website functions may change. If at any point you want to update your cookie preferences, you may do so by clicking on the “Do Not Sell or Share My Personal Information” link which you can find on our cookie banner or at the bottom of each webpage.
+* * *
+Online Behavioral Advertising
+We may work with online advertising companies to show you relevant and useful ads including ads displayed on our website and the websites of other companies. These ads may be based on information collected by us or other parties (for example, when you register for a site). These ads may also be based on your activities on our website or on other websites. This is called "online behavioral advertising". Some companies that play a role in the online behavioral advertising process may have sufficient information to identify you. To learn more about online behavioral advertising, visit the Digital Advertising Alliance website.
+* * *
+Analytics
+These technologies collect information that is used in aggregate form to help us understand how our websites are being used or to help us continuously improve our websites.
+* * *
+Social
+These technologies are used to enable you to share pages and content that you find interesting on our websites through third party social networking and other websites.
+* * *
+Performance
+These technologies are used to enhance the performance of our websites but are non-essential to their use. However, without these cookies, certain functionality may become unavailable.
+* * *
+[ ](javascript:void\(0\)) [ ](javascript:void\(0\)) [ ](javascript:void\(0\))
+Cancel
+Save

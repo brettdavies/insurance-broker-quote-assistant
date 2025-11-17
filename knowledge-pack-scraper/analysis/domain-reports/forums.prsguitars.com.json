@@ -1,0 +1,455 @@
+{
+  "domain": "forums.prsguitars.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.938921",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 40,
+      "frequency": 40.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 35,
+      "frequency": 35.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 38,
+      "frequency": 38.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 49,
+      "frequency": 49.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fa--xf",
+      "count": 60
+    },
+    {
+      "class": "far",
+      "count": 52
+    },
+    {
+      "class": "pairs",
+      "count": 52
+    },
+    {
+      "class": "pairs--justified",
+      "count": 52
+    },
+    {
+      "class": "message-cell",
+      "count": 40
+    },
+    {
+      "class": "u-concealed",
+      "count": 31
+    },
+    {
+      "class": "username",
+      "count": 26
+    },
+    {
+      "class": "u-srOnly",
+      "count": 25
+    },
+    {
+      "class": "u-dt",
+      "count": 25
+    },
+    {
+      "class": "avatar",
+      "count": 24
+    },
+    {
+      "class": "u-anchorTarget",
+      "count": 22
+    },
+    {
+      "class": "js-inlineModContainer",
+      "count": 22
+    },
+    {
+      "class": "listInline",
+      "count": 21
+    },
+    {
+      "class": "lbContainer",
+      "count": 21
+    },
+    {
+      "class": "fa-share-alt",
+      "count": 21
+    },
+    {
+      "class": "message",
+      "count": 20
+    },
+    {
+      "class": "message--post",
+      "count": 20
+    },
+    {
+      "class": "js-post",
+      "count": 20
+    },
+    {
+      "class": "message-inner",
+      "count": 20
+    },
+    {
+      "class": "message-cell--user",
+      "count": 20
+    },
+    {
+      "class": "message-user",
+      "count": 20
+    },
+    {
+      "class": "message-avatar",
+      "count": 20
+    },
+    {
+      "class": "message-avatar-wrapper",
+      "count": 20
+    },
+    {
+      "class": "avatar--m",
+      "count": 20
+    },
+    {
+      "class": "message-userDetails",
+      "count": 20
+    },
+    {
+      "class": "message-name",
+      "count": 20
+    },
+    {
+      "class": "userTitle",
+      "count": 20
+    },
+    {
+      "class": "message-userTitle",
+      "count": 20
+    },
+    {
+      "class": "message-userExtras",
+      "count": 20
+    },
+    {
+      "class": "message-userArrow",
+      "count": 20
+    },
+    {
+      "class": "message-cell--main",
+      "count": 20
+    },
+    {
+      "class": "message-main",
+      "count": 20
+    },
+    {
+      "class": "js-quickEditTarget",
+      "count": 20
+    },
+    {
+      "class": "message-attribution",
+      "count": 20
+    },
+    {
+      "class": "message-attribution--split",
+      "count": 20
+    },
+    {
+      "class": "message-attribution-main",
+      "count": 20
+    },
+    {
+      "class": "message-attribution-opposite",
+      "count": 20
+    },
+    {
+      "class": "message-attribution-opposite--list",
+      "count": 20
+    },
+    {
+      "class": "message-attribution-gadget",
+      "count": 20
+    },
+    {
+      "class": "u-hidden",
+      "count": 20
+    },
+    {
+      "class": "js-embedCopy",
+      "count": 20
+    },
+    {
+      "class": "fa-code",
+      "count": 20
+    },
+    {
+      "class": "message-content",
+      "count": 20
+    },
+    {
+      "class": "js-messageContent",
+      "count": 20
+    },
+    {
+      "class": "message-userContent",
+      "count": 20
+    },
+    {
+      "class": "js-lbContainer",
+      "count": 20
+    },
+    {
+      "class": "message-body",
+      "count": 20
+    },
+    {
+      "class": "js-selectToQuote",
+      "count": 20
+    },
+    {
+      "class": "bbWrapper",
+      "count": 20
+    },
+    {
+      "class": "js-selectToQuoteEnd",
+      "count": 20
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "https://forums.prsguitars.com/threads/renters-insurance-coverage-for-my-guitars.62290/",
+      "count": 19
+    },
+    {
+      "id": "1",
+      "count": 17
+    },
+    {
+      "id": "41314",
+      "count": 13
+    },
+    {
+      "id": "https://forums.prsguitars.com/members/peacemaker.41314/",
+      "count": 5
+    },
+    {
+      "id": "13133",
+      "count": 4
+    },
+    {
+      "id": "8501",
+      "count": 4
+    },
+    {
+      "id": "newPosts",
+      "count": 2
+    },
+    {
+      "id": "searchForums",
+      "count": 2
+    },
+    {
+      "id": "post-966145",
+      "count": 2
+    },
+    {
+      "id": "post-966146",
+      "count": 2
+    },
+    {
+      "id": "https://forums.prsguitars.com/members/birdsofprey.13133/",
+      "count": 2
+    },
+    {
+      "id": "post-966150",
+      "count": 2
+    },
+    {
+      "id": "post-966152",
+      "count": 2
+    },
+    {
+      "id": "42101",
+      "count": 2
+    },
+    {
+      "id": "post-966154",
+      "count": 2
+    },
+    {
+      "id": "1710",
+      "count": 2
+    },
+    {
+      "id": "post-966158",
+      "count": 2
+    },
+    {
+      "id": "post-966162",
+      "count": 2
+    },
+    {
+      "id": "43908",
+      "count": 2
+    },
+    {
+      "id": "post-966183",
+      "count": 2
+    },
+    {
+      "id": "post-966193",
+      "count": 2
+    },
+    {
+      "id": "33284",
+      "count": 2
+    },
+    {
+      "id": "post-966237",
+      "count": 2
+    },
+    {
+      "id": "825",
+      "count": 2
+    },
+    {
+      "id": "post-966263",
+      "count": 2
+    },
+    {
+      "id": "1168",
+      "count": 2
+    },
+    {
+      "id": "post-966290",
+      "count": 2
+    },
+    {
+      "id": "1802",
+      "count": 2
+    },
+    {
+      "id": "post-966644",
+      "count": 2
+    },
+    {
+      "id": "post-966645",
+      "count": 2
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,1023 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="alternate" href="https://beinsure.com/" hreflang="en-us">
+	<link rel="alternate" href="https://beinsure.com/uk/" hreflang="en-gb">
+	<link rel="alternate" href="https://beinsure.com/ca/" hreflang="en-ca">
+	<link rel="alternate" href="https://beinsure.com/au/" hreflang="en-au">
+	<link rel="alternate" href="https://beinsure.com/" hreflang="x-default">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name="msvalidate.01" content="7050A142767F9F907C73850693DF6B4B">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>State Farm to expand into Massachusetts homeowners and auto market by 2027</title><link rel="preload" data-rocket-preload="" as="image" href="https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg" fetchpriority="high">
+	<meta name="description" content="State Farm is preparing to scale up in Massachusetts, where its market share in personal auto and homeowners sits below 0.29%">
+	<link rel="canonical" href="https://beinsure.com/news/state-farm-to-expand-into-massachusetts/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="State Farm to expand into Massachusetts homeowners and auto market by 2027">
+	<meta property="og:description" content="State Farm is preparing to scale up in Massachusetts, where its market share in personal auto and homeowners sits below 0.29%">
+	<meta property="og:url" content="https://beinsure.com/news/state-farm-to-expand-into-massachusetts/">
+	<meta property="og:site_name" content="Beinsure - Insurance, Reinsurance, InsurTech Insights">
+	<meta property="article:publisher" content="https://www.facebook.com/BeinsureMedia/">
+	<meta property="article:modified_time" content="2025-10-27T18:13:29+00:00">
+	<meta property="og:image" content="https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="480">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@BeinsureMedia">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/","url":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/","name":"State Farm to expand into Massachusetts homeowners and auto market by 2027","isPartOf":{"@id":"https://beinsure.com/#website"},"primaryImageOfPage":{"@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/#primaryimage"},"image":{"@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/#primaryimage"},"thumbnailUrl":"https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg","datePublished":"2025-10-21T20:25:43+00:00","dateModified":"2025-10-27T18:13:29+00:00","description":"State Farm is preparing to scale up in Massachusetts, where its market share in personal auto and homeowners sits below 0.29%","breadcrumb":{"@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://beinsure.com/news/state-farm-to-expand-into-massachusetts/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/#primaryimage","url":"https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg","contentUrl":"https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg","width":1200,"height":480,"caption":"State Farm to expand into Massachusetts homeowners and auto market by 2027"},{"@type":"BreadcrumbList","@id":"https://beinsure.com/news/state-farm-to-expand-into-massachusetts/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"BEINSURE","item":"https://beinsure.com/"},{"@type":"ListItem","position":2,"name":"News","item":"https://beinsure.com/news/"},{"@type":"ListItem","position":3,"name":"Insurance","item":"https://beinsure.com/insurance/"},{"@type":"ListItem","position":4,"name":"Car &amp; Auto Insurance","item":"https://beinsure.com/insurance/auto/"},{"@type":"ListItem","position":5,"name":"State Farm to expand into Massachusetts homeowners and auto market by 2027"}]},{"@type":"WebSite","@id":"https://beinsure.com/#website","url":"https://beinsure.com/","name":"Beinsure - Insurance, Reinsurance, InsurTech Insights","description":"Beinsure Media: insurance, reinsurance, insurtech, investment &amp; new technologies. The World latest News, Ratings, Review, Forecasts &amp; Insights","publisher":{"@id":"https://beinsure.com/#organization"},"alternateName":"Beinsure Media","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://beinsure.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://beinsure.com/#organization","name":"Beinsure Media","alternateName":"Beinsure","url":"https://beinsure.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://beinsure.com/#/schema/logo/image/","url":"https://beinsure.com/wp-content/uploads/2022/08/1-3.png","contentUrl":"https://beinsure.com/wp-content/uploads/2022/08/1-3.png","width":512,"height":512,"caption":"Beinsure Media"},"image":{"@id":"https://beinsure.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/BeinsureMedia/","https://x.com/BeinsureMedia","https://www.linkedin.com/company/beinsure-media","https://www.pinterest.com/BeinsureMedia","https://www.youtube.com/@beinsure","https://instagram.com/beinsure.media"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+<link rel="stylesheet" id="post-views-counter-frontend-css" href="https://beinsure.com/wp-content/plugins/post-views-counter/css/frontend.min.css?ver=1.5.7" media="all">
+<link rel="alternate stylesheet" id="powerkit-icons-css" href="https://beinsure.com/wp-content/plugins/powerkit/assets/fonts/powerkit-icons.woff?ver=3.0.2" as="font" type="font/wof" crossorigin="">
+<link data-minify="1" rel="stylesheet" id="powerkit-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/assets/css/powerkit.css?ver=1761770794" media="all">
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--neve-link-color: var(--nv-primary-accent);--wp--preset--color--neve-link-hover-color: var(--nv-secondary-accent);--wp--preset--color--nv-site-bg: var(--nv-site-bg);--wp--preset--color--nv-light-bg: var(--nv-light-bg);--wp--preset--color--nv-dark-bg: var(--nv-dark-bg);--wp--preset--color--neve-text-color: var(--nv-text-color);--wp--preset--color--nv-text-dark-bg: var(--nv-text-dark-bg);--wp--preset--color--nv-c-1: var(--nv-c-1);--wp--preset--color--nv-c-2: var(--nv-c-2);--wp--preset--color--custom-1: var(--custom-1);--wp--preset--color--custom-2: var(--custom-2);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-neve-link-color-color{color: var(--wp--preset--color--neve-link-color) !important;}.has-neve-link-hover-color-color{color: var(--wp--preset--color--neve-link-hover-color) !important;}.has-nv-site-bg-color{color: var(--wp--preset--color--nv-site-bg) !important;}.has-nv-light-bg-color{color: var(--wp--preset--color--nv-light-bg) !important;}.has-nv-dark-bg-color{color: var(--wp--preset--color--nv-dark-bg) !important;}.has-neve-text-color-color{color: var(--wp--preset--color--neve-text-color) !important;}.has-nv-text-dark-bg-color{color: var(--wp--preset--color--nv-text-dark-bg) !important;}.has-nv-c-1-color{color: var(--wp--preset--color--nv-c-1) !important;}.has-nv-c-2-color{color: var(--wp--preset--color--nv-c-2) !important;}.has-custom-1-color{color: var(--wp--preset--color--custom-1) !important;}.has-custom-2-color{color: var(--wp--preset--color--custom-2) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-neve-link-color-background-color{background-color: var(--wp--preset--color--neve-link-color) !important;}.has-neve-link-hover-color-background-color{background-color: var(--wp--preset--color--neve-link-hover-color) !important;}.has-nv-site-bg-background-color{background-color: var(--wp--preset--color--nv-site-bg) !important;}.has-nv-light-bg-background-color{background-color: var(--wp--preset--color--nv-light-bg) !important;}.has-nv-dark-bg-background-color{background-color: var(--wp--preset--color--nv-dark-bg) !important;}.has-neve-text-color-background-color{background-color: var(--wp--preset--color--neve-text-color) !important;}.has-nv-text-dark-bg-background-color{background-color: var(--wp--preset--color--nv-text-dark-bg) !important;}.has-nv-c-1-background-color{background-color: var(--wp--preset--color--nv-c-1) !important;}.has-nv-c-2-background-color{background-color: var(--wp--preset--color--nv-c-2) !important;}.has-custom-1-background-color{background-color: var(--wp--preset--color--custom-1) !important;}.has-custom-2-background-color{background-color: var(--wp--preset--color--custom-2) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-neve-link-color-border-color{border-color: var(--wp--preset--color--neve-link-color) !important;}.has-neve-link-hover-color-border-color{border-color: var(--wp--preset--color--neve-link-hover-color) !important;}.has-nv-site-bg-border-color{border-color: var(--wp--preset--color--nv-site-bg) !important;}.has-nv-light-bg-border-color{border-color: var(--wp--preset--color--nv-light-bg) !important;}.has-nv-dark-bg-border-color{border-color: var(--wp--preset--color--nv-dark-bg) !important;}.has-neve-text-color-border-color{border-color: var(--wp--preset--color--neve-text-color) !important;}.has-nv-text-dark-bg-border-color{border-color: var(--wp--preset--color--nv-text-dark-bg) !important;}.has-nv-c-1-border-color{border-color: var(--wp--preset--color--nv-c-1) !important;}.has-nv-c-2-border-color{border-color: var(--wp--preset--color--nv-c-2) !important;}.has-custom-1-border-color{border-color: var(--wp--preset--color--custom-1) !important;}.has-custom-2-border-color{border-color: var(--wp--preset--color--custom-2) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="stylesheet" id="powerkit-basic-elements-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/basic-elements/public/css/public-powerkit-basic-elements.css?ver=1761770794" media="screen">
+<link data-minify="1" rel="stylesheet" id="powerkit-content-formatting-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/content-formatting/public/css/public-powerkit-content-formatting.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="powerkit-featured-categories-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/featured-categories/public/css/public-powerkit-featured-categories.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="powerkit-widget-posts-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/posts/public/css/public-powerkit-widget-posts.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="powerkit-scroll-to-top-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/scroll-to-top/public/css/public-powerkit-scroll-to-top.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="powerkit-share-buttons-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/share-buttons/public/css/public-powerkit-share-buttons.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="powerkit-table-of-contents-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/table-of-contents/public/css/public-powerkit-table-of-contents.css?ver=1761770794" media="all">
+<link rel="stylesheet" id="neve-style-css" href="https://beinsure.com/wp-content/themes/neve/style-main-new.min.css?ver=4.1.3" media="all">
+<style id="neve-style-inline-css">
+.is-menu-sidebar .header-menu-sidebar { visibility: visible; }.is-menu-sidebar.menu_sidebar_slide_left .header-menu-sidebar { transform: translate3d(0, 0, 0); left: 0; }.is-menu-sidebar.menu_sidebar_slide_right .header-menu-sidebar { transform: translate3d(0, 0, 0); right: 0; }.is-menu-sidebar.menu_sidebar_pull_right .header-menu-sidebar, .is-menu-sidebar.menu_sidebar_pull_left .header-menu-sidebar { transform: translateX(0); }.is-menu-sidebar.menu_sidebar_dropdown .header-menu-sidebar { height: auto; }.is-menu-sidebar.menu_sidebar_dropdown .header-menu-sidebar-inner { max-height: 400px; padding: 20px 0; }.is-menu-sidebar.menu_sidebar_full_canvas .header-menu-sidebar { opacity: 1; }.header-menu-sidebar .menu-item-nav-search:not(.floating) { pointer-events: none; }.header-menu-sidebar .menu-item-nav-search .is-menu-sidebar { pointer-events: unset; }@media screen and (max-width: 960px) { .builder-item.cr .item--inner { --textalign: center; --justify: center; } }
+.nv-meta-list li.meta:not(:last-child):after { content:"/" }.nv-meta-list .no-mobile{
+			display:none;
+		}.nv-meta-list li.last::after{
+			content: ""!important;
+		}@media (min-width: 769px) {
+			.nv-meta-list .no-mobile {
+				display: inline-block;
+			}
+			.nv-meta-list li.last:not(:last-child)::after {
+		 		content: "/" !important;
+			}
+		}
+ :root{ --container: 748px;--postwidth:100%; --primarybtnbg: var(--nv-primary-accent); --primarybtnhoverbg: var(--nv-primary-accent); --primarybtncolor: #fff; --secondarybtncolor: var(--nv-primary-accent); --primarybtnhovercolor: #fff; --secondarybtnhovercolor: var(--nv-primary-accent);--primarybtnborderradius:3px;--secondarybtnborderradius:3px;--secondarybtnborderwidth:3px;--btnpadding:13px 15px;--primarybtnpadding:13px 15px;--secondarybtnpadding:calc(13px - 3px) calc(15px - 3px); --bodyfontfamily: Inter; --bodyfontsize: 20px; --bodylineheight: 1.9em; --bodyletterspacing: 0px; --bodyfontweight: 300; --bodytexttransform: none; --headingsfontfamily: Inter; --h1fontsize: 34px; --h1fontweight: 700; --h1lineheight: 1.1em; --h1letterspacing: 0px; --h1texttransform: none; --h2fontsize: 27px; --h2fontweight: 800; --h2lineheight: 1.0em; --h2letterspacing: 0px; --h2texttransform: none; --h3fontsize: 24px; --h3fontweight: 800; --h3lineheight: 1.1em; --h3letterspacing: 0px; --h3texttransform: none; --h4fontsize: 20px; --h4fontweight: 800; --h4lineheight: 1.0em; --h4letterspacing: 0px; --h4texttransform: none; --h5fontsize: 16px; --h5fontweight: 700; --h5lineheight: 1em; --h5letterspacing: 0px; --h5texttransform: none; --h6fontsize: 15px; --h6fontweight: 700; --h6lineheight: 1.1em; --h6letterspacing: 0px; --h6texttransform: none;--formfieldborderwidth:2px;--formfieldborderradius:3px; --formfieldbgcolor: var(--nv-site-bg); --formfieldbordercolor: #dddddd; --formfieldcolor: var(--nv-text-color);--formfieldpadding:10px 12px; } .nv-index-posts{ --borderradius:0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .entry-summary, .archive .entry-summary, .blog .post-pages-links{ --fontsize: 16px; --lineheight: 1.4em; --fontweight: 400; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-main{ --rowbwidth:0px; --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); } .header-bottom{ --rowbwidth:0px; --rowbcolor: var(--nv-site-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 120px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: center;--justify: center; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --borderradius:0; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --hovercolor: var(--nv-secondary-accent); --hovertextcolor: var(--nv-text-color); --activecolor: var(--nv-primary-accent); --spacing: 4px; --height: 1px;--padding:0;--margin:0; --fontsize: 0.8em; --lineheight: 0.85em; --letterspacing: 0px; --fontweight: 700; --texttransform: none; --iconsize: 0.8em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedfw: 700; } .builder-item--header_search_responsive{ --iconsize: 16px; --formfieldfontsize: 14px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px;--margin:0; } .footer-top-inner .row{ grid-template-columns:1fr; --valign: flex-start; } .footer-top{ --rowbwidth:0px; --rowbcolor: var(--nv-light-bg); --color: #000000; --bgcolor: var(--nv-site-bg); } .footer-main-inner .row{ grid-template-columns:1fr; --valign: flex-start; } .footer-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .footer-bottom-inner .row{ grid-template-columns:1fr; --valign: flex-start; } .footer-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-dark-bg); --bgcolor: var(--nv-dark-bg); } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: center;--justify: center; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: center;--justify: center; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-menu{ --hovercolor: #73fca9; --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 0.8em; --lineheight: 1.6em; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 0.8em; --textalign: center;--justify: center; } @media(min-width: 576px){ :root{ --container: 992px;--postwidth:100%;--btnpadding:13px 15px;--primarybtnpadding:13px 15px;--secondarybtnpadding:calc(13px - 3px) calc(15px - 3px); --bodyfontsize: 19px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 38px; --h1lineheight: 1.0em; --h1letterspacing: 0px; --h2fontsize: 28px; --h2lineheight: 1.0em; --h2letterspacing: 0px; --h3fontsize: 25px; --h3lineheight: 1.0em; --h3letterspacing: 0px; --h4fontsize: 20px; --h4lineheight: 1.0em; --h4letterspacing: 0px; --h5fontsize: 18px; --h5lineheight: 1.0em; --h5letterspacing: 0px; --h6fontsize: 14px; --h6lineheight: 1.1em; --h6letterspacing: 0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .entry-summary, .archive .entry-summary, .blog .post-pages-links{ --fontsize: 15px; --lineheight: 1.4em; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-main{ --rowbwidth:0px; } .header-bottom{ --rowbwidth:0px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 120px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: center;--justify: center; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 0.85em; --lineheight: 0.85em; --letterspacing: 0px; --iconsize: 0.85em; } .builder-item--header_search_responsive{ --formfieldfontsize: 14px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px;--margin:0; } .footer-top{ --rowbwidth:0px; } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6em; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } }@media(min-width: 960px){ :root{ --container: 1180px;--postwidth:100%;--btnpadding:13px 15px;--primarybtnpadding:13px 15px;--secondarybtnpadding:calc(13px - 3px) calc(15px - 3px); --bodyfontsize: 19px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 45px; --h1lineheight: 1.0em; --h1letterspacing: 0px; --h2fontsize: 30px; --h2lineheight: 1.0em; --h2letterspacing: 0px; --h3fontsize: 26px; --h3lineheight: 1.0em; --h3letterspacing: 0px; --h4fontsize: 22px; --h4lineheight: 1.0em; --h4letterspacing: 0px; --h5fontsize: 20px; --h5lineheight: 1.0em; --h5letterspacing: 0px; --h6fontsize: 15px; --h6lineheight: 1.1em; --h6letterspacing: 0px; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 70%; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 30%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 75%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 25%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:796px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 1.4em; } .blog .entry-summary, .archive .entry-summary, .blog .post-pages-links{ --fontsize: 15px; --lineheight: 1.4em; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-main{ --height:45px;--rowbwidth:0px; } .header-bottom{ --rowbwidth:0px; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 160px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: center;--justify: center; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 10px;--padding:0;--margin:0; --fontsize: 0.85em; --lineheight: 0.9em; --letterspacing: 0px; --iconsize: 0.85em; } .builder-item--header_search_responsive{ --formfieldfontsize: 16px;--formfieldborderwidth:2px;--formfieldborderradius:2px; --height: 40px;--padding:0 10px 10px 10px;;--margin:0; } .footer-top{ --height:60px;--rowbwidth:39px; } .builder-item--footer-one-widgets{ --padding:0;--margin:0; --textalign: center;--justify: center; } .builder-item--footer-two-widgets{ --padding:0;--margin:0; --textalign: center;--justify: center; } .builder-item--footer-three-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 0.8em; --lineheight: 1.6em; --letterspacing: 0px; --iconsize: 0.8em; --textalign: center;--justify: center; } }.has-custom-1-color {color:var(--custom-1) !important} .has-custom-1-background-color {background-color:var(--custom-1) !important}.has-custom-2-color {color:var(--custom-2) !important} .has-custom-2-background-color {background-color:var(--custom-2) !important}:root{--nv-primary-accent:#02a97a;--nv-secondary-accent:#02a97a;--nv-site-bg:#ffffff;--nv-light-bg:#ffffff;--nv-dark-bg:#000000;--nv-text-color:#000000;--nv-text-dark-bg:#ffffff;--nv-c-1:#edf7f4;--nv-c-2:#be574b;--nv-fallback-ff:MS Sans Serif, Geneva, sans-serif;--custom-1:#000000;--custom-2:#02a97a;}
+</style>
+<link rel="stylesheet" id="searchwp-forms-css" href="https://beinsure.com/wp-content/plugins/searchwp-live-ajax-search/assets/styles/frontend/search-forms.min.css?ver=1.8.6" media="all">
+<link rel="stylesheet" id="searchwp-live-search-css" href="https://beinsure.com/wp-content/plugins/searchwp-live-ajax-search/assets/styles/style.min.css?ver=1.8.6" media="all">
+<style id="searchwp-live-search-inline-css">
+.searchwp-live-search-result .searchwp-live-search-result--title a {
+  font-size: 16px;
+}
+.searchwp-live-search-result .searchwp-live-search-result--price {
+  font-size: 14px;
+}
+.searchwp-live-search-result .searchwp-live-search-result--add-to-cart .button {
+  font-size: 14px;
+}
+
+</style>
+<link data-minify="1" rel="stylesheet" id="neve-child-style-css" href="https://beinsure.com/wp-content/cache/min/1/wp-content/themes/neve-child/style.css?ver=1761770794" media="all">
+<link data-minify="1" rel="stylesheet" id="awesomes-css" href="https://beinsure.com/wp-content/cache/min/1/ajax/libs/font-awesome/6.7.1/css/all.min.css?ver=1761770795" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-b1ee5cee-9bb5-4cfe-9440-ffa5ee85d8a2) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script id="cookie-law-info-js-extra">
+var _ckyConfig = {"_ipData":[],"_assetsURL":"https:\/\/beinsure.com\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/","_publicURL":"https:\/\/beinsure.com","_expiry":"365","_categories":[{"name":"Necessary","slug":"necessary","isNecessary":true,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":true,"ccpa":true}},{"name":"Functional","slug":"functional","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Analytics","slug":"analytics","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Performance","slug":"performance","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Advertisement","slug":"advertisement","isNecessary":false,"ccpaDoNotSell":true,"cookies":[],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}}],"_activeLaw":"gdpr","_rootDomain":"","_block":"1","_showBanner":"1","_bannerConfig":{"settings":{"type":"box","preferenceCenterType":"popup","position":"bottom-right","applicableLaw":"gdpr"},"behaviours":{"reloadBannerOnAccept":false,"loadAnalyticsByDefault":false,"animations":{"onLoad":"animate","onHide":"sticky"}},"config":{"revisitConsent":{"status":false,"tag":"revisit-consent","position":"bottom-left","meta":{"url":"#"},"styles":{"background-color":"#0056A7"},"elements":{"title":{"type":"text","tag":"revisit-consent-title","status":true,"styles":{"color":"#0056a7"}}}},"preferenceCenter":{"toggle":{"status":true,"tag":"detail-category-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"categoryPreview":{"status":false,"toggle":{"status":true,"tag":"detail-category-preview-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"videoPlaceholder":{"status":true,"styles":{"background-color":"#000000","border-color":"#000000","color":"#ffffff"}},"readMore":{"status":false,"tag":"readmore-button","type":"link","meta":{"noFollow":true,"newTab":true},"styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},"showMore":{"status":true,"tag":"show-desc-button","type":"button","styles":{"color":"#1863DC"}},"showLess":{"status":true,"tag":"hide-desc-button","type":"button","styles":{"color":"#1863DC"}},"alwaysActive":{"status":true,"tag":"always-active","styles":{"color":"#008000"}},"manualLinks":{"status":true,"tag":"manual-links","type":"link","styles":{"color":"#1863DC"}},"auditTable":{"status":false},"optOption":{"status":true,"toggle":{"status":true,"tag":"optout-option-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863dc"}},"inactive":{"styles":{"background-color":"#FFFFFF"}}}}}}},"_version":"3.3.6","_logConsent":"1","_tags":[{"tag":"accept-button","styles":{"color":"#000000","background-color":"#00e6a8","border-color":"#00E6A8"}},{"tag":"reject-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"#1863DC"}},{"tag":"settings-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"#1863DC"}},{"tag":"readmore-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},{"tag":"donotsell-button","styles":{"color":"#1863DC","background-color":"transparent","border-color":"transparent"}},{"tag":"show-desc-button","styles":{"color":"#1863DC"}},{"tag":"hide-desc-button","styles":{"color":"#1863DC"}},{"tag":"cky-always-active","styles":[]},{"tag":"cky-link","styles":[]},{"tag":"accept-button","styles":{"color":"#000000","background-color":"#00e6a8","border-color":"#00E6A8"}},{"tag":"revisit-consent","styles":{"background-color":"#0056A7"}}],"_shortCodes":[{"key":"cky_readmore","content":"<a href=\"#\" class=\"cky-policy\" aria-label=\"Cookie Policy\" target=\"_blank\" rel=\"noopener\" data-cky-tag=\"readmore-button\">Cookie Policy<\/a>","tag":"readmore-button","status":false,"attributes":{"rel":"nofollow","target":"_blank"}},{"key":"cky_show_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"show-desc-button\" aria-label=\"Show more\">Show more<\/button>","tag":"show-desc-button","status":true,"attributes":[]},{"key":"cky_hide_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"hide-desc-button\" aria-label=\"Show less\">Show less<\/button>","tag":"hide-desc-button","status":true,"attributes":[]},{"key":"cky_optout_show_desc","content":"[cky_optout_show_desc]","tag":"optout-show-desc-button","status":true,"attributes":[]},{"key":"cky_optout_hide_desc","content":"[cky_optout_hide_desc]","tag":"optout-hide-desc-button","status":true,"attributes":[]},{"key":"cky_category_toggle_label","content":"[cky_{{status}}_category_label] [cky_preference_{{category_slug}}_title]","tag":"","status":true,"attributes":[]},{"key":"cky_enable_category_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_category_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_video_placeholder","content":"<div class=\"video-placeholder-normal\" data-cky-tag=\"video-placeholder\" id=\"[UNIQUEID]\"><p class=\"video-placeholder-text-normal\" data-cky-tag=\"placeholder-title\">Please accept cookies to access this content<\/p><\/div>","tag":"","status":true,"attributes":[]},{"key":"cky_enable_optout_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_optout_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_optout_toggle_label","content":"[cky_{{status}}_optout_label] [cky_optout_option_title]","tag":"","status":true,"attributes":[]},{"key":"cky_optout_option_title","content":"Do Not Sell or Share My Personal Information","tag":"","status":true,"attributes":[]},{"key":"cky_optout_close_label","content":"Close","tag":"","status":true,"attributes":[]},{"key":"cky_preference_close_label","content":"Close","tag":"","status":true,"attributes":[]}],"_rtl":"","_language":"en","_providersToBlock":[]};
+var _ckyStyles = {"css":".cky-overlay{background: #000000; opacity: 0.4; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999999;}.cky-hide{display: none;}.cky-btn-revisit-wrapper{display: flex; align-items: center; justify-content: center; background: #0056a7; width: 45px; height: 45px; border-radius: 50%; position: fixed; z-index: 999999; cursor: pointer;}.cky-revisit-bottom-left{bottom: 15px; left: 15px;}.cky-revisit-bottom-right{bottom: 15px; right: 15px;}.cky-btn-revisit-wrapper .cky-btn-revisit{display: flex; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; position: relative; margin: 0; padding: 0;}.cky-btn-revisit-wrapper .cky-btn-revisit img{max-width: fit-content; margin: 0; height: 30px; width: 30px;}.cky-revisit-bottom-left:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; left: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-left:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; left: calc(100% + 2px); border-left-width: 0; border-right-color: #4e4b66;}.cky-revisit-bottom-right:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; right: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-right:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; right: calc(100% + 2px); border-right-width: 0; border-left-color: #4e4b66;}.cky-revisit-hide{display: none;}.cky-consent-container{position: fixed; width: 440px; box-sizing: border-box; z-index: 9999999; border-radius: 6px;}.cky-consent-container .cky-consent-bar{background: #ffffff; border: 1px solid; padding: 20px 26px; box-shadow: 0 -1px 10px 0 #acabab4d; border-radius: 6px;}.cky-box-bottom-left{bottom: 40px; left: 40px;}.cky-box-bottom-right{bottom: 40px; right: 40px;}.cky-box-top-left{top: 40px; left: 40px;}.cky-box-top-right{top: 40px; right: 40px;}.cky-custom-brand-logo-wrapper .cky-custom-brand-logo{width: 100px; height: auto; margin: 0 0 12px 0;}.cky-notice .cky-title{color: #212121; font-weight: 700; font-size: 18px; line-height: 24px; margin: 0 0 12px 0;}.cky-notice-des *,.cky-preference-content-wrapper *,.cky-accordion-header-des *,.cky-gpc-wrapper .cky-gpc-desc *{font-size: 14px;}.cky-notice-des{color: #212121; font-size: 14px; line-height: 24px; font-weight: 400;}.cky-notice-des img{height: 25px; width: 25px;}.cky-consent-bar .cky-notice-des p,.cky-gpc-wrapper .cky-gpc-desc p,.cky-preference-body-wrapper .cky-preference-content-wrapper p,.cky-accordion-header-wrapper .cky-accordion-header-des p,.cky-cookie-des-table li div:last-child p{color: inherit; margin-top: 0; overflow-wrap: break-word;}.cky-notice-des P:last-child,.cky-preference-content-wrapper p:last-child,.cky-cookie-des-table li div:last-child p:last-child,.cky-gpc-wrapper .cky-gpc-desc p:last-child{margin-bottom: 0;}.cky-notice-des a.cky-policy,.cky-notice-des button.cky-policy{font-size: 14px; color: #1863dc; white-space: nowrap; cursor: pointer; background: transparent; border: 1px solid; text-decoration: underline;}.cky-notice-des button.cky-policy{padding: 0;}.cky-notice-des a.cky-policy:focus-visible,.cky-notice-des button.cky-policy:focus-visible,.cky-preference-content-wrapper .cky-show-desc-btn:focus-visible,.cky-accordion-header .cky-accordion-btn:focus-visible,.cky-preference-header .cky-btn-close:focus-visible,.cky-switch input[type=\"checkbox\"]:focus-visible,.cky-footer-wrapper a:focus-visible,.cky-btn:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}.cky-btn:focus:not(:focus-visible),.cky-accordion-header .cky-accordion-btn:focus:not(:focus-visible),.cky-preference-content-wrapper .cky-show-desc-btn:focus:not(:focus-visible),.cky-btn-revisit-wrapper .cky-btn-revisit:focus:not(:focus-visible),.cky-preference-header .cky-btn-close:focus:not(:focus-visible),.cky-consent-bar .cky-banner-btn-close:focus:not(:focus-visible){outline: 0;}button.cky-show-desc-btn:not(:hover):not(:active){color: #1863dc; background: transparent;}button.cky-accordion-btn:not(:hover):not(:active),button.cky-banner-btn-close:not(:hover):not(:active),button.cky-btn-revisit:not(:hover):not(:active),button.cky-btn-close:not(:hover):not(:active){background: transparent;}.cky-consent-bar button:hover,.cky-modal.cky-modal-open button:hover,.cky-consent-bar button:focus,.cky-modal.cky-modal-open button:focus{text-decoration: none;}.cky-notice-btn-wrapper{display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; margin-top: 16px;}.cky-notice-btn-wrapper .cky-btn{text-shadow: none; box-shadow: none;}.cky-btn{flex: auto; max-width: 100%; font-size: 14px; font-family: inherit; line-height: 24px; padding: 8px; font-weight: 500; margin: 0 8px 0 0; border-radius: 2px; cursor: pointer; text-align: center; text-transform: none; min-height: 0;}.cky-btn:hover{opacity: 0.8;}.cky-btn-customize{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-reject{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-accept{background: #1863dc; color: #ffffff; border: 2px solid #1863dc;}.cky-btn:last-child{margin-right: 0;}@media (max-width: 576px){.cky-box-bottom-left{bottom: 0; left: 0;}.cky-box-bottom-right{bottom: 0; right: 0;}.cky-box-top-left{top: 0; left: 0;}.cky-box-top-right{top: 0; right: 0;}}@media (max-width: 440px){.cky-box-bottom-left, .cky-box-bottom-right, .cky-box-top-left, .cky-box-top-right{width: 100%; max-width: 100%;}.cky-consent-container .cky-consent-bar{padding: 20px 0;}.cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper{padding: 0 24px;}.cky-notice-des{max-height: 40vh; overflow-y: scroll;}.cky-notice-btn-wrapper{flex-direction: column; margin-top: 0;}.cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-notice-btn-wrapper .cky-btn-customize{order: 2;}.cky-notice-btn-wrapper .cky-btn-reject{order: 3;}.cky-notice-btn-wrapper .cky-btn-accept{order: 1; margin-top: 16px;}}@media (max-width: 352px){.cky-notice .cky-title{font-size: 16px;}.cky-notice-des *{font-size: 12px;}.cky-notice-des, .cky-btn{font-size: 12px;}}.cky-modal.cky-modal-open{display: flex; visibility: visible; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; left: 50%; transition: all 1s ease;}.cky-modal{box-shadow: 0 32px 68px rgba(0, 0, 0, 0.3); margin: 0 auto; position: fixed; max-width: 100%; background: #ffffff; top: 50%; box-sizing: border-box; border-radius: 6px; z-index: 999999999; color: #212121; -webkit-transform: translate(-50%, 100%); -moz-transform: translate(-50%, 100%); -ms-transform: translate(-50%, 100%); -o-transform: translate(-50%, 100%); transform: translate(-50%, 100%); visibility: hidden; transition: all 0s ease;}.cky-preference-center{max-height: 79vh; overflow: hidden; width: 845px; overflow: hidden; flex: 1 1 0; display: flex; flex-direction: column; border-radius: 6px;}.cky-preference-header{display: flex; align-items: center; justify-content: space-between; padding: 22px 24px; border-bottom: 1px solid;}.cky-preference-header .cky-preference-title{font-size: 18px; font-weight: 700; line-height: 24px;}.cky-preference-header .cky-btn-close{margin: 0; cursor: pointer; vertical-align: middle; padding: 0; background: none; border: none; width: 24px; height: 24px; min-height: 0; line-height: 0; text-shadow: none; box-shadow: none;}.cky-preference-header .cky-btn-close img{margin: 0; height: 10px; width: 10px;}.cky-preference-body-wrapper{padding: 0 24px; flex: 1; overflow: auto; box-sizing: border-box;}.cky-preference-content-wrapper,.cky-gpc-wrapper .cky-gpc-desc{font-size: 14px; line-height: 24px; font-weight: 400; padding: 12px 0;}.cky-preference-content-wrapper{border-bottom: 1px solid;}.cky-preference-content-wrapper img{height: 25px; width: 25px;}.cky-preference-content-wrapper .cky-show-desc-btn{font-size: 14px; font-family: inherit; color: #1863dc; text-decoration: none; line-height: 24px; padding: 0; margin: 0; white-space: nowrap; cursor: pointer; background: transparent; border-color: transparent; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-wrapper{margin-bottom: 10px;}.cky-accordion{border-bottom: 1px solid;}.cky-accordion:last-child{border-bottom: none;}.cky-accordion .cky-accordion-item{display: flex; margin-top: 10px;}.cky-accordion .cky-accordion-body{display: none;}.cky-accordion.cky-accordion-active .cky-accordion-body{display: block; padding: 0 22px; margin-bottom: 16px;}.cky-accordion-header-wrapper{cursor: pointer; width: 100%;}.cky-accordion-item .cky-accordion-header{display: flex; justify-content: space-between; align-items: center;}.cky-accordion-header .cky-accordion-btn{font-size: 16px; font-family: inherit; color: #212121; line-height: 24px; background: none; border: none; font-weight: 700; padding: 0; margin: 0; cursor: pointer; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-header .cky-always-active{color: #008000; font-weight: 600; line-height: 24px; font-size: 14px;}.cky-accordion-header-des{font-size: 14px; line-height: 24px; margin: 10px 0 16px 0;}.cky-accordion-chevron{margin-right: 22px; position: relative; cursor: pointer;}.cky-accordion-chevron-hide{display: none;}.cky-accordion .cky-accordion-chevron i::before{content: \"\"; position: absolute; border-right: 1.4px solid; border-bottom: 1.4px solid; border-color: inherit; height: 6px; width: 6px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); transition: all 0.2s ease-in-out; top: 8px;}.cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}.cky-audit-table{background: #f4f4f4; border-radius: 6px;}.cky-audit-table .cky-empty-cookies-text{color: inherit; font-size: 12px; line-height: 24px; margin: 0; padding: 10px;}.cky-audit-table .cky-cookie-des-table{font-size: 12px; line-height: 24px; font-weight: normal; padding: 15px 10px; border-bottom: 1px solid; border-bottom-color: inherit; margin: 0;}.cky-audit-table .cky-cookie-des-table:last-child{border-bottom: none;}.cky-audit-table .cky-cookie-des-table li{list-style-type: none; display: flex; padding: 3px 0;}.cky-audit-table .cky-cookie-des-table li:first-child{padding-top: 0;}.cky-cookie-des-table li div:first-child{width: 100px; font-weight: 600; word-break: break-word; word-wrap: break-word;}.cky-cookie-des-table li div:last-child{flex: 1; word-break: break-word; word-wrap: break-word; margin-left: 8px;}.cky-footer-shadow{display: block; width: 100%; height: 40px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%); position: absolute; bottom: calc(100% - 1px);}.cky-footer-wrapper{position: relative;}.cky-prefrence-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px; border-top: 1px solid;}.cky-prefrence-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-btn-preferences{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-preference-header,.cky-preference-body-wrapper,.cky-preference-content-wrapper,.cky-accordion-wrapper,.cky-accordion,.cky-accordion-wrapper,.cky-footer-wrapper,.cky-prefrence-btn-wrapper{border-color: inherit;}@media (max-width: 845px){.cky-modal{max-width: calc(100% - 16px);}}@media (max-width: 576px){.cky-modal{max-width: 100%;}.cky-preference-center{max-height: 100vh;}.cky-prefrence-btn-wrapper{flex-direction: column;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding-right: 0;}.cky-prefrence-btn-wrapper .cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-prefrence-btn-wrapper .cky-btn-reject{order: 3;}.cky-prefrence-btn-wrapper .cky-btn-accept{order: 1; margin-top: 0;}.cky-prefrence-btn-wrapper .cky-btn-preferences{order: 2;}}@media (max-width: 425px){.cky-accordion-chevron{margin-right: 15px;}.cky-notice-btn-wrapper{margin-top: 0;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px;}}@media (max-width: 352px){.cky-preference-header .cky-preference-title{font-size: 16px;}.cky-preference-header{padding: 16px 24px;}.cky-preference-content-wrapper *, .cky-accordion-header-des *{font-size: 12px;}.cky-preference-content-wrapper, .cky-preference-content-wrapper .cky-show-more, .cky-accordion-header .cky-always-active, .cky-accordion-header-des, .cky-preference-content-wrapper .cky-show-desc-btn, .cky-notice-des a.cky-policy{font-size: 12px;}.cky-accordion-header .cky-accordion-btn{font-size: 14px;}}.cky-switch{display: flex;}.cky-switch input[type=\"checkbox\"]{position: relative; width: 44px; height: 24px; margin: 0; background: #d0d5d2; -webkit-appearance: none; border-radius: 50px; cursor: pointer; outline: 0; border: none; top: 0;}.cky-switch input[type=\"checkbox\"]:checked{background: #1863dc;}.cky-switch input[type=\"checkbox\"]:before{position: absolute; content: \"\"; height: 20px; width: 20px; left: 2px; bottom: 2px; border-radius: 50%; background-color: white; -webkit-transition: 0.4s; transition: 0.4s; margin: 0;}.cky-switch input[type=\"checkbox\"]:after{display: none;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px);}@media (max-width: 425px){.cky-switch input[type=\"checkbox\"]{width: 38px; height: 21px;}.cky-switch input[type=\"checkbox\"]:before{height: 17px; width: 17px;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(17px); -ms-transform: translateX(17px); transform: translateX(17px);}}.cky-consent-bar .cky-banner-btn-close{position: absolute; right: 9px; top: 5px; background: none; border: none; cursor: pointer; padding: 0; margin: 0; min-height: 0; line-height: 0; height: 24px; width: 24px; text-shadow: none; box-shadow: none;}.cky-consent-bar .cky-banner-btn-close img{height: 9px; width: 9px; margin: 0;}.cky-notice-group{font-size: 14px; line-height: 24px; font-weight: 400; color: #212121;}.cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 14px; line-height: 24px; padding: 6px 0; margin: 0; font-weight: 500; background: none; border-radius: 2px; border: none; cursor: pointer; text-align: left; color: #1863dc; background: transparent; border-color: transparent; box-shadow: none; text-shadow: none;}.cky-consent-bar .cky-banner-btn-close:focus-visible,.cky-notice-btn-wrapper .cky-btn-do-not-sell:focus-visible,.cky-opt-out-btn-wrapper .cky-btn:focus-visible,.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}@media (max-width: 440px){.cky-consent-container{width: 100%;}}@media (max-width: 352px){.cky-notice-des a.cky-policy, .cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 12px;}}.cky-opt-out-wrapper{padding: 12px 0;}.cky-opt-out-wrapper .cky-opt-out-checkbox-wrapper{display: flex; align-items: center;}.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 16px; font-weight: 700; line-height: 24px; margin: 0 0 0 12px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{background-color: #ffffff; border: 1px solid black; width: 20px; height: 18.5px; margin: 0; -webkit-appearance: none; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 2px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked{background-color: #1863dc; border: none;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 6px; bottom: 4px; width: 7px; height: 13px; border: solid #ffffff; border-width: 0 3px 3px 0; border-radius: 2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); content: \"\"; position: absolute; box-sizing: border-box;}.cky-opt-out-checkbox-wrapper.cky-disabled .cky-opt-out-checkbox-label,.cky-opt-out-checkbox-wrapper.cky-disabled input[type=\"checkbox\"].cky-opt-out-checkbox{cursor: no-drop;}.cky-gpc-wrapper{margin: 0 0 0 32px;}.cky-footer-wrapper .cky-opt-out-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px;}.cky-opt-out-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-opt-out-btn-wrapper .cky-btn-cancel{border: 1px solid #dedfe0; background: transparent; color: #858585;}.cky-opt-out-btn-wrapper .cky-btn-confirm{background: #1863dc; color: #ffffff; border: 1px solid #1863dc;}@media (max-width: 352px){.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 14px;}.cky-gpc-wrapper .cky-gpc-desc, .cky-gpc-wrapper .cky-gpc-desc *{font-size: 12px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{width: 16px; height: 16px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 5px; bottom: 4px; width: 3px; height: 9px;}.cky-gpc-wrapper{margin: 0 0 0 28px;}}.video-placeholder-youtube{background-size: 100% 100%; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: center; justify-content: center; max-width: 100%;}.video-placeholder-text-youtube{text-align: center; align-items: center; padding: 10px 16px; background-color: #000000cc; color: #ffffff; border: 1px solid; border-radius: 2px; cursor: pointer;}.video-placeholder-normal{background-image: url(\"\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/placeholder.svg\"); background-size: 80px; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: flex-end; justify-content: center; max-width: 100%;}.video-placeholder-text-normal{align-items: center; padding: 10px 16px; text-align: center; border: 1px solid; border-radius: 2px; cursor: pointer;}.cky-rtl{direction: rtl; text-align: right;}.cky-rtl .cky-banner-btn-close{left: 9px; right: auto;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 8px;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-notice-btn-wrapper{margin-left: 0; margin-right: 15px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 8px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-accordion .cky-accordion-chevron i::before{border: none; border-left: 1.4px solid; border-top: 1.4px solid; left: 12px;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}@media (max-width: 768px){.cky-rtl .cky-notice-btn-wrapper{margin-right: 0;}}@media (max-width: 576px){.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 0;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 0;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 22px 0 0;}}@media (max-width: 425px){.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px 0 0;}}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn{margin-right: 12px;}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{margin: 0 12px 0 0;}"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://beinsure.com/wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js?ver=3.3.6" id="cookie-law-info-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" id="post-views-counter-frontend-js-before">
+var pvcArgsFrontend = {"mode":"js","postID":54455,"requestURL":"https:\/\/beinsure.com\/wp-admin\/admin-ajax.php","nonce":"64e1db365d","dataStorage":"cookies","multisite":false,"path":"\/","domain":""};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://beinsure.com/wp-content/plugins/post-views-counter/js/frontend.min.js?ver=1.5.7" id="post-views-counter-frontend-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://beinsure.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://beinsure.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer="" defer=""></script>
+<style id="cky-style-inline">[data-cky-tag]{visibility:hidden;}</style><style>
+        //     @font-face {
+        //     font-family: Inter;
+        //     src: url("/wp-content/themes/neve-child/fonts/Inter/Inter-Regular.otf");
+        // }
+
+        body {
+            font-family: Inter, MS Sans Serif, Geneva, sans-serif;
+        }
+
+        .builder-item .item--inner {
+            font-family: Inter, MS Sans Serif, Geneva, sans-serif;
+            font-weight: var(--fontweight,var(--bodyfontweight));
+        }
+    </style><link rel="icon" href="https://beinsure.com/wp-content/uploads/2022/08/cropped-1-1-80x80.png" sizes="32x32">
+<link rel="icon" href="https://beinsure.com/wp-content/uploads/2022/08/cropped-1-1-400x400.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://beinsure.com/wp-content/uploads/2022/08/cropped-1-1-400x400.png">
+<meta name="msapplication-TileImage" content="https://beinsure.com/wp-content/uploads/2022/08/cropped-1-1-400x400.png">
+<style id="kirki-inline-styles"></style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<script type="application/ld+json">{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+    "name": "Beinsure Media",
+	"brand": {
+  "@type": "Brand",
+  "name": "Beinsure"
+},
+	"alternateName": ["Beinsure", "Beinsure Digital Media"],
+	"legalName": "Finance Media LLC",
+	"foundingDate": "2006-03-01",
+	"founder": {
+      "@type": "Person",
+      "name": "Oleg Parashchak"
+    },
+	"parentOrganization": {
+  "@type": "Organization",
+  "name": "Finance Media LLC"
+},
+	"duns": "36-516-009",
+	"award": [
+  "2025 Worldwide Finance Awards: Most Innovative InsurTech Solutions Provider 2025 – USA",
+  "2025 Client Service Excellence Award",
+  "2025 Business Excellence Awards: Biz Tech Outlook",
+  "2025 Northern American Startup Awards Edition 11 : FinTech Startup of the Year",
+  "2025 Corporate LiveWire Global Awards: Online Insurance Guide of the Year for 2025",
+  "2024 Corporate LiveWire Global Awards: Online Insurance Guide of the Year for 2024",
+  "2024 Worldwide Finance Awards: Best Insurance & Investment Technology Guide 2024",
+  "2024 Business Excellence Awards: Best Insurance & InsurTech Insight Media Platform 2024",
+  "2024 North America Business Awards: Best Insurance Digital Media Platform 2024 – USA",
+  "2024 Global Business Insight Awards: Most Outstanding Insurance & InsurTech Insight Media Platform 2024",
+  "Technology Innovator Awards: Best Insurance & Investment Technology Guide 2023 – USA",
+  "BASA Awards: Best of America Small Business Awards"
+],
+    "logo": "https://beinsure.com/wp-content/uploads/2025/09/Beinsure-Media-logo.png",	
+    "description": "Beinsure Digital Media about insurance, insurtech and crypto Market. The World latest News, Ratings, Review and Insights",
+	"slogan": "Beinsure Media - Insurance, Reinsurance, InsurTech Insights",
+	"diversityPolicy": "https://beinsure.com/equality-diversity-inclusion-policy/",
+	"publishingPrinciples": "https://beinsure.com/editorial-policy/",
+	"address": {
+        "@type": "PostalAddress",
+        "streetAddress": "222 Broadway",
+        "addressLocality": "New York",
+        "addressCountry": "US",
+        "addressRegion": "NY",
+        "postalCode": "10038"
+      },
+	 "contactPoint": {
+  "@type": "ContactPoint",
+  "email": "go@beinsure.com",
+  "contactType": "customer support",
+  "availableLanguage": ["English"]
+},
+	  
+  "knowsAbout": [
+    {"@type": "Thing","name": "Insurance","sameAs": "https://en.wikipedia.org/wiki/Insurance"}, 
+    {"@type": "Thing","name": "Reinsurance","sameAs": "https://en.wikipedia.org/wiki/Reinsurance"},
+	{"@type": "Thing","name": "Financial services","sameAs": "https://en.wikipedia.org/wiki/Financial_services"},
+	{"@type": "Thing","name": "Finance","sameAs": "https://en.wikipedia.org/wiki/Finance"}, 
+	{"@type": "Thing","name": "Digital media","sameAs": "https://en.wikipedia.org/wiki/Digital_media"},
+	{"@type": "Thing","name": "Insurance in the United States","sameAs": "https://en.wikipedia.org/wiki/Insurance_in_the_United_States"},
+    {"@type": "Thing","name": "News","sameAs": "https://en.wikipedia.org/wiki/News"}, 
+	{"@type": "Thing","name": "Financial technology","sameAs": "https://en.wikipedia.org/wiki/Financial_technology"},
+	{"@type": "Thing","name": "Investment","sameAs": "https://en.wikipedia.org/wiki/Investment"},
+	{"@type": "Thing","name": "Insurance law","sameAs": "https://en.wikipedia.org/wiki/Insurance_law"}
+  ],
+
+  "sameAs": [
+	"https://www.google.com/search?kgmid=/g/11ldvgy6wr",
+	"https://www.wikidata.org/wiki/Q124866262",
+	"https://www.crunchbase.com/organization/beinsure/",
+	"https://www.inc.com/profile/beinsure-media/",
+	"https://www.f6s.com/company/beinsure-media/",
+	"https://muckrack.com/media-outlet/beinsure-media/",
+	"https://yourstory.com/companies/beinsure-media/",
+	"https://wellfound.com/company/beinsure-media/",
+	"https://www.cbinsights.com/company/beinsure/",
+	"https://www.eu-startups.com/directory/beinsure/",
+	"https://theorg.com/org/beinsure/",
+	"https://facebook.com/BeinsureMedia/",
+	"https://medium.com/@beinsure",
+	"https://twitter.com/BeinsureMedia/",
+	"https://pinterest.com/BeinsureMedia/",
+	"https://linkedin.com/company/beinsure-media/",
+	"https://instagram.com/beinsure.media/",
+	"https://reddit.com/r/beinsure/",
+	"https://youtube.com/@beinsure/"
+],
+    "url": "https://beinsure.com"
+}</script>
+
+	
+	<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-B7J9L1N1DT"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7J9L1N1DT');
+</script>
+	
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ow21qzlwn4");
+</script>
+
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-8095176819750909" crossorigin="anonymous"></script>
+
+	<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.rll-youtube-player .play{--wpr-bg-b1ee5cee-9bb5-4cfe-9440-ffa5ee85d8a2: url('https://beinsure.com/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-b1ee5cee-9bb5-4cfe-9440-ffa5ee85d8a2: url('https:\/\/beinsure.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"b1ee5cee-9bb5-4cfe-9440-ffa5ee85d8a2","url":"https:\/\/beinsure.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.17.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop wpr_dns_prefetch"><link href="https://www.googletagmanager.com" rel="preconnect"><link href="https://pagead2.googlesyndication.com" rel="preconnect" crossorigin="anonymous"></head>
+	
+
+<body class="wp-singular news-template-default single single-news postid-54455 single-format-standard wp-theme-neve wp-child-theme-neve-child  nv-blog-default nv-sidebar-right menu_sidebar_slide_left" id="neve_body">
+			<div class="wrapper">
+		
+		<header class="header">
+			<a class="neve-skip-link show-on-focus" href="#content">
+				Skip to content			</a>
+			<div id="header-grid" class="hfg_header site-header">
+	
+<nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar has-center header--row" data-row-id="main" data-show-on="desktop">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="hfg-slot left"></div><div class="hfg-slot center"><div class="builder-item desktop-center"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	
+<div class="site-logo">
+	<a class="brand" href="https://beinsure.com/" aria-label="Beinsure - Insurance, Reinsurance, InsurTech Insights Beinsure Media: insurance, reinsurance, insurtech, investment &amp; new technologies. The World latest News, Ratings, Review, Forecasts &amp; Insights" rel="home"><div class="title-with-logo"><div class="nv-title-tagline-wrap"></div><img width="579" height="134" src="https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" fetchpriority="high" srcset="https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3.png 579w, https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3-400x93.png 400w, https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3-150x35.png 150w" sizes="(max-width: 579px) 100vw, 579px"></div></a></div>
+	</div>
+
+</div></div><div class="hfg-slot right"></div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div class="header--row header-bottom hide-on-mobile hide-on-tablet layout-full-contained has-center header--row" data-row-id="bottom" data-show-on="desktop">
+
+	<div class="header--row-inner header-bottom-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_bottom">
+				<div class="hfg-slot left"></div><div class="hfg-slot center"><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-bottom" class="primary-menu-ul nav-ul menu-desktop"><li id="menu-item-1156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1156"><div class="wrap"><a href="/news/"><span class="menu-item-title-wrap dd-title">🔥 NEWS</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 1" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<ul class="sub-menu" style="right: auto; left: 0px;">
+	<li id="menu-item-15575" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15575"><div class="wrap"><a href="https://beinsure.com/n/insurance-news/">Insurance News</a></div></li>
+	<li id="menu-item-15574" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15574"><div class="wrap"><a href="https://beinsure.com/n/insurtech-news/">InsurTech News</a></div></li>
+	<li id="menu-item-48934" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-48934"><div class="wrap"><a href="https://beinsure.com/n/investing-news/">Investing News</a></div></li>
+	<li id="menu-item-15577" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15577"><div class="wrap"><a href="https://beinsure.com/n/reinsurance-news/">Reinsurance News</a></div></li>
+	<li id="menu-item-15576" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15576"><div class="wrap"><a href="https://beinsure.com/n/cyber-news/">Cyber Insurance News</a></div></li>
+	<li id="menu-item-15579" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15579"><div class="wrap"><a href="https://beinsure.com/n/crypto-news/">Crypto Blockchain News</a></div></li>
+	<li id="menu-item-15578" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15578"><div class="wrap"><a href="https://beinsure.com/n/mergers-acquisitions-news/">M&amp;A Insurance News</a></div></li>
+	<li id="menu-item-54631" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-54631"><div class="wrap"><a href="https://beinsure.com/n/retirement-disability-insurance/">Retirement Survivors Disability Insurance News</a></div></li>
+	<li id="menu-item-54630" class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-54630"><div class="wrap"><a href="https://beinsure.com/n/social-insurance-news/">Social Insurance News</a></div></li>
+</ul>
+</li>
+<li id="menu-item-693" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-693"><div class="wrap"><a href="https://beinsure.com/insurance/"><span class="menu-item-title-wrap dd-title">INSURANCE</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 11" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<ul class="sub-menu">
+	<li id="menu-item-15585" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15585"><div class="wrap"><a href="https://beinsure.com/insurance/agriculture-insurance/">Agriculture Insurance</a></div></li>
+	<li id="menu-item-15586" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15586"><div class="wrap"><a href="https://beinsure.com/insurance/avia/">Aviation Insurance</a></div></li>
+	<li id="menu-item-3869" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3869"><div class="wrap"><a href="https://beinsure.com/insurance/auto/">Car &amp; Auto Insurance</a></div></li>
+	<li id="menu-item-797" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-797"><div class="wrap"><a href="https://beinsure.com/cyber/">Cyber Insurance</a></div></li>
+	<li id="menu-item-15587" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15587"><div class="wrap"><a href="https://beinsure.com/insurance/do/">D&amp;O Insurance</a></div></li>
+	<li id="menu-item-4050" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4050"><div class="wrap"><a href="https://beinsure.com/insurance/health-insurance/">Health Insurance</a></div></li>
+	<li id="menu-item-8014" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8014"><div class="wrap"><a href="https://beinsure.com/insurance/home-insurance/">Home Insurance</a></div></li>
+	<li id="menu-item-54082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54082"><div class="wrap"><a href="https://beinsure.com/insurance-law/">Insurance Law</a></div></li>
+	<li id="menu-item-23825" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23825"><div class="wrap"><a href="https://beinsure.com/marketing/">Insurance Marketing</a></div></li>
+	<li id="menu-item-3870" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3870"><div class="wrap"><a href="https://beinsure.com/insurance/life/">Life Insurance</a></div></li>
+	<li id="menu-item-15588" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15588"><div class="wrap"><a href="https://beinsure.com/insurance/marine-cargo/">Marine &amp; Cargo Insurance</a></div></li>
+	<li id="menu-item-3871" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3871"><div class="wrap"><a href="https://beinsure.com/insurance/property-and-casualty/">P&amp;C Insurance</a></div></li>
+	<li id="menu-item-15589" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15589"><div class="wrap"><a href="https://beinsure.com/insurance/pet/">Pet Insurance</a></div></li>
+	<li id="menu-item-15590" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15590"><div class="wrap"><a href="https://beinsure.com/insurance/space/">Space Insurance</a></div></li>
+	<li id="menu-item-15591" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15591"><div class="wrap"><a href="https://beinsure.com/insurance/travel-insurance/">Travel Insurance</a></div></li>
+</ul>
+</li>
+<li id="menu-item-1085" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1085"><div class="wrap"><a href="https://beinsure.com/reinsurance/"><span class="menu-item-title-wrap dd-title">REINSURANCE</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 27" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<ul class="sub-menu">
+	<li id="menu-item-15584" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15584"><div class="wrap"><a href="https://beinsure.com/ils/">ILS</a></div></li>
+</ul>
+</li>
+<li id="menu-item-694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-694"><div class="wrap"><a href="https://beinsure.com/insurtech/">INSURTECH</a></div></li>
+<li id="menu-item-700" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-700"><div class="wrap"><a href="https://beinsure.com/tech/"><span class="menu-item-title-wrap dd-title">TECHNOLOGY</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 30" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<ul class="sub-menu">
+	<li id="menu-item-3882" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3882"><div class="wrap"><a href="https://beinsure.com/tech/artificial-intelligence/">Artificial Intelligence</a></div></li>
+	<li id="menu-item-3783" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3783"><div class="wrap"><a href="https://beinsure.com/tech/big-data/">Big Data</a></div></li>
+	<li id="menu-item-894" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-894"><div class="wrap"><a href="https://beinsure.com/blockchain/">Blockchain</a></div></li>
+	<li id="menu-item-15594" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15594"><div class="wrap"><a href="https://beinsure.com/tech/cloud-computing/">Cloud computing</a></div></li>
+	<li id="menu-item-17235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17235"><div class="wrap"><a href="https://beinsure.com/fintech/">FinTech</a></div></li>
+	<li id="menu-item-3785" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3785"><div class="wrap"><a href="https://beinsure.com/tech/iot/">Internet of Things</a></div></li>
+	<li id="menu-item-3883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3883"><div class="wrap"><a href="https://beinsure.com/tech/machine-learning/">Machine learning</a></div></li>
+	<li id="menu-item-48284" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48284"><div class="wrap"><a href="https://beinsure.com/blockchain/smart-contract/">Smart Contract</a></div></li>
+	<li id="menu-item-15595" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15595"><div class="wrap"><a href="https://beinsure.com/tech/telematics/">Telematics</a></div></li>
+</ul>
+</li>
+<li id="menu-item-695" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-695"><div class="wrap"><a href="https://beinsure.com/investing/"><span class="menu-item-title-wrap dd-title">INVESTING</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 40" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+<ul class="sub-menu">
+	<li id="menu-item-15580" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15580"><div class="wrap"><a href="https://beinsure.com/asset-management/">Asset Management</a></div></li>
+	<li id="menu-item-48285" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-48285"><div class="wrap"><a href="https://beinsure.com/crypto/"><span class="menu-item-title-wrap dd-title">CRYPTO</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 42" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></div>
+	<ul class="sub-menu">
+		<li id="menu-item-48286" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48286"><div class="wrap"><a href="https://beinsure.com/crypto/defi/">DeFi</a></div></li>
+		<li id="menu-item-48287" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48287"><div class="wrap"><a href="https://beinsure.com/crypto/dex/">DEX</a></div></li>
+		<li id="menu-item-48288" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48288"><div class="wrap"><a href="https://beinsure.com/crypto/gamefi/">GameFi</a></div></li>
+		<li id="menu-item-48289" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48289"><div class="wrap"><a href="https://beinsure.com/crypto/metaverse/">Metaverse</a></div></li>
+		<li id="menu-item-48290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48290"><div class="wrap"><a href="https://beinsure.com/crypto/nft/">NFT</a></div></li>
+	</ul>
+</li>
+	<li id="menu-item-17232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17232"><div class="wrap"><a href="https://beinsure.com/esg/">ESG</a></div></li>
+	<li id="menu-item-22045" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22045"><div class="wrap"><a href="https://beinsure.com/finance/">Finance</a></div></li>
+	<li id="menu-item-24228" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24228"><div class="wrap"><a href="https://beinsure.com/hr/">Human Resources</a></div></li>
+	<li id="menu-item-15592" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15592"><div class="wrap"><a href="https://beinsure.com/mergers-and-acquisitions/">M&amp;A</a></div></li>
+	<li id="menu-item-15593" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15593"><div class="wrap"><a href="https://beinsure.com/risk/">Risk Management</a></div></li>
+</ul>
+</li>
+<li id="menu-item-7305" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7305"><div class="wrap"><a href="/ranking/">RANKINGS</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div></div><div class="hfg-slot right"><div class="builder-item desktop-left"><div class="item--inner builder-item--header_search_responsive" data-section="header_search_responsive" data-item-id="header_search_responsive">
+	<div class="nv-search-icon-component">
+	<div class="menu-item-nav-search floating">
+		<a aria-label="Search" href="#" class="nv-icon nv-search">
+				<svg width="16" height="16" viewBox="48 48 416 416"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3ZM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8Z"></path></svg>
+			</a>		<div class="nv-nav-search" aria-label="search">
+			<div class="form-wrap ">
+				
+<form role="search" method="get" class="search-form" action="https://beinsure.com/">
+	<label>
+		<span class="screen-reader-text">Search for...</span>
+	</label>
+	<input type="search" class="search-field" aria-label="Search" placeholder="Search for..." value="" name="s" data-swplive="true" data-swpengine="default" data-swpconfig="default">
+	<button type="submit" class="search-submit nv-submit" aria-label="Search">
+					<span class="nv-search-icon-wrap">
+				<span class="nv-icon nv-search">
+				<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+			</span>			</span>
+			</button>
+	</form>
+			</div>
+							<div class="close-container ">
+					<button class="close-responsive-search" aria-label="Close">
+						<svg width="50" height="50" viewBox="0 0 20 20" fill="#555555"><path d="M14.95 6.46L11.41 10l3.54 3.54l-1.41 1.41L10 11.42l-3.53 3.53l-1.42-1.42L8.58 10L5.05 6.47l1.42-1.42L10 8.58l3.54-3.53z"></path></svg>
+					</button>
+				</div>
+					</div>
+	</div>
+</div>
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+
+<nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar has-center header--row" data-row-id="main" data-show-on="mobile">
+
+	<div class="header--row-inner header-main-inner">
+		<div class="container">
+			<div class="row row--wrapper" data-section="hfg_header_layout_main">
+				<div class="hfg-slot left"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+	<div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+	<button type="button" class=" navbar-toggle" value="Navigation Menu" aria-label="Navigation Menu " aria-expanded="false" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }">
+					<span class="bars">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</span>
+					<span class="screen-reader-text">Navigation Menu</span>
+	</button>
+</div> <!--.navbar-toggle-wrapper-->
+
+
+	</div>
+
+</div></div><div class="hfg-slot center"><div class="builder-item mobile-center tablet-center"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+	
+<div class="site-logo">
+	<a class="brand" href="https://beinsure.com/" aria-label="Beinsure - Insurance, Reinsurance, InsurTech Insights Beinsure Media: insurance, reinsurance, insurtech, investment &amp; new technologies. The World latest News, Ratings, Review, Forecasts &amp; Insights" rel="home"><div class="title-with-logo"><div class="nv-title-tagline-wrap"></div><img width="579" height="134" src="https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3.png" class="neve-site-logo skip-lazy" alt="" data-variant="logo" decoding="async" srcset="https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3.png 579w, https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3-400x93.png 400w, https://beinsure.com/wp-content/uploads/2022/07/beinsure@2x-3-150x35.png 150w" sizes="(max-width: 579px) 100vw, 579px"></div></a></div>
+	</div>
+
+</div></div><div class="hfg-slot right"><div class="builder-item tablet-left mobile-left"><div class="item--inner builder-item--header_search_responsive" data-section="header_search_responsive" data-item-id="header_search_responsive">
+	<div class="nv-search-icon-component">
+	<div class="menu-item-nav-search floating">
+		<a aria-label="Search" href="#" class="nv-icon nv-search">
+				<svg width="16" height="16" viewBox="48 48 416 416"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3ZM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8Z"></path></svg>
+			</a>		<div class="nv-nav-search" aria-label="search">
+			<div class="form-wrap ">
+				
+<form role="search" method="get" class="search-form" action="https://beinsure.com/">
+	<label>
+		<span class="screen-reader-text">Search for...</span>
+	</label>
+	<input type="search" class="search-field" aria-label="Search" placeholder="Search for..." value="" name="s" data-swplive="true" data-swpengine="default" data-swpconfig="default">
+	<button type="submit" class="search-submit nv-submit" aria-label="Search">
+					<span class="nv-search-icon-wrap">
+				<span class="nv-icon nv-search">
+				<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+			</span>			</span>
+			</button>
+	</form>
+			</div>
+							<div class="close-container ">
+					<button class="close-responsive-search" aria-label="Close">
+						<svg width="50" height="50" viewBox="0 0 20 20" fill="#555555"><path d="M14.95 6.46L11.41 10l3.54 3.54l-1.41 1.41L10 11.42l-3.53 3.53l-1.42-1.42L8.58 10L5.05 6.47l1.42-1.42L10 8.58l3.54-3.53z"></path></svg>
+					</button>
+				</div>
+					</div>
+	</div>
+</div>
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</nav>
+
+<div id="header-menu-sidebar" class="header-menu-sidebar tcb menu-sidebar-panel slide_left hfg-pe" data-row-id="sidebar">
+	<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+				<div class="close-sidebar-panel navbar-toggle-wrapper">
+			<button type="button" class="hamburger is-active  navbar-toggle active" value="Navigation Menu" aria-label="Navigation Menu " aria-expanded="false" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }">
+								<span class="bars">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</span>
+								<span class="screen-reader-text">
+			Navigation Menu					</span>
+			</button>
+		</div>
+					<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner tcb ">
+						<div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+	<div class="nv-nav-wrap">
+	<div role="navigation" class="nav-menu-primary" aria-label="Primary Menu">
+
+		<ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1156"><div class="wrap"><a href="/news/"><span class="menu-item-title-wrap dd-title">🔥 NEWS</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 1 " style="margin-left:5px;" aria-label="Toggle 🔥 NEWS"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15575"><div class="wrap"><a href="https://beinsure.com/n/insurance-news/">Insurance News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15574"><div class="wrap"><a href="https://beinsure.com/n/insurtech-news/">InsurTech News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-48934"><div class="wrap"><a href="https://beinsure.com/n/investing-news/">Investing News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15577"><div class="wrap"><a href="https://beinsure.com/n/reinsurance-news/">Reinsurance News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15576"><div class="wrap"><a href="https://beinsure.com/n/cyber-news/">Cyber Insurance News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15579"><div class="wrap"><a href="https://beinsure.com/n/crypto-news/">Crypto Blockchain News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-15578"><div class="wrap"><a href="https://beinsure.com/n/mergers-acquisitions-news/">M&amp;A Insurance News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-54631"><div class="wrap"><a href="https://beinsure.com/n/retirement-disability-insurance/">Retirement Survivors Disability Insurance News</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-n menu-item-54630"><div class="wrap"><a href="https://beinsure.com/n/social-insurance-news/">Social Insurance News</a></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-693"><div class="wrap"><a href="https://beinsure.com/insurance/"><span class="menu-item-title-wrap dd-title">INSURANCE</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 11 " style="margin-left:5px;" aria-label="Toggle INSURANCE"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15585"><div class="wrap"><a href="https://beinsure.com/insurance/agriculture-insurance/">Agriculture Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15586"><div class="wrap"><a href="https://beinsure.com/insurance/avia/">Aviation Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3869"><div class="wrap"><a href="https://beinsure.com/insurance/auto/">Car &amp; Auto Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-797"><div class="wrap"><a href="https://beinsure.com/cyber/">Cyber Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15587"><div class="wrap"><a href="https://beinsure.com/insurance/do/">D&amp;O Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4050"><div class="wrap"><a href="https://beinsure.com/insurance/health-insurance/">Health Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8014"><div class="wrap"><a href="https://beinsure.com/insurance/home-insurance/">Home Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54082"><div class="wrap"><a href="https://beinsure.com/insurance-law/">Insurance Law</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23825"><div class="wrap"><a href="https://beinsure.com/marketing/">Insurance Marketing</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3870"><div class="wrap"><a href="https://beinsure.com/insurance/life/">Life Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15588"><div class="wrap"><a href="https://beinsure.com/insurance/marine-cargo/">Marine &amp; Cargo Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3871"><div class="wrap"><a href="https://beinsure.com/insurance/property-and-casualty/">P&amp;C Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15589"><div class="wrap"><a href="https://beinsure.com/insurance/pet/">Pet Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15590"><div class="wrap"><a href="https://beinsure.com/insurance/space/">Space Insurance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15591"><div class="wrap"><a href="https://beinsure.com/insurance/travel-insurance/">Travel Insurance</a></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1085"><div class="wrap"><a href="https://beinsure.com/reinsurance/"><span class="menu-item-title-wrap dd-title">REINSURANCE</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 27 " style="margin-left:5px;" aria-label="Toggle REINSURANCE"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15584"><div class="wrap"><a href="https://beinsure.com/ils/">ILS</a></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-694"><div class="wrap"><a href="https://beinsure.com/insurtech/">INSURTECH</a></div></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-700"><div class="wrap"><a href="https://beinsure.com/tech/"><span class="menu-item-title-wrap dd-title">TECHNOLOGY</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 30 " style="margin-left:5px;" aria-label="Toggle TECHNOLOGY"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3882"><div class="wrap"><a href="https://beinsure.com/tech/artificial-intelligence/">Artificial Intelligence</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3783"><div class="wrap"><a href="https://beinsure.com/tech/big-data/">Big Data</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-894"><div class="wrap"><a href="https://beinsure.com/blockchain/">Blockchain</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15594"><div class="wrap"><a href="https://beinsure.com/tech/cloud-computing/">Cloud computing</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17235"><div class="wrap"><a href="https://beinsure.com/fintech/">FinTech</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3785"><div class="wrap"><a href="https://beinsure.com/tech/iot/">Internet of Things</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3883"><div class="wrap"><a href="https://beinsure.com/tech/machine-learning/">Machine learning</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48284"><div class="wrap"><a href="https://beinsure.com/blockchain/smart-contract/">Smart Contract</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15595"><div class="wrap"><a href="https://beinsure.com/tech/telematics/">Telematics</a></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-695"><div class="wrap"><a href="https://beinsure.com/investing/"><span class="menu-item-title-wrap dd-title">INVESTING</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 40 " style="margin-left:5px;" aria-label="Toggle INVESTING"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15580"><div class="wrap"><a href="https://beinsure.com/asset-management/">Asset Management</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-48285"><div class="wrap"><a href="https://beinsure.com/crypto/"><span class="menu-item-title-wrap dd-title">CRYPTO</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 42 " style="margin-left:5px;" aria-label="Toggle CRYPTO"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button></div>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48286"><div class="wrap"><a href="https://beinsure.com/crypto/defi/">DeFi</a></div></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48287"><div class="wrap"><a href="https://beinsure.com/crypto/dex/">DEX</a></div></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48288"><div class="wrap"><a href="https://beinsure.com/crypto/gamefi/">GameFi</a></div></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48289"><div class="wrap"><a href="https://beinsure.com/crypto/metaverse/">Metaverse</a></div></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-48290"><div class="wrap"><a href="https://beinsure.com/crypto/nft/">NFT</a></div></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17232"><div class="wrap"><a href="https://beinsure.com/esg/">ESG</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22045"><div class="wrap"><a href="https://beinsure.com/finance/">Finance</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24228"><div class="wrap"><a href="https://beinsure.com/hr/">Human Resources</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15592"><div class="wrap"><a href="https://beinsure.com/mergers-and-acquisitions/">M&amp;A</a></div></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15593"><div class="wrap"><a href="https://beinsure.com/risk/">Risk Management</a></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7305"><div class="wrap"><a href="/ranking/">RANKINGS</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div>					</div>
+	</div>
+</div>
+<div class="header-menu-sidebar-overlay hfg-ov hfg-pe" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }"></div>
+</div>
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+
+		</header>	
+		
+		<style>.nav-ul li:focus-within .wrap.active + .sub-menu { opacity: 1; visibility: visible; }.nav-ul li.neve-mega-menu:focus-within .wrap.active + .sub-menu { display: grid; }.nav-ul li > .wrap { display: flex; align-items: center; position: relative; padding: 0 4px; }.nav-ul:not(.menu-mobile):not(.neve-mega-menu) > li > .wrap > a { padding-top: 1px }</style><style>.header-menu-sidebar .nav-ul li .wrap { padding: 0 4px; }.header-menu-sidebar .nav-ul li .wrap a { flex-grow: 1; display: flex; }.header-menu-sidebar .nav-ul li .wrap a .dd-title { width: var(--wrapdropdownwidth); }.header-menu-sidebar .nav-ul li .wrap button { border: 0; z-index: 1; background: 0; }.header-menu-sidebar .nav-ul li:not([class*=block]):not(.menu-item-has-children) > .wrap > a { padding-right: calc(1em + (18px*2)); text-wrap: wrap; white-space: normal;}.header-menu-sidebar .nav-ul li.menu-item-has-children:not([class*=block]) > .wrap > a { margin-right: calc(-1em - (18px*2)); padding-right: 46px;}</style>
+
+		
+		<main id="content" class="neve-main">
+
+			
+<div class="container single-post-container">
+	<div id="breadcrumbs">
+	<span class="home"><a href="/">BEINSURE</a></span>
+			<i class="fas fa-angle-right"></i>
+		<span><a href="/news/">NEWS</a></span>
+				
+
+		<!-- 					<i class="fas fa-angle-right"></i>
+							<span class="first_cat"><a href="https://beinsure.com/insurance/auto/">Car &amp; Auto Insurance</a></span>					 -->
+		
+		
+					<i class="fas fa-angle-right"></i>
+												<span class="first_cat"><a href="https://beinsure.com/insurance/auto/">Car &amp; Auto Insurance</a></span>
+									
+
+						
+</div>
+			<section class="entry-header">
+			<h1 class="entry-title">State Farm to expand into Massachusetts homeowners and auto market by 2027</h1>
+			<div class="sungilar_author_time_wrappper">
+				
+
+<div class="post_header_author_wrapper">
+    <div class="header_authors_toggler_wrap">
+                        <div class="post_author_firs">
+                    <div class="post_author">
+                        <div class="post_author_img"><img width="80" height="80" src="https://beinsure.com/wp-content/uploads/2023/01/0-49-80x80.jpg" alt="Nataly Kramer"></div>                        <div class="post_author_name"><a href="https://beinsure.com/authors/nataly-kramer/">Nataly Kramer</a></div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+				<div class="singular_reading_time"><time class="updated" datetime="Oct 27, 2025">
+    Oct 27, 2025</time>
+ <div class="entry-meta-details">
+    <div class="meta-reading-time">
+        <i class="far fa-clock"></i>
+        <span>1 min</span>
+    </div>
+</div></div>
+			</div>
+		</section>
+			<div class="row">
+				
+		
+		
+		<article id="post-54455" class="nv-single-post-wrap col post-54455 news type-news status-publish format-standard has-post-thumbnail hentry category-auto n-insurance-news loaded-post" data-categories="insurance-news" data-post-type="news">
+											<div class="post-media">
+					<figure><img fetchpriority="high" width="1200" height="480" src="https://beinsure.com/wp-content/uploads/2025/10/1-46.jpg" alt="State Farm to expand into Massachusetts homeowners and auto market by 2027"></figure>
+				</div>
+						<div class="single_inner">
+
+				
+				<div class="entry-sidebar-wrap">
+    <div class="entry-sidebar">
+        <section class="post-section post-sidebar-tags">
+            <ul class="news-tags"><li><a href="https://beinsure.com/n/insurance-news/">Insurance News</a></li></ul>        </section>
+    </div>
+</div>
+				<div class="post_inner">
+					<div class="nv-content-wrap entry-content">
+<p>State Farm is preparing to scale up in Massachusetts, where its market share in personal auto and homeowners sits below 0.29%, according to BestWire. </p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>The company confirmed it has begun filings and expects to launch several new products in early 2027 through captive agents.</p>
+</blockquote>
+
+
+
+<p>As of September, State Farm had about 22,000 personal auto and 10,000 homeowners policies in force in the state. </p>
+
+
+
+<p>Those accounts largely came from existing customers relocating into Massachusetts, written on what the company described as an “accommodation basis.”</p>
+
+
+
+<p>“We see tremendous opportunity to meet customer needs and serve more customers in more ways,” spokesperson Tom Hartmann said. He noted that the new product rollout will include homeowners, fire, auto, and other lines.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Massachusetts remains dominated by Mapfre, the Spain-based carrier that became the state’s largest personal auto and homeowners writer after acquiring Commerce Group in 2008 and renaming it Mapfre USA in 2010. </p>
+</blockquote>
+
+
+
+<p>Today, Mapfre operates across 11 states but maintains its U.S. headquarters in Webster, Massachusetts.</p>
+
+
+
+<p>Safety Group also ranks among the top five insurers in both homeowners and auto. AM Best recently described Safety’s profile as “neutral,” citing its consistent market presence across personal and commercial auto as well as homeowners, supported by a modestly diverse product portfolio.</p>
+
+
+
+<p>For State Farm, the move into Massachusetts looks like a long-term play. The state’s personal lines market is already concentrated, but with new filings in motion, the company aims to carve out share from entrenched competitors.</p>
+</div>
+				</div>
+			</div>
+		</article>
+		
+
+		
+			</div>
+	
+
+	
+		<div class="section-footer-posts">
+			
+			<div class="section-footer-posts_wrapper">
+										
+    
+<div class="featured_post_ post_list_style">
+        <div class="featured_left_image post_img_">
+                <a class="post-link" href="https://beinsure.com/news/tesla-insurance-faces-license-threat-in-california/"><img width="300" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20480'%3E%3C/svg%3E" alt="Tesla Insurance faces license threat in California over 2,500+ violations" data-lazy-src="https://beinsure.com/wp-content/uploads/2025/10/2-20.jpg"><noscript><img width="1200" height="480" src="https://beinsure.com/wp-content/uploads/2025/10/2-20.jpg" alt="Tesla Insurance faces license threat in California over 2,500+ violations" /></noscript></a>
+    </div>
+    <div class="featured_left_post">
+    <div class="fleatured_left_title">
+        <a class="post-link" href="https://beinsure.com/news/tesla-insurance-faces-license-threat-in-california/">Tesla Insurance faces license threat in California over 2,500+ violations</a>
+    </div>
+    <div class="fleatured_left_desc">California regulators accuse Tesla Insurance and State National of thousands of violations, threaten suspensions, fines up to $10k, and license loss</div>
+</div></div>
+
+    
+<div class="featured_post_ post_list_style">
+        <div class="featured_left_image post_img_">
+                <a class="post-link" href="https://beinsure.com/news/lemonade-proposes-near-zero-insurance-for-tesla/"><img width="300" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20480'%3E%3C/svg%3E" alt="Lemonade proposes near-zero insurance for Tesla Full Self-Driving" data-lazy-src="https://beinsure.com/wp-content/uploads/2025/10/1-6.png"><noscript><img width="1200" height="480" src="https://beinsure.com/wp-content/uploads/2025/10/1-6.png" alt="Lemonade proposes near-zero insurance for Tesla Full Self-Driving" /></noscript></a>
+    </div>
+    <div class="featured_left_post">
+    <div class="fleatured_left_title">
+        <a class="post-link" href="https://beinsure.com/news/lemonade-proposes-near-zero-insurance-for-tesla/">Lemonade proposes near-zero insurance for Tesla Full Self-Driving</a>
+    </div>
+    <div class="fleatured_left_desc">Lemonade proposes near-zero insurance for Tesla Full Self-Driving, using direct vehicle integration to cut costs and challenge Tesla’s stalled insurance rollout</div>
+</div></div>
+
+    
+<div class="featured_post_ post_list_style">
+        <div class="featured_left_image post_img_">
+                <a class="post-link" href="https://beinsure.com/news/tesla-insurance-eyes-florida-real-time-pricing/"><img width="300" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20480'%3E%3C/svg%3E" alt="Tesla Insurance eyes Florida - real-time pricing, employee rates, and a 12-state footprint" data-lazy-src="https://beinsure.com/wp-content/uploads/2025/10/1-23.jpg"><noscript><img width="1200" height="480" src="https://beinsure.com/wp-content/uploads/2025/10/1-23.jpg" alt="Tesla Insurance eyes Florida - real-time pricing, employee rates, and a 12-state footprint" /></noscript></a>
+    </div>
+    <div class="featured_left_post">
+    <div class="fleatured_left_title">
+        <a class="post-link" href="https://beinsure.com/news/tesla-insurance-eyes-florida-real-time-pricing/">Tesla Insurance eyes Florida - real-time pricing, employee rates, and a 12-state footprint</a>
+    </div>
+    <div class="fleatured_left_desc">Tesla filed an updated Florida auto program effective Dec 2025, runs Safety Score 2.2 with up to ±50% monthly premium swings, and operates across 12 states with in-house insurers</div>
+</div></div>
+
+    
+<div class="featured_post_ post_list_style">
+        <div class="featured_left_image post_img_">
+                <a class="post-link" href="https://beinsure.com/news/texas-proposes-auto-property-insurance/"><img width="300" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20480'%3E%3C/svg%3E" alt="Texas proposes binding appraisal process for auto &amp; property insurance disputes" data-lazy-src="https://beinsure.com/wp-content/uploads/2025/10/3-7.jpg"><noscript><img width="1200" height="480" src="https://beinsure.com/wp-content/uploads/2025/10/3-7.jpg" alt="Texas proposes binding appraisal process for auto &amp; property insurance disputes" /></noscript></a>
+    </div>
+    <div class="featured_left_post">
+    <div class="fleatured_left_title">
+        <a class="post-link" href="https://beinsure.com/news/texas-proposes-auto-property-insurance/">Texas proposes binding appraisal process for auto &amp; property insurance disputes</a>
+    </div>
+    <div class="fleatured_left_desc">Texas proposes appraisal provisions for auto and property policies, with binding awards, strict timelines, and public comments open until Oct. 6.</div>
+</div></div>
+												
+			</div>
+		</div>
+
+</div>
+
+
+
+
+</main><!--/.neve-main-->
+
+<footer class="site-footer" id="site-footer">
+	<div class="hfg_footer">
+		<div class="footer--row footer-top hide-on-mobile hide-on-tablet layout-full-contained" id="cb-row--footer-desktop-top" data-row-id="top" data-show-on="desktop">
+	<div class="footer--row-inner footer-top-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top">
+				<div class="hfg-slot left"><div class="builder-item desktop-center tablet-left mobile-center"><div class="item--inner builder-item--footer-one-widgets" data-section="neve_sidebar-widgets-footer-one-widgets" data-item-id="footer-one-widgets">
+		<div class="widget-area">
+		<div id="block-9" class="widget widget_block"><p></p>
+</div>	</div>
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-main hide-on-mobile hide-on-tablet layout-full-contained" id="cb-row--footer-desktop-main" data-row-id="main" data-show-on="desktop">
+	<div class="footer--row-inner footer-main-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-main row--wrapper row " data-section="hfg_footer_layout_main">
+				<div class="hfg-slot left"><div class="builder-item desktop-center tablet-left mobile-center"><div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="nav-menu-footer" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul"><li id="menu-item-845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-845"><div class="wrap"><a href="https://beinsure.com/about/">About</a></div></li>
+<li id="menu-item-54572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54572"><div class="wrap"><a href="https://beinsure.com/app/">Beinsure App</a></div></li>
+<li id="menu-item-42824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42824"><div class="wrap"><a href="https://beinsure.com/awards/">Awards</a></div></li>
+<li id="menu-item-867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-867"><div class="wrap"><a href="https://beinsure.com/advertise/">Advertise</a></div></li>
+<li id="menu-item-4894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4894"><div class="wrap"><a href="https://beinsure.com/team/">Team</a></div></li>
+<li id="menu-item-945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-945"><div class="wrap"><a href="https://beinsure.com/contact/">Contact</a></div></li>
+<li id="menu-item-3813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3813"><div class="wrap"><a href="https://beinsure.com/authors/">Experts</a></div></li>
+<li id="menu-item-11481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11481"><div class="wrap"><a href="https://beinsure.com/editorial-policy/">Editorial Policy</a></div></li>
+<li id="menu-item-783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-783"><div class="wrap"><a rel="privacy-policy" href="https://beinsure.com/privacy-policy/">Privacy Policy</a></div></li>
+<li id="menu-item-42176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42176"><div class="wrap"><a href="https://beinsure.com/faq/">FAQ</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-bottom hide-on-mobile hide-on-tablet layout-full-contained" id="cb-row--footer-desktop-bottom" data-row-id="bottom" data-show-on="desktop">
+	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+				<div class="hfg-slot left"><div class="builder-item desktop-center tablet-left mobile-center"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets">
+		<div class="widget-area">
+		<div id="block-10" class="widget widget_block"><div class="footer-copyright">
+© 2006-2025 <font color="73fca9"><strong>Beinsure Media</strong></font> Insurance &amp; InsurTech digital platform. <font color="73fca9">❉</font> <a target="_blank" href="https://forinsurer.com/">Forinsurer</a>'s and AM Best’s Media Partner. <font color="73fca9">❉</font> Finance Media LLC. Registred code of legal entity No.35727935. D-U-N-S No.36-516-0096 <br>
+
+EU Editorial:&nbsp;Wrocławska 53, 30-011 Kraków, Poland: +48602750737&nbsp;❉&nbsp;Kurfürstendamm 11, 10719 Berlin, Germany: +491638544695 ❉ 
+Email: <a href="mailto:go@beinsure.com" rel="noopener noreferrer" target="_blank"><font color="73fca9">go@beinsure.com</font></a> <br>
+
+© All Rights Reserved. If you would like to use the Beinsure's analytics or news, you must hyperlink for beinsure.com. Our content is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. All materials posted on Beinsure.com are for informational purposes only. Readers should not use them as sole financial or investment advice and should DYOR.<br><br><br>
+
+<!--<img decoding="async" alt="Beinsure.com — Accredited Business, DMCA Protected, Norton Secured, TRUSTe Certified Privacy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2031'%3E%3C/svg%3E" width="300" height="31" data-lazy-src="/wp-content/uploads/2023/08/Beinsure-PayPal-Verified.png"><noscript><img decoding="async" alt="Beinsure.com — Accredited Business, DMCA Protected, Norton Secured, TRUSTe Certified Privacy" src="/wp-content/uploads/2023/08/Beinsure-PayPal-Verified.png" width="300" height="31"></noscript> -->
+</div></div>	</div>
+	</div>
+
+</div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
+		<div class="widget-area">
+		<div id="block-12" class="widget widget_block"><div class="footer-links">
+<a href="https://beinsure.com/"><img decoding="async" alt="Beinsure Digital Media — Insurance, Investments, Blockchain &amp; InsurTech" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E" width="30" height="30" data-lazy-src="/wp-content/uploads/2023/03/beinsure-icon.png"><noscript><img decoding="async" alt="Beinsure Digital Media — Insurance, Investments, Blockchain &amp; InsurTech" src="/wp-content/uploads/2023/03/beinsure-icon.png" width="30" height="30"></noscript></a>&nbsp;
+<a rel="nofollow" href="https://www.facebook.com/BeinsureMedia/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;
+<a rel="nofollow" href="https://x.com/BeinsureMedia" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.linkedin.com/company/beinsure-media" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.youtube.com/@beinsure" title="YouTube"><i class="fa-brands fa-youtube"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.reddit.com/r/beinsure/" title="Reddit"><i class="fa-brands fa-reddit"></i></a>
+</div><br><br><br></div>	</div>
+	</div>
+
+</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div></div></div></div></div></div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-main hide-on-desktop layout-full-contained" id="cb-row--footer-mobile-main" data-row-id="main" data-show-on="mobile">
+	<div class="footer--row-inner footer-main-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-main row--wrapper row " data-section="hfg_footer_layout_main">
+				<div class="hfg-slot left"><div class="builder-item desktop-center tablet-left mobile-center"><div class="item--inner builder-item--footer-menu has_menu" data-section="footer_menu_primary" data-item-id="footer-menu">
+	<div class="component-wrap">
+	<div role="navigation" class="nav-menu-footer" aria-label="Footer Menu">
+
+		<ul id="footer-menu" class="footer-menu nav-ul"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-845"><div class="wrap"><a href="https://beinsure.com/about/">About</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54572"><div class="wrap"><a href="https://beinsure.com/app/">Beinsure App</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42824"><div class="wrap"><a href="https://beinsure.com/awards/">Awards</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-867"><div class="wrap"><a href="https://beinsure.com/advertise/">Advertise</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4894"><div class="wrap"><a href="https://beinsure.com/team/">Team</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-945"><div class="wrap"><a href="https://beinsure.com/contact/">Contact</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3813"><div class="wrap"><a href="https://beinsure.com/authors/">Experts</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11481"><div class="wrap"><a href="https://beinsure.com/editorial-policy/">Editorial Policy</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-783"><div class="wrap"><a rel="privacy-policy" href="https://beinsure.com/privacy-policy/">Privacy Policy</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42176"><div class="wrap"><a href="https://beinsure.com/faq/">FAQ</a></div></li>
+</ul>	</div>
+</div>
+
+	</div>
+
+</div></div>							</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer--row footer-bottom hide-on-desktop layout-full-contained" id="cb-row--footer-mobile-bottom" data-row-id="bottom" data-show-on="mobile">
+	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
+		<div class="container">
+			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
+				<div class="hfg-slot left"><div class="builder-item desktop-center tablet-left mobile-center"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets">
+		<div class="widget-area">
+		<div id="block-10" class="widget widget_block"><div class="footer-copyright">
+© 2006-2025 <font color="73fca9"><strong>Beinsure Media</strong></font> Insurance &amp; InsurTech digital platform. <font color="73fca9">❉</font> <a target="_blank" href="https://forinsurer.com/">Forinsurer</a>'s and AM Best’s Media Partner. <font color="73fca9">❉</font> Finance Media LLC. Registred code of legal entity No.35727935. D-U-N-S No.36-516-0096 <br>
+
+EU Editorial:&nbsp;Wrocławska 53, 30-011 Kraków, Poland: +48602750737&nbsp;❉&nbsp;Kurfürstendamm 11, 10719 Berlin, Germany: +491638544695 ❉ 
+Email: <a href="mailto:go@beinsure.com" rel="noopener noreferrer" target="_blank"><font color="73fca9">go@beinsure.com</font></a> <br>
+
+© All Rights Reserved. If you would like to use the Beinsure's analytics or news, you must hyperlink for beinsure.com. Our content is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. All materials posted on Beinsure.com are for informational purposes only. Readers should not use them as sole financial or investment advice and should DYOR.<br><br><br>
+
+<!--<img decoding="async" alt="Beinsure.com — Accredited Business, DMCA Protected, Norton Secured, TRUSTe Certified Privacy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2031'%3E%3C/svg%3E" width="300" height="31" data-lazy-src="/wp-content/uploads/2023/08/Beinsure-PayPal-Verified.png"><noscript><img decoding="async" alt="Beinsure.com — Accredited Business, DMCA Protected, Norton Secured, TRUSTe Certified Privacy" src="/wp-content/uploads/2023/08/Beinsure-PayPal-Verified.png" width="300" height="31"></noscript> -->
+</div></div>	</div>
+	</div>
+
+</div><div class="builder-item desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-three-widgets" data-section="neve_sidebar-widgets-footer-three-widgets" data-item-id="footer-three-widgets">
+		<div class="widget-area">
+		<div id="block-12" class="widget widget_block"><div class="footer-links">
+<a href="https://beinsure.com/"><img decoding="async" alt="Beinsure Digital Media — Insurance, Investments, Blockchain &amp; InsurTech" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3C/svg%3E" width="30" height="30" data-lazy-src="/wp-content/uploads/2023/03/beinsure-icon.png"><noscript><img decoding="async" alt="Beinsure Digital Media — Insurance, Investments, Blockchain &amp; InsurTech" src="/wp-content/uploads/2023/03/beinsure-icon.png" width="30" height="30"></noscript></a>&nbsp;
+<a rel="nofollow" href="https://www.facebook.com/BeinsureMedia/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;
+<a rel="nofollow" href="https://x.com/BeinsureMedia" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.linkedin.com/company/beinsure-media" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.youtube.com/@beinsure" title="YouTube"><i class="fa-brands fa-youtube"></i></a>&nbsp;
+<a rel="nofollow" href="https://www.reddit.com/r/beinsure/" title="Reddit"><i class="fa-brands fa-reddit"></i></a>
+</div><br><br><br></div>	</div>
+	</div>
+
+</div><div class="builder-item cr"><div class="item--inner"><div class="component-wrap"><div></div></div></div></div></div>							</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</footer>
+
+</div><!--/.wrapper-->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/neve-child\/*","\/wp-content\/themes\/neve\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="ckyBannerTemplate" type="text/template"><div class="cky-overlay cky-hide"></div><div class="cky-consent-container cky-hide" tabindex="0"> <div class="cky-consent-bar" data-cky-tag="notice" style="background-color:#646464;border-color:#FFFFFF"> <button class="cky-banner-btn-close" data-cky-tag="close-button" aria-label="Close"> <img src="https://beinsure.com/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt="Close"> </button> <div class="cky-notice"> <p class="cky-title" role="heading" aria-level="1" data-cky-tag="title" style="color:#000000"></p><div class="cky-notice-group"> <div class="cky-notice-des" data-cky-tag="description" style="color:#FFFFFF"> <p>We use cookies for your best online experience</p> </div><div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons">   <button class="cky-btn cky-btn-accept" aria-label="Accept Essential" data-cky-tag="accept-button" style="color:#000000;background-color:#00e6a8;border-color:#00E6A8">Accept Essential</button>  </div></div></div></div></div><div class="cky-modal" tabindex="0"> <div class="cky-preference-center" data-cky-tag="detail" style="color:#FFFFFF;background-color:#646464;border-color:#FFFFFF"> <div class="cky-preference-header"> <span class="cky-preference-title" role="heading" aria-level="1" data-cky-tag="detail-title" style="color:#FFFFFF">Customise Consent Preferences</span> <button class="cky-btn-close" aria-label="Close" data-cky-tag="detail-close"> <img src="https://beinsure.com/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt="Close"> </button> </div><div class="cky-preference-body-wrapper"> <div class="cky-preference-content-wrapper" data-cky-tag="detail-description" style="color:#FFFFFF"> <p>We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.</p><p>The cookies that are categorised as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. </p><p>We also use third-party cookies that help us analyse how you use this website, store your preferences, and provide the content and advertisements that are relevant to you. These cookies will only be stored in your browser with your prior consent.</p><p>You can choose to enable or disable some or all of these cookies but disabling some of them may affect your browsing experience.</p> </div><div class="cky-accordion-wrapper" data-cky-tag="detail-categories"> <div class="cky-accordion" id="ckyDetailCategorynecessary"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Necessary" data-cky-tag="detail-category-title" style="color:#FFFFFF">Necessary</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchnecessary"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#FFFFFF"> <p>Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryfunctional"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Functional" data-cky-tag="detail-category-title" style="color:#FFFFFF">Functional</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchfunctional"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#FFFFFF"> <p>Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryanalytics"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Analytics" data-cky-tag="detail-category-title" style="color:#FFFFFF">Analytics</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchanalytics"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#FFFFFF"> <p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryperformance"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Performance" data-cky-tag="detail-category-title" style="color:#FFFFFF">Performance</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchperformance"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#FFFFFF"> <p>Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div><div class="cky-accordion" id="ckyDetailCategoryadvertisement"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Advertisement" data-cky-tag="detail-category-title" style="color:#FFFFFF">Advertisement</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchadvertisement"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#FFFFFF"> <p>Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.</p></div> </div> </div> <div class="cky-accordion-body">  </div> </div> </div></div><div class="cky-footer-wrapper"> <span class="cky-footer-shadow"></span> <div class="cky-prefrence-btn-wrapper" data-cky-tag="detail-buttons">  <button class="cky-btn cky-btn-preferences" aria-label="Save My Preferences" data-cky-tag="detail-save-button" style="color:#1863DC;background-color:transparent;border-color:#1863DC"> Save My Preferences </button> <button class="cky-btn cky-btn-accept" aria-label="Accept Essential" data-cky-tag="detail-accept-button" style="color:#000000;background-color:#00e6a8;border-color:#00E6A8"> Accept Essential </button> </div></div></div></div></script>			<a href="#top" class="pk-scroll-to-top">
+				<i class="pk-icon pk-icon-up"></i>
+			</a>
+		        <style>
+            .searchwp-live-search-results {
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+                height: 0;
+                overflow: hidden;
+                z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay. */
+                position: absolute;
+                display: none;
+            }
+
+            .searchwp-live-search-results-showing {
+                display: block;
+                opacity: 1;
+                height: auto;
+                overflow: auto;
+            }
+
+            .searchwp-live-search-no-results {
+                padding: 3em 2em 0;
+                text-align: center;
+            }
+
+            .searchwp-live-search-no-min-chars:after {
+                content: "Continue typing";
+                display: block;
+                text-align: center;
+                padding: 2em 2em 0;
+            }
+        </style>
+                <script type="rocketlazyloadscript">
+            var _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;
+            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE = 'default';
+            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';
+        </script>
+        <link rel="stylesheet" id="neve-mega-menu-css" href="https://beinsure.com/wp-content/themes/neve/assets/css/mega-menu.min.css?ver=4.1.3" media="all">
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/basic-elements/public/js/public-powerkit-basic-elements.js?ver=1761770795" id="powerkit-basic-elements-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/scroll-to-top/public/js/public-powerkit-scroll-to-top.js?ver=1761770795" id="powerkit-scroll-to-top-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/share-buttons/public/js/public-powerkit-share-buttons.js?ver=1761770795" id="powerkit-share-buttons-js" data-rocket-defer="" defer=""></script>
+<script id="powerkit-table-of-contents-js-extra">
+var powerkit_toc_config = {"label_show":"Show","label_hide":"Hide"};
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://beinsure.com/wp-content/cache/min/1/wp-content/plugins/powerkit/modules/table-of-contents/public/js/public-powerkit-table-of-contents.js?ver=1761770795" id="powerkit-table-of-contents-js" data-rocket-defer="" defer=""></script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+</script>
+<script id="neve-script-js-extra">
+var NeveProperties = {"ajaxurl":"https:\/\/beinsure.com\/wp-admin\/admin-ajax.php","nonce":"cb5b0cf2d3","isRTL":"","isCustomize":""};
+</script>
+<script data-minify="1" src="https://beinsure.com/wp-content/cache/min/1/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=1761770795" id="neve-script-js" async=""></script>
+<script type="rocketlazyloadscript" id="neve-script-js-after">
+	var html = document.documentElement;
+	var theme = html.getAttribute('data-neve-theme') || 'light';
+	var variants = {"logo":{"light":{"src":"https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3.png","srcset":"https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3.png 579w, https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3-400x93.png 400w, https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3-150x35.png 150w","sizes":"(max-width: 579px) 100vw, 579px"},"dark":{"src":"https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3.png","srcset":"https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3.png 579w, https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3-400x93.png 400w, https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3-150x35.png 150w","sizes":"(max-width: 579px) 100vw, 579px"},"same":true}};
+
+	function setCurrentTheme( theme ) {
+		var pictures = document.getElementsByClassName( 'neve-site-logo' );
+		for(var i = 0; i<pictures.length; i++) {
+			var picture = pictures.item(i);
+			if( ! picture ) {
+				continue;
+			};
+			var fileExt = picture.src.slice((Math.max(0, picture.src.lastIndexOf(".")) || Infinity) + 1);
+			if ( fileExt === 'svg' ) {
+				picture.removeAttribute('width');
+				picture.removeAttribute('height');
+				picture.style = 'width: var(--maxwidth)';
+			}
+			var compId = picture.getAttribute('data-variant');
+			if ( compId && variants[compId] ) {
+				var isConditional = variants[compId]['same'];
+				if ( theme === 'light' || isConditional || variants[compId]['dark']['src'] === false ) {
+					picture.src = variants[compId]['light']['src'];
+					picture.srcset = variants[compId]['light']['srcset'] || '';
+					picture.sizes = variants[compId]['light']['sizes'];
+					continue;
+				};
+				picture.src = variants[compId]['dark']['src'];
+				picture.srcset = variants[compId]['dark']['srcset'] || '';
+				picture.sizes = variants[compId]['dark']['sizes'];
+			};
+		};
+	};
+
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'attributes') {
+				theme = html.getAttribute('data-neve-theme');
+				setCurrentTheme(theme);
+			};
+		});
+	});
+
+	observer.observe(html, {
+		attributes: true
+	});
+function toggleAriaClick() { function toggleAriaExpanded(toggle = 'true') { document.querySelectorAll('button.navbar-toggle').forEach(function(el) { if ( el.classList.contains('caret-wrap') ) { return; } el.setAttribute('aria-expanded', 'true' === el.getAttribute('aria-expanded') ? 'false' : toggle); }); } toggleAriaExpanded(); if ( document.body.hasAttribute('data-ftrap-listener') ) { return; } document.body.setAttribute('data-ftrap-listener', 'true'); document.addEventListener('ftrap-end', function() { toggleAriaExpanded('false'); }); }
+var menuCarets=document.querySelectorAll(".nav-ul li > .wrap > .caret");menuCarets.forEach(function(e){e.addEventListener("keydown",e=>{13===e.keyCode&&(e.target.parentElement.classList.toggle("active"),e.target.getAttribute("aria-pressed")&&e.target.setAttribute("aria-pressed","true"===e.target.getAttribute("aria-pressed")?"false":"true"))}),e.parentElement.parentElement.addEventListener("focusout",t=>{!e.parentElement.parentElement.contains(t.relatedTarget)&&(e.parentElement.classList.remove("active"),e.setAttribute("aria-pressed","false"))})});
+</script>
+<script id="swp-live-search-client-js-extra">
+var searchwp_live_search_params = [];
+searchwp_live_search_params = {"ajaxurl":"https:\/\/beinsure.com\/wp-admin\/admin-ajax.php","origin_id":54455,"config":{"default":{"engine":"default","input":{"delay":300,"min_chars":3},"results":{"position":"bottom","width":"auto","offset":{"x":0,"y":5}},"spinner":{"lines":12,"length":8,"width":3,"radius":8,"scale":1,"corners":1,"color":"#424242","fadeColor":"transparent","speed":1,"rotate":0,"animation":"searchwp-spinner-line-fade-quick","direction":1,"zIndex":2000000000,"className":"spinner","top":"50%","left":"50%","shadow":"0 0 1px transparent","position":"absolute"}}},"msg_no_config_found":"No valid SearchWP Live Search configuration found!","aria_instructions":"When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures."};;
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://beinsure.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min.js?ver=1.8.6" id="swp-live-search-client-js" data-rocket-defer="" defer=""></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://beinsure.com/wp-content/cache/min/1/wp-content/themes/neve-child/js/custom.js?ver=1761770795" id="custom-js-js" data-rocket-defer="" defer=""></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://beinsure.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=["https:\/\/beinsure.com\/wp-content\/uploads\/2022\/07\/beinsure@2x-3.png"];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+	<script type="rocketlazyloadscript">
+		///progress bar to scroll
+		window.onscroll = function() {
+			myFunction()
+		};
+
+		function myFunction() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.querySelector(".single #myBar").style.width = scrolled + "%";
+		}
+	</script>
+
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;9312211785a8490bb1bf4730af622cc7&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99af3f6fea1c2e55',t:'MTc2MjU0Mzg1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+
+</body></html>

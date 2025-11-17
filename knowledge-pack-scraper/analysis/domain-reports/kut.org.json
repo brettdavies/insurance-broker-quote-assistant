@@ -1,0 +1,455 @@
+{
+  "domain": "kut.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.528711",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 14,
+      "frequency": 14.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 13,
+      "frequency": 13.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 21,
+      "frequency": 21.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "NavLink",
+      "count": 276
+    },
+    {
+      "class": "NavI-items-item",
+      "count": 252
+    },
+    {
+      "class": "gtm_nav_subcat",
+      "count": 126
+    },
+    {
+      "class": "Link",
+      "count": 57
+    },
+    {
+      "class": "gtm_nav_cat",
+      "count": 44
+    },
+    {
+      "class": "FooterNavItem-items-item",
+      "count": 24
+    },
+    {
+      "class": "NavI",
+      "count": 20
+    },
+    {
+      "class": "NavI-text",
+      "count": 20
+    },
+    {
+      "class": "Image",
+      "count": 17
+    },
+    {
+      "class": "NavI-text-link",
+      "count": 16
+    },
+    {
+      "class": "chevron",
+      "count": 15
+    },
+    {
+      "class": "NavI-more",
+      "count": 14
+    },
+    {
+      "class": "NavI-items",
+      "count": 14
+    },
+    {
+      "class": "NavI-items-placeholder",
+      "count": 14
+    },
+    {
+      "class": "gtm_share",
+      "count": 13
+    },
+    {
+      "class": "Nav-items-item",
+      "count": 10
+    },
+    {
+      "class": "DropdownNavigation-items-item",
+      "count": 10
+    },
+    {
+      "class": "sr-only",
+      "count": 9
+    },
+    {
+      "class": "two-columns",
+      "count": 8
+    },
+    {
+      "class": "ActionBar-items-item",
+      "count": 8
+    },
+    {
+      "class": "ActionLink",
+      "count": 8
+    },
+    {
+      "class": "ListE-items-item",
+      "count": 6
+    },
+    {
+      "class": "PromoA",
+      "count": 6
+    },
+    {
+      "class": "PromoA-media",
+      "count": 6
+    },
+    {
+      "class": "PromoA-content",
+      "count": 6
+    },
+    {
+      "class": "PromoA-category",
+      "count": 6
+    },
+    {
+      "class": "PromoA-title",
+      "count": 6
+    },
+    {
+      "class": "PromoA-byline",
+      "count": 6
+    },
+    {
+      "class": "PromoA-authorName",
+      "count": 6
+    },
+    {
+      "class": "PromoA-date",
+      "count": 6
+    },
+    {
+      "class": "PromoA-timestamp",
+      "count": 6
+    },
+    {
+      "class": "PromoA-description",
+      "count": 6
+    },
+    {
+      "class": "close-x",
+      "count": 5
+    },
+    {
+      "class": "BrightspotPersistentPlayer-streamsList-item",
+      "count": 5
+    },
+    {
+      "class": "Stream",
+      "count": 5
+    },
+    {
+      "class": "Stream-iconWrapper",
+      "count": 5
+    },
+    {
+      "class": "Stream-icon",
+      "count": 5
+    },
+    {
+      "class": "Stream-iconPause",
+      "count": 5
+    },
+    {
+      "class": "Stream-text",
+      "count": 5
+    },
+    {
+      "class": "Stream-status",
+      "count": 5
+    },
+    {
+      "class": "Stream-statusTextOnAir",
+      "count": 5
+    },
+    {
+      "class": "Stream-statusTextNowPlaying",
+      "count": 5
+    },
+    {
+      "class": "Stream-name",
+      "count": 5
+    },
+    {
+      "class": "PromoXS",
+      "count": 5
+    },
+    {
+      "class": "PromoXS-media",
+      "count": 5
+    },
+    {
+      "class": "PromoXS-content",
+      "count": 5
+    },
+    {
+      "class": "PromoXS-category",
+      "count": 5
+    },
+    {
+      "class": "PromoXS-title",
+      "count": 5
+    },
+    {
+      "class": "SocialBar-items-item",
+      "count": 5
+    },
+    {
+      "class": "SocialLink",
+      "count": 5
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "facebook-jssdk",
+      "count": 1
+    },
+    {
+      "id": "brightspot-dataLayer",
+      "count": 1
+    },
+    {
+      "id": "omapi-css",
+      "count": 1
+    },
+    {
+      "id": "iconsMap1",
+      "count": 1
+    },
+    {
+      "id": "play-icon",
+      "count": 1
+    },
+    {
+      "id": "grid",
+      "count": 1
+    },
+    {
+      "id": "\uf13f",
+      "count": 1
+    },
+    {
+      "id": "radio-stream",
+      "count": 1
+    },
+    {
+      "id": "icon-magnify",
+      "count": 1
+    },
+    {
+      "id": "burger-menu",
+      "count": 1
+    },
+    {
+      "id": "close-x",
+      "count": 1
+    },
+    {
+      "id": "share-more-arrow",
+      "count": 1
+    },
+    {
+      "id": "chevron",
+      "count": 1
+    },
+    {
+      "id": "Transparent-Chevron",
+      "count": 1
+    },
+    {
+      "id": "iconsMap2",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-facebook",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-instagram",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-email",
+      "count": 1
+    },
+    {
+      "id": "default-image",
+      "count": 1
+    },
+    {
+      "id": "icon-email",
+      "count": 1
+    },
+    {
+      "id": "Symbols",
+      "count": 1
+    },
+    {
+      "id": "social-button-bar",
+      "count": 1
+    },
+    {
+      "id": "Group-2",
+      "count": 1
+    },
+    {
+      "id": "envelope",
+      "count": 1
+    },
+    {
+      "id": "Stroke-406",
+      "count": 1
+    },
+    {
+      "id": "Stroke-407",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-print",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-copylink",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-linkedin",
+      "count": 1
+    },
+    {
+      "id": "mono-icon-pinterest",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

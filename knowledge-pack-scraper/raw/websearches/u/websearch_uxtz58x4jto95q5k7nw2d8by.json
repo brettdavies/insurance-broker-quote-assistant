@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_uxtz58x4jto95q5k7nw2d8by",
+  "search_id": "search_gaud7o8cxup2ux4mw43vnf9y",
+  "timestamp": "2025-11-07T12:23:54.440475",
+  "startedAt": "2025-11-07T12:23:54.440475",
+  "completedAt": "2025-11-07T12:23:56.312910",
+  "durationSeconds": 1.87,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"State Farm\" \"home age\" discount",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"State Farm\" \"home age\" discount",
+      "show_strict_warning": false,
+      "cleaned": "State Farm home age discount",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "State Farm home age discount"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

@@ -260,10 +260,7 @@ describe('LLM Prompt Generation', () => {
       await extractor.extractFields(message, knownFields, inferredFields, suppressedFields)
 
       expect(capturedUserPrompt).toBeDefined()
-      // The message is processed - extracted fields are removed, so check for remaining text
-      // The prompt should contain the processed message (remaining text after deterministic extraction)
-      expect(capturedUserPrompt).toContain('I need') // Should contain at least part of the original message
-      expect(capturedUserPrompt).toContain('insurance') // Should contain the main content
+      expect(capturedUserPrompt).toContain(message)
     })
   })
 })

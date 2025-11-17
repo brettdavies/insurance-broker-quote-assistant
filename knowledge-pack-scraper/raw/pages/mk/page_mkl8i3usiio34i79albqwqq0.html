@@ -1,0 +1,1893 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Geico Savings in New York | Ticket School</title>
+<link crossorigin="" data-rocket-preconnect="" href="https://www.googletagmanager.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://www.google-analytics.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://d10lpsik1i8c69.cloudfront.net" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://invitejs.trustpilot.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://widget.trustpilot.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://maxcdn.bootstrapcdn.com" rel="preconnect">
+<link crossorigin="" data-rocket-preconnect="" href="https://googleads.g.doubleclick.net" rel="preconnect">
+<link data-rocket-preload="" as="style" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C700%2C900%2C600%2C600italic%2C400italic%2C300&amp;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C700%2C900%2C600%2C600italic%2C400italic%2C300&amp;display=swap" media="all" onload="this.media='all'" rel="stylesheet">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C700%2C900%2C600%2C600italic%2C400italic%2C300&#038;display=swap"></noscript><link rel="preload" data-rocket-preload="" as="image" href="https://ticketschool.com/wp-content/uploads/2025/04/Gecko-resize.png" fetchpriority="high">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://ticketschool.com/xmlrpc.php">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Did you know that the New York driver improvement course online can keep points of your license? Sign up for your New York BDI course at Ticket School today.">
+	<link rel="canonical" href="https://ticketschool.com/courses/geico-ny/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Geico Savings in New York | Ticket School">
+	<meta property="og:description" content="Did you know that the New York driver improvement course online can keep points of your license? Sign up for your New York BDI course at Ticket School today.">
+	<meta property="og:url" content="https://ticketschool.com/courses/geico-ny/">
+	<meta property="og:site_name" content="TicketSchool">
+	<meta property="article:publisher" content="https://www.facebook.com/ticketschool">
+	<meta property="article:modified_time" content="2025-04-09T17:21:58+00:00">
+	<meta property="og:image" content="https://ticketschool.com/wp-content/uploads/2014/08/TS-StateSectionNewYork.jpg">
+	<meta property="og:image:width" content="990">
+	<meta property="og:image:height" content="865">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="5 minutes">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="TicketSchool » Feed" href="https://ticketschool.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="TicketSchool » Comments Feed" href="https://ticketschool.com/comments/feed/">
+<style type="text/css">
+.archive #nav-above,
+					.archive #nav-below,
+					.search #nav-above,
+					.search #nav-below,
+					.blog #nav-below, 
+					.blog #nav-above, 
+					.navigation.paging-navigation, 
+					.navigation.pagination,
+					.pagination.paging-pagination, 
+					.pagination.pagination, 
+					.pagination.loop-pagination, 
+					.bicubic-nav-link, 
+					#page-nav, 
+					.camp-paging, 
+					#reposter_nav-pages, 
+					.unity-post-pagination, 
+					.wordpost_content .nav_post_link { 
+						display: none !important; 
+					}
+					.single-gallery .pagination.gllrpr_pagination {
+						display: block !important; 
+					}</style>
+		
+	<link rel="stylesheet" id="jquery.bxslider-css" href="https://ticketschool.com/wp-content/plugins/bxslider-integration/assets/css/bxslider-integration.min.css?ver=6.8.3" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://ticketschool.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="gravity-bootstrap-css" href="https://ticketschool.com/wp-content/plugins/gravity-forms-bootstrap-3-style/gravity-forms-bootstrap.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="wpa-css-css" href="https://ticketschool.com/wp-content/plugins/honeypot/includes/css/wpa.css?ver=2.2.14" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-css" href="https://ticketschool.com/wp-content/uploads/maxmegamenu/style.css?ver=858c8a" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://ticketschool.com/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="refinerysource-style-css" href="https://ticketschool.com/wp-content/themes/refinerysource-theme/style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="refinerysource-bootstrap-css" href="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/resources/bootstrap/css/bootstrap.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="shortcodes-css" href="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/shortcodes/css/shortcodes.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="https://ticketschool.com/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.4" type="text/css" media="screen">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/plugins/bxslider-integration/assets/js/bxslider-integration.min.js?ver=6.8.3" id="jquery.bxslider-js"></script>
+<script type="text/javascript" id="tp-js-js-extra">
+/* <![CDATA[ */
+var trustpilot_settings = {"key":"","TrustpilotScriptUrl":"https:\/\/invitejs.trustpilot.com\/tp.min.js","IntegrationAppUrl":"\/\/ecommscript-integrationapp.trustpilot.com","PreviewScriptUrl":"\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/js\/preview.min.js","PreviewCssUrl":"\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/css\/preview.min.css","PreviewWPCssUrl":"\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/css\/preview_wp.css","WidgetScriptUrl":"\/\/widget.trustpilot.com\/bootstrap\/v5\/tp.widget.bootstrap.min.js"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/plugins/trustpilot-reviews/review/assets/js/headerScript.min.js?ver=1.0' async='async" id="tp-js-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/js/dropdowns.js?ver=1758639077" id="dropdownsJS-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/resources/bootstrap/js/bootstrap.js?ver=6.8.3" id="refinerysource-bootstrapjs-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/js/bootstrap-wp.js?ver=6.8.3" id="refinerysource-bootstrapwp-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/js/jquery.sticky-kit.js?ver=6.8.3" id="refinerysource-stickykitjs-js"></script>
+<link rel="https://api.w.org/" href="https://ticketschool.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://ticketschool.com/wp-json/wp/v2/pages/2482"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ticketschool.com/xmlrpc.php?rsd">
+<link rel="shortlink" href="https://ticketschool.com/?p=2482">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://ticketschool.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fticketschool.com%2Fcourses%2Fgeico-ny%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://ticketschool.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fticketschool.com%2Fcourses%2Fgeico-ny%2F&amp;format=xml">
+<!-- Stream WordPress user activity plugin v4.1.1 -->
+    	<!-- Theme Settings Custom CSS Output -->
+        <style type="text/css">
+        	/* 
+        	 * Refinery Settings Custom CSS 
+        	*/
+        	body, body.custom-background { background-color:  !important; }
+        	a { color: ;}
+        	a:hover { color: #2089EA;}
+        	#top-bar { background-color: ; }
+        	#top-bar .nav li a { color:  !important; }
+        	#top-bar .nav li a:hover { color:  !important; }
+        	#masthead{ background-color: ; }
+         	#masthead .navbar-nav li a { 
+         		color: #155A9C; 
+         	}
+         	.navbar-nav li a:hover { 
+         		color: #FFCC00 !important;
+         		background-color:  !important; 
+         	}
+         	footer#colophon {
+         		background-color: #155A9C;
+         	}
+         	footer#copyright,
+         	footer#copyright a {
+         		color: white;
+         		background-color: #155A9C;
+         	}
+         	#nav-below {
+    margin-bottom: 90px;
+}
+.wp-paginate {
+    margin-bottom: 30px;
+}        </style>
+
+        <!-- Theme Settings Custom JS Output -->
+        <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        	/* 
+        	 * Refinery Settings Custom Javascript 
+        	*/
+        	        </script>
+    
+<!-- Schema & Structured Data For WP v1.49 - -->
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org\/","@type":"WebPage","@id":"https:\/\/ticketschool.com\/courses\/geico-ny\/#webpage","name":"Geico Savings in New York | Ticket School","url":"https:\/\/ticketschool.com\/courses\/geico-ny\/","lastReviewed":"2025-04-09T12:21:58-05:00","dateCreated":"2025-04-05T03:48:10-05:00","inLanguage":"en-US","description":"Did you know that the New York driver improvement course online can keep points of your license? Sign up for your New York BDI course at Ticket School today.","keywords":"","reviewedBy":{"@type":"Organization","name":"Ticket School","url":"https:\/\/ticketschool.com","logo":{"@type":"ImageObject","url":"https:\/\/ticketschool.com\/wp-content\/uploads\/2022\/09\/ticketschool-logo-new.png","width":"2207","height":"507"}},"publisher":{"@type":"Organization","name":"Ticket School","url":"https:\/\/ticketschool.com","logo":{"@type":"ImageObject","url":"https:\/\/ticketschool.com\/wp-content\/uploads\/2022\/09\/ticketschool-logo-new.png","width":"2207","height":"507"}}}]
+</script>
+
+<!--–– Lucky Orange Tracking ---->
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+window.__lo_site_id = 141459;
+
+(function() {
+var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+ })();
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 717178660 -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-717178660"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-717178660');
+</script>
+
+<!-- Call Tracking
+<script type="rocketlazyloadscript">
+  gtag('config', 'AW-717178660/MERnCKagw6kBEKSO_dUC', {
+    'phone_conversion_number': '(800) 558-9887'
+  });
+</script>
+-->
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PNBW9ZP');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- GA4 - Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-7Q1NKE0MPJ"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7Q1NKE0MPJ');
+</script>
+
+
+<!-- TrustBox script -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
+<!-- End TrustBox script -->
+		<style type="text/css" id="wp-custom-css">
+			.page-id-1659 .banner--overlay {
+	background-position: 50% 58%;
+}
+.panels--acc .panel-body *:not(h1,h2,h3,h4){
+	font-size:18px !important;
+}		</style>
+		<style type="text/css">/** Mega Menu CSS: fs **/</style>
+
+<!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/refinerysource-theme/ie-styles.css" />
+<![endif]-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+.ul-courses li a { font-size: 18px !important; }
+</style>
+<script type="rocketlazyloadscript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4245316-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Organization",
+  "@id": "https://ticketschool.com#Organization",
+  "name": "Ticket School",
+  "url": "https://ticketschool.com",
+  "sameAs": [],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://ticketschool.com/wp-content/uploads/2022/09/ticketschool-logo-new.png",
+    "width": "2207",
+    "height": "507"
+  }
+}
+</script>
+
+<!-- TrustBox script -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
+<!-- End TrustBox script -->
+
+<meta name="generator" content="WP Rocket 3.19.3" data-wpr-features="wpr_delay_js wpr_preconnect_external_domains wpr_oci wpr_preload_links wpr_desktop"><link href="https://www.googletagmanager.com" rel="preconnect"><link href="https://widget.trustpilot.com" rel="preconnect"></head>
+
+<!--[if IE]>
+<style>
+    .main-content {
+    	top: 40px !important;
+	}
+</style>
+<![endif]-->
+
+<body data-rsssl="1" class="wp-singular page-template page-template-tpl-defensive-driving-course page-template-tpl-defensive-driving-course-php page page-id-2482 page-child parent-pageid-14 wp-theme-refinerysource-theme mega-menu-primary group-blog">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNBW9ZP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+<header id="masthead" class="site-header navbar-fixed-top" role="banner">
+
+<div class="container-fluid white-bg">
+	<div class="container flex-box-grid-new">
+		<div class="row">
+
+			<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+				<div class="site-header-inner">
+						
+											
+					<div class="site-branding">
+											<a href="/">
+												<img src="https://ticketschool.com/wp-content/uploads/2025/04/dta_logo_long_powered_by_tsc.png" alt="Ticket School logo" title="Ticket School logo" width="594" height="171">
+							
+						</a>
+										</div>
+
+												
+				</div>
+			</div>
+
+			
+				
+					<div class="col-lg-6 col-md-4 col-sm-4 col-xs-3 col-xxs-12">
+	                <div id="top-bar">
+					<nav class="site-navigation navbar navbar-default" role="navigation">		
+        				<div class="site-navigation-inner">
+        				    <div class="navbar navbar-header" style="width:100%" id="sticky-bar">
+            					<div class="site-branding-mobile">
+            				
+            					            						<a href="/">
+            							<img src="/wp-content/uploads/2015/08/ticketschool-logo-new-1.png" id="mobilelogo" alt="Ticket School logo" title="Ticket School logo">
+            						</a>
+            					            						<div class="pull-right" style="width:100%;max-width:717px">
+            						<div class="pull-right">
+            						<button type="button" class="btn btn-primary btn-sm btn-block">Login</button>
+            				    	<button type="button" class="btn btn-primary btn-sm btn-block">Register</button>
+            				    	<div id="header-phone">
+            				    	<img src="https://ticketschool.com/wp-content/uploads/2018/02/phone-icon-optimized.png" alt="phone icon" title="phone icon">
+            							<!-- <img src="/wp-content/uploads/2014/10/phone-icon.png" /> -->
+            				    	(800) 558-9887
+            				    	</div>
+            				    	</div>
+            				    	</div>
+                                
+                                </div>
+            
+                                <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+            
+            							    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar">
+            							      <span class="sr-only">Toggle navigation</span>
+            							      <span class="icon-bar white" style="color:#fff"></span>
+            							      <span class="icon-bar white" style="color:#fff"></span>
+            							      <span class="icon-bar white" style="color:#fff"></span>
+            							    </button>
+            							    <div class="clear-for-mobile"></div>
+            
+                               
+                                <!-- Static navbar -->
+            
+            							<!-- The Main Menuu is here -->
+            							
+            					<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-1" id="mega-toggle-block-1" tabindex="0"><span class="mega-toggle-label" role="button" aria-expanded="false"><span class="mega-toggle-label-closed"></span><span class="mega-toggle-label-open"></span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="1200" data-unbind="true" data-mobile-state="collapse_all" data-mobile-direction="vertical" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-1075" id="mega-menu-item-1075"><a class="mega-menu-link" href="/courses/" tabindex="0">State</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-current-page-ancestor mega-menu-megamenu mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu mega-menu-item-18" id="mega-menu-item-18"><a class="mega-menu-link" href="https://ticketschool.com/courses/" aria-expanded="false" tabindex="0">Courses<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-column-standard mega-menu-columns-3-of-6 mega-menu-item-text-4" style="--columns:6; --span:3" id="mega-menu-item-text-4"><h4 class="mega-block-title">COURSES OVERVIEW</h4>			<div class="textwidget"><div class="course-hover">
+
+    <h3 class="texas-course">TEXAS COURSES</h3>
+
+    <h3 class="florida-course">FLORIDA COURSES</h3>
+
+    <h3 class="virginia-course">VIRGINIA COURSES</h3>
+
+    <h3 class="new-york-course">NEW YORK COURSES</h3>
+
+    <h3 class="michigan-course">MICHIGAN COURSES</h3>
+
+    <h3 class="louisiana-course" style="text-align: center;">LOUISIANA COURSES</h3>
+
+    <h3 class="tennessee-course" style="text-align: center;">TENNESSEE COURSES</h3>
+
+    <h3 class="missouri-course" style="text-align: center;">MISSOURI COURSES</h3>
+
+    <h3 class="illinois-course" style="text-align: center;">ILLINOIS COURSES</h3>
+
+</div>
+
+<script type="rocketlazyloadscript">
+
+    jQuery(document).ready(
+        function () {
+            jQuery("#mega-menu-item-text-4 .mega-block-title").hover(
+                function () {
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").addClass('displayMenuItem');
+                }
+            );
+
+            jQuery(".texas-course").hover(
+                function () {
+                    jQuery(".texas-course-info").addClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked texas");
+
+                }
+            );
+
+            jQuery(".florida-course").hover(
+                function () {
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").addClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked florida");
+                }
+            );
+
+            jQuery(".virginia-course").hover(
+                function () {
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").addClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked virginia");
+                }
+
+            );
+
+            jQuery(".new-york-course").hover(
+                function () {
+                    console.log("clicked new york");
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").addClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked new york");
+
+                }
+            );
+
+            jQuery(".michigan-course").hover(
+                function () {
+
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").addClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked michigan");
+
+                }
+            );
+
+            jQuery(".louisiana-course").hover(
+                function () {
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").addClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked louisiana");
+
+                }
+            );
+
+            jQuery(".tennessee-course").hover(
+                function () {
+
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").addClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked tennessee");
+
+                }
+            );
+            jQuery(".missouri-course").hover(
+                function () {
+
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").addClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").removeClass('displayMenuItem');
+                    console.log("clicked tennessee");
+
+                }
+            );
+            jQuery(".illinois-course").hover(
+                function () {
+
+                    jQuery(".texas-course-info").removeClass('displayMenuItem');
+                    jQuery(".florida-course-info").removeClass('displayMenuItem');
+                    jQuery(".virginia-course-info").removeClass('displayMenuItem');
+                    jQuery(".new-york-course-info").removeClass('displayMenuItem');
+                    jQuery(".michigan-course-info").removeClass('displayMenuItem');
+                    jQuery(".louisiana-course-info").removeClass('displayMenuItem');
+                    jQuery(".tennessee-course-info").removeClass('displayMenuItem');
+                    jQuery(".missouri-course-info").removeClass('displayMenuItem');
+                    jQuery(".general-course-info").removeClass('displayMenuItem');
+                    jQuery(".illinois-course-info").addClass('displayMenuItem');
+                    console.log("clicked tennessee");
+
+                }
+            );
+        }
+
+    );
+
+</script></div>
+		</li><li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-column-standard mega-menu-columns-3-of-6 mega-menu-item-text-5" style="--columns:6; --span:3" id="mega-menu-item-text-5"><h4 class="mega-block-title">TICKET SCHOOL STATES</h4>			<div class="textwidget"><div class="general-course-info displayMenuItem">
+    <div class="col-md-4 course-state-texas pull-left">
+        <a href="/texas/" class="texas-link">
+            <img src="/wp-content/uploads/2014/10/texas4.png" alt="texas map icon" title="texas map icon" class="course-info-image">
+            <h2>Texas</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-florida pull-left">
+        <a href="/florida/" class="florida-link">
+            <img src="/wp-content/uploads/2014/11/florida-tab-background.png" alt="florida map icon" title="florida map icon" class="course-info-image">
+            <h2>Florida</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-virginia pull-left">
+        <a href="/courses/virginia-driver-improvement-course/" class="virginia-link">
+            <img src="/wp-content/uploads/2014/12/virginia-tab-background2.png" alt="virginia map icon" title="virginia map icon" class="course-info-image">
+            <h2>Virginia</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-new-york pull-left">
+        <a href="/new-york/" class="new-york-link">
+            <img src="/wp-content/uploads/2014/12/new-york-tab-background2.png" alt="new york map icon" title="new york map icon" class="course-info-image">
+            <h2>New York</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-michigan pull-left">
+        <a href="/michigan/" class="michigan-link">
+            <img src="/wp-content/uploads/2016/05/michigan-gray.png" alt="michigan gray map icon" title="michigan gray map icon" class="course-info-image">
+            <h2>Michigan</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-louisiana pull-left">
+        <a href="/courses/louisiana-driver-improvement-course/" class="louisiana-link">
+            <img src="/wp-content/uploads/2014/09/Louisiana-Grey.png" alt="Louisiana Grey Map Icon" title="Louisiana Grey Map Icon" class="course-info-image">
+            <h2>Louisiana</h2>
+        </a>
+    </div>
+    <div class="col-md-4 course-state-tennessee pull-left" style="width: 33%; height: 200px !important;">
+        <a href="/courses/tennessee-online-traffic-school/" class="tennessee-link">
+            <img src="/wp-content/uploads/2018/03/Tennessee-Grey.png" alt="Tennessee Grey Icon" title="Tennessee Grey Icon" class="course-info-image">
+            <h2>Tennessee</h2>
+        </a>
+    </div>
+   <div class="col-md-4 course-state-missouri pull-left" style="width: 33%; height: 200px !important;">
+        <a href="/courses/missouri-driver-improvement-program-online/" class="missouri-link">
+            <img src="/wp-content/uploads/2019/02/Missouri-grey.png" alt="Tennessee Grey Icon" title="Missouri Grey Icon" class="course-info-image">
+            <h2>Missouri</h2>
+        </a>
+    </div>
+
+</div>
+
+<div class="texas-course-info">
+    <h2><a href="https://ticketschool.com/texas/">Texas Course Options</a></h2>
+    <div class="menu-texas-menu-container"><ul id="menu-texas-menu" class="menu"><li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="https://ticketschool.com/courses/texas-defensive-driving-course/">Texas Online Defensive Driving Course</a></li>
+<li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-422"><a href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/">Texas Drug and Alcohol Driving Awareness Online Course (DADAP)</a>
+<ul class="sub-menu">
+	<li id="menu-item-553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553"><a href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/texas-dadap-low-price-money-back-guarantee/">Lowest Prices &amp; Money-Back Guarantee for Texas DADAP</a></li>
+	<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/state-approved-texas-dadap/">Enroll in State-Approved Texas DADAP Today!</a></li>
+	<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/ticket-schools-texas-dadap-is-mobile-friendly/">Mobile-Friendly Texas DADAP: Learn Anytime, Anywhere!</a></li>
+	<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/benefits-texas-dadap/">Discover the Benefits of Texas DADAP with Ticket School</a></li>
+</ul>
+</li>
+<li id="menu-item-2434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2434"><a href="https://ticketschool.com/courses/texas-adult-driver-education/">Texas Adult Driver Education Course</a></li>
+<li id="menu-item-552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-552"><a href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/">El Programa de Concientización Sobre el Uso de Drogas y Alcohol al Manejar (DADAP por sus siglas en inglés) de Texas</a>
+<ul class="sub-menu">
+	<li id="menu-item-561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-561"><a href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/garantia-precio-mas-bajo-reembolso-dinero-curso-dadap-texas/">Garantía de Precio Más Bajo en el Curso DADAP de Texas</a></li>
+	<li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/dadap-texas-esta-aprobado-estado/">DADAP de Texas: Curso Aprobado por el Estado Aquí</a></li>
+	<li id="menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-564"><a href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/curso-dadap-ticket-school-esta-adaptado-dispositivos-moviles/">¡Curso DADAP Móvil de Ticket School a Tu Alcance!</a></li>
+	<li id="menu-item-563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-563"><a href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/beneficios-curso-dadap-texas/">Beneficios del Curso DADAP de Texas en Ticket School</a></li>
+</ul>
+</li>
+</ul></div>
+</div>
+
+<div class="florida-course-info">
+    <h2><a href="https://ticketschool.com/florida/">Florida Course Options</a></h2>
+    <div class="menu-florida-menu-container"><ul id="menu-florida-menu" class="menu"><li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-423"><a href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/">Florida Basic Driver Improvement (BDI)</a>
+<ul class="sub-menu">
+	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-480"><a href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/florida-bdi-low-price-money-back-guarantee/">Florida BDI Low Price &amp; Money Back Guarantee</a></li>
+	<li id="menu-item-481" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-481"><a href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/state-approved-florida-bdi-course/">State-Approved Florida BDI Course: Get Back on the Road</a></li>
+	<li id="menu-item-482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482"><a href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/how-florida-bdi-course-works/">Overview of Ticket School’s Simple Florida BDI Course</a></li>
+	<li id="menu-item-483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-483"><a href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/florida-bdi-course-is-mobile-friendly/">Best Price Guarantee for Your Florida BDI Course Today!</a></li>
+</ul>
+</li>
+<li id="menu-item-424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a href="https://ticketschool.com/courses/florida-intermediate-driver-improvement/">Florida 8-Hour Driver Improvement Course</a></li>
+<li id="menu-item-425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-425"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/">Florida Advanced Driver Improvement</a>
+<ul class="sub-menu">
+	<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/online-florida-adi-course-suspended-license/">Get Your License Back with Ticket School’s Florida ADI</a></li>
+	<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/what-expect-florida-adi-course-ticketschool/">What to Expect in Your Florida ADI Course with Ticket School</a></li>
+	<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/adi-course-questions-answers/">Florida Advanced Driver Improvement Course FAQs</a></li>
+	<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/benefits-ticket-schools-florida-adi-course/">The Benefits of Ticket School’s Florida ADI Course</a></li>
+	<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="https://ticketschool.com/courses/florida-advanced-driver-improvement/ticket-schools-lowest-price-guarantee/">Understanding Ticket School’s Lowest Price Guarantee for the Florida ADI Course</a></li>
+</ul>
+</li>
+<li id="menu-item-2235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2235"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/">Florida Drug &amp; Alcohol Course</a>
+<ul class="sub-menu">
+	<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/how-get-florida-driver-license/">Step-by-Step Guide to Getting Your Florida Driver License</a></li>
+	<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/course-details-for-ticket-schools-tlsae-course/">Course Details for Ticket School’s TLSAE Course</a></li>
+	<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/florida-drug-and-alcohol-course-is-state-approved/">Florida Drug and Alcohol Course Is State Approved</a></li>
+	<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/florida-drug-alcohol-course-money-back-guarantee/">Drug and Alcohol Course Money Back Guarantee</a></li>
+	<li id="menu-item-513" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-513"><a href="https://ticketschool.com/courses/florida-drug-alcohol-course/florida-drivers-handbook/">Florida Driver’s Handbook</a></li>
+</ul>
+</li>
+<li id="menu-item-2250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2250"><a href="https://ticketschool.com/courses/florida-learners-permit-test/">Florida Learner’s Permit Test</a></li>
+</ul></div>
+</div>
+
+<div class="virginia-course-info">
+    <h2><a href="https://ticketschool.com/courses/virginia-driver-improvement-course/">Virginia Traffic School</a></h2>
+    <div class="menu-virginia-menu-container"><ul id="menu-virginia-menu" class="menu"><li id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428"><a href="https://ticketschool.com/courses/virginia-driver-improvement-course/">Virginia Driver Improvement Course</a></li>
+</ul></div>
+</div>
+
+<div class="new-york-course-info">
+    <h2><a href="https://ticketschool.com/new-york/">New York Defensive Driving</a></h2>
+    <div class="menu-new-york-menu-container"><ul id="menu-new-york-menu" class="menu"><li id="menu-item-2153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2153"><a href="https://ticketschool.com/courses/new-york-defensive-driving-online/">New York Defensive Driving Course (IPIRP)</a></li>
+<li id="menu-item-1807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1807"><a href="https://ticketschool.com/courses/new-york-pre-licensing-course-online/">New York Pre-Licensing Course Online (5-hour)</a></li>
+</ul></div>
+</div>
+
+<div class="michigan-course-info">
+    <h2><a href="https://ticketschool.com/michigan/">Michigan Traffic School</a></h2>
+    <div class="menu-michigan-container"><ul id="menu-michigan" class="menu"><li id="menu-item-2275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2275"><a href="https://ticketschool.com/courses/michigan-basic-driver-improvement/">Michigan Basic Driver Improvement  Course (BDIC)</a></li>
+</ul></div>
+</div>
+
+<div class="louisiana-course-info">
+    <h2><a>Louisiana Defensive Driving</a></h2>
+<div class="menu-michigan-container"><ul id="menu-michigan" class="menu"><li id="menu-item-430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430"><a href="https://ticketschool.com/courses/louisiana-driver-improvement-course/" style="font-size: 14px !important;">LOUISIANA DRIVER IMPROVEMENT COURSE</a></li>
+</ul></div>
+</div>
+
+<div class="tennessee-course-info">
+    <h2><a href="https://ticketschool.com/courses/tennessee-online-traffic-school/">Tennessee Driver Education</a></h2>
+    &nbsp;&nbsp;&nbsp;
+    <b>
+        <a href="https://ticketschool.com/courses/tennessee-online-traffic-school/" style="font-size: 14px !important;">TENNESSEE DRIVER EDUCATION COURSE</a>
+    </b>
+</div>
+
+<div class="missouri-course-info">
+    <h2><a href="https://ticketschool.com/courses/missouri-driver-improvement-program-online/">Missouri Driver Improvement Program</a></h2>
+    &nbsp;&nbsp;&nbsp;
+    <b>
+        <a href="https://ticketschool.com/courses/missouri-driver-improvement-program-online/" style="font-size: 14px !important;">Missouri Driver Improvement Program</a>
+    </b>
+</div>
+
+<div class="illinois-course-info">
+    <h2><a href="https://ticketschool.com/courses/illinois-adult-drivers-ed/">Illinois Adult Driver Education Course</a></h2>
+    &nbsp;&nbsp;&nbsp;
+    <b>
+        <a href="https://ticketschool.com/courses/illinois-adult-drivers-ed/" style="font-size: 14px !important;">Illinois Adult Driver Education Course</a>
+    </b>
+</div></div>
+		</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-1109" id="mega-menu-item-1109"><a class="mega-menu-link" href="https://ticketschool.com/faqs/" tabindex="0">FAQs</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-21" id="mega-menu-item-21"><a class="mega-menu-link" href="https://ticketschool.com/contact/" tabindex="0">Contact</a></li></ul></div>	
+            				    
+            				    <!-- responsive menu goes below here -->
+            					<div id="navbar" class="collapse"><ul id="menu-main-menu-responsive" class="nav navbar-nav"><li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-185"><a title="Home" href="https://ticketschool.com/">Home</a></li>
+<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-186 dropdown"><a title="Courses" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Courses <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a title="Texas Online Defensive Driving Course" href="https://ticketschool.com/courses/texas-defensive-driving-course/">Texas Online Defensive Driving Course</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a title="Texas Drug and Alcohol Driving Awareness Online Course (DADAP)" href="https://ticketschool.com/courses/texas-drug-alcohol-driving-awareness/">Texas Drug and Alcohol Driving Awareness Online Course (DADAP)</a></li>
+	<li id="menu-item-2433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2433"><a title="Texas Adult Driver Education Course" href="https://ticketschool.com/courses/texas-adult-driver-education/">Texas Adult Driver Education Course</a></li>
+	<li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274"><a title="El Programa de Concientización Sobre el Uso de Drogas y Alcohol al Manejar (DADAP por sus siglas en inglés) de Texas" href="https://ticketschool.com/courses/programa-concientizacion-sobre-uso-drogas-alcohol-manejar-dadap-texas/">El Programa de Concientización Sobre el Uso de Drogas y Alcohol al Manejar (DADAP por sus siglas en inglés) de Texas</a></li>
+	<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a title="Florida Basic Driver Improvement (BDI) - 4 Hour" href="https://ticketschool.com/courses/florida-basic-driver-improvement-bdi/">Florida Basic Driver Improvement (BDI) – 4 Hour</a></li>
+	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a title="Florida Intermediate Driver Improvement (IDI) - 8 Hour" href="https://ticketschool.com/courses/florida-intermediate-driver-improvement/">Florida Intermediate Driver Improvement (IDI) – 8 Hour</a></li>
+	<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a title="Florida Advanced Driver Improvement (ADI) - 12 Hour" href="https://ticketschool.com/courses/florida-advanced-driver-improvement/">Florida Advanced Driver Improvement (ADI) – 12 Hour</a></li>
+	<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a title="Florida Learner’s Permit Test" href="https://ticketschool.com/courses/florida-learners-permit-test-bkp/">Florida Learner’s Permit Test</a></li>
+	<li id="menu-item-2234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2234"><a title="Florida Drug &amp; Alcohol Course (TLSAE)" href="https://ticketschool.com/courses/florida-drug-alcohol-course/">Florida Drug &amp; Alcohol Course (TLSAE)</a></li>
+	<li id="menu-item-1540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1540"><a title="Illinois Adult Drivers Ed Online" href="https://ticketschool.com/courses/illinois-adult-drivers-ed/">Illinois Adult Drivers Ed Online</a></li>
+	<li id="menu-item-2273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2273"><a title="Michigan Basic Driver Improvement  Course (BDIC)" href="https://ticketschool.com/courses/michigan-basic-driver-improvement/">Michigan Basic Driver Improvement  Course (BDIC)</a></li>
+	<li id="menu-item-1272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1272"><a title="Missouri Driver Improvement Program (DIP)" href="https://ticketschool.com/courses/missouri-driver-improvement-program-online/">Missouri Driver Improvement Program (DIP)</a></li>
+	<li id="menu-item-2242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2242"><a title="New York Defensive Driving Course (IPIRP)" href="https://ticketschool.com/courses/new-york-defensive-driving-online/">New York Defensive Driving Course (IPIRP)</a></li>
+	<li id="menu-item-2409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2409"><a title="Tennessee’s Online Driver’s Education Course" href="https://ticketschool.com/courses/tennessee-online-traffic-school/">Tennessee’s Online Driver’s Education Course</a></li>
+	<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a title="Virginia Driver Improvement Course" href="https://ticketschool.com/courses/virginia-driver-improvement-course/">Virginia Driver Improvement Course</a></li>
+</ul>
+</li>
+<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a title="About Our Online Driving Courses" href="https://ticketschool.com/about/">About Our Online Driving Courses</a></li>
+<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a title="Blog" href="https://ticketschool.com/blog/">Blog</a></li>
+<li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a title="FAQs" href="https://ticketschool.com/faqs/">FAQs</a></li>
+<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a title="Contact" href="https://ticketschool.com/contact/">Contact</a></li>
+</ul></div>			
+            				    <!-- Aaron -->
+            				  
+            					</div>
+        					</div>
+        					</nav></div>
+        				<!-- .site-navigation -->
+					
+					</div>
+
+				 	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-5 order-first-xxs col-xxs-12 heading-contact no-pad">
+    				 	<div id="top-bar">
+        				 	<div class="header-contact-sec">
+        				 	    <div id="header-phone">
+        				    	(800) 558-9887
+        				    	</div>
+        				    	<a href="https://courses.ticketschool.com/login/login.asp" style="text-decoration:none"><button type="button" class="btn btn-primary btn-sm btn-block">Login</button></a>
+        				    </div>	
+    				    </div>
+                    </div>
+			   
+		    </div><!-- .row -->
+	</div><!-- .container -->
+	
+</div>	
+</header><!-- #masthead -->
+<div style="clear: both;"></div>
+
+
+  
+
+  
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="row">
+		  
+			<ul id="breadcrumbs"><li><a href="https://ticketschool.com">Home</a></li><li class="separator"> / </li><li><a href="https://ticketschool.com/courses/" title="Courses">Courses</a></li> <li class="separator">/</li><strong title="GEICO Insurance"> GEICO Insurance</strong></ul>
+		</div>
+	</div>
+</div>
+
+<div class="main-content">
+    		
+		
+			  
+			  
+			  
+<style type="text/css">
+	.title-sec {
+		color: #0C4063;
+		font-size: 40px;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-bottom: 24px;
+	}
+	.title-sec.text-white{
+		color: #ffffff;
+	}
+	body .content-sec,
+	body .content-sec *{
+		font-size: 18px !important;
+		color: #333333;
+	}
+	@media (min-width: 1340px){
+		.container {
+			width: 1310px;
+		}
+	}
+	@media (max-width: 767px){
+		.title-sec {
+			font-size: 30px;
+		}
+	}
+</style>
+
+<style type="text/css">
+	.banner-hero {
+		padding-top: 50px;
+		padding-bottom: 80px;
+		position: relative;
+	}
+	.banner--overlay{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	.banner--overlay::before{
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+	.caption--title, 
+	.caption--content,
+	.caption--price{
+		color: #fff;
+	}
+	.caption--title {
+		font-size: 75px;
+		font-weight: bold;
+		margin-top: 0;
+	}
+	.caption--title span {
+		display: block;
+	}
+	.caption--content {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.banner-hero .col-md-4 .caption--text {
+		text-align: center;
+		margin-top: 195px;
+	}
+	.caption--price {
+		font-size: 70px;
+		font-weight: bold;
+		line-height: 60px;
+	}
+	.caption--price > span{
+		color: inherit;
+	}
+	.caption--button {
+		margin-top: 15px;
+	}
+	.banner-hero .btn{
+		transition: background-color 0.3s ease-in-out;
+	}
+	.banner-hero .caption--button .btn {
+		font-size: 24px;
+		text-transform: uppercase;
+		border-radius: 6px;
+		font-weight: bold;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.btn--yellow{
+		background-color: #ffce18;
+		border-color: #ffce18;
+		color: #333333;
+	}
+	.btn--yellow:hover,
+	.btn--yellow:focus{
+		background-color: #285b97;
+		border-color: #285b97;
+		color: #FFFFFF;
+	}
+	.head1{
+font-size:28px!important;
+color:#fff;
+margin-top:-175px;
+}
+
+.head2{
+font-size:28px!important;
+color:#fff;
+margin-top:30px;
+}
+
+	@media (max-width: 1339px){
+		.caption--title {
+			font-size: 64px;
+		}
+		.caption--content {
+			font-size: 22px;
+		}
+		.caption--price {
+			font-size: 100px;
+			line-height: 100px;
+		}
+	}
+	@media (max-width: 1199px){
+		.banner-hero {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		.caption--title {
+			font-size: 54px;
+		}
+		.caption--content {
+			font-size: 20px;
+		}
+		.caption--price {
+			font-size: 90px;
+			line-height: 90px;
+		}
+        .banner-hero .col-md-4 .caption--text {
+            margin-top: 30px;
+        }
+	}
+	@media (max-width: 991px){
+		.caption--text {
+			text-align: center;
+		}
+	}
+	@media (max-width: 767px){
+		.banner-hero {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		.banner-hero .caption--button .btn {
+			font-size: 26px;
+		}
+	}
+	@media (max-width: 575px){
+		.banner-hero {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.caption--title {
+			font-size: 40px;
+		}
+		.caption--price {
+			font-size: 80px;
+			line-height: 80px;
+		}
+		.banner-hero .caption--button .btn {
+			font-size: 22px;
+		}
+		.head1{
+		font-size:30px!important;
+		color:#fff;
+		}
+
+		.head2{
+		font-size:30px;
+		color:#fff;
+		}
+	}
+	@media (max-width: 479px){
+		.caption--content br {
+			display: none;
+		}
+		.head1{
+		margin-top:0px;
+		font-size:30px!important;
+		color:#fff;
+		}
+
+		.head2{
+		font-size:30px;
+		color:#fff;
+		margin-top:30px;
+		}
+	}
+	@media (max-width: 379px){
+		.caption--title {
+			font-size: 36px;
+		}
+		.head1{
+		margin-top:0px;
+		font-size:30px!important;
+		color:#fff;
+		}
+
+		.head2{
+		font-size:30px;
+		color:#fff;
+		margin-top:30px;
+		}
+	}
+</style>
+<section class="banner-hero banner--overlay" style="background-image: url(https://ticketschool.com/wp-content/uploads/2025/04/Gecko-resize.png);">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="caption--text">
+					<h1 class="caption--title">Earn a discount on your GEICO insurance </h1>
+					<div class="caption--content">
+						Why choose us?
+
+<ul><li>Special pricing of $19.95 with no extra fees</li>
+<li>Premium discount for 3 years</li>
+<li>GEICO applies discount automatically</li>
+<li>DMV approved course</li>
+<li>24/7 accessible on all devices </li></ul>
+<br>
+Eligibility may vary by state and/or GEICO companies.  Please verify availability and amount prior.
+<br><br><br><br><br><br><br>					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="caption--text">
+															<div class="caption--price"><span>$19.95</span></div>
+										
+					<div class="caption--button"><a class="btn btn--yellow" href="https://courses.ticketschool.com/nysdd/Registration/Step1?affiliate=430">
+                    Get Started                    </a>
+					
+					
+							
+					
+				</div>
+<div style="background-color:#fff; margin:20px 50px 20px 50px;padding-top:20px;border-radius: 30px;">
+<!-- TrustBox widget - Micro TrustScore  -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b637fa0340045cd0c936" data-businessunit-id="5cbd9ee4ce708b00017b6c63" data-style-height="40px" data-style-width="100%">
+  <a href="https://www.trustpilot.com/review/ticketschool.com" target="_blank" rel="noopener">Trustpilot</a>
+ </div>
+ 
+			</div>
+		</div>
+	</div>
+</div></div></section>
+<!-- end of banner-hero -->
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+<!-- available-dmv -->
+<style type="text/css">
+	.available-dmv .container {
+	padding: 0;
+	align-content: center;
+	vertical-align: ;
+}
+	.available-dmv{
+		background-color: #285b97;
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+	}
+	div#footer {
+    color: #fff;
+}
+	.avail-left-border{
+		border-left: 2px solid #ddd;
+	}
+	.avail-content,
+	.avail-content *{
+		color: #fff;
+	}
+	.avail-content span{
+		font-weight: bold;
+		display: block;
+	}
+	.avail-icon-text {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.avail-content {
+		padding-left: 20px;
+		font-size: 24px;
+		flex: 1;
+		text-align: center;
+		max-width: 600px;
+	}
+    .avail-content em {
+        font-size: 18px;
+        display: block;
+        max-width: 500px;
+        font-style: italic;
+    }
+	.avail-icon {
+		flex: 0 0 auto;
+	}
+	.avail-icon img {
+		max-height: 112px;
+	}
+	@media (max-width: 991px){
+		.avail-content {
+			padding-left: 10px;
+			font-size: 20px;
+		}
+		.avail-icon img {
+			max-height: 80px;
+		}
+		.avail-content em {
+			font-size: 16px;
+			line-height: 20px;
+			display: block;
+		}
+	}
+	@media (max-width: 767px){
+		.avail-left-border {
+			border-left: none;
+		}
+		.avail-left-border .avail-icon-text {
+			margin-top: 15px;
+		}
+		.avail-icon-text {
+			max-width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.avail-icon {
+			width: 90px;
+		}
+	}
+</style>
+<section class="available-dmv">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3">
+				<div class="avail-icon-text">
+					<div class="avail-content">
+						<span>Mobile Friendly</span>
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 avail-left-border">
+				<div class="avail-icon-text">
+					<div class="avail-content">
+						<span>Available 24/7</span>
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 avail-left-border">
+				<div class="avail-icon-text">
+					<div class="avail-content">
+						<span>State Approved </span>
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 avail-left-border">
+				<div class="avail-icon-text">
+					<div class="avail-content">
+						<span>No Final Exam</span>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+<!-- end of available-dmv -->
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+<!-- how course work -->
+<style type="text/css">
+	.how-course--work .content-sec a {
+		color: #428bca;
+	}
+	.how-course--work {
+		position: relative;
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	@media (min-width: 992px){
+		.how-course--work .col-md-6 {
+			display: inline-block;
+			float: none;
+			vertical-align: middle;
+			width: calc(50% - 3px);
+		}
+        .course--image .img-responsive {
+            max-width: 85%;
+            width: 100%;
+            margin-left: auto;
+        }
+	}
+	@media (min-width: 1340px){
+		.course--image {
+            padding-left: 30px;
+            text-align: right;
+        }
+		.course--content {
+			padding-right: 65px;
+		}
+	}
+	@media (max-width: 1339px){
+		.how-course--work {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+	}
+	@media (max-width: 991px){
+		.how-course--work {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		.course--image img {
+			margin: 0 auto;
+		}
+	}
+	@media (max-width: 767px){
+		.how-course--work {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+</style>
+<section class="how-course--work">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="course--content">
+					<h3 class="title-sec course--title">How does the process work? </h3>
+					<div class="content-sec course--text">
+						<ul>
+<li style="margin-bottom: 20px;"><strong>Register:</strong> Quickly <a href="https://courses.ticketschool.com/nysdd/Registration/Step1?affiliate=430">create your course account</a> in just a couple minutes.</li>
+<li style="margin-bottom: 20px;"><strong>Complete the Course</strong> Log in and out of the course as needed from any internet enabled device. Complete all 6 units within 30 days from registration.</li>
+<li><strong>Get your Discount</strong> GEICO will be notified to apply the discount to your policy automatically within 24-48 hours. Your completion will also be reported electronically to the NY DMV, if you are eligible for any point reduction benefits. A completion certificate will be sent to you via your chosen delivery method for your records.</li>
+</ul>
+<div class="navigation"></div>					</div>
+				</div>	
+			</div>
+			<div class="col-md-6">
+				<div class="course--image" style="height: 640px;">
+					<img class="img-responsive" src="https://ticketschool.com/wp-content/uploads/2025/04/gecko_thumbsup_11in.png" alt="How does the course work?">
+				</div>
+			</div>
+
+
+
+
+
+
+		</div>
+		
+	</div>
+</section>
+<!-- end of how course work -->
+
+
+<section style="background-color: #fff;line-height: 70px;margin-bottom:70px;margin-top:-100px;">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12 col-sm-12" align="center">
+<div>
+				<div class="content-sec course--text">
+				What our customers say
+<!-- TrustBox widget - Micro Combo -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5cbd9ee4ce708b00017b6c63" data-style-height="20px" data-style-width="100%">
+  <a href="https://www.trustpilot.com/review/ticketschool.com" target="_blank" rel="noopener">Trustpilot</a>
+	</div>
+		</div>		
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+<!-- who needs course -->
+<style type="text/css">
+	.who-need--course {
+		position: relative;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		background-color: #f5f5f5;
+	}
+	.wnc-title {
+		margin-bottom: 40px;
+	}
+	.wnc-title .title-sec{
+		margin: 0px;
+		text-align: center;
+	}
+	.wnc-note {
+		font-size: 18px;
+		padding-top: 12px;
+	}
+	.thumb-text {
+		position: relative;
+		padding: 20px;
+		border-radius: 24px;
+		background-color: #fff;
+		box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.tt-icon img {
+		margin: 0 auto;
+	}
+	.tt-icon {
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	.tt-content {
+		min-height: 100px;
+	}
+	.tt-content h4 {
+		font-size: 22px;
+	}
+	@media (max-width: 1199px){
+		.who-need--course {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		.tt-content {
+			min-height: 90px;
+		}
+	}
+	@media (max-width: 991px){
+		.who-need--course {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		.tt-content {
+			min-height: 100px;
+		}
+	}
+	@media (max-width: 767px){
+		.who-need--course {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.tt-content {
+			min-height: unset;
+		}
+		.thumb-text {
+			position: relative;
+			padding: 20px;
+			border-radius: 24px;
+			background-color: #fff;
+			box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+			text-align: center;
+			margin-bottom: 30px;
+			max-width: 360px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+</style>
+<!-- end of who needs course -->
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+
+
+<!-- course isn't -->
+<style type="text/css">
+	.course-isnt{
+		background-color: #0c4063;
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	.isnt-left-border{
+		border-left: 2px solid #ffffff;
+	}
+	.isnt-box{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.isnt-icon{
+		flex: 0 0 auto;
+	}
+	.isnt-text{
+		flex: 1;
+		padding-left: 10px;
+	}
+	.isnt-icon img{
+		max-height: 83px;
+	}
+	.isnt-title{
+		margin-bottom: 30px;
+	}
+	.isnt-text span {
+		color: #fff;
+		font-size: 18px;
+	}
+	@media (min-width: 1340px){
+		.isnt-left-border .isnt-box {
+			padding-left: 20px;
+		}
+	}
+	@media (min-width: 992px) and (max-width: 1199px){
+		.isnt-box {
+			align-items: center;
+			min-height: 130px;
+		}
+	}
+	@media (max-width: 991px){
+		.course-isnt {
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		.course-isnt .row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.course-isnt .row .col-md-4 {
+			flex: 0 0 auto;
+			width: 50%;
+			margin-bottom: 20px;
+		}
+		.course-isnt .row .col-md-4:last-child {
+			border-left: none;
+		}
+	}
+	@media (max-width: 767px){
+		.course-isnt .row .col-md-4:last-child {
+			border-left: none;
+			width: 100%;
+		}
+	}
+	@media (max-width: 575px){
+		.course-isnt .row .col-md-4 {
+			width: 100%;
+		}
+		.isnt-left-border{
+			border-left: none;
+		}
+	}
+</style>
+<!--
+
+
+<section class="course-isnt">
+	<div class="container">
+		<div class="isnt-title">
+			<h3 class="title-sec text-white text-center"> What this course isn't.</h3>
+		</div>
+		<div class="row">
+                        			<div class="col-md-6 ">
+				<div class="isnt-box">
+					<div class="isnt-icon">
+						<img class="img-responsive" src="https://ticketschool.com/wp-content/uploads/2021/08/isnot.png" alt="denied symbol">
+					</div>
+					<div class="isnt-text">
+						<span>Not a preparation to help pass the road test.</span>
+					</div>
+				</div>
+			</div>
+                        			<div class="col-md-6 isnt-left-border ">
+				<div class="isnt-box">
+					<div class="isnt-icon">
+						<img class="img-responsive" src="https://ticketschool.com/wp-content/uploads/2021/08/isnot.png" alt="denied symbol">
+					</div>
+					<div class="isnt-text">
+						<span>Not for those that have already completed Driver’s Ed and have a valid MV-285 certificate.</span>
+					</div>
+				</div>
+			</div>
+            		</div>
+	</div>
+</section>
+
+
+			-->
+<!-- end of course isn't -->
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+<!-- course panels -->
+<style type="text/css">
+	.course-panels {
+		position: relative;
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	.panels--acc {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.now--states {
+		text-align: center;
+		margin-top: 80px;
+	}
+	.panels--acc .panel {
+		-webkit-box-shadow: 0 0 20px rgba(40, 88, 134, 0.25);
+		box-shadow: 0 0 20px rgba(40, 88, 134, 0.25);
+	}
+	.panels--acc .panel {
+		margin-top: 30px !important;
+	}
+	.panels--acc .panel-default {
+		border: none;
+	}
+	.panels--acc .panel-heading {
+		padding: 0px;
+		border: none;
+		background-color: #fff;
+	}
+	.panels--acc .panel-heading .panel-title > a {
+		display: block;
+		padding: 20px 50px 20px 30px;
+		font-size: 30px;
+		color: #0c4063;
+		text-decoration: none !important;
+		position: relative;
+	}
+	.panels--acc .panel-heading .panel-title > a::after {
+		position: absolute;
+		right: 25px;
+		top: 22px;
+		font-size: 28px;
+		color: #155a9c;
+	}
+	.panels--acc .panel-heading .panel-title > a[class=""]::after{
+		content: "\2212";
+		font-family: 'Glyphicons Halflings';
+	}
+	.panels--acc .panel-heading .panel-title > a.collapsed::after{
+		content: "\002b";
+		font-family: 'Glyphicons Halflings';
+	}
+	.panels--acc .panel-body {
+		padding: 20px 30px;
+	}
+	.panels--acc .panel-body {
+		font-size: 18px;
+		color: #333333;
+	}
+
+	.now--title {
+		margin-block: 40px;
+	}
+	.now--title .title-sec {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 991px){
+		.course-panels {
+			padding-top: 0px;
+			padding-bottom: 60px;
+		}
+		.panels--acc .panel-heading .panel-title > a {
+			padding: 20px 50px 20px 20px;
+			font-size: 24px;
+		}
+		.panels--acc .panel-heading .panel-title > a::after {
+			right: 20px;
+			top: 23px;
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 767px){
+		.course-panels {
+			padding-top: 30px;
+		}
+		.now--states {
+
+			margin-top: 40px;
+		}
+	}
+	@media (max-width: 575px){
+		.panels--acc .panel {
+			margin-top: 20px !important;
+		}
+		.panels--acc .panel-heading .panel-title > a {
+			font-size: 20px;
+		}
+	}
+</style>
+<section class="course-panels">
+
+		<div class="container">
+	<h3 class="title-sec course--title" style="text-align: center;margin-top: -70px;">Commonly Asked Questions </h3>
+		<div class="panels--acc">
+		    <div class="panel-group" id="accordion">
+											<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+											How long is the course?</a>
+									</h4>
+								</div>
+								<div id="collapse1" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Per New York DMV requirements, the course must be six hours in length.  The course contains page timers to ensure that the proper amount of time is spent.  You can log in and out of the course as your schedule requires from any internet-enabled device and our site will automatically save your progress.</p>									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+											What tests do I have to take?</a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>The course will have a short multiple-choice quiz at the end of each unit that must be passed with a score of 80% or higher.  We DO NOT have a final exam.  This design allows you to answer the course questions while the content is fresh on your mind.</p>									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+											How does the course work?</a>
+									</h4>
+								</div>
+								<div id="collapse3" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>You will register for the course and receive a course login code that you can use to log in and out of the course.  You have 30 days from the date you register to complete the course.  That is a DMV rule.  You will move through each of the 6 units in the course.  You can log out from any page in the course and our system automatically saves the furthest unit and page you have reached so that you can pick back up when ready.  After you pass the last unit quiz and complete a short survey, your course will be complete and we will process a certificate of completion and send it to you via the delivery method chosen.  GEICO will also automatically apply the discount to your policy and send you an email confirmation.</p>
+									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+											Can I take this course for a ticket?</a>
+									</h4>
+								</div>
+								<div id="collapse4" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>No.  This course should only be taken if you are seeking an insurance discount, and you have a GEICO auto insurance policy.  You will also receive a point reduction benefit if eligible with the NY DMV.   </p>
+									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+											How can I contact you?</a>
+									</h4>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>We are available from 8AM to 6PM EST Monday through Saturday at 1-800-558-9887.  If you have any questions.  You can also email us at info@ticketschool.com</p>									</div>
+								</div>
+							</div>
+								    </div>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+	<h3 class="title-sec course--title" style="text-align: center;margin-top: 50px;">Geico Specific Questions </h3>	
+		<div class="panels--acc">
+		    <div class="panel-group" id="accordion">
+											<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+											What if I am not a GEICO customer?</a>
+									</h4>
+								</div>
+								<div id="collapse6" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>The course registration available on this page is at a special discounted price for GEICO auto insurance customers only and requires your GEICO policy number.  If your auto policy is with another carrier, then you will need to go through the standard New York course registration  <a href="https://ticketschool.com/courses/new-york-defensive-driving-online/">here</a></p> 
+									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+											How long is the discount good for?</a>
+									</h4>
+								</div>
+								<div id="collapse7" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>The discount for completing a New York defensive driving course is good for three (3) years.  After the three years is up, you are eligible to complete the course again to continue receiving the discount.  </p>
+									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+											Can my family take the course too?</a>
+									</h4>
+								</div>
+								<div id="collapse8" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>The course can be taken by any GEICO insured who is the primary driver of a vehicle on a policy and meets the age requirement. Check <a href="https://www.geico.com/save/discounts/defensive-driver-discounts/?hl=en&amp;base_url=https%3A%2F%2Fwww.geico.com%2F&amp;trafficType=GEICO" target="_blank">here</a> for further eligibility details. </p>
+									</div>
+								</div>
+							</div>
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+											How much money will I save?</a>
+									</h4>
+								</div>
+								<div id="collapse9" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>In New York, state law requires a 10% discount be applied to the base of the collision and comprehensive portion of your GEICO policy.  The exact amount of your discount will depend on the details of your policy, but for some customers it can range between $900-$1500 over the three years.  </p>									</div>
+								</div>
+							</div>
+								    </div>
+		</div>
+	</div>
+	
+		
+</section>
+<!-- end of course panels -->
+<!-- ---- ---- ---- ---- ---- ---- ---- ---- -->
+
+			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
+					<!-- close .row -->
+	<!-- close .container -->
+	<!-- close .main-content -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<aside id="nav_menu-2" class="widget col-md-4"><h3 class="widget-title">MAIN MENU</h3><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-1217" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1217"><a href="https://ticketschool.com/courses/">State</a></li>
+<li id="menu-item-1155" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1155"><a href="https://ticketschool.com/courses/">Courses</a></li>
+<li id="menu-item-1156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1156"><a href="https://ticketschool.com/faqs/">FAQs</a></li>
+<li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a href="https://ticketschool.com/contact/">Contact</a></li>
+<li id="menu-item-1158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1158"><a href="https://ticketschool.com/blog/">Blog</a></li>
+</ul></div></aside><aside id="text-2" class="widget col-md-4"><h3 class="widget-title">CONNECT WITH US</h3>			<div class="textwidget"><!-- Social Icon List -->
+<ul class="social-inline-list footer">
+  <li><a href="https://www.facebook.com/ticketschool?ref=hl" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+  <li><a href="https://x.com/ticketschool" target="_blank"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="https://www.youtube.com/c/Ticketschool"><i class="fa fa-youtube" target="_blank"></i></a></li>
+</ul>
+<div class="bbb-logo"><img src="https://ticketschool.com/wp-content/uploads/2018/02/BBBAccreditedLogo-optimized.png" alt="BBB Accredited Logo" title="BBB Accredited Logo" width="125" height="45"></div></div>
+		</aside>		</div>
+	</div>
+</footer><!-- close #colophon -->
+
+<footer id="copyright" class="site-footer" role="sitecopyright">
+	<div class="container">
+		<div class="row">
+			<div class="site-footer-inner col-sm-12">
+			
+				<div class="site-info">
+					Copyright © 2001 - 2025 Driver Training Associates, Inc. All Rights Reserved. | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/sitemap/">Sitemap</a> 
+				</div><!-- close .site-info -->
+			
+			</div>	
+		</div>
+	</div><!-- close .container -->
+</footer>
+
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/refinerysource-theme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Corporation",
+  "name": "Ticket School",
+  "url": "https://ticketschool.com/",
+  "logo": "https://ticketschool.com/wp-content/uploads/2015/08/ticketschool-logo-new-1.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-558-9887",
+    "contactType": "customer service",
+    "contactOption": "TollFree",
+    "areaServed": "US",
+    "availableLanguage": ["English","Spanish"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/ticketschool?ref=hl",
+    "https://twitter.com/ticketschool",
+    "https://www.youtube.com/c/Ticketschool"
+  ]
+}
+</script>
+<script type="rocketlazyloadscript">
+  setDefaults();
+</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/plugins/honeypot/includes/js/wpa.js?ver=2.2.14" id="wpascript-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wpascript-js-after">
+/* <![CDATA[ */
+wpa_field_info = {"wpa_field_name":"gyeuqc2663","wpa_field_value":877414,"wpa_add_test":"no"}
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/ticketschool.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/themes/refinerysource-theme/includes/js/skip-link-focus-fix.js?ver=20130115" id="refinerysource-skip-link-focus-fix-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://ticketschool.com/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=3.6.2" id="megamenu-js"></script>
+<!-- '[WPFront Notification Bar] Page generated at 2025-11-07 01:20:53 pm. '--><script type="rocketlazyloadscript" data-rocket-type="text/javascript">console.log('[WPFront Notification Bar] Page generated at 2025-11-07 01:20:53 pm.');console.log('[WPFront Notification Bar] Preview mode is not enabled.');console.log('[WPFront Notification Bar] Notification bar is not enabled.');</script>
+<script type="rocketlazyloadscript">
+function setCookie(){
+    
+    var url = document.location.href;
+    var pattern = /(aff=)/g;
+    var path = document.location.pathname;
+    var d = new Date();
+    d.setTime(d.getTime() + 30*24*60*60*1000);
+    var expires = "expires=" + d.toGMTString();
+    
+    //if (path == '/courses/texas-defensive-driving-course/'){
+        
+        if(url.match(pattern)){
+        var id = url.substring(url.lastIndexOf('=') + 1);
+            if (id){
+                //document.cookie = 'Identification Number='+ id +'; ' + expires + '; path=' + path;
+                document.cookie = 'AffiliateID='+ id +'; ' + expires + ';domain=.ticketschool.com;path=/';
+                
+            }else{
+                
+            }
+        }else{
+            
+        }
+    
+    //}
+
+}
+window.onload = setCookie;
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('#slide-testimonials').bxSlider({
+		maxSlides: 3,
+		slideWidth: 360,
+		slideMargin: 0,
+		mode: 'horizontal',
+		infiniteLoop: true,
+		speed: 2000,
+		pause: 8000,
+		auto: true,
+		pager: true,
+		controls: false
+	});
+});
+</script>
+
+
+<style>
+#wpfront-notification-bar{height: auto !important;z-index: 10000;}
+
+
+@media only screen and (max-width:769px){
+	#wpfront-notification-bar.wpfront-fixed,#wpfront-notification-bar{position: relative !important;top:auto !important}
+
+}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+$ = jQuery;
+
+function pushHeader(){
+	
+	
+	if($("body").width() > 768){
+		var th = $("#wpfront-notification-bar").outerHeight(true, true)+$("#wpadminbar").outerHeight(true, true);
+		$("#masthead").css("top", th);
+		$("body").css("padding-top", $("#wpfront-notification-bar").outerHeight(true, true));
+	} else {
+		$("#masthead").removeAttr("style");
+		$("body").css("padding-top", 0);
+	}
+}
+
+jQuery(document).ready(function(){
+
+
+$(".wpfront-close").click(function(){
+	$("body").css("padding-top",0);
+	$("#wpfront-notification-bar-spacer").remove();
+	pushHeader();
+	return false;
+});
+
+if($("#wpfront-notification-bar").length){	
+	pushHeader();	
+	$(window).resize(function(){pushHeader();});
+}
+});
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99af43ecce63f81d',t:'MTc2MjU0NDAzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>

@@ -1,0 +1,338 @@
+[Skip to content](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#main)
+[ Investopedia ](https://www.investopedia.com/)
+[Live](https://www.investopedia.com/dow-jones-today-11072025-11845583)
+  * Search
+Please fill out this field. 
+  * [Newsletters](https://www.investopedia.com/terms/u/unfair-trade-practice.asp)
+
+
+Search
+Please fill out this field. 
+  * [ News ](https://www.investopedia.com/news-4427706)
+News
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+Investing
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+Simulator
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+Banking
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+Personal Finance
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+Economy
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+Reviews
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * [Newsletters](https://www.investopedia.com/terms/u/unfair-trade-practice.asp)
+
+
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.youtube.com/c/investopedia)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+
+
+  * [ News ](https://www.investopedia.com/news-4427706)
+    * [ Markets ](https://www.investopedia.com/markets-news-4427704)
+    * [ Companies ](https://www.investopedia.com/company-news-4427705)
+    * [ Earnings ](https://www.investopedia.com/earnings-reports-5218419)
+    * [ CD Rates ](https://www.investopedia.com/certificates-deposit-news-7111770)
+    * [ Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5184598)
+    * [ Economy ](https://www.investopedia.com/economic-news-5218422)
+    * [ Government ](https://www.investopedia.com/political-news-4689737)
+    * [ Crypto ](https://www.investopedia.com/cryptocurrency-news-5114163)
+    * [ Live Markets News ](https://www.investopedia.com/live-markets-news-11713202)
+    * [ Personal Finance ](https://www.investopedia.com/personal-finance-news-5114159)
+    * [ View All ](https://www.investopedia.com/news-4427706)
+  * [ Investing ](https://www.investopedia.com/investing-4427685)
+    * [ Stocks ](https://www.investopedia.com/stocks-4427785)
+    * [ Cryptocurrency ](https://www.investopedia.com/cryptocurrency-4427699)
+    * [ Bonds ](https://www.investopedia.com/bonds-4689778)
+    * [ ETFs ](https://www.investopedia.com/etfs-4427784)
+    * [ Options and Derivatives ](https://www.investopedia.com/options-and-derivatives-trading-4689663)
+    * [ Commodities ](https://www.investopedia.com/commodities-4427780)
+    * [ Trading ](https://www.investopedia.com/trading-4427765)
+    * [ Automated Investing ](https://www.investopedia.com/financial-technology-and-automated-investing-4689759)
+    * [ Brokers ](https://www.investopedia.com/brokers-4689772)
+    * [ Fundamental Analysis ](https://www.investopedia.com/fundamental-analysis-4689757)
+    * [ View All ](https://www.investopedia.com/investing-4427685)
+  * [ Simulator ](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+    * [ Login / Portfolio ](https://www.investopedia.com/simulator/portfolio)
+    * [ Trade ](https://www.investopedia.com/simulator/trade/stocks)
+    * [ Research ](https://www.investopedia.com/simulator/research)
+    * [ My Games ](https://www.investopedia.com/simulator/games/my-games)
+    * [ Leaderboard ](https://www.investopedia.com/simulator/games)
+  * [ Banking ](https://www.investopedia.com/banking-4427754)
+    * [ Savings Accounts ](https://www.investopedia.com/savings-accounts-4689728)
+    * [ Certificates of Deposit (CDs) ](https://www.investopedia.com/certificate-of-deposits-4689733)
+    * [ Money Market Accounts ](https://www.investopedia.com/money-market-account-4689730)
+    * [ Checking Accounts ](https://www.investopedia.com/checking-accounts-4689732)
+    * [ View All ](https://www.investopedia.com/banking-4427754)
+  * [ Personal Finance ](https://www.investopedia.com/personal-finance-4427760)
+    * [ Budgeting and Saving ](https://www.investopedia.com/budgeting-and-savings-4427755)
+    * [ Personal Loans ](https://www.investopedia.com/personal-loans-4689729)
+    * [ Insurance ](https://www.investopedia.com/insurance-4427716)
+    * [ Mortgages ](https://www.investopedia.com/mortgage-4689703)
+    * [ Credit and Debt ](https://www.investopedia.com/credit-and-debt-4689724)
+    * [ Student Loans ](https://www.investopedia.com/student-loans-4689727)
+    * [ Taxes ](https://www.investopedia.com/taxes-4427724)
+    * [ Credit Cards ](https://www.investopedia.com/credit-card-4689721)
+    * [ Financial Literacy ](https://www.investopedia.com/financial-literacy-resource-center-7151950)
+    * [ Retirement ](https://www.investopedia.com/retirement-planning-4689695)
+    * [ View All ](https://www.investopedia.com/personal-finance-4427760)
+  * [ Economy ](https://www.investopedia.com/economy-4689801)
+    * [ Government and Policy ](https://www.investopedia.com/government-and-policy-4689793)
+    * [ Monetary Policy ](https://www.investopedia.com/monetary-policy-4689792)
+    * [ Fiscal Policy ](https://www.investopedia.com/fiscal-policy-4689796)
+    * [ Economics ](https://www.investopedia.com/economics-4689800)
+    * [ View All ](https://www.investopedia.com/economy-4689801)
+  * [ Reviews ](https://www.investopedia.com/financial-product-reviews-7110783)
+    * [ Best Online Brokers ](https://www.investopedia.com/best-online-brokers-4587872)
+    * [ Best Crypto Exchanges ](https://www.investopedia.com/best-crypto-exchanges-5071855)
+    * [ Best Savings Rates ](https://www.investopedia.com/high-yield-savings-accounts-4770633)
+    * [ Best CD Rates ](https://www.investopedia.com/best-cd-rates-4770214)
+    * [ Best Life Insurance ](https://www.investopedia.com/the-best-life-insurance-companies-8763666)
+    * [ Best Mortgage Rates ](https://www.investopedia.com/mortgage-rates-5094943)
+    * [ Best Robo-Advisors ](https://www.investopedia.com/the-best-robo-advisors-8764849)
+    * [ Best Personal Loans ](https://www.investopedia.com/the-best-personal-loans-8761582)
+    * [ Best Debt Relief Companies ](https://www.investopedia.com/the-best-debt-relief-companies-8763179)
+    * [ View All ](https://www.investopedia.com/financial-product-reviews-7110783)
+
+
+  * Top Stories
+  * [ This Famous Short Seller Is Betting Against AI ](https://www.investopedia.com/short-sellers-now-betting-big-against-ai-11842994)
+  * [ Here's the Average Income for 35–44-Year-Olds ](https://www.investopedia.com/are-you-keeping-up-here-s-the-average-income-for-35-44-year-olds-11841889)
+  * [ This Bank Can Help Lower Your Phone Bill ](https://www.investopedia.com/this-clever-bank-account-lowers-your-phone-bill-and-pays-4-20-on-your-savings-11844440)
+  * [ Here's the Average Salary for People in Transition ](https://www.investopedia.com/career-change-average-salary-11839914)
+
+
+Table of Contents
+Expand
+Table of Contents
+  * [What Is an Unfair Trade Practice?](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-what-is-an-unfair-trade-practice)
+  * [Impact of Unfair Trade on Consumers](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-how-unfair-trade-practices-impact-consumers)
+  * [Common Unfair Practices](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-common-unfair-practices-that-harm-consumers)
+  * [Identifying Deceptive Trade](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-identifying-deceptive-trade-practices)
+  * [Unfair Trade With Insurance](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-uncovering-unfair-trade-practices-in-the-insurance-industry)
+  * [The Bottom Line](https://www.investopedia.com/terms/u/unfair-trade-practice.asp#toc-the-bottom-line)
+
+
+# Unfair Trade Practices: Deceptive Methods and Examples Explained
+By
+[Will Kenton](https://www.investopedia.com/contributors/53661/)
+[Full Bio](https://www.investopedia.com/contributors/53661/)
+  * [ ](https://www.linkedin.com/in/will-kenton-7a099b5/)
+
+
+Will Kenton is an expert on the economy and investing laws and regulations. He previously held senior editorial roles at Investopedia and Kapitall Wire and holds a MA in Economics from The New School for Social Research and Doctor of Philosophy in English literature from NYU. 
+Learn about our  [editorial policies](https://www.investopedia.com/legal-4768893#editorial-policy)
+Updated August 30, 2025
+Reviewed by [Eric Estevez](https://www.investopedia.com/eric-estevez-4799782)
+![Unfair Trade Practice: Using deceptive, fraudulent, or otherwise unethical methods to obtain business.](https://www.investopedia.com/thmb/Xx2b2q9dDIm14n0ziHK-8zAfKI4=/1500x0/filters:no_upscale\(\):max_bytes\(150000\):strip_icc\(\):format\(webp\)/unfair-trade-practice.asp-final-7ba81588e8904bc0a4f6711105ffdbc8.png)
+Investopedia / Julie Bang
+Close
+##  What Is an Unfair Trade Practice? 
+Unfair trade practices encompass deceptive and unethical methods used to gain business, often violating consumer protection laws. They include [misrepresentation](https://www.investopedia.com/terms/m/misrepresentation.asp), false advertising, and deceptive pricing, among others, prompting legal action and protective legislation. Consumers can [seek recourse under these laws](https://www.investopedia.com/articles/pf/10/know-your-consumer-protection-laws.asp) to combat unfair practices. 
+### Key Takeaways
+  * Unfair trade practices involve using fraudulent or unethical methods to gain business advantages.  
+
+  * Consumer Protection Law and Section 5(a) of the Federal Trade Commission Act protect consumers from unfair and deceptive practices.  
+
+  * Unfair trade practices are prevalent in industries like consumer goods, insurance, and debt collection.  
+
+  * An act is deemed unfair if it causes significant harm to consumers that cannot be avoided or justified.  
+
+  * Deceptive practices involve misleading consumers with false information or representations.
+
+
+##  How Unfair Trade Practices Impact Consumers 
+Unfair trade practices often occur with goods and services, tenancy, insurance claims, and debt collection. Most states enacted unfair trade practice laws in the 1960s and 1970s. Many states now use these laws to prevent such practices. Consumers who have been victimized should examine the unfair trade practice statute in their state to determine whether they have a cause of action.1  
+
+### Important
+Unfair trade practices are commonly seen in the purchase of goods and services by consumers, tenancy, insurance claims and settlements, and debt collection.
+In the U.S., [Section 5(a)](https://www.federalreserve.gov/boarddocs/supmanual/cch/ftca.pdf) of the Federal Trade Commission Act addresses unfair trade practices by prohibiting "unfair or deceptive acts or practices in or affecting commerce." It covers everyone in commerce, including banks, and sets the legal standards for these practices. Below are lists of unfair and deceptive practices as per the rule: 
+##  Common Unfair Practices That Harm Consumers 
+An act is unfair when it meets the following criteria: 
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+  * It causes or is likely to cause substantial injury to consumers.
+  * It cannot be reasonably avoided by consumers.
+  * It is not outweighed by [countervailing benefits](https://www.investopedia.com/terms/c/countervailingduties.asp) to consumers or to the competition.
+
+
+##  Identifying Deceptive Trade Practices 
+An act or practice is deceptive when it meets the following criteria: 
+  * A representation, omission, or practice misleads or is likely to mislead the consumer.
+  * A consumer's understanding of the situation must be reasonable under the circumstances.
+  * The misleading representation, omission, or practice is material.
+
+
+##  Uncovering Unfair Trade Practices in the Insurance Industry 
+Unfair trade practices can happen in any industry but are significant enough to prompt the [National Association of Insurance Commissioners (NAIC)](https://www.investopedia.com/terms/n/nainsurancec.asp) to issue [guidance related to the sale of insurance products](http://www.naic.org/store/free/MDL-880.pdf). The NAIC defines unfair trade practices in the following ways: 
+  * It misrepresents the benefits, advantages, conditions, or terms of any policy.
+  * It misrepresents the dividends or share of the surplus to be received on any policy.
+  * It makes a false or misleading statement as to the dividends or share of surplus previously paid on any policy.
+  * It is misleading or is a misrepresentation as to the financial condition of any insurer, or as to the legal reserve system upon which any life insurer operates.
+  * It misuses the name or title of a policy to misrepresent its true nature.
+  * It is a misrepresentation, including any intentional misquote of the premium rate, for the purpose of inducing or tending to induce the purchase, lapse, forfeiture, exchange, conversion, or surrender of any policy.
+  * It is a misrepresentation for the purpose of effecting a pledge or assignment of or effecting a loan against any policy.
+  * It misrepresents any policy as being shares of stock.
+
+
+The NAIC considers a deceptive trade practice to be any of the above acts coupled with the conditions below: 
+  * It is committed flagrantly and in conscious disregard of the act or of any rules promulgated hereunder.
+  * It has been committed with such frequency to indicate a general business practice to engage in that type of conduct.
+
+
+##  The Bottom Line 
+Unfair trade practices utilize deceptive, fraudulent, or unethical methods to gain business at the expense of consumers. These practices include misrepresentation, false advertising, and deceptive pricing, and they are considered unlawful under Consumer Protection Law. 
+U.S. legislation, including the Federal Trade Commission Act, prohibits such acts, safeguarding consumers from substantial injury that cannot be reasonably avoided. In the insurance industry, these unfair practices may involve misleading policy terms or financial conditions. Understanding these practices helps consumers protect themselves and seek recourse when victimized. 
+Sponsored
+Homeownership for Veterans & Military Families
+[](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvhr1F8bZXeBj-t2hiyGNmzQm5qrbbgKxAEdqo6-cUoSPRsxnIPhBzRsBhWMGpaTNhORwgTheg_hoZTS6GBxE7Bqq34mJJ6a_f_5H6W_xD6aGxxXW0deIFH0xAi-3XhsKqgd9vD8EygfOsIDF_OexLbboE1uqaDPVe6WQ0XtaP3g2_CSN_0aB0K7kWAimk2psNsjzTfBjIAFjkrU_3X4EjYI9uB8EJSDoyTI2SNCNnl0t_hzzxOZxJjDNdd7Njfpj4etsi5ld4XUh8QqgTOm96zjlpE4V7fWmGXfvrx5UUYR6tLCWA_nmh0aGHS_GjMo7I_bvO_psonjDG6kmCo8Ayu63nwtnShRuTrWZzTu4gOr1Tv_vw8iPEB7a669wCV1peZnUENVKKlwyYOqzvoNg5z-Wzra6jDIE_GBX5pDdz5fg&sai=AMfl-YQavzdsJin3BGnDdzFYSTlaxmlzIomjmoowcwH52zZ8sXagNeMCRW4MhNCVTruzV_JaxG1iRxSgKno6rsrOLNBZfgwu7lnqkF0qdcUoYco8wd9oF8FoKB3N1OsXB4R9K9BMgGxxFrRc_9F83PAUhSRQIeX_gBO-wurPfxZtl5vEtcWvXvfglvrJhkld7FtELBqoGYQqxtwE26J6gcDAQb-oFs2471tvsgEc3b7H0bwsTo3eI04VbSvlVczWYU8z_9Cw1DmlJ8SXwZPm4uK3BmJ0cFdg8Q&sig=Cg0ArKJSzKnj0gjAmHcGEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) Your VA Loan gives you powerful homebuying advantages, including 0% down, no PMI, and competitive rates. With lower upfront costs and flexible credit guidelines, you can focus on maximizing your buying power. [Check your eligibility today](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvhr1F8bZXeBj-t2hiyGNmzQm5qrbbgKxAEdqo6-cUoSPRsxnIPhBzRsBhWMGpaTNhORwgTheg_hoZTS6GBxE7Bqq34mJJ6a_f_5H6W_xD6aGxxXW0deIFH0xAi-3XhsKqgd9vD8EygfOsIDF_OexLbboE1uqaDPVe6WQ0XtaP3g2_CSN_0aB0K7kWAimk2psNsjzTfBjIAFjkrU_3X4EjYI9uB8EJSDoyTI2SNCNnl0t_hzzxOZxJjDNdd7Njfpj4etsi5ld4XUh8QqgTOm96zjlpE4V7fWmGXfvrx5UUYR6tLCWA_nmh0aGHS_GjMo7I_bvO_psonjDG6kmCo8Ayu63nwtnShRuTrWZzTu4gOr1Tv_vw8iPEB7a669wCV1peZnUENVKKlwyYOqzvoNg5z-Wzra6jDIE_GBX5pDdz5fg&sai=AMfl-YQavzdsJin3BGnDdzFYSTlaxmlzIomjmoowcwH52zZ8sXagNeMCRW4MhNCVTruzV_JaxG1iRxSgKno6rsrOLNBZfgwu7lnqkF0qdcUoYco8wd9oF8FoKB3N1OsXB4R9K9BMgGxxFrRc_9F83PAUhSRQIeX_gBO-wurPfxZtl5vEtcWvXvfglvrJhkld7FtELBqoGYQqxtwE26J6gcDAQb-oFs2471tvsgEc3b7H0bwsTo3eI04VbSvlVczWYU8z_9Cw1DmlJ8SXwZPm4uK3BmJ0cFdg8Q&sig=Cg0ArKJSzKnj0gjAmHcGEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) and find out what you prequalify for in minutes. [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvhr1F8bZXeBj-t2hiyGNmzQm5qrbbgKxAEdqo6-cUoSPRsxnIPhBzRsBhWMGpaTNhORwgTheg_hoZTS6GBxE7Bqq34mJJ6a_f_5H6W_xD6aGxxXW0deIFH0xAi-3XhsKqgd9vD8EygfOsIDF_OexLbboE1uqaDPVe6WQ0XtaP3g2_CSN_0aB0K7kWAimk2psNsjzTfBjIAFjkrU_3X4EjYI9uB8EJSDoyTI2SNCNnl0t_hzzxOZxJjDNdd7Njfpj4etsi5ld4XUh8QqgTOm96zjlpE4V7fWmGXfvrx5UUYR6tLCWA_nmh0aGHS_GjMo7I_bvO_psonjDG6kmCo8Ayu63nwtnShRuTrWZzTu4gOr1Tv_vw8iPEB7a669wCV1peZnUENVKKlwyYOqzvoNg5z-Wzra6jDIE_GBX5pDdz5fg&sai=AMfl-YQavzdsJin3BGnDdzFYSTlaxmlzIomjmoowcwH52zZ8sXagNeMCRW4MhNCVTruzV_JaxG1iRxSgKno6rsrOLNBZfgwu7lnqkF0qdcUoYco8wd9oF8FoKB3N1OsXB4R9K9BMgGxxFrRc_9F83PAUhSRQIeX_gBO-wurPfxZtl5vEtcWvXvfglvrJhkld7FtELBqoGYQqxtwE26J6gcDAQb-oFs2471tvsgEc3b7H0bwsTo3eI04VbSvlVczWYU8z_9Cw1DmlJ8SXwZPm4uK3BmJ0cFdg8Q&sig=Cg0ArKJSzKnj0gjAmHcGEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvhr1F8bZXeBj-t2hiyGNmzQm5qrbbgKxAEdqo6-cUoSPRsxnIPhBzRsBhWMGpaTNhORwgTheg_hoZTS6GBxE7Bqq34mJJ6a_f_5H6W_xD6aGxxXW0deIFH0xAi-3XhsKqgd9vD8EygfOsIDF_OexLbboE1uqaDPVe6WQ0XtaP3g2_CSN_0aB0K7kWAimk2psNsjzTfBjIAFjkrU_3X4EjYI9uB8EJSDoyTI2SNCNnl0t_hzzxOZxJjDNdd7Njfpj4etsi5ld4XUh8QqgTOm96zjlpE4V7fWmGXfvrx5UUYR6tLCWA_nmh0aGHS_GjMo7I_bvO_psonjDG6kmCo8Ayu63nwtnShRuTrWZzTu4gOr1Tv_vw8iPEB7a669wCV1peZnUENVKKlwyYOqzvoNg5z-Wzra6jDIE_GBX5pDdz5fg&sai=AMfl-YQavzdsJin3BGnDdzFYSTlaxmlzIomjmoowcwH52zZ8sXagNeMCRW4MhNCVTruzV_JaxG1iRxSgKno6rsrOLNBZfgwu7lnqkF0qdcUoYco8wd9oF8FoKB3N1OsXB4R9K9BMgGxxFrRc_9F83PAUhSRQIeX_gBO-wurPfxZtl5vEtcWvXvfglvrJhkld7FtELBqoGYQqxtwE26J6gcDAQb-oFs2471tvsgEc3b7H0bwsTo3eI04VbSvlVczWYU8z_9Cw1DmlJ8SXwZPm4uK3BmJ0cFdg8Q&sig=Cg0ArKJSzKnj0gjAmHcGEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;) [](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvhr1F8bZXeBj-t2hiyGNmzQm5qrbbgKxAEdqo6-cUoSPRsxnIPhBzRsBhWMGpaTNhORwgTheg_hoZTS6GBxE7Bqq34mJJ6a_f_5H6W_xD6aGxxXW0deIFH0xAi-3XhsKqgd9vD8EygfOsIDF_OexLbboE1uqaDPVe6WQ0XtaP3g2_CSN_0aB0K7kWAimk2psNsjzTfBjIAFjkrU_3X4EjYI9uB8EJSDoyTI2SNCNnl0t_hzzxOZxJjDNdd7Njfpj4etsi5ld4XUh8QqgTOm96zjlpE4V7fWmGXfvrx5UUYR6tLCWA_nmh0aGHS_GjMo7I_bvO_psonjDG6kmCo8Ayu63nwtnShRuTrWZzTu4gOr1Tv_vw8iPEB7a669wCV1peZnUENVKKlwyYOqzvoNg5z-Wzra6jDIE_GBX5pDdz5fg&sai=AMfl-YQavzdsJin3BGnDdzFYSTlaxmlzIomjmoowcwH52zZ8sXagNeMCRW4MhNCVTruzV_JaxG1iRxSgKno6rsrOLNBZfgwu7lnqkF0qdcUoYco8wd9oF8FoKB3N1OsXB4R9K9BMgGxxFrRc_9F83PAUhSRQIeX_gBO-wurPfxZtl5vEtcWvXvfglvrJhkld7FtELBqoGYQqxtwE26J6gcDAQb-oFs2471tvsgEc3b7H0bwsTo3eI04VbSvlVczWYU8z_9Cw1DmlJ8SXwZPm4uK3BmJ0cFdg8Q&sig=Cg0ArKJSzKnj0gjAmHcGEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://ad.doubleclick.net/ddm/trackclk/N7384.110872.INVESTOPEDIAUS/B11080032.416430942;dc_trk_aid=608550541;dc_trk_cid=231669798;dc_lat=;dc_rdid=;)
+Article Sources
+Investopedia requires writers to use primary sources to support their work. These include white papers, government data, original reporting, and interviews with industry experts. We also reference original research from other reputable publishers where appropriate. You can learn more about the standards we follow in producing accurate, unbiased content in our [editorial policy.](https://www.investopedia.com/legal-4768893#EditorialPolicy)
+  1. U.S. Department of Justice. "[Consumer Actions Against Unfair or Deceptive Acts or Practices The Private Uses of Federal Trade Commission Jurisprudence](https://www.ojp.gov/ncjrs/virtual-library/abstracts/consumer-actions-against-unfair-or-deceptive-acts-or-practices)."
+
+
+Advertiser Disclosure 
+× 
+The offers that appear in this table are from partnerships from which Investopedia receives compensation. This compensation may impact how and where listings appear. Investopedia does not include all offers available in the marketplace.
+Popular Accounts from Our Partners
+Read more
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Government & Policy](https://www.investopedia.com/government-and-policy-4689793)
+
+
+Partner Links
+## Related Articles
+[ Understanding Regulatory Risk vs. Compliance Risk: Definitions & Examples ](https://www.investopedia.com/terms/r/regulatory_risk.asp) [ Understanding Unicameral Systems: Definition, Functionality, and Examples ](https://www.investopedia.com/terms/u/unicameral-system.asp) [ Understanding Economic Sanctions: Types, Effects, and Examples ](https://www.investopedia.com/articles/economics/10/economic-sanctions.asp) [ Differences Between Chapter 11 and Chapter 13 Bankruptcy Explained ](https://www.investopedia.com/ask/answers/061815/what-are-differences-between-chapter-11-and-chapter-13-bankruptcy.asp) [ What Is a Tariff and Why Are They Important? ](https://www.investopedia.com/terms/t/tariff.asp) [ Understanding the Public-Private Investment Program (PPIP) ](https://www.investopedia.com/terms/p/ppip.asp) [ Bank Secrecy Act: Deterring Money Laundering in U.S. Finances ](https://www.investopedia.com/terms/b/bank_secrecy_act.asp) [ Inside North Korea's Command Economy: An Overview ](https://www.investopedia.com/articles/investing/013015/how-north-korea-economy-works.asp)
+[ Understanding Martial Law: Definition, U.S. History, and Examples ](https://www.investopedia.com/terms/m/martial-law.asp) [ How Governments Combat Inflation: Strategies and Policies ](https://www.investopedia.com/ask/answers/111314/what-methods-can-government-use-control-inflation.asp) [ Nation-State's Role in Globalization: Culture, Economy, and Sovereignty ](https://www.investopedia.com/ask/answers/022415/what-role-nationstate-globalization.asp) [ Understanding Indentured Servitude: A Historical and Legal Overview ](https://www.investopedia.com/terms/i/indentured-servitude.asp) [ Unlocking Economic Potential: Benefits of Legalizing Marijuana  ](https://www.investopedia.com/articles/insights/110916/economic-benefits-legalizing-weed.asp) [ National Debt: Definition, Impact, and Key Drivers ](https://www.investopedia.com/updates/usa-national-debt/) [ SNAP Benefits by State: Comprehensive Guide to Eligibility and Participation ](https://www.investopedia.com/snap-benefits-by-state-5203591) [ U.S. Debt by President: Dollar and Percentage ](https://www.investopedia.com/us-debt-by-president-dollar-and-percentage-7371225)
+[ Investopedia ](https://www.investopedia.com/)
+[Newsletter Sign Up](https://www.investopedia.com/terms/u/unfair-trade-practice.asp)
+Follow Us
+  * [ ](https://www.facebook.com/Investopedia/)
+  * [ ](https://www.instagram.com/investopedia/?hl=en)
+  * [ ](https://www.linkedin.com/company/investopedia-ulc)
+  * [ ](https://www.tiktok.com/@investopedia)
+  * [ ](https://www.youtube.com/c/investopedia)
+
+
+  * [News](https://www.investopedia.com/news-4427706)
+  * [Investing](https://www.investopedia.com/investing-4427685)
+  * [Simulator](https://www.investopedia.com/simulator/?inv_to_sim=global_nav)
+  * [Banking](https://www.investopedia.com/banking-4427754)
+  * [Personal Finance](https://www.investopedia.com/personal-finance-4427760)
+  * [Economy](https://www.investopedia.com/economy-4689801)
+  * [Reviews](https://www.investopedia.com/financial-product-reviews-7110783)
+  * [Dictionary](https://www.investopedia.com/financial-term-dictionary-4769738)
+
+
+  * [ About Us ](https://www.investopedia.com/about-us-5093223)
+  * [ Editorial Process ](https://www.investopedia.com/legal-4768893#toc-editorial-policy)
+  * [ Careers ](https://www.people.inc/careers)
+  * [ Contact Us ](https://www.people.inc/contact)
+  * [ Privacy Policy ](https://www.people.inc/brands-privacy)
+  * [ Terms of Service ](https://www.people.inc/brands-termsofservice)
+  * [ Advertise ](https://www.people.inc/advertising)
+  * Your Privacy Choices
+
+
+  * [#](https://www.investopedia.com/terms-beginning-with-num-4769350)
+  * [A](https://www.investopedia.com/terms-beginning-with-a-4769351)
+  * [B](https://www.investopedia.com/terms-beginning-with-b-4769352)
+  * [C](https://www.investopedia.com/terms-beginning-with-c-4769353)
+  * [D](https://www.investopedia.com/terms-beginning-with-d-4769354)
+  * [E](https://www.investopedia.com/terms-beginning-with-e-4769355)
+  * [F](https://www.investopedia.com/terms-beginning-with-f-4769356)
+  * [G](https://www.investopedia.com/terms-beginning-with-g-4769357)
+  * [H](https://www.investopedia.com/terms-beginning-with-h-4769358)
+  * [I](https://www.investopedia.com/terms-beginning-with-i-4769359)
+  * [J](https://www.investopedia.com/terms-beginning-with-j-4769360)
+  * [K](https://www.investopedia.com/terms-beginning-with-k-4769361)
+  * [L](https://www.investopedia.com/terms-beginning-with-l-4769362)
+  * [M](https://www.investopedia.com/terms-beginning-with-m-4769363)
+  * [N](https://www.investopedia.com/terms-beginning-with-n-4769364)
+  * [O](https://www.investopedia.com/terms-beginning-with-o-4769365)
+  * [P](https://www.investopedia.com/terms-beginning-with-p-4769366)
+  * [Q](https://www.investopedia.com/terms-beginning-with-q-4769367)
+  * [R](https://www.investopedia.com/terms-beginning-with-r-4769368)
+  * [S](https://www.investopedia.com/terms-beginning-with-s-4769369)
+  * [T](https://www.investopedia.com/terms-beginning-with-t-4769370)
+  * [U](https://www.investopedia.com/terms-beginning-with-u-4769371)
+  * [V](https://www.investopedia.com/terms-beginning-with-v-4769372)
+  * [W](https://www.investopedia.com/terms-beginning-with-w-4769373)
+  * [X](https://www.investopedia.com/terms-beginning-with-x-4769374)
+  * [Y](https://www.investopedia.com/terms-beginning-with-y-4769375)
+  * [Z](https://www.investopedia.com/terms-beginning-with-z-4769376)
+
+
+Investopedia is part of the [People Inc.](https://www.people.inc) publishing family. 
+Newsletter Sign Up
+Newsletter Sign Up
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+Cookies Settings Accept All Cookies
+![](https://sync.graph.bluecava.com/ds.png?p=9274e5db-ddcb-11ea-a80b-0242ac110002&segment=4l28r4sz3bl3555wt2hyave1w6u68syw&uid=&CampaignID=303C&Channel=investopedia&CreativeID=&Placement=4187393&MAID=&Keyword=&Medium=&Source=&PageName=www.investopedia.com%2Fterms%2Fu%2Funfair-trade-practice.asp&Event=&Key1=4173514&Key2=4689801&Key3=4689793&Key4=&Key5=)

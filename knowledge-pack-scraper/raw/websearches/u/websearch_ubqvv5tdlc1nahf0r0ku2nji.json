@@ -1,0 +1,795 @@
+{
+  "websearch_id": "websearch_ubqvv5tdlc1nahf0r0ku2nji",
+  "search_id": "search_uwdqefi4gr6ap02pxuzk4zps",
+  "timestamp": "2025-11-07T12:28:45.772429",
+  "startedAt": "2025-11-07T12:28:45.772429",
+  "completedAt": "2025-11-07T12:28:47.717364",
+  "durationSeconds": 1.94,
+  "urlsDiscoveredCount": 20,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"car insurance\" average premium [state] 2024",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"car insurance\" average premium [state] 2024",
+      "show_strict_warning": false,
+      "cleaned": "car insurance average premium [state] 2024",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": false,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": true,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "car insurance average premium [state] 2024"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 2,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 3,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 4,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 5,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 6,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 7,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 8,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 9,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 10,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 11,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 12,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 13,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 14,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 15,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 16,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 17,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 18,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 19,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "US Auto Insurance Rates by States in 2025 (October)",
+          "url": "https://beinsure.com/us-auto-insurance-rates-states/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "US Auto insurance rate for full coverage car insurance in 2025 is $2,637 and $682 for min coverage, but how much you\u2019ll pay depends largely on where you live",
+          "page_age": "2025-10-21T22:56:39",
+          "profile": {
+            "name": "Bloomberg",
+            "url": "https://beinsure.com/us-auto-insurance-rates-states/",
+            "long_name": "beinsure.com",
+            "img": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "beinsure.com",
+            "hostname": "beinsure.com",
+            "favicon": "https://imgs.search.brave.com/IYSuEpMwpB2d9p5ygbptlMoSIOEaWUa8hId3-X3h87M/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYmRlYjk0MjQ1/ODQyNDEzOGY5MzBk/ZTU1MTBhN2I1YmM0/YmVhOTZkMmIzZTM5/NDcxY2EzYWM0NWQx/ZmM0NDQ5NC9iZWlu/c3VyZS5jb20v",
+            "path": "  \u203a insurance  \u203a car & auto insurance  \u203a us auto insurance rates by states in 2025 (october)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/-zUuM-t3v2WvY6XNtXfLBmVZFAr-zRRlkPf6iMUB3YE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9iZWlu/c3VyZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDkv/MS00LmpwZw",
+            "original": "https://beinsure.com/wp-content/uploads/2023/09/1-4.jpg",
+            "logo": false
+          },
+          "age": "2 weeks ago"
+        },
+        {
+          "title": "Car insurance prices soared in 2024 -- these states saw the largest spikes | Fox Business",
+          "url": "https://www.foxbusiness.com/economy/car-insurance-rates-soared-2024-drivers-states-pay-most",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto insurance rates have been soaring for years, and 2024 was no different. Insurify reported this week that the price of car insurance premiums climbed 15% last year, with American drivers now shelling out an average of $2,313 annually for full ...",
+          "page_age": "2025-02-03T11:00:06",
+          "profile": {
+            "name": "Fox Business",
+            "url": "https://www.foxbusiness.com/economy/car-insurance-rates-soared-2024-drivers-states-pay-most",
+            "long_name": "foxbusiness.com",
+            "img": "https://imgs.search.brave.com/-Mp4cxAvbV_TfzlP2fSsbNNBrRxeGdpoN809-I-Z8RI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWI2ZTQxMDRm/MzAyYzRmYTM0MjMy/ZDQyMjdkYzNiMDZj/ZmNjNWE2YTY4NTZi/YTdiOGEwZTgwODRk/M2FhMWUyNy93d3cu/Zm94YnVzaW5lc3Mu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "video",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "foxbusiness.com",
+            "hostname": "www.foxbusiness.com",
+            "favicon": "https://imgs.search.brave.com/-Mp4cxAvbV_TfzlP2fSsbNNBrRxeGdpoN809-I-Z8RI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWI2ZTQxMDRm/MzAyYzRmYTM0MjMy/ZDQyMjdkYzNiMDZj/ZmNjNWE2YTY4NTZi/YTdiOGEwZTgwODRk/M2FhMWUyNy93d3cu/Zm94YnVzaW5lc3Mu/Y29tLw",
+            "path": "\u203a economy  \u203a car-insurance-rates-soared-2024-drivers-states-pay-most"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/24xb6odOdG0j4B4DdshGf-psgBeeoji0zVqoNUwNfoY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZm94YnVzaW5l/c3MuY29tL2ZveGJ1/c2luZXNzLmNvbS9j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMy9T/Y3JlZW5zaG90LTIw/MjQtMDMtMTMtYXQt/OC4yOS41OC1QTS0x/MjgweDcyMC0xLnBu/Zw",
+            "original": "https://static.foxbusiness.com/foxbusiness.com/content/uploads/2024/03/Screenshot-2024-03-13-at-8.29.58-PM-1280x720-1.png",
+            "logo": false
+          },
+          "age": "February 3, 2025"
+        },
+        {
+          "title": "Why car insurance costs have soared (and what drivers are doing about it)",
+          "url": "https://www.npr.org/2025/10/30/nx-s1-5542448/car-insurance-rising-premiums",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "On average, premiums are up 55% since February 2020, according to the Bureau of Labor Statistics. (Almost all of that increase came between 2022 and 2024.)",
+          "page_age": "2025-10-30T09:00:00",
+          "profile": {
+            "name": "NPR",
+            "url": "https://www.npr.org/2025/10/30/nx-s1-5542448/car-insurance-rising-premiums",
+            "long_name": "National Public Radio",
+            "img": "https://imgs.search.brave.com/Y1l6Dzd6VM4_ltfNpwB9Esia4wtA5Fyy600GWlxTPcY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGY0NTM3MmEx/MjJkYTQ5YTlmYjFk/YTJhYmNjNGM5M2Q2/NThjYjg0YWMxY2My/YmU5NDlmMTQ0YzJi/YzNjNGFlMS93d3cu/bnByLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "npr.org",
+            "hostname": "www.npr.org",
+            "favicon": "https://imgs.search.brave.com/Y1l6Dzd6VM4_ltfNpwB9Esia4wtA5Fyy600GWlxTPcY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOGY0NTM3MmEx/MjJkYTQ5YTlmYjFk/YTJhYmNjNGM5M2Q2/NThjYjg0YWMxY2My/YmU5NDlmMTQ0YzJi/YzNjNGFlMS93d3cu/bnByLm9yZy8",
+            "path": "\u203a 2025  \u203a 10  \u203a 30  \u203a nx-s1-5542448  \u203a car-insurance-rising-premiums"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/2rSiX9ujpqArj64TBPSEzy77he8545RpEd18WwufsFg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9ucHIu/YnJpZ2h0c3BvdGNk/bi5jb20vZGltczMv/ZGVmYXVsdC9zdHJp/cC9mYWxzZS9jcm9w/LzUzMzN4MzAwMCsw/KzAvcmVzaXplLzUz/MzN4MzAwMCEvP3Vy/bD1odHRwJTNBJTJG/JTJGbnByLWJyaWdo/dHNwb3QuczMuYW1h/em9uYXdzLmNvbSUy/RmEyJTJGYmQlMkZm/NmFkOWJmYjRhNjFi/MTU2NjhhODc4NTY4/MWU5JTJGY29zdC1v/Zi1saXZpbmctY2Fy/LWluc3VyYW5jZS5q/cGc",
+            "original": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5333x3000+0+0/resize/5333x3000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2Fbd%2Ff6ad9bfb4a61b15668a8785681e9%2Fcost-of-living-car-insurance.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "8 States Where Car Insurance Rates Are Rising Fastest | Kiplinger",
+          "url": "https://www.kiplinger.com/personal-finance/insurance/car-insurance-rates-keep-rising",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "It depends on many factors. Some states didn&#x27;t see spikes in car insurance premiums. Missouri&#x27;s rates dropped by 11% in 2024, while Pennsylvania drivers received an average discount of 0.3%.",
+          "page_age": "2025-08-21T19:34:12",
+          "profile": {
+            "name": "Kiplinger",
+            "url": "https://www.kiplinger.com/personal-finance/insurance/car-insurance-rates-keep-rising",
+            "long_name": "kiplinger.com",
+            "img": "https://imgs.search.brave.com/trgT9Eg35ZFJhoPXQtcr_xL_H9CnJQmJwN6ZdxVJ0A4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWE1NDgzMDRj/ZTQwZWMzMGRmZDM5/YjQzNjhjYWQ2Zjc1/OGI3MzFhYmNhOTYz/NzZmYTZiNTQxOGJm/OWVmOTFlMy93d3cu/a2lwbGluZ2VyLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "kiplinger.com",
+            "hostname": "www.kiplinger.com",
+            "favicon": "https://imgs.search.brave.com/trgT9Eg35ZFJhoPXQtcr_xL_H9CnJQmJwN6ZdxVJ0A4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWE1NDgzMDRj/ZTQwZWMzMGRmZDM5/YjQzNjhjYWQ2Zjc1/OGI3MzFhYmNhOTYz/NzZmYTZiNTQxOGJm/OWVmOTFlMy93d3cu/a2lwbGluZ2VyLmNv/bS8",
+            "path": "  \u203a home  \u203a personal finance  \u203a insurance  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qZYD9JjfSxOxZTTFviTRWAsO0ct77SYD4CSUOo_kCGc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0LzZW/Q0M0UlNTdnpGczZ4/Wk1OUEFtQWgtMjU2/MC04MC5qcGc",
+            "original": "https://cdn.mos.cms.futurecdn.net/6VCC4RSSvzFs6xZMNPAmAh-2560-80.jpg",
+            "logo": false
+          },
+          "age": "August 21, 2025"
+        },
+        {
+          "title": "State of Auto Insurance in 2025 - ValuePenguin",
+          "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The two cars each cost about $244 per month to insure, which is 16% less expensive than average among the most popular 2024 models.",
+          "page_age": "2025-07-08T14:39:01",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/state-of-auto-insurance-2025",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "  \u203a home  \u203a best of  \u203a auto insurance  \u203a state of auto insurance in 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/858Ppdl4x_VTPKbqs-qkjdaOzSCBPw7LbPnZQYZx3z0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2F1dG8taW5z/dXJhbmNlLzIwMjUt/Z3JhcGhpYy9tYW4t/Y2FyLXJhaXNpbmct/cHJpY2VzLTIwMjU",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/auto-insurance/2025-graphic/man-car-raising-prices-2025",
+            "logo": false
+          },
+          "age": "July 8, 2025"
+        },
+        {
+          "title": "Car Insurance Rates By State For 2025 \u2013 Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/car-insurance/rates-by-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Factors such as mandatory coverage types, vehicle repair costs, medical expenses and more contribute to the differences in car insurance rates by state. The national average cost for car insurance is $2,126 per year, according to our analysis ...",
+          "page_age": "2025-10-30T19:29:11",
+          "profile": {
+            "name": "Forbes Advisor",
+            "url": "https://www.forbes.com/advisor/car-insurance/rates-by-state/",
+            "long_name": "forbes.com",
+            "img": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "forbes.com",
+            "hostname": "www.forbes.com",
+            "favicon": "https://imgs.search.brave.com/qg6-E4bARcUpS7pHuJ2FXSeQ2YI51iPfbI8wpUBx9tg/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+            "path": "\u203a advisor  \u203a car-insurance  \u203a rates-by-state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qF-wz4niQf86DyD8WdXJ-pOiw0TI_oKfrb0fKDXKIKI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Zm9yYmVzLmNvbS9h/ZHZpc29yL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI1LzAxL2lt/YWdlMS04LTkwMHg1/MTAuanBn",
+            "original": "https://www.forbes.com/advisor/wp-content/uploads/2025/01/image1-8-900x510.jpg",
+            "logo": false
+          },
+          "age": "1 week ago"
+        },
+        {
+          "title": "Car Insurance Premiums Will Rise 4% or More by the End of 2025, Disrupting a Trend of Stability, Insurify Projects",
+          "url": "https://insurify.com/car-insurance/report/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurify projects that even though some insurers are lowering rates, on average, full-coverage car insurance premiums will increase 4% ($2,402) to 7% ($2,472) by the end of 2025. From December 2024 to December 2025, full-coverage car insurance ...",
+          "page_age": "2025-08-06T00:00:00",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/report/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a report"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/GeemEnIxlbhAOoQP-cJp3yOlTgs2G_bjEm97TlHCKkk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTAw/MHg3MDAvNGI4Njk0/MTMxYS93aGl0ZS10/b3lvdGEtY2FyLWlu/LWhpZ2h3YXkuanBn",
+            "original": "https://a.storyblok.com/f/162273/1000x700/4b8694131a/white-toyota-car-in-highway.jpg",
+            "logo": false
+          },
+          "age": "August 6, 2025"
+        },
+        {
+          "title": "10 Most Expensive States for Car Insurance | Insurance Thought Leadership",
+          "url": "https://www.insurancethoughtleadership.com/auto-insurance/10-most-expensive-states-car-insurance",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The average annual full-coverage premium now costs $2,329. California, Missouri and Minnesota could see car insurance costs increase by more than 50% in 2024.",
+          "page_age": "2024-12-12T00:00:00",
+          "profile": {
+            "name": "Insurancethoughtleadership",
+            "url": "https://www.insurancethoughtleadership.com/auto-insurance/10-most-expensive-states-car-insurance",
+            "long_name": "insurancethoughtleadership.com",
+            "img": "https://imgs.search.brave.com/UoeJIxCQmq1BtSXYdqyvJ9mrVx1O4EmIkIGAS75U3Dw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzk0YWRhNTNl/ODg0ODMzZjNhYWZk/ZDgyNzZiZGU5NWFi/MDVmMjBkZjkxYTg4/NjcwMjU0MGZlMDEy/MDM1YWU3NC93d3cu/aW5zdXJhbmNldGhv/dWdodGxlYWRlcnNo/aXAuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurancethoughtleadership.com",
+            "hostname": "www.insurancethoughtleadership.com",
+            "favicon": "https://imgs.search.brave.com/UoeJIxCQmq1BtSXYdqyvJ9mrVx1O4EmIkIGAS75U3Dw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzk0YWRhNTNl/ODg0ODMzZjNhYWZk/ZDgyNzZiZGU5NWFi/MDVmMjBkZjkxYTg4/NjcwMjU0MGZlMDEy/MDM1YWU3NC93d3cu/aW5zdXJhbmNldGhv/dWdodGxlYWRlcnNo/aXAuY29tLw",
+            "path": "\u203a auto-insurance  \u203a 10-most-expensive-states-car-insurance"
+          },
+          "age": "December 12, 2024"
+        },
+        {
+          "title": "Map Shows States With Highest Car Insurance Costs - Newsweek",
+          "url": "https://www.newsweek.com/map-shows-states-highest-car-insurance-costs-2032464",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "The Sunshine State also saw the biggest jump in car insurance premiums in the country between 2024 and 2025; while at the national level rates went up by $289 per year, in Florida they&#x27;re now $782 higher.",
+          "page_age": "2025-02-18T21:18:39",
+          "profile": {
+            "name": "Newsweek",
+            "url": "https://www.newsweek.com/map-shows-states-highest-car-insurance-costs-2032464",
+            "long_name": "newsweek.com",
+            "img": "https://imgs.search.brave.com/PyNRakclvDjMYE-KKrT1jXhVbbvMiBF3N-tfeXW1ziw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmRjZTU0MTBh/MjZiZTAwZDBhMjdi/M2YzZDUzMTY3ZjA1/ZWQwZThlYWNiY2Y3/NzQ0NjZjYjhmZGYy/MTZhMjhjNi93d3cu/bmV3c3dlZWsuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "newsweek.com",
+            "hostname": "www.newsweek.com",
+            "favicon": "https://imgs.search.brave.com/PyNRakclvDjMYE-KKrT1jXhVbbvMiBF3N-tfeXW1ziw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmRjZTU0MTBh/MjZiZTAwZDBhMjdi/M2YzZDUzMTY3ZjA1/ZWQwZThlYWNiY2Y3/NzQ0NjZjYjhmZGYy/MTZhMjhjNi93d3cu/bmV3c3dlZWsuY29t/Lw",
+            "path": "\u203a map-shows-states-highest-car-insurance-costs-2032464"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/TEHR-TSJ7B2RKvm-M5aZY7-fHnh2J8qClzZgVLuUrF8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmV3c3dlZWsu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA4LzI1OTAz/MDgtbWFwLXN0YXRl/cy1oaWdoZXN0LWNh/ci1pbnN1cmFuY2Uu/cG5nP3c9MTYwMCZo/PTkwMCZxPTg4",
+            "original": "https://assets.newsweek.com/wp-content/uploads/2025/08/2590308-map-states-highest-car-insurance.png?w=1600&h=900&q=88",
+            "logo": false
+          },
+          "age": "February 18, 2025"
+        },
+        {
+          "title": "2025 State of Auto Insurance: Rate Increases Are Slowing Down in 2025",
+          "url": "https://www.prnewswire.com/news-releases/2025-state-of-auto-insurance-rate-increases-are-slowing-down-in-2025-302344613.html",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "After an average rate increase of 16.5% in 2024 and 12% in 2023, insurers are raising rates 7.5% on average in 2025 \u00b7 CHARLOTTE, N.C., Jan. 7, 2025 /PRNewswire/ -- Relief may be in sight for American drivers as auto insurers pump the breaks ...",
+          "page_age": "2025-01-07T16:03:10",
+          "profile": {
+            "name": "PR Newswire",
+            "url": "https://www.prnewswire.com/news-releases/2025-state-of-auto-insurance-rate-increases-are-slowing-down-in-2025-302344613.html",
+            "long_name": "prnewswire.com",
+            "img": "https://imgs.search.brave.com/ngor7d1kk07rJ8pY90YDI7ODv5z9i_-Ir6XdLmXti_Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJlMGNkOTM5/MzliMWNkNWM0YzZj/Y2IyN2U4ZWU2YTUw/YTljMzFjYjkwZmFj/MjU2MWM0OTA3MDFi/NmIxYTk2Yi93d3cu/cHJuZXdzd2lyZS5j/b20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "prnewswire.com",
+            "hostname": "www.prnewswire.com",
+            "favicon": "https://imgs.search.brave.com/ngor7d1kk07rJ8pY90YDI7ODv5z9i_-Ir6XdLmXti_Q/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJlMGNkOTM5/MzliMWNkNWM0YzZj/Y2IyN2U4ZWU2YTUw/YTljMzFjYjkwZmFj/MjU2MWM0OTA3MDFi/NmIxYTk2Yi93d3cu/cHJuZXdzd2lyZS5j/b20v",
+            "path": "\u203a news-releases  \u203a 2025-state-of-auto-insurance-rate-increases-are-slowing-down-in-2025-302344613.html"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/QJx4X7JuNxxjtVoPh2WqxqtKBMJzimIqaYSCW-FCUCo/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tbWEu/cHJuZXdzd2lyZS5j/b20vbWVkaWEvNzE5/NTgwL0xlbmRpbmdf/VHJlZV9zcXVhcmVf/TG9nby5qcGc_cD1m/YWNlYm9vaw",
+            "original": "https://mma.prnewswire.com/media/719580/Lending_Tree_square_Logo.jpg?p=facebook",
+            "logo": true
+          },
+          "age": "January 7, 2025"
+        },
+        {
+          "title": "r/dataisbeautiful on Reddit: [OC] Average Cost of Car Insurance by State in the USA (2025)",
+          "url": "https://www.reddit.com/r/dataisbeautiful/comments/1m74i5y/oc_average_cost_of_car_insurance_by_state_in_the/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Although my home state (CA; arguably the largest for premium) doesn&#x27;t publish market share by line of business, it&#x27;s clear that AAA, CSAA, Farmers, Allstate, Mercury are large players for personal private auto insurance; all of whom write more auto premium in the state than Progressive. Erie doesn&#x27;t even write in the state (in fact, they only write in 12 states; so why are you using them at all?) Source: 2024 California Dept of Insurance Market Share Report [link]",
+          "page_age": "2025-07-23T09:18:56",
+          "profile": {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/dataisbeautiful/comments/1m74i5y/oc_average_cost_of_car_insurance_by_state_in_the/",
+            "long_name": "reddit.com",
+            "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "reddit.com",
+            "hostname": "www.reddit.com",
+            "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+            "path": "  \u203a r/dataisbeautiful  \u203a [oc] average cost of car insurance by state in the usa (2025)"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SOkqnKf5h-Z2D7WCUWbNi-vKw7AnKNJMb7g7YmbvkWg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/YXZlcmFnZS1jb3N0/LW9mLWNhci1pbnN1/cmFuY2UtYnktc3Rh/dGUtaW4tdGhlLXVz/YS0yMDI1LXYwLXc3/NWRjeTN1Y2xlZjEu/cG5nP2F1dG89d2Vi/cCZzPWMyODMzN2Fj/Yjc3ODllOWIxYTZh/NGQxMzUyMGVjNTEz/ZjZmMzRjYmQ",
+            "original": "https://preview.redd.it/average-cost-of-car-insurance-by-state-in-the-usa-2025-v0-w75dcy3uclef1.png?auto=webp&s=c28337acb7789e9b1a6a4d13520ec513f6f34cbd",
+            "logo": false
+          },
+          "age": "July 23, 2025"
+        },
+        {
+          "title": "2025 Auto Insurance Trends Report | The Zebra",
+          "url": "https://www.thezebra.com/resources/car-insurance/auto-insurance-trends-report/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some states are seeing bigger changes than others. Here are some quick facts: The states with the highest annual premiums are Florida, Louisiana and Missouri. All three have an average rate of over $3,000 a year!",
+          "page_age": "2025-10-01T17:02:03",
+          "profile": {
+            "name": "The Zebra",
+            "url": "https://www.thezebra.com/resources/car-insurance/auto-insurance-trends-report/",
+            "long_name": "thezebra.com",
+            "img": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "thezebra.com",
+            "hostname": "www.thezebra.com",
+            "favicon": "https://imgs.search.brave.com/hQpUrLQoQk_2E9e6iixZH9kK35JvrI1oIHbdwuPaLv4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWJlYmIyZDQ5/NTQ0ODhmNzIxZjFk/OGE1MzUwMzE4MTRl/YjZmOTYzYmM3MjMy/YzYzOTExODIxMTky/NmVlNDczOC93d3cu/dGhlemVicmEuY29t/Lw",
+            "path": "  \u203a the zebra  \u203a resource center  \u203a car  \u203a 2025 auto insurance trends report"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/tbd0UaOOvIXqi69W48G0j_FAdMT0JxNy_qR5HBkqeCs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhlemVicmEuY29t/L3pmcm9udC9zdGF0/aWMvM2I5NGRmMy96/ZnJvbnQvaW1nL2l6/LXNoYXJlLWxvZ28u/cG5n",
+            "original": "https://cdn.thezebra.com/zfront/static/3b94df3/zfront/img/iz-share-logo.png",
+            "logo": true
+          },
+          "age": "October 1, 2025"
+        },
+        {
+          "title": "Will hail warnings and more speed cameras bring down Colorado's car insurance rates? Gov. Polis hopes so",
+          "url": "https://www.cpr.org/2025/11/06/polis-plan-reduce-colorado-car-insurance-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Colorado should not be paying more ... for full auto coverage is $3,233, more than any other state except New York, Louisiana, Florida and Nevada....",
+          "page_age": "2025-11-06T16:22:39",
+          "profile": {
+            "name": "Colorado Public Radio",
+            "url": "https://www.cpr.org/2025/11/06/polis-plan-reduce-colorado-car-insurance-rates/",
+            "long_name": "cpr.org",
+            "img": "https://imgs.search.brave.com/T6APCrLkaBhohUnx9v6n-TAmr_QczY_X9FBDLSR5xt4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjUzNWU5MWY3/Y2Y1YTkxY2YyYjFj/ZmU4MWNlOGI4YjA3/MDAxNDA3ZTJhZTdh/YzZhNTBkYWNlNmIx/ZTgyM2U5ZS93d3cu/Y3ByLm9yZy8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cpr.org",
+            "hostname": "www.cpr.org",
+            "favicon": "https://imgs.search.brave.com/T6APCrLkaBhohUnx9v6n-TAmr_QczY_X9FBDLSR5xt4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjUzNWU5MWY3/Y2Y1YTkxY2YyYjFj/ZmU4MWNlOGI4YjA3/MDAxNDA3ZTJhZTdh/YzZhNTBkYWNlNmIx/ZTgyM2U5ZS93d3cu/Y3ByLm9yZy8",
+            "path": "  \u203a home  \u203a will hail warnings and more speed cameras bring down colorado\u2019s car insurance rates? gov. polis hopes so"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/_AGuyDTxAdw7p-TtIfvwHvenxDqAMYXvaTw8nax9jsA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93cC1j/cHIuczMuYW1hem9u/YXdzLmNvbS91cGxv/YWRzLzIwMjUvMDMv/Z2FzLXN0YXRpb24t/My5qcGc",
+            "original": "https://wp-cpr.s3.amazonaws.com/uploads/2025/03/gas-station-3.jpg",
+            "logo": false
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Are drivers in your state experiencing auto insurance rate increases in 2025?",
+          "url": "https://www.carinsurance.com/trends-and-insight/is-your-state-raising-auto-insurance-rates/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "For example, Louisiana drivers pay the most in premiums at $2,883 annually, while those in Maine pay $1,175 annually. Other states continue to see sharp spikes \u2014 Nevada drivers can now expect an increase of about 10% in the final quarter of 2024...",
+          "page_age": "2025-03-26T00:00:00",
+          "profile": {
+            "name": "Carinsurance.com",
+            "url": "https://www.carinsurance.com/trends-and-insight/is-your-state-raising-auto-insurance-rates/",
+            "long_name": "carinsurance.com",
+            "img": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "carinsurance.com",
+            "hostname": "www.carinsurance.com",
+            "favicon": "https://imgs.search.brave.com/KCetfn_EHIlwz5sy6dTvSdGjOen9Qf_QsSICK4hYUH8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZDdmYWUzNjM0/MGU0ODEwNzI3ZWVj/NjEwYmQ2MmE5NTZh/N2E2NDRhODA2YjRj/NjBlNzc2OTBiYzkz/YzA3ZGQzOC93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS8",
+            "path": "  \u203a car insurance homepage  \u203a trends and insights  \u203a are drivers in your state experiencing auto insurance rate increases in 2025?"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/UgJ_Y_LrX0rGkmLc_m68pIngh_lOS5ECjcKCnUUN0Ks/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyaW5zdXJhbmNl/LmNvbS9pbWFnZXMv/aG9tZS9pbWFnZV9m/b3Jtc3RhcnQuanBn",
+            "original": "https://www.carinsurance.com/images/home/image_formstart.jpg",
+            "logo": false
+          },
+          "age": "March 26, 2025"
+        },
+        {
+          "title": "Auto Insurance Rates by State in 2025 (+How to Save!) | Quote.com",
+          "url": "https://www.quote.com/auto-insurance/cost-by-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Auto insurance rates by state change based on weather, crime, traffic, and more. Florida has the most expensive car insurance by state at $115 a month. Read more.",
+          "page_age": "2025-11-06T19:34:43",
+          "profile": {
+            "name": "Quote.com",
+            "url": "https://www.quote.com/auto-insurance/cost-by-state/",
+            "long_name": "quote.com",
+            "img": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "quote.com",
+            "hostname": "www.quote.com",
+            "favicon": "https://imgs.search.brave.com/kddem-PxrpzYtwfpKjL3Fo0CZWOxFjL--pzkA-7OGdI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODExNWFmZmUz/MjljOGY0NjU3YTkw/NGU5MWVjMDVlNTAz/ZTA4ZDIwN2JjMzUw/ZjBlYmVhZTExNGZl/YzliNjE1NS93d3cu/cXVvdGUuY29tLw",
+            "path": "  \u203a home  \u203a best car insurance companies  \u203a auto insurance by state"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/74ZeAl8etctzIPO-xLsZVexBl8CJ2KPJSnHGpECl8Js/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/cXVvdGUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI1LzEw/L0F1dG8tSW5zdXJh/bmNlLVJhdGVzLWJ5/LVN0YXRlLnBuZw",
+            "original": "https://www.quote.com/wp-content/uploads/2025/10/Auto-Insurance-Rates-by-State.png",
+            "logo": false
+          },
+          "age": "1 day ago"
+        },
+        {
+          "title": "Car Insurance Rates Predicted To Increase by 7% in 2025 | Bankrate",
+          "url": "https://www.bankrate.com/insurance/car/car-insurance-rates-forecast/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "This is down from estimates of 14% in 2023 and 12% in 2024 as the industry continues to recover from a very poor underwriting result in 2022. \u2014 Mark Friedlander, Director of corporate communications, Triple-I \u00b7 Friedlander explained that ...",
+          "page_age": "2025-02-18T16:30:38",
+          "profile": {
+            "name": "Bankrate",
+            "url": "https://www.bankrate.com/insurance/car/car-insurance-rates-forecast/",
+            "long_name": "bankrate.com",
+            "img": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "bankrate.com",
+            "hostname": "www.bankrate.com",
+            "favicon": "https://imgs.search.brave.com/JP7iut7YV52mFq6AT1HpWDvqpkpMr34bLiSc5BT5iEw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+            "path": "  \u203a car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/ODIHBxMvHTp_qHCn0H-dzYk9XldrY2Pq6OUDTrLpSrs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI1LzAy/LzE4MTExMzE4L2Nh/ci1pbnN1cmFuY2Ut/cmF0ZXMtcHJlZGlj/dGVkLXRvLWluY3Jl/YXNlLWJ5LTctaW4t/MjAyNS5qcGc",
+            "original": "https://www.bankrate.com/brp/2025/02/18111318/car-insurance-rates-predicted-to-increase-by-7-in-2025.jpg",
+            "logo": false
+          },
+          "age": "February 18, 2025"
+        },
+        {
+          "title": "Why Is Car Insurance So Expensive in Texas? (2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/texas/why-is-car-insurance-so-expensive-in-texas/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In June 2024, the average premium increased to $2,672 per year. Car insurance can be expensive in Texas for various reasons, including the number of claims filed, the cost of auto repairs in the state, and inflation.",
+          "page_age": "2025-04-29T12:58:19",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/texas/why-is-car-insurance-so-expensive-in-texas/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a texas  \u203a why is car insurance so expensive in texas"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/SGVRCM4o_K9bcy4UAJ7CYuTQ-RI7hDSvDtLMMQ1qbus/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyLzM1YjQ5/ODViN2MvbWVyY2Vk/ZXMtYmVuei1vcmFu/Z2UucG5n",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/35b4985b7c/mercedes-benz-orange.png",
+            "logo": false
+          },
+          "age": "April 29, 2025"
+        },
+        {
+          "title": "Average Cost of Car Insurance (September 2025) | Insurify",
+          "url": "https://insurify.com/car-insurance/average-car-insurance-cost/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "In 2024, drivers paid an average of $2,313 per year for full-coverage car insurance. Prices are expected to increase another 5% in 2025, Insurify\u2019s latest car insurance report shows.",
+          "page_age": "2025-05-15T18:30:36",
+          "profile": {
+            "name": "Insurify",
+            "url": "https://insurify.com/car-insurance/average-car-insurance-cost/",
+            "long_name": "insurify.com",
+            "img": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "insurify.com",
+            "hostname": "insurify.com",
+            "favicon": "https://imgs.search.brave.com/hpNHcPNuZtgj-byWSNeK8RkBRUVcIiefrdkd_CruXq8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmFmZGNmMGNh/MDU0ZDdmYWY5OGJj/NzE3YjRkYjZiZmNm/MTgwZjdmYjRkOWIw/OGVhZmFkYjk4OWI1/OGEyZWU3ZC9pbnN1/cmlmeS5jb20v",
+            "path": "  \u203a car insurance  \u203a average car insurance cost"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/egFdAe0I8IKstwmOhx8kEfz9Dbbyf-K68qaFlkdlC6Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9hLnN0/b3J5Ymxvay5jb20v/Zi8xNjIyNzMvMTg1/NngxMzkyL2E5YjUw/ZDM3ZDkvamVlcC1n/cmFuZC1jaGVyb2tl/ZS1vcmFuZ2UucG5n",
+            "original": "https://a.storyblok.com/f/162273/1856x1392/a9b50d37d9/jeep-grand-cherokee-orange.png",
+            "logo": false
+          },
+          "age": "May 15, 2025"
+        },
+        {
+          "title": "Car Insurances Rates by State in 2025 | LendingTree",
+          "url": "https://www.lendingtree.com/car-insurance/car-insurance-rates-by-state/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Our partners have not commissioned or endorsed this content. Read our editorial guidelines here. The average cost of a full-coverage car insurance policy is $2,101 a year nationally.",
+          "page_age": "2024-12-30T00:49:26",
+          "profile": {
+            "name": "LendingTree",
+            "url": "https://www.lendingtree.com/car-insurance/car-insurance-rates-by-state/",
+            "long_name": "lendingtree.com",
+            "img": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "lendingtree.com",
+            "hostname": "www.lendingtree.com",
+            "favicon": "https://imgs.search.brave.com/yXocWnwl2PfTEvlx2rFx5rmJolpgkbGDO3CG6T07Njk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGRlZjI4ZGJk/MWJiMDE4ZjliM2Vh/ZmFlZmMyMjUxNDg1/MjUyYmQzOGU4ZTFi/ZGIxNTA3MThlZTIz/YThlYmVkZS93d3cu/bGVuZGluZ3RyZWUu/Y29tLw",
+            "path": "  \u203a home  \u203a car insurance  \u203a car insurances rates by state for 2025"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/qPdHH0rND9JX_qGGwi5hsoT_7DdrhE257y9uBjKH5tY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bGVuZGluZ3RyZWUu/Y29tL2FwcC91cGxv/YWRzLzIwMjUvMDYv/eW91bmctY291cGxl/LWRyaXZpbmctdHJl/ZXMud2VicA",
+            "original": "https://www.lendingtree.com/app/uploads/2025/06/young-couple-driving-trees.webp",
+            "logo": false
+          },
+          "age": "December 30, 2024"
+        },
+        {
+          "title": "Average Car Insurance Cost: How Much Is Car Insurance in 2025?",
+          "url": "https://www.moneygeek.com/insurance/auto/what-is-the-average-cost-of-car-insurance-month-year/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Location dramatically affects car insurance costs, with monthly premiums ranging from $75 in Vermont to $243 in Florida \u2014 a $168 difference for identical coverage. State insurance requirements, local risk factors, and regional economics create ...",
+          "page_age": "2025-10-28T16:43:19",
+          "profile": {
+            "name": "MoneyGeek",
+            "url": "https://www.moneygeek.com/insurance/auto/what-is-the-average-cost-of-car-insurance-month-year/",
+            "long_name": "moneygeek.com",
+            "img": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "moneygeek.com",
+            "hostname": "www.moneygeek.com",
+            "favicon": "https://imgs.search.brave.com/pagS61_h632aTnejHv0ly-AFL9kEqAqBe7BcS-MLtOU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTExODNjZDc0/NjQ5ZjA1MWZjZWZm/NWJiNjM5M2MyNzcw/NmE1ZmM5YjNhN2Mx/NjQ3ZGMxZWEzODg0/MzFkZWEzMi93d3cu/bW9uZXlnZWVrLmNv/bS8",
+            "path": "  \u203a home  \u203a insurance  \u203a compare car insurance  \u203a average cost of car insurance"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/inQTPyDEumo2u8EzYUwfIfe4bZ3-oDfp64Z2lfhDs0g/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbW9uZXlnZWVr/L2ltYWdlL3VwbG9h/ZC9jX3NjYWxlLHFf/YXV0bzplY28sd18x/MjAwLGZfYXV0byxm/bF9sb3NzeS92MTc1/Njg5OTEyNC9BdmVy/YWdlX0Nvc3RfYnlf/Q292ZXJhZ2VfVHlw/ZV84NDE3NWE2ZGJm/LnBuZw",
+            "original": "https://res.cloudinary.com/moneygeek/image/upload/c_scale,q_auto:eco,w_1200,f_auto,fl_lossy/v1756899124/Average_Cost_by_Coverage_Type_84175a6dbf.png",
+            "logo": false
+          },
+          "age": "1 week ago"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

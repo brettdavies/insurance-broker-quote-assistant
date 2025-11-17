@@ -1,0 +1,1 @@
+![](https://www.reneewhiteteam.com/wp-content/uploads/2022/09/The-Renée-White-Team-white-logo-2.png "The Renée White Team white logo 2")

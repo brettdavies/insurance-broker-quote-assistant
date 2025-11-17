@@ -1,0 +1,420 @@
+{
+  "domain": "flsheriffs.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:19.060784",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 25,
+      "frequency": 25.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "nav:megasubsub::item",
+      "count": 97
+    },
+    {
+      "class": "card:promo",
+      "count": 28
+    },
+    {
+      "class": "card:promo::text",
+      "count": 28
+    },
+    {
+      "class": "card:promo::image",
+      "count": 28
+    },
+    {
+      "class": "attachment-650x410",
+      "count": 24
+    },
+    {
+      "class": "size-650x410",
+      "count": 24
+    },
+    {
+      "class": "fas",
+      "count": 23
+    },
+    {
+      "class": "\u00bbmobile",
+      "count": 23
+    },
+    {
+      "class": "\u00bbnormal",
+      "count": 18
+    },
+    {
+      "class": "nav:megasub::promos",
+      "count": 15
+    },
+    {
+      "class": "nav:megasubsub::list",
+      "count": 14
+    },
+    {
+      "class": "nav:megasub::item",
+      "count": 11
+    },
+    {
+      "class": "fa-angle-right",
+      "count": 11
+    },
+    {
+      "class": "bit:button",
+      "count": 10
+    },
+    {
+      "class": "fa-brands",
+      "count": 8
+    },
+    {
+      "class": "nav:mega::item",
+      "count": 5
+    },
+    {
+      "class": "fa-angle-down",
+      "count": 5
+    },
+    {
+      "class": "block:promotional",
+      "count": 5
+    },
+    {
+      "class": "block:promotional::box",
+      "count": 5
+    },
+    {
+      "class": "block:promotional::heading",
+      "count": 5
+    },
+    {
+      "class": "nav:megasub",
+      "count": 4
+    },
+    {
+      "class": "nav:megasub::box",
+      "count": 4
+    },
+    {
+      "class": "bit:button@icon",
+      "count": 4
+    },
+    {
+      "class": "attachment-full",
+      "count": 3
+    },
+    {
+      "class": "size-full",
+      "count": 3
+    },
+    {
+      "class": "nav:megasub::list",
+      "count": 3
+    },
+    {
+      "class": "\u00bbactive",
+      "count": 3
+    },
+    {
+      "class": "nav:megasubsub",
+      "count": 3
+    },
+    {
+      "class": "\u00bbdesktop",
+      "count": 3
+    },
+    {
+      "class": "card:post@related",
+      "count": 3
+    },
+    {
+      "class": "card:post@related::heading",
+      "count": 3
+    },
+    {
+      "class": "card:post@related::icon",
+      "count": 3
+    },
+    {
+      "class": "fa-arrow-right",
+      "count": 3
+    },
+    {
+      "class": "block:header::logo",
+      "count": 2
+    },
+    {
+      "class": "\u00bbfull",
+      "count": 2
+    },
+    {
+      "class": "fa-square-facebook",
+      "count": 2
+    },
+    {
+      "class": "fa-square-x-twitter",
+      "count": 2
+    },
+    {
+      "class": "fa-square-instagram",
+      "count": 2
+    },
+    {
+      "class": "fa-square-youtube",
+      "count": 2
+    },
+    {
+      "class": "yoast-schema-graph",
+      "count": 1
+    },
+    {
+      "class": "tribe-theme-florida-sheriffs",
+      "count": 1
+    },
+    {
+      "class": "u:hidden",
+      "count": 1
+    },
+    {
+      "class": "block:header",
+      "count": 1
+    },
+    {
+      "class": "block:header::box",
+      "count": 1
+    },
+    {
+      "class": "\u00bbalt",
+      "count": 1
+    },
+    {
+      "class": "bit:button@menu",
+      "count": 1
+    },
+    {
+      "class": "fa-bars",
+      "count": 1
+    },
+    {
+      "class": "fa-xmark",
+      "count": 1
+    },
+    {
+      "class": "nav:mega",
+      "count": 1
+    },
+    {
+      "class": "nav:mega::list",
+      "count": 1
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tribe-events-pro-mini-calendar-block-styles-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "typekit-css",
+      "count": 1
+    },
+    {
+      "id": "app-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-core-js",
+      "count": 1
+    },
+    {
+      "id": "jquery-migrate-js",
+      "count": 1
+    },
+    {
+      "id": "fontawesome-js",
+      "count": 1
+    },
+    {
+      "id": "fa-kit-upload",
+      "count": 1
+    },
+    {
+      "id": "fa-v4-font-face",
+      "count": 1
+    },
+    {
+      "id": "fa-v5-font-face",
+      "count": 1
+    },
+    {
+      "id": "fa-v4-shims",
+      "count": 1
+    },
+    {
+      "id": "fa-main",
+      "count": 1
+    },
+    {
+      "id": "690e4932803e3",
+      "count": 1
+    },
+    {
+      "id": "tec-user-agent-js",
+      "count": 1
+    },
+    {
+      "id": "app-js-extra",
+      "count": 1
+    },
+    {
+      "id": "app-js",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_recaptcha-js-extra",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_recaptcha-js",
+      "count": 1
+    },
+    {
+      "id": "gforms_recaptcha_frontend-js",
+      "count": 1
+    },
+    {
+      "id": "g-recaptcha-response-100000",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class^=\"ads-\"], [class$=\"-ads\"], [class~=\"ads\"], [id^=\"ads-\"], [id$=\"-ads\"], [id~=\"ads\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

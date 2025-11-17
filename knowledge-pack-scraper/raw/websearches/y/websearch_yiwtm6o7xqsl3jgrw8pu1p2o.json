@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_yiwtm6o7xqsl3jgrw8pu1p2o",
+  "search_id": "search_cesi30hu0wk679q9onmg5l5m",
+  "timestamp": "2025-11-07T12:33:05.153869",
+  "startedAt": "2025-11-07T12:33:05.153869",
+  "completedAt": "2025-11-07T12:33:07.029195",
+  "durationSeconds": 1.88,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"mandatory disclaimers\" insurance advertising",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"mandatory disclaimers\" insurance advertising",
+      "show_strict_warning": false,
+      "cleaned": "mandatory disclaimers insurance advertising",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "mandatory disclaimers insurance advertising"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

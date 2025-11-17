@@ -1,0 +1,1 @@
+![Logo](https://www.sfchronicle.com/img/logos/black/logo.svg)

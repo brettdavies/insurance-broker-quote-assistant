@@ -1,0 +1,278 @@
+[ ![Switch to ADA Accessible Theme](https://www.dupeelaw.com/wp-content/themes/dm_2023/img/ada-icon.png)](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/?enable_wcag=1 "Switch to ADA Accessible Theme")
+[Close Menu](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+  * [Home](https://www.dupeelaw.com/)
+  * [Call](tel:+18452948900)
+  * [Email](https://www.dupeelaw.com/contact-us/)
+  * [Visit](https://www.dupeelaw.com/contact-us/)
+  * [Search](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+  * [Menu](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+
+
+[ ![Dupée & Monroe, P.C., Attorneys at Law](https://www.dupeelaw.com/wp-content/themes/dm_2023/img/logos/main.webp)](https://www.dupeelaw.com/)
+_Complimentary Consultations Available_ [845-294-8900](tel:+18452948900)
+  * [Home](https://www.dupeelaw.com/)
+  * Attorney Profiles
+    * [Jon C. Dupée Jr.](https://www.dupeelaw.com/attorney-profiles/jon-dupee/)
+    * [James E. Monroe](https://www.dupeelaw.com/attorney-profiles/james-monroe/)
+  * [Practice Areas](https://www.dupeelaw.com/practice-areas/)
+    * [Personal Injury](https://www.dupeelaw.com/personal-injury-attorney/)
+      * [Car Accidents](https://www.dupeelaw.com/personal-injury-attorney/car-accident/)
+        * [Automotive Defect](https://www.dupeelaw.com/personal-injury-attorney/car-accident/automotive-defect/)
+        * [Construction Zone Car Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/construction-zone-car-accident/)
+        * [Distracted Driving Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/distracted-driving/)
+        * [Dram Shop & Social Host Liability](https://www.dupeelaw.com/personal-injury-attorney/car-accident/dram-shop-social-host-liability/)
+        * [Drowsy Driving Car Accidents](https://www.dupeelaw.com/personal-injury-attorney/car-accident/drowsy-driving-car-accidents/)
+        * [E-Scooter Accident](https://www.dupeelaw.com/personal-injury-attorney/e-scooter-accident/)
+        * [Head-on Collisions](https://www.dupeelaw.com/personal-injury-attorney/head-on-collision/)
+        * [Hit and Run Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/hit-and-run/)
+        * [Hit by Uninsured Driver](https://www.dupeelaw.com/personal-injury-attorney/car-accident/hit-by-uninsured-driver/)
+        * [Hit by Drunk Driver](https://www.dupeelaw.com/personal-injury-attorney/car-accident/hit-by-drunk-driver/)
+        * [Parking Lot Accident](https://www.dupeelaw.com/personal-injury-attorney/parking-lot-accident/)
+        * [Public Property Accidents](https://www.dupeelaw.com/personal-injury-attorney/premises-liability/public-property-accidents/)
+        * [Rear-End Collisions](https://www.dupeelaw.com/personal-injury-attorney/car-accident/rear-end-collisions/)
+        * [Recreational Vehicle Accident](https://www.dupeelaw.com/personal-injury-attorney/recreational-vehicle-accident/)
+        * [Rideshare Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/rideshare-accident/)
+        * [Rollover Accidents](https://www.dupeelaw.com/personal-injury-attorney/car-accident/rollover-accidents/)
+        * [Side-Impact Collisions](https://www.dupeelaw.com/personal-injury-attorney/car-accident/side-impact-collisions/)
+        * [Taxi Accidents](https://www.dupeelaw.com/personal-injury-attorney/car-accident/taxi-accidents/)
+        * [Texting and Driving Accidents](https://www.dupeelaw.com/personal-injury-attorney/car-accident/texting-and-driving/)
+        * [Worksite Vehicle Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/worksite-vehicle-accidents/)
+      * [Truck Accidents](https://www.dupeelaw.com/personal-injury-attorney/truck-accident/)
+        * [Big Rig Accident](https://www.dupeelaw.com/personal-injury-attorney/truck-accident/big-rig/)
+        * [Garbage Truck Accidents](https://www.dupeelaw.com/personal-injury-attorney/truck-accident/garbage-truck/)
+        * [Jackknife Truck Accident](https://www.dupeelaw.com/personal-injury-attorney/truck-accident/jackknife/)
+        * [Tractor-Trailer Accident](https://www.dupeelaw.com/personal-injury-attorney/truck-accident/tractor-trailer-accident/)
+      * [Motorcycle Accidents](https://www.dupeelaw.com/personal-injury-attorney/motorcycle-accident/)
+      * [Boating Accident](https://www.dupeelaw.com/personal-injury-attorney/boating-accident/)
+      * [Bicycle Accidents](https://www.dupeelaw.com/personal-injury-attorney/bicycle-accidents/)
+      * [Bus Accidents](https://www.dupeelaw.com/personal-injury-attorney/bus-accidents/)
+      * [Pedestrian Accidents](https://www.dupeelaw.com/personal-injury-attorney/pedestrian-accident/)
+      * [Slip and Fall Accidents](https://www.dupeelaw.com/personal-injury-attorney/slip-and-fall/)
+        * [Grocery Store Slip and Fall](https://www.dupeelaw.com/personal-injury-attorney/slip-and-fall/grocery-store/)
+        * [Restaurant Slip and Fall](https://www.dupeelaw.com/personal-injury-attorney/slip-and-fall/restaurant/)
+        * [Sidewalk Accidents](https://www.dupeelaw.com/personal-injury-attorney/slip-and-fall/sidewalk-accident/)
+        * [Snow and Ice Slip and Fall](https://www.dupeelaw.com/personal-injury-attorney/slip-and-fall/snow-and-ice/)
+      * [Construction Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/)
+        * [Building Collapse](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/building-collapse/)
+        * [Crane Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/crane/)
+        * [Electrocution Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/electrocution-accidents/)
+        * [Fall from Height](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/fall-from-height/)
+        * [Forklift Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/forklift/)
+        * [Ladder Falls](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/ladder-fall/)
+        * [Scaffold Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/scaffolding/)
+        * [Third-Party Construction Accident](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/third-party/)
+        * [Trenching and Excavation Accidents](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/trenching-excavation/)
+        * [Welding Accident](https://www.dupeelaw.com/personal-injury-attorney/construction-accident/welding/)
+      * [Amputation Injury](https://www.dupeelaw.com/personal-injury-attorney/amputation-injury/)
+      * [Amusement Park Accident](https://www.dupeelaw.com/personal-injury-attorney/amusement-park-accident/)
+      * [Catastrophic Injury](https://www.dupeelaw.com/personal-injury-attorney/catastrophic-injury/)
+      * [Train & Subway Accident](https://www.dupeelaw.com/personal-injury-attorney/subway-accident/)
+      * [Elevator Accidents](https://www.dupeelaw.com/personal-injury-attorney/elevator-accident/)
+      * [School Injury](https://www.dupeelaw.com/personal-injury-attorney/school-accident/)
+      * [Spinal Cord Injury](https://www.dupeelaw.com/personal-injury-attorney/spinal-cord-injury/)
+      * [Bad Faith Insurance](https://www.dupeelaw.com/personal-injury-attorney/bad-faith-insurance/)
+      * [Burn Injury](https://www.dupeelaw.com/personal-injury-attorney/burn-injury/)
+      * [Concussion Injury](https://www.dupeelaw.com/personal-injury-attorney/concussion-injury/)
+      * [Dog Bites](https://www.dupeelaw.com/personal-injury-attorney/dog-bite/)
+      * [Dangerous or Defective Drugs](https://www.dupeelaw.com/personal-injury-attorney/dangerous-or-defective-drugs/)
+      * [Dangerous Products](https://www.dupeelaw.com/personal-injury-attorney/dangerous-products/)
+        * [Defective Medical Devices](https://www.dupeelaw.com/personal-injury-attorney/dangerous-products/defective-medical-devices/)
+      * [Gas Explosion Injury](https://www.dupeelaw.com/personal-injury-attorney/gas-explosion-injury/)
+      * [Heavy Machinery Injury](https://www.dupeelaw.com/personal-injury-attorney/heavy-machinery-injury/)
+      * [Knee Injury](https://www.dupeelaw.com/personal-injury-attorney/knee-injury/)
+      * [Negligent Security](https://www.dupeelaw.com/personal-injury-attorney/negligent-security/)
+      * [Soft Tissue Injury](https://www.dupeelaw.com/personal-injury-attorney/soft-tissue-injury/)
+      * [Swimming Pool Accident](https://www.dupeelaw.com/personal-injury-attorney/swimming-pool-accident/)
+      * [Trip and Fall Accidents](https://www.dupeelaw.com/personal-injury-attorney/trip-and-fall-accidents/)
+      * [Unsafe Equipment](https://www.dupeelaw.com/personal-injury-attorney/unsafe-equipment/)
+      * [Unsafe Work Environment](https://www.dupeelaw.com/personal-injury-attorney/unsafe-work-environment/)
+      * [Victims of Sexual Abuse and Rape](https://www.dupeelaw.com/personal-injury-attorney/victims-of-sexual-abuse-and-rape/)
+      * [Window Cleaner Accident](https://www.dupeelaw.com/personal-injury-attorney/window-cleaner-accident/)
+      * [Work Accident](https://www.dupeelaw.com/personal-injury-attorney/work-accident/)
+        * [Repetitive Motion Injuries](https://www.dupeelaw.com/personal-injury-attorney/repetitive-motion-injuries/)
+        * [Workplace Death](https://www.dupeelaw.com/personal-injury-attorney/work-accident/workplace-death/)
+      * [Wrongful Death](https://www.dupeelaw.com/personal-injury-attorney/wrongful-death/)
+      * [Victims of Child Sexual Abuse](https://www.dupeelaw.com/personal-injury-attorney/victims-of-child-sexual-abuse/)
+      * [Insurance Disputes](https://www.dupeelaw.com/personal-injury-attorney/insurance-disputes/)
+    * [Criminal Defense](https://www.dupeelaw.com/criminal-defense-attorney/)
+      * [Aggravated Unlicensed Operation](https://www.dupeelaw.com/criminal-defense-attorney/aggravated-unlicensed-operation/)
+      * [Animal Cruelty](https://www.dupeelaw.com/criminal-defense-attorney/animal-cruelty/)
+      * [Arson Defense](https://www.dupeelaw.com/criminal-defense-attorney/arson/)
+      * [Assault & Battery](https://www.dupeelaw.com/criminal-defense-attorney/assault-and-battery/)
+      * [Assault Defense](https://www.dupeelaw.com/criminal-defense-attorney/assault-defense/)
+        * [Assaulting a Police Officer](https://www.dupeelaw.com/criminal-defense-attorney/assault-defense/police-officer/)
+      * [Burglary](https://www.dupeelaw.com/criminal-defense-attorney/burglary/)
+      * [Conspiracy](https://www.dupeelaw.com/criminal-defense-attorney/conspiracy/)
+      * [Criminal Mischief](https://www.dupeelaw.com/criminal-defense-attorney/criminal-mischief/)
+      * [Criminal Obstruction of Breathing](https://www.dupeelaw.com/criminal-defense-attorney/criminal-obstruction-of-breathing/)
+      * [Criminal Possession of Stolen Property](https://www.dupeelaw.com/criminal-defense-attorney/criminal-possession-of-stolen-property/)
+      * [Disorderly Conduct](https://www.dupeelaw.com/criminal-defense-attorney/disorderly-conduct/)
+      * [Domestic Violence](https://www.dupeelaw.com/criminal-defense-attorney/domestic-violence/)
+        * [Restraining Order Defense](https://www.dupeelaw.com/criminal-defense-attorney/domestic-violence/restraining-order/)
+      * [Drug Offenses](https://www.dupeelaw.com/criminal-defense-attorney/drug-offense/)
+        * [Controlled Substance Possession](https://www.dupeelaw.com/criminal-defense-attorney/controlled-substance-possession/)
+        * [Drug Trafficking](https://www.dupeelaw.com/criminal-defense-attorney/drug-trafficking/)
+      * [DWI/DWAI](https://www.dupeelaw.com/criminal-defense-attorney/dwi-dwai/)
+      * [Elder Abuse Defense](https://www.dupeelaw.com/criminal-defense-attorney/elder-abuse-defense/)
+      * [Embezzlement](https://www.dupeelaw.com/criminal-defense-attorney/embezzlement/)
+      * [Failure to Appear in Court](https://www.dupeelaw.com/criminal-defense-attorney/failure-to-appear-in-court/)
+      * [False Arrest](https://www.dupeelaw.com/criminal-defense-attorney/false-arrest/)
+      * [Federal Crimes Defense](https://www.dupeelaw.com/criminal-defense-attorney/federal-crimes-defense/)
+      * [Felony Offenses](https://www.dupeelaw.com/criminal-defense-attorney/felony-offense/)
+        * [Grand Larceny](https://www.dupeelaw.com/criminal-defense-attorney/felony-offense/grand-larceny-defense/)
+      * [Firearms and Weapons Offenses](https://www.dupeelaw.com/criminal-defense-attorney/firearms-and-weapons-offense/)
+      * [Forcible Touching Defense](https://www.dupeelaw.com/criminal-defense-attorney/forcible-touching-defense/)
+      * [Forgery](https://www.dupeelaw.com/criminal-defense-attorney/felony-offense/forgery-defense/)
+      * [Fraud](https://www.dupeelaw.com/criminal-defense-attorney/fraud/)
+      * [Gambling](https://www.dupeelaw.com/criminal-defense-attorney/gambling-pc-225/)
+      * [Homicide](https://www.dupeelaw.com/criminal-defense-attorney/felony-offense/homicide/)
+      * [Identity Theft](https://www.dupeelaw.com/criminal-defense-attorney/identify-theft/)
+      * [Insurance Fraud Defense](https://www.dupeelaw.com/criminal-defense-attorney/insurance-fraud/)
+      * [Internet Fraud Defense](https://www.dupeelaw.com/criminal-defense-attorney/internet-fraud-defense/)
+      * [Juvenile Probation](https://www.dupeelaw.com/criminal-defense-attorney/juvenile-probation/)
+      * [Kidnapping Defense](https://www.dupeelaw.com/criminal-defense-attorney/kidnapping-defense/)
+      * [Larceny](https://www.dupeelaw.com/criminal-defense-attorney/larceny/)
+      * [Lewdness and Exposure](https://www.dupeelaw.com/criminal-defense-attorney/public-exposure-lewdness/)
+      * [Marijuana Possession](https://www.dupeelaw.com/criminal-defense-attorney/marijuana-possession/)
+      * [Misdemeanors](https://www.dupeelaw.com/criminal-defense-attorney/misdemeanor/)
+      * [Money Laundering Defense](https://www.dupeelaw.com/criminal-defense-attorney/money-laundering/)
+      * [Murder and Manslaughter](https://www.dupeelaw.com/criminal-defense-attorney/murder-manslaughter/)
+      * [Open Container Law Defense](https://www.dupeelaw.com/criminal-defense-attorney/open-container-law-defense/)
+      * [Orders of Protection](https://www.dupeelaw.com/criminal-defense-attorney/orders-of-protection/)
+      * [Passport Crimes Defense](https://www.dupeelaw.com/criminal-defense-attorney/passport-crimes/)
+      * [Possession of Controlled Substance](https://www.dupeelaw.com/criminal-defense-attorney/possession-of-controlled-substance/)
+      * [Prostitution Defense](https://www.dupeelaw.com/criminal-defense-attorney/prostitution-ny-criminal-defense/)
+      * [Reckless Driving Defense](https://www.dupeelaw.com/criminal-defense-attorney/reckless-driving/)
+      * [Reckless Endangerment](https://www.dupeelaw.com/criminal-defense-attorney/reckless-endangerment/)
+      * [Robbery](https://www.dupeelaw.com/criminal-defense-attorney/robbery/)
+      * [Sexual Assault Defense](https://www.dupeelaw.com/criminal-defense-attorney/sexual-assault-defense/)
+      * [Sex Crimes](https://www.dupeelaw.com/criminal-defense-attorney/sex-crimes/)
+      * [Sex Offender Registration](https://www.dupeelaw.com/criminal-defense-attorney/ny-sex-offender-registration/)
+      * [Sexual Harassment](https://www.dupeelaw.com/criminal-defense-attorney/sexual-harassment/)
+      * [Shoplifting](https://www.dupeelaw.com/criminal-defense-attorney/shoplifting/)
+      * [Smuggling](https://www.dupeelaw.com/criminal-defense-attorney/smuggling/)
+      * [Stalking Defense](https://www.dupeelaw.com/criminal-defense-attorney/stalking/)
+      * [Statute of Limitations](https://www.dupeelaw.com/criminal-defense-attorney/statute-of-limitations/)
+      * [Theft](https://www.dupeelaw.com/criminal-defense-attorney/theft/)
+      * [Theft of Services](https://www.dupeelaw.com/criminal-defense-attorney/theft-of-services/)
+      * [Trespassing](https://www.dupeelaw.com/criminal-defense-attorney/tresspassing/)
+      * [Vehicular Manslaughter](https://www.dupeelaw.com/criminal-defense-attorney/vehicular-manslaughter/)
+      * [Violent Crimes](https://www.dupeelaw.com/criminal-defense-attorney/violent-crimes/)
+      * [White-Collar Crimes](https://www.dupeelaw.com/criminal-defense-attorney/white-collar/)
+  * [Firm Overview](https://www.dupeelaw.com/firm-overview/)
+  * Resources
+    * [Personal Injury Newsletter](https://www.dupeelaw.com/newsletter/)
+    * [New York Personal Injury Articles](https://www.dupeelaw.com/new-york-personal-injury-articles/)
+      * [Benefits Available under No-Fault Insurance](https://www.dupeelaw.com/personal-injury-attorney/car-accident/benefits-available-under-no-fault-insurance/)
+      * [Common Causes and Prevention of Slip and Fall Accidents](https://www.dupeelaw.com/new-york-personal-injury-articles/common-causes-of-slip-and-fall-accidents/)
+      * [Damages in a New York Personal Injury Case](https://www.dupeelaw.com/new-york-personal-injury-articles/personal-injury-damages/)
+      * [Denial of No Fault Application](https://www.dupeelaw.com/personal-injury-attorney/car-accident/denial-of-no-fault-application/)
+      * [Dealing with Medical Costs after a Car Accident](https://www.dupeelaw.com/personal-injury-attorney/car-accident/dealing-with-medical-costs/)
+      * [FAQs on NY Personal Injury Claims](https://www.dupeelaw.com/new-york-personal-injury-articles/personal-injury-faqs/)
+      * [FMCSA Trucking Regulations](https://www.dupeelaw.com/personal-injury-attorney/car-accident/fmcsa-trucking-regulations/)
+      * [How a Personal Injury Lawyer Can Help You](https://www.dupeelaw.com/new-york-personal-injury-articles/how-a-personal-injury-lawyer-can-help/)
+      * [How to Prove Liability in a Personal Injury Case](https://www.dupeelaw.com/new-york-personal-injury-articles/proving-personal-injury-liability/)
+      * [Legal Recourse for Pedestrians Injured in Hit-and-Run Accidents](https://www.dupeelaw.com/new-york-personal-injury-articles/hit-and-run-pedestrian-accidents/)
+      * [MVAIC](https://www.dupeelaw.com/personal-injury-attorney/car-accident/mvaic/)
+      * [Navigating Insurance Claims After a Multi-Vehicle Pile-Up](https://www.dupeelaw.com/new-york-personal-injury-articles/multi-vehicle-pile-ups/)
+      * [No Fault Applications](https://www.dupeelaw.com/personal-injury-attorney/car-accident/no-fault-applications/)
+      * [Personal Injury FAQs](https://www.dupeelaw.com/personal-injury-faqs/)
+      * [Personal Injury Resources](https://www.dupeelaw.com/personal-injury-attorney/personal-injury-resources/)
+      * [Seat Belt Use and the Effect on Personal Injury Claims](https://www.dupeelaw.com/personal-injury-attorney/car-accident/seat-belt-use/)
+      * [The Process of Filing a Third-Party Claim After a Construction Accident in New York](https://www.dupeelaw.com/new-york-personal-injury-articles/third-party-construction-accident-claim-process/)
+      * [The Psychological Impact of Personal Injury](https://www.dupeelaw.com/new-york-personal-injury-articles/personal-injury-psychological-impact/)
+      * [The Role of an Independent Medical Examination in Your Personal Injury Claim](https://www.dupeelaw.com/new-york-personal-injury-articles/independent-medical-examinations/)
+      * [The Role of Comparative Negligence in New York Car Accident Cases](https://www.dupeelaw.com/new-york-personal-injury-articles/comparative-negligence-in-new-york-car-accidents/)
+      * [Tips for Documenting Your Personal Injury Case](https://www.dupeelaw.com/new-york-personal-injury-articles/documenting-your-personal-injury/)
+      * [Understanding NY Personal Injury Claims](https://www.dupeelaw.com/new-york-personal-injury-attorneys/understanding-personal-injury-claims-in-new-york/)
+      * [Understanding the “Grave Injury” Threshold in New York Workers’ Compensation Law](https://www.dupeelaw.com/new-york-personal-injury-attorneys/grave-injury-in-new-york-workers-compensation/)
+      * [Understanding the Statute of Limitations in a NY Lawsuit](https://www.dupeelaw.com/new-york-personal-injury-articles/ny-personal-injury-statute-of-limitations/)
+      * [What to Do After a Car Accident in New York](https://www.dupeelaw.com/new-york-personal-injury-articles/what-to-do-after-a-car-accident/)
+    * [New York Criminal Law Articles](https://www.dupeelaw.com/new-york-criminal-law-articles/)
+      * [Asset Forfeiture](https://www.dupeelaw.com/new-york-criminal-law-articles/asset-forfeiture/)
+      * [Basics of Gun Ownership in New York](https://www.dupeelaw.com/new-york-criminal-law-articles/the-basics-of-gun-ownership-in-new-york/)
+      * [Bench Warrants](https://www.dupeelaw.com/new-york-criminal-law-articles/bench-warrants/)
+      * [Consequences of a DWI Conviction in NY](https://www.dupeelaw.com/new-york-criminal-law-articles/consequences-of-dwi-conviction-in-new-york/)
+      * [Criminal Appeals](https://www.dupeelaw.com/new-york-criminal-law-articles/criminal-appeals/)
+      * [Criminal Law FAQs](https://www.dupeelaw.com/new-york-criminal-law-articles/criminal-law-faqs/)
+      * [Criminal Law Resources](https://www.dupeelaw.com/new-york-criminal-law-articles/criminal-law-resources/)
+      * [Criminal Penalties](https://www.dupeelaw.com/new-york-criminal-law-articles/new-york-criminal-penalty-sentences/)
+      * [Desk Appearance Tickets](https://www.dupeelaw.com/new-york-criminal-law-articles/desk-appearance-ticket/)
+      * [DMV Hearing](https://www.dupeelaw.com/new-york-criminal-law-articles/dmv-hearing/)
+      * [DWI/DWAI Penalty Chart](https://www.dupeelaw.com/criminal-defense-attorney/dwi-dwai-penalty-chart/)
+      * [DWI FAQs](https://www.dupeelaw.com/criminal-defense-attorney/dwi-faqs/)
+      * [Gun Owners in New York FAQ](https://www.dupeelaw.com/new-york-criminal-law-articles/gun-owners-in-new-york-faq/)
+      * [How New York’s Zero Tolerance Law Affects Underage Drivers](https://www.dupeelaw.com/new-york-criminal-law-articles/new-york-zero-tolerance-law/)
+      * [How Prior Convictions Affect DWI Sentencing in New York](https://www.dupeelaw.com/new-york-criminal-law-articles/how-prior-dwi-convictions-affect-sentencing/)
+      * [The Consequences of Refusing a Breathalyzer Test in New York](https://www.dupeelaw.com/new-york-criminal-law-articles/consequences-of-refusing-breathalyzer/)
+      * [The Process and Benefits of Criminal Record “Expungement” in New York](https://www.dupeelaw.com/new-york-criminal-law-articles/new-york-criminal-record-sealing-process/)
+      * [The Role of Plea Bargains in New York Criminal Cases](https://www.dupeelaw.com/new-york-criminal-law-articles/role-of-plea-bargains/)
+      * [Uninsured and Underinsured Motorist Coverage in a New York Car Accident Claim](https://www.dupeelaw.com/new-york-criminal-law-articles/uninsured-underinsured-motorist-coverage/)
+      * [Understanding ‘Desk Appearance Tickets’ and Their Implications](https://www.dupeelaw.com/new-york-criminal-law-articles/desk-appearance-tickets/)
+      * [What Is SUM Coverage in New York?](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+      * [What to Do if You Are Pulled Over for Suspected DWI in New York](https://www.dupeelaw.com/new-york-criminal-law-articles/what-to-do-if-pulled-over/)
+      * [Your Rights During a Police Stop or Search](https://www.dupeelaw.com/new-york-criminal-law-articles/your-rights-during-a-police-stop-or-search/)
+  * [Video Gallery](https://www.dupeelaw.com/video-gallery/)
+  * [Blog](https://www.dupeelaw.com/blog/)
+  * [Contact Us](https://www.dupeelaw.com/contact-us/)
+
+
+[Home](https://www.dupeelaw.com) / [New York Personal Injury Articles](https://www.dupeelaw.com/new-york-personal-injury-articles/) / What Is SUM Coverage in New York?
+# What Is SUM Coverage in New York?
+![Car shattered by a crash](https://www.dupeelaw.com/wp-content/uploads/2025/05/car-accident-200x200.jpeg)Auto insurance in New York is an alphabet soup of different types of coverage. First, there’s PIP, your no-fault Personal Injury Protection. Then there is liability insurance required to cover BIL (bodily injury liability) and PDL (property damage liability), which is essential if you cause serious injury to another person in a crash. Of course, you also need UM (uninsured motorist) and UIM (underinsured motorist) in case you get hit by a driver who is uninsured or doesn’t carry enough liability insurance to cover your serious injuries.
+New York auto insurance also includes yet another type of coverage to consider, and that’s SUM (supplementary uninsured/underinsured motorist). What is SUM, and how is it different from UM/UIM? Do you need it? Read on as we attempt to answer these questions. If you or a family member has been hurt in a crash in Orange County or the Hudson Valley, contact **Dupée & Monroe, P.C.**, to speak with our team of experienced [Goshen car accident lawyers](https://www.dupeelaw.com/personal-injury-attorney/car-accident/) with the skill and dedication to look out for your needs.
+## What Is SUM?
+Supplementary Uninsured/Underinsured Motorist (SUM) coverage is an optional add-on to your auto policy that significantly expands the protection of basic UM/UIM coverage. New York Insurance Law requires insurers to offer SUM coverage, but an insured may accept or decline it​. The legal basis for SUM is [Insurance Law §3420(f)(2)(A)](https://www.nysenate.gov/legislation/laws/ISC/3420), which directs policies to “provide supplementary uninsured/underinsured motorists insurance for bodily injury… up to the bodily injury liability limits of coverage… subject to a maximum of $250,000 per person and $500,000 per accident” or a $500,000 combined single limit. In other words, SUM lets you purchase UM/UIM coverage equal to your liability coverage (up to the statutory caps) far above the minimum required amount. For special vehicles (like stretch limos), even higher SUM limits apply.
+## How SUM expands protection
+Basic UM coverage in NY is capped at the minimums ($25,0000 per person and $50,000 per accident for injury, or $50,000 per person and $100,000 per accident for death) and applies only within the state. SUM goes beyond that. It covers not only injuries from uninsured motorists (like UM) but also from underinsured motorists – i.e. drivers whose liability limits are insufficient​. Critically, SUM is generally worded to apply anywhere in the United States (and Canada), not just in New York​. Thus, an accident in another state with a low-limit at-fault driver could be covered under your SUM endorsement even if basic UM/UIM would not.
+## Coverage limits and options
+With SUM, you can “buy up” to higher dollar limits. The endorsement allows additional coverage up to your policy’s BI liability limits (for example, $100,000/$300,000 or higher)​. The statutory ceiling is $250k/$500k per person/accident (or a single $500k limit), though insurers who offer high-limit umbrella policies may allow up to $1,500,000 for special cases​. Practically, if your liability is $100,000/$300,000, you could purchase SUM to those same levels. SUM must be offered at the time of sale or renewal, and the insurer must notify you in writing about the availability and limits of SUM coverage (at issuance and at least annually)​. You then may sign a written waiver to decline or choose lower SUM limits if you wish​.
+## Claim requirements for SUM
+SUM coverage only kicks in after all primary liability coverage is exhausted. This means you must first get the full payment under the at-fault driver’s policy, then under any UM/UIM limits you carry, before SUM pays. The law explicitly states that SUM will not pay unless “the limits of liability… are exhausted by payment of judgments or settlements.” Also, if the at-fault driver’s insurer delays or refuses to disclose its limits, the statute “tolls” the time for you to make a SUM claim. In practice, to claim SUM you’d document the at-fault insurer’s limits, settle or obtain a judgment for that amount, and then submit the excess loss to your SUM insurer.
+SUM is subject to the same non-stacking and priority rules as basic UM/UIM. You cannot combine (stack) SUM or UM limits from multiple vehicles to increase coverage​. If you’re covered by more than one policy (e.g. household members), you recover from the policy in priority (first, the policy for the vehicle you were in or named on, then others)​. Once you exhaust one policy, you may look to another – but the total recovery cannot exceed the highest applicable limit under any single policy.
+## Distinction from basic UM/UIM
+It’s important to emphasize that SUM coverage is optional. Mandatory UM/UIM coverage provides the statutory minimums, whereas SUM is additional. You will typically see SUM offered on your declaration page, with a statement explaining that it “…provides insurance protection… if [an insured] is injured” and the negligent motorist “has either no bodily injury or liability insurance, or less than the insurance you carry.” The form explains that “SUM coverage shall be equal to the level of the bodily injury liability coverage of your… policy unless you sign a waiver requesting lower coverage or declining coverage.”​ In other words, if you decline SUM, you drop back to only the minimum UM/UIM benefits. As this section of the law concludes, “You are urged to carefully consider this decision.”
+## Example of SUM in use
+Consider an insured who has only the minimum $25,000/$50,000 UM coverage. If that person is injured for, say, $100,000 by a hit-and-run driver, their insurer will pay only $25,000 under the UM policy. However, if a household member (e.g. a sibling) carries a separate policy with $100,000 SUM, the injured person can then claim under that SUM policy. As a Department of Financial Services advisory opinion illustrates, the victim could recover the remaining $75,000 from the SUM policy (for a total of $100,000)​. This example shows how SUM effectively raises the available coverage above the bare minimum.
+## Contact Dupée & Monroe to Maximize Your Compensation After an Orange County Car Accident
+Auto insurance requirements and options can be confusing, but the many variations only go to show that crash victims have many options after an accident. A knowledgeable and experienced New York car accident lawyer will be able to review your situation, explain your options, and help you get the most compensation available. For help after a car accident in Orange County or the Hudson Valley, [contact](https://www.dupeelaw.com/contact-us/) Dupée & Monroe, P.C., in Goshen for a free consultation.
+Share This Page:
+![Facebook](https://d78c52a599aaa8c95ebc-9d8e71b4cb418bfe1b178f82d9996947.ssl.cf1.rackcdn.com/dsk_sharing/icons/ftlg_16.png) ![Twitter](https://d78c52a599aaa8c95ebc-9d8e71b4cb418bfe1b178f82d9996947.ssl.cf1.rackcdn.com/dsk_sharing/icons/ftlg_16.png) ![LinkedIn](https://d78c52a599aaa8c95ebc-9d8e71b4cb418bfe1b178f82d9996947.ssl.cf1.rackcdn.com/dsk_sharing/icons/ftlg_16.png)
+## Schedule A Free Consulation
+By submitting this form I acknowledge that contacting this law firm through this website does not create an attorney-client relationship, and any information I send is not protected by attorney-client privilege.
+protected by reCAPTCHA [Privacy](https://www.google.com/intl/en/policies/privacy/) - [Terms](https://www.google.com/intl/en/policies/terms/)
+##  Results That MatterMillions Recovered For Clients
+$30 _Million_
+Sexual Abuse
+$4.275 _Million_
+Road Defect
+$4 _Million_
+Auto Accident
+$3.5 _Million_
+Sexual Assault
+$1.75 _Million_
+Construction Accident
+$1.6 _Million_
+Construction Accident
+$1.4 _Million_
+Wrongful Death
+[ ![Dupée & Monroe, P.C., Attorneys at Law](https://www.dupeelaw.com/wp-content/themes/dm_2023/img/logos/main.webp)](https://www.dupeelaw.com/)
+_Location_ 211 Main Street, P.O. Box 470  
+Goshen, NY 10924 
+_Phone_[845-294-8900](tel:+18452948900)
+[ ![Facebook](https://www.dupeelaw.com/wp-content/themes/dm_2023/img/icons/icon-social.webp)](https://www.facebook.com/dupeemonroe) [ ![LinkedIn](https://www.dupeelaw.com/wp-content/themes/dm_2023/img/icons/icon-social.webp)](https://www.linkedin.com/company/dup%C3%A9e-&-monroe-p-c-/)
+  * Now Accepted
+  * ![Credit Card Icons](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+
+
+![Designed and Powered by NextClient](https://www.dupeelaw.com/new-york-personal-injury-articles/what-is-sum/)
+© 2023 - 2025 Dupée & Monroe, P.C.,   
+Attorneys at Law. All rights reserved.  
+Custom WebShop™ law firm website by [NextClient.com](https://www.nextclient.com/).
+Attorney Advertising
+  * [Site Map](https://www.dupeelaw.com/site-map/)
+  * [Disclaimer](https://www.dupeelaw.com/disclaimer/)
+  * [Contact Us](https://www.dupeelaw.com/contact-us/)
+
+
+BESbswyBESbswyBESbswyBESbswyBESbswyBESbswyBESbswyBESbswyBESbswy

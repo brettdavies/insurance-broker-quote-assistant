@@ -1,0 +1,455 @@
+{
+  "domain": "states.aarp.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.575202",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 36,
+      "frequency": 36.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 108,
+      "frequency": 108.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 336,
+      "frequency": 336.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 133,
+      "frequency": 133.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 5,
+      "frequency": 5.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "aem-GridColumn",
+      "count": 279
+    },
+    {
+      "class": "aem-GridColumn--default--12",
+      "count": 222
+    },
+    {
+      "class": "aem-Grid",
+      "count": 118
+    },
+    {
+      "class": "cmp-text",
+      "count": 118
+    },
+    {
+      "class": "aem-Grid--12",
+      "count": 116
+    },
+    {
+      "class": "aem-Grid--default--12",
+      "count": 116
+    },
+    {
+      "class": "text",
+      "count": 116
+    },
+    {
+      "class": "responsivegrid",
+      "count": 114
+    },
+    {
+      "class": "banner-rewards-moa-container",
+      "count": 112
+    },
+    {
+      "class": "banner-moa-locked",
+      "count": 112
+    },
+    {
+      "class": "js-banner-aarpMoa",
+      "count": 112
+    },
+    {
+      "class": "banner-aarpMoa",
+      "count": 112
+    },
+    {
+      "class": "js-banner-aarpRewards",
+      "count": 112
+    },
+    {
+      "class": "banner-aarpRewards",
+      "count": 112
+    },
+    {
+      "class": "articleimage",
+      "count": 64
+    },
+    {
+      "class": "image",
+      "count": 64
+    },
+    {
+      "class": "cmp-image",
+      "count": 63
+    },
+    {
+      "class": "uxdia-c-image",
+      "count": 63
+    },
+    {
+      "class": "uxdia-c-spinner",
+      "count": 63
+    },
+    {
+      "class": "cmp-image__picture",
+      "count": 63
+    },
+    {
+      "class": "cmp-image__picture@tablet",
+      "count": 63
+    },
+    {
+      "class": "cmp-image__image",
+      "count": 63
+    },
+    {
+      "class": "cmp-image__image@tablet",
+      "count": 63
+    },
+    {
+      "class": "articlelazy",
+      "count": 62
+    },
+    {
+      "class": "uxdia-c-button",
+      "count": 62
+    },
+    {
+      "class": "featuredTile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile-wrapper",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile-wrapper@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile-container-link",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__container",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__container@tablet",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__container@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__image-wrapper",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__image-wrapper@tablet",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__image-wrapper@mobile",
+      "count": 60
+    },
+    {
+      "class": "sharp-c-credit-photo-wrapper",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__image",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__article-content-wrapper",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper@tablet",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__content-wrapper@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title@tablet",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-u-title-card",
+      "count": 60
+    },
+    {
+      "class": "uxdia-u-title-card@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link@tablet",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile__title_link@mobile",
+      "count": 60
+    },
+    {
+      "class": "uxdia-c-featured-tile_mb-card",
+      "count": 60
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "LNK_CLK-CLOSE_MENU",
+      "count": 17
+    },
+    {
+      "id": "2",
+      "count": 17
+    },
+    {
+      "id": "1",
+      "count": 17
+    },
+    {
+      "id": "3",
+      "count": 8
+    },
+    {
+      "id": "SEARCH-BTN-CLK-SEARCH-MODAL-OPEN",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-HEALTH-HEARING_CENTER",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MAKING_CONNECTIONS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MENTAL_HEALTH_RESOURCES",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-HEALTH-MOA_SMART_GUIDE_GOOD_NIGHT_SLEEP",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-MONEY-REPORT_SCAMS_IN_YOUR_AREA",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-MONEY-GIVING_QUIZ",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-MONEY-MONEY_MAP",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-MONEY-MOA-MAKE_APPLIANCES_LAST",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-WORK-INDEED",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-WORK-AARP_SKILLS_BUILDER",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-WORK-BOOST_PART_TIME_JOBS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-WORK-ENHANCE_YOUR_JOB_SEARCH",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-ADVOCACY-SAVING_RX_DOLLARS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-ADVOCACY-PROTECT_SOCIAL_SECURITY",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-ADVOCACY-ADVOCATING_FOR_STRONG_PROGRAMS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-ADVOCACY-SUPPORTING_FAMILY_CAREGIVERS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-SOCIAL_SECURITY-WEBINARS",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-SOCIAL_SECURITY-WHEN_TO_START_SOCIAL_SECURITY",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-SOCIAL_SECURITY-Top_Social_Security_FAQs",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-SOCIAL_SECURITY-BENEFITS_CALCULATOR",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK--MEDICARE-ENROLLMENT-GUIDE",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK--MEDICARE-QA-TOOL",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-MEDICARE_GETTING_HELP",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-ADVOCACY",
+      "count": 3
+    },
+    {
+      "id": "TILE_CLK-CAREGIVING-UNDERSTANDING_LTC_INSURANCE",
+      "count": 3
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

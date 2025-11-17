@@ -1,0 +1,454 @@
+{
+  "domain": "completemarkets.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:18.437216",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 88,
+      "frequency": 88.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "cm-nav--primary__toggle",
+      "count": 63
+    },
+    {
+      "class": "jq-close",
+      "count": 22
+    },
+    {
+      "class": "cm-btn",
+      "count": 20
+    },
+    {
+      "class": "cm-radial",
+      "count": 19
+    },
+    {
+      "class": "cm-btn--sml",
+      "count": 19
+    },
+    {
+      "class": "ajaxOverlay",
+      "count": 14
+    },
+    {
+      "class": "ajaxLoader",
+      "count": 14
+    },
+    {
+      "class": "cm-btn--primary",
+      "count": 14
+    },
+    {
+      "class": "cm-grid__col",
+      "count": 13
+    },
+    {
+      "class": "mb10",
+      "count": 12
+    },
+    {
+      "class": "ValidatorAdapter",
+      "count": 12
+    },
+    {
+      "class": "ValidatorAdapterImage",
+      "count": 12
+    },
+    {
+      "class": "rtsLI",
+      "count": 12
+    },
+    {
+      "class": "rtsLink",
+      "count": 12
+    },
+    {
+      "class": "rtsOut",
+      "count": 12
+    },
+    {
+      "class": "rtsIn",
+      "count": 12
+    },
+    {
+      "class": "rtsTxt",
+      "count": 12
+    },
+    {
+      "class": "cm-input",
+      "count": 11
+    },
+    {
+      "class": ".remodal",
+      "count": 11
+    },
+    {
+      "class": "cm-topright",
+      "count": 11
+    },
+    {
+      "class": "cm-offright--tny",
+      "count": 11
+    },
+    {
+      "class": "exit-popup-button",
+      "count": 11
+    },
+    {
+      "class": "float-right",
+      "count": 11
+    },
+    {
+      "class": "mr10",
+      "count": 11
+    },
+    {
+      "class": "iframe-scroll",
+      "count": 11
+    },
+    {
+      "class": "iframe-ajax-loader",
+      "count": 11
+    },
+    {
+      "class": "jq-popup-window",
+      "count": 11
+    },
+    {
+      "class": "no-thanks",
+      "count": 11
+    },
+    {
+      "class": "jq_refresh_parent_window_from_popup",
+      "count": 11
+    },
+    {
+      "class": "jq_newpopup_parent_window_from_popup",
+      "count": 11
+    },
+    {
+      "class": "jq_close_popup_event",
+      "count": 11
+    },
+    {
+      "class": "jq-progress-bar",
+      "count": 11
+    },
+    {
+      "class": "cm-modal__content",
+      "count": 11
+    },
+    {
+      "class": "level0",
+      "count": 10
+    },
+    {
+      "class": "cm-spc--bottom--sml",
+      "count": 10
+    },
+    {
+      "class": "js-tabmark",
+      "count": 9
+    },
+    {
+      "class": "cm-input--sml",
+      "count": 8
+    },
+    {
+      "class": "cm-field",
+      "count": 8
+    },
+    {
+      "class": "col-md-6",
+      "count": 8
+    },
+    {
+      "class": "cm-footer__list__link",
+      "count": 7
+    },
+    {
+      "class": "cm-group",
+      "count": 7
+    },
+    {
+      "class": "cm-modal__footer",
+      "count": 7
+    },
+    {
+      "class": "input-form",
+      "count": 7
+    },
+    {
+      "class": "material-icons",
+      "count": 6
+    },
+    {
+      "class": "cm-grid__row",
+      "count": 6
+    },
+    {
+      "class": "cm-spc--bottom--xsml",
+      "count": 6
+    },
+    {
+      "class": "cm-input__label",
+      "count": 6
+    },
+    {
+      "class": "membership-editor-validator",
+      "count": 6
+    },
+    {
+      "class": "col-sm-12",
+      "count": 6
+    },
+    {
+      "class": "cm-footer__list__item",
+      "count": 6
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_Head1",
+      "count": 1
+    },
+    {
+      "id": "aspnetForm",
+      "count": 1
+    },
+    {
+      "id": "__WPPS",
+      "count": 1
+    },
+    {
+      "id": "__EVENTTARGET",
+      "count": 1
+    },
+    {
+      "id": "__EVENTARGUMENT",
+      "count": 1
+    },
+    {
+      "id": "__LASTFOCUS",
+      "count": 1
+    },
+    {
+      "id": "__VIEWSTATE_WAOKEY",
+      "count": 1
+    },
+    {
+      "id": "__VIEWSTATE",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_wpm___Drag",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_toolbox_content",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cpeToolbox_ClientState",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_HyperLink1",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_imgLogoIcon",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_imgLogoFull",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_pnlSearch",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_txtSearch",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_btnSearch",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_btnLoginRegister",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_userAvatar_rowGravatar",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_userAvatar_gravatar",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_userAvatar_pnlBtnBrowse",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_userAvatar_labInvalidFile",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_lblUserFirstName",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_ctlMemership_lnkRegister",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_ctlMemership_loginStatus1_btnLink",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_ctlMenu_btnLoginRegisterMobile",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_ctlMenu_repeater",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_smallheader_hfSearchValue",
+      "count": 1
+    },
+    {
+      "id": "ctl00_ctl00_ctl01_ctl00_cp_cp_cp_cp_popup_remodalDiv",
+      "count": 1
+    },
+    {
+      "id": "modal_ctl00_ctl00_ctl01_ctl00_cp_cp_cp_cp_popup",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer",
+      "nav"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

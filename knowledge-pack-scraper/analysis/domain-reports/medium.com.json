@@ -1,0 +1,453 @@
+{
+  "domain": "medium.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:20.183271",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 11,
+      "frequency": 11.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 17,
+      "frequency": 17.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "m",
+      "count": 207
+    },
+    {
+      "class": "ac",
+      "count": 203
+    },
+    {
+      "class": "bg",
+      "count": 118
+    },
+    {
+      "class": "r",
+      "count": 111
+    },
+    {
+      "class": "b",
+      "count": 110
+    },
+    {
+      "class": "ab",
+      "count": 84
+    },
+    {
+      "class": "aq",
+      "count": 84
+    },
+    {
+      "class": "bl",
+      "count": 79
+    },
+    {
+      "class": "ao",
+      "count": 76
+    },
+    {
+      "class": "eb",
+      "count": 67
+    },
+    {
+      "class": "ah",
+      "count": 67
+    },
+    {
+      "class": "am",
+      "count": 64
+    },
+    {
+      "class": "ap",
+      "count": 64
+    },
+    {
+      "class": "ar",
+      "count": 64
+    },
+    {
+      "class": "aj",
+      "count": 64
+    },
+    {
+      "class": "al",
+      "count": 64
+    },
+    {
+      "class": "an",
+      "count": 64
+    },
+    {
+      "class": "bi",
+      "count": 64
+    },
+    {
+      "class": "ed",
+      "count": 63
+    },
+    {
+      "class": "ai",
+      "count": 61
+    },
+    {
+      "class": "as",
+      "count": 61
+    },
+    {
+      "class": "at",
+      "count": 61
+    },
+    {
+      "class": "fo",
+      "count": 61
+    },
+    {
+      "class": "bf",
+      "count": 61
+    },
+    {
+      "class": "bn",
+      "count": 57
+    },
+    {
+      "class": "fr",
+      "count": 47
+    },
+    {
+      "class": "au",
+      "count": 44
+    },
+    {
+      "class": "av",
+      "count": 44
+    },
+    {
+      "class": "ec",
+      "count": 42
+    },
+    {
+      "class": "mv",
+      "count": 38
+    },
+    {
+      "class": "fw",
+      "count": 37
+    },
+    {
+      "class": "hl",
+      "count": 35
+    },
+    {
+      "class": "ga",
+      "count": 34
+    },
+    {
+      "class": "zt",
+      "count": 33
+    },
+    {
+      "class": "zu",
+      "count": 33
+    },
+    {
+      "class": "zw",
+      "count": 33
+    },
+    {
+      "class": "zy",
+      "count": 33
+    },
+    {
+      "class": "de",
+      "count": 32
+    },
+    {
+      "class": "he",
+      "count": 32
+    },
+    {
+      "class": "bh",
+      "count": 31
+    },
+    {
+      "class": "by",
+      "count": 31
+    },
+    {
+      "class": "ne",
+      "count": 31
+    },
+    {
+      "class": "ni",
+      "count": 31
+    },
+    {
+      "class": "nm",
+      "count": 31
+    },
+    {
+      "class": "ci",
+      "count": 30
+    },
+    {
+      "class": "acd",
+      "count": 30
+    },
+    {
+      "class": "hm",
+      "count": 29
+    },
+    {
+      "class": "cv",
+      "count": 27
+    },
+    {
+      "class": "nu",
+      "count": 27
+    },
+    {
+      "class": "nw",
+      "count": 27
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "post-preview",
+      "count": 10
+    },
+    {
+      "id": "response-filled-16px-desc",
+      "count": 6
+    },
+    {
+      "id": "headerSignUpButton",
+      "count": 2
+    },
+    {
+      "id": "headerSignInButton",
+      "count": 2
+    },
+    {
+      "id": "footerClapButton",
+      "count": 2
+    },
+    {
+      "id": "glyph_preload_link",
+      "count": 1
+    },
+    {
+      "id": "glyph_link",
+      "count": 1
+    },
+    {
+      "id": "googleidentityservice_button_styles",
+      "count": 1
+    },
+    {
+      "id": "root",
+      "count": 1
+    },
+    {
+      "id": "headerMediumLogo",
+      "count": 1
+    },
+    {
+      "id": "wordmark-medium-desc",
+      "count": 1
+    },
+    {
+      "id": "headerSearchInput",
+      "count": 1
+    },
+    {
+      "id": "headerWriteButton",
+      "count": 1
+    },
+    {
+      "id": "headerSearchButton",
+      "count": 1
+    },
+    {
+      "id": "headerUserIcon",
+      "count": 1
+    },
+    {
+      "id": "4add",
+      "count": 1
+    },
+    {
+      "id": "storyTitle",
+      "count": 1
+    },
+    {
+      "id": "authorPhoto",
+      "count": 1
+    },
+    {
+      "id": "authorName",
+      "count": 1
+    },
+    {
+      "id": "storyReadTime",
+      "count": 1
+    },
+    {
+      "id": "storyPublishDate",
+      "count": 1
+    },
+    {
+      "id": "headerClapButton",
+      "count": 1
+    },
+    {
+      "id": "headerBookmarkButton",
+      "count": 1
+    },
+    {
+      "id": "audioPlayButton",
+      "count": 1
+    },
+    {
+      "id": "headerSocialShareButton",
+      "count": 1
+    },
+    {
+      "id": "d255",
+      "count": 1
+    },
+    {
+      "id": "ba5a",
+      "count": 1
+    },
+    {
+      "id": "4e74",
+      "count": 1
+    },
+    {
+      "id": "2b3f",
+      "count": 1
+    },
+    {
+      "id": "5556",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "footer"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "low"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_p1emjf5oscqxvc3djgf6tla4",
+  "search_id": "search_jc2324zkwmcdjqvmh0mv8bsr",
+  "timestamp": "2025-11-07T12:32:59.224011",
+  "startedAt": "2025-11-07T12:32:59.224011",
+  "completedAt": "2025-11-07T12:33:01.259387",
+  "durationSeconds": 2.04,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"required disclosures\" insurance California auto",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"required disclosures\" insurance California auto",
+      "show_strict_warning": false,
+      "cleaned": "required disclosures insurance California auto",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "required disclosures insurance California auto"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Required Landlord Disclosure to Tell Your Tenants",
+          "url": "https://www.steadily.com/blog/landlord-disclosure-requirements",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Some of these local governments across the country require landlords to disclose these local rent control laws to their tenants. The four largest states in the US are California, Texas, New York, and Florida. The combined populations of these states represent a third of the population of the entire US. We\u2019re including the specific disclosure requirements of each of these states here.",
+          "page_age": "2025-09-30T00:00:00",
+          "profile": {
+            "name": "Steadily",
+            "url": "https://www.steadily.com/blog/landlord-disclosure-requirements",
+            "long_name": "steadily.com",
+            "img": "https://imgs.search.brave.com/-wNW9UvWDf3vgV8syFio0pZmYe75bqEDa1XLBEz2GLc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJjZTVhNzRj/NTg1NDAzMmE1ZDgw/NTYwOTlmMTM5ZDZj/MDUzOGY4ZTI2Mjgw/MDllYjg2N2Q1MGNl/YTI4ZTY1Ni93d3cu/c3RlYWRpbHkuY29t/Lw"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "generic",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "steadily.com",
+            "hostname": "www.steadily.com",
+            "favicon": "https://imgs.search.brave.com/-wNW9UvWDf3vgV8syFio0pZmYe75bqEDa1XLBEz2GLc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjJjZTVhNzRj/NTg1NDAzMmE1ZDgw/NTYwOTlmMTM5ZDZj/MDUzOGY4ZTI2Mjgw/MDllYjg2N2Q1MGNl/YTI4ZTY1Ni93d3cu/c3RlYWRpbHkuY29t/Lw",
+            "path": "  \u203a home  \u203a blog  \u203a required landlord disclosure to tell your tenants"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/Nv5tWSD-vw_rnqM6KXPhpi0eps0VvJfKu9EF-cxeg-s/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/MjAwM2ExMzVjMjYx/M2RiNDI5MmJjMDQv/Njc5YmYwNjVjNjhl/ZTNjMDU4NzllOWVm/XzIwMjUwMTMwVDA4/NDUtYmQxYzE2MjYt/OTFlYS00Yzg1LTg4/OTgtNTcyNTA0ZDJh/MDA1LndlYnA",
+            "original": "https://cdn.prod.website-files.com/62003a135c2613db4292bc04/679bf065c68ee3c05879e9ef_20250130T0845-bd1c1626-91ea-4c85-8898-572504d2a005.webp",
+            "logo": false
+          },
+          "age": "September 30, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

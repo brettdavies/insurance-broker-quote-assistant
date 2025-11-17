@@ -1,0 +1,456 @@
+{
+  "domain": "roadreview.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:26.407240",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 43,
+      "frequency": 43.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "menu",
+      "count": 63,
+      "frequency": 63.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item",
+      "count": 58
+    },
+    {
+      "class": "nav_item_wrap",
+      "count": 58
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 56
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 56
+    },
+    {
+      "class": "nav_title",
+      "count": 54
+    },
+    {
+      "class": "menu-item-depth-1",
+      "count": 51
+    },
+    {
+      "class": "cmsmasters_column",
+      "count": 34
+    },
+    {
+      "class": "cmsmasters_featured_block",
+      "count": 32
+    },
+    {
+      "class": "featured_block_inner",
+      "count": 32
+    },
+    {
+      "class": "featured_block_text",
+      "count": 32
+    },
+    {
+      "class": "cmsmasters_row_fullwidth",
+      "count": 26
+    },
+    {
+      "class": "cmsmasters_color_scheme_default",
+      "count": 20
+    },
+    {
+      "class": "cmsmasters_row",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_top_default",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_bot_default",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_outer_parent",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_outer",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_inner",
+      "count": 19
+    },
+    {
+      "class": "cmsmasters_row_margin",
+      "count": 19
+    },
+    {
+      "class": "one_half",
+      "count": 15
+    },
+    {
+      "class": "cmsmasters_row_columns_behavior",
+      "count": 14
+    },
+    {
+      "class": "cmsmasters_row_no_margin",
+      "count": 10
+    },
+    {
+      "class": "one_fourth",
+      "count": 10
+    },
+    {
+      "class": "cmsmasters_heading_wrap",
+      "count": 10
+    },
+    {
+      "class": "cmsmasters_heading",
+      "count": 10
+    },
+    {
+      "class": "cmsmasters_11",
+      "count": 9
+    },
+    {
+      "class": "one_first",
+      "count": 9
+    },
+    {
+      "class": "cmsmasters_icon_wrap",
+      "count": 8
+    },
+    {
+      "class": "cmsmasters_simple_icon",
+      "count": 8
+    },
+    {
+      "class": "cmsmasters_heading_align_center",
+      "count": 8
+    },
+    {
+      "class": "size-full",
+      "count": 7
+    },
+    {
+      "class": "cmsmasters_1212",
+      "count": 7
+    },
+    {
+      "class": "cmsmasters_row_boxed",
+      "count": 6
+    },
+    {
+      "class": "aligncenter",
+      "count": 6
+    },
+    {
+      "class": "cmsmasters_button",
+      "count": 5
+    },
+    {
+      "class": "button_wrap",
+      "count": 4
+    },
+    {
+      "class": "cmsmasters-icon-location-3",
+      "count": 4
+    },
+    {
+      "class": "widget_text",
+      "count": 4
+    },
+    {
+      "class": "widget",
+      "count": 4
+    },
+    {
+      "class": "widget_custom_html",
+      "count": 4
+    },
+    {
+      "class": "textwidget",
+      "count": 4
+    },
+    {
+      "class": "custom-html-widget",
+      "count": 4
+    },
+    {
+      "class": "menu-item-depth-0",
+      "count": 3
+    },
+    {
+      "class": "cmsmasters_text",
+      "count": 3
+    },
+    {
+      "class": "cmsmasters_custom_open_hours",
+      "count": 3
+    },
+    {
+      "class": "widgettitle",
+      "count": 3
+    },
+    {
+      "class": "cmsmasters_theme_icon_resp_nav",
+      "count": 2
+    },
+    {
+      "class": "menu-header-menu-container",
+      "count": 2
+    },
+    {
+      "class": "menu-item-27524",
+      "count": 2
+    },
+    {
+      "class": "log-in-link",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "cmsmasters_button_xm6n1u7ni",
+      "count": 3
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wp-block-library-css",
+      "count": 1
+    },
+    {
+      "id": "classic-theme-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "global-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "wpautoterms_css-css",
+      "count": 1
+    },
+    {
+      "id": "ct_public_css-css",
+      "count": 1
+    },
+    {
+      "id": "ct_email_decoder_css-css",
+      "count": 1
+    },
+    {
+      "id": "learndash_quiz_front_css-css",
+      "count": 1
+    },
+    {
+      "id": "learndash_style-css",
+      "count": 1
+    },
+    {
+      "id": "sfwd_front_css-css",
+      "count": 1
+    },
+    {
+      "id": "jquery-dropdown-css-css",
+      "count": 1
+    },
+    {
+      "id": "learndash_pager_css-css",
+      "count": 1
+    },
+    {
+      "id": "learndash_template_style_css-css",
+      "count": 1
+    },
+    {
+      "id": "learndash_lesson_video-css",
+      "count": 1
+    },
+    {
+      "id": "uncannyowl-learndash-toolkit-free-css",
+      "count": 1
+    },
+    {
+      "id": "woocommerce-layout-css",
+      "count": 1
+    },
+    {
+      "id": "woocommerce-smallscreen-css",
+      "count": 1
+    },
+    {
+      "id": "woocommerce-general-css",
+      "count": 1
+    },
+    {
+      "id": "woocommerce-inline-inline-css",
+      "count": 1
+    },
+    {
+      "id": "h5p-plugin-styles-css",
+      "count": 1
+    },
+    {
+      "id": "if-menu-site-css-css",
+      "count": 1
+    },
+    {
+      "id": "wc-gateway-ppec-frontend-css",
+      "count": 1
+    },
+    {
+      "id": "brands-styles-css",
+      "count": 1
+    },
+    {
+      "id": "font-awesome-css",
+      "count": 1
+    },
+    {
+      "id": "font-awesome-inline-css",
+      "count": 1
+    },
+    {
+      "id": "driving-school-style-css",
+      "count": 1
+    },
+    {
+      "id": "driving-school-design-style-css",
+      "count": 1
+    },
+    {
+      "id": "driving-school-adapt-css",
+      "count": 1
+    },
+    {
+      "id": "driving-school-retina-css",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": null,
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"sidebar\"], [id*=\"sidebar\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "domain": "biz.libretexts.org",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.923281",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 7,
+      "frequency": 7.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 39,
+      "frequency": 39.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 112,
+      "frequency": 112.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 4,
+      "frequency": 4.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 10,
+      "frequency": 10.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "MathJax",
+      "count": 95
+    },
+    {
+      "class": "CtxtMenu_Attached_0",
+      "count": 95
+    },
+    {
+      "class": "material-symbols-outlined",
+      "count": 17
+    },
+    {
+      "class": "toolbar-btn",
+      "count": 14
+    },
+    {
+      "class": "mt-icon-article-topic",
+      "count": 10
+    },
+    {
+      "class": "internal",
+      "count": 9
+    },
+    {
+      "class": "toolbar-inner",
+      "count": 9
+    },
+    {
+      "class": "mt-section",
+      "count": 8
+    },
+    {
+      "class": "editable",
+      "count": 8
+    },
+    {
+      "class": "mt-tag-link",
+      "count": 8
+    },
+    {
+      "class": "elm-nav",
+      "count": 7
+    },
+    {
+      "class": "elm-nav-container",
+      "count": 7
+    },
+    {
+      "class": "lt-biz-11170",
+      "count": 7
+    },
+    {
+      "class": "header-btn",
+      "count": 6
+    },
+    {
+      "class": "menu-label",
+      "count": 6
+    },
+    {
+      "class": "ui-button-icon",
+      "count": 6
+    },
+    {
+      "class": "mt-list-topics",
+      "count": 6
+    },
+    {
+      "class": "mt-listing-detailed",
+      "count": 6
+    },
+    {
+      "class": "mt-listing-detailed-title",
+      "count": 6
+    },
+    {
+      "class": "mt-listing-detailed-overview",
+      "count": 6
+    },
+    {
+      "class": "hidden",
+      "count": 5
+    },
+    {
+      "class": "link-https",
+      "count": 5
+    },
+    {
+      "class": "bee-readability",
+      "count": 5
+    },
+    {
+      "class": "toolbar-item",
+      "count": 5
+    },
+    {
+      "class": "toolbar-top",
+      "count": 5
+    },
+    {
+      "class": "has-submenu",
+      "count": 5
+    },
+    {
+      "class": "sub-nav",
+      "count": 5
+    },
+    {
+      "class": "subnav-group",
+      "count": 5
+    },
+    {
+      "class": "mt-classification",
+      "count": 5
+    },
+    {
+      "class": "mt-classification-label",
+      "count": 5
+    },
+    {
+      "class": "mt-classification-value",
+      "count": 5
+    },
+    {
+      "class": "settings-section",
+      "count": 4
+    },
+    {
+      "class": "setting",
+      "count": 4
+    },
+    {
+      "class": "setting-title",
+      "count": 4
+    },
+    {
+      "class": "reset",
+      "count": 4
+    },
+    {
+      "class": "bee-btn-render",
+      "count": 4
+    },
+    {
+      "class": "bee-btn-label",
+      "count": 4
+    },
+    {
+      "class": "mt-icon-article-category",
+      "count": 4
+    },
+    {
+      "class": "mt-feedback-rating-item",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing-detailed",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing-link",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing-link-icon",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing-link-text",
+      "count": 4
+    },
+    {
+      "class": "mt-related-listing-link-overview",
+      "count": 4
+    },
+    {
+      "class": "visually-hidden",
+      "count": 3
+    },
+    {
+      "class": "btn",
+      "count": 3
+    },
+    {
+      "class": "btn-sm",
+      "count": 3
+    },
+    {
+      "class": "btn-link",
+      "count": 3
+    },
+    {
+      "class": "mt-label",
+      "count": 3
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "0",
+      "count": 95
+    },
+    {
+      "id": "textSize",
+      "count": 3
+    },
+    {
+      "id": "readability",
+      "count": 2
+    },
+    {
+      "id": "mt-screen-css",
+      "count": 1
+    },
+    {
+      "id": "mt-print-css",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-draft",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-editor",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-file-uploader",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-grid-widget",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-tree-widget",
+      "count": 1
+    },
+    {
+      "id": "mt-localizations-dialog",
+      "count": 1
+    },
+    {
+      "id": "mt-global-settings",
+      "count": 1
+    },
+    {
+      "id": "mt-fixed-header-styles",
+      "count": 1
+    },
+    {
+      "id": "mathjax-script",
+      "count": 1
+    },
+    {
+      "id": "MJX-SVG-styles",
+      "count": 1
+    },
+    {
+      "id": "readerview_wrapper",
+      "count": 1
+    },
+    {
+      "id": "readerview",
+      "count": 1
+    },
+    {
+      "id": "toggle_ocm",
+      "count": 1
+    },
+    {
+      "id": "toc-btn-label",
+      "count": 1
+    },
+    {
+      "id": "toogle_search",
+      "count": 1
+    },
+    {
+      "id": "toggle_tools",
+      "count": 1
+    },
+    {
+      "id": "open_homework",
+      "count": 1
+    },
+    {
+      "id": "exit_reader",
+      "count": 1
+    },
+    {
+      "id": "offcanvas-menu",
+      "count": 1
+    },
+    {
+      "id": "toc",
+      "count": 1
+    },
+    {
+      "id": "siteMenu",
+      "count": 1
+    },
+    {
+      "id": "search",
+      "count": 1
+    },
+    {
+      "id": "book_search",
+      "count": 1
+    },
+    {
+      "id": "searchBar",
+      "count": 1
+    },
+    {
+      "id": "searchButton",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

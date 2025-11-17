@@ -1,0 +1,455 @@
+{
+  "domain": "baynews9.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:17.815745",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 16,
+      "frequency": 16.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ad",
+      "count": 25,
+      "frequency": 25.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 192,
+      "frequency": 192.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "menu-item-divider",
+      "count": 180
+    },
+    {
+      "class": "parbase",
+      "count": 20
+    },
+    {
+      "class": "empire-link-list",
+      "count": 19
+    },
+    {
+      "class": "list",
+      "count": 19
+    },
+    {
+      "class": "share-bar-link",
+      "count": 14
+    },
+    {
+      "class": "empire-mobile-divider",
+      "count": 12
+    },
+    {
+      "class": "empire-type-megamenu-bar",
+      "count": 10
+    },
+    {
+      "class": "mobile-uri",
+      "count": 9
+    },
+    {
+      "class": "ticker-item",
+      "count": 8
+    },
+    {
+      "class": "alert-bar__li",
+      "count": 8
+    },
+    {
+      "class": "alert-bar__text-box",
+      "count": 8
+    },
+    {
+      "class": "alert-bar__title",
+      "count": 8
+    },
+    {
+      "class": "alert-bar__text",
+      "count": 8
+    },
+    {
+      "class": "alert-bar__li--custom",
+      "count": 7
+    },
+    {
+      "class": "desktop-uri",
+      "count": 7
+    },
+    {
+      "class": "newpar",
+      "count": 5
+    },
+    {
+      "class": "new",
+      "count": 5
+    },
+    {
+      "class": "section",
+      "count": 5
+    },
+    {
+      "class": "par",
+      "count": 5
+    },
+    {
+      "class": "iparys_inherited",
+      "count": 5
+    },
+    {
+      "class": "row",
+      "count": 5
+    },
+    {
+      "class": "col-xs-12",
+      "count": 5
+    },
+    {
+      "class": "btn",
+      "count": 4
+    },
+    {
+      "class": "icon-bar",
+      "count": 3
+    },
+    {
+      "class": "recent-activity-list-span",
+      "count": 3
+    },
+    {
+      "class": "empire-mobile-item-list",
+      "count": 3
+    },
+    {
+      "class": "ip-location-info",
+      "count": 3
+    },
+    {
+      "class": "info1",
+      "count": 3
+    },
+    {
+      "class": "title-bar-col",
+      "count": 2
+    },
+    {
+      "class": "continue-link",
+      "count": 2
+    },
+    {
+      "class": "header_weather",
+      "count": 2
+    },
+    {
+      "class": "wx-icon",
+      "count": 2
+    },
+    {
+      "class": "icon-wxf-30",
+      "count": 2
+    },
+    {
+      "class": "tempF",
+      "count": 2
+    },
+    {
+      "class": "region-splitter",
+      "count": 2
+    },
+    {
+      "class": "empire-nav-wrapper",
+      "count": 2
+    },
+    {
+      "class": "empire-nav-item-list",
+      "count": 2
+    },
+    {
+      "class": "icon-search-gray",
+      "count": 2
+    },
+    {
+      "class": "empire-header-search-field",
+      "count": 2
+    },
+    {
+      "class": "my-account",
+      "count": 2
+    },
+    {
+      "class": "sign-in-label",
+      "count": 2
+    },
+    {
+      "class": "recent-activity-mobile",
+      "count": 2
+    },
+    {
+      "class": "empire-type-clickthrough-bar",
+      "count": 2
+    },
+    {
+      "class": "ip-regionalization-modal",
+      "count": 2
+    },
+    {
+      "class": "ip-regional",
+      "count": 2
+    },
+    {
+      "class": "ip-regional-modal-content",
+      "count": 2
+    },
+    {
+      "class": "ip-modal-heading",
+      "count": 2
+    },
+    {
+      "class": "ip-modal-text",
+      "count": 2
+    },
+    {
+      "class": "info-block1",
+      "count": 2
+    },
+    {
+      "class": "check-icon",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "57cd92ba9e0990af3e84035e",
+      "count": 2
+    },
+    {
+      "id": "SPECTRUMNEWS",
+      "count": 1
+    },
+    {
+      "id": "analyticsDataLayer",
+      "count": 1
+    },
+    {
+      "id": "+bc.m+",
+      "count": 1
+    },
+    {
+      "id": "+pc(),",
+      "count": 1
+    },
+    {
+      "id": "+L;jd||(jd=B.setTimeout(od,500))}var fb=Kc(G),$a={id:N,name:D,Fc:K||hc,R:fb,La:Zb(fb)};for(var Cc,Pb=$a,Nd=wd(Pb.Fc),kf=[],Qb=[],gb=0;gb<Ib.length;gb++)if(Pb.La[gb]){var lf=Ib[gb];var ub=Nd.add();try{var Od=qd(gb,kf,ub,ub,ub,Pb);Od?Qb.push(Od):(xd(gb,Pb),ub())}catch(Kd){ub()}}Nd.sc();for(var Dc=0;Dc<Qb.length;Dc++)Qb[Dc]();Cc=0<Qb.length;if(",
+      "count": 1
+    },
+    {
+      "id": "+encodeURIComponent(a)+",
+      "count": 1
+    },
+    {
+      "id": "logout-button",
+      "count": 1
+    },
+    {
+      "id": "login-button",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-a4985261-dc74-d0f5-5565-31ae40a6b9b2",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-997c9e56-f052-fef0-c7eb-acbc6abd0526",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-3c7000f0-9186-d017-5777-46bb5e6697a1",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-ab98e77c-7847-c3c9-1105-e100f6a1deee",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-f9018b1f-bb29-f3c7-6884-cd32614d0d15",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-23fdcff9-b935-6dcd-bb59-6b6d36c85b76",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-60c44a59-a660-6cd6-c50a-e826051aa2c1",
+      "count": 1
+    },
+    {
+      "id": "site-header-megamenu-667d7390-17bb-096e-6de3-0eaba187436f",
+      "count": 1
+    },
+    {
+      "id": "sign-out-btn",
+      "count": 1
+    },
+    {
+      "id": "sign-in-btn",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-a4985261-dc74-d0f5-5565-31ae40a6b9b2",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-997c9e56-f052-fef0-c7eb-acbc6abd0526",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-3c7000f0-9186-d017-5777-46bb5e6697a1",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-ab98e77c-7847-c3c9-1105-e100f6a1deee",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-f9018b1f-bb29-f3c7-6884-cd32614d0d15",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-23fdcff9-b935-6dcd-bb59-6b6d36c85b76",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-60c44a59-a660-6cd6-c50a-e826051aa2c1",
+      "count": 1
+    },
+    {
+      "id": "mobile-site-header-megamenu-667d7390-17bb-096e-6de3-0eaba187436f",
+      "count": 1
+    },
+    {
+      "id": "edit-location-modal",
+      "count": 1
+    },
+    {
+      "id": "edit-location-zip",
+      "count": 1
+    },
+    {
+      "id": "video-player",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class*=\"share\"], [id*=\"share\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "medium"
+  }
+}

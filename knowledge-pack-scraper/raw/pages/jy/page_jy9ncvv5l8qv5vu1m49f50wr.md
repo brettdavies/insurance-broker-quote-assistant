@@ -1,0 +1,493 @@
+[ ](https://jerry.ai/ "Jerry Home Page")
+  * [ Services ](https://jerry.ai/ "Services")
+  * [ Insurance ](https://jerry.ai/car-insurance/ "Insurance")
+  * [ Repairs ](https://jerry.ai/car-repair/ "Repairs")
+  * [ Resources ](https://jerry.ai/resources/ "Resources")
+  * [ Reviews ](https://jerry.ai/reviews/jerry-reviews/ "Reviews")
+  * [ About ](https://jerry.ai/about/ "About")
+
+
+[ Log in ](https://jerry.ai/webapp/?city=diamond&utm_source=TopNavigation "Log in") [ Sign up ](https://jerry.ai/signup "Sign up")
+Account
+[ View Dashboard Access Jerry app online ](https://jerry.ai/webapp "Access Jerry app online") [ Contact Get help ](https://jerry.ai/contact/ "Contact Jerry")
+Not Log Out
+[ PriceProtect ](https://jerry.ai/priceprotect/ "PriceProtect")
+  * [ Features ](https://jerry.ai/priceprotect/#features "Features")
+  * [ FAQs ](https://jerry.ai/priceprotect/#faqs "FAQs")
+  * [ Car insurance & quotes ](https://jerry.ai/car-insurance/ "Car insurance & quotes")
+
+
+[ GarageGuard ](https://jerry.ai/garageguard/ "GarageGuard")
+  * [ Features ](https://jerry.ai/garageguard/#features "Features")
+  * [ FAQs ](https://jerry.ai/garageguard/#faqs "FAQs")
+
+
+[ DriveShield ](https://jerry.ai/driveshield/ "DriveShield")
+  * [ Features ](https://jerry.ai/driveshield/#features "Features")
+  * [ FAQs ](https://jerry.ai/driveshield/#faqs "FAQs")
+
+
+[ Compare car insurance ](https://jerry.ai/car-insurance/ "Compare car insurance")
+  * [ Compare Car Insurance Quotes ](https://jerry.ai/car-insurance/car-insurance-quotes/ "Compare Car Insurance Quotes")
+  * [ Best car insurance companies ](https://jerry.ai/car-insurance/best-car-insurance-companies/ "Best car insurance companies")
+  * [ Shopping for car insurance ](https://jerry.ai/car-insurance/shopping-for-auto-insurance/ "Shopping for car insurance")
+  * [ Cheap car insurance ](https://jerry.ai/car-insurance/cheap-car-insurance/ "Cheap car insurance")
+  * [ Is Jerry a legitimate broker? ](https://jerry.ai/car-insurance/is-jerry-legit/ "Is Jerry a legitimate broker?")
+  * [ 6 Types of Car Insurance ](https://jerry.ai/car-insurance/types-of-car-insurance/ "6 Types of Car Insurance")
+  * [ Find other articles ](https://jerry.ai/car-insurance-resources/ "Find other articles")
+
+
+[ Compare by state ](https://jerry.ai/car-insurance/location/ "Compare by state")
+  * [ California ](https://jerry.ai/car-insurance/california/ "California")
+  * [ Arizona ](https://jerry.ai/car-insurance/arizona/ "Arizona")
+  * [ Texas ](https://jerry.ai/car-insurance/texas/ "Texas")
+  * [ Pennsylvania ](https://jerry.ai/car-insurance/pennsylvania/ "Pennsylvania")
+  * [ Georgia ](https://jerry.ai/car-insurance/georgia/ "Georgia")
+  * [ Florida ](https://jerry.ai/car-insurance/florida/ "Florida")
+  * [ Find your state ](https://jerry.ai/car-insurance/location/ "Find your state")
+
+
+[ Compare by car ](https://jerry.ai/car-insurance/cars/ "Compare by car")
+  * [ Ford ](https://jerry.ai/car-insurance/ford/ "Ford")
+  * [ Toyota ](https://jerry.ai/car-insurance/toyota/ "Toyota")
+  * [ Chevrolet ](https://jerry.ai/car-insurance/chevrolet/ "Chevrolet")
+  * [ Honda ](https://jerry.ai/car-insurance/honda/ "Honda")
+  * [ Nissan ](https://jerry.ai/car-insurance/nissan/ "Nissan")
+  * [ Hyundai ](https://jerry.ai/car-insurance/hyundai/ "Hyundai")
+  * [ Find your car ](https://jerry.ai/car-insurance/cars/ "Find your car")
+
+
+[ Compare by company ](https://jerry.ai/reviews/car-insurance/ "Compare by company")
+  * [ Geico ](https://jerry.ai/reviews/car-insurance/geico/ "Geico")
+  * [ Progressive ](https://jerry.ai/reviews/car-insurance/progressive/ "Progressive")
+  * [ Allstate ](https://jerry.ai/reviews/car-insurance/allstate/ "Allstate")
+  * [ Nationwide ](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide")
+  * [ Farmers ](https://jerry.ai/reviews/car-insurance/farmers/ "Farmers")
+  * [ National General ](https://jerry.ai/reviews/carrier/national-general/ "National General")
+  * [ Find another company ](https://jerry.ai/reviews/car-insurance/ "Find another company")
+
+
+[ Repair Estimates ](https://jerry.ai/car-repair/estimates/ "Repair Estimates")
+  * [ Oil change ](https://jerry.ai/car-repair/estimates/oil-change/ "Oil change")
+  * [ Brake pad replacement ](https://jerry.ai/car-repair/estimates/brake-pads-replacement/ "Brake pad replacement")
+  * [ Battery replacement ](https://jerry.ai/car-repair/estimates/battery-replacement/ "Battery replacement")
+  * [ Timing belt replacement ](https://jerry.ai/car-repair/estimates/timing-belt-replacement/ "Timing belt replacement")
+  * [ Wheel bearing replacement ](https://jerry.ai/car-repair/estimates/wheel-bearings-replacement/ "Wheel bearing replacement")
+  * [ Spark plug replacement ](https://jerry.ai/car-repair/estimates/spark-plugs-replacement/ "Spark plug replacement")
+  * [ Find another service estimate ](https://jerry.ai/car-repair/estimates/ "Find another service estimate")
+
+
+  * [ Transmission fluid service ](https://jerry.ai/car-repair/estimates/transmission-fluid-service/ "Transmission fluid service")
+  * [ Ignition switch replacement ](https://jerry.ai/car-repair/estimates/ignition-switch-replacement/ "Ignition switch replacement")
+  * [ Fuel pump replacement ](https://jerry.ai/car-repair/estimates/fuel-pump-replacement/ "Fuel pump replacement")
+  * [ Cabin air filter replacement ](https://jerry.ai/car-repair/estimates/cabin-air-filter-replacement/ "Cabin air filter replacement")
+  * [ Water pump replacement ](https://jerry.ai/car-repair/estimates/water-pump-replacement/ "Water pump replacement")
+  * [ Wheel stud replacement ](https://jerry.ai/car-repair/estimates/wheel-stud-replacement/ "Wheel stud replacement")
+
+
+[ Car repair help ](https://jerry.ai/car-repair/ "Car repair help")
+  * [ Car not starting ](https://jerry.ai/car-repair/car-struggling-to-start/ "Car not starting")
+  * [ Dent repair cost ](https://jerry.ai/car-repair/how-much-does-dent-repair-cost/ "Dent repair cost")
+  * [ Shock and strut replacement ](https://jerry.ai/car-repair/what-are-shocks-on-a-car/ "Shock and strut replacement")
+  * [ Engine rebuild cost factors ](https://jerry.ai/car-repair/how-much-to-rebuild-an-engine/ "Engine rebuild cost factors")
+  * [ Low oil engine damage signs ](https://jerry.ai/car-repair/how-to-tell-if-engine-is-damaged-from-no-oil/ "Low oil engine damage signs")
+  * [ Handling Security Indicator Lights ](https://jerry.ai/car-repair/security-light/ "Handling Security Indicator Lights")
+  * [ Find car repair answers ](https://jerry.ai/car-repair-resources/ "Find car repair answers")
+
+
+[ Insurance knowledge base ](https://jerry.ai/car-insurance-resources/ "Insurance knowledge base")
+  * [ Factors impacting insurance rates ](https://jerry.ai/car-insurance/why-is-my-car-insurance-so-high/ "Factors impacting insurance rates")
+  * [ Types of car insurance ](https://jerry.ai/car-insurance/types-of-car-insurance/ "Types of car insurance")
+  * [ Full coverage car insurance ](https://jerry.ai/car-insurance/full-coverage-car-insurance/ "Full coverage car insurance")
+  * [ How to get motorcycle insurance ](https://jerry.ai/car-insurance/how-to-get-motorcycle-insurance/ "How to get motorcycle insurance")
+  * [ How liability claims work ](https://jerry.ai/car-insurance/liability-claim/ "How liability claims work")
+  * [ Search for more articles ](https://jerry.ai/resources/ "Search for more articles")
+
+
+[ Jerry data & research ](https://jerry.ai/studies/ "Jerry data & research")
+  * [ State of American Drivers (2025) ](https://jerry.ai/studies/2025-state-of-the-american-driver-report/ "State of American Drivers \(2025\)")
+  * [ Rising premiums squeeze consumers ](https://jerry.ai/studies/fastest-rising-car-insurance-in-decades-squeezes-consumers/ "Rising premiums squeeze consumers")
+  * [ Drivers want car data control ](https://jerry.ai/studies/american-drivers-seek-control-over-their-car-data/ "Drivers want car data control")
+  * [ Cars now 1/5th of American budgets ](https://jerry.ai/studies/most-americans-cant-afford-even-one-average-price-used-car/ "Cars now 1/5th of American budgets ")
+  * [ Car costs rising faster than groceries ](https://jerry.ai/studies/these-two-car-expenses-are-rising-faster-than-your-grocery-bill/ "Car costs rising faster than groceries")
+  * [ See all studies ](https://jerry.ai/studies/ "See all studies")
+
+
+[ Insurance company reviews ](https://jerry.ai/reviews/car-insurance/ "Insurance company reviews")
+  * [ Allstate ](https://jerry.ai/reviews/car-insurance/allstate/ "Allstate")
+  * [ Aspire ](https://jerry.ai/reviews/car-insurance/aspire-general/ "Aspire")
+  * [ Assurance ](https://jerry.ai/reviews/car-insurance/assurance-america/ "Assurance")
+  * [ Bristol West ](https://jerry.ai/reviews/car-insurance/bristol-west/ "Bristol West")
+  * [ Dairyland ](https://jerry.ai/reviews/car-insurance/dairyland/ "Dairyland")
+  * [ Farmers ](https://jerry.ai/reviews/car-insurance/farmers/ "Farmers")
+
+
+  * [ Geico ](https://jerry.ai/reviews/car-insurance/geico/ "Geico")
+  * [ Mercury ](https://jerry.ai/reviews/car-insurance/mercury/ "Mercury")
+  * [ National General ](https://jerry.ai/reviews/car-insurance/national-general/ "National General")
+  * [ Nationwide ](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide")
+  * [ Progressive ](https://jerry.ai/reviews/car-insurance/progressive/ "Progressive")
+  * [ Travelers ](https://jerry.ai/reviews/car-insurance/travelers/ "Travelers")
+  * [ Find another company ](https://jerry.ai/reviews/car-insurance/ "Find another company")
+
+
+[ Jerry Reviews ](https://jerry.ai/reviews/jerry-reviews/ "Jerry Reviews")
+[ Company ](https://jerry.ai/about/ "Company")
+  * [ About us ](https://jerry.ai/about/ "About us")
+  * [ Team ](https://jerry.ai/team/ "Team")
+  * [ Careers (Hiring!) ](https://jerry.ai/careers/ "Careers \(Hiring!\)")
+  * [ Investors ](https://jerry.ai/investors/ "Investors")
+  * [ Newsroom ](https://jerry.ai/news/ "Newsroom")
+
+
+[ Information ](https://jerry.ai/resources/ "Information")
+  * [ FAQ ](https://jerry.ai/faq/ "FAQ")
+  * [ Editorial standards ](https://jerry.ai/editorial-standards/ "Editorial standards")
+  * [ Editorial review board ](https://jerry.ai/review-board/ "Editorial review board")
+  * [ Contact ](https://jerry.ai/contact/ "Contact")
+
+
+Back
+[ Services ](https://jerry.ai/ "Services")
+[ PriceProtect ](https://jerry.ai/priceprotect/ "PriceProtect")
+  * [ ](https://jerry.ai/priceprotect/#features "Features")
+  * [ ](https://jerry.ai/priceprotect/#faqs "FAQs")
+  * [ ](https://jerry.ai/car-insurance/ "Car insurance & quotes")
+
+
+[ GarageGuard ](https://jerry.ai/garageguard/ "GarageGuard")
+  * [ ](https://jerry.ai/garageguard/#features "Features")
+  * [ ](https://jerry.ai/garageguard/#faqs "FAQs")
+
+
+[ DriveShield ](https://jerry.ai/driveshield/ "DriveShield")
+  * [ ](https://jerry.ai/driveshield/#features "Features")
+  * [ ](https://jerry.ai/driveshield/#faqs "FAQs")
+
+
+Back
+[ Insurance ](https://jerry.ai/car-insurance/ "Insurance")
+[ Compare car insurance ](https://jerry.ai/car-insurance/ "Compare car insurance")
+  * [ ](https://jerry.ai/car-insurance/car-insurance-quotes/ "Compare Car Insurance Quotes")
+  * [ ](https://jerry.ai/car-insurance/best-car-insurance-companies/ "Best car insurance companies")
+  * [ ](https://jerry.ai/car-insurance/shopping-for-auto-insurance/ "Shopping for car insurance")
+  * [ ](https://jerry.ai/car-insurance/cheap-car-insurance/ "Cheap car insurance")
+  * [ ](https://jerry.ai/car-insurance/is-jerry-legit/ "Is Jerry a legitimate broker?")
+  * [ ](https://jerry.ai/car-insurance/types-of-car-insurance/ "6 Types of Car Insurance")
+  * [ ](https://jerry.ai/car-insurance-resources/ "Find other articles")
+
+
+[ Compare by state ](https://jerry.ai/car-insurance/location/ "Compare by state")
+  * [ ](https://jerry.ai/car-insurance/california/ "California")
+  * [ ](https://jerry.ai/car-insurance/arizona/ "Arizona")
+  * [ ](https://jerry.ai/car-insurance/texas/ "Texas")
+  * [ ](https://jerry.ai/car-insurance/pennsylvania/ "Pennsylvania")
+  * [ ](https://jerry.ai/car-insurance/georgia/ "Georgia")
+  * [ ](https://jerry.ai/car-insurance/florida/ "Florida")
+  * [ ](https://jerry.ai/car-insurance/location/ "Find your state")
+
+
+[ Compare by car ](https://jerry.ai/car-insurance/cars/ "Compare by car")
+  * [ ](https://jerry.ai/car-insurance/ford/ "Ford")
+  * [ ](https://jerry.ai/car-insurance/toyota/ "Toyota")
+  * [ ](https://jerry.ai/car-insurance/chevrolet/ "Chevrolet")
+  * [ ](https://jerry.ai/car-insurance/honda/ "Honda")
+  * [ ](https://jerry.ai/car-insurance/nissan/ "Nissan")
+  * [ ](https://jerry.ai/car-insurance/hyundai/ "Hyundai")
+  * [ ](https://jerry.ai/car-insurance/cars/ "Find your car")
+
+
+[ Compare by company ](https://jerry.ai/reviews/car-insurance/ "Compare by company")
+  * [ ](https://jerry.ai/reviews/car-insurance/geico/ "Geico")
+  * [ ](https://jerry.ai/reviews/car-insurance/progressive/ "Progressive")
+  * [ ](https://jerry.ai/reviews/car-insurance/allstate/ "Allstate")
+  * [ ](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide")
+  * [ ](https://jerry.ai/reviews/car-insurance/farmers/ "Farmers")
+  * [ ](https://jerry.ai/reviews/carrier/national-general/ "National General")
+  * [ ](https://jerry.ai/reviews/car-insurance/ "Find another company")
+
+
+Back
+[ Repairs ](https://jerry.ai/car-repair/ "Repairs")
+[ Repair Estimates ](https://jerry.ai/car-repair/estimates/ "Repair Estimates")
+  * [ ](https://jerry.ai/car-repair/estimates/oil-change/ "Oil change")
+  * [ ](https://jerry.ai/car-repair/estimates/brake-pads-replacement/ "Brake pad replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/battery-replacement/ "Battery replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/timing-belt-replacement/ "Timing belt replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/wheel-bearings-replacement/ "Wheel bearing replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/spark-plugs-replacement/ "Spark plug replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/ "Find another service estimate")
+
+
+  * [ ](https://jerry.ai/car-repair/estimates/transmission-fluid-service/ "Transmission fluid service")
+  * [ ](https://jerry.ai/car-repair/estimates/ignition-switch-replacement/ "Ignition switch replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/fuel-pump-replacement/ "Fuel pump replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/cabin-air-filter-replacement/ "Cabin air filter replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/water-pump-replacement/ "Water pump replacement")
+  * [ ](https://jerry.ai/car-repair/estimates/wheel-stud-replacement/ "Wheel stud replacement")
+
+
+[ Car repair help ](https://jerry.ai/car-repair/ "Car repair help")
+  * [ ](https://jerry.ai/car-repair/car-struggling-to-start/ "Car not starting")
+  * [ ](https://jerry.ai/car-repair/how-much-does-dent-repair-cost/ "Dent repair cost")
+  * [ ](https://jerry.ai/car-repair/what-are-shocks-on-a-car/ "Shock and strut replacement")
+  * [ ](https://jerry.ai/car-repair/how-much-to-rebuild-an-engine/ "Engine rebuild cost factors")
+  * [ ](https://jerry.ai/car-repair/how-to-tell-if-engine-is-damaged-from-no-oil/ "Low oil engine damage signs")
+  * [ ](https://jerry.ai/car-repair/security-light/ "Handling Security Indicator Lights")
+  * [ ](https://jerry.ai/car-repair-resources/ "Find car repair answers")
+
+
+Back
+[ Resources ](https://jerry.ai/resources/ "Resources")
+[ Insurance knowledge base ](https://jerry.ai/car-insurance-resources/ "Insurance knowledge base")
+  * [ ](https://jerry.ai/car-insurance/why-is-my-car-insurance-so-high/ "Factors impacting insurance rates")
+  * [ ](https://jerry.ai/car-insurance/types-of-car-insurance/ "Types of car insurance")
+  * [ ](https://jerry.ai/car-insurance/full-coverage-car-insurance/ "Full coverage car insurance")
+  * [ ](https://jerry.ai/car-insurance/how-to-get-motorcycle-insurance/ "How to get motorcycle insurance")
+  * [ ](https://jerry.ai/car-insurance/liability-claim/ "How liability claims work")
+  * [ ](https://jerry.ai/resources/ "Search for more articles")
+
+
+[ Jerry data & research ](https://jerry.ai/studies/ "Jerry data & research")
+  * [ ](https://jerry.ai/studies/2025-state-of-the-american-driver-report/ "State of American Drivers \(2025\)")
+  * [ ](https://jerry.ai/studies/fastest-rising-car-insurance-in-decades-squeezes-consumers/ "Rising premiums squeeze consumers")
+  * [ ](https://jerry.ai/studies/american-drivers-seek-control-over-their-car-data/ "Drivers want car data control")
+  * [ ](https://jerry.ai/studies/most-americans-cant-afford-even-one-average-price-used-car/ "Cars now 1/5th of American budgets ")
+  * [ ](https://jerry.ai/studies/these-two-car-expenses-are-rising-faster-than-your-grocery-bill/ "Car costs rising faster than groceries")
+  * [ ](https://jerry.ai/studies/ "See all studies")
+
+
+Back
+[ Reviews ](https://jerry.ai/reviews/jerry-reviews/ "Reviews")
+[ Insurance company reviews ](https://jerry.ai/reviews/car-insurance/ "Insurance company reviews")
+  * [ ](https://jerry.ai/reviews/car-insurance/allstate/ "Allstate")
+  * [ ](https://jerry.ai/reviews/car-insurance/aspire-general/ "Aspire")
+  * [ ](https://jerry.ai/reviews/car-insurance/assurance-america/ "Assurance")
+  * [ ](https://jerry.ai/reviews/car-insurance/bristol-west/ "Bristol West")
+  * [ ](https://jerry.ai/reviews/car-insurance/dairyland/ "Dairyland")
+  * [ ](https://jerry.ai/reviews/car-insurance/farmers/ "Farmers")
+
+
+  * [ ](https://jerry.ai/reviews/car-insurance/geico/ "Geico")
+  * [ ](https://jerry.ai/reviews/car-insurance/mercury/ "Mercury")
+  * [ ](https://jerry.ai/reviews/car-insurance/national-general/ "National General")
+  * [ ](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide")
+  * [ ](https://jerry.ai/reviews/car-insurance/progressive/ "Progressive")
+  * [ ](https://jerry.ai/reviews/car-insurance/travelers/ "Travelers")
+  * [ ](https://jerry.ai/reviews/car-insurance/ "Find another company")
+
+
+[ Jerry Reviews ](https://jerry.ai/reviews/jerry-reviews/ "Jerry Reviews")
+Back
+[ About ](https://jerry.ai/about/ "About")
+[ Company ](https://jerry.ai/about/ "Company")
+  * [ ](https://jerry.ai/about/ "About us")
+  * [ ](https://jerry.ai/team/ "Team")
+  * [ ](https://jerry.ai/careers/ "Careers \(Hiring!\)")
+  * [ ](https://jerry.ai/investors/ "Investors")
+  * [ ](https://jerry.ai/news/ "Newsroom")
+
+
+[ Information ](https://jerry.ai/resources/ "Information")
+  * [ ](https://jerry.ai/faq/ "FAQ")
+  * [ ](https://jerry.ai/editorial-standards/ "Editorial standards")
+  * [ ](https://jerry.ai/review-board/ "Editorial review board")
+  * [ ](https://jerry.ai/contact/ "Contact")
+
+
+[ ](https://jerry.ai/webapp "Access Jerry app online")
+#  Illinois Car Insurance Quotes 
+Illinois drivers can save on the coverage they need by comparing quotes for multiple policies all in one place. 
+[ Compare Illinois quotes with Jerry ](https://jerry.ai/signup/insured "Compare Illinois quotes with Jerry")
+![Illinois Car Insurance Quotes](https://jerry.ai/wp-content/uploads/2024/12/Depositphotos_9087007_XL-300x200.jpg)
+[ ![Cheapest Car Insurance in Illinois](https://jerry.ai/wp-content/uploads/2024/08/circle-dollar.svg) Cheapest Car Insurance in Illinois  ](https://jerry.ai/car-insurance/illinois/cheap-il/ "Cheapest Car Insurance in Illinois") [ ![Best Car Insurance in Illinois](https://jerry.ai/wp-content/uploads/2024/08/circle-check.svg) Best Car Insurance in Illinois  ](https://jerry.ai/car-insurance/illinois/best-il/ "Best Car Insurance in Illinois")
+## Average car insurance cost trends in Illinois 
+Drivers in Illinois have seen a 42.9% increase in [auto insurance](https://jerry.ai/car-insurance/) rates from January 2019 to September 2024, according to [S&P Global’s data.](https://www.spglobal.com/market-intelligence/en/news-insights/research/us-private-auto-rate-increases-dip-into-single-digits-in-2024)
+This may explain why drivers pay a monthly average of $191.19 for state-mandated minimum coverage. Compare that to the national average for minimum coverage which is currently $271.73. 
+In Illinois, drivers have to carry these minimum levels of coverage:
+  * $25,000 for injury or death of one person in a crash.
+  * $50,000 for injury or death of more than one person in a crash.
+  * $20,000 for damage to property of another person.
+  * $25,000 in uninsured motorist coverage per person.
+  * $50,000 in uninsured motorist coverage per accident.
+
+
+While reviewing car insurance quotes, it’s important to decide if you’re looking for just [cheap car insurance](https://jerry.ai/car-insurance/cheap-car-insurance/) or if you’re more focused on policies that provide extra protection through higher limits. Everyone’s financial and driving situations are different, which is why comparison shopping is so useful. Comparing quotes from several car insurance providers will help you determine your own cost of car insurance.
+Jerry finds quotes from 50 insurance partners fast.
+[COMPARE QUOTES](https://jerry.ai/signup)
+Car insurance in various Illinois cities (November 2025) 
+[ ![Cheap Car Insurance in Chicago](https://jerry.ai/wp-content/uploads/2024/11/Chicago-Illinois-scaled-e1734718312874.jpg) Xuyun Zeng, Nov 6, 2025 Cheap Car Insurance in Chicago Drivers in Chicago might pay more than those in more rural areas, but affordable coverage is within reach for those who cost-compare with multiple insurers. ](https://jerry.ai/car-insurance/illinois/chicago/) [ ![Cheapest car insurance in Joliet, Illinois \(2025\)](https://jerry.ai/wp-content/uploads/2024/11/Elgin-Illinois-scaled.jpg) Liz Jenson, Nov 4, 2025 Cheapest car insurance in Joliet, Illinois (2025) Compare 55+ insurance companies including Progressive, Travelers, AAA, Nationwide (and more!) to find the best and cheapest car insurance in Joliet, Illinois. ](https://jerry.ai/car-insurance/illinois/joliet/) [ ![Cheapest car insurance in Elgin, Illinois \(2025\)](https://jerry.ai/wp-content/uploads/2024/11/Elgin-Illinois-scaled.jpg) R.E. Fulton, Nov 3, 2025 Cheapest car insurance in Elgin, Illinois (2025) Compare 55+ insurance companies including Progressive, Travelers, AAA, Nationwide (and more!) to find the best and cheapest car insurance in Elgin, Illinois. ](https://jerry.ai/car-insurance/illinois/elgin/) [ ![Cheapest car insurance in Rockford, Illinois \(2025\)](https://jerry.ai/wp-content/uploads/2024/11/Illinois-street-sign-scaled.jpg) R.E. Fulton, Nov 3, 2025 Cheapest car insurance in Rockford, Illinois (2025) Compare 55+ insurance companies including Progressive, Travelers, AAA, Nationwide (and more!) to find the best and cheapest car insurance in Rockford, Illinois. ](https://jerry.ai/car-insurance/illinois/rockford/)
+1 2
+### Recent auto insurance quotes from Illinois
+Date of Quote  |  City  |  Insurance Company  |  Monthly Quote   
+---|---|---|---  
+Date of Quote  |  City  |  Insurance Company  |  Monthly Quote   
+---|---|---|---  
+11/05/25 | Chicago | [Bristol West](https://jerry.ai/reviews/car-insurance/bristol-west/ "Bristol West") | $141  
+11/05/25 | Chicago | [The General](https://jerry.ai/reviews/car-insurance/the-general/ "The General") | $236  
+11/05/25 | Grayslake | [National General](https://jerry.ai/reviews/car-insurance/national-general/ "National General") | $52  
+11/05/25 | Mount Vernon | Clearcover | $60  
+11/05/25 | Chicago | Gainsco | $210  
+Last Updated Nov. 6, 2025
+## Estimate car insurance costs
+Enter your ZIP code to see what Jerry customers have been quoted for full coverage, on average.
+ZIP code **Average monthly quote:**
+$–
+[ COMPARE QUOTES ](https://jerry.ai/signup/insured?utm_publisher=zip-price-widget)
+Methodology
+Jerry's editorial team analyzed Jerry customer quotes to find the median full coverage quote, by ZIP code. We looked at customers driving popular vehicles, including the Ford-150, Honda Accord, Nissan Altima, RAM 1500, Toyota Camry and Toyota RAV4 . We also used the following base driver profile:
+  * 35-45 years old.
+  * Clean driving record.
+  * $50,000 in bodily injury liability, per person.
+  * $100,000 in bodily injury liability, per accident.
+  * $1,000 deductible for comprehensive and collision insurance.
+
+
+## Factors affecting car insurance rates in Illinois
+Here are a few important reasons that drivers in Illinois pay higher-than-average insurance premiums.
+  * **Chicago’s size.** Because much of Illinois’s population is concentrated in and around Chicago, many in the state are paying elevated rates. Urban areas come with plenty of risks, including more cars and pedestrians on the street and a naturally higher crime rate. However, those living outside of Chicago are likely to see substantially lower rates.
+  * **Weather risks.** Longtime Illinois residents are pros at navigating snow and ice in the winter, but insurers view those as unsafe driving conditions that could lead to an accident. The state also sees its fair share of hail damage, which can total a car within minutes. Overall, though, Illinois’s weather is relatively mild compared to coastal states, so insurers may not make frequent climate-related increases for drivers there.
+  * **Car-theft rates.** In 2023, Illinois was No. 5 in the country for the highest number of car thefts, according to the [National Insurance Crime Bureau](https://www.nicb.org/news/news-releases/vehicle-thefts-surge-nationwide-2023). The state has since fallen off the list, but even a temporary spike in car-related crime can cause rates to rise quickly and fall slowly.
+  * **Uninsured drivers.** Though a 15% uninsured-motorist rate doesn’t put Illinois in the top 10, it’s still likely an important factor for car insurance companies. When an uninsured driver hits a driver with robust coverage, the covered driver’s insurer foots the bill, and that means drivers are usually paying higher rates to make up for the risk.
+
+
+Car insurance companies in Illinois 
+[ ![Geico Auto Insurance Review 2025](https://jerry.ai/wp-content/uploads/2025/01/Depositphotos_57912581_XL-scaled.jpg) Annie Millerbernd, Jan 8, 2025  Geico Auto Insurance Review 2025  Geico car insurance review Jerry rates Geico car insurance 5 stars out of 5. This score is the highest among insurers that Jerry rates and takes into account the insurer’s pricing, industry and consumer ratings, financial strength, and national complaint data. Geico stands out for ample rate discount opportunities, a superior financial strength rating and […] ](https://jerry.ai/reviews/car-insurance/geico/ "Geico Auto Insurance Review 2025")
+[ Annie Millerbernd, Feb 13, 2025  Auto-Owners Auto Insurance Review 2025  Auto-Owners car insurance review Jerry rates Auto-Owners 4.9 stars out of 5. This score is higher than many other insurers that Jerry rates and takes into account industry ratings, consumer ratings, financial strength and national complaint data. Auto-Owners provides quality car insurance that’s worth considering if you’re in one of the 26 states where the […]  ](https://jerry.ai/reviews/car-insurance/auto-owners/ "Auto-Owners Auto Insurance Review 2025") [ Annie Millerbernd, Jan 8, 2025  Nationwide Auto Insurance Review 2025  Nationwide car insurance review Jerry rates Nationwide car insurance 4.7 stars out of 5. This score is higher than many other insurers that Jerry rates and takes into account the insurer’s pricing, industry ratings, consumer ratings, financial strength and national complaint data. Nationwide provides somewhat flexible car insurance, but most of its coverage options and […]  ](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide Auto Insurance Review 2025")
+State of Illinois resources 
+[ Driver Services (Office of the Illinois Secretary of State) ](https://www.ilsos.gov/ "Driver Services \(Office of the Illinois Secretary of State\)")
+[ Department of Transportation ](https://idot.illinois.gov/ "Department of Transportation")
+[ Illinois road conditions ](https://www.gettingaroundillinois.com/ "Illinois road conditions")
+[Compare quotes with Jerry](https://jerry.ai/signup)
+[ ![Best Car Insurance Companies in 2025](https://jerry.ai/wp-content/uploads/2024/08/Depositphotos_8666689_XL-scaled.jpg) FEATURED  Best Car Insurance Companies in 2025  Compare the top car insurance companies of 2025. Get multiple quotes to find the best coverage.  Annie Millerbernd, Aug 7, 2025 ](https://jerry.ai/car-insurance/best-car-insurance-companies/ "Best Car Insurance Companies in 2025")
+##  [ Insurance by Company ](https://jerry.ai/reviews/car-insurance/ "Insurance by Company")
+  * [AAA](https://jerry.ai/reviews/car-insurance/aaa/ "AAA")
+  * [Allstate](https://jerry.ai/reviews/car-insurance/allstate/ "Allstate")
+  * [Anchor General](https://jerry.ai/reviews/car-insurance/anchor-general/ "Anchor General")
+  * [Aspire Advantage](https://jerry.ai/reviews/car-insurance/aspire-advantage/ "Aspire Advantage")
+  * [Assurance America](https://jerry.ai/reviews/car-insurance/assurance-america/ "Assurance America")
+  * [Bristol West](https://jerry.ai/reviews/car-insurance/bristol-west/ "Bristol West")
+  * [Commonwealth](https://jerry.ai/reviews/car-insurance/commonwealth-insurance/ "Commonwealth")
+  * [Dairyland](https://jerry.ai/reviews/car-insurance/dairyland/ "Dairyland")
+  * [Farmers](https://jerry.ai/reviews/car-insurance/farmers/ "Farmers")
+  * [Geico](https://jerry.ai/reviews/car-insurance/geico/ "Geico")
+  * [Infinity](https://jerry.ai/reviews/car-insurance/infinity/ "Infinity")
+  * [Kemper](https://jerry.ai/reviews/car-insurance/kemper/ "Kemper")
+  * [Mercury](https://jerry.ai/reviews/car-insurance/mercury/ "Mercury")
+  * See all
+    * [National General](https://jerry.ai/reviews/car-insurance/national-general/ "National General")
+    * [Nationwide](https://jerry.ai/reviews/car-insurance/nationwide/ "Nationwide")
+    * [Progressive](https://jerry.ai/reviews/car-insurance/progressive/ "Progressive")
+    * [Safeco](https://jerry.ai/reviews/car-insurance/safeco/ "Safeco")
+    * [State Auto](https://jerry.ai/reviews/car-insurance/state-auto/ "State Auto")
+    * [Travelers](https://jerry.ai/reviews/car-insurance/travelers/ "Travelers")
+
+
+##  [ Insurance by City ](https://jerry.ai/car-insurance/location/ "Insurance by City")
+  * [Austin, TX](https://jerry.ai/car-insurance/texas/austin/ "Austin, TX")
+  * [Boston, MA](https://jerry.ai/car-insurance/massachusetts/boston/ "Boston, MA")
+  * [Chicago, IL](https://jerry.ai/car-insurance/illinois/chicago/ "Chicago, IL")
+  * [Dallas, TX](https://jerry.ai/car-insurance/texas/fort-worth/ "Dallas, TX")
+  * [Houston, TX](https://jerry.ai/car-insurance/texas/houston/ "Houston, TX")
+  * [Los Angeles, CA](https://jerry.ai/car-insurance/california/los-angeles/ "Los Angeles, CA")
+  * [Nashville, TN](https://jerry.ai/car-insurance/tennessee/nashville/ "Nashville, TN")
+  * [New York, NY](https://jerry.ai/car-insurance/new-york/new-york/ "New York, NY")
+  * [Orlando, FL](https://jerry.ai/car-insurance/florida/orlando/ "Orlando, FL")
+  * [Philadelphia, PA](https://jerry.ai/car-insurance/pennsylvania/philadelphia/ "Philadelphia, PA")
+  * [Phoenix, AZ](https://jerry.ai/car-insurance/arizona/phoenix/ "Phoenix, AZ")
+  * [San Diego, CA](https://jerry.ai/car-insurance/california/san-diego/ "San Diego, CA")
+
+
+##  [ Insurance by State ](https://jerry.ai/car-insurance/location/ "Insurance by State")
+  * [Arizona](https://jerry.ai/car-insurance/arizona/ "Arizona")
+  * [California](https://jerry.ai/car-insurance/california/ "California")
+  * [Florida](https://jerry.ai/car-insurance/florida/ "Florida")
+  * [Georgia](https://jerry.ai/car-insurance/georgia/ "Georgia")
+  * [New Jersey](https://jerry.ai/car-insurance/new-jersey/ "New Jersey")
+  * [New York](https://jerry.ai/car-insurance/new-york/ "New York")
+  * [Ohio](https://jerry.ai/car-insurance/ohio/ "Ohio")
+  * [Pennsylvania](https://jerry.ai/car-insurance/pennsylvania/ "Pennsylvania")
+  * [South Carolina](https://jerry.ai/car-insurance/south-carolina/ "South Carolina")
+  * [Tennessee](https://jerry.ai/car-insurance/tennessee/ "Tennessee")
+  * [Texas](https://jerry.ai/car-insurance/texas/ "Texas")
+  * [Virginia](https://jerry.ai/car-insurance/virginia/ "Virginia")
+  * See all
+    * [Alabama](https://jerry.ai/car-insurance/alabama/ "Alabama")
+    * [Arkansas](https://jerry.ai/car-insurance/arkansas/ "Arkansas")
+    * [Colorado](https://jerry.ai/car-insurance/colorado/ "Colorado")
+    * [Connecticut](https://jerry.ai/car-insurance/connecticut/ "Connecticut")
+    * [Delaware](https://jerry.ai/car-insurance/delaware/ "Delaware")
+    * [Idaho](https://jerry.ai/car-insurance/idaho/ "Idaho")
+    * [Illinois](https://jerry.ai/car-insurance/illinois/ "Illinois")
+    * [Indiana](https://jerry.ai/car-insurance/indiana/ "Indiana")
+    * [Iowa](https://jerry.ai/car-insurance/iowa/ "Iowa")
+    * [Kansas](https://jerry.ai/car-insurance/kansas/ "Kansas")
+    * [Kentucky](https://jerry.ai/car-insurance/kentucky/ "Kentucky")
+    * [Louisiana](https://jerry.ai/car-insurance/louisiana/ "Louisiana")
+    * [Maine](https://jerry.ai/car-insurance/maine/ "Maine")
+    * [Maryland](https://jerry.ai/car-insurance/maryland/ "Maryland")
+    * [Massachusetts](https://jerry.ai/car-insurance/massachusetts/ "Massachusetts")
+    * [Michigan](https://jerry.ai/car-insurance/michigan/ "Michigan")
+    * [Minnesota](https://jerry.ai/car-insurance/minnesota/ "Minnesota")
+    * [Mississippi](https://jerry.ai/car-insurance/mississippi/ "Mississippi")
+    * [Missouri](https://jerry.ai/car-insurance/missouri/ "Missouri")
+    * [Montana](https://jerry.ai/car-insurance/montana/ "Montana")
+    * [Nebraska](https://jerry.ai/car-insurance/nebraska/ "Nebraska")
+    * [Nevada](https://jerry.ai/car-insurance/nevada/ "Nevada")
+    * [New Hampshire](https://jerry.ai/car-insurance/new-hampshire/ "New Hampshire")
+    * [New Mexico](https://jerry.ai/car-insurance/new-mexico/ "New Mexico")
+    * [North Carolina](https://jerry.ai/car-insurance/north-carolina/ "North Carolina")
+    * [North Dakota](https://jerry.ai/car-insurance/north-dakota/ "North Dakota")
+    * [Oklahoma](https://jerry.ai/car-insurance/oklahoma/ "Oklahoma")
+    * [Oregon](https://jerry.ai/car-insurance/oregon/ "Oregon")
+    * [Rhode Island](https://jerry.ai/car-insurance/rhode-island/ "Rhode Island")
+    * [South Dakota](https://jerry.ai/car-insurance/south-dakota/ "South Dakota")
+    * [Utah](https://jerry.ai/car-insurance/utah/ "Utah")
+    * [Vermont](https://jerry.ai/car-insurance/vermont/ "Vermont")
+    * [Washington](https://jerry.ai/car-insurance/washington/ "Washington")
+    * [West Virginia](https://jerry.ai/car-insurance/west-virginia/ "West Virginia")
+    * [Wisconsin](https://jerry.ai/car-insurance/wisconsin/ "Wisconsin")
+    * [Wyoming](https://jerry.ai/car-insurance/wyoming/ "Wyoming")
+
+
+##  [ Repair Estimates ](https://jerry.ai/car-repair/estimates/ "Repair Estimates")
+  * [Oil Change Cost](https://jerry.ai/car-repair/estimates/oil-change/ "Oil Change Cost")
+  * [ Brake Pads Replacement Cost ](https://jerry.ai/car-repair/estimates/brake-pads-replacement/ "Brake Pads Replacement Cost")
+  * [ Gear Oil Replacement Cost ](https://jerry.ai/car-repair/estimates/differential-gear-oil-replacement/ "Gear Oil Replacement Cost")
+  * [ Sway Bar Replacement Cost ](https://jerry.ai/car-repair/estimates/sway-bar-replacement/ "Sway Bar Replacement Cost")
+  * [ Timing Belt Replacement Cost ](https://jerry.ai/car-repair/estimates/timing-belt-replacement/ "Timing Belt Replacement Cost")
+  * [ Intake Manifold Gaskets Replacement Cost ](https://jerry.ai/car-repair/estimates/intake-manifold-gaskets-replacement/ "Intake Manifold Gaskets Replacement Cost")
+
+
+##  [ More Repair Help ](https://jerry.ai/car-repair/ "More Repair Help")
+  * [ Humming Noise Getting Louder with Speed ](https://jerry.ai/car-repair/humming-noise-in-car-getting-louder-with-speed/ "umming Noise Getting Louder with Speed")
+  * [ Cleaning Throttle Body ](https://jerry.ai/car-repair/problems-after-cleaning-throttle-body/ "Cleaning Throttle Body")
+  * [ Testing Your Alternator ](https://jerry.ai/car-repair/how-to-test-alternator-by-disconnecting-battery/ "Testing Your Alternator")
+  * [ Key Fob Issues ](https://jerry.ai/car-repair/why-does-my-key-fob-not-work-after-replacing-the-battery/ "Key Fob Issues")
+  * [ Security Indicator Light ](https://jerry.ai/car-repair/security-light/ "Security Indicator Light")
+
+
+Customer Service:
+hi@jerry.ai
+[1-833-445-3779](tel:1-833-445-3779 "Call to Jerry")
+Mon to Fri Hours
+Sales
+8am – 12:00am
+Service
+8am – 12:00am
+Weekend Hours
+Sales
+8am – 6:30 pm
+(All hours are in Eastern Standard Time (ET))
+[FAQ](https://jerry.ai/faq/ "FAQ") [About](https://jerry.ai/about/ "About us") [Careers](https://jerry.ai/careers/ "Careers") [ Partnerships ](https://form.asana.com/?hash=2e77390f2d59d6caf1d0dd434107386d7ede684a2cfb9b453da4233c7042acd3&id=1147704816400924 "Partnerships") [ Press Kit ](https://drive.google.com/drive/folders/1dU3N_95sQSJaNeNn_-w9dvHHr7c_awXy?usp=sharing "Press Kit") [Terms Of Use](https://jerry.ai/terms-of-use/ "Terms Of Use") [Privacy Policy](https://jerry.ai/privacy-policy/ "Privacy Policy") [Insurance Licenses](https://jerry.ai/insurance-licenses/ "Insurance Licenses") [Editorial Standards](https://jerry.ai/editorial-standards/ "Editorial Standards") [ Do Not Sell or Share My Personal Information ](https://jerry.ai/do-not-sell-or-share-my-personal-information/ "Do Not Sell or Share My Personal Information")
+## Media Inquiry:
+press@jerry.ai
+##  Carriers, Lenders, and Other Businesses: 
+[Information Request Form](https://jerry.ai/thirdpartyrequest/ "Information Request Form")
+[ ![Download on the App Store](https://jerry.ai/wp-content/themes/wp-theme/assets/images/footer/download-on-the-app-store.svg?v=1) ](https://apps.apple.com/us/app/jerry-car-insurance-savings/id1258315950?itsct=apps_box_badge&itscg=30200 "Download on the App Store") [ ![Get it on Google Play](https://jerry.ai/wp-content/themes/wp-theme/assets/images/footer/get-it-on-google-play.svg?v=1) ](https://play.google.com/store/apps/details?id=com.jerrym&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1 "Get it on Google Play")
+[](https://www.instagram.com/thejerryapp/ "Instagram") [](https://x.com/thejerryapp "x") [](https://www.linkedin.com/company/jerryinc "LinkedIn") [](https://www.youtube.com/channel/UC-8FJDUziTbWqZaDZmtah5Q "YouTube") [](https://www.tiktok.com/@thejerryapp "tiktok")
+JERRY INSURANCE AGENCY, LLC is a [licensed](https://jerry.ai/insurance-licenses/ "LLC license") insurance agency in 50 states and Washington D.C. (CA license #: 0M34848).   
+Copyright © Jerry 2025. All rights reserved. 
+We value your privacy
+We use cookies to enhance your experience and to analyze performance and traffic. We may also share information about you with our social media partners for advertising purposes. See our [Privacy Policy](https://jerry.ai/privacy-policy/) for details, including your options with respect to information we collect and share. 
+![](https://verifi.podscribe.com/tag?action=view&user_id=b71eff5b-e366-423f-86a2-269a0ec95bbc&advertiser=jerryinsurance&referrer=_&session_referrer=_&session_landing_url=https%3A%2F%2Fjerry.ai%2Fcar-insurance%2Fillinois%2F%3Fcity%3Ddiamond&device_id=GvAycJulmMiYUbwYWgpqa&first_visited_at=1762543927721&stid=&ipv4=69.212.112.109&url=https%3A%2F%2Fjerry.ai%2Fcar-insurance%2Fillinois%2F%3Fcity%3Ddiamond&event_url=https%3A%2F%2Fjerry.ai%2Fcar-insurance%2Fillinois%2F%3Fcity%3Ddiamond&source=js-tag+v1.0.8&cachebust=1762543927922)

@@ -1,0 +1,97 @@
+{
+  "websearch_id": "websearch_n9ve473g939wzb9qwugae18r",
+  "search_id": "search_tlylujsf303dupp5x20vxj3k",
+  "timestamp": "2025-11-07T12:30:09.975411",
+  "startedAt": "2025-11-07T12:30:09.975411",
+  "completedAt": "2025-11-07T12:30:11.991499",
+  "durationSeconds": 2.02,
+  "urlsDiscoveredCount": 1,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "\"typical commission\" insurance broker auto",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "\"typical commission\" insurance broker auto",
+      "show_strict_warning": false,
+      "cleaned": "typical commission insurance broker auto",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "typical commission insurance broker auto"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Auto Insurance Agent Commission Rates and Earnings Explained",
+          "url": "https://www.cgaa.org/article/auto-insurance-agent-commission",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Insurance agents may also specialize in specific types of insurance, such as auto insurance. However, insurance brokers often sell a wide range of policies, including homeowner&#x27;s policy and accident insurance. Readers also liked: Difference between Car Insurance Types Ny \u00b7 Captive agents work for a single company, limiting their options to win potential customers. They may have fewer carriers to write through, which can reduce their ability to win sales. Typically, captive agents earn less in commission compared to independent agents.",
+          "page_age": "2025-02-14T02:32:49",
+          "profile": {
+            "name": "CGAA",
+            "url": "https://www.cgaa.org/article/auto-insurance-agent-commission",
+            "long_name": "cgaa.org",
+            "img": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "cgaa.org",
+            "hostname": "www.cgaa.org",
+            "favicon": "https://imgs.search.brave.com/JGYb7UMkkO9GWjH7kX-sNVYkWoFFiifhiQbeTs0f-jI/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMjU0NjQxNWY2/M2I0NzI3MzVkMzVm/NGQxNGNjMzNlM2Yz/YWY2Y2Y1NjFmMjI5/ZTRmNDNkOWUxMDFj/MmQwODc5NS93d3cu/Y2dhYS5vcmcv",
+            "path": "  \u203a insurance agent  \u203a auto insurance agent commission rates and earnings explained"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/MzYV2qkgCpXdI_tqbueUugDhE6g68SLcYPe9SDp5rd8/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzMx/MTU3NC9wZXhlbHMt/cGhvdG8tMzMxMTU3/NC5qcGVn",
+            "original": "https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg",
+            "logo": false
+          },
+          "age": "February 14, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}

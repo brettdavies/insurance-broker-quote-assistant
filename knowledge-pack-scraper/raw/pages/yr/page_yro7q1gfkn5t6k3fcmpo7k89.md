@@ -1,0 +1,280 @@
+[Skip to content](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/#header1)
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "English")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Korean")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "French")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Hebrew")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Japanese")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Hindi")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Chinese \(Simplified\)")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Spanish")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "German")
+
+
+Select Language Chinese (Simplified) French German Hebrew Hindi Japanese Korean Spanish
+Powered by [![Google Translate](https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png)Translate](https://translate.google.com)
+  * [Support Center](https://nysba.org/nysba-support-center/)
+  * [Events Calendar](https://nysba.org/events-calendar/)
+  * [About](https://nysba.org/about/)
+  * [Leadership/HOD](https://nysba.org/nysba-leadership/)
+  * [News](https://nysba.org/news-center/)
+  * [Communities](https://communities.nysba.org/home)
+  * [Join NYSBA](https://portal.nysba.org/s/join)
+  * [Login for My NYSBA](https://portal.nysba.org/)
+  * [Login ](https://nysba.org/?option=saml_user_login&idp=nyt279&redirect_to=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F)
+
+
+[Search ](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[](https://nysba.org)
+  * [Search](https://nysba.org/?s=)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+  * [NYSBA Membership](https://nysba.org/membership/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[Act Now and Receive Our New Member Benefits!![Right Arrow](https://nysba.org/wp-content/themes/nysba/dist/images/breadcrumb-carrot.svg)](https://nysba.org/membership/)
+      * [NYSBA Member Benefit Partners](https://nysba.org/nysba-member-benefit-partners/)
+      * [Business Services Discounts](https://nysba.org/business-services-discounts/)
+      * [Financial Services and Trust Accounting](https://nysba.org/financial-services-and-trust-accounting/)
+      * [Insurance Programs](https://nysba.org/insurance-programs/)
+      * [Legal Research and Alert Tools](https://nysba.org/legal-research-and-alert-tools/)
+      * [Travel and Rental Car Discounts](https://nysba.org/travel-discounts/)
+      * [Sports and Entertainment Offers](https://nysba.org/sports-and-entertainment-offers/)
+      * [Law Student](https://nysba.org/law-students/)
+      * [Newly Admitted Attorney](https://nysba.org/newly-admitted-attorneys/)
+      * [International Attorney](https://nysba.org/international-attorneys/)
+      * [Paralegal](https://nysba.org/nysba-for-paralegals/)
+      * [Firm Membership](https://nysba.org/nysba-firm-membership/)
+      * [Sustaining Membership](https://nysba.org/sustaining-membership/)
+      * [Dues Waiver Program](https://nysba.org/dues-waiver-program/)
+      * Join or rejoin NYSBA
+[Join or Rejoin Now](https://nysba.org/membership/)
+  * [Sections & Committees](https://nysba.org/sections-committees/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+      * [― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+        * Sections
+        * [Committees](https://nysba.org/committee-listing/)
+[View full list of sections](https://nysba.org/sections-listing/)
+        * [50+ Section](https://nysba.org/committees/50-section/)
+        * [Antitrust Law Section](https://nysba.org/committees/antitrust-law-section/)
+        * [Business Law Section](https://nysba.org/committees/business-law-section/)
+        * [Cannabis Law Section](https://nysba.org/committees/cannabis-law-section/)
+        * [Commercial & Federal Litigation Section](https://nysba.org/committees/commercial-federal-litigation-section/)
+        * [Corporate Counsel Section](https://nysba.org/committees/corporate-counsel-section/)
+        * [Criminal Justice Section](https://nysba.org/committees/criminal-justice-section/)
+        * [Dispute Resolution Section](https://nysba.org/committees/dispute-resolution-section/)
+        * [Elder Law & Special Needs Section](https://nysba.org/committees/elder-law-special-needs-section/)
+        * [Entertainment, Arts & Sports Law Section](https://nysba.org/committees/entertainment-arts-sports-law-section/)
+        * [Environmental & Energy Law Section](https://nysba.org/committees/environmental-energy-law-section/)
+        * [Family Law Section](https://nysba.org/committees/family-law-section/)
+        * [Food, Drug & Cosmetic Law Section](https://nysba.org/committees/food-drug-cosmetic-law-section/)
+        * [General Practice Section](https://nysba.org/committees/general-practice-section/)
+        * [Health Law Section](https://nysba.org/committees/health-law-section/)
+        * [Intellectual Property Law Section](https://nysba.org/committees/intellectual-property-law-section/)
+        * [International Section](https://nysba.org/committees/international-section/)
+        * [Judicial Section](https://nysba.org/committees/judicial-section/)
+        * [Labor & Employment Law Section](https://nysba.org/committees/labor-employment-law-section/)
+        * [LGBTQ+ Law Section](https://nysba.org/committees/lgbtq-law-section/)
+        * [Local and State Government Law Section](https://nysba.org/committees/local-and-state-government-law-section/)
+        * [Real Property Law Section](https://nysba.org/committees/real-property-law-section/)
+        * [Tax Section](https://nysba.org/committees/tax-section/)
+        * [Torts, Insurance, & Compensation Law Section](https://nysba.org/committees/torts-insurance-compensation-law-section/)
+        * [Trial Lawyers Section](https://nysba.org/committees/trial-lawyers-section/)
+        * [Trusts & Estates Law Section](https://nysba.org/committees/trusts-estates-law-section/)
+        * [Women in Law Section](https://nysba.org/committees/women-in-law-section/)
+        * [Young Lawyers Section](https://nysba.org/committees/young-lawyers-section/)
+  * [Attorney Resources](https://nysba.org/attorney-resources/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[Attorney Resources![Right Arrow](https://nysba.org/wp-content/themes/nysba/dist/images/breadcrumb-carrot.svg)](https://nysba.org/attorney-resources/)
+      * [Attorney Well-Being](https://nysba.org/attorney-well-being/)
+      * [Lawyer Assistance Program](https://nysba.org/lawyer-assistance-program/)
+      * [Attorney Verification](https://nysba.org/attorney-resources/attorney-verification/)
+      * [Free Legal Research with vLex Fastcase](https://nysba.org/attorney-resources/vlex-fastcase-legal-research/)
+      * [Free Trust Accounting & Billing Software by Smokeball](https://nysba.org/free-trust-accounting-billing-software-smokeball/)
+      * [Planning Ahead Guide](https://nysba.org/attorney-resources/planning-ahead-guide/)
+      * [The Practice of Law in New York State (PDF)](https://nysba.org/wp-content/uploads/2020/03/The-Practice-of-Law-in-New-York-State.pdf)
+      * [Practice Resources](https://nysba.org/practice-resources/)
+      * [Professional Standards](https://nysba.org/attorney-resources/professional-standards/)
+      * [House of Delegates Approved Reports](https://nysba.org/committees/members-of-the-house-of-delegates/#reports)
+      * [Ethics Opinions](https://nysba.org/news-center/?show_category=ethics-opinions)
+      * [Career Center and Job Alerts](https://jobs.nysba.org/)
+      * [Public Interest & Pro Bono](https://nysba.org/pro-bono-services/)
+      * [Moot Court Program](https://nysba.org/committee-on-courts-of-appellate-jurisdiction-moot-court-program/)
+      * [NYSBA Publications](https://nysba.org/nysba-publications/)
+      * [Podcasts](https://nysba.org/podcast)
+  * [Public Resources](https://nysba.org/public-resources/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[Public Resources![Right Arrow](https://nysba.org/wp-content/themes/nysba/dist/images/breadcrumb-carrot.svg)](https://nysba.org/public-resources/)
+      * [Client Rights and Responsibilities](https://nysba.org/public-resources/clients-rights-and-responsibilities/)
+      * [Department of Government Relations](https://nysba.org/governmentrelations/)
+      * [Guide to Attorney Discipline](https://nysba.org/public-resources/guide-to-attorney-discipline/)
+      * [Law, Youth and Citizenship](https://nysba.org/public-resources/law-youth-and-citizenship/)
+      * [Lawyer Referral Service](https://nysba.org/new-york-state-bar-association-lawyer-referral-service/)
+      * [LEGALEase Resources](https://nysba.org/legalease-online/)
+      * [Free Legal Answers](https://ny.freelegalanswers.org/)
+      * [Pro Bono Services](https://nysba.org/pro-bono-network/)
+      * [Mediator Directory](https://nysba.org/find-a-mediator-directory/)
+  * [CLE Programs](https://nysba.org/live-programs/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[CLE Programs![Right Arrow](https://nysba.org/wp-content/themes/nysba/dist/images/breadcrumb-carrot.svg)](https://nysba.org/live-programs/)
+      * [Live](https://nysba.org/live-programs/all-programs/)
+      * [On-Demand Programs](https://nysba.org/nysba-online-store/nysba-store-catalog/?format=online-on-demand)
+      * [Law Practice Management](https://nysba.org/law-practice-management/)
+      * [Bridging the Gap](https://nysba.org/bridging-the-gap/)
+      * [NYSBA Trial Academy](https://nysba.org/virtualtrialacademy/)
+  * [Online Store](https://nysba.org/nysba-online-store/)![arrow pointing right](https://nysba.org/wp-content/themes/nysba/dist/images/responsive-menu-arrow.svg)
+[― Back to main menu](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+[Online Store![Right Arrow](https://nysba.org/wp-content/themes/nysba/dist/images/breadcrumb-carrot.svg)](https://nysba.org/nysba-online-store/)
+      * [Books and Publications](https://nysba.org/nysba-online-store/nysba-store-catalog//?format=book,ebook)
+      * [Forms](https://nysba.org/nysba-online-store/nysba-store-catalog/?format=forms)
+      * [LEGALEase Pamphlets](https://nysba.org/nysba-online-store/nysba-store-catalog/?format=pamphlet)
+      * [Coursebooks](https://nysba.org/nysba-online-store/nysba-store-catalog/?format=coursebook)
+      * [Additional Resources](https://nysba.org/nysba-online-store/nysba-store-catalog/?format=audio-cd,dvdmp3,online-on-demand,supplement-book,supplement-ebook)
+      * [All Products](https://nysba.org/nysba-online-store/nysba-store-catalog/)
+      * Featured Product
+![CommercialArbitration_250x250](https://nysba.org/wp-content/uploads/2025/05/CommercialArbitration_250x250-e1751913412929.png)
+[Commercial Arbitration Training for Arbitrators and Litigators (eBook)](https://nysba.org/products/commercial-arbitration-training-for-arbitrators-and-litigators-ebook/)
+      * [Looking for Continuing Legal Education Programs?](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+      * [CLE Products](https://nysba.org/nysba-online-store/nysba-store-catalog/)
+      * [All CLE Programs](https://nysba.org/live-programs/all-programs/)
+  * [ Cart ![cart](https://nysba.org/wp-content/themes/nysba/dist/images/cart-icon.svg)](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+
+
+[![logo](https://nysba.org/wp-content/themes/nysba/dist/images/logo-search.png)](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+  * [Advanced Search](https://nysba.org/?s=&advanced=1)
+  * [CLE Program Catalog](https://nysba.org/cle-programs/cle-program-catalog/)
+  * [NYSBA Store Catalog](https://nysba.org/nysba-online-store/nysba-store-catalog/)
+
+
+![gradient circle \(purple\)](https://nysba.org/wp-content/themes/nysba/dist/images/gradient-circle-purple.png) ![gradient circle \(green\)](https://nysba.org/wp-content/themes/nysba/dist/images/gradient-circle-green.png)
+# A Guide to No-Fault Insurance in New York (Print Edition)
+  * [Online Store](https://nysba.org/nysba-online-store/)
+  * [Online Store Catalog](https://nysba.org/nysba-online-store/nysba-store-catalog/)
+  * A Guide to No-Fault Insurance in New York (Print Edition)
+
+
+## A Guide to No-Fault Insurance in New York (Print Edition)
+![AGuideToNoFaulthInsuranceInNY_Web250X250](https://nysba.org/wp-content/uploads/2021/07/AGuideToNoFaulthInsuranceInNY_Web250X250.png)
+Editor(s):
+  * John M. Nonna, Esq.; Christopher W. Healy, Esq. 
+
+
+**Contents at a Glance**
+No-Fault Insurance / Motor Vehicle Coverage Issues / Exceeding the No-Fault Threshold: Serious Injury
+**Product Description**
+PC: 412721/412721E
+A helpful guide for lawyers whose practice includes no-fault issues which can be a challenging area of law given the statute and court interpretations. Written by authors with substantial practice in this area of law, _A Guide to No-Fault Insurance in New York_ is a comprehensive treatment of the issues affecting no-fault insurance law in New York State. Derived from the larger treatise on _Insurance Law Practice_ , Third Edition, this title’s sole focus is New York’s no-fault law (the Comprehensive Motor Vehicle Insurance Reparations Act). The no-fault law is designed to provide certain mandatory insurance benefits to persons involved in motor vehicle accidents, thereby also reducing the number of potential lawsuits. 
+This handbook provides a succinct
+**__Return Policy__**
+_If for any reason you are not satisfied with your purchase, NYSBA books can be returned for a refund of the purchase price and original shipping cost if the return is the result of an error on NYSBA’s part. To receive a refund, the item must be returned to NYSBA within 30 days of the purchase date in the same condition in which it was received. When returning materials, please include a copy of the invoice or packing slip and mark it “RETURN.” All eBooks, CDs, downloadable products, and software purchases are nonrefundable and nonreturnable._
+Table of Contents:
+  * [View Here](https://s3.us-east-1.amazonaws.com/fonteva-customer-media/00D1U000001361rUAA/BqSAgsgp_412721_TOCAuthorBios_pdf)
+
+
+Published Date:
+  * July 30, 2021 
+
+
+Format:
+  * Book 
+
+
+Product Code:
+  * 412721 
+
+
+ISBN:
+  * 9781579690342 
+
+
+Page Count:
+  * 126 pages 
+
+
+Share
+  * [](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F)
+  * [](https://www.linkedin.com/shareArticle?mini=true&url=https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/&title=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\))
+  * [](https://twitter.com/intent/tweet?url=https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/&text=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\))
+  * 
+
+NYSBA MEMBERS SAVE MONEY
+MEMBER PRICE $195.00
+[Click here to learn more and join NYSBA](https://nysba.org/membership?utm_source=nysbaWeb&utm_medium=storeUPS&utm_campaign=membership2025)
+PURCHASE as non-member
+NON-MEMBER PRICE $395.00
+[Log in to Purchase](https://nysba.org?option=saml_user_login&redirect_to=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F)
+Available formats
+  * [eBook](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-ebook/)
+  * [Book](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/)
+
+
+Share
+  * [](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F)
+  * [](https://www.linkedin.com/shareArticle?mini=true&url=https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/&title=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\))
+  * [](https://twitter.com/intent/tweet?url=https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/&text=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\))
+  * 
+
+![up arrow](https://nysba.org/wp-content/themes/nysba/dist/images/tablet-carrot-up.png)![shopping cart](https://nysba.org/wp-content/themes/nysba/dist/images/mobile-cart.png)
+NYSBA MEMBERS SAVE MONEY
+MEMBER PRICE $195.00
+[Click here to learn more and join NYSBA](https://nysba.org/membership?utm_source=nysbaWeb&utm_medium=storeUPS&utm_campaign=membership2025)
+PURCHASE as non-member
+NON-MEMBER PRICE $395.00
+[Login To Purchase](https://nysba.org?option=saml_user_login&redirect_to=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F)
+## Subscribe for Updates from NYSBA
+[Subscribe](https://portal.nysba.org/s/subscribe)
+  * [ ](https://www.facebook.com/NYSBA/)
+  * [ ](https://www.linkedin.com/company/new-york-state-bar-association/)
+  * [ ](https://twitter.com/nysba)
+  * [ ](https://www.instagram.com/nystatebar/)
+  * [ ](https://www.youtube.com/nysba)
+
+
+© 2025 New York State Bar Association
+Phone: 518-463-3200
+[1 Elk Street, Albany, NY 12207](https://www.google.com/maps/place/1+Elk+St,+Albany,+NY+12207/@42.6531763,-73.7563462,17z/data=!3m1!4b1!4m5!3m4!1s0x89de0a25ddbbda01:0xd396dc776a38dada!8m2!3d42.6531724!4d-73.7541522)
+[ ![footer-logo](https://nysba.org/wp-content/uploads/2019/10/footer-logo.png) ](https://nysba.org)
+  * [Contact Us](https://nysba.org/contact-us/)
+  * [Careers](https://nysba.org/employment-at-nysba/)
+  * [NYSBA Staff](https://nysba.org/nysba-staff/)
+
+
+  * [Advertising and Sponsorship Opportunities](https://www.nysbamediaplanner.org/)
+  * [New York Bar Foundation](http://tnybf.org/)
+  * [NYSBA Code of Conduct](https://nysba.org/wp-content/uploads/2022/11/NYSBA-Code-of-Conduct.pdf)
+
+
+  * [Privacy Policy](https://nysba.org/privacy-policy/)
+  * [Terms of Use](https://nysba.org/terms-of-use/)
+  * [NYSBA.org Accessibility Statement](https://nysba.org/nysba-org-accessibility-statement/)
+
+
+## Supported Languages
+Translate:
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "English")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Korean")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "French")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Hebrew")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Japanese")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Hindi")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Chinese \(Simplified\)")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "Spanish")
+  * [](https://nysba.org/products/a-guide-to-no-fault-insurance-in-new-york-print-edition/ "German")
+
+
+## Subscribe for Updates from NYSBA
+[Subscribe](https://portal.nysba.org/s/subscribe)
+  * [ ](https://www.facebook.com/NYSBA/)
+  * [ ](https://www.linkedin.com/company/new-york-state-bar-association/)
+  * [ ](https://twitter.com/nysba)
+  * [ ](https://www.instagram.com/nystatebar/)
+  * [ ](https://www.youtube.com/nysba)
+
+
+© 2025 New York State Bar Association
+Phone: 518-463-3200
+[1 Elk Street, Albany, NY 12207](https://www.google.com/maps/place/1+Elk+St,+Albany,+NY+12207/@42.6531763,-73.7563462,17z/data=!3m1!4b1!4m5!3m4!1s0x89de0a25ddbbda01:0xd396dc776a38dada!8m2!3d42.6531724!4d-73.7541522)
+By visiting this website, you agree and consent to the Website Terms of Use and NYSBA Privacy Policy. This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.AcceptDenyPrivacy policy
+You can revoke your consent any time using the Revoke consent button.Revoke consent
+![](https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg)
+Original text
+Rate this translation
+Your feedback will be used to help improve Google Translate
+![](https://t.co/1/i/adsct?bci=4&dv=America%2FChicago%26en-US%26Google%20Inc.%26MacIntel%26127%261080%26600%2612%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=ffb105ce-e1a0-46ea-9276-6662833af83c&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=30649ee5-a34e-4748-959b-19d632858b13&pt=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\)%20-%20New%20York%20State%20Bar%20Association&tw_document_href=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F&tw_iframe_status=0&txn_id=o7saa&type=javascript&version=2.3.34)![](https://analytics.twitter.com/1/i/adsct?bci=4&dv=America%2FChicago%26en-US%26Google%20Inc.%26MacIntel%26127%261080%26600%2612%2624%261080%26600%260%26na&eci=3&event=%7B%7D&event_id=ffb105ce-e1a0-46ea-9276-6662833af83c&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=30649ee5-a34e-4748-959b-19d632858b13&pt=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\)%20-%20New%20York%20State%20Bar%20Association&tw_document_href=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F&tw_iframe_status=0&txn_id=o7saa&type=javascript&version=2.3.34)
+![](https://bat.bing.com/action/0?ti=187099923&tm=gtm002&Ver=2&mid=38dd82aa-392f-41d9-8666-e0ecae922319&bo=1&sid=a34186b0bc1011f085357f77f963dfb7&vid=a3417a80bc1011f0b58e47f9aa2f203e&vids=1&msclkid=N&pi=918639831&lg=en-US&sw=1080&sh=600&sc=24&tl=A%20Guide%20to%20No-Fault%20Insurance%20in%20New%20York%20\(Print%20Edition\)%20-%20New%20York%20State%20Bar%20Association&p=https%3A%2F%2Fnysba.org%2Fproducts%2Fa-guide-to-no-fault-insurance-in-new-york-print-edition%2F&r=&lt=1472&pt=1762544007204,,,,,0,1,41,41,76,54,76,916,935,930,1388,1472,1472,,,&pn=0,0&evt=pageLoad&sv=2&cdb=AQAQ&rn=517905)

@@ -1,0 +1,160 @@
+[Skip to content](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/#content)
+[![NBC 6 South Florida](https://media.nbcmiami.com/2025/10/WTVJ_Rings_On_Dark@3x.png?fit=417%2C120&quality=85&strip=all&w=139&h=40) ](https://www.nbcmiami.com/)
+Main Navigation
+Search
+Search for:
+[Local](https://www.nbcmiami.com/news/local/) [Weather](https://www.nbcmiami.com/weather/) [Video](https://www.nbcmiami.com/videos/) [On Your Side](https://www.nbcmiami.com/on-your-side/) [Investigates](https://www.nbcmiami.com/investigations/) [Responds](https://www.nbcmiami.com/responds/) [Newsletters](https://www.nbcmiami.com/newsletters/) [TV Listings](https://www.nbcmiami.com/live/)
+[Partly Cloudy 84º](https://www.nbcmiami.com/weather/)
+[ ](https://www.nbcmiami.com/watch/)
+[Create profile / Log in](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+[Dashboard](https://www.nbcmiami.com/account/)
+[Email preferences](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+[Sign out](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+Trending [Decision 2025](https://www.nbcmiami.com/news/politics/decision/) [🌪️Hurricane Season](https://www.nbcmiami.com/weather/hurricane-season/) [6 to Know](https://www.nbcmiami.com/tag/6-to-know/) [📺Watch News 24/7](https://www.nbcmiami.com/watch/) [🔎 Send a Tip](https://www.nbcmiami.com/investigations/submit-tip/) [What’s Being Built Here](https://www.nbcmiami.com/whats-being-built-here/whats-being-built-here-inside-look-at-the-south-florida-construction-projects-in-your-neighborhood/3572301/) [Money Chat](https://www.nbcmiami.com/money-chat/) [Dangerous Drive](https://www.nbcmiami.com/dangerous-drive/) [Newsletters](https://www.nbcmiami.com/newsletters/?_osource=ed_npd_nbc_nat_ot_newltrtrending/) [How to Stream](https://www.nbcmiami.com/news/local/how-to-watch-nbc-6-news-live-events-on-peacock-roku-samsung-tv-plus-xumo-play/2959648/?_osource=mk_npd_nbc_mia_ot_genfasttrending/)
+Expand
+[1 Weather Alert](https://www.nbcmiami.com/weather/severe-weather-alerts/)
+#  Citizens Property Insurance Corp. sheds 100,000 policies
+##  Citizens, which was created as an insurer of last resort but ballooned in recent years to become the state’s largest insurer, had 844,688 policies as of Friday, according to newly posted data on its website. That was down from 945,005 policies a week earlier and 942,810 policies two weeks earlier.
+####  By News Service of Florida • Published February 26, 2025 • Updated on February 26, 2025 at 2:03 pm
+BOOKMARKER
+[ ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nbcmiami.com%2Fnews%2Flocal%2Fcitizens-property-insurance-corp-sheds-100000-policies%2F3552938%2F&Citizens%20Property%20Insurance%20Corp.%20sheds%20100%2C000%20policies?_osource=db_npd_nbc_wtvj_fb_shr)
+ShareToggle Fullscreen
+[![Watch button](https://media.nbcnewyork.com/assets/editorial/national/images/cta-eye-icon-white.png) WATCH HERE](https://www.nbcmiami.com/watch/?_osource=ed_npd_nbc_mia_site_fast_auto3)
+[![](https://media.nbcmiami.com/2025/11/6tk-nov7.png) ](https://www.nbcmiami.com/video/nbc-6-news/6-to-know-top-stories-of-the-day-1228/3717892/)
+[6 to Know](https://www.nbcmiami.com/tag/6-to-know/) 6 hours ago
+###  [ 6 to know – Top stories of the day ](https://www.nbcmiami.com/video/nbc-6-news/6-to-know-top-stories-of-the-day-1228/3717892/)
+[![](https://media.nbcmiami.com/2025/11/sailboat-fire-deerfield-beach.jpg?quality=85&strip=all) ](https://www.nbcmiami.com/news/local/its-burning-my-face-video-shows-50-foot-sailboat-on-fire-in-deerfield-beach/3717961/)
+[Deerfield Beach](https://www.nbcmiami.com/tag/deerfield-beach/) 52 seconds ago
+###  [ ‘It's burning my face': Video shows 50-foot sailboat on fire in Deerfield Beach ](https://www.nbcmiami.com/news/local/its-burning-my-face-video-shows-50-foot-sailboat-on-fire-in-deerfield-beach/3717961/)
+[ ](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nbcmiami.com%2Fnews%2Flocal%2Fcitizens-property-insurance-corp-sheds-100000-policies%2F3552938%2F&Citizens%20Property%20Insurance%20Corp.%20sheds%20100%2C000%20policies?_osource=db_npd_nbc_wtvj_fb_shr)
+[](https://t.truehealthbrief.com/k48l51yfsn)[Memory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%201:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%201:) Learn More Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?](https://t.truehealthbrief.com/k48l51yfsn "Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?")
+[](https://t.truehealthbrief.com/k48l51yfsn)[Memory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%201:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%201:) Learn More Neurologist Reveals: Dementia Has Been Linked to a Common Habit](https://t.truehealthbrief.com/k48l51yfsn "Neurologist Reveals: Dementia Has Been Linked to a Common Habit")
+[](https://financebuzz.com/dumb-money-moves-yaez-1)[FinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-1x1:Below%20Article%20Thumbnails%20|%20Card%202:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-1x1:Below%20Article%20Thumbnails%20|%20Card%202:) Read More 8 Dumbest Things Middle-Class Americans Waste Money On](https://financebuzz.com/dumb-money-moves-yaez-1 "8 Dumbest Things Middle-Class Americans Waste Money On")
+[](https://financebuzz.com/money-moves-senior-benefits-yaez-1)[FinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%203:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%203:) Read More The 10 Worst Ways Retirees Waste Money](https://financebuzz.com/money-moves-senior-benefits-yaez-1 "The 10 Worst Ways Retirees Waste Money")
+[](https://l.ottoinsurance.com/n)[OTTO Insurance |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%203:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-2x1:Below%20Article%20Thumbnails%20|%20Card%203:) Learn More Worst Car Insurance Companies for Overcharging (Is Yours On The List?)](https://l.ottoinsurance.com/n "Worst Car Insurance Companies for Overcharging \(Is Yours On The List?\)")
+[![](https://media.nbcmiami.com/2024/04/Southflorida-web@3x.png?fit=904%2C72&quality=85&strip=all)![](https://nbcu.tmsimg.com/assets/p25264165_b_h10_ab.jpg?w=960&h=540) 2:30PM: NBC6 South Florida Midday ](https://www.nbcmiami.com/watch/)
+### Trending Stories
+* [![FWC approves rule changes to capture invasive green iguanas](https://media.nbcmiami.com/2022/12/tlmd-iguana.jpg?quality=85&strip=all&resize=100%2C56) ](https://www.nbcmiami.com/news/local/fwc-approves-rule-changes-to-capture-invasive-green-iguanas/3717027/)
+####  [ Florida ](https://www.nbcmiami.com/tag/florida/)
+[ FWC approves rule changes to capture invasive green iguanas ](https://www.nbcmiami.com/news/local/fwc-approves-rule-changes-to-capture-invasive-green-iguanas/3717027/)
+* [![Hialeah man arrested on drug trafficking charges in undercover FDLE bust](https://media.nbcmiami.com/2022/05/052422-FDLE-Florida-Department-of-Law-Enforcement.jpg?quality=85&strip=all&resize=100%2C56) ](https://www.nbcmiami.com/news/local/hialeah-man-arrested-on-drug-trafficking-charges-in-undercover-fdle-bust/3717908/)
+####  [ Hialeah ](https://www.nbcmiami.com/tag/hialeah/)
+[ Hialeah man arrested on drug trafficking charges in undercover FDLE bust ](https://www.nbcmiami.com/news/local/hialeah-man-arrested-on-drug-trafficking-charges-in-undercover-fdle-bust/3717908/)
+* [![Video shows massive fire left Miami Heat coach Erik Spoelstra's home heavily damaged](https://media.nbcmiami.com/2025/11/Broll-Photos_Second-Alarm-Fire-4800-block-Davis-Road-6.jpg?quality=85&strip=all&resize=100%2C56) ](https://www.nbcmiami.com/news/local/crews-battle-fire-at-miami-dade-home-registered-to-heat-coach-erik-spoelstra/3717272/)
+####  [ Miami Heat ](https://www.nbcmiami.com/tag/miami-heat/)
+[ Video shows massive fire left Miami Heat coach Erik Spoelstra's home heavily damaged ](https://www.nbcmiami.com/news/local/crews-battle-fire-at-miami-dade-home-registered-to-heat-coach-erik-spoelstra/3717272/)
+* [![Live updates: Today's South Florida News](https://media.nbcmiami.com/2022/01/Breaking-News-2022.jpg?quality=85&strip=all&resize=100%2C56) ](https://www.nbcmiami.com/news/local/live-updates-todays-south-florida-news-39/3717854/)
+####  [ South Florida ](https://www.nbcmiami.com/tag/south-florida/)
+[ Live updates: Today's South Florida News ](https://www.nbcmiami.com/news/local/live-updates-todays-south-florida-news-39/3717854/)
+* [![Ex-partner of Fort Lauderdale mayor arrested for violating domestic violence order](https://media.nbcmiami.com/2025/11/110725-Dean-Trantalis-Daniel-Curran.jpg?quality=85&strip=all&resize=100%2C56) ](https://www.nbcmiami.com/news/local/former-partner-of-fort-lauderdale-mayor-arrested-for-violating-domestic-violence-order-jail-records/3717984/)
+####  [ Fort Lauderdale ](https://www.nbcmiami.com/tag/fort-lauderdale/)
+[ Ex-partner of Fort Lauderdale mayor arrested for violating domestic violence order ](https://www.nbcmiami.com/news/local/former-partner-of-fort-lauderdale-mayor-arrested-for-violating-domestic-violence-order-jail-records/3717984/)
+* [](https://lp.pretected.com/articles/v2)[Texas: Worst Zip Codes For Auto Insurance (Hope Yours Isn't on List)Auto Insurance QuotesLearn More](https://lp.pretected.com/articles/v2 "Texas: Worst Zip Codes For Auto Insurance \(Hope Yours Isn't on List\)")
+### Weather Forecast
+Miami, FL
+[ 84° Partly Cloudy 0% Precip Tonight72° Tomorrow87° ](https://www.nbcmiami.com/weather/)
+### Subscribe to our Newsletters
+Sign up to receive breaking news alerts in your inbox.
+Enter your emailSign up
+[Privacy Policy](http://www.nbcuniversal.com/privacy/)
+[![NBC 6 South Florida](https://media.nbcmiami.com/2025/10/WTVJ_Rings_On_Light@3x.png?fit=417%2C120&quality=85&strip=all) ](https://www.nbcmiami.com/)
+* [ Facebook ](http://www.facebook.com/NBC6SouthFlorida)
+* [ Instagram ](https://instagram.com/nbc6)
+* [ TikTok ](https://www.tiktok.com/@nbcsouthflorida)
+* [ Youtube ](https://www.youtube.com/@nbc6southflorida)
+* [About NBC 6](https://www.nbcmiami.com/news/local/about-nbc-6-our-mission-and-story/2861756/)
+* [Our News Standards](https://www.nbcmiami.com/news/local/nbc-6-south-florida-news-standards-and-publishing-principles/3016084/)
+* [Submit Tips for Investigations](https://www.nbcmiami.com/investigations/submit-tip/)
+* [Newsletters](https://www.nbcmiami.com/newsletters/)
+* [Contact Us](https://www.nbcmiami.com/contact-us/)
+* [Xfinity: Internet, TV, streaming, more](https://www.xfinity.com/local/fl/miami?cmp=ILC:OTH:BAUP:ALL:GEN:GEN:OTH:DIG:eri:51515565374)
+* [WTVJ Public Inspection File](https://publicfiles.fcc.gov/tv-profile/WTVJ)
+* [WTVJ Accessibility](https://www.nbcmiami.com/wtvj-accessibility/)
+* [WTVJ Employment Information](https://www.nbcmiami.com/wtvj-employment-information/)
+* [FCC Applications](https://www.nbcmiami.com/fcc-applications/)
+* [Terms of Service](https://www.nbcuniversal.com/terms)
+* [Advertise with us](https://together.nbcuni.com/advertise/?utm_source=nbcmiami&utm_medium=referral&utm_campaign=property_ad_pages)
+* [Send Feedback](https://www.nbcmiami.com/send-feedback/)
+* [Privacy Policy](https://www.nbcuniversal.com/privacy/?brandA=Owned_Stations&intake=NBC_South_Miami)
+* Your Privacy Choices
+* [CA Notice](https://www.nbcuniversal.com/privacy/california-consumer-privacy-act?intake=NBC_South_Miami)
+* [Ad Choices](https://www.nbcuniversal.com/privacy/cookies#accordionheader2)
+Copyright © 2025 NBCUniversal Media, LLC. All rights reserved
+Close Menu
+[![NBC 6 South Florida](https://media.nbcmiami.com/2025/10/WTVJ_Rings_On_Light@3x.png?fit=417%2C120&quality=85&strip=all) ](https://www.nbcmiami.com/)
+[Create profile / Log in](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+[Dashboard](https://www.nbcmiami.com/account/)
+Search for:
+[ Newsletters ](https://www.nbcmiami.com/newsletters/) [ News ](https://www.nbcmiami.com/news/) [ NBC 6 News ](https://www.nbcmiami.com/nbc-6-news/) [ Local ](https://www.nbcmiami.com/news/local/) [ US & World ](https://www.nbcmiami.com/news/national-international/) [ Weather ](https://www.nbcmiami.com/weather/) [ Weather alerts ](https://www.nbcmiami.com/weather/severe-weather-alerts/) [ Hurricane Season ](https://www.nbcmiami.com/weather/hurricane-season/) [ On Your Side ](https://www.nbcmiami.com/on-your-side/) [ Investigates ](https://www.nbcmiami.com/investigations/) [ Responds ](https://www.nbcmiami.com/responds/) [ Submit a tip ](https://www.nbcmiami.com/consumer-form/) [ PolitiFact ](https://www.nbcmiami.com/news/politics/politifact/) [ Impact With Jackie Nespral ](https://www.nbcmiami.com/news/politics/impact/) [ Voices With Jawan Strader ](https://www.nbcmiami.com/community/voices/) [ South Florida Live ](https://www.nbcmiami.com/entertainment/south-florida-live/) [ Entertainment ](https://www.nbcmiami.com/entertainment/) [ Traffic ](https://www.nbcmiami.com/traffic/) [ Sports ](https://www.nbcmiami.com/news/sports/) [ Community ](https://www.nbcmiami.com/community/)
+[ About NBC 6 ](https://www.nbcmiami.com/news/local/about-nbc-6-our-mission-and-story/2861756/) [ Our News Standards ](https://www.nbcmiami.com/news/local/nbc-6-south-florida-news-standards-and-publishing-principles/3016084/) [ Submit a Consumer Complaint ](https://www.nbcmiami.com/consumer-form/) [ Submit Photos and Video ](https://www.nbcmiami.com/ugc/) [ Contests ](https://www.nbcmiami.com/on-air/contests/) [ TV Schedule ](https://www.nbcmiami.com/tv-schedule/) [ Our Apps ](https://www.nbcmiami.com/products/) [ Newsletters ](https://www.nbcmiami.com/newsletters/) [ TV Schedule ](https://www.nbcmiami.com/tv-schedule/) [ Cozi TV ](https://cozitv.com/)
+#### Follow Us
+* [ Facebook ](http://www.facebook.com/NBC6SouthFlorida)
+* [ Instagram ](https://instagram.com/nbc6)
+* [ TikTok ](https://www.tiktok.com/@nbcsouthflorida)
+* [ Youtube ](https://www.youtube.com/@nbc6southflorida)
+[ Contact Us](https://www.nbcmiami.com/contact-us/)![](https://pixel.wp.com/g.gif?v=ext&blog=165596159&post=3552938&tz=-5&srv=www.nbcmiami.com&hp=vip&j=1%3A14.5&host=www.nbcmiami.com&ref=&fcp=2560&rand=0.2406707699298143)
+![Company Logo](https://cdn.cookielaw.org/logos/17e5cb00-ad90-47f5-a58d-77597d9d2c16/ffe22c24-b5ec-419d-a0f9-f090bf07f6f0/9366d06d-524a-4047-b900-ba2d60e62e46/NBCU_logo.png)
+Residents of one of the states listed in the ‘Your Rights’ section of NBCUniversal’s Privacy Policy we have received your Global Privacy Control signal or you have opted out from the toggle below, but there is another step. To opt out of us selling or sharing/processing data such as your name, email address and other associated personal information for targeted advertising activities as described above, please submit the form below. ALL OTHER LOCATIONS: If we do not detect that you are in one of the states listed in the ‘Your Rights’ section of NBCUniversal’s Privacy Policy, these choices will not apply even if you toggle this button off.
+## Your Privacy Choices: Opt-out of sale of personal information and Opt-out of sharing or processing personal information for targeted ads
+To provide you with a more relevant online experience, certain online ad partners may combine personal information that we make available with data across different businesses and otherwise assist us with related advertising activities, as described in our[Privacy Policy](https://www.nbcuniversal.com/privacy). This may be considered "selling" or "sharing/processing” for targeted online advertising under applicable law.
+If you are a resident of one of the states listed in the['Your Rights'](https://www.nbcuniversal.com/privacy#accordionheader5) section of NBCUniversal’s Privacy Policy, to opt out of us selling or sharing/processing your personal information:
+* such as cookies and devices identifiers for the targeted ads and related purposes for this site/app on this browser/device: switch the “Allow Sale of My Personal Info or Sharing/Processing for Targeted Ads” toggle under Manage Preferences to OFF (grey color) by moving it LEFT and clicking “Confirm My Choice”.
+* such as your name, email address and other associated personal information for targeted advertising activities as described above, please submit the form below.
+**_Please note that choices related to cookies and device identifiers are specific to the brand’s website or app on the browser or device where you are making the election._**
+### Manage Preferences: Toggle Off and Click ‘Confirm My Choice’ and Complete Opt-Out Form to Opt-Out
+#### Allow Sale of My Personal Info and Sharing/Processing for Targeted Ads
+Allow Sale of My Personal Info and Sharing/Processing for Targeted Ads
+**Resident of the states listed in the 'Your Rights' section of NBCUniversal’s Privacy Policy Only:** To opt out of selling or sharing/processing for targeted advertising of information such as cookies and device identifiers processed for targeted ads (as defined by law) and related purposes for this site/app on this browser/device, switch this toggle to off (grey color) by moving it left and clicking **“Confirm My Choice”** below. (This will close this dialogue box, so please open the email Opt-Out Form 1st).
+**ALL OTHER LOCATIONS:** If we do not detect that you are in one of the states listed in the 'Your Rights' section of NBCUniversal’s Privacy Policy, this choice will not apply even if you toggle this button off.
+If you turn this off, you will still see ads, but they may be less relevant or based only on our first-party information about you.
+Please note, you must make the Manage Preference choices on each site/app on each browser/device you use to access the services. You must also renew this choice if you clear your cookies. You can change your precise geolocation permissions for our mobile apps in your mobile device settings.
+#### Opt-Out Form
+Always Active
+To opt out of the use of your email and other personal information related to that email such as your name for targeted advertising activities please complete this [Opt-Out Form](https://privacyportal.onetrust.com/webform/17e5cb00-ad90-47f5-a58d-77597d9d2c16/cda09e33-f935-4960-87de-afa722cef3c2)
+#### Other Categories of Data Collection
+Always Active
+Please see our Cookie Notice for more details which can be found by navigating to the Privacy Policy in the menu settings page.
+Back Button
+### Cookie List
+Search Icon
+Filter Icon
+Clear
+checkbox label label
+Apply Cancel
+Consent Leg.Interest
+checkbox label label
+checkbox label label
+checkbox label label
+Confirm My Choice
+[![Powered by Onetrust](https://cdn.cookielaw.org/logos/static/powered_by_logo.svg)](https://www.onetrust.com/products/cookie-consent/)
+[![NBC 6 South Florida](https://media.nbcmiami.com/2025/10/WTVJ_Rings_On_Dark@3x.png?fit=417%2C120&quality=85&strip=all&w=139&h=40) ](https://www.nbcmiami.com/)
+Main Navigation
+Search
+Search for:
+[Local](https://www.nbcmiami.com/news/local/) [Weather](https://www.nbcmiami.com/weather/) [Video](https://www.nbcmiami.com/videos/) [On Your Side](https://www.nbcmiami.com/on-your-side/) [Investigates](https://www.nbcmiami.com/investigations/) [Responds](https://www.nbcmiami.com/responds/) [Newsletters](https://www.nbcmiami.com/newsletters/) [TV Listings](https://www.nbcmiami.com/live/)
+[Partly Cloudy 84º](https://www.nbcmiami.com/weather/)
+[ ](https://www.nbcmiami.com/watch/)
+[Create profile / Log in](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+[Dashboard](https://www.nbcmiami.com/account/)
+[Email preferences](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+[Sign out](https://www.nbcmiami.com/news/local/citizens-property-insurance-corp-sheds-100000-policies/3552938/)
+Trending [Decision 2025](https://www.nbcmiami.com/news/politics/decision/) [🌪️Hurricane Season](https://www.nbcmiami.com/weather/hurricane-season/) [6 to Know](https://www.nbcmiami.com/tag/6-to-know/) [📺Watch News 24/7](https://www.nbcmiami.com/watch/) [🔎 Send a Tip](https://www.nbcmiami.com/investigations/submit-tip/) [What’s Being Built Here](https://www.nbcmiami.com/whats-being-built-here/whats-being-built-here-inside-look-at-the-south-florida-construction-projects-in-your-neighborhood/3572301/) [Money Chat](https://www.nbcmiami.com/money-chat/) [Dangerous Drive](https://www.nbcmiami.com/dangerous-drive/) [Newsletters](https://www.nbcmiami.com/newsletters/?_osource=ed_npd_nbc_nat_ot_newltrtrending/) [How to Stream](https://www.nbcmiami.com/news/local/how-to-watch-nbc-6-news-live-events-on-peacock-roku-samsung-tv-plus-xumo-play/2959648/?_osource=mk_npd_nbc_mia_ot_genfasttrending/)
+Expand
+[1 Weather Alert](https://www.nbcmiami.com/weather/severe-weather-alerts/)
+Keep on reading
+[](https://www.nbcmiami.com/news/sports/nfl/cowboys-defensive-end-marshawn-kneeland-dies-at-24/3717416/)[Shocking news: Dallas Cowboys DL Marshawn Kneeland dies at 24Dallas Cowboys defensive end Marshawn Kneeland has died, the team announced Thursday morning.Dallas Cowboys defensive end Marshawn Kneeland died early Thursday from an apparent suicide following a welfare call at his Plano home, police say.NBC 6 South Florida](https://www.nbcmiami.com/news/sports/nfl/cowboys-defensive-end-marshawn-kneeland-dies-at-24/3717416/ "Shocking news: Dallas Cowboys DL Marshawn Kneeland dies at 24")
+[](https://www.nbcmiami.com/news/national-international/donald-trump-walmart-thanksgiving-meal-cost/3717736/)[Trump touts cost of Walmart's Thanksgiving meal to vindicate his policies — ignoring a key detailSince Tuesday's elections, Trump has repeatedly boasted that Walmart's Thanksgiving meal bundle is cheaper than it was under President Joe Biden.In the wake of Republicans’ heavy election losses on Tuesday, President Donald Trump has responded to voters’ growing concerns by insisting the economy is NBC 6 South Florida](https://www.nbcmiami.com/news/national-international/donald-trump-walmart-thanksgiving-meal-cost/3717736/ "Trump touts cost of Walmart's Thanksgiving meal to vindicate his policies — ignoring a key detail")
+[](https://www.nbcmiami.com/news/local/4-students-hospitalized-after-taking-edibles-at-margate-middle-school-cops/3717008/)[4 students hospitalized after taking edibles at Margate Middle School: CopsFour students were hospitalized after they took some sort of edibles at Margate Middle School on Wednesday, police said.Four students were hospitalized after they took some sort of edibles at Margate Middle School on Wednesday, police said.NBC 6 South Florida](https://www.nbcmiami.com/news/local/4-students-hospitalized-after-taking-edibles-at-margate-middle-school-cops/3717008/ "4 students hospitalized after taking edibles at Margate Middle School: Cops")
+[](https://www.nbcmiami.com/news/local/watch-live-gov-ron-desantis-speaks-from-the-miami-freedom-tower/3717900/)[WATCH LIVE: Gov. Ron DeSantis speaks from the Miami Freedom TowerFlorida Gov. Ron DeSantis is speaking from the Miami Freedom Tower on Friday, the governor’s office said.Florida Gov. Ron DeSantis is speaking from the Miami Freedom Tower on Friday, the governor's office said.NBC 6 South Florida](https://www.nbcmiami.com/news/local/watch-live-gov-ron-desantis-speaks-from-the-miami-freedom-tower/3717900/ "WATCH LIVE: Gov. Ron DeSantis speaks from the Miami Freedom Tower")
+[](https://www.nbcmiami.com/news/local/ex-nfl-star-antonio-brown-being-extradited-to-miami-in-attempted-murder-case-police/3717585/)[Ex-NFL star Antonio Brown being extradited to Miami in attempted murder case: PoliceFormer NFL wide receiver Antonio Brown is being extradited to Miami to face an attempted murder charge in connection with a shooting outside a celebrity boxing...Former NFL wide receiver Antonio Brown is being extradited to Miami to face an attempted murder charge in connection with a shooting outsiNBC 6 South Florida](https://www.nbcmiami.com/news/local/ex-nfl-star-antonio-brown-being-extradited-to-miami-in-attempted-murder-case-police/3717585/ "Ex-NFL star Antonio Brown being extradited to Miami in attempted murder case: Police")
+[](https://www.nbcmiami.com/news/local/truck-crash-on-floridas-turnpike-in-miramar-causes-heavy-delays/3717381/)[Truck crash on Florida's Turnpike in Miramar causes heavy delaysThe Florida Highway Patrol said it happened in the southbound lanes at mile marker 45.The Florida Highway Patrol said it happened in the southbound lanes at mile marker 45.NBC 6 South Florida](https://www.nbcmiami.com/news/local/truck-crash-on-floridas-turnpike-in-miramar-causes-heavy-delays/3717381/ "Truck crash on Florida's Turnpike in Miramar causes heavy delays")
+[](https://www.nbcmiami.com/news/local/mother-of-missing-10-year-old-south-florida-girl-arrested-on-child-neglect-charge/3716893/)[Mother of missing 10-year-old South Florida girl arrested on child neglect chargeThe mother of a 10-year-old girl who went missing from South Florida months ago has been arrested again as the search continues for the child, jail records...The mother of a 10-year-old girl who went missing from South Florida months ago has been arrested again as the search continues for the child,NBC 6 South Florida](https://www.nbcmiami.com/news/local/mother-of-missing-10-year-old-south-florida-girl-arrested-on-child-neglect-charge/3716893/ "Mother of missing 10-year-old South Florida girl arrested on child neglect charge")
+[](https://www.nbcmiami.com/news/local/hollywood-police-lieutenant-charged-with-battery-of-elderly-woman-records/3717010/)[Hollywood Police lieutenant charged with battery of elderly womanOsvaldo Perez, 50, was charged with aggravated battery on a person 65 years of age or older and battery on a person 65 years of age or older, Broward Jail...A Hollywood Police lieutenant was arrested on Monday after being accused of battering an elderly woman, records showed.NBC 6 South Florida](https://www.nbcmiami.com/news/local/hollywood-police-lieutenant-charged-with-battery-of-elderly-woman-records/3717010/ "Hollywood Police lieutenant charged with battery of elderly woman")
+[](https://t.truehealthbrief.com/k48l51yfsn)[Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?Memory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%203:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%203:) Learn More](https://t.truehealthbrief.com/k48l51yfsn "Dementia and Memory Issues Have Been Linked to a Common Habit. Do You Do It?")
+[](https://t.truehealthbrief.com/k48l51yfsn)[Neurologist Reveals: Dementia Has Been Linked to a Common HabitMemory News |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%203:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-delta:Explore%20More%20|%20Card%203:) Learn More](https://t.truehealthbrief.com/k48l51yfsn "Neurologist Reveals: Dementia Has Been Linked to a Common Habit")
+[](https://www.nbcmiami.com/news/national-international/furloughed-irs-lawyer-opens-hot-dog-stand/3717558/)[An IRS lawyer was furloughed during the shutdown. So he opened a hot dog standNBC 6 South Florida](https://www.nbcmiami.com/news/national-international/furloughed-irs-lawyer-opens-hot-dog-stand/3717558/ "An IRS lawyer was furloughed during the shutdown. So he opened a hot dog stand")
+[](https://www.nbcmiami.com/news/local/video-shows-hiding-suspect-fall-through-ceiling-and-into-arms-of-swat-in-florida/3717932/)[Video shows hiding suspect fall through ceiling and into arms of SWAT in FloridaNBC 6 South Florida](https://www.nbcmiami.com/news/local/video-shows-hiding-suspect-fall-through-ceiling-and-into-arms-of-swat-in-florida/3717932/ "Video shows hiding suspect fall through ceiling and into arms of SWAT in Florida")
+[](https://financebuzz.com/dumb-money-moves-yaez-1)[8 Dumbest Things Middle-Class Americans Waste Money OnFinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-em-delta:Explore%20More%20|%20Card%205:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-em-delta:Explore%20More%20|%20Card%205:) Read More](https://financebuzz.com/dumb-money-moves-yaez-1 "8 Dumbest Things Middle-Class Americans Waste Money On")
+[](https://financebuzz.com/money-moves-senior-benefits-yaez-1)[The 10 Worst Ways Retirees Waste MoneyFinanceBuzz |  [Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-em-delta:Explore%20More%20|%20Card%205:)[Sponsored](https://popup.taboola.com/en/?template=colorbox&utm_source=nbcots-wtvj&utm_medium=referral&utm_content=thumbs-feed-01-y-em-delta:Explore%20More%20|%20Card%205:) Read More](https://financebuzz.com/money-moves-senior-benefits-yaez-1 "The 10 Worst Ways Retirees Waste Money")
+[](https://www.nbcmiami.com/news/local/man-who-killed-wife-in-2012-miami-gardens-shooting-arrested-police/3716809/)[Man who killed wife in 2012 Miami Gardens shooting arrestedAccording to Miami Gardens Police and U.S. Marshals, Ramone O’Neil Clayton punched and shot his wife, Stephanie Clayton, and shot her during a gathering in...More than 10 years after a woman was fatally shot in Miami Gardens, her husband, who is accused of murdering her, was arrested, police said.NBC 6 South Florida](https://www.nbcmiami.com/news/local/man-who-killed-wife-in-2012-miami-gardens-shooting-arrested-police/3716809/ "Man who killed wife in 2012 Miami Gardens shooting arrested")
+[](https://www.nbcmiami.com/news/national-international/full-snap-benefit-funding-order/3717630/)[Federal judge orders Trump administration to fully fund SNAP benefits in NovemberA federal judge in Rhode Island ordered the Trump administration Thursday to find the money to fully fund SNAP benefits for November.A federal judge in Rhode Island has ordered the Trump administration to find the money to fully fund SNAP benefits for November. The ruling Thursday was in response toNBC 6 South Florida](https://www.nbcmiami.com/news/national-international/full-snap-benefit-funding-order/3717630/ "Federal judge orders Trump administration to fully fund SNAP benefits in November")

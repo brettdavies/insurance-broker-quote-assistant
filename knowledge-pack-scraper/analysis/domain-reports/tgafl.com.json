@@ -1,0 +1,455 @@
+{
+  "domain": "tgafl.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:21.606249",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 6,
+      "frequency": 6.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 8,
+      "frequency": 8.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 26,
+      "frequency": 26.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 83,
+      "frequency": 83.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "form",
+      "count": 3,
+      "frequency": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "fusion-bar-highlight",
+      "count": 44
+    },
+    {
+      "class": "menu-item",
+      "count": 41
+    },
+    {
+      "class": "menu-item-type-post_type",
+      "count": 35
+    },
+    {
+      "class": "menu-item-object-page",
+      "count": 35
+    },
+    {
+      "class": "fusion-mobile-nav-item",
+      "count": 22
+    },
+    {
+      "class": "fusion-dropdown-submenu",
+      "count": 15
+    },
+    {
+      "class": "menu-text",
+      "count": 14
+    },
+    {
+      "class": "screen-reader-text",
+      "count": 9
+    },
+    {
+      "class": "menu-item-type-custom",
+      "count": 6
+    },
+    {
+      "class": "menu-item-object-custom",
+      "count": 6
+    },
+    {
+      "class": "menu-item-has-children",
+      "count": 6
+    },
+    {
+      "class": "sub-menu",
+      "count": 6
+    },
+    {
+      "class": "fusion-footer-widget-column",
+      "count": 6
+    },
+    {
+      "class": "widget",
+      "count": 6
+    },
+    {
+      "class": "fusion-row",
+      "count": 5
+    },
+    {
+      "class": "fusion-social-network-icon",
+      "count": 5
+    },
+    {
+      "class": "fusion-tooltip",
+      "count": 5
+    },
+    {
+      "class": "swiper-slide",
+      "count": 5
+    },
+    {
+      "class": "fusion-carousel-item-wrapper",
+      "count": 5
+    },
+    {
+      "class": "fusion-image-wrapper",
+      "count": 5
+    },
+    {
+      "class": "fusion-image-size-fixed",
+      "count": 5
+    },
+    {
+      "class": "menu",
+      "count": 4
+    },
+    {
+      "class": "widget-title",
+      "count": 4
+    },
+    {
+      "class": "fusion-menu-item-button",
+      "count": 3
+    },
+    {
+      "class": "fusion-button",
+      "count": 3
+    },
+    {
+      "class": "button-default",
+      "count": 3
+    },
+    {
+      "class": "button-large",
+      "count": 3
+    },
+    {
+      "class": "fusion-dropdown-menu",
+      "count": 3
+    },
+    {
+      "class": "fusion-caret",
+      "count": 3
+    },
+    {
+      "class": "fusion-dropdown-indicator",
+      "count": 3
+    },
+    {
+      "class": "fusion-open-submenu",
+      "count": 3
+    },
+    {
+      "class": "fusion-clearfix",
+      "count": 3
+    },
+    {
+      "class": "fusion-inline-sep",
+      "count": 3
+    },
+    {
+      "class": "fusion-column",
+      "count": 3
+    },
+    {
+      "class": "col-lg-4",
+      "count": 3
+    },
+    {
+      "class": "col-md-4",
+      "count": 3
+    },
+    {
+      "class": "col-sm-4",
+      "count": 3
+    },
+    {
+      "class": "fusion-has-widgets",
+      "count": 3
+    },
+    {
+      "class": "widget_text",
+      "count": 3
+    },
+    {
+      "class": "textwidget",
+      "count": 3
+    },
+    {
+      "class": "fusion-mobile-nav-holder",
+      "count": 2
+    },
+    {
+      "class": "fusion-mobile-menu-text-align-center",
+      "count": 2
+    },
+    {
+      "class": "fusion-mobile-selector",
+      "count": 2
+    },
+    {
+      "class": "fusion-selector-down",
+      "count": 2
+    },
+    {
+      "class": "fusion-menu",
+      "count": 2
+    },
+    {
+      "class": "clearfix",
+      "count": 2
+    },
+    {
+      "class": "attachment-full",
+      "count": 2
+    },
+    {
+      "class": "size-full",
+      "count": 2
+    },
+    {
+      "class": "sep-",
+      "count": 2
+    },
+    {
+      "class": "awb-swiper-button",
+      "count": 2
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "479",
+      "count": 2
+    },
+    {
+      "id": "75",
+      "count": 2
+    },
+    {
+      "id": "58",
+      "count": 2
+    },
+    {
+      "id": "66",
+      "count": 2
+    },
+    {
+      "id": "1497",
+      "count": 2
+    },
+    {
+      "id": "60",
+      "count": 2
+    },
+    {
+      "id": "1498",
+      "count": 2
+    },
+    {
+      "id": "wp-emoji-styles-inline-css",
+      "count": 1
+    },
+    {
+      "id": "fusion-dynamic-css-css",
+      "count": 1
+    },
+    {
+      "id": "css-fb-visibility",
+      "count": 1
+    },
+    {
+      "id": "wp-custom-css",
+      "count": 1
+    },
+    {
+      "id": "fit-vids-style",
+      "count": 1
+    },
+    {
+      "id": "1354",
+      "count": 1
+    },
+    {
+      "id": "boxed-wrapper",
+      "count": 1
+    },
+    {
+      "id": "wrapper",
+      "count": 1
+    },
+    {
+      "id": "home",
+      "count": 1
+    },
+    {
+      "id": "menu-top-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-479",
+      "count": 1
+    },
+    {
+      "id": "menu-item-75",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-top-menu",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-item-479",
+      "count": 1
+    },
+    {
+      "id": "mobile-menu-item-75",
+      "count": 1
+    },
+    {
+      "id": "menu-main-menu",
+      "count": 1
+    },
+    {
+      "id": "menu-item-58",
+      "count": 1
+    },
+    {
+      "id": "menu-item-66",
+      "count": 1
+    },
+    {
+      "id": "menu-item-337",
+      "count": 1
+    },
+    {
+      "id": "menu-item-67",
+      "count": 1
+    },
+    {
+      "id": "menu-item-683",
+      "count": 1
+    },
+    {
+      "id": "menu-item-1497",
+      "count": 1
+    },
+    {
+      "id": "menu-item-59",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class*=\"social\"], [id*=\"social\"], [class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"comment\"], [id*=\"comment\"], [class*=\"menu\"], [id*=\"menu\"], [class*=\"breadcrumb\"], [id*=\"breadcrumb\"], [class*=\"form\"], [id*=\"form\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

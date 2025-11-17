@@ -1,0 +1,937 @@
+<!DOCTYPE html><html lang="en-US"><head><script data-no-optimize="1">var litespeed_docref=sessionStorage.getItem("litespeed_docref");litespeed_docref&&(Object.defineProperty(document,"referrer",{get:function(){return litespeed_docref}}),sessionStorage.removeItem("litespeed_docref"));</script> <meta charset="UTF-8"><meta name="sitelock-site-verification" content="5330"><meta http-equiv="X-UA-Compatible" content="IE=edge"> <script type="text/javascript">/*  */
+
+//----------------------------------------------------------
+//------ JAVASCRIPT HOOK FUNCTIONS FOR GRAVITY FORMS -------
+//----------------------------------------------------------
+
+if ( ! gform ) {
+	document.addEventListener( 'gform_main_scripts_loaded', function() { gform.scriptsLoaded = true; } );
+	document.addEventListener( 'gform/theme/scripts_loaded', function() { gform.themeScriptsLoaded = true; } );
+	window.addEventListener( 'DOMContentLoaded', function() { gform.domLoaded = true; } );
+
+	var gform = {
+		domLoaded: false,
+		scriptsLoaded: false,
+		themeScriptsLoaded: false,
+		isFormEditor: () => typeof InitializeEditor === 'function',
+
+		/**
+		 * @deprecated 2.9 the use of initializeOnLoaded in the form editor context is deprecated.
+		 * @remove-in 3.1 this function will not check for gform.isFormEditor().
+		 */
+		callIfLoaded: function ( fn ) {
+			if ( gform.domLoaded && gform.scriptsLoaded && ( gform.themeScriptsLoaded || gform.isFormEditor() ) ) {
+				if ( gform.isFormEditor() ) {
+					console.warn( 'The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1.' );
+				}
+				fn();
+				return true;
+			}
+			return false;
+		},
+
+		/**
+		 * Call a function when all scripts are loaded
+		 *
+		 * @param function fn the callback function to call when all scripts are loaded
+		 *
+		 * @returns void
+		 */
+		initializeOnLoaded: function( fn ) {
+			if ( ! gform.callIfLoaded( fn ) ) {
+				document.addEventListener( 'gform_main_scripts_loaded', () => { gform.scriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				document.addEventListener( 'gform/theme/scripts_loaded', () => { gform.themeScriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				window.addEventListener( 'DOMContentLoaded', () => { gform.domLoaded = true; gform.callIfLoaded( fn ); } );
+			}
+		},
+
+		hooks: { action: {}, filter: {} },
+		addAction: function( action, callable, priority, tag ) {
+			gform.addHook( 'action', action, callable, priority, tag );
+		},
+		addFilter: function( action, callable, priority, tag ) {
+			gform.addHook( 'filter', action, callable, priority, tag );
+		},
+		doAction: function( action ) {
+			gform.doHook( 'action', action, arguments );
+		},
+		applyFilters: function( action ) {
+			return gform.doHook( 'filter', action, arguments );
+		},
+		removeAction: function( action, tag ) {
+			gform.removeHook( 'action', action, tag );
+		},
+		removeFilter: function( action, priority, tag ) {
+			gform.removeHook( 'filter', action, priority, tag );
+		},
+		addHook: function( hookType, action, callable, priority, tag ) {
+			if ( undefined == gform.hooks[hookType][action] ) {
+				gform.hooks[hookType][action] = [];
+			}
+			var hooks = gform.hooks[hookType][action];
+			if ( undefined == tag ) {
+				tag = action + '_' + hooks.length;
+			}
+			if( priority == undefined ){
+				priority = 10;
+			}
+
+			gform.hooks[hookType][action].push( { tag:tag, callable:callable, priority:priority } );
+		},
+		doHook: function( hookType, action, args ) {
+
+			// splice args from object into array and remove first index which is the hook name
+			args = Array.prototype.slice.call(args, 1);
+
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action], hook;
+				//sort by priority
+				hooks.sort(function(a,b){return a["priority"]-b["priority"]});
+
+				hooks.forEach( function( hookItem ) {
+					hook = hookItem.callable;
+
+					if(typeof hook != 'function')
+						hook = window[hook];
+					if ( 'action' == hookType ) {
+						hook.apply(null, args);
+					} else {
+						args[0] = hook.apply(null, args);
+					}
+				} );
+			}
+			if ( 'filter'==hookType ) {
+				return args[0];
+			}
+		},
+		removeHook: function( hookType, action, priority, tag ) {
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action];
+				hooks = hooks.filter( function(hook, index, arr) {
+					var removeHook = (undefined==tag||tag==hook.tag) && (undefined==priority||priority==hook.priority);
+					return !removeHook;
+				} );
+				gform.hooks[hookType][action] = hooks;
+			}
+		}
+	};
+}
+
+/*  */</script> <link rel="pingback" href="https://www.adhoc-translations.com/xmlrpc.php"> <script type="text/javascript" src="data:text/javascript;base64,KCgpPT57Y29uc3QgbmFtZT0nb3V0Ym91bmQtbGluay1jbGljayc7ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnYScpLmZvckVhY2goYT0+e2lmKGEuaG9zdCE9PXdpbmRvdy5sb2NhdGlvbi5ob3N0JiYhYS5nZXRBdHRyaWJ1dGUoJ2RhdGEtdW1hbWktZXZlbnQnKSl7YS5zZXRBdHRyaWJ1dGUoJ2RhdGEtdW1hbWktZXZlbnQnLG5hbWUpO2Euc2V0QXR0cmlidXRlKCdkYXRhLXVtYW1pLWV2ZW50LXVybCcsYS5ocmVmKX19KX0pKCk=" defer=""></script> <!--[endif]----><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><link rel="alternate" href="https://www.adhoc-translations.com/get-a-quote/" hreflang="x-default"><link rel="alternate" hreflang="da" href="https://www.adhoc-translations.com/da/faa-et-tilbud/"><link rel="alternate" hreflang="en" href="https://www.adhoc-translations.com/get-a-quote/"><link rel="alternate" hreflang="de" href="https://www.adhoc-translations.com/de/unverbindliches-angebot/"><link rel="alternate" hreflang="sv" href="https://www.adhoc-translations.com/sv/faa-en-offert/"><link rel="alternate" hreflang="es" href="https://www.adhoc-translations.com/es/solicite-presupuesto/"><link rel="alternate" hreflang="fr" href="https://www.adhoc-translations.com/fr/obtenir-un-devis/"><link rel="alternate" hreflang="nb-no" href="https://www.adhoc-translations.com/nb/fa-et-tilbud/"><link rel="alternate" hreflang="x-default" href="https://www.adhoc-translations.com/get-a-quote/"><title>Get a free, non-binding quote - AdHoc Translations</title><meta name="description" content="Contact us today for a free and non-binding quote. We offer competitive prices, fast delivery, great service and the highest quality."><link rel="canonical" href="https://www.adhoc-translations.com/get-a-quote/"><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="Get a free, non-binding quote - AdHoc Translations"><meta property="og:description" content="Contact us today for a free and non-binding quote. We offer competitive prices, fast delivery, great service and the highest quality."><meta property="og:url" content="https://www.adhoc-translations.com/get-a-quote/"><meta property="og:site_name" content="AdHoc Translations"><meta property="article:publisher" content="https://www.facebook.com/AdHocTranslations/"><meta property="article:modified_time" content="2025-11-05T13:44:22+00:00"><meta property="og:image" content="https://www.adhoc-translations.com/wp-content/uploads/2022/07/adhoc-translations-some-juli-1024x1024.png"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="1024"><meta property="og:image:type" content="image/png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@AdHoc_Language"><meta name="twitter:label1" content="Est. reading time"><meta name="twitter:data1" content="1 minute"> <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.adhoc-translations.com/get-a-quote/","url":"https://www.adhoc-translations.com/get-a-quote/","name":"Get a free, non-binding quote - AdHoc Translations","isPartOf":{"@id":"https://www.adhoc-translations.com/#website"},"datePublished":"2018-10-13T12:25:52+00:00","dateModified":"2025-11-05T13:44:22+00:00","description":"Contact us today for a free and non-binding quote. We offer competitive prices, fast delivery, great service and the highest quality.","breadcrumb":{"@id":"https://www.adhoc-translations.com/get-a-quote/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.adhoc-translations.com/get-a-quote/"]}]},{"@type":"BreadcrumbList","@id":"https://www.adhoc-translations.com/get-a-quote/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.adhoc-translations.com/"},{"@type":"ListItem","position":2,"name":"Get a quote"}]},{"@type":"WebSite","@id":"https://www.adhoc-translations.com/#website","url":"https://www.adhoc-translations.com/","name":"AdHoc Translations","description":"Global communication made easy","publisher":{"@id":"https://www.adhoc-translations.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.adhoc-translations.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.adhoc-translations.com/#organization","name":"AdHoc Translations","url":"https://www.adhoc-translations.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.adhoc-translations.com/#/schema/logo/image/","url":"https://www.adhoc-translations.com/wp-content/uploads/2022/08/there-for-you.png","contentUrl":"https://www.adhoc-translations.com/wp-content/uploads/2022/08/there-for-you.png","width":1200,"height":1200,"caption":"AdHoc Translations"},"image":{"@id":"https://www.adhoc-translations.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/AdHocTranslations/","https://x.com/AdHoc_Language","https://www.linkedin.com/company/ad-hoc-translations-a-s/","https://www.youtube.com/channel/UC6GxzaVOMxSFOqvl2ACKLuA"]}]}</script> <link rel="dns-prefetch" href="//cloud.umami.is"><link rel="dns-prefetch" href="//maps.googleapis.com"><link rel="dns-prefetch" href="//connect.facebook.net"><link rel="dns-prefetch" href="//code.jquery.com"><link rel="dns-prefetch" href="//google-analytics.com"><link rel="dns-prefetch" href="//cookiepro.blob.core.windows.net"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//www.adhoc-translations.com"><link rel="alternate" type="application/rss+xml" title="AdHoc Translations » Feed" href="https://www.adhoc-translations.com/feed/"><link rel="alternate" type="application/rss+xml" title="AdHoc Translations » Comments Feed" href="https://www.adhoc-translations.com/comments/feed/"><meta content="Yan&amp;Co v.1.0" name="generator"><link data-optimized="2" rel="stylesheet" href="https://www.adhoc-translations.com/wp-content/litespeed/css/1f6d9829656412c90eb63f8c71453bb8.css?ver=c7c70"><style id="wp-block-library-theme-inline-css" type="text/css">.wp-block-audio :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-audio :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-audio{
+  margin:0 0 1em;
+}
+
+.wp-block-code{
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-family:Menlo,Consolas,monaco,monospace;
+  padding:.8em 1em;
+}
+
+.wp-block-embed :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-embed :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-embed{
+  margin:0 0 1em;
+}
+
+.blocks-gallery-caption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .blocks-gallery-caption{
+  color:#ffffffa6;
+}
+
+:root :where(.wp-block-image figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme :root :where(.wp-block-image figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-image{
+  margin:0 0 1em;
+}
+
+.wp-block-pullquote{
+  border-bottom:4px solid;
+  border-top:4px solid;
+  color:currentColor;
+  margin-bottom:1.75em;
+}
+.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  text-transform:uppercase;
+}
+
+.wp-block-quote{
+  border-left:.25em solid;
+  margin:0 0 1.75em;
+  padding-left:1em;
+}
+.wp-block-quote cite,.wp-block-quote footer{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  position:relative;
+}
+.wp-block-quote:where(.has-text-align-right){
+  border-left:none;
+  border-right:.25em solid;
+  padding-left:0;
+  padding-right:1em;
+}
+.wp-block-quote:where(.has-text-align-center){
+  border:none;
+  padding-left:0;
+}
+.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){
+  border:none;
+}
+
+.wp-block-search .wp-block-search__label{
+  font-weight:700;
+}
+
+.wp-block-search__button{
+  border:1px solid #ccc;
+  padding:.375em .625em;
+}
+
+:where(.wp-block-group.has-background){
+  padding:1.25em 2.375em;
+}
+
+.wp-block-separator.has-css-opacity{
+  opacity:.4;
+}
+
+.wp-block-separator{
+  border:none;
+  border-bottom:2px solid;
+  margin-left:auto;
+  margin-right:auto;
+}
+.wp-block-separator.has-alpha-channel-opacity{
+  opacity:1;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots){
+  width:100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots){
+  border-bottom:none;
+  height:1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){
+  height:2px;
+}
+
+.wp-block-table{
+  margin:0 0 1em;
+}
+.wp-block-table td,.wp-block-table th{
+  word-break:normal;
+}
+.wp-block-table :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-table :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-video :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-video :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-video{
+  margin:0 0 1em;
+}
+
+:root :where(.wp-block-template-part.has-background){
+  margin-bottom:0;
+  margin-top:0;
+  padding:1.25em 2.375em;
+}</style><style id="pdfemb-pdf-embedder-viewer-style-inline-css" type="text/css">.wp-block-pdfemb-pdf-embedder-viewer{max-width:none}</style><style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style><style id="wpml-legacy-dropdown-0-inline-css" type="text/css">.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}</style><style type="text/css">#wp-admin-bar-tm-suspend, #wp-admin-bar-abovethefold, #wp-admin-bar-ubermenu, #wp-admin-bar-customize, #wp-admin-bar-avia { display: none; }#wp-admin-bar-autoptimize span.ab-label { display: none; }#wp-admin-bar-new-content span.ab-label { display: none; }</style><script type="text/javascript" id="wpml-cookie-js-extra" src="data:text/javascript;base64,dmFyIHdwbWxfY29va2llcz17IndwLXdwbWxfY3VycmVudF9sYW5ndWFnZSI6eyJ2YWx1ZSI6ImVuIiwiZXhwaXJlcyI6MSwicGF0aCI6IlwvIn19O3ZhciB3cG1sX2Nvb2tpZXM9eyJ3cC13cG1sX2N1cnJlbnRfbGFuZ3VhZ2UiOnsidmFsdWUiOiJlbiIsImV4cGlyZXMiOjEsInBhdGgiOiJcLyJ9fQ==" defer=""></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/f3e03b4330e245939fde6b00e9a8439f.js?ver=feec2" id="wpml-cookie-js" defer="defer" data-wp-strategy="defer"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/119120c4c0e396ce8ccf98277f4a8ec7.js?ver=756d1" id="wpml-legacy-dropdown-0-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/f2d63c45f9e855c24c2676814d2411c2.js?ver=c3559" id="jquery-core-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/d8cc4d5d528689f56125b04b28a9eeb6.js?ver=a6230" id="jquery-migrate-js" defer="" data-deferred="1"></script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/js/jquery.json.js?ver=2.9.14" id="gform_json-js"></script> <script type="text/javascript" id="gform_gravityforms-js-extra">/*  */
+var gf_legacy = {"is_legacy":"1"};
+var gf_global = {"gf_currency_config":{"name":"Danish Krone","symbol_left":"","symbol_right":"kr.","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"DKK"},"base_url":"https:\/\/www.adhoc-translations.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.adhoc-translations.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"2011f8222a94b6719fc36d418d19d461","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = {"3":"1"};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.adhoc-translations.com\/wp-content\/plugins\/gravityforms\/images"}};
+/*  */</script> <script type="text/javascript" id="gform_gravityforms-js-before">/*  */
+//----------------------------------------------------------
+//------ JAVASCRIPT HOOK FUNCTIONS FOR GRAVITY FORMS -------
+//----------------------------------------------------------
+
+if ( ! gform ) {
+	document.addEventListener( 'gform_main_scripts_loaded', function() { gform.scriptsLoaded = true; } );
+	document.addEventListener( 'gform/theme/scripts_loaded', function() { gform.themeScriptsLoaded = true; } );
+	window.addEventListener( 'DOMContentLoaded', function() { gform.domLoaded = true; } );
+
+	var gform = {
+		domLoaded: false,
+		scriptsLoaded: false,
+		themeScriptsLoaded: false,
+		isFormEditor: () => typeof InitializeEditor === 'function',
+
+		/**
+		 * @deprecated 2.9 the use of initializeOnLoaded in the form editor context is deprecated.
+		 * @remove-in 3.1 this function will not check for gform.isFormEditor().
+		 */
+		callIfLoaded: function ( fn ) {
+			if ( gform.domLoaded && gform.scriptsLoaded && ( gform.themeScriptsLoaded || gform.isFormEditor() ) ) {
+				if ( gform.isFormEditor() ) {
+					console.warn( 'The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1.' );
+				}
+				fn();
+				return true;
+			}
+			return false;
+		},
+
+		/**
+		 * Call a function when all scripts are loaded
+		 *
+		 * @param function fn the callback function to call when all scripts are loaded
+		 *
+		 * @returns void
+		 */
+		initializeOnLoaded: function( fn ) {
+			if ( ! gform.callIfLoaded( fn ) ) {
+				document.addEventListener( 'gform_main_scripts_loaded', () => { gform.scriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				document.addEventListener( 'gform/theme/scripts_loaded', () => { gform.themeScriptsLoaded = true; gform.callIfLoaded( fn ); } );
+				window.addEventListener( 'DOMContentLoaded', () => { gform.domLoaded = true; gform.callIfLoaded( fn ); } );
+			}
+		},
+
+		hooks: { action: {}, filter: {} },
+		addAction: function( action, callable, priority, tag ) {
+			gform.addHook( 'action', action, callable, priority, tag );
+		},
+		addFilter: function( action, callable, priority, tag ) {
+			gform.addHook( 'filter', action, callable, priority, tag );
+		},
+		doAction: function( action ) {
+			gform.doHook( 'action', action, arguments );
+		},
+		applyFilters: function( action ) {
+			return gform.doHook( 'filter', action, arguments );
+		},
+		removeAction: function( action, tag ) {
+			gform.removeHook( 'action', action, tag );
+		},
+		removeFilter: function( action, priority, tag ) {
+			gform.removeHook( 'filter', action, priority, tag );
+		},
+		addHook: function( hookType, action, callable, priority, tag ) {
+			if ( undefined == gform.hooks[hookType][action] ) {
+				gform.hooks[hookType][action] = [];
+			}
+			var hooks = gform.hooks[hookType][action];
+			if ( undefined == tag ) {
+				tag = action + '_' + hooks.length;
+			}
+			if( priority == undefined ){
+				priority = 10;
+			}
+
+			gform.hooks[hookType][action].push( { tag:tag, callable:callable, priority:priority } );
+		},
+		doHook: function( hookType, action, args ) {
+
+			// splice args from object into array and remove first index which is the hook name
+			args = Array.prototype.slice.call(args, 1);
+
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action], hook;
+				//sort by priority
+				hooks.sort(function(a,b){return a["priority"]-b["priority"]});
+
+				hooks.forEach( function( hookItem ) {
+					hook = hookItem.callable;
+
+					if(typeof hook != 'function')
+						hook = window[hook];
+					if ( 'action' == hookType ) {
+						hook.apply(null, args);
+					} else {
+						args[0] = hook.apply(null, args);
+					}
+				} );
+			}
+			if ( 'filter'==hookType ) {
+				return args[0];
+			}
+		},
+		removeHook: function( hookType, action, priority, tag ) {
+			if ( undefined != gform.hooks[hookType][action] ) {
+				var hooks = gform.hooks[hookType][action];
+				hooks = hooks.filter( function(hook, index, arr) {
+					var removeHook = (undefined==tag||tag==hook.tag) && (undefined==priority||priority==hook.priority);
+					return !removeHook;
+				} );
+				gform.hooks[hookType][action] = hooks;
+			}
+		}
+	};
+}
+/*  */</script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/js/gravityforms.js?ver=2.9.14" id="gform_gravityforms-js"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/63ee2ef80fe86b9e6faf9d9ad2d1a21f.js?ver=f1164" id="moxiejs-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/6774ab920d9b87dc69917aa5d1ea1f3a.js?ver=51d88" id="plupload-js" defer="" data-deferred="1"></script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=380b7a5ec0757c78876bc8a59488f2f3" id="gform_gravityforms_utils-js"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/32be2d2c6cfe7a4bb87ac3611066361b.js?ver=fe0ba" id="yanco-custom-js-js" defer="" data-deferred="1"></script> <link rel="https://api.w.org/" href="https://www.adhoc-translations.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://www.adhoc-translations.com/wp-json/wp/v2/pages/12206"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.adhoc-translations.com/xmlrpc.php?rsd"><meta name="generator" content="WordPress 6.8.2"><link rel="shortlink" href="https://www.adhoc-translations.com/?p=12206"><link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.adhoc-translations.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhoc-translations.com%2Fget-a-quote%2F"><link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.adhoc-translations.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.adhoc-translations.com%2Fget-a-quote%2F&amp;format=xml"><meta name="generator" content="WPML ver:4.7.6 stt:12,1,4,3,40,2,52;"> <script src="data:text/javascript;base64,KGZ1bmN0aW9uKHcsZCxzLGwsaSl7d1tsXT13W2xdfHxbXTt3W2xdLnB1c2goeydndG0uc3RhcnQnOm5ldyBEYXRlKCkuZ2V0VGltZSgpLGV2ZW50OidndG0uanMnfSk7dmFyIGY9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXSxqPWQuY3JlYXRlRWxlbWVudChzKSxkbD1sIT0nZGF0YUxheWVyJz8nJmw9JytsOicnO2ouYXN5bmM9ITA7ai5zcmM9J2h0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0bS5qcz9pZD0nK2krZGw7Zi5wYXJlbnROb2RlLmluc2VydEJlZm9yZShqLGYpfSkod2luZG93LGRvY3VtZW50LCdzY3JpcHQnLCdkYXRhTGF5ZXInLCdHVE0tV1RHOExTQicp" defer=""></script>  <script type="text/javascript" src="data:text/javascript;base64,KGZ1bmN0aW9uKGMsbCxhLHIsaSx0LHkpe2NbYV09Y1thXXx8ZnVuY3Rpb24oKXsoY1thXS5xPWNbYV0ucXx8W10pLnB1c2goYXJndW1lbnRzKX07dD1sLmNyZWF0ZUVsZW1lbnQocik7dC5hc3luYz0xO3Quc3JjPSJodHRwczovL3d3dy5jbGFyaXR5Lm1zL3RhZy8iK2k7eT1sLmdldEVsZW1lbnRzQnlUYWdOYW1lKHIpWzBdO3kucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUodCx5KX0pKHdpbmRvdyxkb2N1bWVudCwiY2xhcml0eSIsInNjcmlwdCIsInJ4eG0xYnJrYnkiKQ==" defer=""></script> 
+ <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Expert Legal Translation Services for Law Firms and Corporate Counsel",
+      "url": "https://www.adhoc-translations.com/services/legal-translation",
+      "description": "AdHoc Translations provides precise legal translation services tailored to law firms, in-house legal departments, and public sector organisations. Legal language is complex and highly contextual, and we ensure complete accuracy through linguists who specialise in legal texts and local legal systems.\nWe translate a broad range of legal documents including contracts, court documents, terms and conditions, IP registrations, employment agreements, and compliance documentation. All translations are handled with strict confidentiality and can be certified or notarised if required.\nOur workflows meet ISO standards and ensure consistency across cases or jurisdictions. We also maintain translation memories for recurring legal content, saving time and cost for long-term partners. Common language combinations include English from and into French, German, Dutch, and the Nordic languages.",
+      "serviceType": "Legal and Contract Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "UK Solicitors, Barristers, In-house Legal Teams, Government Departments, Compliance Officers, Corporate Counsel, Legal Departments, Public Bodies"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Get a free quote for legal translation projects, including certified translations and multilingual contracts.",
+        "url": "https://www.adhoc-translations.com/get-a-quote"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get a Legal Translation Quote",
+        "target": "https://www.adhoc-translations.com/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Expert Medical Translation Services for Healthcare and Life Sciences",
+      "url": "https://www.adhoc-translations.com/services/medical-translation",
+      "description": "AdHoc Translations delivers accurate and compliant medical translation services for healthcare providers, medical device companies, pharmaceutical firms, and research institutions. We understand the high stakes of medical content – where clarity, precision, and adherence to regulatory standards are non-negotiable.\nWhether you need clinical trial documentation, patient-facing materials, product inserts, or technical manuals, our team of medically specialised linguists ensures your content is translated with full understanding of medical terminology and context. We are well-versed in MHRA-aligned standards and follow strict quality assurance workflows, including native-language medical reviewers and ISO-certified processes.\nWe commonly translate content between English and languages such as French, German, Spanish, Chinese, and the Nordic languages – all tailored to local medical and regulatory requirements. Our streamlined workflows through SmartDesk® help you track progress, maintain version control, and reduce turnaround times without compromising quality.",
+      "serviceType": "Medical and Life Sciences Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Healthcare Providers, NHS Trusts, Pharma and Biotech Companies, CROs, Regulatory Affairs Specialists, Device Companies, Pharmaceutical Firms, Clinical Research Organisations"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a free, no-obligation quote for your medical translation project. Fast, reliable service tailored to healthcare and life sciences sectors.",
+        "url": "https://www.adhoc-translations.com/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Medical Translation Quote",
+        "target": "https://www.adhoc-translations.com/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Professional Technical Translation Services for Industrial and Engineering Sectors",
+      "url": "https://www.adhoc-translations.com/services/technical-translation/",
+      "description": "We provide accurate technical translations across complex domains like engineering, manufacturing, robotics, and IT. AdHoc’s linguists are subject-matter experts who understand sector-specific jargon, helping you maintain clarity and safety across manuals, technical sheets, patents, instructions, and compliance documents.\nWhether it's user guides for electronics, safety protocols, or API documentation, our workflows ensure quality and consistency. We regularly translate between English and German, Dutch, Swedish, Danish, and Polish; key markets for industrial clients.",
+      "serviceType": "Technical and Engineering Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Industrial Manufacturers, Engineering Firms, Robotics Companies, IT Providers"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a no-obligation quote for your technical translation needs, including manuals, guides, and patents.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Technical Translation Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Accurate Financial Translation Services for Businesses and Institutions",
+      "url": "https://www.adhoc-translations.com/services/financial-translation",
+      "description": "AdHoc supports banks, investment firms, insurance companies, and accounting consultancies with accurate and timely financial translations. We handle confidential financial reports, audits, prospectuses, annual statements, and ESG disclosures with precision.\nOur linguists are familiar with IFRS and EU regulatory terminology and ensure sensitive content remains compliant, consistent, and error-free. We translate high-volume, high-stakes content between English and major EU languages (e.g., French, Dutch, German, Italian).",
+      "serviceType": "Business and Financial Document Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Banks, Financial Institutions, Auditors, Insurance Companies, Corporate Finance Teams"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Get a quote for translating financial documents with full confidentiality and accuracy.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Financial Translation Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Website Translation Services to Reach Multilingual Audiences Online",
+      "url": "https://www.adhoc-translations.com/services/website-translation",
+      "description": "We help businesses localise websites for international audiences, whether it’s e-commerce platforms, corporate websites, landing pages, or customer support content. Our team ensures language, tone, and terminology are fully adapted to each target market, and we support multilingual SEO for improved visibility.\nFrom CMS integrations via SmartConnect to automated workflows, we streamline large-scale website translation. Typical requests involve English from and into French, German, Dutch, Spanish, and Nordic languages.",
+      "serviceType": "Website and UX Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "E-commerce Businesses, Marketing Teams, Website Owners, Global Brands"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a quote for your website translation project, including multilingual SEO support.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Website Translation Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "SEO Translation Services to Improve Your Global Search Visibility",
+      "url": "https://www.adhoc-translations.com/services/SEO-translation",
+      "description": "We combine linguistic expertise with local search engine optimisation to help your content rank in international markets. Our SEO translation service goes beyond direct translation; we research local keyword variants, adapt metadata, and ensure culturally relevant messaging for higher engagement.\nIdeal for e-commerce, B2B content marketing, and landing pages, this service supports English from and into European and Asian languages with search-friendly results.",
+      "serviceType": "Multilingual SEO Content Translation",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Marketing Teams, Content Strategists, SEO Agencies, E-commerce Brands"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Get a quote for SEO translation and multilingual keyword optimisation.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get SEO Translation Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Marketing Translation Services to Localise Your Brand Voice",
+      "url": "https://www.adhoc-translations.com/services/marketing-translation",
+      "description": "We help you adapt brochures, ads, video scripts, campaign materials, and brand messages into multiple languages without losing your tone of voice. Our creative linguists are trained in transcreation and culturally sensitive messaging.\nWhether you're launching a product across borders or running a multilingual campaign, we ensure your content connects with audiences everywhere.",
+      "serviceType": "Marketing and Transcreation Services",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Marketing Managers, Advertising Agencies, Brand Teams, International Comms Teams"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Get a quote for translating and adapting your marketing materials for new markets.",
+        "url": "https://www.adhoc-translations.com/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Marketing Translation Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Professional Proofreading Services for Multilingual Business Content",
+      "url": "https://www.adhoc-translations.com/services/proofreading",
+      "description": "Our native-language proofreaders ensure your translated texts are polished, grammatically correct, and stylistically coherent. We eliminate inconsistencies, typos, and awkward phrasing while maintaining brand tone and sector accuracy.\nWe proofread everything from marketing collateral and reports to technical documents, often as a final QA step before publication.",
+      "serviceType": "Multilingual Proofreading and Editing",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Marketing Teams, Documentation Teams, Publishers, Agencies"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a quote for multilingual proofreading and final QA editing.",
+        "url": "https://www.adhoc-translations.com/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Proofreading Quote",
+        "target": "https://www.adhoc-translations.com/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Multilingual DTP and Layout Services for Print and Digital Assets",
+      "url": "https://www.adhoc-translations.com/services/dtp-and-layout",
+      "description": "We offer comprehensive multilingual desktop publishing (DTP) services to ensure your translated content looks just as good as the original. Whether you’re producing brochures, manuals, leaflets, PDF forms, or digital marketing assets, our DTP specialists work closely with our translators to deliver final files that are visually accurate, professionally formatted, and ready for print or publication.\nOur team uses industry-standard tools such as Adobe InDesign, Illustrator, FrameMaker, and PowerPoint to maintain layout integrity across all languages, accounting for text expansion, script direction (LTR/RTL), fonts, and cultural nuances. You won’t have to worry about line breaks, image-text overlap, or formatting errors disrupting your message. This service is especially valuable for regulated industries where multilingual documentation must meet specific compliance and branding standards.",
+      "serviceType": "Multilingual Desktop Publishing (DTP)",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Designers, Marketing Teams, Agencies, Content Teams"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a quote for multilingual DTP and layout formatting.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get DTP Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Voiceover and Subtitling Services for Global Multimedia Projects",
+      "url": "https://www.adhoc-translations.com/services/voiceover-and-subtitling",
+      "description": "AdHoc Translations helps organisations bring their multimedia content to life for international audiences. Whether you need subtitles for a promotional video or a fully voiced-over training series in multiple languages, we offer end-to-end support: transcription, translation, casting, recording, subtitling, and final audio/video syncing.\nOur linguists and voice artists ensure that tone, timing, and terminology are localised accurately, helping you maintain message clarity and emotional impact in every market. We support a wide range of use cases including explainer videos, social media campaigns, internal communications, product tutorials, and e-learning platforms. We also offer subtitle styling and technical delivery in standard formats (e.g., SRT, VTT), so your files are platform-ready.",
+      "serviceType": "Multilingual Voiceover and Subtitling",
+      "provider": {
+        "@id": "https://www.adhoc-translations.com/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "GB" },
+        { "@type": "Country", "name": "ES" },
+        { "@type": "Country", "name": "DE" },
+        { "@type": "Country", "name": "SE" },
+        { "@type": "Country", "name": "FR" },
+        { "@type": "Country", "name": "NO" },
+        { "@type": "Country", "name": "DK" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Marketing Teams, HR Departments, Production Companies, eLearning Providers"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Request a quote for voiceover or subtitling in multiple languages.",
+        "url": "https://www.adhoc-translations.com/contact/get-a-quote/"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Get Voiceover Quote",
+        "target": "https://www.adhoc-translations.com/contact/get-a-quote/?service=voiceover"
+      }
+    }
+  ]
+}</script> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><link rel="icon" href="https://www.adhoc-translations.com/wp-content/uploads/2017/05/adhoc-favicon.png" sizes="32x32"><link rel="icon" href="https://www.adhoc-translations.com/wp-content/uploads/2017/05/adhoc-favicon.png" sizes="192x192"><link rel="apple-touch-icon" href="https://www.adhoc-translations.com/wp-content/uploads/2017/05/adhoc-favicon.png"><meta name="msapplication-TileImage" content="https://www.adhoc-translations.com/wp-content/uploads/2017/05/adhoc-favicon.png"></head><body class="wp-singular page-template-default page page-id-12206 page-parent wp-theme-Divi wp-child-theme-divi_child_by_yanco et_button_no_icon et_pb_button_helper_class et_transparent_nav et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db"><noscript><iframe data-lazyloaded="1" src="about:blank" data-src="https://www.googletagmanager.com/ns.html?id=GTM-WTG8LSB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTG8LSB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page-container"><div id="top-header"><div class="container clearfix"><div id="et-info">
+<span id="et-info-phone">+44 (0) 207 182 4735</span>
+<a href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com"><span id="et-info-email">info@adhoc-translations.com</span></a></div><div id="et-secondary-menu"><ul id="et-secondary-nav" class="menu"><li class="privacy-policy menu-item menu-item-type-post_type menu-item-object-page menu-item-38984"><a href="https://www.adhoc-translations.com/privacy-policy/">Privacy policy</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38625"><a href="https://tms.adhoc-translations.com/pagesUTF8/login.jsp" data-umami-event="outbound-link-click" data-umami-event-url="https://tms.adhoc-translations.com/pagesUTF8/login.jsp">Login</a></li><li class="menu-item-language menu-item-language-current menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children menu-item-wpml-ls-21-en"><a href="https://www.adhoc-translations.com/get-a-quote/" title="Switch to UK/US"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">UK/US</span></a><ul class="sub-menu"><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-da wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-da"><a href="https://www.adhoc-translations.com/da/faa-et-tilbud/" title="Switch to DK"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/da.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/da.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">DK</span></a></li><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-de wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-de"><a href="https://www.adhoc-translations.com/de/unverbindliches-angebot/" title="Switch to DE"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">DE</span></a></li><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-sv wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-sv"><a href="https://www.adhoc-translations.com/sv/faa-en-offert/" title="Switch to SE"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">SE</span></a></li><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-es"><a href="https://www.adhoc-translations.com/es/solicite-presupuesto/" title="Switch to ES"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">ES</span></a></li><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-fr wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-fr"><a href="https://www.adhoc-translations.com/fr/obtenir-un-devis/" title="Switch to FR"><img class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.svg" alt=""><noscript><img
+class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.svg"
+alt=""
+/></noscript><span class="wpml-ls-display">FR</span></a></li><li class="menu-item-language menu-item wpml-ls-slot-21 wpml-ls-item wpml-ls-item-nb wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-21-nb"><a href="https://www.adhoc-translations.com/nb/fa-et-tilbud/" title="Switch to NO"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDE4IDEyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="18" height="12" class="wpml-ls-flag" data-src="https://www.adhoc-translations.com/wp-content/uploads/flags/no.png" alt=""><noscript><img width="18" height="12" class="wpml-ls-flag"
+src="https://www.adhoc-translations.com/wp-content/uploads/flags/no.png"
+alt=""
+/></noscript><span class="wpml-ls-display">NO</span></a></li></ul></li></ul></div></div></div><header id="main-header" data-height-onload="66"><div class="container clearfix et_menu_container"><div class="logo_container">
+<span class="logo_helper"></span>
+<a href="https://www.adhoc-translations.com/">
+<img src="https://www.adhoc-translations.com/wp-content/uploads/2021/05/adhoc-logo-2019-white-01-02.png" alt="AdHoc Translations" id="logo" data-height-percentage="80" width="275" height="91">
+</a></div><div id="et-top-navigation" data-height="66" data-fixed-height="40"><nav id="top-menu-nav"><ul id="top-menu" class="nav"><li id="menu-item-44108" class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44108"><a data-umami-event="outbound-link-click" data-umami-event-url="">Solutions</a><ul class="sub-menu"><li id="menu-item-44173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44173"><a href="/solutions/translation/">Translation</a><ul class="sub-menu"><li id="menu-item-44111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44111"><a href="https://www.adhoc-translations.com/solutions/translation/legal-translation/">Legal</a></li><li id="menu-item-44112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44112"><a href="https://www.adhoc-translations.com/solutions/translation/medical-translation/">Medical</a></li><li id="menu-item-44110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44110"><a href="https://www.adhoc-translations.com/solutions/translation/technical-translation/">Technical</a></li><li id="menu-item-44114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44114"><a href="https://www.adhoc-translations.com/solutions/translation/financial-translation/">Financial</a></li><li id="menu-item-44115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44115"><a href="https://www.adhoc-translations.com/solutions/translation/translation-of-websites/">Websites</a></li><li id="menu-item-44116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44116"><a href="https://www.adhoc-translations.com/solutions/translation/translation-of-seo-texts-and-google-ads/">SEO</a></li><li id="menu-item-44117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44117"><a href="https://www.adhoc-translations.com/solutions/translation/translation-of-marketing-material/">Marketing material</a></li></ul></li><li id="menu-item-44143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44143"><a href="/solutions">Other Services</a><ul class="sub-menu"><li id="menu-item-44144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44144"><a href="https://www.adhoc-translations.com/solutions/proofreading-and-text-revision/">Proofreading and text revision</a></li><li id="menu-item-44146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44146"><a href="https://www.adhoc-translations.com/solutions/dtp-layout/">DTP and layout</a></li><li id="menu-item-44145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44145"><a href="https://www.adhoc-translations.com/solutions/voice-over-and-subtitling/">Voiceover and subtitling</a></li></ul></li><li id="menu-item-44109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44109"><a href="/technology">Technology</a><ul class="sub-menu"><li id="menu-item-44126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44126"><a href="https://www.adhoc-translations.com/technology/translation-management-systemtms/">SmartDesk</a></li><li id="menu-item-44122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44122"><a href="https://www.adhoc-translations.com/technology/cms-integration/">SmartConnect</a></li><li id="menu-item-44121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44121"><a href="https://www.adhoc-translations.com/technology/smartedit-online/">SmartEdit</a></li><li id="menu-item-44123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44123"><a href="https://www.adhoc-translations.com/technology/machine-translation/">Machine translation</a></li><li id="menu-item-44125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44125"><a href="https://www.adhoc-translations.com/technology/terminology/">Terminology</a></li></ul></li></ul></li><li id="menu-item-44127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44127"><a href="#">Our Company</a><ul class="sub-menu"><li id="menu-item-44128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44128"><a href="https://www.adhoc-translations.com/about-us/">About</a></li><li id="menu-item-44129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44129"><a href="https://www.adhoc-translations.com/partners/">Partners</a></li><li id="menu-item-44130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44130"><a href="https://www.adhoc-translations.com/vacancies/">Vacancies</a></li><li id="menu-item-44131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44131"><a href="https://www.adhoc-translations.com/become-a-vendor/">Become a vendor</a></li></ul></li><li id="menu-item-44132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44132"><a href="#">Customers</a><ul class="sub-menu"><li id="menu-item-44137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44137"><a href="https://www.adhoc-translations.com/cases/">Case studies</a></li><li id="menu-item-44138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44138"><a href="https://www.adhoc-translations.com/book-a-meeting/">Book a meeting</a></li></ul></li><li id="menu-item-44133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44133"><a href="#">Resources</a><ul class="sub-menu"><li id="menu-item-44135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44135"><a href="https://www.adhoc-translations.com/blog/">Blog</a></li><li id="menu-item-44136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44136"><a href="https://www.adhoc-translations.com/newsletter/">Newsletter</a></li></ul></li><li id="menu-item-44134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44134"><a href="https://www.adhoc-translations.com/contact/">Contact</a></li><li id="menu-item-44118" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12206 current_page_item menu-item-44118"><a href="https://www.adhoc-translations.com/get-a-quote/" aria-current="page">Get a quote</a></li></ul></nav><div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown" id="lang_sel"><ul><li tabindex="0" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-item-legacy-dropdown">
+<a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-native icl_lang_sel_native">UK/US</span></a><ul class="wpml-ls-sub-menu"><li class="icl-da wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-da wpml-ls-first-item">
+<a href="https://www.adhoc-translations.com/da/faa-et-tilbud/" class="wpml-ls-link">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/da.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/da.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">DK</span></a></li><li class="icl-de wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de">
+<a href="https://www.adhoc-translations.com/de/unverbindliches-angebot/" class="wpml-ls-link">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">DE</span></a></li><li class="icl-sv wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-sv">
+<a href="https://www.adhoc-translations.com/sv/faa-en-offert/" class="wpml-ls-link">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">SE</span></a></li><li class="icl-es wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-es">
+<a href="https://www.adhoc-translations.com/es/solicite-presupuesto/" class="wpml-ls-link">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">ES</span></a></li><li class="icl-fr wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr">
+<a href="https://www.adhoc-translations.com/fr/obtenir-un-devis/" class="wpml-ls-link">
+<img class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.svg" alt="" width="18" height="12"><noscript><img
+class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.svg"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">FR</span></a></li><li class="icl-nb wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-nb wpml-ls-last-item">
+<a href="https://www.adhoc-translations.com/nb/fa-et-tilbud/" class="wpml-ls-link">
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDE4IDEyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="18" height="12" class="wpml-ls-flag iclflag" data-src="https://www.adhoc-translations.com/wp-content/uploads/flags/no.png" alt=""><noscript><img width="18" height="12" class="wpml-ls-flag iclflag"
+src="https://www.adhoc-translations.com/wp-content/uploads/flags/no.png"
+alt=""
+width=18
+height=12
+/></noscript><span class="wpml-ls-display icl_lang_sel_translated">NO</span></a></li></ul></li></ul></div><div id="et_mobile_nav_menu"><div class="mobile_nav closed">
+<span class="select_page">Select Page</span>
+<span class="mobile_menu_bar mobile_menu_bar_toggle"></span></div></div></div></div><div class="et_search_outer"><div class="container et_search_form_container"><form role="search" method="get" class="et-search-form" action="https://www.adhoc-translations.com/">
+<input type="search" class="et-search-field" placeholder="Search …" value="" name="s" title="Search for:"></form>
+<span class="et_close_search_field"></span></div></div></header><div id="et-main-area"><div id="main-content"><article id="post-12206" class="post-12206 page type-page status-publish hentry"><div class="entry-content"><div class="et-l et-l--post"><div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0 bg-dark et_pb_with_background et_section_regular"><div class="et_pb_row et_pb_row_0"><div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_center et_pb_bg_layout_dark"><div class="et_pb_text_inner"><h1>Contact us for a free and non-binding quote</h1></div></div></div></div><div class="et_pb_row et_pb_row_1"><div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_center et_pb_bg_layout_dark"><div class="et_pb_text_inner"><p id="tw-target-text" dir="ltr" data-placeholder="Oversættelse"><strong><span lang="da">Please note, that we only accept business customers.</span></strong></p></div></div></div></div><div class="et_pb_row et_pb_row_2"><div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark"><div class="et_pb_text_inner"><p></p><div class="gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework" data-form-theme="legacy" data-form-index="0" id="gform_wrapper_3"><div id="gf_3" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_3" id="gform_3" action="/get-a-quote/#gf_3" data-formid="3" novalidate=""><div class="gform-body gform_body"><ul id="gform_fields_3" class="gform_fields top_label form_sublabel_below description_above validation_below"><li id="field_3_1" class="gfield gfield--type-text gfield--input-type-text gf_label_none gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_1">Your name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input name="input_1" id="input_3_1" type="text" value="" class="large" placeholder="Your name *" aria-required="true" aria-invalid="false"></div></li><li id="field_3_11" class="gfield gfield--type-text gfield--input-type-text gf_label_none field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_11">Company name</label><div class="ginput_container ginput_container_text"><input name="input_11" id="input_3_11" type="text" value="" class="large" placeholder="Company name" aria-invalid="false"></div></li><li id="field_3_7" class="gfield gfield--type-email gfield--input-type-email gf_label_none gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_7">Your email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+<input name="input_7" id="input_3_7" type="email" value="" class="large" placeholder="Your email *" aria-required="true" aria-invalid="false"></div></li><li id="field_3_5" class="gfield gfield--type-number gfield--input-type-number gf_left_third gf_label_none field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_5">Country code</label><div class="ginput_container ginput_container_number"><input name="input_5" id="input_3_5" type="number" step="any" min="0" value="" class="large" placeholder="Country code eg. 44" aria-invalid="false" aria-describedby="gfield_instruction_3_5"><div class="gfield_description instruction " id="gfield_instruction_3_5">Please enter a number greater than or equal to <strong>0</strong>.</div></div></li><li id="field_3_4" class="gfield gfield--type-phone gfield--input-type-phone gf_right_two_third gf_label_none gfield_contains_required field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_4">Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input name="input_4" id="input_3_4" type="tel" value="" class="large" placeholder="Phone" aria-required="true" aria-invalid="false"></div></li><li id="field_3_8" class="gfield gfield--type-fileupload gfield--input-type-fileupload field_sublabel_below gfield--has-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="gform_browse_button_3_8">Attach a file</label><div class="gfield_description" id="gfield_description_3_8">You can attach the following filetypes:<br>pdf | doc | docx | jpeg | jpg | ppt | pptx | xls | xlsx | xml | html | htm | zip<br>Maximum total upload 128MB<br>Zip the files if you want to send several files</div><div class="ginput_container ginput_container_fileupload"><div id="gform_multifile_upload_3_8" data-settings="{&quot;runtimes&quot;:&quot;html5,flash,html4&quot;,&quot;browse_button&quot;:&quot;gform_browse_button_3_8&quot;,&quot;container&quot;:&quot;gform_multifile_upload_3_8&quot;,&quot;drop_element&quot;:&quot;gform_drag_drop_area_3_8&quot;,&quot;filelist&quot;:&quot;gform_preview_3_8&quot;,&quot;unique_names&quot;:true,&quot;file_data_name&quot;:&quot;file&quot;,&quot;url&quot;:&quot;https:\/\/www.adhoc-translations.com\/?gf_page=1694e421e2a0c7d&quot;,&quot;flash_swf_url&quot;:&quot;https:\/\/www.adhoc-translations.com\/wp-includes\/js\/plupload\/plupload.flash.swf&quot;,&quot;silverlight_xap_url&quot;:&quot;https:\/\/www.adhoc-translations.com\/wp-includes\/js\/plupload\/plupload.silverlight.xap&quot;,&quot;filters&quot;:{&quot;mime_types&quot;:[{&quot;title&quot;:&quot;Allowed Files&quot;,&quot;extensions&quot;:&quot;pdf,rtf,doc,docx,ppt,pptx,xls,xlsx,indd,xml,zip,jpg,jpeg,htm,html&quot;}],&quot;max_file_size&quot;:&quot;134217728b&quot;},&quot;multipart&quot;:true,&quot;urlstream_upload&quot;:false,&quot;multipart_params&quot;:{&quot;form_id&quot;:3,&quot;field_id&quot;:8},&quot;gf_vars&quot;:{&quot;max_files&quot;:0,&quot;message_id&quot;:&quot;gform_multifile_messages_3_8&quot;,&quot;disallowed_extensions&quot;:{&quot;0&quot;:&quot;php&quot;,&quot;1&quot;:&quot;asp&quot;,&quot;2&quot;:&quot;aspx&quot;,&quot;3&quot;:&quot;cmd&quot;,&quot;4&quot;:&quot;csh&quot;,&quot;5&quot;:&quot;bat&quot;,&quot;8&quot;:&quot;hta&quot;,&quot;9&quot;:&quot;jar&quot;,&quot;10&quot;:&quot;exe&quot;,&quot;11&quot;:&quot;com&quot;,&quot;12&quot;:&quot;js&quot;,&quot;13&quot;:&quot;lnk&quot;,&quot;14&quot;:&quot;htaccess&quot;,&quot;15&quot;:&quot;phtml&quot;,&quot;16&quot;:&quot;ps1&quot;,&quot;17&quot;:&quot;ps2&quot;,&quot;18&quot;:&quot;php3&quot;,&quot;19&quot;:&quot;php4&quot;,&quot;20&quot;:&quot;php5&quot;,&quot;21&quot;:&quot;php6&quot;,&quot;22&quot;:&quot;py&quot;,&quot;23&quot;:&quot;rb&quot;,&quot;24&quot;:&quot;tmp&quot;}}}" class="gform_fileupload_multifile"><div id="gform_drag_drop_area_3_8" class="gform_drop_area gform-theme-field-control">
+<span class="gform_drop_instructions">Drop files here or </span>
+<button type="button" id="gform_browse_button_3_8" class="button gform_button_select_files gform-theme-button gform-theme-button--control" aria-describedby="gfield_upload_rules_3_8 gfield_description_3_8">Select files</button></div></div><span class="gfield_description gform_fileupload_rules" id="gfield_upload_rules_3_8">Accepted file types: pdf, rtf, doc, docx, ppt, pptx, xls, xlsx, indd, xml, zip, jpg, jpeg, htm, html, Max. file size: 128 MB.</span><ul class="validation_message--hidden-on-empty gform-ul-reset" id="gform_multifile_messages_3_8"></ul></div><div id="gform_preview_3_8" class="ginput_preview_list"></div></li><li id="field_3_9" class="gfield gfield--type-textarea gfield--input-type-textarea gf_label_none field_sublabel_below gfield--no-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_9">Comments</label><div class="ginput_container ginput_container_textarea"><textarea name="input_9" id="input_3_9" class="textarea medium" placeholder="Comments. e.g. language combinations, special requests, etc." aria-invalid="false" rows="10" cols="50"></textarea></div></li><li id="field_3_6" class="gfield gfield--type-checkbox gfield--type-choice gfield--input-type-checkbox gfield_contains_required field_sublabel_below gfield--no-description field_description_above hidden_label field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label gfield_label_before_complex">Privacy Policy<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_3_6"><li class="gchoice gchoice_3_6_1">
+<input class="gfield-choice-input" name="input_6.1" type="checkbox" value="I agree that AdHoc Translations processes my personal information.&lt;br /&gt; &lt;a href=&quot;https://www.adhoc-translations.com/privacy-policy/&quot;&gt;Read the privacy policy&lt;/a&gt;." id="choice_3_6_1">
+<label for="choice_3_6_1" id="label_3_6_1" class="gform-field-label gform-field-label--type-inline">I agree that AdHoc Translations processes my personal information.<br> <a href="https://www.adhoc-translations.com/privacy-policy/">Read the privacy policy</a>.</label></li></ul></div></li><li id="field_3_12" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_above field_validation_below gfield_visibility_visible"><label class="gfield_label gform-field-label" for="input_3_12">Phone</label><div class="gfield_description" id="gfield_description_3_12">This field is for validation purposes and should be left unchanged.</div><div class="ginput_container"><input name="input_12" id="input_3_12" type="text" value="" autocomplete="new-password"></div></li></ul></div><div class="gform-footer gform_footer top_label"> <input type="submit" id="gform_submit_button_3" class="gform_button button" onclick="gform.submission.handleButtonClick(this);" data-submission-type="submit" value="Send"> <input type="hidden" name="gform_ajax" value="form_id=3&amp;title=&amp;description=&amp;tabindex=0&amp;theme=legacy&amp;styles=[]&amp;hash=1f59db94cfbf2a7192dbc9f8752893c0">
+<input type="hidden" class="gform_hidden" name="gform_submission_method" data-js="gform_submission_method_3" value="iframe">
+<input type="hidden" class="gform_hidden" name="gform_theme" data-js="gform_theme_3" id="gform_theme_3" value="legacy">
+<input type="hidden" class="gform_hidden" name="gform_style_settings" data-js="gform_style_settings_3" id="gform_style_settings_3" value="[]">
+<input type="hidden" class="gform_hidden" name="is_submit_3" value="1">
+<input type="hidden" class="gform_hidden" name="gform_submit" value="3">
+<input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+<input type="hidden" class="gform_hidden" name="state_3" value="WyJbXSIsIjZmNTA1ZmRiZWFkMTBiZWJjMjg2M2E0NTcyMDQyOTRlIl0=">
+<input type="hidden" autocomplete="off" class="gform_hidden" name="gform_target_page_number_3" id="gform_target_page_number_3" value="0">
+<input type="hidden" autocomplete="off" class="gform_hidden" name="gform_source_page_number_3" id="gform_source_page_number_3" value="1">
+<input type="hidden" name="gform_field_values" value="">
+<input type="hidden" name="gform_uploaded_files" id="gform_uploaded_files_3" value=""></div></form></div>
+<iframe data-lazyloaded="1" src="about:blank" style="display:none;width:0px;height:0px;" data-src="about:blank" name="gform_ajax_frame_3" id="gform_ajax_frame_3" title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe><noscript><iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_3' id='gform_ajax_frame_3' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe></noscript> <script type="text/javascript">/*  */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 3, 'https://www.adhoc-translations.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_3').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, 'https://www.adhoc-translations.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_3').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]&gt; */</script> <p></p><p><strong>You will receive a confirmation by email. Please contact us if you do not<br>receive the email. You should also check your spam filter.</strong></p></div></div></div></div></div></div></div></div></article></div><span class="et_pb_scroll_top et-pb-icon"></span><div class="cover-denmark"><div class="cover-headline"><p>AdHoc Translations - Denmark</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-denmark"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-denmark"></noscript></div><div class="cover-text"><p>AdHoc Translations A/S<br>
+Lautruphøj 5-7, 2. sal<br>
+2750 Ballerup</p><p>CVR 29245908</p><p><a href="tel:+45 33 91 09 19" data-umami-event="outbound-link-click" data-umami-event-url="tel:+45 33 91 09 19">+45 33 91 09 19</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-sweden"><div class="cover-headline"><p>AdHoc Translations - Sweden</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-sweden"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-sweden"></noscript></div><div class="cover-text"><p>Adhoc Translations Sweden AB<br>
+Arenavägen 33<br>
+121 77 Johanneshov</p><p>VAT.-Id.No: SE-559255388601</p><p><a href="tel:+46 (0)8 910 003" data-umami-event="outbound-link-click" data-umami-event-url="tel:+46 (0)8 910 003">+46 (0)8 910 003</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-finland"><div class="cover-headline"><p>AdHoc Translations - Finland</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-finland"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-finland"></noscript></div><div class="cover-text"><p>AdHoc Translations A/S<br>
+Mannerheimintie 113, 5th Floor<br>
+FI-00280 Helsinki</p><p><a href="tel:+358 (0)9 2514 3500" data-umami-event="outbound-link-click" data-umami-event-url="tel:+358 (0)9 2514 3500">+358 (0)9 2514 3500</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-norway"><div class="cover-headline"><p>AdHoc Translations - Norway</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-norway"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-norway"></noscript></div><div class="cover-text"><p>AdHoc Translations AS<br>
+Postboks 1964 Vika<br>
+N-0125 Oslo</p><p>VAT.-Id.No: SE-559255388601</p><p><a href="tel:+47 21623084" data-umami-event="outbound-link-click" data-umami-event-url="tel:+47 21623084">+47 21623084</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-india"><div class="cover-headline"><p>AdHoc Translations - India</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-india"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-india"></noscript></div><div class="cover-text"><p>Regus Business Centre (Mumbai) Pvt. Ltd<br>
+1534, 15th Floor, Thane (West)<br>
+400601, Maharashtra, India</p><br><p><a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-germany"><div class="cover-headline"><p>AdHoc Translations - Germany</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-germany"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-germany"></noscript></div><div class="cover-text"><p>AdHoc Translations GmbH<br>
+Moosacher Str. 82a<br>
+80809 München<br><br>
+MWSt.-ID-Nr. DE 30 777 1429</p><p><a href="tel:+49  89 206 0936054" data-umami-event="outbound-link-click" data-umami-event-url="tel:+49  89 206 0936054">+49 89 206 0936054</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-uk"><div class="cover-headline"><p>AdHoc Translations - United Kingdom</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-uk"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-uk"></noscript></div><div class="cover-text"><p>AdHoc Translations UK<br>
+33 Cavendish Square<br>
+London, Greater London<br>
+UK-W1G 0PW</p><p><a href="tel:+44 (0) 207 182 4735" data-umami-event="outbound-link-click" data-umami-event-url="tel:+44 (0) 207 182 4735">+44 (0) 207 182 4735</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div class="cover-usa"><div class="cover-headline"><p>AdHoc Translations - United States of America</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-usa"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-usa"></noscript></div><div class="cover-text"><p>AdHoc Translations<br>
+MA, Boston - 101 Arch Street<br>
+101 Arch Street<br>
+8th Floor<br>
+Boston<br>
+02110</p>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a><p></p></div></div><div class="cover-spain"><div class="cover-headline"><p>AdHoc Translations - Spain</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-spain"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-spain"></noscript></div><div class="cover-text"><p>Carrer de Muntaner 233<br>
+Principal Primera<br>
+08021 Barcelona<br>
+Spain<br></p><p>Nº c/c: 2085- 8236- 2203 3029 7008</p>
+<a href="tel:+34 935 019 047" data-umami-event="outbound-link-click" data-umami-event-url="tel:+34 935 019 047">+34 935 019 047</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a><p></p></div></div><div class="cover-france"><div class="cover-headline"><p>AdHoc Translations - France</p>
+<img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="32" height="32" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-france"><noscript><img width="32" height="32" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/error.png.webp" alt="Close" class="close-france"></noscript></div><div class="cover-text"><p>37-39, Avenue Ledru Rollin<br>
+CS11237<br>
+Cedex 12<br>
+75570 Paris<br>
+<a href="tel:+33 (0)1 56 96 16 49" data-umami-event="outbound-link-click" data-umami-event-url="tel:+33 (0)1 56 96 16 49">+33 (0)1 56 96 16 49</a><br>
+<a class="footerLink" href="mailto:info@adhoc-translations.com" data-umami-event="outbound-link-click" data-umami-event-url="mailto:info@adhoc-translations.com">info@adhoc-translations.com</a></p></div></div><div id="partners">
+<a href="https://www.gala-global.org/" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://www.gala-global.org/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iOTQiIHZpZXdCb3g9IjAgMCAxNTAgOTQiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=" width="150" height="94" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/GALA_logo_fullsize-2.png" alt="GALA Logo"><noscript><img width="150" height="94" src="https://www.adhoc-translations.com/wp-content/uploads/2017/02/GALA_logo_fullsize-2.png" alt="GALA Logo"></noscript></a>
+<a href="https://translatorswithoutborders.org/" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://translatorswithoutborders.org/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMTIiIGhlaWdodD0iODgiIHZpZXdCb3g9IjAgMCAzMTIgODgiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=" width="312" height="88" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/03/Translators_without_Borders.png" alt="Translators without borders"><noscript><img width="312" height="88" src="https://www.adhoc-translations.com/wp-content/uploads/2017/03/Translators_without_Borders.png" alt="Translators without borders"></noscript></a>
+<a href="https://elia-association.org/" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://elia-association.org/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iODMiIHZpZXdCb3g9IjAgMCAxNTAgODMiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=" width="150" height="83" data-src="https://www.adhoc-translations.com/wp-content/uploads/2017/03/Elia_Logo_positiv_rgb.png" alt="Elia Logo"><noscript><img width="150" height="83" src="https://www.adhoc-translations.com/wp-content/uploads/2017/03/Elia_Logo_positiv_rgb.png" alt="Elia Logo"></noscript></a>
+<a href="https://www.co2neutralwebsite.com/crt/dispcust/c/5081/l/1" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://www.co2neutralwebsite.com/crt/dispcust/c/5081/l/1"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iODIiIHZpZXdCb3g9IjAgMCAxODAgODIiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=" width="180" height="82" data-src="https://www.adhoc-translations.com/wp-content/themes/divi_child_by_yanco/assets/images/logo_en_180px.png" alt="CO2Neutral Website"><noscript><img width="180" height="82" src="https://www.adhoc-translations.com/wp-content/themes/divi_child_by_yanco/assets/images/logo_en_180px.png" alt="CO2Neutral Website"></noscript></a>				<a href="https://csr-maerket.dk/" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://csr-maerket.dk/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MyIgaGVpZ2h0PSI4MyIgdmlld0JveD0iMCAwIDgzIDgzIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="83" height="83" data-src="https://www.adhoc-translations.com/wp-content/uploads/2018/12/logo-ll-small.png" alt="CSR mærket"><noscript><img width="83" height="83" src="https://www.adhoc-translations.com/wp-content/uploads/2018/12/logo-ll-small.png" alt="CSR mærket"></noscript></a>
+<a href="https://stoppapirspild.dk/" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://stoppapirspild.dk/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" width="100" height="100" data-src="https://www.adhoc-translations.com/wp-content/uploads/2019/12/sp-cert.png" style="max-height:83px;" alt="SP cert2"><noscript><img width="100" height="100" src="https://www.adhoc-translations.com/wp-content/uploads/2019/12/sp-cert.png" style="max-height:83px;" alt="SP cert2"></noscript></a>
+<a href="https://gdpr-maerket.dk" rel="noopener" target="_blank" data-umami-event="outbound-link-click" data-umami-event-url="https://gdpr-maerket.dk/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiB2aWV3Qm94PSIwIDAgMTUwIDE1MCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" width="150" height="150" data-src="https://www.adhoc-translations.com/wp-content/uploads/2020/04/gdpr-maerket-bw.png" style="max-height:83px;" alt="GDPR Mærket"><noscript><img width="150" height="150" src="https://www.adhoc-translations.com/wp-content/uploads/2020/04/gdpr-maerket-bw.png" style="max-height:83px;" alt="GDPR Mærket"></noscript></a></div><footer id="main-footer"><p></p><div class="container"><div id="footer-widgets" class="clearfix"><div class="footer-widget"><div id="media_image-2" class="fwidget et_pb_widget widget_media_image"><img width="275" height="91" src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/adhoc-logo-2019-white-01-02.png.webp" class="image wp-image-33823  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async"></div><div id="custom_html-5" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><span class="footeritalic">The language business is a people business, meaning that we must be there for our customers</span></div></div></div><div class="footer-widget"><div id="custom_html-3" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footerwidgetleftpad"><span class="widget-title">Useful Links</span></div></div></div><div id="nav_menu-2" class="fwidget et_pb_widget widget_nav_menu"><div class="menu-useful-links-container"><ul id="menu-useful-links" class="menu"><li id="menu-item-12717" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-12206 current_page_item menu-item-12717"><a href="https://www.adhoc-translations.com/get-a-quote/" aria-current="page">Get a quote</a></li><li id="menu-item-12719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12719"><a href="https://www.adhoc-translations.com/privacy-policy/">Privacy policy</a></li><li id="menu-item-12716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12716"><a href="https://www.adhoc-translations.com/general-terms-conditions/">Terms &amp; Conditions</a></li><li id="menu-item-17916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17916"><a href="https://www.adhoc-translations.com/security-confidentiality-compliance/">Security &amp; Compliance</a></li><li id="menu-item-19937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19937"><a href="https://www.adhoc-translations.com/corporate-social-responsibility/">Corporate Social Responsibility</a></li><li id="menu-item-12715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12715"><a href="https://www.adhoc-translations.com/contact/">Contact</a></li><li id="menu-item-11032" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11032"><a href="https://tms.adhoc-translations.com/pagesUTF8/login.jsp" data-umami-event="outbound-link-click" data-umami-event-url="https://tms.adhoc-translations.com/pagesUTF8/login.jsp">Login</a></li></ul></div></div></div><div class="footer-widget"><div id="custom_html-4" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footerwidgetleftpad"><span class="widget-title">Departments</span></div></div></div><div id="text-3" class="fwidget et_pb_widget widget_text"><div class="textwidget"><div class="footerwidgetleftpad"><ul><li class="denmark-btn">Denmark</li><li class="sweden-btn">Sweden</li><li class="norway-btn">Norway</li><li class="germany-btn">Germany</li><li class="uk-btn">United Kingdom</li><li class="finland-btn">Finland</li><li class="india-btn">India</li><li class="usa-btn">USA</li><li class="spain-btn">Spain</li><li class="france-btn">France</li></ul></div></div></div></div><div class="footer-widget"><div id="custom_html-2" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footerwidgetleftpad1"><span class="widget-title">Sign up for our newsletter!</span><br>
+<a class="smallorange" href="https://www.adhoc-translations.com/newsletter/">SIGN ME UP!</a></div></div></div><div id="custom_html-7" class="widget_text fwidget et_pb_widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="footerwidgetleftpad1"><div id="widget-title-div">
+<span class="widget-title">FOLLOW US</span></div><a href="https://www.facebook.com/AdHocTranslations/" target="_blank" rel="noopener" data-umami-event="outbound-link-click" data-umami-event-url="https://www.facebook.com/AdHocTranslations/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDI5IDI5Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" class="social-footer" data-src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/facebook-ikon.png" alt="" width="29" height="29"><noscript><img class="social-footer" src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/facebook-ikon.png" alt="" width="29" height="29" /></noscript></a><a href="https://www.linkedin.com/company/ad-hoc-translations-a-s/" target="_blank" rel="noopener" data-umami-event="outbound-link-click" data-umami-event-url="https://www.linkedin.com/company/ad-hoc-translations-a-s/"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDI5IDI5Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" class="social-footer" data-src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/linkedin-ikon.png.webp" alt="" width="29" height="29"><noscript><img class="social-footer" src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/linkedin-ikon.png.webp" alt="" width="29" height="29" /></noscript></a><a href="https://twitter.com/AdHoc_Language" target="_blank" rel="noopener" data-umami-event="outbound-link-click" data-umami-event-url="https://twitter.com/AdHoc_Language"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDI5IDI5Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" class="social-footer" data-src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/twitter-ikon.png.webp" alt="" width="29" height="29"><noscript><img class="social-footer" src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/twitter-ikon.png.webp" alt="" width="29" height="29" /></noscript></a><a href="https://www.youtube.com/channel/UC6GxzaVOMxSFOqvl2ACKLuA" target="_blank" rel="noopener" data-umami-event="outbound-link-click" data-umami-event-url="https://www.youtube.com/channel/UC6GxzaVOMxSFOqvl2ACKLuA"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOSIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDI5IDI5Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" class="social-footer" data-src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/youtube-ikon.png.webp" alt="" width="29" height="29"><noscript><img class="social-footer" src="https://www.adhoc-translations.com/wp-content/uploads/2020/09/youtube-ikon.png.webp" alt="" width="29" height="29" /></noscript></a></div></div></div></div></div></div><div id="footer-bottom"><div class="container clearfix"><div id="footer-info">Copyright © AdHoc Translations - 2025</div></div></div></footer></div></div>  <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/divi_child_by_yanco\/*","\/wp-content\/themes\/Divi\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <style id="core-block-supports-inline-css" type="text/css">/**
+ * Core styles: block-supports
+ */</style> <script src="https://cloud.umami.is/script.js" defer="" data-website-id="cd972ca8-90da-4bf0-8594-bf9cf9975a6b"></script><script type="text/javascript" id="divi-custom-script-js-extra" src="data:text/javascript;base64,dmFyIERJVkk9eyJpdGVtX2NvdW50IjoiJWQgSXRlbSIsIml0ZW1zX2NvdW50IjoiJWQgSXRlbXMifTt2YXIgZXRfYnVpbGRlcl91dGlsc19wYXJhbXM9eyJjb25kaXRpb24iOnsiZGl2aVRoZW1lIjohMCwiZXh0cmFUaGVtZSI6ITF9LCJzY3JvbGxMb2NhdGlvbnMiOlsiYXBwIiwidG9wIl0sImJ1aWxkZXJTY3JvbGxMb2NhdGlvbnMiOnsiZGVza3RvcCI6ImFwcCIsInRhYmxldCI6ImFwcCIsInBob25lIjoiYXBwIn0sIm9ubG9hZFNjcm9sbExvY2F0aW9uIjoiYXBwIiwiYnVpbGRlclR5cGUiOiJmZSJ9O3ZhciBldF9mcm9udGVuZF9zY3JpcHRzPXsiYnVpbGRlckNzc0NvbnRhaW5lclByZWZpeCI6IiNldC1ib2MiLCJidWlsZGVyQ3NzTGF5b3V0UHJlZml4IjoiI2V0LWJvYyAuZXQtbCJ9O3ZhciBldF9wYl9jdXN0b209eyJhamF4dXJsIjoiaHR0cHM6XC9cL3d3dy5hZGhvYy10cmFuc2xhdGlvbnMuY29tXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJpbWFnZXNfdXJpIjoiaHR0cHM6XC9cL3d3dy5hZGhvYy10cmFuc2xhdGlvbnMuY29tXC93cC1jb250ZW50XC90aGVtZXNcL0RpdmlcL2ltYWdlcyIsImJ1aWxkZXJfaW1hZ2VzX3VyaSI6Imh0dHBzOlwvXC93d3cuYWRob2MtdHJhbnNsYXRpb25zLmNvbVwvd3AtY29udGVudFwvdGhlbWVzXC9EaXZpXC9pbmNsdWRlc1wvYnVpbGRlclwvaW1hZ2VzIiwiZXRfZnJvbnRlbmRfbm9uY2UiOiI5Mzc1OGEzZTQwIiwic3Vic2NyaXB0aW9uX2ZhaWxlZCI6IlBsZWFzZSwgY2hlY2sgdGhlIGZpZWxkcyBiZWxvdyB0byBtYWtlIHN1cmUgeW91IGVudGVyZWQgdGhlIGNvcnJlY3QgaW5mb3JtYXRpb24uIiwiZXRfYWJfbG9nX25vbmNlIjoiZGRlMmEwOTNhNCIsImZpbGxfbWVzc2FnZSI6IlBsZWFzZSwgZmlsbCBpbiB0aGUgZm9sbG93aW5nIGZpZWxkczoiLCJjb250YWN0X2Vycm9yX21lc3NhZ2UiOiJQbGVhc2UsIGZpeCB0aGUgZm9sbG93aW5nIGVycm9yczoiLCJpbnZhbGlkIjoiSW52YWxpZCBlbWFpbCIsImNhcHRjaGEiOiJDYXB0Y2hhIiwicHJldiI6IlByZXYiLCJwcmV2aW91cyI6IlByZXZpb3VzIiwibmV4dCI6Ik5leHQiLCJ3cm9uZ19jYXB0Y2hhIjoiWW91IGVudGVyZWQgdGhlIHdyb25nIG51bWJlciBpbiBjYXB0Y2hhLiIsIndyb25nX2NoZWNrYm94IjoiQ2hlY2tib3giLCJpZ25vcmVfd2F5cG9pbnRzIjoibm8iLCJpc19kaXZpX3RoZW1lX3VzZWQiOiIxIiwid2lkZ2V0X3NlYXJjaF9zZWxlY3RvciI6Ii53aWRnZXRfc2VhcmNoIiwiYWJfdGVzdHMiOltdLCJpc19hYl90ZXN0aW5nX2FjdGl2ZSI6IiIsInBhZ2VfaWQiOiIxMjIwNiIsInVuaXF1ZV90ZXN0X2lkIjoiIiwiYWJfYm91bmNlX3JhdGUiOiI1IiwiaXNfY2FjaGVfcGx1Z2luX2FjdGl2ZSI6Im5vIiwiaXNfc2hvcnRjb2RlX3RyYWNraW5nIjoiIiwidGlueW1jZV91cmkiOiJodHRwczpcL1wvd3d3LmFkaG9jLXRyYW5zbGF0aW9ucy5jb21cL3dwLWNvbnRlbnRcL3RoZW1lc1wvRGl2aVwvaW5jbHVkZXNcL2J1aWxkZXJcL2Zyb250ZW5kLWJ1aWxkZXJcL2Fzc2V0c1wvdmVuZG9ycyIsImFjY2VudF9jb2xvciI6IiNmOTlkMWMiLCJ3YXlwb2ludHNfb3B0aW9ucyI6W119O3ZhciBldF9wYl9ib3hfc2hhZG93X2VsZW1lbnRzPVtd" defer=""></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/d06eba9e1da6492787997d3e24072901.js?ver=1e67c" id="divi-custom-script-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/fa3731e297e4d3b2858ff18d141cfee2.js?ver=51301" id="wp-dom-ready-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/fd9e64f182c60ebf497a6c1c5040f036.js?ver=ccb63" id="wp-hooks-js" defer="" data-deferred="1"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/3fb23e8458088e420df32d01d81294dd.js?ver=bdf84" id="wp-i18n-js" defer="" data-deferred="1"></script> <script type="text/javascript" id="wp-i18n-js-after" src="data:text/javascript;base64,d3AuaTE4bi5zZXRMb2NhbGVEYXRhKHsndGV4dCBkaXJlY3Rpb25cdTAwMDRsdHInOlsnbHRyJ119KQ==" defer=""></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/d624fac57ff23f679c31d637ebc22cd1.js?ver=3831b" id="wp-a11y-js" defer="" data-deferred="1"></script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.14" id="gform_placeholder-js"></script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=21e5a4db1670166692ac5745329bfc80" id="gform_gravityforms_theme_vendors-js"></script> <script type="text/javascript" id="gform_gravityforms_theme-js-extra">/*  */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"2011f8222a94b6719fc36d418d19d461"},"ajax":{"ajaxurl":"https:\/\/www.adhoc-translations.com\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"0a281f42fe","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https:\/\/www.adhoc-translations.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"75cdc7b99d"};
+/*  */</script> <script type="text/javascript" defer="defer" src="https://www.adhoc-translations.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=b436459e6f25ebcd9e95ea18e1a35e19" id="gform_gravityforms_theme-js"></script> <script data-optimized="1" type="text/javascript" src="https://www.adhoc-translations.com/wp-content/litespeed/js/168a26089ab31a69cee7c13eb03d7fb8.js?ver=5f00c" id="et-core-common-js" defer="" data-deferred="1"></script> <script type="text/javascript" src="data:text/javascript;base64,alF1ZXJ5KCcuc29saWxvcXV5LWNvbnRhaW5lcicpLnJlbW92ZUNsYXNzKCduby1qcycp" defer=""></script> <script type="text/javascript">/*  */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 3) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }				gform.utils.addAsyncFilter('gform/submission/pre_submission', async (data) => {
+				    const input = document.createElement('input');
+				    input.type = 'hidden';
+				    input.name = 'gf_zero_spam_key';
+				    input.value = 'gvEF82LJ46QLWDp30AIgRz9MuyHtbBbOcqClWNi3zmoE7teKzfQWEslN4twGP8QO';
+				    input.setAttribute('autocomplete', 'new-password');
+				    data.form.appendChild(input);
+				
+				    return data;
+				});} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/*  */</script> <script type="text/javascript">/*  */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 3, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } ); 
+/*  */</script> <script data-no-optimize="1">window.lazyLoadOptions=Object.assign({},{threshold:300},window.lazyLoadOptions||{});!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).LazyLoad=e()}(this,function(){"use strict";function e(){return(e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n,a=arguments[e];for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(t[n]=a[n])}return t}).apply(this,arguments)}function o(t){return e({},at,t)}function l(t,e){return t.getAttribute(gt+e)}function c(t){return l(t,vt)}function s(t,e){return function(t,e,n){e=gt+e;null!==n?t.setAttribute(e,n):t.removeAttribute(e)}(t,vt,e)}function i(t){return s(t,null),0}function r(t){return null===c(t)}function u(t){return c(t)===_t}function d(t,e,n,a){t&&(void 0===a?void 0===n?t(e):t(e,n):t(e,n,a))}function f(t,e){et?t.classList.add(e):t.className+=(t.className?" ":"")+e}function _(t,e){et?t.classList.remove(e):t.className=t.className.replace(new RegExp("(^|\\s+)"+e+"(\\s+|$)")," ").replace(/^\s+/,"").replace(/\s+$/,"")}function g(t){return t.llTempImage}function v(t,e){!e||(e=e._observer)&&e.unobserve(t)}function b(t,e){t&&(t.loadingCount+=e)}function p(t,e){t&&(t.toLoadCount=e)}function n(t){for(var e,n=[],a=0;e=t.children[a];a+=1)"SOURCE"===e.tagName&&n.push(e);return n}function h(t,e){(t=t.parentNode)&&"PICTURE"===t.tagName&&n(t).forEach(e)}function a(t,e){n(t).forEach(e)}function m(t){return!!t[lt]}function E(t){return t[lt]}function I(t){return delete t[lt]}function y(e,t){var n;m(e)||(n={},t.forEach(function(t){n[t]=e.getAttribute(t)}),e[lt]=n)}function L(a,t){var o;m(a)&&(o=E(a),t.forEach(function(t){var e,n;e=a,(t=o[n=t])?e.setAttribute(n,t):e.removeAttribute(n)}))}function k(t,e,n){f(t,e.class_loading),s(t,st),n&&(b(n,1),d(e.callback_loading,t,n))}function A(t,e,n){n&&t.setAttribute(e,n)}function O(t,e){A(t,rt,l(t,e.data_sizes)),A(t,it,l(t,e.data_srcset)),A(t,ot,l(t,e.data_src))}function w(t,e,n){var a=l(t,e.data_bg_multi),o=l(t,e.data_bg_multi_hidpi);(a=nt&&o?o:a)&&(t.style.backgroundImage=a,n=n,f(t=t,(e=e).class_applied),s(t,dt),n&&(e.unobserve_completed&&v(t,e),d(e.callback_applied,t,n)))}function x(t,e){!e||0<e.loadingCount||0<e.toLoadCount||d(t.callback_finish,e)}function M(t,e,n){t.addEventListener(e,n),t.llEvLisnrs[e]=n}function N(t){return!!t.llEvLisnrs}function z(t){if(N(t)){var e,n,a=t.llEvLisnrs;for(e in a){var o=a[e];n=e,o=o,t.removeEventListener(n,o)}delete t.llEvLisnrs}}function C(t,e,n){var a;delete t.llTempImage,b(n,-1),(a=n)&&--a.toLoadCount,_(t,e.class_loading),e.unobserve_completed&&v(t,n)}function R(i,r,c){var l=g(i)||i;N(l)||function(t,e,n){N(t)||(t.llEvLisnrs={});var a="VIDEO"===t.tagName?"loadeddata":"load";M(t,a,e),M(t,"error",n)}(l,function(t){var e,n,a,o;n=r,a=c,o=u(e=i),C(e,n,a),f(e,n.class_loaded),s(e,ut),d(n.callback_loaded,e,a),o||x(n,a),z(l)},function(t){var e,n,a,o;n=r,a=c,o=u(e=i),C(e,n,a),f(e,n.class_error),s(e,ft),d(n.callback_error,e,a),o||x(n,a),z(l)})}function T(t,e,n){var a,o,i,r,c;t.llTempImage=document.createElement("IMG"),R(t,e,n),m(c=t)||(c[lt]={backgroundImage:c.style.backgroundImage}),i=n,r=l(a=t,(o=e).data_bg),c=l(a,o.data_bg_hidpi),(r=nt&&c?c:r)&&(a.style.backgroundImage='url("'.concat(r,'")'),g(a).setAttribute(ot,r),k(a,o,i)),w(t,e,n)}function G(t,e,n){var a;R(t,e,n),a=e,e=n,(t=Et[(n=t).tagName])&&(t(n,a),k(n,a,e))}function D(t,e,n){var a;a=t,(-1<It.indexOf(a.tagName)?G:T)(t,e,n)}function S(t,e,n){var a;t.setAttribute("loading","lazy"),R(t,e,n),a=e,(e=Et[(n=t).tagName])&&e(n,a),s(t,_t)}function V(t){t.removeAttribute(ot),t.removeAttribute(it),t.removeAttribute(rt)}function j(t){h(t,function(t){L(t,mt)}),L(t,mt)}function F(t){var e;(e=yt[t.tagName])?e(t):m(e=t)&&(t=E(e),e.style.backgroundImage=t.backgroundImage)}function P(t,e){var n;F(t),n=e,r(e=t)||u(e)||(_(e,n.class_entered),_(e,n.class_exited),_(e,n.class_applied),_(e,n.class_loading),_(e,n.class_loaded),_(e,n.class_error)),i(t),I(t)}function U(t,e,n,a){var o;n.cancel_on_exit&&(c(t)!==st||"IMG"===t.tagName&&(z(t),h(o=t,function(t){V(t)}),V(o),j(t),_(t,n.class_loading),b(a,-1),i(t),d(n.callback_cancel,t,e,a)))}function $(t,e,n,a){var o,i,r=(i=t,0<=bt.indexOf(c(i)));s(t,"entered"),f(t,n.class_entered),_(t,n.class_exited),o=t,i=a,n.unobserve_entered&&v(o,i),d(n.callback_enter,t,e,a),r||D(t,n,a)}function q(t){return t.use_native&&"loading"in HTMLImageElement.prototype}function H(t,o,i){t.forEach(function(t){return(a=t).isIntersecting||0<a.intersectionRatio?$(t.target,t,o,i):(e=t.target,n=t,a=o,t=i,void(r(e)||(f(e,a.class_exited),U(e,n,a,t),d(a.callback_exit,e,n,t))));var e,n,a})}function B(e,n){var t;tt&&!q(e)&&(n._observer=new IntersectionObserver(function(t){H(t,e,n)},{root:(t=e).container===document?null:t.container,rootMargin:t.thresholds||t.threshold+"px"}))}function J(t){return Array.prototype.slice.call(t)}function K(t){return t.container.querySelectorAll(t.elements_selector)}function Q(t){return c(t)===ft}function W(t,e){return e=t||K(e),J(e).filter(r)}function X(e,t){var n;(n=K(e),J(n).filter(Q)).forEach(function(t){_(t,e.class_error),i(t)}),t.update()}function t(t,e){var n,a,t=o(t);this._settings=t,this.loadingCount=0,B(t,this),n=t,a=this,Y&&window.addEventListener("online",function(){X(n,a)}),this.update(e)}var Y="undefined"!=typeof window,Z=Y&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),tt=Y&&"IntersectionObserver"in window,et=Y&&"classList"in document.createElement("p"),nt=Y&&1<window.devicePixelRatio,at={elements_selector:".lazy",container:Z||Y?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_poster:"poster",class_applied:"applied",class_loading:"litespeed-loading",class_loaded:"litespeed-loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1},ot="src",it="srcset",rt="sizes",ct="poster",lt="llOriginalAttrs",st="loading",ut="loaded",dt="applied",ft="error",_t="native",gt="data-",vt="ll-status",bt=[st,ut,dt,ft],pt=[ot],ht=[ot,ct],mt=[ot,it,rt],Et={IMG:function(t,e){h(t,function(t){y(t,mt),O(t,e)}),y(t,mt),O(t,e)},IFRAME:function(t,e){y(t,pt),A(t,ot,l(t,e.data_src))},VIDEO:function(t,e){a(t,function(t){y(t,pt),A(t,ot,l(t,e.data_src))}),y(t,ht),A(t,ct,l(t,e.data_poster)),A(t,ot,l(t,e.data_src)),t.load()}},It=["IMG","IFRAME","VIDEO"],yt={IMG:j,IFRAME:function(t){L(t,pt)},VIDEO:function(t){a(t,function(t){L(t,pt)}),L(t,ht),t.load()}},Lt=["IMG","IFRAME","VIDEO"];return t.prototype={update:function(t){var e,n,a,o=this._settings,i=W(t,o);{if(p(this,i.length),!Z&&tt)return q(o)?(e=o,n=this,i.forEach(function(t){-1!==Lt.indexOf(t.tagName)&&S(t,e,n)}),void p(n,0)):(t=this._observer,o=i,t.disconnect(),a=t,void o.forEach(function(t){a.observe(t)}));this.loadAll(i)}},destroy:function(){this._observer&&this._observer.disconnect(),K(this._settings).forEach(function(t){I(t)}),delete this._observer,delete this._settings,delete this.loadingCount,delete this.toLoadCount},loadAll:function(t){var e=this,n=this._settings;W(t,n).forEach(function(t){v(t,e),D(t,n,e)})},restoreAll:function(){var e=this._settings;K(e).forEach(function(t){P(t,e)})}},t.load=function(t,e){e=o(e);D(t,e)},t.resetStatus=function(t){i(t)},t}),function(t,e){"use strict";function n(){e.body.classList.add("litespeed_lazyloaded")}function a(){console.log("[LiteSpeed] Start Lazy Load"),o=new LazyLoad(Object.assign({},t.lazyLoadOptions||{},{elements_selector:"[data-lazyloaded]",callback_finish:n})),i=function(){o.update()},t.MutationObserver&&new MutationObserver(i).observe(e.documentElement,{childList:!0,subtree:!0,attributes:!0})}var o,i;t.addEventListener?t.addEventListener("load",a,!1):t.attachEvent("onload",a)}(window,document);</script>
+
+
+
+
+
+</body></html>

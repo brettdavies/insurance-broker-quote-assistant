@@ -1,0 +1,52 @@
+{
+  "websearch_id": "websearch_yr8qc910tubn4icu7whjw03y",
+  "search_id": "search_spxf3lnipljuonzy4cpalg4l",
+  "timestamp": "2025-11-07T12:27:57.237374",
+  "startedAt": "2025-11-07T12:27:57.237374",
+  "completedAt": "2025-11-07T12:27:59.107120",
+  "durationSeconds": 1.87,
+  "urlsDiscoveredCount": 0,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "filetype:pdf Illinois Secretary of State insurance",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "filetype:pdf Illinois Secretary of State insurance",
+      "show_strict_warning": false,
+      "cleaned": "Illinois Secretary of State insurance pdf",
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "Illinois Secretary of State insurance pdf"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [],
+      "top": [],
+      "side": []
+    },
+    "type": "search"
+  }
+}

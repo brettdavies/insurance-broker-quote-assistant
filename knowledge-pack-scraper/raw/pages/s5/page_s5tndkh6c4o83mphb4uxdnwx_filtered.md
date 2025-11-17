@@ -1,0 +1,1 @@
+The Ins and Outs of Florida Deceptive & Unfair Trade Practices Act Claims: What They Are, What Considerations Are Needed, and How to Defend Them - Kubicki Draper

@@ -1,0 +1,318 @@
+**Open in Our App**
+[ ![](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill) ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+Get the best experience and stay connected to your community with our Spectrum News app. [Learn More](https://spectrumlocalnews.com/app)
+* * *
+[ Open in Spectrum News App ](https://spectrumnews.smart.link/186a99z7m?cid=article_prompt&article=/tampa/news/2025/03/27/no-fault-insurance-bill)
+[Continue in Browser](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+[](https://baynews9.com/fl/tampa)
+[](https://baynews9.com/fl/tampa/weather) [83°](https://baynews9.com/fl/tampa/weather)
+Toggle navigation
+[Tampa (CHANGE)](https://spectrumnews1.com/splash.html#fl) | November 7, 2025 | 1:30PM CT
+[](https://baynews9.com/fl/tampa/weather) [83°](https://baynews9.com/fl/tampa/weather) [Tampa, FL](https://baynews9.com/fl/tampa/weather) [EDIT](javascript:void\(0\))
+[Watch Live](https://baynews9.com/fl/tampa/live-video/watch_spectrum_news_live)
+  * |
+  * [ ![profile icon](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-accountSignOut-icon.png)](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [Recent Activity](https://baynews9.com/fl/tampa/recent-activity)
+    * [LOG OUT](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [Recent Activity](https://baynews9.com/fl/tampa/recent-activity)
+    * [LOG IN](https://baynews9.com/fl/tampa/live-video/login)
+
+
+  * [ Latest News ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Spectrum News App ](http://spectrumnewsapp.com)
+    * [ Headlines ](https://baynews9.com/fl/tampa/news)
+    * [ Storm Recovery ](https://baynews9.com/fl/tampa/weather/hurricane-center/hurricane-milton)
+    * [ Lottery Results ](https://baynews9.com/fl/tampa/lotto)
+    * [ Seen on 9 ](https://baynews9.com/fl/tampa/news/seen-on-9)
+    * [ Public Safety ](https://baynews9.com/fl/tampa/public-safety)
+    * [ Bay Area Gas Prices ](https://baynews9.com/fl/tampa/gas-prices)
+    * [ State ](https://baynews9.com/fl/tampa/news/state)
+    * [ National ](https://baynews9.com/fl/tampa/news/national)
+    * [ Entertainment News ](https://baynews9.com/fl/tampa/on-the-town/entertainment-news)
+    * [ Education ](https://baynews9.com/fl/tampa/community/education)
+    * [ Health ](https://baynews9.com/fl/tampa/news/health)
+    * [ Red Tide News ](https://baynews9.com/fl/tampa/news/redtide)
+    * [ Justice For All ](https://baynews9.com/fl/tampa/news/Justice-For-All)
+    * [ Space ](https://baynews9.com/fl/tampa/news/space)
+    * [ Business ](https://baynews9.com/fl/tampa/business)
+    * [ Recalls ](https://baynews9.com/fl/tampa/news/recalls)
+    * [ Technology ](https://baynews9.com/fl/tampa/news/technology)
+    * [ Trending ](https://baynews9.com/fl/tampa/news/trending)
+    * [ Strange ](https://baynews9.com/fl/tampa/news/strange)
+    * [ Your Mental Health ](https://baynews9.com/fl/tampa/news/health/mental-health)
+    * [ Exploring Your Health ](https://www.baynews9.com/fl/tampa/news/health/exploring-your-health)
+    * [ High School Scholars ](https://baynews9.com/fl/tampa/community/education/high-school-scholars)
+    * [ SN Challenge ](https://www.baynews9.com/fl/tampa/spectrum-news-challenge)
+  * [ Your County ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Pinellas ](https://baynews9.com/fl/tampa/news/pinellas)
+    * [ Hillsborough ](https://baynews9.com/fl/tampa/news/hillsborough)
+    * [ Pasco ](https://baynews9.com/fl/tampa/news/pasco)
+    * [ Polk ](https://baynews9.com/fl/tampa/news/polk)
+    * [ Manatee ](https://baynews9.com/fl/tampa/news/manatee)
+    * [ Hernando ](https://baynews9.com/fl/tampa/news/hernando)
+    * [ Sarasota ](https://baynews9.com/fl/tampa/news/sarasota)
+    * [ Citrus ](https://baynews9.com/fl/tampa/news/citrus)
+  * [ Weather ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Klystron 9 Radar ](https://baynews9.com/fl/tampa/weather/radar)
+    * [ Neighborhood Radars ](https://baynews9.com/fl/tampa/weather/radar/local)
+    * [ Tropical Update ](https://baynews9.com/fl/tampa/weather/tropical)
+    * [ Today's Forecast ](https://baynews9.com/fl/tampa/weather)
+    * [ 7-Day Forecast ](https://baynews9.com/fl/tampa/weather/7-day-forecast)
+    * [ Storm Season ](https://baynews9.com/fl/tampa/weather/hurricane-center)
+    * [ Hurricane Guide ](https://baynews9.com/fl/tampa/weather/hurricane-center/bn9-hurricane-guide)
+    * [ Watches & Warnings ](https://baynews9.com/fl/tampa/weather/watches-warnings)
+    * [ Get Alerts On Your Phone ](https://baynews9.com/fl/tampa/about/alerts)
+    * [ Current Conditions ](https://baynews9.com/fl/tampa/weather/conditions)
+    * [ Send Us Your Weather Photos ](https://baynews9.com/fl/tampa/weather/weather-photos)
+    * [ Sky 9 Cameras ](https://baynews9.com/fl/tampa/weather/bay-news-9-cameras)
+    * [ Marine Weather ](https://baynews9.com/fl/tampa/weather/marine)
+    * [ Travel Weather ](https://baynews9.com/fl/tampa/weather/travel)
+    * [ Pollen Forecast ](https://baynews9.com/fl/tampa/weather/pollen-forecast)
+    * [ Weather Experts Blog ](https://baynews9.com/fl/tampa/weather/weather-experts-blog)
+    * [ Weather Explained ](https://baynews9.com/fl/tampa/weather/weather-whys)
+    * [ Project Weather ](https://baynews9.com/fl/tampa/community/project-weather)
+    * [ Climate Change ](https://baynews9.com/fl/tampa/weather/climate-change)
+  * [ Politics ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Political News ](https://baynews9.com/fl/tampa/politics)
+    * [ Election Results ](https://baynews9.com/fl/tampa/politics/election-results)
+    * [ Elections / Voter Guide ](https://baynews9.com/fl/tampa/politics/voter-guide)
+    * [ Political Connections ](https://baynews9.com/fl/tampa/politics/political-connections)
+    * [ The Big Deal with Errol Louis ](https://baynews9.com/section/the-big-deal)
+    * [ Washington, D.C. Bureau ](https://baynews9.com/fl/tampa/politics/washington-dc-bureau)
+    * [ In Focus ](https://spectruminfocus.com/section/in-focus/regions/fl)
+  * [ Traffic ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Real Time Traffic Map ](https://baynews9.com/fl/tampa/traffic)
+    * [ Traffic News ](https://baynews9.com/fl/tampa/traffic/traffic-news)
+    * [ Traffic Inbox ](https://baynews9.com/fl/tampa/traffic/inbox)
+    * [ Getting There ](https://baynews9.com/fl/tampa/traffic/getting-there)
+    * [ Traffic Cameras ](https://baynews9.com/fl/tampa/traffic/traffic-cams)
+    * [ Gas Prices ](https://baynews9.com/fl/tampa/gas-prices)
+    * [ Airport Arrivals/Departures ](https://www.baynews9.com/fl/tampa/traffic/traffic-news#flights)
+  * [ Sports ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Sports News ](https://baynews9.com/fl/tampa/sports)
+    * [ Tampa Bay Rays ](https://baynews9.com/fl/tampa/sports/tampa-bay-rays)
+    * [ Tampa Bay Buccaneers ](https://baynews9.com/fl/tampa/sports/tampa-bay-buccaneers)
+    * [ Tampa Bay Lightning ](https://baynews9.com/fl/tampa/sports/tampa-bay-lightning)
+    * [ Tampa Bay Rowdies ](https://baynews9.com/fl/tampa/sports/tampa-bay-rowdies)
+    * [ USF Bulls ](https://baynews9.com/fl/tampa/sports/college/usf-bulls)
+    * [ Florida State Seminoles ](https://baynews9.com/fl/tampa/sports/college/florida-state-seminoles)
+    * [ Florida Gators ](https://baynews9.com/fl/tampa/sports/college/florida-gators)
+    * [ High School Sports ](https://baynews9.com/fl/tampa/sports/high-school)
+  * [ Things to Do ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ On The Town ](https://baynews9.com/fl/tampa/on-the-town)
+    * [ Attractions Insider ](https://www.baynews9.com/fl/tampa/on-the-town/attractions-insider?cq_ck=1649972606002)
+    * [ Florida on a Tankful ](https://baynews9.com/fl/tampa/on-the-town/travel/florida-tankful)
+    * [ Chef's Kitchen ](https://baynews9.com/fl/tampa/on-the-town/food-dining)
+    * [ Community Calendar ](https://baynews9.com/fl/tampa/calendar)
+    * [ Submit an Event ](https://baynews9.com/fl/tampa/submit-event)
+  * [ Good News ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Good News ](https://baynews9.com/fl/tampa/community/good-news)
+    * [ Florida Inspires ](https://baynews9.com/fl/tampa/community/good-news/florida-inspires)
+    * [ Everyday Heroes ](https://baynews9.com/fl/tampa/community/everyday-hero)
+    * [ Everyday Heroes Viewers' Choice Award ](https://baynews9.com/fl/tampa/community/everyday-hero-award)
+    * [ A+ Teachers ](https://baynews9.com/fl/tampa/community/a-plus-teachers)
+    * [ Feel Good Friday ](https://baynews9.com/fl/tampa/community/good-news/feel-good-friday)
+  * [ Seen on 9 ](https://baynews9.com/fl/tampa/news/seen-on-9)
+  * [ Our Journalists ](https://baynews9.com/fl/tampa/about/bios)
+
+
+  * [ACCOUNT](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [LOG OUT](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [Recent Activity](https://baynews9.com/fl/tampa/recent-activity)
+
+
+  * [ACCOUNT](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [LOG IN](https://baynews9.com/fl/tampa/live-video/login)
+    * [Recent Activity](https://baynews9.com/fl/tampa/recent-activity)
+
+
+  * [ Latest News ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Spectrum News App ](http://spectrumnewsapp.com)
+    * [ Headlines ](https://baynews9.com/fl/tampa/news)
+    * [ Storm Recovery ](https://baynews9.com/fl/tampa/weather/hurricane-center/hurricane-milton)
+    * [ Lottery Results ](https://baynews9.com/fl/tampa/lotto)
+    * [ Seen on 9 ](https://baynews9.com/fl/tampa/news/seen-on-9)
+    * [ Public Safety ](https://baynews9.com/fl/tampa/public-safety)
+    * [ Bay Area Gas Prices ](https://baynews9.com/fl/tampa/gas-prices)
+    * [ State ](https://baynews9.com/fl/tampa/news/state)
+    * [ National ](https://baynews9.com/fl/tampa/news/national)
+    * [ Entertainment News ](https://baynews9.com/fl/tampa/on-the-town/entertainment-news)
+    * [ Education ](https://baynews9.com/fl/tampa/community/education)
+    * [ Health ](https://baynews9.com/fl/tampa/news/health)
+    * [ Red Tide News ](https://baynews9.com/fl/tampa/news/redtide)
+    * [ Justice For All ](https://baynews9.com/fl/tampa/news/Justice-For-All)
+    * [ Space ](https://baynews9.com/fl/tampa/news/space)
+    * [ Business ](https://baynews9.com/fl/tampa/business)
+    * [ Recalls ](https://baynews9.com/fl/tampa/news/recalls)
+    * [ Technology ](https://baynews9.com/fl/tampa/news/technology)
+    * [ Trending ](https://baynews9.com/fl/tampa/news/trending)
+    * [ Strange ](https://baynews9.com/fl/tampa/news/strange)
+    * [ Your Mental Health ](https://baynews9.com/fl/tampa/news/health/mental-health)
+    * [ Exploring Your Health ](https://www.baynews9.com/fl/tampa/news/health/exploring-your-health)
+    * [ High School Scholars ](https://baynews9.com/fl/tampa/community/education/high-school-scholars)
+    * [ SN Challenge ](https://www.baynews9.com/fl/tampa/spectrum-news-challenge)
+  * [ Your County ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Pinellas ](https://baynews9.com/fl/tampa/news/pinellas)
+    * [ Hillsborough ](https://baynews9.com/fl/tampa/news/hillsborough)
+    * [ Pasco ](https://baynews9.com/fl/tampa/news/pasco)
+    * [ Polk ](https://baynews9.com/fl/tampa/news/polk)
+    * [ Manatee ](https://baynews9.com/fl/tampa/news/manatee)
+    * [ Hernando ](https://baynews9.com/fl/tampa/news/hernando)
+    * [ Sarasota ](https://baynews9.com/fl/tampa/news/sarasota)
+    * [ Citrus ](https://baynews9.com/fl/tampa/news/citrus)
+  * [ Weather ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Klystron 9 Radar ](https://baynews9.com/fl/tampa/weather/radar)
+    * [ Neighborhood Radars ](https://baynews9.com/fl/tampa/weather/radar/local)
+    * [ Tropical Update ](https://baynews9.com/fl/tampa/weather/tropical)
+    * [ Today's Forecast ](https://baynews9.com/fl/tampa/weather)
+    * [ 7-Day Forecast ](https://baynews9.com/fl/tampa/weather/7-day-forecast)
+    * [ Storm Season ](https://baynews9.com/fl/tampa/weather/hurricane-center)
+    * [ Hurricane Guide ](https://baynews9.com/fl/tampa/weather/hurricane-center/bn9-hurricane-guide)
+    * [ Watches & Warnings ](https://baynews9.com/fl/tampa/weather/watches-warnings)
+    * [ Get Alerts On Your Phone ](https://baynews9.com/fl/tampa/about/alerts)
+    * [ Current Conditions ](https://baynews9.com/fl/tampa/weather/conditions)
+    * [ Send Us Your Weather Photos ](https://baynews9.com/fl/tampa/weather/weather-photos)
+    * [ Sky 9 Cameras ](https://baynews9.com/fl/tampa/weather/bay-news-9-cameras)
+    * [ Marine Weather ](https://baynews9.com/fl/tampa/weather/marine)
+    * [ Travel Weather ](https://baynews9.com/fl/tampa/weather/travel)
+    * [ Pollen Forecast ](https://baynews9.com/fl/tampa/weather/pollen-forecast)
+    * [ Weather Experts Blog ](https://baynews9.com/fl/tampa/weather/weather-experts-blog)
+    * [ Weather Explained ](https://baynews9.com/fl/tampa/weather/weather-whys)
+    * [ Project Weather ](https://baynews9.com/fl/tampa/community/project-weather)
+    * [ Climate Change ](https://baynews9.com/fl/tampa/weather/climate-change)
+  * [ Politics ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Political News ](https://baynews9.com/fl/tampa/politics)
+    * [ Election Results ](https://baynews9.com/fl/tampa/politics/election-results)
+    * [ Elections / Voter Guide ](https://baynews9.com/fl/tampa/politics/voter-guide)
+    * [ Political Connections ](https://baynews9.com/fl/tampa/politics/political-connections)
+    * [ The Big Deal with Errol Louis ](https://baynews9.com/section/the-big-deal)
+    * [ Washington, D.C. Bureau ](https://baynews9.com/fl/tampa/politics/washington-dc-bureau)
+    * [ In Focus ](https://spectruminfocus.com/section/in-focus/regions/fl)
+  * [ Traffic ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Real Time Traffic Map ](https://baynews9.com/fl/tampa/traffic)
+    * [ Traffic News ](https://baynews9.com/fl/tampa/traffic/traffic-news)
+    * [ Traffic Inbox ](https://baynews9.com/fl/tampa/traffic/inbox)
+    * [ Getting There ](https://baynews9.com/fl/tampa/traffic/getting-there)
+    * [ Traffic Cameras ](https://baynews9.com/fl/tampa/traffic/traffic-cams)
+    * [ Gas Prices ](https://baynews9.com/fl/tampa/gas-prices)
+    * [ Airport Arrivals/Departures ](https://www.baynews9.com/fl/tampa/traffic/traffic-news#flights)
+  * [ Sports ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Sports News ](https://baynews9.com/fl/tampa/sports)
+    * [ Tampa Bay Rays ](https://baynews9.com/fl/tampa/sports/tampa-bay-rays)
+    * [ Tampa Bay Buccaneers ](https://baynews9.com/fl/tampa/sports/tampa-bay-buccaneers)
+    * [ Tampa Bay Lightning ](https://baynews9.com/fl/tampa/sports/tampa-bay-lightning)
+    * [ Tampa Bay Rowdies ](https://baynews9.com/fl/tampa/sports/tampa-bay-rowdies)
+    * [ USF Bulls ](https://baynews9.com/fl/tampa/sports/college/usf-bulls)
+    * [ Florida State Seminoles ](https://baynews9.com/fl/tampa/sports/college/florida-state-seminoles)
+    * [ Florida Gators ](https://baynews9.com/fl/tampa/sports/college/florida-gators)
+    * [ High School Sports ](https://baynews9.com/fl/tampa/sports/high-school)
+  * [ Things to Do ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ On The Town ](https://baynews9.com/fl/tampa/on-the-town)
+    * [ Attractions Insider ](https://www.baynews9.com/fl/tampa/on-the-town/attractions-insider?cq_ck=1649972606002)
+    * [ Florida on a Tankful ](https://baynews9.com/fl/tampa/on-the-town/travel/florida-tankful)
+    * [ Chef's Kitchen ](https://baynews9.com/fl/tampa/on-the-town/food-dining)
+    * [ Community Calendar ](https://baynews9.com/fl/tampa/calendar)
+    * [ Submit an Event ](https://baynews9.com/fl/tampa/submit-event)
+  * [ Good News ](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+    * [ Good News ](https://baynews9.com/fl/tampa/community/good-news)
+    * [ Florida Inspires ](https://baynews9.com/fl/tampa/community/good-news/florida-inspires)
+    * [ Everyday Heroes ](https://baynews9.com/fl/tampa/community/everyday-hero)
+    * [ Everyday Heroes Viewers' Choice Award ](https://baynews9.com/fl/tampa/community/everyday-hero-award)
+    * [ A+ Teachers ](https://baynews9.com/fl/tampa/community/a-plus-teachers)
+    * [ Feel Good Friday ](https://baynews9.com/fl/tampa/community/good-news/feel-good-friday)
+  * [ Seen on 9 ](https://baynews9.com/fl/tampa/news/seen-on-9)
+  * [ Our Journalists ](https://baynews9.com/fl/tampa/about/bios)
+
+
+× Set Weather Location
+Get hyperlocal forecasts, radar and weather alerts.
+Please enter a valid zipcode.
+Save
+![close](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-x-alt.png)
+Confirm Your Location We automatically picked a Spectrum News market that we believe is most relevant to you. ![region image](https://images.spectrumnews1.com/is/image/SpectrumNews/Tampa-FL_1?fmt=png-alpha) Tampa
+![check](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-checkmark-circle-f.png) News and information that matter to your community
+![check](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-checkmark-circle-f.png) Local weather forecasts
+Confirm [Change Location](https://baynews9.com/splash) You can change your news source and language at any time.
+![close](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-x-alt.png)
+Choose News Source & Language Select your news source and language for local Florida news stories.
+![check](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-checkmark-circle-f.png) Local news coverage, weather forecasts, and developing stories impacting the Tampa community.
+Continue You can change your news source and language at any time.
+Change Location You can change your news source or language here at any time
+![close](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-x.png)
+Spectrum Noticias ya está disponible en tu zona. Selecciona tu fuente de noticias abajo Spectrum Noticias ofrece una cobertura equilibrada de las historias relevantes para nuestra comunidad de Florida y todo país. [ Ir a Spectrum Noticias ![](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-chevron-right.svg) ](https://baynews9.com/fl/florida)
+![close](https://baynews9.com/etc/designs/news/clientlibs/css/images/ki-x.png)
+[ WEATHERWarm end to the week ](https://baynews9.com/fl/tampa/weather/2020/05/14/tampa-weather-forecast)
+[ COOL TEMPS AHEADNear record cold possible for the Tampa Bay area on Tuesday ](https://baynews9.com/fl/tampa/weather/2025/11/06/near-record-cold-tuesday)
+[ FOOD ASSISTANCEPlaces around Tampa Bay offering free groceries, meals to residents in need ](https://baynews9.com/fl/tampa/news/2025/11/06/tampa-bay-offering-free-groceries-at-food-pantries)
+[ FAA CUTTING FLIGHTSTampa among the 40 airports nationwide cutting flights during shutdown ](http://specne.ws/24mGic)
+[ TROPICSNo new tropical development expected ](https://baynews9.com/fl/tampa/weather/2025/04/28/tracking-the-tropics-2025)
+[ TRAFFIC MAPGet up-to-date traffic information around the area with our interactive traffic map. ](https://baynews9.com/fl/tampa/traffic)
+[ DOWNLOAD THE APPStay informed throughout your day with the Spectrum News app, available on all your favorite devices. ](https://spectrumlocalnews.com/app)
+[ WEATHER ALERTView full list of active weather alerts ](https://baynews9.com/fl/tampa/weather/watches-warnings)
+Unsupported Browser
+A group of about 30 motorcyclists left Showtown Bar & Grill Wednesday afternoon in Gibsonton, bound for Tallahassee. The group was riding to the Capitol to show support for HB1181 to repeal the state's no-fault insurance. (Spectrum News/Sarah Blazonis)
+[](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill) [](https://baynews9.com/fl/tampa/news/2025/03/27/no-fault-insurance-bill)
+LEGISLATIVE SESSION
+# Bill to repeal no-fault insurance law up for dis­cussion
+BY  [Sarah Blazonis](https://www.baynews9.com/fl/tampa/about-us/2018/04/16/sarah-blazonis) Tampa
+UPDATED 9:41 AM ET Mar. 27, 2025 PUBLISHED 10:23 PM ET Mar. 26, 2025 PUBLISHED 10:23 PM EDT Mar. 26, 2025
+SHARE
+GIBSONTON, Fla. — The Florida House of Representatives Civil Justice & Claims Subcommittee is scheduled to discuss [HB 1181](https://www.flsenate.gov/Session/Bill/2025/1181/?Tab=BillHistory) at its meeting on Thursday.
+The bill would repeal the state's no-fault insurance law. In Florida, there is a no-fault auto insurance that means all drivers must have personal injury protection to cover their own medical expenses and lost wages if there is an accident, no matter who is at fault.
+* * *
+#### **What You Need To Know**
+##### 
+  * Legislators are once again considering a bill that would repeal Florida's no-fault insurance law
+  
+
+  * HB 1181 would require drivers get $25,000 in bodily injury coverage
+  
+
+  * The founder of the West Coast Florida Riders motorcycle club says the bill would lower insurance premiums and offer more protection than bikers currently have
+  
+
+  * The president of the Florida Justice Reform Institute says 2023 reforms are reducing the amount of personal injury protection litigation, and he wants lawmakers to hold off on changes until more data can be gathered   
+  
+
+  * A closerlook: [HB 1181](https://www.flsenate.gov/Session/Bill/2025/1181/?Tab=BillHistory)
+
+
+* * *
+A group of about 30 motorcyclists left Showtown Bar & Grill Wednesday afternoon in Gibsonton, bound for Tallahassee.
+Lee Hagood, founder of the West Coast Florida Riders motorcycle club, said they were making the more than 250-mile trip to attend that meeting in support of the bill. He told Spectrum News his group would be among about 200 bikers expected to be there.
+"We're going to make history, guys. We've been fighting for this for over 25 years, and you guys are going to be part of it," Hagood told the group before they headed out.
+Hagood founded West Coast Florida Riders in 2018. HB 1181 would impact all Florida drivers, but Hagood said it would bring an extra layer of protection for motorcyclists by requiring mandatory bodily injury coverage.
+"We hear stories all the time about how one of our brothers or sisters go down in an accident and they were not at fault, and the person that hit them did not have any insurance coverage at all," he said. "Our members were left to fend for themselves with medical bills and expenses." 
+If passed, the bill would require $25,000 in bodily injury coverage for one person and $50,000 for two or more people, as well as $10,000 in property liability coverage. Right now, drivers have to have $10,000 in personal injury protection, or PIP.
+"In my opinion, PIP never really worked. The first time that PIP started working was in 2023, thanks to Gov. (Ron) DeSantis's reforms," said William Large, president of the Florida Justice Reform Institute. 
+Large said PIP was first implemented in 1972 as a way to cut back on crash-related lawsuits. However, he said another statute on one-way attorney's fees allowed lawyers to be paid their hourly rate when they litigated a PIP case.
+"It created an incentive to fight over low dollar amounts - sometimes a penny, sometimes fifty cents, sometimes one dollar," he said. "So, it thwarted the entire promise of PIP that there was not supposed to be any litigation."
+Large said a 2023 bill did away with the one-way attorney's fees provision, and the number of PIP cases have declined significantly. He said he wants to see more data collected on this before additional changes are made.
+"Now is not the time to undo the PIP reforms. Instead, it's to allow a certain more time to show that this experiment is indeed working," said Large.
+The debate on whether repealing the no-fault insurance law will lower insurance premiums [has been going on since that 2021 bill was proposed](https://baynews9.com/fl/tampa/traffic/2021/05/27/divided-opinion-about-whether-auto-insurance-overhaul-will-reduce-rates).
+Hagood said prices will come down for drivers, but a 2021 report from the Florida Office of Insurance Regulation that was released when the previous bill was being considered projected an overall increase of premiums.
+# You May Also Be Interested In
+[ ](https://baynews9.com/fl/tampa)
+  * [ Spectrum News ](https://baynews9.com/splash)
+  * [ CONTACT ](https://baynews9.com/fl/tampa/about/contact-us)
+  * [ ABOUT ](https://baynews9.com/fl/tampa/about)
+  * [ RSS ](https://baynews9.com/fl/tampa/rss)
+  * [ SITEMAP ](https://baynews9.com/fl/tampa/sitemap)
+  * [ CAREERS ](https://jobs.spectrum.com/content-media-news)
+  * [ TERMS ](https://www.spectrum.com/policies/residential-terms.html)
+  * [ Your Privacy Rights ](https://www.spectrum.com/policies/your-privacy-rights)
+  * [ CERTIFICATIONS ](https://baynews9.com/fl/tampa/about/certifications)
+  * [ ADVERTISE WITH US ](https://www.spectrumreach.com/spectrum-news?utm_source=spectrumnews&utm_medium=tv&utm_content=spectrumnews&utm_campaign=florida_spectrumnews_tv)
+  * [ California Consumer Privacy Rights ](https://www.spectrum.com/policies/california)
+  * [ California Consumer Limit the Use of My Sensitive Personal Information ](https://www.spectrum.com/policies/your-privacy-rights-opt-out)
+  * [ Do Not Sell or Share My Personal Information/Opt-Out of Targeted Advertising ](https://spectrum.com/policies/your-privacy-rights-opt-out)
+  * [ Spectrum News App ](http://spectrumnewsapp.com)
+
+
+  * [](https://www.facebook.com/likebn9/)
+  * [](https://twitter.com/BN9)
+  * [](https://www.instagram.com/baynews9)
+  * [](https://www.youtube.com/@spectrumlocalnews)
+
+
+© 2025, Charter Communications, all rights reserved. 

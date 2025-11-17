@@ -121,16 +121,10 @@ describe('getMissingFields', () => {
   })
 
   it('should return empty array when all fields present', () => {
-    const profile = createCompleteAutoProfile({
-      age: 30, // Age is required
-      name: 'John Doe', // Always required
-      email: 'john@example.com', // Always required
-      phone: '555-1234', // Always required
-      zip: '90210', // Always required
-    })
+    const profile = createCompleteAutoProfile()
 
     const missing = getMissingFields(profile)
-    // Should have no critical missing fields when all required fields are present
+    // Should only have state and productType (already present)
     expect(missing.filter((f) => f.priority === 'critical').length).toBe(0)
   })
 })
@@ -343,7 +337,6 @@ describe('generatePrefillPacket', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
-      age: 30, // Age is required
     }
 
     const missingFields = getMissingFields(profile)

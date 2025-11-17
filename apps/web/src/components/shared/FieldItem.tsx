@@ -55,12 +55,11 @@ export function FieldItem({ field, onClick, onDismiss, onConvertToKnown }: Field
         <span className={`text-field-name font-normal ${textColor}`}>{field.name}:</span>
         <span className={`text-field-value font-normal ${valueColor}`}>{String(field.value)}</span>
         {showConfidence && (
-          <span className="text-xs italic text-[#737373]">{confidencePercent}%</span>
+          <span className="text-xs italic text-[#737373]">({confidencePercent}%)</span>
         )}
       </div>
 
       <div className="flex items-center gap-2">
-        <span className="text-xs text-gray-500 dark:text-gray-400">Click</span>
         <TooltipProvider>
           {/* Info icon with tooltip */}
           <Tooltip>

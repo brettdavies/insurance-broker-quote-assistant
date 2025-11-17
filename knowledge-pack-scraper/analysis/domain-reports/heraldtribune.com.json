@@ -1,0 +1,456 @@
+{
+  "domain": "heraldtribune.com",
+  "total_pages": 1,
+  "analyzed_at": "2025-11-07T16:31:24.085860",
+  "content_indicators": [
+    {
+      "selector": "article",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "main",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "selector": "[role=\"main\"]",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "non_content_indicators": [
+    {
+      "tag": "header",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "footer",
+      "count": 1,
+      "frequency": 1.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "nav",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "tag": "aside",
+      "count": 27,
+      "frequency": 27.0,
+      "confidence": "high"
+    }
+  ],
+  "boilerplate_patterns": [
+    {
+      "pattern": "social",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "share",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "ad",
+      "count": 49,
+      "frequency": 49.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "ads",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "banner",
+      "count": 2,
+      "frequency": 2.0,
+      "confidence": "high"
+    },
+    {
+      "pattern": "tracker",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "comment",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "sidebar",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "menu",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "breadcrumb",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    },
+    {
+      "pattern": "form",
+      "count": 0,
+      "frequency": 0.0,
+      "confidence": "none"
+    }
+  ],
+  "top_classes": [
+    {
+      "class": "video-label",
+      "count": 53
+    },
+    {
+      "class": "gnt_ft_a",
+      "count": 40
+    },
+    {
+      "class": "trc_attribution_position_after_branding",
+      "count": 34
+    },
+    {
+      "class": "gnt_ar_b_p",
+      "count": 28
+    },
+    {
+      "class": "gnt_ar_b_ul_li",
+      "count": 27
+    },
+    {
+      "class": "videoCube",
+      "count": 27
+    },
+    {
+      "class": "trc_spotlight_item",
+      "count": 27
+    },
+    {
+      "class": "textItem",
+      "count": 27
+    },
+    {
+      "class": "item-thumbnail-href",
+      "count": 27
+    },
+    {
+      "class": "thumbBlock_holder",
+      "count": 27
+    },
+    {
+      "class": "thumbBlock",
+      "count": 27
+    },
+    {
+      "class": "thumbnail-overlay",
+      "count": 27
+    },
+    {
+      "class": "videoCube_aspect",
+      "count": 27
+    },
+    {
+      "class": "item-label-href",
+      "count": 27
+    },
+    {
+      "class": "video-label-box",
+      "count": 27
+    },
+    {
+      "class": "trc-main-label",
+      "count": 27
+    },
+    {
+      "class": "video-title",
+      "count": 27
+    },
+    {
+      "class": "gnt_n_mn_ce",
+      "count": 26
+    },
+    {
+      "class": "branding",
+      "count": 25
+    },
+    {
+      "class": "trc_rbox_border_elm",
+      "count": 24
+    },
+    {
+      "class": "thumbnail_top",
+      "count": 24
+    },
+    {
+      "class": "video-description",
+      "count": 24
+    },
+    {
+      "class": "gnt_x__c",
+      "count": 20
+    },
+    {
+      "class": "video-label-flex-cta-item",
+      "count": 20
+    },
+    {
+      "class": "gnt_x_sl",
+      "count": 19
+    },
+    {
+      "class": "logoDiv",
+      "count": 19
+    },
+    {
+      "class": "gnt_n_mn_l",
+      "count": 18
+    },
+    {
+      "class": "gnt_x__lbl",
+      "count": 18
+    },
+    {
+      "class": "origin-default",
+      "count": 17
+    },
+    {
+      "class": "syndicatedItem",
+      "count": 17
+    },
+    {
+      "class": "trc_ellipsis",
+      "count": 17
+    },
+    {
+      "class": "composite-branding",
+      "count": 17
+    },
+    {
+      "class": "branding-inner",
+      "count": 17
+    },
+    {
+      "class": "inline-branding",
+      "count": 17
+    },
+    {
+      "class": "branding-separator",
+      "count": 17
+    },
+    {
+      "class": "link-disclosure",
+      "count": 17
+    },
+    {
+      "class": "attribution-disclosure-link-sponsored",
+      "count": 17
+    },
+    {
+      "class": "align-disclosure-left",
+      "count": 17
+    },
+    {
+      "class": "trc_desktop_disclosure_link",
+      "count": 17
+    },
+    {
+      "class": "trc_mobile_disclosure_link",
+      "count": 17
+    },
+    {
+      "class": "video-cta-style",
+      "count": 16
+    },
+    {
+      "class": "trc_related_container",
+      "count": 14
+    },
+    {
+      "class": "tbl-trecs-container",
+      "count": 12
+    },
+    {
+      "class": "trc_spotlight_widget",
+      "count": 12
+    },
+    {
+      "class": "trc_elastic",
+      "count": 12
+    },
+    {
+      "class": "trc_rbox_container",
+      "count": 12
+    },
+    {
+      "class": "trc_rbox",
+      "count": 12
+    },
+    {
+      "class": "trc_rbox_header",
+      "count": 12
+    },
+    {
+      "class": "trc_header_ext",
+      "count": 12
+    },
+    {
+      "class": "trc_rbox_header_span",
+      "count": 12
+    }
+  ],
+  "top_ids": [
+    {
+      "id": "tbl-explore-more-container",
+      "count": 36
+    },
+    {
+      "id": "gnt_tbw_1",
+      "count": 36
+    },
+    {
+      "id": "rbox-t2v",
+      "count": 9
+    },
+    {
+      "id": "39f7ab9d-1d0b-4351-8d05-38e031d64777",
+      "count": 6
+    },
+    {
+      "id": "rbox-t2m",
+      "count": 3
+    },
+    {
+      "id": "#gnt_xp__1",
+      "count": 2
+    },
+    {
+      "id": "exp_83df85d5-246b-4c69-8b11-914be4bcf3d2",
+      "count": 2
+    },
+    {
+      "id": "gnt_svg_lg",
+      "count": 2
+    },
+    {
+      "id": "+F.gppas:",
+      "count": 2
+    },
+    {
+      "id": "tbl-editorial-video-style",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-container",
+      "count": 1
+    },
+    {
+      "id": "tRecs-taboola-choice-popover-content",
+      "count": 1
+    },
+    {
+      "id": "tblStyle_0",
+      "count": 1
+    },
+    {
+      "id": "feedUiCss-0",
+      "count": 1
+    },
+    {
+      "id": "tblStyle_1",
+      "count": 1
+    },
+    {
+      "id": "tbl-explore-more-style",
+      "count": 1
+    },
+    {
+      "id": "tblStyle_2",
+      "count": 1
+    },
+    {
+      "id": "feedUiCss-1",
+      "count": 1
+    },
+    {
+      "id": "tblCallToAction",
+      "count": 1
+    },
+    {
+      "id": "google-adx",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_external",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_facebook",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_twitter",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_share_email",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_shareapi",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_info",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_video_play",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_camera",
+      "count": 1
+    },
+    {
+      "id": "gnt_svg_rightArrow",
+      "count": 1
+    }
+  ],
+  "recommendations": {
+    "excluded_tags": [
+      "header",
+      "footer",
+      "nav",
+      "aside"
+    ],
+    "css_selector": "article, main",
+    "excluded_selector": "[class^=\"ad-\"], [class$=\"-ad\"], [class~=\"ad\"], [id^=\"ad-\"], [id$=\"-ad\"], [id~=\"ad\"], [class*=\"banner\"], [id*=\"banner\"]",
+    "pruning_threshold": 0.6,
+    "min_word_threshold": 50,
+    "confidence_score": "high"
+  }
+}

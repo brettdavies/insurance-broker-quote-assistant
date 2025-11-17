@@ -18,7 +18,13 @@ import {
 } from './numeric-extractors'
 import { extractProductType } from './product-type-extractor'
 import { extractState } from './state-extractor'
-import { extractCurrentCarrier, extractEmail, extractName, extractZip } from './text-extractors'
+import {
+  extractCurrentCarrier,
+  extractEmail,
+  extractName,
+  extractPhone,
+  extractZip,
+} from './text-extractors'
 
 /**
  * Extract all normalized fields from broker notes
@@ -54,6 +60,7 @@ export function extractNormalizedFields(text: string): NormalizedField[] {
     extractProductType, // Extract product types (after state to handle "CA auto" pattern)
     extractName, // Extract "John Doe," → name: "John Doe" (after key-value to avoid conflicts)
     extractEmail, // Extract "user@example.com" → email: "user@example.com" (after key-value to avoid conflicts)
+    extractPhone, // Extract phone numbers → phone: "nnn-nnn-nnnn" (after key-value to avoid conflicts)
     extractCurrentCarrier, // Extract "has geico" → currentCarrier: "GEICO"
     extractCleanRecord, // Extract "clean record 5yrs" → cleanRecord5Yr: true
     extractVehicles, // Extract "2 cars" → vehicles: 2

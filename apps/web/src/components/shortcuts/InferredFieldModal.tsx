@@ -6,7 +6,7 @@
  */
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { unifiedFieldMetadata } from '@repo/shared'
+import { getEnumOptionsForCombobox, unifiedFieldMetadata } from '@repo/shared'
 import { FieldModalButtons } from './FieldModalButtons'
 import { FieldModalInput } from './FieldModalInput'
 
@@ -59,17 +59,12 @@ export function InferredFieldModal({
       : fieldName || ''
   const shortcutPrefix = `${shortcutKey}:`
 
-  const descriptionId = `field-modal-desc-${fieldName || 'inferred'}`
-
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent aria-describedby={descriptionId}>
+      <DialogContent>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
         </DialogHeader>
-        <span id={descriptionId} className="sr-only">
-          {reasoning ? `Edit inferred field. Reasoning: ${reasoning}` : 'Edit inferred field'}
-        </span>
         <div className="space-y-4">
           <FieldModalInput
             value={value}

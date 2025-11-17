@@ -9,6 +9,17 @@
 /knowledge-pack-scraper/scripts/__pycache__
 /apps/api/src/__tests__/fixtures/knowledge-packs
 
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
 # Dependencies
 node_modules/
 .pnp

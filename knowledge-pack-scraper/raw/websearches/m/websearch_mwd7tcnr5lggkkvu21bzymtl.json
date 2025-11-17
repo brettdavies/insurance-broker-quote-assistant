@@ -1,0 +1,134 @@
+{
+  "websearch_id": "websearch_mwd7tcnr5lggkkvu21bzymtl",
+  "search_id": "search_hcggnzy69lxai93k2pr9i7ho",
+  "timestamp": "2025-11-07T12:35:08.634769",
+  "startedAt": "2025-11-07T12:35:08.634769",
+  "completedAt": "2025-11-07T12:35:10.561031",
+  "durationSeconds": 1.93,
+  "urlsDiscoveredCount": 2,
+  "errorMessage": null,
+  "request": {
+    "endpoint": "https://api.search.brave.com/res/v1/web/search",
+    "query": "intitle:\"insurance basics\" renters",
+    "params": {
+      "safesearch": "strict",
+      "freshness": "py",
+      "text_decorations": false,
+      "result_filter": "web,query",
+      "extra_snippets": false,
+      "summary": false,
+      "count": 20,
+      "offset": 0
+    }
+  },
+  "response": {
+    "query": {
+      "original": "intitle:\"insurance basics\" renters",
+      "show_strict_warning": false,
+      "cleaned": "insurance basics renters",
+      "is_navigational": false,
+      "is_news_breaking": false,
+      "spellcheck_off": false,
+      "country": "us",
+      "bad_results": false,
+      "should_fallback": true,
+      "postal_code": "",
+      "city": "",
+      "header_country": "",
+      "more_results_available": false,
+      "state": "",
+      "search_operators": {
+        "applied": true,
+        "cleaned_query": "insurance basics renters"
+      }
+    },
+    "mixed": {
+      "type": "mixed",
+      "main": [
+        {
+          "type": "web",
+          "index": 0,
+          "all": false
+        },
+        {
+          "type": "web",
+          "index": 1,
+          "all": false
+        }
+      ],
+      "top": [],
+      "side": []
+    },
+    "type": "search",
+    "web": {
+      "type": "search",
+      "results": [
+        {
+          "title": "Renters Insurance Basics Every Tenant in Louisiana Should Know - TSL Insurance Group",
+          "url": "https://www.tslins.com/renters-insurance-basics/",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Your landlord\u2019s insurance only covers the building itself. ... Covers the cost to replace your belongings if they\u2019re damaged or stolen. Helps with expenses if someone gets injured at your place. Pays for temporary housing if your rental becomes unlivable. Take a look around your home \u2013 your TV, laptop, clothes, and furniture. Most renters own more than they realize.",
+          "page_age": "2024-11-18T17:34:07",
+          "profile": {
+            "name": "TSL Insurance Group",
+            "url": "https://www.tslins.com/renters-insurance-basics/",
+            "long_name": "tslins.com",
+            "img": "https://imgs.search.brave.com/tp0xRN7_S8mh4LqZv9_1bN8GX7_oAVBspI-YfgFCTEE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWYyMDMzOGZj/ZTRhNGRjYjA1ODJk/N2E2NTNkMDU5NjNi/ZGJmMmE5OTU3Y2Jh/YzQ0MTliODgwZTM5/NTIxZDdhZC93d3cu/dHNsaW5zLmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "article",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "tslins.com",
+            "hostname": "www.tslins.com",
+            "favicon": "https://imgs.search.brave.com/tp0xRN7_S8mh4LqZv9_1bN8GX7_oAVBspI-YfgFCTEE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWYyMDMzOGZj/ZTRhNGRjYjA1ODJk/N2E2NTNkMDU5NjNi/ZGJmMmE5OTU3Y2Jh/YzQ0MTliODgwZTM5/NTIxZDdhZC93d3cu/dHNsaW5zLmNvbS8",
+            "path": "  \u203a home  \u203a renters insurance basics every tenant in louisiana should know"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/uJ7m04YCjfvbqinYCogrAkiAzZE2l_c4iZ22qG16TGI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dHNsaW5zLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8x/MS9SZW50ZXJzLUlu/c3VyYW5jZS5wbmc",
+            "original": "https://www.tslins.com/wp-content/uploads/2024/11/Renters-Insurance.png",
+            "logo": false
+          },
+          "age": "November 18, 2024"
+        },
+        {
+          "title": "Short-Term Renters Insurance Basics - ValuePenguin",
+          "url": "https://www.valuepenguin.com/short-term-renters-insurance-basics",
+          "is_source_local": false,
+          "is_source_both": false,
+          "description": "Short-term renters insurance protects your home against damage if you regularly rent it out to guests for short periods of time, typically under a month. It also provides liability coverage, which can help protect you if a guest is hurt on your ...",
+          "page_age": "2025-07-10T19:02:37",
+          "profile": {
+            "name": "ValuePenguin",
+            "url": "https://www.valuepenguin.com/short-term-renters-insurance-basics",
+            "long_name": "valuepenguin.com",
+            "img": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8"
+          },
+          "language": "en",
+          "family_friendly": true,
+          "type": "search_result",
+          "subtype": "faq",
+          "is_live": false,
+          "meta_url": {
+            "scheme": "https",
+            "netloc": "valuepenguin.com",
+            "hostname": "www.valuepenguin.com",
+            "favicon": "https://imgs.search.brave.com/9spH2IUknRS9h4U3m1fglwsM6zmTU1iMt9Fz9pvQRVk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmVlNzI4NWU4/ZDM1ZTBjMmU4NTM4/NjAzNWRmNjMwYzdm/YTQ4MjVhNzNkMjJm/M2JjNDZjYjdlM2E0/ZDJhZDNlNi93d3cu/dmFsdWVwZW5ndWlu/LmNvbS8",
+            "path": "\u203a short-term-renters-insurance-basics"
+          },
+          "thumbnail": {
+            "src": "https://imgs.search.brave.com/HNvUJQLnaoztnxImrTK3vxNFDRN-QST1KkTvxkT-VLE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdmFsdWUtcGVu/Z3Vpbi9pbWFnZS91/cGxvYWQvZl9hdXRv/LHFfYXV0byxjX2xp/bWl0LHdfODAwLGhf/NTMzL2h0dHA6Ly9y/ZXMuY2xvdWRpbmFy/eS5jb20vdmFsdWUt/cGVuZ3Vpbi9pbWFn/ZS91cGxvYWQvd183/MDAsY19zY2FsZS9h/cGFydG1lbnRzX3Nk/cXZtcS5qcGc",
+            "original": "https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto,c_limit,w_800,h_533/http://res.cloudinary.com/value-penguin/image/upload/w_700,c_scale/apartments_sdqvmq.jpg",
+            "logo": false
+          },
+          "age": "July 10, 2025"
+        }
+      ],
+      "family_friendly": true
+    }
+  }
+}
