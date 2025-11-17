@@ -221,7 +221,7 @@ export class ConversationalExtractor {
           known: deterministicProfile,
           extractionMethod: 'key-value',
           confidence: Object.fromEntries(
-            Object.keys(deterministicProfile).map((key) => [key, 100])
+            Object.keys(deterministicProfile).map((key) => [key, 1.0])
           ),
           missingFields: this.calculateMissingFields(deterministicProfile),
         }
