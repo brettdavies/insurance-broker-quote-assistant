@@ -667,6 +667,12 @@ bun run evaluation/harness.ts
 5. **apps/web/src/components/notes/InferredFieldsSection.test.tsx** - Inferred fields UI component tests
 6. **apps/web/src/components/sidebar/__tests__/CapturedFields.test.tsx** - Known vs inferred styling tests
 
+**Current Test Status:**
+- ✅ **564 total tests** across 54 files
+- ✅ **530 passing** (94% pass rate)
+- ⏭️ **28 skipped** (contract tests, real API tests - require server or `TEST_TARGETS=real-api`)
+- ⚠️ **6 failing** (test isolation issues - pass when run individually)
+
 **Refactoring Results:**
 - ✅ **60%+ reduction** in code duplication
 - ✅ **80+ `new Request()` patterns** eliminated

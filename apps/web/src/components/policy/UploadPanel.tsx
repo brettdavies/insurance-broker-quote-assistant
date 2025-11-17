@@ -106,6 +106,36 @@ export function UploadPanel({
     }
   }, [uploadMutation.data])
 
+  // Expose file input ref to parent
+  useEffect(() => {
+    if (externalFileInputRef && internalFileInputRef.current) {
+      externalFileInputRef.current = internalFileInputRef.current
+    }
+  }, [externalFileInputRef])
+
+  // Expose editor ref to parent
+  useEffect(() => {
+    if (externalEditorRef && internalEditorRef.current) {
+      externalEditorRef.current = internalEditorRef.current
+    }
+  }, [externalEditorRef])
+
+  // Update extracted text when upload succeeds
+  useEffect(() => {
+    if (uploadMutation.data?.extractedText) {
+      setExtractedText(uploadMutation.data.extractedText)
+    }
+  }, [uploadMutation.data])
+
+  // Populate editor when extracted text is available
+  // biome-ignore lint/correctness/useExhaustiveDependencies: editorRef is a stable ref and doesn't need to be in dependencies
+  useEffect(() => {
+    if (extractedText && editorRef.current) {
+      editorRef.current.setContent(extractedText)
+      setExtractedText(null) // Clear after setting to avoid re-setting
+    }
+  }, [extractedText])
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0]
     if (!selectedFile) return

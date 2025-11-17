@@ -10,7 +10,7 @@ import { join } from 'node:path'
 import type { Carrier, Product, State } from '@repo/shared'
 import { logError, logInfo } from '../utils/logger'
 import { loadCarrierFile } from './knowledge-pack-loader/loaders/carrier-loader'
-import { loadProductFile } from './knowledge-pack-loader/loaders/product-loader'
+import { loadProductFile as loadProductFileFromLoader } from './knowledge-pack-loader/loaders/product-loader'
 import { loadStateFile } from './knowledge-pack-loader/loaders/state-loader'
 
 /**
@@ -192,7 +192,9 @@ export async function loadKnowledgePack(knowledgePackDir = 'knowledge_pack'): Pr
     const loadPromises = [
       ...carrierJsonFiles.map((file) => loadCarrierFile(file, carriersMap, loadingStatus)),
       ...stateJsonFiles.map((file) => loadStateFile(file, statesMap, loadingStatus)),
-      ...productJsonFiles.map((file) => loadProductFile(file, productsMap, loadingStatus)),
+      ...productJsonFiles.map((file) =>
+        loadProductFileFromLoader(file, productsMap, loadingStatus)
+      ),
     ]
 
     await Promise.all(loadPromises)

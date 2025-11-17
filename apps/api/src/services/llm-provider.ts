@@ -61,4 +61,18 @@ export interface LLMProvider {
     prompt?: string,
     schema?: unknown // Zod schema type
   ): Promise<ExtractionResult>
+
+  /**
+   * Extract structured data from a file (PDF, DOCX, etc.) using structured outputs
+   *
+   * @param file - File to extract data from
+   * @param prompt - Optional prompt to guide extraction
+   * @param schema - Zod schema to convert to JSON Schema for structured output
+   * @returns Extraction result with profile, confidence scores, and optional reasoning
+   */
+  extractFromFile?(
+    file: File,
+    prompt?: string,
+    schema?: unknown // Zod schema type
+  ): Promise<ExtractionResult>
 }
