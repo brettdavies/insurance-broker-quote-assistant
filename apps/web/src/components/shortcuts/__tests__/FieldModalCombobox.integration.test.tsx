@@ -7,9 +7,9 @@
  */
 
 import '../../../test-setup'
-import { beforeEach, describe, expect, mock, test } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, mock, test } from 'bun:test'
 import { QueryClientProvider } from '@tanstack/react-query'
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import { cleanup, fireEvent, render, waitFor, within } from '@testing-library/react'
 import type React from 'react'
 import { createTestQueryClient } from '../../../__tests__/test-utils'
 import { FieldModal } from '../FieldModal'
@@ -22,11 +22,26 @@ describe('FieldModal with Combobox Integration', () => {
   const mockOnSaveKnown = mock(() => {})
 
   beforeEach(() => {
+    // Ensure document.body exists before each test
+    if (globalThis.document && !globalThis.document.body) {
+      const body = globalThis.document.createElement('body')
+      globalThis.document.appendChild(body)
+    }
     queryClient = createTestQueryClient()
     mockOnSubmit.mockClear()
     mockOnOpenChange.mockClear()
     mockOnSaveInferred.mockClear()
     mockOnSaveKnown.mockClear()
+  })
+
+  afterEach(() => {
+    // Cleanup React Testing Library components and DOM
+    cleanup()
+    // Ensure document.body exists after cleanup for next test
+    if (globalThis.document && !globalThis.document.body) {
+      const body = globalThis.document.createElement('body')
+      globalThis.document.appendChild(body)
+    }
   })
 
   const renderWithQueryClient = (component: React.ReactElement) => {
@@ -35,7 +50,7 @@ describe('FieldModal with Combobox Integration', () => {
 
   describe('Legacy Mode with Enum Field (productType)', () => {
     test('submits highlighted value when Enter is pressed with empty textbox', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -44,13 +59,25 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       // Focus and open dropdown
       fireEvent.focus(input)
 
       await waitFor(() => {
-        expect(screen.getByRole('list')).toBeDefined()
+        expect(body.getByRole('list')).toBeDefined()
       })
 
       // Navigate to second option (home)
@@ -69,7 +96,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('submits highlighted value when modal closes via blur with empty textbox', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -78,13 +105,25 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       // Focus and open dropdown
       fireEvent.focus(input)
 
       await waitFor(() => {
-        expect(screen.getByRole('list')).toBeDefined()
+        expect(body.getByRole('list')).toBeDefined()
       })
 
       // Navigate to third option (renters)
@@ -110,7 +149,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('submits typed value when textbox has content', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -119,7 +158,19 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       fireEvent.focus(input)
       fireEvent.change(input, { target: { value: 'auto' } })
@@ -131,7 +182,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('filters options as user types', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -140,19 +191,31 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       fireEvent.focus(input)
       fireEvent.change(input, { target: { value: 'ren' } })
 
       await waitFor(() => {
-        expect(screen.getByText('Renters Insurance')).toBeDefined()
-        expect(screen.queryByText('Auto Insurance')).toBeNull()
+        expect(body.getByText('Renters Insurance')).toBeDefined()
+        expect(body.queryByText('Auto Insurance')).toBeNull()
       })
     })
 
     test('clicking option submits that value', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -161,12 +224,24 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       fireEvent.focus(input)
 
       await waitFor(() => {
-        const option = screen.getByText('Home Insurance')
+        const option = body.getByText('Home Insurance')
         fireEvent.mouseDown(option)
       })
 
@@ -178,7 +253,7 @@ describe('FieldModal with Combobox Integration', () => {
 
   describe('Inferred Mode with Enum Field', () => {
     test('Save Inferred submits highlighted value when textbox is empty', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -191,13 +266,25 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       // Focus and open dropdown
       fireEvent.focus(input)
 
       await waitFor(() => {
-        expect(screen.getByRole('list')).toBeDefined()
+        expect(body.getByRole('list')).toBeDefined()
       })
 
       // Navigate to second option
@@ -208,7 +295,7 @@ describe('FieldModal with Combobox Integration', () => {
       fireEvent.change(input, { target: { value: '' } })
 
       // Click Save Inferred button
-      const saveInferredButton = screen.getByText('Save Inferred')
+      const saveInferredButton = body.getByText('Save Inferred')
       fireEvent.click(saveInferredButton)
 
       await waitFor(() => {
@@ -218,7 +305,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('Save Known submits highlighted value when textbox is empty', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -231,13 +318,25 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       // Focus and open dropdown
       fireEvent.focus(input)
 
       await waitFor(() => {
-        expect(screen.getByRole('list')).toBeDefined()
+        expect(body.getByRole('list')).toBeDefined()
       })
 
       // Navigate to third option
@@ -249,7 +348,7 @@ describe('FieldModal with Combobox Integration', () => {
       fireEvent.change(input, { target: { value: '' } })
 
       // Click Save Known button
-      const saveKnownButton = screen.getByText('Save Known')
+      const saveKnownButton = body.getByText('Save Known')
       fireEvent.click(saveKnownButton)
 
       await waitFor(() => {
@@ -259,7 +358,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('blurring with highlighted item updates value before Save buttons are clicked', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -272,13 +371,25 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      
+      // Wait for modal (Dialog) to appear first
+      await waitFor(
+        () => {
+          expect(body.getByRole('dialog')).toBeDefined()
+        },
+        { timeout: 3000 }
+      )
+      
+      // Get the textbox from within the modal Dialog
+      const modal = body.getByRole('dialog')
+      const input = within(modal).getByRole('textbox')
 
       // Focus and open dropdown
       fireEvent.focus(input)
 
       await waitFor(() => {
-        expect(screen.getByRole('list')).toBeDefined()
+        expect(body.getByRole('list')).toBeDefined()
       })
 
       // Navigate to second option
@@ -300,7 +411,7 @@ describe('FieldModal with Combobox Integration', () => {
       })
 
       // Now click Save Inferred
-      const saveInferredButton = screen.getByText('Save Inferred')
+      const saveInferredButton = body.getByText('Save Inferred')
       fireEvent.click(saveInferredButton)
 
       await waitFor(() => {
@@ -311,7 +422,7 @@ describe('FieldModal with Combobox Integration', () => {
 
   describe('Edge Cases', () => {
     test('handles rapid navigation and selection', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -320,7 +431,8 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      const input = body.getByRole('textbox')
 
       fireEvent.focus(input)
 
@@ -337,7 +449,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('handles typing after highlighting', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -346,7 +458,8 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      const input = body.getByRole('textbox')
 
       fireEvent.focus(input)
       fireEvent.keyDown(input, { key: 'ArrowDown' })
@@ -359,7 +472,7 @@ describe('FieldModal with Combobox Integration', () => {
     })
 
     test('handles Escape key to cancel', async () => {
-      renderWithQueryClient(
+      const { container } = renderWithQueryClient(
         <FieldModal
           open={true}
           onOpenChange={mockOnOpenChange}
@@ -368,7 +481,8 @@ describe('FieldModal with Combobox Integration', () => {
         />
       )
 
-      const input = screen.getByRole('textbox')
+      const body = within(container.ownerDocument.body)
+      const input = body.getByRole('textbox')
 
       fireEvent.focus(input)
       fireEvent.change(input, { target: { value: 'test' } })

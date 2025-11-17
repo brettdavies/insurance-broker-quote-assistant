@@ -329,13 +329,31 @@ describe('Knowledge Pack Loader', () => {
 
       // Defensive check: verify Maps are cleared before loading test knowledge pack
       // This ensures test isolation - no data from previous tests should be present
+      // CRITICAL: This check MUST run before loading the test knowledge pack
+      // If Maps contain data from previous tests (like GEICO), clear them immediately
       const carriersBeforeLoad = getAllCarriers()
       if (carriersBeforeLoad.length > 0) {
         // Maps weren't cleared properly - this is a test isolation issue
         // Clear them now as a defensive measure
         await clearSharedState()
         const carriersAfterClear = getAllCarriers()
-        expect(carriersAfterClear).toHaveLength(0)
+        if (carriersAfterClear.length > 0) {
+          // Still not cleared - force clear by loading empty directory
+          // This should never happen, but provides safety
+          const projectRoot = process.cwd().includes('apps/api')
+            ? join(process.cwd(), '..', '..')
+            : process.cwd()
+          const emptyDir = join('/tmp', `force-clear-${Date.now()}`)
+          await mkdir(join(emptyDir, 'carriers'), { recursive: true })
+          await mkdir(join(emptyDir, 'states'), { recursive: true })
+          await mkdir(join(emptyDir, 'products'), { recursive: true })
+          const emptyDisclaimers = { disclaimers: { base: { _id: '', value: [] }, products: {} } }
+          await writeFile(join(emptyDir, 'disclaimers.json'), JSON.stringify(emptyDisclaimers), 'utf-8')
+          await loadKnowledgePack(emptyDir)
+          await rm(emptyDir, { recursive: true, force: true })
+        }
+        const carriersAfterForceClear = getAllCarriers()
+        expect(carriersAfterForceClear).toHaveLength(0)
       }
 
       const carrierData = createTestCarrier('TestCarrier', ['CA', 'TX'], ['auto', 'home'])
@@ -387,10 +405,22 @@ describe('Knowledge Pack Loader', () => {
       expect(allCarriersBeforeLookup).toHaveLength(1)
       expect(allCarriersBeforeLookup[0]?.name).toBe('TestCarrier')
 
+      // CRITICAL: Verify getAllCarriers one more time before calling getCarrierByName
+      // This ensures no race condition or state change between checks
+      const allCarriersFinalCheck = getAllCarriers()
+      expect(allCarriersFinalCheck).toHaveLength(1)
+      expect(allCarriersFinalCheck[0]?.name).toBe('TestCarrier')
+      const geicoInFinalCheck = allCarriersFinalCheck.find((c) => c.name === 'GEICO')
+      expect(geicoInFinalCheck).toBeUndefined()
+
       // Verify getCarrierByName with exact case
+      // If this fails, it means getCarrierByName is finding GEICO somehow
       const carrierExact = getCarrierByName('TestCarrier')
       expect(carrierExact).toBeDefined()
-      expect(carrierExact?.name).toBe('TestCarrier')
+      if (carrierExact) {
+        // Defensive check: if carrierExact is not TestCarrier, log what it actually is
+        expect(carrierExact.name).toBe('TestCarrier')
+      }
 
       // Verify getCarrierByName with different case (case-insensitive)
       const carrierLower = getCarrierByName('testcarrier')

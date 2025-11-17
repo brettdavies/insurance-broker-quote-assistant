@@ -156,6 +156,10 @@ async function copyKnowledgePackFiles(sourceDir: string, destDir: string): Promi
  * Clean up test knowledge pack directory
  * Removes the most recently created directory (for single-test cleanup)
  * Also reloads the real knowledge pack to clear test data from Maps
+ *
+ * NOTE: This function loads the real knowledge pack, which contains carriers like GEICO.
+ * Tests that load their own test knowledge pack should use clearSharedState() instead
+ * to avoid loading the real knowledge pack (which might interfere with other tests).
  */
 export async function cleanupTestKnowledgePack(): Promise<void> {
   if (testKnowledgePackDirs.length > 0) {
@@ -171,6 +175,8 @@ export async function cleanupTestKnowledgePack(): Promise<void> {
 
   // Reload the real knowledge pack to clear test data (like TestCarrier) from Maps
   // This ensures test isolation - each test suite starts with clean Maps
+  // NOTE: This loads the real knowledge pack (containing GEICO, etc.), which is correct
+  // for tests that need the real pack, but may interfere with tests that load their own test pack
   const projectRoot = process.cwd().includes('apps/api')
     ? join(process.cwd(), '..', '..')
     : process.cwd()
