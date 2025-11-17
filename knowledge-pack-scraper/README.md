@@ -4,7 +4,9 @@ Autonomous Python pipeline for scraping insurance data using Brave API and crawl
 
 ## Overview
 
-This package contains the data gathering infrastructure for the Insurance Broker Quote Assistant knowledge pack. It provides a multi-phase pipeline that discovers URLs via Brave search, fetches HTML content, analyzes patterns, filters pages, and extracts structured data.
+This package contains the data gathering infrastructure for the Insurance Broker Quote Assistant knowledge pack. It provides a sophisticated **7-phase pipeline** that transforms public web sources into a structured, offline knowledge pack with **entity-level source tracking** (cuid2 IDs) for complete auditability.
+
+**Key Innovation**: Every extracted data point is individually identified with stable cuid2 identifiers, source URLs, and accessed dates, enabling regulatory compliance and complete audit trails. This approach ensures every discount, eligibility rule, and state regulation can be traced back to its original source.
 
 ## Architecture
 
@@ -53,13 +55,15 @@ uv run crawl4ai-setup
 
 ### Pipeline Overview
 
-The scraper follows a 5-phase sequential workflow:
+The scraper follows a **7-phase sequential workflow**:
 
 1. **Phase 1: URL Discovery** - Execute Brave API searches, discover URLs
 2. **Phase 2: Page Fetching** - Fetch HTML and Markdown content
 3. **Phase 3: Domain Analysis** - Analyze HTML patterns for filtering
 4. **Phase 4: Page Filtering** - Extract clean content using domain configs
-5. **Phase 5: Data Extraction** - Store LLM extraction results
+5. **Phase 5: Data Extraction** - LLM-powered structured data extraction with entity-level tracking
+6. **Phase 6: Aggregation** - Data normalization and deduplication with source-authority ranking
+7. **Phase 7: Assembly** - Knowledge pack compilation with cuid2-based citations
 
 Each phase has dedicated scripts and documentation.
 

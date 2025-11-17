@@ -2,7 +2,7 @@
 
 **Version**: 1.0
 **Generated**: 2025-11-09
-**Purpose**: Offline knowledge pack for insurance broker quote assistance (PEAK6 5-day demo project)
+**Purpose**: Offline knowledge pack for insurance broker quote assistance (portfolio project)
 
 ---
 
@@ -245,13 +245,13 @@ To update knowledge pack data:
 
 ## License & Attribution
 
-**Purpose**: PEAK6 5-day AI interview project (Nov 2025)
+**Purpose**: Portfolio project - not intended for production use
 **Data Sources**: Publicly available information from carrier websites and state regulatory sites
 **License**: For demonstration and evaluation purposes only
 **Attribution**: All source URLs documented above
 
+**Key Innovation**: Every data point includes entity-level source tracking with cuid2 IDs, enabling complete auditability and regulatory compliance for data provenance. See the [7-phase data extraction pipeline](../knowledge-pack-scraper/README.md) for details on how this knowledge pack was created.
+
 ---
 
 **Last Updated**: 2025-11-09
-**Maintainer**: Knowledge Pack Scraper Team
-**Contact**: See PEAK6 project documentation for details
