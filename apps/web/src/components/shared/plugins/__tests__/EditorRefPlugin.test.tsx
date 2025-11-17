@@ -15,6 +15,14 @@ import { editorConfig } from '../editor-config'
 import type { EditorRefObject } from '../types'
 
 describe('EditorRefPlugin', () => {
+  beforeEach(() => {
+    // Ensure clean state before each test
+    // Clear any existing focus
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+  })
+
   afterEach(() => {
     // Cleanup React Testing Library components and Lexical editor state
     cleanup()

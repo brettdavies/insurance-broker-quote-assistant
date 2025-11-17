@@ -14,6 +14,14 @@ import { InitialContentPlugin } from '../InitialContentPlugin'
 import { editorConfig } from '../editor-config'
 
 describe('InitialContentPlugin', () => {
+  beforeEach(() => {
+    // Ensure clean state before each test
+    // Clear any existing focus
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+  })
+
   afterEach(() => {
     // Cleanup React Testing Library components and Lexical editor state
     cleanup()

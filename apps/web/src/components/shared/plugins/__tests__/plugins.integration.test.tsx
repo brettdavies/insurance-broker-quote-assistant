@@ -11,6 +11,14 @@ import { KeyValueEditor } from '../../KeyValueEditor'
 import type { EditorRefObject } from '../types'
 
 describe('KeyValueEditor Plugins Integration', () => {
+  beforeEach(() => {
+    // Ensure clean state before each test
+    // Clear any existing focus
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+  })
+
   afterEach(() => {
     // Cleanup React Testing Library components and Lexical editor state
     cleanup()

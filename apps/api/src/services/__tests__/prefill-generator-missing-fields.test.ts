@@ -25,6 +25,11 @@ import { getMissingFields } from '../prefill-generator'
 
 describe('getMissingFields - Product-Specific Requirements', () => {
   beforeAll(async () => {
+    // Clear shared state before setting up test knowledge pack
+    // This ensures no data from previous tests interferes
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
+
     // Use real knowledge pack as base, extend with test products that have specific required fields
     // Note: Real knowledge pack products may already have these fields, but we're ensuring test consistency
     await setupTestKnowledgePack({
@@ -53,6 +58,9 @@ describe('getMissingFields - Product-Specific Requirements', () => {
 
   afterAll(async () => {
     await cleanupTestKnowledgePack()
+    // Clear shared state after cleanup to ensure isolation
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
   })
 
   it('should detect missing critical fields for auto product', () => {
@@ -181,6 +189,11 @@ describe('getMissingFields - Product-Specific Requirements', () => {
 
 describe('getMissingFields - Priority Assignment', () => {
   beforeAll(async () => {
+    // Clear shared state before setting up test knowledge pack
+    // This ensures no data from previous tests interferes
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
+
     await setupTestKnowledgePack({
       products: [
         createTestProduct('auto', 'Auto Insurance', [
@@ -195,6 +208,9 @@ describe('getMissingFields - Priority Assignment', () => {
 
   afterAll(async () => {
     await cleanupTestKnowledgePack()
+    // Clear shared state after cleanup to ensure isolation
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
   })
 
   it('should assign critical priority to blocking fields', () => {
@@ -309,6 +325,9 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
 
   afterAll(async () => {
     await cleanupTestKnowledgePack()
+    // Clear shared state after cleanup to ensure isolation
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
   })
 
   it('should add carrier-specific critical requirements', () => {
@@ -427,6 +446,9 @@ describe('getMissingFields - State-Specific Requirements', () => {
 
   afterAll(async () => {
     await cleanupTestKnowledgePack()
+    // Clear shared state after cleanup to ensure isolation
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
   })
 
   it('should add state-specific important requirements for auto', () => {
@@ -464,6 +486,11 @@ describe('getMissingFields - State-Specific Requirements', () => {
 
 describe('getMissingFields - Edge Cases', () => {
   beforeAll(async () => {
+    // Clear shared state before setting up test knowledge pack
+    // This ensures no data from previous tests interferes
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
+
     await setupTestKnowledgePack({
       products: [
         createTestProduct('auto', 'Auto Insurance', [
@@ -477,6 +504,9 @@ describe('getMissingFields - Edge Cases', () => {
 
   afterAll(async () => {
     await cleanupTestKnowledgePack()
+    // Clear shared state after cleanup to ensure isolation
+    const { clearSharedState } = await import('../../__tests__/helpers/test-isolation')
+    await clearSharedState()
   })
 
   it('should fall back to product-level defaults when carrier unknown', () => {

@@ -5,7 +5,7 @@
  */
 
 import '../../../../test-setup'
-import { beforeEach, describe, expect, it, mock } from 'bun:test'
+import { afterEach, beforeEach, describe, expect, it, mock } from 'bun:test'
 import { act, renderHook } from '@testing-library/react'
 import { $getRoot, $insertNodes, TextNode, createEditor } from 'lexical'
 import { useContentChangeHandler } from '../useContentChangeHandler'
@@ -14,7 +14,25 @@ describe('useContentChangeHandler', () => {
   let editor: ReturnType<typeof createEditor>
 
   beforeEach(() => {
+    // Create a fresh editor instance for each test
+    // Lexical best practice: create new editor instances to avoid state leakage
     editor = createEditor({})
+  })
+
+  afterEach(() => {
+    // Cleanup editor instance to prevent state leakage
+    // Lexical best practice: dispose of editor instances after tests
+    if (editor) {
+      try {
+        editor.setEditable(false)
+        const rootElement = editor.getRootElement()
+        if (rootElement) {
+          rootElement.remove()
+        }
+      } catch {
+        // Ignore cleanup errors
+      }
+    }
   })
 
   it('should initialize with empty content', () => {

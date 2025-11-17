@@ -413,9 +413,29 @@ describe('Knowledge Pack Loader', () => {
       const geicoInFinalCheck = allCarriersFinalCheck.find((c) => c.name === 'GEICO')
       expect(geicoInFinalCheck).toBeUndefined()
 
+      // CRITICAL: Verify getAllCarriers immediately before getCarrierByName call
+      // This is the final check before the lookup that's failing
+      const allCarriersImmediateBeforeLookup = getAllCarriers()
+      expect(allCarriersImmediateBeforeLookup).toHaveLength(1)
+      expect(allCarriersImmediateBeforeLookup[0]?.name).toBe('TestCarrier')
+      
       // Verify getCarrierByName with exact case
       // If this fails, it means getCarrierByName is finding GEICO somehow
+      // This suggests getCarrierByName might be searching incorrectly or there's a race condition
       const carrierExact = getCarrierByName('TestCarrier')
+      
+      // If carrierExact is undefined or wrong, check what getAllCarriers returns right after
+      if (!carrierExact || carrierExact.name !== 'TestCarrier') {
+        const allCarriersAfterFailedLookup = getAllCarriers()
+        // Log diagnostic info
+        console.error('getCarrierByName failed - diagnostic info:', {
+          searchedFor: 'TestCarrier',
+          found: carrierExact?.name,
+          allCarriersBefore: allCarriersImmediateBeforeLookup.map(c => c.name),
+          allCarriersAfter: allCarriersAfterFailedLookup.map(c => c.name),
+        })
+      }
+      
       expect(carrierExact).toBeDefined()
       if (carrierExact) {
         // Defensive check: if carrierExact is not TestCarrier, log what it actually is
