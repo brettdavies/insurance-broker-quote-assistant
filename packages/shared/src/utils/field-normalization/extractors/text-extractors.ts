@@ -2,7 +2,7 @@
  * Text Field Extractors
  *
  * Extracts text field values from broker notes text.
- * Handles patterns for zip code and current carrier.
+ * Handles patterns for zip code, current carrier, name, and email.
  */
 
 import { CARRIER_NORMALIZATIONS } from '../normalizers/carrier-normalizer'
@@ -138,6 +138,82 @@ export function extractCurrentCarrier(text: string): NormalizedField | null {
           startIndex: matchIndex,
           endIndex: matchIndex + carrierMatch[0].length,
         }
+      }
+    }
+  }
+
+  return null
+}
+
+/**
+ * Extract name from broker notes
+ * Looks for patterns like "John Doe,", "Mary Jane Smith\n", etc.
+ * Only triggers on comma or newline (NOT end of string to avoid triggering while typing)
+ * Allows multiple spaces between name parts (e.g., "John  Doe")
+ */
+export function extractName(text: string): NormalizedField | null {
+  // Pattern: Capitalized words (allowing multiple spaces) followed by comma or newline
+  // Matches: "John Doe,", "Mary Jane Smith\n", "John  Doe," (with multiple spaces)
+  // Does NOT match at end of string to avoid triggering while typing
+  const namePattern = /\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)(?=[,\n])/g
+  const nameMatch = text.match(namePattern)
+
+  if (nameMatch) {
+    // Take the first match (most likely to be a name)
+    const matchedName = nameMatch[0]
+    const matchIndex = text.indexOf(matchedName)
+
+    if (matchIndex !== -1) {
+      return {
+        fieldName: 'name',
+        value: matchedName.trim(),
+        originalText: matchedName,
+        startIndex: matchIndex,
+        endIndex: matchIndex + matchedName.length,
+      }
+    }
+  }
+
+  return null
+}
+
+/**
+ * Extract email address from broker notes
+ * Looks for standalone email addresses (e.g., "user@example.com")
+ * Requires valid email format with period in domain
+ */
+export function extractEmail(text: string): NormalizedField | null {
+  // Pattern: Valid email format (local part, @, domain with period, TLD)
+  // Matches: "user@example.com", "john.doe@company.co.uk"
+  // Does NOT match key-value syntax (already handled by key-value-extractor)
+  const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g
+  const emailMatch = text.match(emailPattern)
+
+  if (emailMatch) {
+    // Take the first match
+    const matchedEmail = emailMatch[0]
+    const matchIndex = text.indexOf(matchedEmail)
+
+    // Skip if it's part of key-value syntax (e.g., "e:user@example.com")
+    // Check if there's a colon immediately before the email with NO space (key-value syntax)
+    if (matchIndex > 0) {
+      const charBefore = text[matchIndex - 1]
+      if (charBefore === ':') {
+        // Check if it's "e:" or "email:" pattern
+        const beforeEmail = text.substring(Math.max(0, matchIndex - 10), matchIndex)
+        if (beforeEmail.match(/\b(e|email):$/i)) {
+          return null // Already handled by key-value extractor
+        }
+      }
+    }
+
+    if (matchIndex !== -1) {
+      return {
+        fieldName: 'email',
+        value: matchedEmail,
+        originalText: matchedEmail,
+        startIndex: matchIndex,
+        endIndex: matchIndex + matchedEmail.length,
       }
     }
   }

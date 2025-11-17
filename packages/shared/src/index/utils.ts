@@ -38,7 +38,6 @@ export {
 
 // Export missing fields utilities
 export {
-  REQUIRED_FIELDS,
   checkRequiredFields,
   PRODUCT_REQUIREMENTS,
   getDefaultProductRequirements,

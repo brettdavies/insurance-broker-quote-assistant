@@ -18,6 +18,7 @@ export const householdFields: Record<string, UnifiedFieldMetadata> = {
     min: 0,
     max: 150,
     singleInstance: true,
+    alwaysRequired: { priority: 'critical' },
   },
 
   householdSize: {

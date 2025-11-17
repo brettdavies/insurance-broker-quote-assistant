@@ -119,24 +119,11 @@ export function extractKids(text: string): NormalizedField | null {
 
 /**
  * Extract household size from broker notes
- * Only extracts from EXPLICIT mentions like "family of 4", "lives alone", "2 people"
+ * Only extracts from EXPLICIT mentions like "family of 4", "2 people"
  * Does NOT extract from "2 drivers" or "2 kids" - those are extracted separately
  */
 export function extractHouseholdSize(text: string): NormalizedField | null {
   const lowerText = text.toLowerCase()
-
-  // Pattern: "lives alone" or "lives by self" → 1
-  const aloneMatch = lowerText.match(/\b(lives\s+alone|lives\s+by\s+self|single|solo)\b/)
-  if (aloneMatch) {
-    const startIndex = aloneMatch.index ?? 0
-    return {
-      fieldName: 'householdSize',
-      value: 1,
-      originalText: aloneMatch[0],
-      startIndex,
-      endIndex: startIndex + aloneMatch[0].length,
-    }
-  }
 
   // Pattern: "family of X" or "household of X" → X
   const familyMatch = lowerText.match(/\b(family|household)\s+of\s+(\d+)\b/)

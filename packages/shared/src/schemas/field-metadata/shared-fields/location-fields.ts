@@ -16,6 +16,7 @@ export const locationFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     flows: ['intake', 'policy'],
     singleInstance: true,
+    alwaysRequired: { priority: 'critical' },
     options: [
       'AL',
       'AK',
@@ -80,6 +81,7 @@ export const locationFields: Record<string, UnifiedFieldMetadata> = {
     fieldType: 'string',
     flows: ['intake', 'policy'],
     singleInstance: true,
+    alwaysRequired: { priority: 'critical' },
   },
 
   address: {

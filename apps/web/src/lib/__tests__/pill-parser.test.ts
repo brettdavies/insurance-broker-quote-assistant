@@ -104,51 +104,44 @@ describe('Key-Value Parser', () => {
         expect(pills[0]?.key).toBe('email')
       })
 
-      it('extracts malformed emails - missing @', () => {
+      it('rejects malformed emails - missing @', () => {
         const text = 'e:notanemail.com'
         const { pills } = parseKeyValueSyntax(text)
 
-        // Email is a string field, so non-empty values are valid
-        expect(pills).toHaveLength(1)
-        expect(pills[0]).toMatchObject({
-          key: 'email',
-          value: 'notanemail.com',
-          validation: 'valid', // String fields only check non-empty
-          fieldName: 'email',
-        })
+        // Invalid email format - should not be extracted
+        expect(pills).toHaveLength(0)
       })
 
-      it('extracts malformed emails - missing domain', () => {
+      it('rejects malformed emails - missing domain', () => {
         const text = 'e:user@'
         const { pills } = parseKeyValueSyntax(text)
 
-        expect(pills).toHaveLength(1)
-        expect(pills[0]?.validation).toBe('valid') // String fields only check non-empty
-        expect(pills[0]?.fieldName).toBe('email')
-        expect(pills[0]?.key).toBe('email')
+        // Invalid email format - should not be extracted
+        expect(pills).toHaveLength(0)
       })
 
-      it('extracts malformed emails - missing TLD', () => {
+      it('rejects malformed emails - missing TLD (no period in domain)', () => {
         const text = 'e:user@domain'
         const { pills } = parseKeyValueSyntax(text)
 
-        expect(pills).toHaveLength(1)
-        expect(pills[0]?.validation).toBe('valid') // String fields only check non-empty
-        expect(pills[0]?.fieldName).toBe('email')
-        expect(pills[0]?.key).toBe('email')
+        // Invalid email format - should not be extracted (missing period before TLD)
+        expect(pills).toHaveLength(0)
       })
 
-      it('extracts malformed emails - numeric value', () => {
+      it('rejects malformed emails - missing period in domain (e:j@j)', () => {
+        const text = 'e:j@j'
+        const { pills } = parseKeyValueSyntax(text)
+
+        // Invalid email format - should not be extracted
+        expect(pills).toHaveLength(0)
+      })
+
+      it('rejects malformed emails - numeric value', () => {
         const text = 'e:2'
         const { pills } = parseKeyValueSyntax(text)
 
-        expect(pills).toHaveLength(1)
-        expect(pills[0]).toMatchObject({
-          key: 'email',
-          value: '2',
-          validation: 'valid', // String fields only check non-empty
-          fieldName: 'email',
-        })
+        // Invalid email format - should not be extracted
+        expect(pills).toHaveLength(0)
       })
 
       it('handles email with subdomain', () => {

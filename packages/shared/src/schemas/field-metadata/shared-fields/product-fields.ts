@@ -18,6 +18,7 @@ export const productFields: Record<string, UnifiedFieldMetadata> = {
     flows: ['intake', 'policy'],
     singleInstance: true,
     options: ['auto', 'home', 'renters', 'umbrella'],
+    alwaysRequired: { priority: 'critical' },
     // Field-to-field inference: productType → ownsHome
     // Part of known vs inferred pills architecture (Epic 4: Field Extraction Bulletproofing)
     infers: [

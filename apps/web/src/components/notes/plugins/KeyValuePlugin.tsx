@@ -11,7 +11,12 @@
 import { parseKeyValueSyntax } from '@/lib/pill-parser'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import type { UserProfile } from '@repo/shared'
-import { normalizeFieldName, normalizeFieldValue, unifiedFieldMetadata } from '@repo/shared'
+import {
+  getFieldNameFromAlias,
+  normalizeFieldName,
+  normalizeFieldValue,
+  unifiedFieldMetadata,
+} from '@repo/shared'
 import {
   $getRoot,
   $isTextNode,
@@ -34,6 +39,60 @@ export function KeyValuePlugin({ onFieldsExtracted, suppressedFields }: KeyValue
   const [editor] = useLexicalComposerContext()
 
   useEffect(() => {
+    /**
+     * Check if there's an incomplete address field at the end of the text
+     * Address fields should only trigger extraction on period, newline, or end of string
+     * NOT on space or comma (those are part of the address value)
+     *
+     * @param text - Full text content (may include trailing space/comma from just-typed delimiter)
+     * @returns true if there's an incomplete address field (should skip extraction on space/comma)
+     */
+    function hasIncompleteAddressField(text: string): boolean {
+      // Remove trailing space/comma to check the actual content
+      // (the delimiter was just inserted, so we need to check the text before it)
+      const textToCheck = text.replace(/[\s,]+$/, '')
+
+      // Address field pattern: key:value where value doesn't end with period or newline
+      // This pattern matches address fields that haven't been completed yet
+      const addressPattern = /\b(address):(.+?)(?=\.|(?:\n)|$)/gi
+      const matches = Array.from(textToCheck.matchAll(addressPattern))
+
+      if (matches.length === 0) {
+        return false
+      }
+
+      // Check the last match to see if it's at the end of the text (before trailing delimiter)
+      const lastMatch = matches[matches.length - 1]
+      if (!lastMatch || lastMatch.index === undefined) {
+        return false
+      }
+
+      const matchEnd = lastMatch.index + lastMatch[0].length
+      // Check if the match extends to the end of the text (allowing for trailing delimiter)
+      const isAtEnd = matchEnd >= textToCheck.length
+
+      if (!isAtEnd) {
+        return false
+      }
+
+      // Check if the key resolves to "address"
+      const key = lastMatch[1]
+      if (!key) {
+        return false
+      }
+
+      const fieldName = getFieldNameFromAlias(key)
+      const isAddressField = fieldName === 'address' || key.toLowerCase() === 'address'
+
+      // Also check that the value doesn't end with period or newline (those would complete the address)
+      const value = lastMatch[2]
+      if (value && (value.endsWith('.') || value.endsWith('\n'))) {
+        return false // Address is complete
+      }
+
+      return isAddressField
+    }
+
     /**
      * Extract fields from full editor content and create pills
      * Called ONLY on delimiter keys (space, comma, period, enter)
@@ -233,9 +292,39 @@ export function KeyValuePlugin({ onFieldsExtracted, suppressedFields }: KeyValue
     const removeSpaceListener = editor.registerCommand(
       KEY_SPACE_COMMAND,
       () => {
-        // Let space be inserted first, then extract
+        // Let space be inserted first, then check if we should extract
         setTimeout(() => {
-          extractAndCreatePills()
+          editor.getEditorState().read(() => {
+            const root = $getRoot()
+            const allTextNodes: TextNode[] = []
+
+            // Recursively collect all text nodes
+            // biome-ignore lint/suspicious/noExplicitAny: Lexical nodes can be various types
+            function collectTextNodes(node: any) {
+              if ($isTextNode(node)) {
+                allTextNodes.push(node)
+              } else {
+                const children = node.getChildren ? node.getChildren() : []
+                for (const child of children) {
+                  collectTextNodes(child)
+                }
+              }
+            }
+
+            for (const child of root.getChildren()) {
+              collectTextNodes(child)
+            }
+
+            const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
+
+            // Skip extraction if there's an incomplete address field
+            // Address fields should only extract on period, newline, or end of string
+            if (hasIncompleteAddressField(fullText)) {
+              return // Don't extract on space for address fields
+            }
+
+            extractAndCreatePills()
+          })
         }, 0)
         return false // Allow default behavior
       },
@@ -268,9 +357,40 @@ export function KeyValuePlugin({ onFieldsExtracted, suppressedFields }: KeyValue
     function handleKeyDown(event: KeyboardEvent) {
       // Check for comma or period
       if (event.key === ',' || event.key === '.') {
-        // Let key be inserted first, then extract
+        // Let key be inserted first, then check if we should extract
         setTimeout(() => {
-          extractAndCreatePills()
+          editor.getEditorState().read(() => {
+            const root = $getRoot()
+            const allTextNodes: TextNode[] = []
+
+            // Recursively collect all text nodes
+            // biome-ignore lint/suspicious/noExplicitAny: Lexical nodes can be various types
+            function collectTextNodes(node: any) {
+              if ($isTextNode(node)) {
+                allTextNodes.push(node)
+              } else {
+                const children = node.getChildren ? node.getChildren() : []
+                for (const child of children) {
+                  collectTextNodes(child)
+                }
+              }
+            }
+
+            for (const child of root.getChildren()) {
+              collectTextNodes(child)
+            }
+
+            const fullText = allTextNodes.map((node) => node.getTextContent()).join('')
+
+            // For comma: skip extraction if there's an incomplete address field
+            // Address fields should only extract on period, newline, or end of string
+            // For period: always extract (period ends address fields)
+            if (event.key === ',' && hasIncompleteAddressField(fullText)) {
+              return // Don't extract on comma for address fields
+            }
+
+            extractAndCreatePills()
+          })
         }, 0)
       }
     }

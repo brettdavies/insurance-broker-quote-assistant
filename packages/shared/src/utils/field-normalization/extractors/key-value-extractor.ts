@@ -28,11 +28,35 @@ import type { NormalizedField } from '../types'
  */
 export function extractKeyValueSyntax(text: string): NormalizedField[] {
   const fields: NormalizedField[] = []
+  const processedRanges: Array<{ start: number; end: number }> = []
 
-  // Special pattern for email fields (allows periods in value)
+  // Helper to check if range overlaps with already processed ranges
+  const isOverlapping = (start: number, end: number): boolean => {
+    return processedRanges.some((range) => {
+      return !(end <= range.start || start >= range.end)
+    })
+  }
+
+  // Multi-word fields that allow spaces in values
+  // These fields need special handling to allow spaces (e.g., "name:John Smith")
+  const multiWordFields = new Set([
+    'name',
+    'phone',
+    'drivingRecords',
+    'deductibles',
+    'limits',
+    'vins',
+  ])
+
+  // Address field: allows spaces AND commas, only stops at period or newline
+  // This is separate from multi-word fields because address needs to allow commas
+  const addressFields = new Set(['address'])
+
+  // Special pattern for email fields (requires valid email format with period in domain)
   // Matches: e:user@example.com or email:user@example.com
   // Word boundary \b ensures "e" only matches as complete word, not within "age" or "ownsHome"
-  const emailPattern = /\b(e|email):([^\s,]+)/gi
+  // Pattern requires: local part, @, domain with period, TLD (at least 2 chars)
+  const emailPattern = /\b(e|email):([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,})/gi
   let emailMatch: RegExpExecArray | null
   // biome-ignore lint/suspicious/noAssignInExpressions: Standard regex exec pattern
   while ((emailMatch = emailPattern.exec(text)) !== null) {
@@ -42,7 +66,7 @@ export function extractKeyValueSyntax(text: string): NormalizedField[] {
     const startIndex = emailMatch.index
     const endIndex = startIndex + fullMatch.length
 
-    if (!key || !value) {
+    if (!key || !value || isOverlapping(startIndex, endIndex)) {
       continue
     }
 
@@ -53,23 +77,23 @@ export function extractKeyValueSyntax(text: string): NormalizedField[] {
       startIndex,
       endIndex,
     })
+    processedRanges.push({ start: startIndex, end: endIndex })
   }
 
-  // General key:value pattern (stops at space, comma, period)
-  // This handles all non-email fields
-  const pattern = /(\w+):([^\s,.]+)/g
-
-  let match: RegExpExecArray | null
+  // Address field pattern (allows spaces AND commas, only stops at period/newline/end)
+  // Pattern: key:value where value can contain spaces and commas, stops ONLY at period or newline
+  // Does NOT stop at space or comma - only period or newline
+  const addressPattern = /(\w+):(.+?)(?=\.|(?:\n)|$)/gi
+  let addressMatch: RegExpExecArray | null
   // biome-ignore lint/suspicious/noAssignInExpressions: Standard regex exec pattern
-  while ((match = pattern.exec(text)) !== null) {
-    const fullMatch = match[0]
-    const key = match[1]
-    const value = match[2]
-    const startIndex = match.index
+  while ((addressMatch = addressPattern.exec(text)) !== null) {
+    const fullMatch = addressMatch[0]
+    const key = addressMatch[1]
+    const value = addressMatch[2]
+    const startIndex = addressMatch.index
     const endIndex = startIndex + fullMatch.length
 
-    // Skip if key or value is undefined
-    if (!key || !value) {
+    if (!key || !value || isOverlapping(startIndex, endIndex)) {
       continue
     }
 
@@ -81,10 +105,110 @@ export function extractKeyValueSyntax(text: string): NormalizedField[] {
 
     // Resolve alias to canonical field name
     const fieldName = getFieldNameFromAlias(key)
-
-    // If not a recognized field, use the original key as fieldName
-    // This allows unknown fields to be extracted as pills and marked as invalid_key
     const finalFieldName = fieldName || key
+
+    // Only process if this is an address field (check both resolved name and original key)
+    const isAddressField =
+      (fieldName && addressFields.has(fieldName)) || addressFields.has(key.toLowerCase())
+    if (isAddressField) {
+      // Parse value (handle numeric, boolean, string)
+      const parsedValue = parseValue(value.trim(), fieldName || key)
+
+      fields.push({
+        fieldName: finalFieldName,
+        value: parsedValue,
+        originalText: fullMatch,
+        startIndex,
+        endIndex,
+      })
+      processedRanges.push({ start: startIndex, end: endIndex })
+    }
+  }
+
+  // Multi-word field pattern (allows spaces, stops at comma/period/next key:value/end)
+  // Pattern: key:value where value can contain spaces, stops at comma, period, newline, or next key:value pattern
+  const multiWordPattern = /(\w+):((?:[^\s:,\.]+(?:\s+[^\s:,\.]+)*)+)(?=,|\.|(?:\s+\w+:)|$)/gi
+  let multiWordMatch: RegExpExecArray | null
+  // biome-ignore lint/suspicious/noAssignInExpressions: Standard regex exec pattern
+  while ((multiWordMatch = multiWordPattern.exec(text)) !== null) {
+    const fullMatch = multiWordMatch[0]
+    const key = multiWordMatch[1]
+    const value = multiWordMatch[2]
+    const startIndex = multiWordMatch.index
+    const endIndex = startIndex + fullMatch.length
+
+    if (!key || !value || isOverlapping(startIndex, endIndex)) {
+      continue
+    }
+
+    // Skip email patterns (already handled above)
+    const lowerKey = key.toLowerCase()
+    if (lowerKey === 'e' || lowerKey === 'email') {
+      continue
+    }
+
+    // Resolve alias to canonical field name
+    const fieldName = getFieldNameFromAlias(key)
+    const finalFieldName = fieldName || key
+
+    // Skip address fields (already handled above)
+    if (fieldName && addressFields.has(fieldName)) {
+      continue
+    }
+
+    // Only process if this is a multi-word field
+    if (fieldName && multiWordFields.has(fieldName)) {
+      // Parse value (handle numeric, boolean, string)
+      const parsedValue = parseValue(value.trim(), fieldName)
+
+      fields.push({
+        fieldName: finalFieldName,
+        value: parsedValue,
+        originalText: fullMatch,
+        startIndex,
+        endIndex,
+      })
+      processedRanges.push({ start: startIndex, end: endIndex })
+    }
+  }
+
+  // General key:value pattern (stops at space, comma, period)
+  // This handles all non-email, non-multi-word fields
+  const pattern = /(\w+):([^\s,.]+)/g
+
+  let match: RegExpExecArray | null
+  // biome-ignore lint/suspicious/noAssignInExpressions: Standard regex exec pattern
+  while ((match = pattern.exec(text)) !== null) {
+    const fullMatch = match[0]
+    const key = match[1]
+    const value = match[2]
+    const startIndex = match.index
+    const endIndex = startIndex + fullMatch.length
+
+    // Skip if key or value is undefined, or already processed
+    if (!key || !value || isOverlapping(startIndex, endIndex)) {
+      continue
+    }
+
+    // Skip email patterns (already handled above)
+    const lowerKey = key.toLowerCase()
+    if (lowerKey === 'e' || lowerKey === 'email') {
+      continue
+    }
+
+    // Resolve alias to canonical field name
+    const fieldName = getFieldNameFromAlias(key)
+    const finalFieldName = fieldName || key
+
+    // Skip address fields (already handled above)
+    if (fieldName && addressFields.has(fieldName)) {
+      continue
+    }
+
+    // Skip multi-word fields (already handled above)
+    if (fieldName && multiWordFields.has(fieldName)) {
+      continue
+    }
 
     // Parse value (handle numeric, boolean, string)
     // For unknown fields, keep value as string since we don't know the type
@@ -97,6 +221,7 @@ export function extractKeyValueSyntax(text: string): NormalizedField[] {
       startIndex,
       endIndex,
     })
+    processedRanges.push({ start: startIndex, end: endIndex })
   }
 
   return fields

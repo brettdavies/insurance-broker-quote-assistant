@@ -88,6 +88,7 @@ export interface UnifiedFieldMetadata {
   infers?: InferenceRule[] // Optional field-to-field inference rules (part of known vs inferred pills architecture)
   singleInstance?: boolean // If true, field can only have one value (duplicates should update existing, not create new)
   options?: string[] // Optional enum options for dropdown selection (if provided, field must use dropdown, not free text)
+  alwaysRequired?: { priority: 'critical' } // If set, this field is always required for all products with the specified priority
 }
 
 /**
