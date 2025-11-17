@@ -43,6 +43,7 @@ export function Combobox({
   const [highlightedIndex, setHighlightedIndex] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
   const listRef = useRef<HTMLUListElement>(null)
+  const wasOpenRef = useRef(false)
 
   // Find the selected option's label
   const selectedOption = options.find((opt) => opt.value === value)
@@ -93,6 +94,7 @@ export function Combobox({
 
   const handleSelect = (optionValue: string, fromEnter = false) => {
     onChange(optionValue)
+    wasOpenRef.current = false
     setIsOpen(false)
     setSearchTerm('')
     inputRef.current?.blur()
@@ -104,7 +106,9 @@ export function Combobox({
   }
 
   const handleInputFocus = () => {
+    wasOpenRef.current = true
     setIsOpen(true)
+    setHighlightedIndex(0) // Reset to first item when opening
     if (!value) {
       setSearchTerm('')
     }
@@ -114,6 +118,7 @@ export function Combobox({
     // Delay closing to allow click events on options
     setTimeout(() => {
       if (!listRef.current?.contains(document.activeElement)) {
+        wasOpenRef.current = false
         setIsOpen(false)
         // If there's a highlighted item but no value, use the highlighted item
         if (!value && filteredOptions[highlightedIndex]) {
@@ -131,8 +136,15 @@ export function Combobox({
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'ArrowDown') {
       e.preventDefault()
-      setIsOpen(true)
-      setHighlightedIndex((prev) => (prev < filteredOptions.length - 1 ? prev + 1 : prev))
+      if (!wasOpenRef.current) {
+        // Opening dropdown - highlight first item
+        wasOpenRef.current = true
+        setIsOpen(true)
+        setHighlightedIndex(0)
+      } else {
+        // Already open - move to next item
+        setHighlightedIndex((prev) => (prev < filteredOptions.length - 1 ? prev + 1 : 0))
+      }
     } else if (e.key === 'ArrowUp') {
       e.preventDefault()
       setHighlightedIndex((prev) => (prev > 0 ? prev - 1 : 0))
@@ -148,6 +160,7 @@ export function Combobox({
       // If no item is highlighted, pass through to parent
       onKeyDown?.(e)
     } else if (e.key === 'Escape') {
+      wasOpenRef.current = false
       setIsOpen(false)
       setSearchTerm(selectedOption?.label || value || '')
       onKeyDown?.(e)
