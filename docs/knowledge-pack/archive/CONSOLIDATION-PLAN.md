@@ -13,6 +13,7 @@
 This plan addresses critical duplication, inconsistency, and Single Source of Truth (SoT) violations across 8 knowledge pack documentation files. The work is divided into 6 phases (0-5), executed sequentially with discovery-based tasks that identify changes at execution time.
 
 **Key Metrics from Analysis:**
+
 - Total Files: 8
 - Duplicated Content: ~800 lines (9.5% of total)
 - Critical Duplications: 5 major patterns
@@ -27,28 +28,30 @@ This plan uses standard Unix/Linux CLI tools for discovery, execution, and valid
 
 ### Core Tools
 
-| Tool | Purpose | Common Flags |
-|------|---------|--------------|
+| Tool   | Purpose                                                                   | Common Flags                                                                                                                                                                                                                           |
+| ------ | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `rg`   | Fast search for patterns in files (ripgrep, a modern alternative to grep) | `-r` (recursive, default), `-n` (line numbers), `-i` (case-insensitive), `-c` (count), `-e` (regex pattern), `-l` (files with matches), `-v` (invert match), `-A N` (N lines after), `-B N` (N lines before), `-C N` (N lines context) |
-| `grep` | Search for patterns in files | `-r` (recursive), `-n` (line numbers), `-i` (case-insensitive), `-c` (count), `-E` (extended regex), `-l` (files with matches), `-v` (invert match), `-A N` (N lines after), `-B N` (N lines before), `-C N` (N lines context) |
-| `sed` | Stream editor for text transformations | `-i ''` (in-place edit, macOS), `-i` (in-place edit, Linux), `-e` (multiple expressions), `-n` (suppress output) |
-| `find` | Locate files and directories | `-name` (filename pattern), `-type f` (files only), `-type d` (directories only), `-exec` (execute command) |
-| `test` | File/directory existence and type checks | `-f` (file exists), `-d` (directory exists), `-e` (exists), `-s` (non-empty) |
-| `wc` | Count lines, words, characters | `-l` (lines), `-w` (words), `-c` (bytes) |
-| `git` | Version control operations | `mv` (rename), `status` (show changes), `diff` (show differences) |
-| `head` | Output first part of files | `-n N` (first N lines) |
-| `tail` | Output last part of files | `-n N` (last N lines) |
-| `diff` | Compare files | `-u` (unified format), `-q` (brief) |
-| `awk` | Pattern scanning and processing | `-F` (field separator), `NR` (record number) |
+| `grep` | Search for patterns in files                                              | `-r` (recursive), `-n` (line numbers), `-i` (case-insensitive), `-c` (count), `-E` (extended regex), `-l` (files with matches), `-v` (invert match), `-A N` (N lines after), `-B N` (N lines before), `-C N` (N lines context)         |
+| `sed`  | Stream editor for text transformations                                    | `-i ''` (in-place edit, macOS), `-i` (in-place edit, Linux), `-e` (multiple expressions), `-n` (suppress output)                                                                                                                       |
+| `find` | Locate files and directories                                              | `-name` (filename pattern), `-type f` (files only), `-type d` (directories only), `-exec` (execute command)                                                                                                                            |
+| `test` | File/directory existence and type checks                                  | `-f` (file exists), `-d` (directory exists), `-e` (exists), `-s` (non-empty)                                                                                                                                                           |
+| `wc`   | Count lines, words, characters                                            | `-l` (lines), `-w` (words), `-c` (bytes)                                                                                                                                                                                               |
+| `git`  | Version control operations                                                | `mv` (rename), `status` (show changes), `diff` (show differences)                                                                                                                                                                      |
+| `head` | Output first part of files                                                | `-n N` (first N lines)                                                                                                                                                                                                                 |
+| `tail` | Output last part of files                                                 | `-n N` (last N lines)                                                                                                                                                                                                                  |
+| `diff` | Compare files                                                             | `-u` (unified format), `-q` (brief)                                                                                                                                                                                                    |
+| `awk`  | Pattern scanning and processing                                           | `-F` (field separator), `NR` (record number)                                                                                                                                                                                           |
 
 ### Working Directory
 
 All commands assume you're in the project root:
+
 ```bash
 cd /Users/brett/dev/insurance-broker-quote-assistant
 ```
 
 For tasks in docs/knowledge-pack/, either:
+
 - Use full paths: `rg -n "pattern" docs/knowledge-pack/`
 - Or change directory: `cd docs/knowledge-pack && rg -n "pattern" .`
 
@@ -59,9 +62,11 @@ For tasks in docs/knowledge-pack/, either:
 ## Phase 0: SoT File Reorganization
 
 ### Objective
+
 Rename Single Source of Truth documents with `sot-` prefix to establish clear information architecture and proper reference direction (implementation docs reference SoT docs, not vice versa).
 
 ### SoT Documents to Rename
+
 1. `id-conventions.md` → `sot-id-conventions.md`
 2. `knowledge-pack-schemas.md` → `sot-schemas.md`
 3. `knowledge-pack-source-hierarchy.md` → `sot-source-hierarchy.md`
@@ -70,9 +75,11 @@ Rename Single Source of Truth documents with `sot-` prefix to establish clear in
 ### Tasks (Execute Sequentially)
 
 #### Task 0.1: Rename SoT Files ✅ COMPLETED
+
 **Objective**: Rename 4 SoT files using git mv to preserve history
 
 **Discovery Steps**:
+
 ```bash
 # List all markdown files in docs/knowledge-pack/
 find docs/knowledge-pack -name "*.md" -type f | sort
@@ -88,6 +95,7 @@ test -f docs/knowledge-pack/sot-id-conventions.md && echo "⚠ sot-id-convention
 ```
 
 **Execution**:
+
 ```bash
 # Rename all 4 SoT files (preserves git history)
 git mv docs/knowledge-pack/id-conventions.md docs/knowledge-pack/sot-id-conventions.md
@@ -97,6 +105,7 @@ git mv docs/knowledge-pack/knowledge-pack-search-queries.md docs/knowledge-pack/
 ```
 
 **Validation**:
+
 ```bash
 # Check git status shows renames (R) not deletes (D) + adds (A)
 git status --short docs/knowledge-pack/
@@ -118,9 +127,11 @@ find docs/knowledge-pack -name "*.md" -type f | wc -l
 ---
 
 #### Task 0.2: Update Links in README.md ✅ COMPLETED
+
 **Objective**: Update all references to renamed SoT files in README.md
 
 **Discovery Steps**:
+
 ```bash
 # Search for all old filename references with context
 rg -n "id-conventions\.md" docs/knowledge-pack/README.md
@@ -136,6 +147,7 @@ echo "knowledge-pack-search-queries.md: $(rg -c 'knowledge-pack-search-queries\.
 ```
 
 **Execution**:
+
 ```bash
 # Replace all old filenames with new sot- prefixed names (macOS version with -i '')
 sed -i '' \
@@ -149,6 +161,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify no old filenames remain (should return 0 for each)
 rg -c "id-conventions\.md" docs/knowledge-pack/README.md
@@ -169,9 +182,11 @@ git diff docs/knowledge-pack/README.md
 ---
 
 #### Task 0.3: Update Links in knowledge-pack-examples.md ✅ COMPLETED
+
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
+
 ```bash
 # Search and count old filename references
 rg -n "id-conventions\.md\|knowledge-pack-schemas\.md\|knowledge-pack-source-hierarchy\.md\|knowledge-pack-search-queries\.md" docs/knowledge-pack/knowledge-pack-examples.md
@@ -181,6 +196,7 @@ echo "Total old refs: $(rg -c 'id-conventions\.md\|knowledge-pack-schemas\.md\|k
 ```
 
 **Execution**:
+
 ```bash
 sed -i '' \
   -e 's/id-conventions\.md/sot-id-conventions.md/g' \
@@ -191,6 +207,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Should return 0
 rg -c "id-conventions\.md\|knowledge-pack-schemas\.md" docs/knowledge-pack/knowledge-pack-examples.md
@@ -201,9 +218,11 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md
 ---
 
 #### Task 0.4: Update Links in knowledge-pack-methodology.md ✅ COMPLETED
+
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
+
 ```bash
 rg -n "id-conventions\.md\|knowledge-pack-schemas\.md\|knowledge-pack-source-hierarchy\.md\|knowledge-pack-search-queries\.md" docs/knowledge-pack/knowledge-pack-methodology.md
 
@@ -211,6 +230,7 @@ echo "Total old refs: $(rg -c 'id-conventions\.md\|knowledge-pack-schemas\.md\|k
 ```
 
 **Execution**:
+
 ```bash
 sed -i '' \
   -e 's/id-conventions\.md/sot-id-conventions.md/g' \
@@ -221,6 +241,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 rg -c "id-conventions\.md\|knowledge-pack-schemas\.md" docs/knowledge-pack/knowledge-pack-methodology.md  # Should return 0
 
@@ -230,9 +251,11 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md
 ---
 
 #### Task 0.5: Update Links in phase-2-agent-instructions.md ✅ COMPLETED
+
 **Objective**: Update all references to renamed SoT files
 
 **Discovery Steps**:
+
 ```bash
 rg -n "id-conventions\.md\|knowledge-pack-schemas\.md\|knowledge-pack-source-hierarchy\.md\|knowledge-pack-search-queries\.md" docs/knowledge-pack/phase-2-agent-instructions.md
 
@@ -240,6 +263,7 @@ echo "Total old refs: $(rg -c 'id-conventions\.md\|knowledge-pack-schemas\.md\|k
 ```
 
 **Execution**:
+
 ```bash
 sed -i '' \
   -e 's/id-conventions\.md/sot-id-conventions.md/g' \
@@ -250,6 +274,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 rg -c "id-conventions\.md\|knowledge-pack-schemas\.md" docs/knowledge-pack/phase-2-agent-instructions.md  # Should return 0
 
@@ -259,9 +284,11 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md
 ---
 
 #### Task 0.6: Update Internal Cross-References in SoT Files ✅ COMPLETED
+
 **Objective**: Update references between SoT files themselves
 
 **Discovery Steps**:
+
 ```bash
 # Search all SoT files for old filenames (they may reference each other)
 rg -n "id-conventions\.md\|knowledge-pack-schemas\.md\|knowledge-pack-source-hierarchy\.md\|knowledge-pack-search-queries\.md" \
@@ -272,6 +299,7 @@ rg -c "id-conventions\.md\|knowledge-pack-schemas\.md" docs/knowledge-pack/sot-*
 ```
 
 **Execution**:
+
 ```bash
 # Update all SoT files in one pass
 for file in docs/knowledge-pack/sot-*.md; do
@@ -285,6 +313,7 @@ done
 ```
 
 **Validation**:
+
 ```bash
 # Verify no old filenames in any SoT file (should return no matches)
 rg -n "id-conventions\.md\|knowledge-pack-schemas\.md" docs/knowledge-pack/sot-*.md
@@ -296,6 +325,7 @@ git diff docs/knowledge-pack/sot-*.md
 ---
 
 ### Phase 0 Success Criteria
+
 - ✅ All 4 files renamed with `sot-` prefix
 - ✅ Git history preserved (git mv used)
 - ✅ Zero references to old filenames across all docs
@@ -306,16 +336,19 @@ git diff docs/knowledge-pack/sot-*.md
 ## Phase 1: Critical Fixes
 
 ### Objective
+
 Fix critical inconsistencies that undermine the knowledge pack system integrity.
 
 ---
 
 #### Task 1.1: Fix ID Format Inconsistencies ✅ COMPLETED
+
 **Objective**: Replace all old ID formats with proper cuid2 format throughout documentation
 
-**Status Note**: Replaced all 27 unique old ID patterns (e.g., "raw-001", "field-005") with proper cuid2 format (e.g., "raw_cm8r2s4b6g", "fld_cm0j4k6t8y"). Applied consistent mappings across 6 files, maintaining semantic relationships. Total: 163 ID replacements. All IDs now follow {prefix}_{10-char-cuid2} standard per sot-id-conventions.md.
+**Status Note**: Replaced all 27 unique old ID patterns (e.g., "raw-001", "field-005") with proper cuid2 format (e.g., "raw*cm8r2s4b6g", "fld_cm0j4k6t8y"). Applied consistent mappings across 6 files, maintaining semantic relationships. Total: 163 ID replacements. All IDs now follow {prefix}*{10-char-cuid2} standard per sot-id-conventions.md.
 
 **Discovery Steps**:
+
 ```bash
 # Read sot-id-conventions.md to review current patterns
 head -n 50 docs/knowledge-pack/sot-id-conventions.md
@@ -336,6 +369,7 @@ echo "Total old IDs: $(rg -c '"[a-z]\+-[0-9]\{3\}"' docs/knowledge-pack/*.md | a
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: This task requires manual or scripted replacement because:
 # 1. Each old ID should be replaced with a NEW unique cuid2
@@ -357,6 +391,7 @@ sed -i '' 's/"fld_cm0j4k6t8y"/"fld_ckm9x8k2n"/g' docs/knowledge-pack/knowledge-p
 ```
 
 **Validation**:
+
 ```bash
 # Verify no old hyphenated ID patterns remain
 rg -n '"[a-z]\+-[0-9]\{3\}"' docs/knowledge-pack/*.md  # Should return no matches
@@ -376,11 +411,13 @@ git diff --stat docs/knowledge-pack/
 ---
 
 #### Task 1.2: Remove Phase 2 Duplication from Methodology ✅ COMPLETED
+
 **Objective**: Remove duplicated Phase 2 implementation details, replace with overview + link
 
 **Status Note**: Phase 2 section reduced from 295 lines to 110 lines. Removed 184 lines (15.3% reduction). Replaced detailed implementation with concise overview linking to phase-2-agent-instructions.md.
 
 **Discovery Steps**:
+
 ```bash
 # Read phase-2-agent-instructions.md to understand SoT content
 wc -l docs/knowledge-pack/phase-2-agent-instructions.md
@@ -398,6 +435,7 @@ wc -l docs/knowledge-pack/knowledge-pack-methodology.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: This task requires manual editing because:
 # 1. Need to identify exact section boundaries for Phase 2
@@ -416,6 +454,7 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | head -n 50
 ```
 
 **Validation**:
+
 ```bash
 # Verify Phase 2 section is concise (should NOT have detailed implementation)
 rg -A 20 "### Phase 2" docs/knowledge-pack/knowledge-pack-methodology.md
@@ -437,9 +476,11 @@ git diff --stat docs/knowledge-pack/knowledge-pack-methodology.md
 ---
 
 #### Task 1.3: Add SoT Declarations ✅ COMPLETED
+
 **Objective**: Add prominent SoT notices to establish authoritative status
 
 **Discovery Steps**:
+
 ```bash
 # Read first 20 lines of each SoT file to check for existing declarations
 head -n 20 docs/knowledge-pack/sot-id-conventions.md
@@ -452,6 +493,7 @@ rg -n "Single Source of Truth\|SoT" docs/knowledge-pack/sot-*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: This task requires manual editing to insert declarations after the title
 # Sed can insert after pattern match, but manual review recommended for accuracy
@@ -478,6 +520,7 @@ sed -i '' '/^# /a\
 ```
 
 **Validation**:
+
 ```bash
 # Verify all SoT files have declarations
 rg -n "📌 Single Source of Truth" docs/knowledge-pack/sot-*.md
@@ -495,9 +538,11 @@ git diff docs/knowledge-pack/sot-*.md | rg -A 2 "Single Source of Truth"
 ---
 
 #### Task 1.4: Add Critical Cross-References ✅ COMPLETED
+
 **Objective**: Add missing cross-references to improve navigation
 
 **Discovery Steps**:
+
 ```bash
 # Check if cross-references already exist
 
@@ -515,6 +560,7 @@ head -n 50 docs/knowledge-pack/knowledge-pack-examples.md | rg "sot-id-conventio
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: These additions require manual editing to insert at appropriate locations
 # Each cross-reference should be added in context
@@ -539,6 +585,7 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify all 3 cross-references were added
 
@@ -566,6 +613,7 @@ git diff docs/knowledge-pack/ | rg -e '^\+.*\[.*\.md\]'
 ---
 
 ### Phase 1 Success Criteria
+
 - ✅ All IDs use cuid2 format (no old sequential IDs)
 - ✅ Phase 2 duplication removed from methodology.md
 - ✅ All 4 SoT files have authoritative declarations
@@ -576,17 +624,19 @@ git diff docs/knowledge-pack/ | rg -e '^\+.*\[.*\.md\]'
 ## Phase 2: Consolidation (Duplication Removal)
 
 ### Objective
+
 Eliminate duplicated content across files by establishing clear SoT references.
 
 ---
 
 #### Task 2.1: Reduce cuid2 Duplication ✅ COMPLETED
-**Objective**: Remove cuid2 specification details from non-SoT files
 
+**Objective**: Remove cuid2 specification details from non-SoT files
 
 **Status Note**: Successfully removed cuid2 specification details from non-SoT files. All installation instructions, prefix tables, and detailed examples now reference sot-id-conventions.md.
 **Discovery Steps**:
-```bash
+
+````bash
 # Search all non-SoT files for cuid2 content
 rg -n "cuid2" docs/knowledge-pack/README.md docs/knowledge-pack/knowledge-pack-*.md docs/knowledge-pack/phase-2-*.md
 
@@ -605,9 +655,10 @@ echo "phase-2.md: $(rg -c 'cuid2' docs/knowledge-pack/phase-2-agent-instructions
 
 # List all TypeScript code blocks with cuid2
 rg -B 2 -A 10 '```typescript' docs/knowledge-pack/*.md | rg -A 10 "cuid2\|createId"
-```
+````
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: This task requires manual editing due to context-sensitive decisions
 # Must distinguish between:
@@ -627,6 +678,7 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify cuid2 specifications removed from non-SoT files
 
@@ -649,11 +701,12 @@ git diff --stat docs/knowledge-pack/ | rg -e 'README|methodology|phase-2'
 ---
 
 #### Task 2.2: Remove Confidence Scoring Duplication ✅ COMPLETED
-**Objective**: Remove confidence scoring formula from sot-schemas.md
 
+**Objective**: Remove confidence scoring formula from sot-schemas.md
 
 **Status Note**: Removed confidence scoring formula duplication from sot-schemas.md. Formula details now only in sot-source-hierarchy.md with appropriate cross-references.
 **Discovery Steps**:
+
 ```bash
 # Read sot-source-hierarchy.md confidence section
 rg -A 30 "confidence\|Confidence Scoring" docs/knowledge-pack/sot-source-hierarchy.md | head -n 50
@@ -670,6 +723,7 @@ rg -B 5 -A 30 "confidence.*formula\|Formula\|Scoring" docs/knowledge-pack/sot-sc
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to preserve TypeScript interface while removing formula details
 
@@ -685,6 +739,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify confidence field still in Source interface
 rg -A 10 "interface Source" docs/knowledge-pack/sot-schemas.md | rg "confidence"
@@ -703,11 +758,12 @@ git diff --stat docs/knowledge-pack/sot-schemas.md
 ---
 
 #### Task 2.3: Consolidate Source Object References ✅ COMPLETED
-**Objective**: Establish sot-schemas.md as sole definition source for Source object
 
+**Objective**: Establish sot-schemas.md as sole definition source for Source object
 
 **Status Note**: Consolidated Source object interface definition in sot-schemas.md. Other files now reference the SoT rather than duplicating the interface.
 **Discovery Steps**:
+
 ```bash
 # Search for Source object interface definitions
 rg -n "interface Source" docs/knowledge-pack/*.md
@@ -726,6 +782,7 @@ rg -B 3 -A 15 "interface Source" docs/knowledge-pack/*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required - must preserve examples while removing duplicate definitions
 
@@ -741,6 +798,7 @@ git diff docs/knowledge-pack/
 ```
 
 **Validation**:
+
 ```bash
 # Verify only ONE complete interface definition (in sot-schemas.md)
 rg -l "interface Source" docs/knowledge-pack/*.md
@@ -761,6 +819,7 @@ git diff --stat docs/knowledge-pack/
 ---
 
 ### Phase 2 Success Criteria
+
 - ✅ cuid2 details only in sot-id-conventions.md (non-SoT files have links only)
 - ✅ Confidence scoring formula only in sot-source-hierarchy.md
 - ✅ Source object definition only in sot-schemas.md
@@ -771,16 +830,19 @@ git diff --stat docs/knowledge-pack/
 ## Phase 3: Standardization
 
 ### Objective
+
 Standardize terminology, formats, and specifications across all documentation.
 
 ---
 
 #### Task 3.1: Standardize Date Formats ✅ COMPLETED
+
 **Objective**: Establish and document consistent date/timestamp format standards
 
 **Status Note**: Added comprehensive "Date and Timestamp Standards" section to sot-schemas.md (140 lines). Standardized all examples to ISO 8601 format with validation rules.
 
 **Discovery Steps**:
+
 ```bash
 # Search for all date/timestamp references
 rg -n '\d\{4\}-\d\{2\}-\d\{2\}' docs/knowledge-pack/*.md | head -n 30
@@ -799,6 +861,7 @@ rg -n "Format:.*date\|date.*format\|Pattern:.*YYYY" docs/knowledge-pack/*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add/update date standards section
 
@@ -817,6 +880,7 @@ git diff docs/knowledge-pack/
 ```
 
 **Validation**:
+
 ```bash
 # Verify date standard section exists in sot-schemas.md
 rg -A 10 "Date.*Timestamp.*Standards\|Timestamp.*Standards" docs/knowledge-pack/sot-schemas.md
@@ -835,11 +899,13 @@ git diff --stat docs/knowledge-pack/
 ---
 
 #### Task 3.2: Clarify pageId/pageFile Requirements ✅ COMPLETED
+
 **Objective**: Document when pageId/pageFile are required vs. optional
 
 **Status Note**: Added clarifying comments to Source interface in sot-schemas.md. Documents that pageId/pageFile are required for Phase 2 raw data, optional after cleanup.
 
 **Discovery Steps**:
+
 ```bash
 # Check Source object definition in sot-schemas.md
 rg -A 10 "interface Source" docs/knowledge-pack/sot-schemas.md
@@ -855,6 +921,7 @@ rg -n "required\|optional\|mandatory" docs/knowledge-pack/*.md | rg -i "pageid\|
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add clarifying comments
 
@@ -872,6 +939,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify Source object has clarifying comments
 rg -A 10 "interface Source" docs/knowledge-pack/sot-schemas.md | rg "pageId\|pageFile"
@@ -888,11 +956,13 @@ git diff docs/knowledge-pack/sot-schemas.md
 ---
 
 #### Task 3.3: Standardize Confidence Terminology ✅ COMPLETED
+
 **Objective**: Clarify confidence field stores classification, with optional numeric score
 
 **Status Note**: Updated both sot-schemas.md and sot-source-hierarchy.md to clarify that confidence field stores classification (high/medium/low) with optional confidenceScore field for numeric values.
 
 **Discovery Steps**:
+
 ```bash
 # Search all files for confidence references
 rg -n "confidence" docs/knowledge-pack/*.md | head -n 30
@@ -906,6 +976,7 @@ rg -n '"confidence":\|confidence:' docs/knowledge-pack/*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required for both sot-source-hierarchy.md and sot-schemas.md
 
@@ -926,6 +997,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify Source interface has both fields
 rg -A 12 "interface Source" docs/knowledge-pack/sot-schemas.md | rg -e "confidence|confidenceScore"
@@ -942,6 +1014,7 @@ git diff docs/knowledge-pack/sot-*.md
 ---
 
 ### Phase 3 Success Criteria
+
 - ✅ Date/timestamp formats standardized and documented
 - ✅ pageId/pageFile lifecycle clearly documented
 - ✅ Confidence terminology clarified (string + optional numeric)
@@ -952,14 +1025,17 @@ git diff docs/knowledge-pack/sot-*.md
 ## Phase 4: Enhancement (Optional)
 
 ### Objective
+
 Add navigation aids and reference tracking for improved maintainability.
 
 ---
 
 #### Task 4.1: Add "Referenced By" Sections to SoT Files ✅ COMPLETED
+
 **Objective**: Document which files reference each SoT file
 
 **Discovery Steps**:
+
 ```bash
 # For each SoT file, find all files that reference it
 
@@ -981,6 +1057,7 @@ rg -l "sot-search-queries\.md" docs/knowledge-pack/*.md | rg -v "sot-search-quer
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add "Referenced By" sections
 
@@ -998,6 +1075,7 @@ git diff docs/knowledge-pack/sot-*.md | rg -A 10 "Referenced By"
 ```
 
 **Validation**:
+
 ```bash
 # Verify all SoT files have "Referenced By" section
 for file in docs/knowledge-pack/sot-*.md; do
@@ -1019,9 +1097,11 @@ git diff docs/knowledge-pack/sot-*.md
 ---
 
 #### Task 4.2: Add SoT Reference Table to README ✅ COMPLETED
+
 **Objective**: Create central navigation to SoT documents
 
 **Discovery Steps**:
+
 ```bash
 # Read README.md structure
 head -n 100 docs/knowledge-pack/README.md
@@ -1037,6 +1117,7 @@ ls -1 docs/knowledge-pack/sot-*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add SoT reference section
 
@@ -1057,6 +1138,7 @@ git diff docs/knowledge-pack/README.md
 ```
 
 **Validation**:
+
 ```bash
 # Verify SoT reference section exists
 rg -A 15 "## Single Source of Truth" docs/knowledge-pack/README.md
@@ -1077,6 +1159,7 @@ git diff docs/knowledge-pack/README.md
 ---
 
 ### Phase 4 Success Criteria
+
 - ✅ All SoT files have "Referenced By" sections
 - ✅ README has SoT reference table
 - ✅ Architecture principle clearly stated
@@ -1086,16 +1169,19 @@ git diff docs/knowledge-pack/README.md
 ## Phase 5: Post-Review Corrections
 
 ### Objective
+
 Address issues identified in deep review: fix non-standard IDs in examples, remove legacy fields, standardize timestamps, and add missing schema documentation.
 
 ---
 
 #### Task 5.1: Fix Non-Standard ID Formats in Examples ✅ COMPLETED
+
 **Objective**: Replace all sequential/hyphenated ID formats with proper cuid2 format in examples
 
 **Status Note**: Replaced 3 unique non-standard ID patterns with proper cuid2 format. Applied consistent mapping: discount-geico-multipolicy-001 & discount-geico-multi-001 → disc_cm5e9f1o3t, state-CA-001 → state_cm7s8t9u0v. Total: 8 replacements (7 discount + 1 state).
 
 **Discovery Steps**:
+
 ```bash
 # Search for old sequential ID patterns (hyphenated format like "discount-geico-multipolicy-001")
 rg -n '"discount-[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/*.md
@@ -1109,6 +1195,7 @@ echo "Total non-standard IDs: $(rg -c '"discount-[a-z]+-[a-z]+-[0-9]+"|"state-[A
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Requires consistent ID mapping across files to maintain referential integrity
 
@@ -1129,6 +1216,7 @@ sed -i '' 's/"discount-geico-multi-001"/"disc_ckm9x7wdx1"/g' docs/knowledge-pack
 ```
 
 **Validation**:
+
 ```bash
 # Verify no sequential IDs remain
 rg '"discount-[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/*.md  # Should return 0
@@ -1146,11 +1234,13 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e 'discount|sta
 ---
 
 #### Task 5.2: Remove Legacy Schema Fields from Production Examples ✅ COMPLETED
+
 **Objective**: Remove `screenshot` field (deprecated) and move `extractionMethod` to raw-data-only context
 
 **Status Note**: Removed 5 screenshot fields and 8 extractionMethod fields from production Source examples. extractionMethod retained in sot-schemas.md raw-data schema definition only. Total: 13 field removals.
 
 **Discovery Steps**:
+
 ```bash
 # Find all screenshot field usages
 rg -n '"screenshot":' docs/knowledge-pack/*.md
@@ -1164,6 +1254,7 @@ rg -A 5 "raw-data-schema" docs/knowledge-pack/sot-schemas.md | rg "extractionMet
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to preserve JSON structure integrity
 
@@ -1184,6 +1275,7 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e 'screenshot|e
 ```
 
 **Validation**:
+
 ```bash
 # Verify screenshot removed from all files
 rg '"screenshot":' docs/knowledge-pack/*.md  # Should return 0
@@ -1202,11 +1294,13 @@ git diff --stat docs/knowledge-pack/
 ---
 
 #### Task 5.3: Fix Date-Only Timestamp Formats ✅ COMPLETED
+
 **Objective**: Add timezone suffix to all accessedDate fields using date-only format
 
 **Status Note**: Fixed 9 date-only timestamps by adding T12:00:00Z suffix. All accessedDate fields now use proper ISO 8601 format (YYYY-MM-DDTHH:mm:ssZ). Files updated: knowledge-pack-examples.md (5), knowledge-pack-methodology.md (3), sot-id-conventions.md (1).
 
 **Discovery Steps**:
+
 ```bash
 # Find all accessedDate with date-only format (missing T and Z)
 rg -n 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md
@@ -1219,6 +1313,7 @@ rg -o 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md | so
 ```
 
 **Execution Pattern**:
+
 ```bash
 # Replace date-only with full timestamp format (add T12:00:00Z)
 # Pattern: "YYYY-MM-DD" -> "YYYY-MM-DDTHH:mm:ssZ"
@@ -1234,6 +1329,7 @@ sed -i '' 's/"accessedDate": "\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)"/"accessedDat
 ```
 
 **Validation**:
+
 ```bash
 # Verify no date-only accessedDate remains
 rg 'accessedDate.*"[0-9]{4}-[0-9]{2}-[0-9]{2}"' docs/knowledge-pack/*.md | rg -v 'T.*Z'
@@ -1251,11 +1347,13 @@ git diff docs/knowledge-pack/sot-id-conventions.md | rg 'accessedDate'
 ---
 
 #### Task 5.4: Add Search Tracker Schema Documentation ✅ COMPLETED
+
 **Objective**: Document search-tracker.json schema in sot-schemas.md
 
 **Status Note**: Added comprehensive Search Tracker Schema section (97 lines) with TypeScript interfaces, JSON example, and field notes. Renumbered sections 5-8 to 6-9. Updated Schema Files table and ID Conventions table. Fixed cross-reference in sot-search-queries.md.
 
 **Discovery Steps**:
+
 ```bash
 # Check if search-tracker schema already exists
 rg -n "search-tracker|Search Tracker" docs/knowledge-pack/sot-schemas.md
@@ -1268,6 +1366,7 @@ rg -n '"id":|"query":|"status":|"assignedTo":' docs/knowledge-pack/phase-2-agent
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add new schema section
 
@@ -1287,6 +1386,7 @@ git diff docs/knowledge-pack/sot-schemas.md | rg -A 10 "Search Tracker"
 ```
 
 **Validation**:
+
 ```bash
 # Verify search tracker schema section exists
 rg -A 20 "Search Tracker Schema" docs/knowledge-pack/sot-schemas.md
@@ -1306,6 +1406,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ---
 
 ### Phase 5 Success Criteria
+
 - ✅ All example IDs use proper cuid2 format (no sequential/hyphenated IDs)
 - ✅ Legacy `screenshot` field removed from all examples
 - ✅ `extractionMethod` clarified as raw-data-only field
@@ -1318,11 +1419,13 @@ git diff docs/knowledge-pack/sot-schemas.md
 ## Phase 6: Post-Consolidation Review Corrections
 
 ### Objective
+
 Address issues identified in comprehensive post-consolidation review: remove circular references, fix display name mismatches, correct cross-reference anchors, clarify path formats, update descriptions, resolve TypeScript confusion, reduce code duplication, and add visual distinction for SoT files.
 
 ---
 
 #### Task 6.1: Remove CONSOLIDATION-PLAN.md from Referenced By Sections ✅ COMPLETED
+
 **Objective**: Remove circular references to CONSOLIDATION-PLAN.md from all 4 SoT files
 
 **Status Note**: Removed 4 circular references from SoT files' Referenced By sections. CONSOLIDATION-PLAN.md is a meta-document for tracking work, not active consumer documentation.
@@ -1330,6 +1433,7 @@ Address issues identified in comprehensive post-consolidation review: remove cir
 **Issue**: All SoT files list CONSOLIDATION-PLAN.md in their "Referenced By" sections, creating a circular reference. CONSOLIDATION-PLAN is a meta-document for tracking work progress, not part of the active documentation that consumers would use.
 
 **Discovery Steps**:
+
 ```bash
 # Search for CONSOLIDATION-PLAN.md references in all SoT files
 rg -n "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
@@ -1342,6 +1446,7 @@ rg -B 3 -A 1 "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to remove specific bullet points from Referenced By sections
 
@@ -1364,6 +1469,7 @@ git diff docs/knowledge-pack/sot-*.md | rg -e 'CONSOLIDATION-PLAN'
 ```
 
 **Validation**:
+
 ```bash
 # Verify no CONSOLIDATION-PLAN.md references remain in SoT files
 rg "CONSOLIDATION-PLAN.md" docs/knowledge-pack/sot-*.md
@@ -1382,6 +1488,7 @@ git diff docs/knowledge-pack/sot-*.md
 ---
 
 #### Task 6.2: Fix README.md Display Names ✅ COMPLETED
+
 **Objective**: Update file list display names to match actual filenames
 
 **Status Note**: Updated 6 display name mismatches in README.md file list. All links now show full filenames (e.g., [sot-schemas.md] instead of [schemas.md]).
@@ -1389,6 +1496,7 @@ git diff docs/knowledge-pack/sot-*.md
 **Issue**: README.md shows shortened names in display text (e.g., "schemas.md") but links to full names (e.g., "sot-schemas.md"). This creates confusion about actual filenames and inconsistency in the documentation.
 
 **Discovery Steps**:
+
 ```bash
 # Find the numbered file list in README.md
 rg -n "^[0-9]+\. \[" docs/knowledge-pack/README.md | head -n 20
@@ -1406,6 +1514,7 @@ sed -n '11,62p' docs/knowledge-pack/README.md | rg "\[.*\].*\.md\)"
 ```
 
 **Execution Pattern**:
+
 ```bash
 # Replace shortened display names with full filenames
 # Pattern: [display-text](actual-filename.md) where display-text != actual-filename
@@ -1421,6 +1530,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify no mismatched display names remain
 rg '\[schemas\.md\]\(sot-schemas\.md\)' docs/knowledge-pack/README.md  # Should return 0
@@ -1438,6 +1548,7 @@ git diff docs/knowledge-pack/README.md | rg -e '^\+.*\[.*\.md\]'
 ---
 
 #### Task 6.3: Fix Cross-Reference Anchor Mismatches ✅ COMPLETED
+
 **Objective**: Correct anchor links to use proper markdown heading format
 
 **Status Note**: Fixed 2 anchor links in knowledge-pack-methodology.md to include section numbers: #carrier-schema → #1-carrier-schema, #resolution-object → #4-resolution-object.
@@ -1445,6 +1556,7 @@ git diff docs/knowledge-pack/README.md | rg -e '^\+.*\[.*\.md\]'
 **Issue**: References like `sot-schemas.md#carrier-schema` don't match actual heading `## 1. Carrier Schema`. Markdown anchors are auto-generated from heading text, so links must include numbering.
 
 **Discovery Steps**:
+
 ```bash
 # Find all cross-file anchor references in methodology.md
 rg -n 'sot-schemas\.md#' docs/knowledge-pack/knowledge-pack-methodology.md
@@ -1461,6 +1573,7 @@ rg '#[a-z-]+' docs/knowledge-pack/knowledge-pack-methodology.md | rg 'sot-schema
 ```
 
 **Execution Pattern**:
+
 ```bash
 # Update anchor links to match numbered headings
 # Pattern: #heading-name -> #number-heading-name
@@ -1475,6 +1588,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify old anchor formats are gone
 rg 'sot-schemas\.md#carrier-schema[^-]' docs/knowledge-pack/knowledge-pack-methodology.md  # Should return 0
@@ -1495,13 +1609,15 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg '#'
 ---
 
 #### Task 6.4: Clarify pageFile Path Format ✅ COMPLETED
+
 **Objective**: Document consistent pageFile path representation
 
-**Status Note**: Updated pageFile field comments in 3 locations (TypeScript interface + 2 JSON schemas) to clarify format: "Path relative to knowledge_pack/raw/ (e.g., '_pages/page_ckm9x7w8k0.html')".
+**Status Note**: Updated pageFile field comments in 3 locations (TypeScript interface + 2 JSON schemas) to clarify format: "Path relative to knowledge_pack/raw/ (e.g., '\_pages/page_ckm9x7w8k0.html')".
 
 **Issue**: Two different path formats appear in examples: `"_pages/page_ckm9x7w8k0.html"` (relative to knowledge_pack/raw/) vs `"page_ckm9x7w8k0.html"` (just filename). Need to clarify which is canonical.
 
 **Discovery Steps**:
+
 ```bash
 # Find all pageFile field examples
 rg -n '"pageFile":' docs/knowledge-pack/*.md
@@ -1515,6 +1631,7 @@ rg -A 2 'pageFile\?:' docs/knowledge-pack/sot-schemas.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add clarifying comment to Source interface
 
@@ -1531,6 +1648,7 @@ git diff docs/knowledge-pack/sot-schemas.md | rg 'pageFile'
 ```
 
 **Validation**:
+
 ```bash
 # Verify clarifying comment exists
 rg -A 1 'pageFile\?:' docs/knowledge-pack/sot-schemas.md | rg 'relative to knowledge_pack/raw'
@@ -1547,6 +1665,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ---
 
 #### Task 6.5: Update cuid2 Description in README ✅ COMPLETED
+
 **Objective**: Clarify cuid2 description to avoid confusion
 
 **Status Note**: Updated cuid2 description from "10-character identifier" to "identifier system (10-character cuid2 + prefix)" to reflect full ID structure (e.g., carr_ckm9x7w8k0).
@@ -1554,6 +1673,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 **Issue**: README.md describes cuid2 as "Globally unique 10-character identifier system" which is misleading. The full ID format is `{prefix}_{cuid2}` (e.g., `car_ckm9x7w8k0`), making it 15+ characters total.
 
 **Discovery Steps**:
+
 ```bash
 # Find cuid2 definition in README Key Concepts table
 rg -n "Globally unique.*10-character" docs/knowledge-pack/README.md
@@ -1566,6 +1686,7 @@ rg -n '10-character' docs/knowledge-pack/README.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # Update cuid2 description to clarify full ID structure
 sed -i '' \
@@ -1574,6 +1695,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify old description is gone
 rg "Globally unique 10-character identifier system" docs/knowledge-pack/README.md  # Should return 0
@@ -1588,6 +1710,7 @@ git diff docs/knowledge-pack/README.md | rg 'cuid2'
 ---
 
 #### Task 6.6: Resolve TypeScript Optional Field Confusion ✅ COMPLETED
+
 **Objective**: Clarify pageId/pageFile lifecycle in schema
 
 **Status Note**: Updated field comments in 3 locations to clarify: "Optional in interface; Phase 2 MUST populate for raw data". Resolves confusion between TypeScript optionality (?) and Phase 2 requirements.
@@ -1595,6 +1718,7 @@ git diff docs/knowledge-pack/README.md | rg 'cuid2'
 **Issue**: Source interface marks `pageId?` and `pageFile?` as optional (with `?`) but includes comments saying "Required for Phase 2". This creates confusion about when these fields are truly required.
 
 **Discovery Steps**:
+
 ```bash
 # Check Source interface pageId/pageFile definitions
 rg -A 2 'pageId\?:' docs/knowledge-pack/sot-schemas.md
@@ -1608,6 +1732,7 @@ rg -n "lifecycle\|Lifecycle" docs/knowledge-pack/sot-schemas.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to enhance field comments
 
@@ -1632,6 +1757,7 @@ git diff docs/knowledge-pack/sot-schemas.md | rg 'pageId\|pageFile'
 ```
 
 **Validation**:
+
 ```bash
 # Verify clarifying comments exist
 rg -A 1 'pageId\?:' docs/knowledge-pack/sot-schemas.md | rg 'Phase 2\|raw data'
@@ -1649,6 +1775,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 ---
 
 #### Task 6.7: Reduce ID Generation Code Duplication ✅ COMPLETED
+
 **Objective**: Consolidate ID generation examples
 
 **Status Note**: Removed 42 lines of duplicate ID generation code from phase-2-agent-instructions.md. Added 5 cross-references to sot-id-conventions.md. Net reduction: 32 lines (5.5% of file).
@@ -1656,6 +1783,7 @@ git diff docs/knowledge-pack/sot-schemas.md
 **Issue**: Similar TypeScript code for ID generation appears in both sot-id-conventions.md and phase-2-agent-instructions.md. This duplication creates maintenance burden and potential inconsistency.
 
 **Discovery Steps**:
+
 ```bash
 # Find ID generation code blocks in both files
 rg -A 10 '@paralleldrive/cuid2' docs/knowledge-pack/sot-id-conventions.md | head -n 30
@@ -1670,6 +1798,7 @@ rg -n 'npm install.*cuid2\|bun add.*cuid2' docs/knowledge-pack/*.md
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to reduce duplication while preserving usability
 
@@ -1688,6 +1817,7 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md | rg -e 'cuid2|create
 ```
 
 **Validation**:
+
 ```bash
 # Verify phase-2 references sot-id-conventions
 rg -n 'sot-id-conventions\.md' docs/knowledge-pack/phase-2-agent-instructions.md | rg -i 'id\|cuid2'
@@ -1709,6 +1839,7 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md
 ---
 
 #### Task 6.8: Add SoT Indicator to README File List ✅ COMPLETED
+
 **Objective**: Clearly mark which files are SoT vs implementation guides
 
 **Status Note**: Added section headers "Single Source of Truth (SoT) Documents 📌" and "Implementation Guides" to README. Added intro paragraph explaining distinction. Files 1-4 grouped as SoT, files 5-7 as implementation.
@@ -1716,6 +1847,7 @@ git diff docs/knowledge-pack/phase-2-agent-instructions.md
 **Issue**: README file list (lines 11-62) doesn't indicate SoT status until later in the document. This makes it harder for readers to quickly identify authoritative sources.
 
 **Discovery Steps**:
+
 ```bash
 # Review README file list structure
 sed -n '11,62p' docs/knowledge-pack/README.md
@@ -1728,6 +1860,7 @@ rg -n "Single Source of Truth" docs/knowledge-pack/README.md | head -n 5
 ```
 
 **Execution Pattern**:
+
 ```bash
 # NOTE: Manual editing required to add section headers and grouping
 
@@ -1757,6 +1890,7 @@ git diff docs/knowledge-pack/README.md | rg -e '###.*SoT|###.*Implementation|�
 ```
 
 **Validation**:
+
 ```bash
 # Verify section headers exist
 rg -n "### Single Source of Truth.*SoT.*Documents" docs/knowledge-pack/README.md
@@ -1777,6 +1911,7 @@ git diff docs/knowledge-pack/README.md
 ---
 
 ### Phase 6 Success Criteria
+
 - ✅ Zero references to CONSOLIDATION-PLAN.md in SoT "Referenced By" sections
 - ✅ All README.md file display names match actual filenames
 - ✅ All cross-reference anchor links resolve correctly
@@ -1793,17 +1928,20 @@ git diff docs/knowledge-pack/README.md
 ## Phase 7: Post-Deep-Review Corrections
 
 ### Objective
+
 Address issues identified in comprehensive deep holistic review (2025-11-05): fix README diagram references, replace old ID formats in methodology examples, standardize UUID/cuid2 terminology, fix legend naming, and strengthen ID convention references.
 
 ---
 
 #### Task 7.1: Fix README.md Mermaid Diagram Filenames ✅ COMPLETED
+
 **Objective**: Update mermaid diagram node labels to use full `sot-` prefixed filenames
 
 **Issue**: Architecture diagram in README.md (lines 176-179) references files without the `sot-` prefix, creating confusion about actual file structure.
 
 **Discovery Steps**:
-```bash
+
+````bash
 # Find the mermaid diagram section
 rg -n "```mermaid" docs/knowledge-pack/README.md
 
@@ -1812,9 +1950,10 @@ sed -n '176,205p' docs/knowledge-pack/README.md
 
 # Verify which nodes need updating
 rg -n "HIER\[|SCHEMAS\[|QUERIES\[" docs/knowledge-pack/README.md
-```
+````
 
 **Execution**:
+
 ```bash
 # NOTE: Manual editing required to update mermaid diagram nodes
 
@@ -1833,6 +1972,7 @@ git diff docs/knowledge-pack/README.md | rg -e 'mermaid|HIER|SCHEMAS|QUERIES'
 ```
 
 **Validation**:
+
 ```bash
 # Verify old filenames removed from diagram
 rg "source-hierarchy\.md\]|schemas\.md\]|search-queries\.md\]" docs/knowledge-pack/README.md
@@ -1848,11 +1988,13 @@ git diff docs/knowledge-pack/README.md
 ---
 
 #### Task 7.2: Replace Old ID Formats in Methodology Examples ✅ COMPLETED
+
 **Objective**: Replace all sequential ID examples with proper cuid2 format in knowledge-pack-methodology.md
 
 **Issue**: Methodology document contains examples using old sequential ID format (e.g., "field-states-001", "minimums-CA-auto-001") which contradicts sot-id-conventions.md SoT specification.
 
 **Discovery Steps**:
+
 ```bash
 # Find all sequential ID patterns in methodology.md
 rg -n '"id": "[a-z]+-[a-z]+-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md
@@ -1867,6 +2009,7 @@ rg -B 2 -A 2 '"_id": "minimums-CA-auto-001"' docs/knowledge-pack/knowledge-pack-
 ```
 
 **Execution**:
+
 ```bash
 # NOTE: Manual editing required - each old ID needs unique cuid2 replacement
 
@@ -1895,6 +2038,7 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -e '_id|"id"'
 ```
 
 **Validation**:
+
 ```bash
 # Verify no old sequential ID patterns remain in methodology.md
 rg '"_?id": "[a-z]+-[^"]*-[0-9]+"' docs/knowledge-pack/knowledge-pack-methodology.md
@@ -1912,11 +2056,13 @@ git diff --stat docs/knowledge-pack/knowledge-pack-methodology.md
 ---
 
 #### Task 7.3: Standardize UUID to cuid2 Terminology ✅ COMPLETED
+
 **Objective**: Replace all "UUID" references with "cuid2" or "ID" in knowledge-pack-methodology.md
 
 **Issue**: Document inconsistently uses "UUID" terminology when the system actually uses cuid2. UUID ≠ cuid2 (different libraries, different formats).
 
 **Discovery Steps**:
+
 ```bash
 # Find all UUID references
 rg -n "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
@@ -1929,6 +2075,7 @@ rg -c "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
 ```
 
 **Execution**:
+
 ```bash
 # Replace UUID with cuid2 where appropriate
 sed -i '' \
@@ -1942,6 +2089,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify no UUID references remain (should be 0)
 rg "UUID" docs/knowledge-pack/knowledge-pack-methodology.md
@@ -1956,11 +2104,13 @@ git diff docs/knowledge-pack/knowledge-pack-methodology.md | rg -i 'uuid|cuid2|i
 ---
 
 #### Task 7.4: Fix README.md Legend Naming Consistency ✅ COMPLETED
+
 **Objective**: Use full filenames consistently in README.md legend
 
 **Issue**: Legend (around lines 220-224) mixes short names and full names, creating inconsistency.
 
 **Discovery Steps**:
+
 ```bash
 # Find the legend section
 rg -n "^- 📖|^- 🔑|^- 🤖" docs/knowledge-pack/README.md
@@ -1973,6 +2123,7 @@ rg -n "📖 schemas\.md|📖 sot-schemas\.md" docs/knowledge-pack/README.md
 ```
 
 **Execution**:
+
 ```bash
 # Update legend to use full filenames
 sed -i '' \
@@ -1983,6 +2134,7 @@ sed -i '' \
 ```
 
 **Validation**:
+
 ```bash
 # Verify no shortened names in legend (except where appropriate)
 rg "^- 📖 schemas\.md|^- 🔍 search-queries\.md|^- ⚖️ source-hierarchy\.md" docs/knowledge-pack/README.md
@@ -1997,11 +2149,13 @@ git diff docs/knowledge-pack/README.md | rg -e '📖|🔑|🤖|🔍|⚖️'
 ---
 
 #### Task 7.5: Strengthen ID Convention Reference in Examples ✅ COMPLETED
+
 **Objective**: Make sot-id-conventions.md reference more explicit in knowledge-pack-examples.md
 
 **Issue**: Line 39 mentions ID conventions but doesn't emphasize that sot-id-conventions.md is the authoritative source.
 
 **Discovery Steps**:
+
 ```bash
 # Find current reference (around line 39)
 sed -n '35,45p' docs/knowledge-pack/knowledge-pack-examples.md
@@ -2011,6 +2165,7 @@ rg -n "ID Conventions|sot-id-conventions" docs/knowledge-pack/knowledge-pack-exa
 ```
 
 **Execution**:
+
 ```bash
 # NOTE: Manual editing required for nuanced wording change
 
@@ -2029,6 +2184,7 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md | rg -i 'id conventions|
 ```
 
 **Validation**:
+
 ```bash
 # Verify strengthened reference exists
 rg -n "SoT document|authoritative source.*ID|must match.*cuid2" docs/knowledge-pack/knowledge-pack-examples.md
@@ -2042,6 +2198,7 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md
 ---
 
 ### Phase 7 Success Criteria
+
 - [x] README.md mermaid diagram uses full `sot-` prefixed filenames
 - [x] Zero sequential ID formats in knowledge-pack-methodology.md examples
 - [x] Zero "UUID" references in knowledge-pack-methodology.md (replaced with "cuid2" or "ID")
@@ -2058,6 +2215,7 @@ git diff docs/knowledge-pack/knowledge-pack-examples.md
 After completing all phases, validate:
 
 ### File Structure
+
 - [ ] All 4 SoT files renamed with `sot-` prefix
 - [ ] File list matches expected structure:
   ```
@@ -2073,6 +2231,7 @@ After completing all phases, validate:
   ```
 
 ### Content Quality
+
 - [ ] Zero old ID formats (search: `"[a-z]+-\d{3}"`)
 - [ ] Zero references to old filenames (search: `knowledge-pack-schemas.md`, `id-conventions.md`, etc.)
 - [ ] All links valid (no broken markdown links)
@@ -2080,12 +2239,14 @@ After completing all phases, validate:
 - [ ] All duplications removed per plan
 
 ### Architecture
+
 - [ ] Each concept has clear SoT file
 - [ ] No duplication of specifications
 - [ ] Implementation docs reference SoT docs (not vice versa)
 - [ ] Cross-references complete and accurate
 
 ### Documentation
+
 - [ ] Date formats standardized
 - [ ] Confidence terminology clarified
 - [ ] pageId/pageFile requirements documented
@@ -2098,14 +2259,17 @@ After completing all phases, validate:
 If issues arise during execution:
 
 **Phase 0**:
+
 - Rollback: `git reset --hard` or rename files back manually
 - Low risk: Just file renames and link updates
 
 **Phase 1-4**:
+
 - Rollback: `git checkout -- <file>` for specific files
 - Or: Create branch before starting, revert to branch if needed
 
 **Best Practice**:
+
 - Commit after each major task
 - Test links and examples after each phase
 - Keep this plan updated with actual changes made
@@ -2115,6 +2279,7 @@ If issues arise during execution:
 ## Success Metrics
 
 **Before**:
+
 - 8 files, ~8,450 lines
 - ~800 lines duplicated (9.5%)
 - 5 critical duplication patterns
@@ -2122,6 +2287,7 @@ If issues arise during execution:
 - Unclear SoT architecture
 
 **After**:
+
 - 8 files, ~8,000 lines
 - <1% duplication (only legitimate examples)
 - Clear SoT architecture
@@ -2129,6 +2295,7 @@ If issues arise during execution:
 - Complete cross-reference network
 
 **Estimated Improvement**:
+
 - 5-6% reduction in total content
 - 95% reduction in duplication
 - 100% improvement in SoT clarity
@@ -2138,6 +2305,7 @@ If issues arise during execution:
 ## Execution Notes
 
 **Task Execution Pattern**:
+
 1. Read task objective and discovery steps
 2. Execute discovery (search, identify, list)
 3. Review findings, confirm scope
@@ -2147,6 +2315,7 @@ If issues arise during execution:
 7. Move to next task
 
 **Key Principles**:
+
 - Discovery-driven (identify at execution time, not plan time)
 - Pattern-based (apply rules, not line-by-line edits)
 - Validate-early (check after each task)

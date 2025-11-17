@@ -22,6 +22,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Description**: Government regulatory bodies and official state insurance departments
 
 **Examples**:
+
 - California Department of Insurance (insurance.ca.gov)
 - Texas Department of Insurance (tdi.texas.gov)
 - Florida Office of Insurance Regulation (floir.com)
@@ -30,6 +31,7 @@ This document establishes a clear hierarchy for source authority and provides de
 - NAIC (National Association of Insurance Commissioners) - naic.org
 
 **When to Use**:
+
 - State minimum coverage requirements
 - Mandatory disclosures and disclaimers
 - Prohibited advertising statements
@@ -47,6 +49,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Description**: Official insurance carrier websites and direct communications
 
 **Examples**:
+
 - geico.com
 - progressive.com
 - statefarm.com
@@ -55,6 +58,7 @@ This document establishes a clear hierarchy for source authority and provides de
 - Direct email/mail from carriers
 
 **When to Use**:
+
 - Carrier-specific discount percentages
 - Product availability by state
 - Eligibility criteria for coverage
@@ -73,6 +77,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Description**: Established industry research organizations and advocacy groups
 
 **Examples**:
+
 - Insurance Information Institute (iii.org)
 - National Association of Insurance Commissioners (naic.org) - consumer guides
 - Insurance trade associations
@@ -80,6 +85,7 @@ This document establishes a clear hierarchy for source authority and provides de
 - Government consumer protection agencies (non-regulatory)
 
 **When to Use**:
+
 - Industry averages and benchmarks
 - Statistical data on pricing
 - Consumer education and explanations
@@ -97,6 +103,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Description**: Reputable financial news and comparison websites
 
 **Examples**:
+
 - Bankrate (bankrate.com)
 - NerdWallet (nerdwallet.com)
 - ValuePenguin (valuepenguin.com)
@@ -105,6 +112,7 @@ This document establishes a clear hierarchy for source authority and provides de
 - J.D. Power (jdpower.com)
 
 **When to Use**:
+
 - Average pricing across multiple carriers
 - Carrier comparison and reviews
 - Consumer satisfaction data
@@ -116,6 +124,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Conflict Resolution**: Use as secondary sources; always verify against Level 5, 4, 3 sources
 
 **Cautions**:
+
 - May have affiliate relationships with carriers
 - Data may be aggregated (not carrier-specific)
 - Update frequency varies
@@ -128,6 +137,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Description**: Community forums, blog posts, and user-generated content
 
 **Examples**:
+
 - Reddit (r/insurance)
 - Insurance forums
 - Individual blog posts
@@ -136,6 +146,7 @@ This document establishes a clear hierarchy for source authority and provides de
 - YouTube videos (non-official)
 
 **When to Use**:
+
 - Anecdotal experiences (not authoritative data)
 - Initial research direction
 - Identifying questions to ask official sources
@@ -146,6 +157,7 @@ This document establishes a clear hierarchy for source authority and provides de
 **Conflict Resolution**: Never use as sole source; always verify with higher authority
 
 **Cautions**:
+
 - Unverified information
 - Personal opinions, not facts
 - May be outdated
@@ -159,6 +171,7 @@ This document establishes a clear hierarchy for source authority and provides de
 ### Field Definitions
 
 **Confidence Field Structure:**
+
 - **`confidence`** (required): A **classification string** indicating confidence level. Valid values:
   - `'high'` - Score 4.0-5.0 (Use with minimal verification)
   - `'medium'` - Score 3.0-3.9 (Use with supplementary source)
@@ -180,36 +193,37 @@ Use authority level as defined above (1-5)
 
 ### Freshness Component (0-5)
 
-| Age | Score | Assessment |
-|-----|-------|------------|
-| < 6 months | 5 | Current |
-| 6 months - 1 year | 4 | Recent |
-| 1-2 years | 3 | Moderately Fresh |
-| 2-3 years | 2 | Dated |
-| > 3 years | 1 | Stale |
+| Age               | Score | Assessment       |
+| ----------------- | ----- | ---------------- |
+| < 6 months        | 5     | Current          |
+| 6 months - 1 year | 4     | Recent           |
+| 1-2 years         | 3     | Moderately Fresh |
+| 2-3 years         | 2     | Dated            |
+| > 3 years         | 1     | Stale            |
 
 ### Specificity Component (0-5)
 
-| Specificity | Score | Example |
-|-------------|-------|---------|
-| Exact value | 5 | "15% discount" |
-| Narrow range | 4 | "12-15% discount" |
-| Wide range | 3 | "10-20% discount" |
-| Qualifier | 2 | "up to 20% discount" |
-| Vague | 1 | "save money" |
+| Specificity  | Score | Example              |
+| ------------ | ----- | -------------------- |
+| Exact value  | 5     | "15% discount"       |
+| Narrow range | 4     | "12-15% discount"    |
+| Wide range   | 3     | "10-20% discount"    |
+| Qualifier    | 2     | "up to 20% discount" |
+| Vague        | 1     | "save money"         |
 
 ### Confidence Classifications
 
-| Score Range | Classification | Action |
-|-------------|----------------|--------|
-| 4.0 - 5.0 | High | Use with minimal verification |
-| 3.0 - 3.9 | Medium | Use with supplementary source |
-| 2.0 - 2.9 | Low | Verify with higher authority source |
-| < 2.0 | Very Low | Do not use; find better source |
+| Score Range | Classification | Action                              |
+| ----------- | -------------- | ----------------------------------- |
+| 4.0 - 5.0   | High           | Use with minimal verification       |
+| 3.0 - 3.9   | Medium         | Use with supplementary source       |
+| 2.0 - 2.9   | Low            | Verify with higher authority source |
+| < 2.0       | Very Low       | Do not use; find better source      |
 
 ### Example Calculation
 
 **Source**: GEICO official discount page
+
 - Authority: 4 (Primary)
 - Freshness: 5 (Accessed today)
 - Specificity: 5 (Exact "15%")
@@ -221,6 +235,7 @@ Confidence = (4 × 0.5) + (5 × 0.3) + (5 × 0.2)
 ```
 
 **Source**: Reddit post about GEICO discounts
+
 - Authority: 1 (Tertiary)
 - Freshness: 2 (Posted 2.5 years ago)
 - Specificity: 3 (Range "10-15%")
@@ -245,6 +260,7 @@ IF sources have different authority levels:
 ```
 
 **Example**:
+
 - Source A: CA Dept of Insurance (Level 5): "15/30/5 minimum"
 - Source B: NerdWallet (Level 2): "15/30/10 minimum"
 - **Resolution**: Use Source A (Level 5)
@@ -260,6 +276,7 @@ IF authority levels equal:
 ```
 
 **Example**:
+
 - Source A: GEICO (Level 4): "15% discount"
 - Source B: GEICO FAQ (Level 4): "10-15% discount"
 - **Resolution**: Use "15%" (exact vs. range)
@@ -275,6 +292,7 @@ IF authority equal AND specificity equal:
 ```
 
 **Example**:
+
 - Source A: GEICO (Level 4), Accessed 2025-11-05: "15%"
 - Source B: GEICO (Level 4), Accessed 2023-06-10: "12%"
 - **Resolution**: Use 15% (more recent)
@@ -291,17 +309,20 @@ IF all metadata equal:
 ```
 
 **Example** (Discount):
+
 - Source A: "15% multi-policy discount"
 - Source B: "15% multi-policy discount"
 - **No conflict - values agree**
 
 **Example** (Discount conflict):
+
 - Source A: "15% discount"
 - Source B: "18% discount"
 - **Resolution**: Use 15% (conservative for discount)
 - **Method**: "conservative_estimate"
 
 **Example** (Minimum conflict):
+
 - Source A: CA minimum BI: $15,000
 - Source B: CA minimum BI: $20,000
 - **Resolution**: Use $20,000 (higher for safety)
@@ -317,6 +338,7 @@ IF 3+ sources available:
 ```
 
 **Example**:
+
 - Source A: "15%"
 - Source B: "15%"
 - Source C: "12%"
@@ -333,6 +355,7 @@ IF conflict involves qualifiers:
 ```
 
 **Example**:
+
 - Source A: "Save up to 15%"
 - Source B: "Average savings: 12%"
 - **Resolution**: Use 15% as maximum, note 12% as typical
@@ -349,6 +372,7 @@ IF no clear resolution from Steps 1-6:
 ```
 
 **Example**:
+
 - Complex eligibility criteria with contradictory requirements
 - **Resolution**: Manual review by data curator
 - **Method**: "expert_judgment"
@@ -358,15 +382,15 @@ IF no clear resolution from Steps 1-6:
 
 ## Resolution Method Reference
 
-| Method | Description | When to Use | Example |
-|--------|-------------|-------------|---------|
-| `authoritative_source` | Higher authority source wins | Different authority levels | State .gov > Carrier site |
-| `specificity_preference` | More specific value wins | Exact vs. range | "15%" > "10-15%" |
-| `temporal_preference` | More recent source wins | Different dates | 2025 > 2023 |
-| `conservative_estimate` | Safer value chosen | Domain knowledge needed | Lower discount % |
-| `majority_consensus` | Most common value wins | 3+ sources available | 2/3 agree |
-| `context_aware_decision` | Qualifier interpretation | "up to", "average" present | Parse qualifier |
-| `expert_judgment` | Manual curator decision | No clear automated rule | Complex conflicts |
+| Method                   | Description                  | When to Use                | Example                   |
+| ------------------------ | ---------------------------- | -------------------------- | ------------------------- |
+| `authoritative_source`   | Higher authority source wins | Different authority levels | State .gov > Carrier site |
+| `specificity_preference` | More specific value wins     | Exact vs. range            | "15%" > "10-15%"          |
+| `temporal_preference`    | More recent source wins      | Different dates            | 2025 > 2023               |
+| `conservative_estimate`  | Safer value chosen           | Domain knowledge needed    | Lower discount %          |
+| `majority_consensus`     | Most common value wins       | 3+ sources available       | 2/3 agree                 |
+| `context_aware_decision` | Qualifier interpretation     | "up to", "average" present | Parse qualifier           |
+| `expert_judgment`        | Manual curator decision      | No clear automated rule    | Complex conflicts         |
 
 ---
 
@@ -377,11 +401,13 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: National source says one thing, state-specific says another
 
 **Resolution**:
+
 - For state-specific data (minimums, requirements): Use state source
 - For carrier availability: Use state source to verify
 - For pricing: Prefer state-specific data
 
 **Example**:
+
 - National site: "GEICO available in all 50 states"
 - CA Dept of Insurance: "GEICO licensed in CA"
 - **Resolution**: Both can be true; verify state-by-state
@@ -391,11 +417,13 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: One source gives range, another gives specific number
 
 **Resolution**:
+
 - If specific number within range: Use specific (more precise)
 - If specific number outside range: Investigate further (conflict)
 - Document both values with context
 
 **Example**:
+
 - Source A: "10-15% multi-policy discount"
 - Source B: "12% multi-policy discount"
 - **Resolution**: Use 12% (within range and specific)
@@ -405,11 +433,13 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: Maximum value stated with "up to" qualifier
 
 **Resolution**:
+
 - Store maximum value as primary
 - Note qualifier in metadata
 - If average also available, store separately
 
 **Example**:
+
 - "Save up to 15% with multi-policy bundle"
 - **Storage**: `percentage: 15`, `qualifier: "up to"`
 - Use for pitch generation: "You may save up to 15%"
@@ -419,11 +449,13 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: Promotional rate differs from standard rate
 
 **Resolution**:
+
 - Use standard/permanent rate as primary
 - Note promotional rate if relevant
 - Check effective dates
 
 **Example**:
+
 - Promotional: "20% off for new customers"
 - Standard: "15% multi-policy discount"
 - **Resolution**: Use 15% (ongoing), note 20% promo with dates
@@ -433,11 +465,13 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: One source says "required", another says "optional"
 
 **Resolution**:
+
 - Prioritize regulatory source (Level 5)
 - Check state-specific context
 - Document both sources
 
 **Example**:
+
 - FL homeowners: Hurricane coverage "required" vs. "optional"
 - **Resolution**: Check FL state insurance dept (authoritative)
 - **Result**: Hurricane coverage mandatory in certain zones
@@ -447,6 +481,7 @@ IF no clear resolution from Steps 1-6:
 **Scenario**: Source A has value, Source B doesn't mention it
 
 **Resolution**:
+
 - Not a conflict (absence of data ≠ contradictory data)
 - Use Source A value
 - Continue searching for confirmation
@@ -459,6 +494,7 @@ IF no clear resolution from Steps 1-6:
 ### Pre-Resolution Checks
 
 Before resolving conflicts:
+
 1. ✅ Verify all sources are properly cited (URI + element ref)
 2. ✅ Confirm authority levels assigned correctly
 3. ✅ Check freshness dates are accurate
@@ -468,6 +504,7 @@ Before resolving conflicts:
 ### Post-Resolution Checks
 
 After resolving conflicts:
+
 1. ✅ Resolution method documented
 2. ✅ Rationale provided (human-readable)
 3. ✅ All sources retained (even non-selected ones)
@@ -519,10 +556,12 @@ After resolving conflicts:
 **Conflict**: CA minimum bodily injury liability
 
 **Sources**:
+
 - Source A (Level 5 - insurance.ca.gov): "$15,000 per person"
 - Source B (Level 2 - Bankrate): "$25,000 per person"
 
 **Resolution**:
+
 ```json
 {
   "selectedValue": 15000,
@@ -538,10 +577,12 @@ After resolving conflicts:
 **Conflict**: GEICO multi-policy discount
 
 **Sources**:
+
 - Source A (Level 4 - geico.com/discounts): "Save up to 15%"
 - Source B (Level 4 - geico.com/faq): "Typically 10-15%"
 
 **Resolution**:
+
 ```json
 {
   "selectedValue": 15,
@@ -561,10 +602,12 @@ After resolving conflicts:
 **Conflict**: State Farm safe driver discount
 
 **Sources**:
+
 - Source A (Level 4 - statefarm.com, accessed 2025-11-05): "10% discount"
 - Source B (Level 4 - statefarm.com, accessed 2023-03-15): "8% discount"
 
 **Resolution**:
+
 ```json
 {
   "selectedValue": 10,
@@ -580,10 +623,12 @@ After resolving conflicts:
 **Conflict**: Progressive multi-vehicle discount
 
 **Sources**:
+
 - Source A (Level 4 - progressive.com): "12% discount"
 - Source B (Level 2 - NerdWallet): "15% discount"
 
 **Resolution**:
+
 ```json
 {
   "selectedValue": 12,
@@ -599,12 +644,14 @@ After resolving conflicts:
 **Conflict**: Average auto insurance California
 
 **Sources**:
+
 - Source A (III): "$1,200/year"
 - Source B (Bankrate): "$1,150/year"
 - Source C (NerdWallet): "$1,200/year"
 - Source D (ValuePenguin): "$1,250/year"
 
 **Resolution**:
+
 ```json
 {
   "selectedValue": 1200,
@@ -648,6 +695,7 @@ After resolving conflicts:
 ---
 
 **See Also:**
+
 - 📖 [Conflict Resolution in Methodology](knowledge-pack-methodology.md#phase-4-conflict-resolution) - When conflict resolution happens in the workflow
 - 🔗 [Resolution Schema](sot-schemas.md#resolution-object) - Data structure for documenting resolutions
 - 📊 [Resolution Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real-world conflicts resolved

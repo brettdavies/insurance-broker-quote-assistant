@@ -1,0 +1,32 @@
+{
+  "id": "conv-03",
+  "name": "Partial Data Extraction - FL Renters State Farm",
+  "description": "Test case with some optional fields missing - tests progressive disclosure",
+  "type": "conversational",
+  "carrier": "State Farm",
+  "state": "FL",
+  "product": "renters",
+  "input": "FL renters. Apt. Age 28. Lives alone. Has SF",
+  "expectedProfile": {
+    "state": "FL",
+    "productType": "renters",
+    "age": 28,
+    "householdSize": 1,
+    "currentCarrier": "State Farm"
+  },
+  "expectedRoute": {
+    "primaryCarrier": "State Farm",
+    "eligibleCarriers": ["State Farm", "GEICO", "Progressive"],
+    "confidence": 0.88,
+    "rationale": "State Farm offers renters insurance in Florida and matches eligibility criteria."
+  },
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Florida: Quote estimates are preliminary",
+    "Renters Insurance: Property details and coverage limits affect premium"
+  ],
+  "missingFields": ["personalProperty", "liability"]
+}

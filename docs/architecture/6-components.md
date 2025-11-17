@@ -1,28 +1,183 @@
 # 6. Components
 
-This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill PEAK6's "multi-agent preferred" requirement.
+This section describes the 5 core components (2 LLM Agents + 3 Deterministic Engines) and 2 supporting components (RAG + Orchestrator) that fulfill the clients "multi-agent preferred" requirement.
 
 ---
 
-## 6.1 Conversational Extractor Agent (LLM)
+## 6.1 Conversational Extractor Agent (Hybrid LLM + Inference)
 
-**Purpose:** Extract structured insurance shopper data from natural language input or policy documents.
+**Purpose:** Extract structured insurance shopper data from natural language input or policy documents using a hybrid approach: deterministic inference rules + LLM extraction.
 
 **Key Responsibilities:**
+
 - Parse free-form broker messages into structured UserProfile fields
 - Extract existing policy details from uploaded policy text
+- Apply deterministic field-to-field inferences (e.g., `productType="renters"` → `ownsHome=false`)
+- Apply text pattern inferences (e.g., "Lives alone" → `householdSize=1`)
+- Separate **known fields** (broker-curated, read-only) from **inferred fields** (system-derived, editable)
+- Respect suppression list (fields broker has explicitly dismissed)
 - Identify missing required fields for quote completion
 - Support progressive disclosure (extract what's mentioned, flag what's missing)
 
 **Dependencies:**
-- OpenAI API (GPT-4o-mini for cost efficiency)
+
+- Google Gemini API (Gemini 2.5 Flash Lite for cost efficiency and structured outputs)
+- Shared extraction engine (`packages/shared/src/extraction-engine/`) - deterministic pre-LLM extraction
+- InferenceEngine (deterministic rule application from `@repo/shared`)
 - Zod schemas for structured output validation
+- Unified field metadata with inference rules (`packages/shared/src/schemas/unified-field-metadata.ts`)
+- Text pattern inferences (`packages/shared/src/config/text-pattern-inferences.ts`)
+
+**Hybrid Architecture (Deterministic Pre-LLM + LLM + Post-LLM Validation):**
+
+**Step 1: Deterministic Pre-LLM Extraction** (Shared Extraction Engine)
+- **Key-value parser runs FIRST** (free, instant) - extracts `field: value` or `[[field: value]]` syntax
+- **Pattern-based extraction** - regex patterns for common field formats
+- **InferenceEngine applies rules:**
+  - Field-to-field rules (e.g., `productType="renters"` → `ownsHome=false`, confidence: 75%)
+  - Text pattern rules (e.g., "Lives alone" → `householdSize=1`, confidence: 82%)
+- Skip suppressed fields (broker has dismissed these inferences)
+- Generate inference reasons and confidence scores
+- **Result:** Extracted fields + remaining text (text not matched by deterministic rules)
+
+**Step 2: LLM Extraction** (ConversationalExtractor)
+- **Only processes remaining text** (cost-optimized - LLM doesn't re-process deterministic matches)
+- Receive known fields (broker-curated), inferred fields (from Step 1), and suppressed fields
+- Apply **5 Critical Rules for Field Extraction:**
+  1. **KNOWN FIELDS (read-only):** Never modify broker-set fields
+  2. **INFERRED FIELDS (can modify):** Confirm, edit, delete, or upgrade based on text evidence
+  3. **SUPPRESSED FIELDS (never infer):** Respect user dismissals
+  4. **CONFIDENCE LEVELS:** High (≥85%), Medium (70-84%), Low (<70%). Upgrade to known if ≥85%
+  5. **EXTRACTION PRIORITY:** Fill missing fields, improve inferred fields with better evidence
+- Separate fields into known (≥85% confidence) vs inferred (<85% confidence)
+- Return structured ExtractionResult with known/inferred separation
+
+**Step 3: Post-LLM Validation** (Optional, up to 3 iterations)
+- Re-runs deterministic extraction on LLM output
+- Validates LLM-extracted fields against deterministic patterns
+- Improves accuracy through multi-pass validation
+
+**Method Signature:**
+
+```typescript
+async extractFields(
+  message: string,
+  knownFields?: Partial<UserProfile>,
+  inferredFields?: Partial<UserProfile>,
+  suppressedFields?: string[]
+): Promise<ExtractionResult>
+```
+
+**Response Schema:**
+
+```typescript
+{
+  extraction: {
+    method: 'hybrid',
+    known: Partial<UserProfile>,           // Broker-curated + high-confidence (≥85%)
+    inferred: Partial<UserProfile>,        // Low-medium confidence (<85%)
+    suppressedFields: string[],            // Dismissed fields
+    inferenceReasons: Record<string, string>, // Why each field was inferred
+    confidence: Record<string, number>     // Confidence scores (0-1)
+  }
+}
+```
 
 **Design Decisions:**
-- **LLM for flexibility:** Natural language parsing requires LLM, not regex/rules
+
+- **Hybrid approach:** Deterministic pre-LLM extraction runs first (faster, cheaper, reduces LLM costs by 40-60%), then LLM processes only remaining text
+- **Known vs inferred separation:** Enables transparent field curation by brokers with visual distinction in UI
+- **Suppression list:** Respects broker's explicit rejections, prevents re-inferring dismissed fields
+- **LLM for flexibility:** Natural language parsing requires LLM, not regex/rules alone
 - **Structured outputs:** JSON mode with Zod schema enforcement ensures type safety
 - **Missing fields tracking:** Enables progressive disclosure UX (collect more info as needed)
-- **GPT-4o-mini selected:** 10x cheaper than GPT-4o, sufficient for extraction task
+- **Gemini 2.5 Flash Lite selected:** Cost-efficient with native structured outputs, free tier available, sufficient for extraction task
+- **Confidence thresholds:** ≥85% promotes inferred → known, balancing accuracy with broker control
+- **Post-LLM validation:** Re-runs deterministic extraction on LLM output (up to 3 iterations) for improved accuracy
+- **Shared extraction engine:** Frontend and backend use same extraction logic (packages/shared/src/extraction-engine/) for consistency and graceful degradation
+
+**Inference Architecture Diagram:**
+
+```mermaid
+graph TB
+    subgraph "Input"
+        A[User Message:<br/>'I need renters in FL.<br/>Age 28. Lives alone.']
+        B[Known Fields:<br/>state: FL<br/>productType: renters<br/>age: 28]
+        C[Suppressed Fields:<br/>drivers]
+    end
+
+    subgraph "Step 1: Deterministic Inferences (InferenceEngine)"
+        D[Field Metadata<br/>with Inference Rules]
+        E[Text Pattern<br/>Inferences]
+        F{Apply Field-to-Field Rules}
+        G{Apply Text Pattern Rules}
+        H{Skip Suppressed?}
+        I[Inferred Fields:<br/>ownsHome: false 75%<br/>householdSize: 1 82%]
+        J[Inference Reasons:<br/>ownsHome: 'Renters implies tenant'<br/>householdSize: 'Lives alone → 1']
+
+        D --> F
+        E --> G
+        B --> F
+        A --> G
+        C --> H
+        F --> H
+        G --> H
+        H -->|No| I
+        H -->|No| J
+    end
+
+    subgraph "Step 2: LLM Extraction (ConversationalExtractor)"
+        K[Build System Prompt<br/>with CRITICAL RULES]
+        L[Build User Prompt<br/>with Known/Inferred/Suppressed]
+        M[Gemini 1.5 Flash<br/>Structured Output]
+        N{Separate by Confidence}
+        O[Known: ≥85% confidence]
+        P[Inferred: <85% confidence]
+        Q{Filter Suppressed}
+
+        B --> K
+        I --> K
+        J --> K
+        C --> K
+        K --> L
+        A --> L
+        L --> M
+        M --> N
+        N -->|≥85%| O
+        N -->|<85%| P
+        O --> Q
+        P --> Q
+    end
+
+    subgraph "Output"
+        R[ExtractionResult:<br/>known: state, productType, age<br/>inferred: ownsHome, householdSize<br/>suppressedFields: drivers<br/>inferenceReasons: ...<br/>confidence: ...]
+    end
+
+    Q --> R
+
+    style A fill:#e3f2fd
+    style B fill:#e8f5e9
+    style C fill:#ffebee
+    style I fill:#fff3e0
+    style R fill:#f3e5f5
+```
+
+**Diagram Explanation:**
+
+1. **Input:** User message + known fields (broker-curated) + suppressed fields (dismissed)
+2. **Step 1 (InferenceEngine):** Deterministic rules apply field-to-field and text pattern inferences, skipping suppressed fields
+3. **Step 2 (ConversationalExtractor):** LLM receives all context, applies CRITICAL RULES, separates known (≥85%) vs inferred (<85%)
+4. **Output:** Structured ExtractionResult with separated known/inferred fields, reasons, and confidence scores
+
+**File Locations:**
+
+- **ConversationalExtractor:** `apps/api/src/services/conversational-extractor.ts`
+- **InferenceEngine:** `packages/shared/src/services/inference-engine.ts`
+- **Shared Extraction Engine:** `packages/shared/src/extraction-engine/` (used by both frontend and backend)
+- **Field Metadata:** `packages/shared/src/schemas/unified-field-metadata.ts` (unified field metadata system)
+- **Text Patterns:** `packages/shared/src/config/text-pattern-inferences.ts`
+- **LLM Prompts:** `apps/api/src/prompts/conversational-extraction-*.txt`
+- **Frontend Extraction:** `apps/web/src/lib/field-extraction.ts` (uses shared extraction engine for graceful degradation)
 
 ---
 
@@ -31,21 +186,26 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Transform structured opportunity data into human-friendly savings recommendations with "because" rationales.
 
 **Key Responsibilities:**
+
 - Generate agent-ready talking points from discount opportunities
 - Include "because" explanations for each recommendation (spec requirement)
 - Format pitch as markdown for broker presentation
 - Maintain citations from knowledge pack in narrative
 
 **Dependencies:**
-- OpenAI API (GPT-4o for quality)
+
+- Google Gemini API (Gemini 2.5 Flash Lite for quality and cost-efficiency)
 - Opportunity data with citations
 - UserProfile for personalization context
+- Citation replacer (embeds cuid2 citations in pitch text)
 
 **Design Decisions:**
+
 - **LLM for narrative generation:** Broker-ready prose requires natural language generation
-- **GPT-4o selected:** Higher quality than 4o-mini, worth cost for client-facing text
+- **Gemini 2.5 Flash Lite selected:** Unified model for both extraction and pitch generation (simpler integration, cost-efficient, free tier available)
 - **Structured input → prose output:** Deterministic data fed to LLM for consistent style
 - **Citation preservation:** Pitch references opportunity citations for compliance traceability
+- **Fallback generator:** Template-based pitch generation if LLM unavailable
 
 ---
 
@@ -54,15 +214,18 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Determine eligible insurance carriers based on state, product, and user profile using knowledge pack rules.
 
 **Key Responsibilities:**
+
 - Filter carriers by state availability (operates_in check)
 - Filter by product offering (auto, home, renters, umbrella)
 - Apply eligibility criteria (age limits, vehicle limits, etc.)
 - Return sorted list with primary recommendation + alternatives
 
 **Dependencies:**
+
 - Knowledge Pack RAG for carrier data
 
 **Design Decisions:**
+
 - **100% deterministic:** No LLM variability for compliance-critical routing decisions
 - **Pure functions:** Testable, auditable logic with predictable outputs
 - **Why deterministic matters:** Insurance regulators require explainable routing (no black-box AI)
@@ -75,6 +238,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Identify applicable discounts and calculate dollar savings based on user profile and carrier discount rules.
 
 **Key Responsibilities:**
+
 - Check discount eligibility (safe driver, multi-policy, paperless, etc.)
 - Calculate annual savings in dollars (not just percentages)
 - Generate opportunity objects with citations to knowledge pack
@@ -82,10 +246,12 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 - Analyze multi-carrier consolidation opportunities (requires `existingPolicies` data)
 
 **Dependencies:**
+
 - Knowledge Pack RAG for discount rules
 - UserProfile with `existingPolicies` array for bundle analysis
 
 **Design Decisions:**
+
 - **100% deterministic:** Discount eligibility must be auditable and explainable
 - **Dollar savings calculated:** More meaningful to brokers than percentages alone
 - **Mandatory citations:** Every opportunity references knowledge pack source for compliance
@@ -99,6 +265,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Ensure 100% regulatory compliance by blocking prohibited statements and injecting required disclaimers.
 
 **Key Responsibilities:**
+
 - Validate all user-facing outputs against prohibited phrase list
 - Block outputs entirely if violations detected (no partial pass-through)
 - Inject required insurance disclaimers into all pitches
@@ -107,6 +274,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Dependencies:** None (hard-coded compliance rules)
 
 **Design Decisions:**
+
 - **100% deterministic:** No LLM involvement in compliance decisions
 - **Hard-coded rules:** Prohibited phrases and disclaimers are static, not learned
 - **Block, don't sanitize:** If violations detected, entire output rejected (safer than auto-correction)
@@ -116,6 +284,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Critical Compliance Rules (Non-Standard Implementation):**
 
 **Prohibited Phrases** (case-insensitive):
+
 - "guaranteed lowest rate"
 - "we'll definitely save you"
 - "best price guaranteed"
@@ -123,6 +292,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 - "guaranteed approval"
 
 **Required Disclaimers** (appended to all pitches):
+
 - "Rates subject to underwriting and approval"
 - "Actual rates may vary based on complete application"
 - "Must be reviewed and finalized by a licensed insurance agent"
@@ -135,15 +305,18 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Provide fast, citation-tracked access to offline insurance knowledge loaded at startup.
 
 **Key Responsibilities:**
+
 - Load carrier/state JSON files at startup (async, non-blocking) into memory Maps
 - Track cuid2 IDs for citation generation
 - Provide exact key-based queries (carrier + state + product)
 - Return results with file path + cuid2 ID for every data point
 
 **Dependencies:**
+
 - Filesystem access to `knowledge_pack/` directory
 
 **Design Decisions:**
+
 - **Startup loading (async, non-blocking):** Knowledge pack loaded during initialization ensures data is immediately available for all queries, while async loading prevents blocking container startup
 - **Structured queries, not semantic search:** Known keys (carrier, state, product) make exact queries faster and more accurate than vector embeddings
 - **Citation tracking (non-standard):** cuid2-based IDs attached to every entity, enabling audit trail without line number fragility (see `docs/knowledge-pack/id-conventions.md`)
@@ -151,15 +324,16 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 - **Why no vector store:** Knowledge pack has structured keys, not free-form text requiring semantic search
 
 **Citation Format Example (Non-Standard):**
+
 ```typescript
 {
   citations: [
     {
-      id: "disc_ckm9x7wdx1",      // cuid2 ID from knowledge pack
-      type: "discount",            // Entity type (discount, carrier, eligibility, etc.)
-      carrier: "carr_ckm9x7w8k0",  // Parent carrier cuid2 ID
-      file: "knowledge_pack/carriers/geico.json"  // Source file path
-    }
+      id: 'disc_ckm9x7wdx1', // cuid2 ID from knowledge pack
+      type: 'discount', // Entity type (discount, carrier, eligibility, etc.)
+      carrier: 'carr_ckm9x7w8k0', // Parent carrier cuid2 ID
+      file: 'knowledge_pack/carriers/geico.json', // Source file path
+    },
   ]
 }
 ```
@@ -171,6 +345,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Purpose:** Coordinate agent/engine execution for conversational intake and policy analysis workflows.
 
 **Key Responsibilities:**
+
 - Execute 5-step conversational flow: Extract → Route → Discounts → Pitch → Compliance
 - Execute 5-step policy analysis flow: Parse → Route → Discounts (includes bundle analysis) → Pitch → Compliance
 - Generate decision trace for every interaction (audit logging)
@@ -180,6 +355,7 @@ This section describes the 5 core components (2 LLM Agents + 3 Deterministic Eng
 **Dependencies:** All agents and engines
 
 **Design Decisions:**
+
 - **Sequential execution:** Each step depends on previous results, no parallelization needed
 - **Decision trace generation:** Every flow produces complete audit trail for compliance log
 - **Error transformation:** Service-layer errors converted to user-friendly API errors

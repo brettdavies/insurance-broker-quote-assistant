@@ -11,6 +11,7 @@
 Multiple Phase 2 master agents run in parallel across separate processes/machines. They coordinate entirely via **GitHub** as the single source of truth.
 
 **Key Principles:**
+
 - ❌ No file locking (agents can't see each other's file system)
 - ✅ Git push conflicts are the coordination mechanism
 - ✅ Random selection reduces collision probability
@@ -161,6 +162,7 @@ T=9: Agent C picks search_789
 With N agents and M pending work items:
 
 **Collision probability per iteration:**
+
 ```
 P(collision) = 1 - ((M-1) / M)^(N-1)
 ```
@@ -168,12 +170,12 @@ P(collision) = 1 - ((M-1) / M)^(N-1)
 **Examples:**
 
 | Agents | Pending Items | Collision % |
-|--------|---------------|-------------|
-| 3 | 338 | 0.6% |
-| 5 | 338 | 1.2% |
-| 10 | 338 | 2.6% |
-| 5 | 50 | 8.0% |
-| 10 | 10 | 65.0% |
+| ------ | ------------- | ----------- |
+| 3      | 338           | 0.6%        |
+| 5      | 338           | 1.2%        |
+| 10     | 338           | 2.6%        |
+| 5      | 50            | 8.0%        |
+| 10     | 10            | 65.0%       |
 
 **Insight:** Collisions are rare when pending work >> agents
 
@@ -240,11 +242,12 @@ feat(kb): complete search_abc123 - found 42 data points
 ```
 
 **After rebase:** Git automatically merges:
+
 ```json
 {
   "searches": [
-    {"id": "search_123", "status": "claimed", "assignedTo": "agnt_A"},
-    {"id": "search_456", "status": "claimed", "assignedTo": "agnt_B"}
+    { "id": "search_123", "status": "claimed", "assignedTo": "agnt_A" },
+    { "id": "search_456", "status": "claimed", "assignedTo": "agnt_B" }
   ]
 }
 ```
@@ -263,6 +266,7 @@ feat(kb): complete search_abc123 - found 42 data points
 **After rebase:** Git detects conflict
 
 **Resolution:**
+
 1. Agent checks ownership
 2. If Agent doesn't own it: Abandon (discard local changes)
 3. If Agent owns it: Keep local changes (rare case)
@@ -272,6 +276,7 @@ feat(kb): complete search_abc123 - found 42 data points
 ## Best Practices
 
 ### DO:
+
 - ✅ Always `git pull` before claiming work
 - ✅ Commit immediately after claiming
 - ✅ Push with automatic retry (up to 3 attempts)
@@ -282,6 +287,7 @@ feat(kb): complete search_abc123 - found 42 data points
 - ✅ Include descriptive commit messages
 
 ### DON'T:
+
 - ❌ Skip `git pull` before claiming
 - ❌ Assume claim succeeded without pushing
 - ❌ Continue work after losing race
@@ -301,6 +307,7 @@ git status
 ```
 
 If uncommitted changes exist:
+
 ```bash
 git reset --hard  # Discard local changes
 git pull          # Get latest
@@ -326,6 +333,7 @@ See which agent owns which work.
 ### Reset Stuck Tracker
 
 If tracker is corrupted:
+
 ```bash
 git checkout origin/main -- knowledge-pack-scraper/search-tracker.json
 ```
@@ -353,6 +361,7 @@ sleep_between = 1 second
 ```
 
 If many collisions:
+
 ```python
 # More retries for high-collision scenarios
 max_retries = 5
@@ -389,6 +398,7 @@ git log --oneline --follow knowledge-pack-scraper/search-tracker.json
 ## Summary
 
 **Git coordination works because:**
+
 1. GitHub is single source of truth (all agents see same state after pull)
 2. Git push is atomic (only one agent succeeds per push)
 3. Automatic rebase merges non-conflicting changes
@@ -400,6 +410,7 @@ git log --oneline --follow knowledge-pack-scraper/search-tracker.json
 ---
 
 **See Also:**
+
 - 📦 [Agent Instructions](phase-2-agent-instructions.md) - Complete agent workflow
 - 🔧 [git_utils.py](../../knowledge-pack-scraper/scripts/git_utils.py) - Implementation details
 - 📊 [Tracker Schemas](sot-schemas.md) - Tracker file structures

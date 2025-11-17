@@ -1,0 +1,44 @@
+{
+  "id": "conv-05",
+  "name": "Multi-Product Inquiry - IL Auto+Home State Farm",
+  "description": "Test case for multi-product bundle inquiry - tests bundle opportunity detection",
+  "type": "conversational",
+  "carrier": "State Farm",
+  "state": "IL",
+  "product": ["auto", "home"],
+  "input": "IL bundle auto+home. 2018 Camry. Owns house built 2015. Currently has SF. Age 40. 2 vehicles. Clean record",
+  "expectedProfile": {
+    "state": "IL",
+    "productType": "auto",
+    "age": 40,
+    "vehicles": 2,
+    "ownsHome": true,
+    "yearBuilt": 2015,
+    "cleanRecord3Yr": true,
+    "currentCarrier": "State Farm",
+    "existingPolicies": [
+      {
+        "product": "home",
+        "carrier": "State Farm"
+      },
+      {
+        "product": "auto",
+        "carrier": "State Farm"
+      }
+    ]
+  },
+  "expectedRoute": {
+    "primaryCarrier": "State Farm",
+    "eligibleCarriers": ["State Farm", "GEICO", "Progressive"],
+    "confidence": 0.92,
+    "rationale": "State Farm offers both auto and home insurance in Illinois and provides bundle discounts."
+  },
+  "expectedDisclaimers": [
+    "Rates subject to underwriting and approval",
+    "Actual rates may vary based on complete application",
+    "Must be reviewed and finalized by a licensed insurance agent",
+    "Not a binding quote",
+    "Illinois: Rates are estimates only",
+    "Auto Insurance: Coverage limits and deductibles affect premium"
+  ]
+}

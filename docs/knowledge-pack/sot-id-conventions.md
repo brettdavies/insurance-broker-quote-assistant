@@ -28,15 +28,15 @@ The knowledge pack uses **cuid2** for all entity identifiers to ensure global un
 
 ### cuid2 vs Alternatives
 
-| Feature | cuid2 | UUID v4 | Sequential | Custom Pattern |
-|---------|-------|---------|------------|----------------|
-| **Global Uniqueness** | ✅ Yes | ✅ Yes | ❌ No | ⚠️ Maybe |
-| **Collision Risk** | Negligible | Negligible | High | Unknown |
-| **Length** | 10 chars | 36 chars | Variable | Variable |
-| **URL-Safe** | ✅ Yes | ⚠️ With dashes | ✅ Yes | Depends |
-| **Sortable** | ✅ Roughly | ❌ No | ✅ Yes | Depends |
-| **Human-Readable** | ⚠️ Partial | ❌ No | ✅ Yes | ✅ Yes |
-| **Setup Complexity** | Low | Low | High | Medium |
+| Feature               | cuid2      | UUID v4        | Sequential | Custom Pattern |
+| --------------------- | ---------- | -------------- | ---------- | -------------- |
+| **Global Uniqueness** | ✅ Yes     | ✅ Yes         | ❌ No      | ⚠️ Maybe       |
+| **Collision Risk**    | Negligible | Negligible     | High       | Unknown        |
+| **Length**            | 10 chars   | 36 chars       | Variable   | Variable       |
+| **URL-Safe**          | ✅ Yes     | ⚠️ With dashes | ✅ Yes     | Depends        |
+| **Sortable**          | ✅ Roughly | ❌ No          | ✅ Yes     | Depends        |
+| **Human-Readable**    | ⚠️ Partial | ❌ No          | ✅ Yes     | ✅ Yes         |
+| **Setup Complexity**  | Low        | Low            | High       | Medium         |
 
 **Decision**: cuid2 provides the best balance of uniqueness, compactness, and usability for this project.
 
@@ -55,33 +55,33 @@ bun add @paralleldrive/cuid2
 ### TypeScript/JavaScript
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
+import { createId } from '@paralleldrive/cuid2'
 
 // Generate a new ID
-const id = createId();
+const id = createId()
 // Example: "ckm9x7w8k0"
 
 // Generate multiple IDs
-const ids = Array.from({ length: 5 }, () => createId());
+const ids = Array.from({ length: 5 }, () => createId())
 // Example: ["ckm9x7w8k0", "ckm9x7wdx1", "ckm9x7whp2", ...]
 ```
 
 ### With Type Prefixes
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
+import { createId } from '@paralleldrive/cuid2'
 
 // Entity-specific ID generators
-const generateCarrierId = () => `carr_${createId()}`;
-const generateFieldId = () => `fld_${createId()}`;
-const generateConflictId = () => `conf_${createId()}`;
-const generateRawId = () => `raw_${createId()}`;
+const generateCarrierId = () => `carr_${createId()}`
+const generateFieldId = () => `fld_${createId()}`
+const generateConflictId = () => `conf_${createId()}`
+const generateRawId = () => `raw_${createId()}`
 
 // Usage
-const carrierId = generateCarrierId();
+const carrierId = generateCarrierId()
 // Example: "carr_ckm9x7w8k0"
 
-const fieldId = generateFieldId();
+const fieldId = generateFieldId()
 // Example: "fld_ckm9x7wdx1"
 ```
 
@@ -95,10 +95,11 @@ const fieldId = generateFieldId();
 **Example**: `"carr_ckm9x7w8k0"`
 
 ```typescript
-const carrierId = `carr_${createId()}`;
+const carrierId = `carr_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "_id": "carr_ckm9x7w8k0",
@@ -113,10 +114,11 @@ const carrierId = `carr_${createId()}`;
 **Example**: `"disc_ckm9x7wdx1"`
 
 ```typescript
-const discountId = `disc_${createId()}`;
+const discountId = `disc_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "_id": "disc_ckm9x7wdx1",
@@ -131,10 +133,11 @@ const discountId = `disc_${createId()}`;
 **Example**: `"fld_ckm9x7whp2"`
 
 ```typescript
-const fieldId = `fld_${createId()}`;
+const fieldId = `fld_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "_id": "fld_ckm9x7whp2",
@@ -149,10 +152,11 @@ const fieldId = `fld_${createId()}`;
 **Example**: `"conf_ckm9x7wkm3"`
 
 ```typescript
-const conflictId = `conf_${createId()}`;
+const conflictId = `conf_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "id": "conf_ckm9x7wkm3",
@@ -167,10 +171,11 @@ const conflictId = `conf_${createId()}`;
 **Example**: `"raw_ckm9x7wnp4"`
 
 ```typescript
-const rawId = `raw_${createId()}`;
+const rawId = `raw_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "id": "raw_ckm9x7wnp4",
@@ -186,10 +191,11 @@ const rawId = `raw_${createId()}`;
 **Example**: `"src_ckm9x7wqr5"`
 
 ```typescript
-const sourceId = `src_${createId()}`;
+const sourceId = `src_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "sources": {
@@ -208,10 +214,11 @@ const sourceId = `src_${createId()}`;
 **Example**: `"state_ckm9x7wtu6"`
 
 ```typescript
-const stateId = `state_${createId()}`;
+const stateId = `state_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "_id": "state_ckm9x7wtu6",
@@ -226,10 +233,11 @@ const stateId = `state_${createId()}`;
 **Example**: `"elig_ckm9x7wwx7"`
 
 ```typescript
-const eligibilityId = `elig_${createId()}`;
+const eligibilityId = `elig_${createId()}`
 ```
 
 **Usage**:
+
 ```json
 {
   "_id": "elig_ckm9x7wwx7",
@@ -244,18 +252,18 @@ const eligibilityId = `elig_${createId()}`;
 
 ## Complete ID Prefix Reference
 
-| Entity Type | Prefix | Example | Generator Function |
-|-------------|--------|---------|-------------------|
-| Carrier | `carr_` | `carr_ckm9x7w8k0` | `generateCarrierId()` |
-| Discount | `disc_` | `disc_ckm9x7wdx1` | `generateDiscountId()` |
-| Field | `fld_` | `fld_ckm9x7whp2` | `generateFieldId()` |
-| Conflict | `conf_` | `conf_ckm9x7wkm3` | `generateConflictId()` |
-| Raw Data | `raw_` | `raw_ckm9x7wnp4` | `generateRawId()` |
-| Source | `src_` | `src_ckm9x7wqr5` | `generateSourceId()` |
-| State | `state_` | `state_ckm9x7wtu6` | `generateStateId()` |
-| Eligibility | `elig_` | `elig_ckm9x7wwx7` | `generateEligibilityId()` |
-| Product | `prod_` | `prod_ckm9x7wza8` | `generateProductId()` |
-| Compliance | `comp_` | `comp_ckm9x7x2c9` | `generateComplianceId()` |
+| Entity Type | Prefix   | Example            | Generator Function        |
+| ----------- | -------- | ------------------ | ------------------------- |
+| Carrier     | `carr_`  | `carr_ckm9x7w8k0`  | `generateCarrierId()`     |
+| Discount    | `disc_`  | `disc_ckm9x7wdx1`  | `generateDiscountId()`    |
+| Field       | `fld_`   | `fld_ckm9x7whp2`   | `generateFieldId()`       |
+| Conflict    | `conf_`  | `conf_ckm9x7wkm3`  | `generateConflictId()`    |
+| Raw Data    | `raw_`   | `raw_ckm9x7wnp4`   | `generateRawId()`         |
+| Source      | `src_`   | `src_ckm9x7wqr5`   | `generateSourceId()`      |
+| State       | `state_` | `state_ckm9x7wtu6` | `generateStateId()`       |
+| Eligibility | `elig_`  | `elig_ckm9x7wwx7`  | `generateEligibilityId()` |
+| Product     | `prod_`  | `prod_ckm9x7wza8`  | `generateProductId()`     |
+| Compliance  | `comp_`  | `comp_ckm9x7x2c9`  | `generateComplianceId()`  |
 
 ---
 
@@ -266,29 +274,29 @@ const eligibilityId = `elig_${createId()}`;
 **File**: `scripts/utils/id-generator.ts`
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
+import { createId } from '@paralleldrive/cuid2'
 
 /**
  * Generate globally unique IDs for knowledge pack entities
  */
 
-export const generateCarrierId = () => `carr_${createId()}`;
-export const generateDiscountId = () => `disc_${createId()}`;
-export const generateFieldId = () => `fld_${createId()}`;
-export const generateConflictId = () => `conf_${createId()}`;
-export const generateRawId = () => `raw_${createId()}`;
-export const generateSourceId = () => `src_${createId()}`;
-export const generateStateId = () => `state_${createId()}`;
-export const generateEligibilityId = () => `elig_${createId()}`;
-export const generateProductId = () => `prod_${createId()}`;
-export const generateComplianceId = () => `comp_${createId()}`;
+export const generateCarrierId = () => `carr_${createId()}`
+export const generateDiscountId = () => `disc_${createId()}`
+export const generateFieldId = () => `fld_${createId()}`
+export const generateConflictId = () => `conf_${createId()}`
+export const generateRawId = () => `raw_${createId()}`
+export const generateSourceId = () => `src_${createId()}`
+export const generateStateId = () => `state_${createId()}`
+export const generateEligibilityId = () => `elig_${createId()}`
+export const generateProductId = () => `prod_${createId()}`
+export const generateComplianceId = () => `comp_${createId()}`
 
 /**
  * Extract prefix from ID
  */
 export function getIdPrefix(id: string): string | null {
-  const match = id.match(/^([a-z]+)_/);
-  return match ? match[1] : null;
+  const match = id.match(/^([a-z]+)_/)
+  return match ? match[1] : null
 }
 
 /**
@@ -296,14 +304,14 @@ export function getIdPrefix(id: string): string | null {
  */
 export function isValidId(id: string): boolean {
   // Pattern: {prefix}_{10-char-cuid2}
-  return /^[a-z]+_[a-z0-9]{10}$/.test(id);
+  return /^[a-z]+_[a-z0-9]{10}$/.test(id)
 }
 
 /**
  * Get entity type from ID
  */
 export function getEntityType(id: string): string | null {
-  const prefix = getIdPrefix(id);
+  const prefix = getIdPrefix(id)
   const prefixMap: Record<string, string> = {
     carr: 'carrier',
     disc: 'discount',
@@ -314,9 +322,9 @@ export function getEntityType(id: string): string | null {
     state: 'state',
     elig: 'eligibility',
     prod: 'product',
-    comp: 'compliance'
-  };
-  return prefix ? prefixMap[prefix] || null : null;
+    comp: 'compliance',
+  }
+  return prefix ? prefixMap[prefix] || null : null
 }
 ```
 
@@ -325,26 +333,26 @@ export function getEntityType(id: string): string | null {
 **File**: `scripts/01-scrape-carriers.ts`
 
 ```typescript
-import { generateRawId, generateSourceId } from './utils/id-generator';
+import { generateRawId, generateSourceId } from './utils/id-generator'
 
 // Scrape GEICO discount data
 const rawDataEntry = {
-  id: generateRawId(),              // "raw_ckm9x7wnp4"
-  dataPoint: "geico_multi_policy_discount_percentage",
-  rawValue: "Save up to 15%",
+  id: generateRawId(), // "raw_ckm9x7wnp4"
+  dataPoint: 'geico_multi_policy_discount_percentage',
+  rawValue: 'Save up to 15%',
   normalizedValue: 15,
   source: {
-    id: generateSourceId(),          // "src_ckm9x7wqr5"
-    uri: "https://www.geico.com/auto/discounts/",
-    elementRef: "div.discount-card > p.percentage",
-    accessedDate: "2025-11-05T10:30:00Z",
-    extractionMethod: "manual",
-    confidence: "high"
-  }
-};
+    id: generateSourceId(), // "src_ckm9x7wqr5"
+    uri: 'https://www.geico.com/auto/discounts/',
+    elementRef: 'div.discount-card > p.percentage',
+    accessedDate: '2025-11-05T10:30:00Z',
+    extractionMethod: 'manual',
+    confidence: 'high',
+  },
+}
 
 // Save to raw file
-await saveRawData('geico/discounts_auto.raw.json', rawDataEntry);
+await saveRawData('geico/discounts_auto.raw.json', rawDataEntry)
 ```
 
 ### 3. Using ID Generators in Clean Data Assembly
@@ -399,78 +407,68 @@ await saveCarrierData('carriers/geico.json', geicoData);
 function validateId(id: string, expectedPrefix?: string): boolean {
   // Check basic format: prefix_10chars
   if (!/^[a-z]+_[a-z0-9]{10}$/.test(id)) {
-    return false;
+    return false
   }
 
   // Check expected prefix if provided
   if (expectedPrefix) {
-    const prefix = id.split('_')[0];
+    const prefix = id.split('_')[0]
     if (prefix !== expectedPrefix) {
-      return false;
+      return false
     }
   }
 
-  return true;
+  return true
 }
 
 // Examples
-validateId("carr_ckm9x7w8k0");                    // true
-validateId("carr_ckm9x7w8k0", "carr");             // true
-validateId("invalid");                             // false
-validateId("carr_short");                          // false
-validateId("carr_ckm9x7w8k0", "disc");             // false
+validateId('carr_ckm9x7w8k0') // true
+validateId('carr_ckm9x7w8k0', 'carr') // true
+validateId('invalid') // false
+validateId('carr_short') // false
+validateId('carr_ckm9x7w8k0', 'disc') // false
 ```
 
 ### Uniqueness Validation
 
 ```typescript
 function ensureUnique(ids: string[]): boolean {
-  const uniqueIds = new Set(ids);
-  return uniqueIds.size === ids.length;
+  const uniqueIds = new Set(ids)
+  return uniqueIds.size === ids.length
 }
 
 // Example
-const allIds = [
-  "carr_ckm9x7w8k0",
-  "disc_ckm9x7wdx1",
-  "fld_ckm9x7whp2"
-];
+const allIds = ['carr_ckm9x7w8k0', 'disc_ckm9x7wdx1', 'fld_ckm9x7whp2']
 
-ensureUnique(allIds);  // true
+ensureUnique(allIds) // true
 
 // With duplicate
 const duplicatedIds = [
-  "carr_ckm9x7w8k0",
-  "carr_ckm9x7w8k0"   // Duplicate!
-];
+  'carr_ckm9x7w8k0',
+  'carr_ckm9x7w8k0', // Duplicate!
+]
 
-ensureUnique(duplicatedIds);  // false
+ensureUnique(duplicatedIds) // false
 ```
 
 ### Cross-Reference Validation
 
 ```typescript
-function validateCrossReference(
-  id: string,
-  knownIds: Set<string>
-): boolean {
-  return knownIds.has(id);
+function validateCrossReference(id: string, knownIds: Set<string>): boolean {
+  return knownIds.has(id)
 }
 
 // Example
-const knownIds = new Set([
-  "carr_ckm9x7w8k0",
-  "fld_ckm9x7whp2"
-]);
+const knownIds = new Set(['carr_ckm9x7w8k0', 'fld_ckm9x7whp2'])
 
 // Validate inheritance reference
 const field = {
-  _id: "fld_ckm9x7wkm3",
+  _id: 'fld_ckm9x7wkm3',
   _sources: [],
-  _inheritedFrom: "fld_ckm9x7whp2"
-};
+  _inheritedFrom: 'fld_ckm9x7whp2',
+}
 
-validateCrossReference(field._inheritedFrom, knownIds);  // true
+validateCrossReference(field._inheritedFrom, knownIds) // true
 ```
 
 ---
@@ -481,31 +479,31 @@ validateCrossReference(field._inheritedFrom, knownIds);  // true
 
 ```typescript
 interface IdGenerationLog {
-  id: string;
-  prefix: string;
-  entityType: string;
-  generatedAt: string;
-  generatedBy: string;  // script name or user
+  id: string
+  prefix: string
+  entityType: string
+  generatedAt: string
+  generatedBy: string // script name or user
 }
 
-const idLog: IdGenerationLog[] = [];
+const idLog: IdGenerationLog[] = []
 
 function logIdGeneration(id: string, context: string): void {
-  const prefix = getIdPrefix(id);
-  const entityType = getEntityType(id);
+  const prefix = getIdPrefix(id)
+  const entityType = getEntityType(id)
 
   idLog.push({
     id,
     prefix: prefix || 'unknown',
     entityType: entityType || 'unknown',
     generatedAt: new Date().toISOString(),
-    generatedBy: context
-  });
+    generatedBy: context,
+  })
 }
 
 // Usage
-const carrierId = generateCarrierId();
-logIdGeneration(carrierId, 'scrape-carriers.ts');
+const carrierId = generateCarrierId()
+logIdGeneration(carrierId, 'scrape-carriers.ts')
 ```
 
 ### ID Lineage in Audit Trail
@@ -541,42 +539,42 @@ If existing data uses sequential IDs (e.g., `field-001`), migrate as follows:
 ### Migration Script
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
-import { generateFieldId } from './utils/id-generator';
+import { createId } from '@paralleldrive/cuid2'
+import { generateFieldId } from './utils/id-generator'
 
 interface MigrationMapping {
-  oldId: string;
-  newId: string;
+  oldId: string
+  newId: string
 }
 
-const idMappings: MigrationMapping[] = [];
+const idMappings: MigrationMapping[] = []
 
 function migrateId(oldId: string): string {
   // Check if already migrated
-  const existing = idMappings.find(m => m.oldId === oldId);
+  const existing = idMappings.find((m) => m.oldId === oldId)
   if (existing) {
-    return existing.newId;
+    return existing.newId
   }
 
   // Extract prefix from old ID
-  const prefixMatch = oldId.match(/^([a-z]+)-/);
-  const prefix = prefixMatch ? prefixMatch[1] : 'fld';
+  const prefixMatch = oldId.match(/^([a-z]+)-/)
+  const prefix = prefixMatch ? prefixMatch[1] : 'fld'
 
   // Generate new ID with appropriate prefix
-  const newId = `${prefix}_${createId()}`;
+  const newId = `${prefix}_${createId()}`
 
   // Store mapping
-  idMappings.push({ oldId, newId });
+  idMappings.push({ oldId, newId })
 
-  return newId;
+  return newId
 }
 
 // Usage
-const oldIds = ["fld_cm6f0g2p4u", "fld_cm7g1h3q5v", "carrier-geico-001"];
-const newIds = oldIds.map(migrateId);
+const oldIds = ['fld_cm6f0g2p4u', 'fld_cm7g1h3q5v', 'carrier-geico-001']
+const newIds = oldIds.map(migrateId)
 
 // Save mapping for reference
-await saveMigrationMapping('id-migration.json', idMappings);
+await saveMigrationMapping('id-migration.json', idMappings)
 ```
 
 ---
@@ -623,20 +621,21 @@ bun add @paralleldrive/cuid2
 ### Quick Reference
 
 ```typescript
-import { createId } from '@paralleldrive/cuid2';
+import { createId } from '@paralleldrive/cuid2'
 
 // Generate IDs
-const id = createId();                        // "ckm9x7w8k0"
-const carrierId = `carr_${createId()}`;      // "carr_ckm9x7w8k0"
-const fieldId = `fld_${createId()}`;         // "fld_ckm9x7whp2"
+const id = createId() // "ckm9x7w8k0"
+const carrierId = `carr_${createId()}` // "carr_ckm9x7w8k0"
+const fieldId = `fld_${createId()}` // "fld_ckm9x7whp2"
 
 // Validate
-const isValid = /^[a-z]+_[a-z0-9]{10}$/.test(id);  // true/false
+const isValid = /^[a-z]+_[a-z0-9]{10}$/.test(id) // true/false
 ```
 
 ---
 
 **See Also:**
+
 - 📖 [Schemas Using IDs](sot-schemas.md#field-metadata-envelope) - How IDs appear in data structures
 - 🔗 [Phase 2 Agent Workflow](phase-2-agent-instructions.md#step-2-generate-unique-ids) - ID generation in practice
 - 📊 [Complete Examples](knowledge-pack-examples.md) - See IDs used in real data transformations

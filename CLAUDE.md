@@ -3,24 +3,34 @@
 ## CLI Tool Usage Guidance
 
 - **Prefer CLI tools** over direct in-memory manipulation when possible, especially for editing or searching within larger files or across the codebase.
-    - Examples: Use `sed`, `awk`, or in-place editing CLI utilities for modifying files; use code-aware tools (`ast-grep`) for refactoring.
-- **For file deletion,** do NOT use `rm` or `git rm`.  
-    - Instead, use [`trash`](https://github.com/sindresorhus/trash) to safely move files to the system trash, preserving the ability to recover accidentally deleted files.
+  - Examples: Use `sed`, `awk`, or in-place editing CLI utilities for modifying files; use code-aware tools (`ast-grep`) for refactoring.
+- **For file deletion,** do NOT use `rm` or `git rm`.
+  - Instead, use [`trash`](https://github.com/sindresorhus/trash) to safely move files to the system trash, preserving the ability to recover accidentally deleted files.
 - **For code search:**
-    - Always use [`rg` (ripgrep)](https://github.com/BurntSushi/ripgrep) instead of `grep` for fast recursive search.
-    - [`ast-grep`](https://ast-grep.github.io/) is also available for powerful, syntax-aware, high-performance codebase traversal.
+  - Always use [`rg` (ripgrep)](https://github.com/BurntSushi/ripgrep) instead of `grep` for fast recursive search.
+  - [`ast-grep`](https://ast-grep.github.io/) is also available for powerful, syntax-aware, high-performance codebase traversal.
 - When uncertain what CLI tools are available on the system, first run:
-    ```bash
-    brew list
-    ```
-    to enumerate all installed Homebrew tools. If your desired CLI tool is not listed, or you encounter a "command not found" error, ask the user to install the necessary tool before continuing.
+  ```bash
+  brew list
+  ```
+  to enumerate all installed Homebrew tools. If your desired CLI tool is not listed, or you encounter a "command not found" error, ask the user to install the necessary tool before continuing.
 - **Summary:** Use CLI-oriented, scriptable approaches for repetitive or large-scale file/codebase operations. Prefer code-aware tools for search/replace and avoid destructive deletions. If a needed tool is missing, request that the user install it before attempting the operation.
 
 ## Core Coding Principles
 
 - **DRY (Don't Repeat Yourself):** Avoid duplicating logic or data; abstract and reuse code where possible.
 - **STAR (Single Truth, Authoritative Record):** Ensure shared types, constants, and config live in a single place; always import, never duplicate.
+- **SRP (Single Responsibility Principle):** Each module, class, or function should have exactly one responsibility or reason to change.
+- **OCP (Open/Closed Principle):** Code entities should be open for extension but closed for modification.
+- **SOLID (Object-Oriented Design Principles):**
+  - **S**ingle Responsibility: Each module/class has only one reason to change.
+  - **O**pen/Closed: Code is open for extension, closed for modification.
+  - **L**iskov Substitution: Types are replaceable by their subtypes without correctness errors.
+  - **I**nterface Segregation: Prefer many small, focused interfaces to large, generic ones.
+  - **D**ependency Inversion: Rely on abstractions, not concrete implementations.
 - **ACID (Atomic, Consistent, Isolated, Durable) for Data:** Treat every state change and file update as atomic—leave no chance for partial or inconsistent writes.
+- **KISS (Keep It Simple, Stupid):** Prioritize simplicity in code and design; avoid unnecessary complexity.
+- **YAGNI (You Aren't Gonna Need It):** Don't add features or abstractions until they are necessary.
 - **Fail Fast:** Catch missing environment variables or invalid states at startup whenever possible.
 - **Explicit is Better:** Prefer clear, type-safe code and explicit imports over magic or implicit behaviors.
 
@@ -28,7 +38,7 @@ See [Coding Standards](./docs/architecture/17-coding-standards.md) for full deta
 
 ## Project Overview
 
-**IQuote Pro** is a 5-day PEAK6 interview project demonstrating a multi-agent AI assistant for insurance brokers. The system uses a **hybrid LLM + deterministic rules architecture**:
+**IQuote Pro** is a 5-day interview project demonstrating a multi-agent AI assistant for insurance brokers. The system uses a **hybrid LLM + deterministic rules architecture**:
 
 - **2 LLM Agents:** Conversational Extractor (field extraction) + Pitch Generator (recommendations)
 - **3 Rules Engines:** Routing (carrier eligibility) + Discount (savings) + Compliance (regulatory guardrails)
@@ -60,19 +70,22 @@ bun run lint
 ## Key Architecture References
 
 **Essential Reading:**
+
 - **[Architecture Index](./docs/architecture/index.md)** - Complete table of contents
 - **[High-Level Architecture](./docs/architecture/2-high-level-architecture.md#21-technical-summary)** - Hybrid LLM+rules system overview
 - **[Repository Structure](./docs/architecture/2-high-level-architecture.md#23-repository-structure)** - Monorepo layout (apps/web, apps/api, packages/shared)
 - **[Tech Stack](./docs/architecture/3-tech-stack.md#31-technology-stack-table)** - React + TanStack + Hono + TypeScript + Bun
 - **[Development Workflow](./docs/architecture/13-development-workflow.md#131-development-tools)** - Commands and environment setup
 - **[Coding Standards](./docs/architecture/17-coding-standards.md#171-critical-architectural-rules)** - Critical rules for development
-- **[Success Criteria](./docs/architecture/20-success-criteria-and-evaluation.md#201-peak6-requirements-mapping)** - PEAK6 evaluation metrics
+- **[Success Criteria](./docs/architecture/20-success-criteria-and-evaluation.md#201-requirements-mapping)** - Evaluation metrics
 
 **Core Workflows:**
+
 - **[Conversational Intake Flow](./docs/architecture/8-core-workflows.md#81-conversational-intake-flow)** - Extract → Route → Discounts → Pitch → Compliance
 - **[Policy Analysis Flow](./docs/architecture/8-core-workflows.md#82-policy-analysis-flow)** - Parse → Route → Discounts → Bundles → Pitch → Compliance
 
 **Critical Implementation Details:**
+
 - **[Data Models](./docs/architecture/4-data-models.md)** - UserProfile, Carrier, Opportunity, IntakeResult, PolicyAnalysisResult
 - **[API Specification](./docs/architecture/5-api-specification.md#51-core-endpoints)** - POST /api/intake, POST /api/policy/analyze
 - **[Components](./docs/architecture/6-components.md)** - LLM agents, rules engines, knowledge pack RAG, orchestrator
@@ -83,6 +96,7 @@ bun run lint
 **Must read before coding:** [Section 17.1 - Critical Architectural Rules](./docs/architecture/17-coding-standards.md#171-critical-architectural-rules)
 
 **Top 5 Rules:**
+
 1. **Type Sharing:** Always define types in `packages/shared/src/types`, import via `@repo/shared`
 2. **Compliance Filter:** Run on ALL user-facing outputs (100% enforcement, no exceptions)
 3. **Citations Required:** Every discount/opportunity must include cuid2-based citation
@@ -90,6 +104,7 @@ bun run lint
 5. **LLM Usage:** Always log token usage, use structured outputs (JSON mode) for extraction
 
 **See also:**
+
 - [Naming Conventions](./docs/architecture/17-coding-standards.md#172-naming-conventions)
 - [Implementation Guidance](./docs/architecture/17-coding-standards.md#173-implementation-guidance)
 
@@ -177,16 +192,21 @@ TanStack Query DevTools provides real-time visualization of queries, mutations, 
 ### Installation
 
 ```bash
+# Install unified TanStack DevTools (includes core + React adapter)
+bun add -d @tanstack/react-devtools
+
+# Install Query DevTools panel plugin
 bun add -d @tanstack/react-query-devtools
 ```
 
-### Setup (Floating Mode - Recommended)
+### Setup (Unified DevTools - Recommended)
 
-Add to your main app component (as high as possible in the component tree):
+TanStack DevTools uses a unified panel that can compose multiple devtools (Query, Router, Form, etc.). Add to your main app component (as high as possible in the component tree):
 
 ```typescript
 // apps/web/src/main.tsx
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { TanStackDevtools } from '@tanstack/react-devtools'
+import { ReactQueryDevtoolsPanel } from '@tanstack/react-query-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const queryClient = new QueryClient()
@@ -195,15 +215,26 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Your app components */}
-      <ReactQueryDevtools
-        initialIsOpen={false}
-        buttonPosition="bottom-right"
-        position="bottom"
+      <TanStackDevtools
+        plugins={[
+          {
+            name: 'TanStack Query',
+            render: <ReactQueryDevtoolsPanel />,
+          },
+          // Add more plugins as needed (Router, Form, etc.)
+        ]}
       />
     </QueryClientProvider>
   )
 }
 ```
+
+**Benefits of Unified DevTools:**
+
+- Single panel for all TanStack libraries (Query, Router, Form, etc.)
+- Easy to add Router devtools when needed
+- Consistent UI across all TanStack tools
+- Composable architecture for future devtools
 
 **Note:** DevTools are automatically excluded from production builds when `process.env.NODE_ENV === 'production'`.
 
@@ -237,6 +268,7 @@ function App() {
 ### Common Troubleshooting Workflows
 
 **1. API Call Not Triggering**
+
 ```bash
 # Steps to debug:
 # 1. Open TanStack Query DevTools (click button in bottom-right)
@@ -246,6 +278,7 @@ function App() {
 ```
 
 **2. Stale Data Displayed**
+
 ```bash
 # Steps to debug:
 # 1. Open DevTools and find the query
@@ -255,6 +288,7 @@ function App() {
 ```
 
 **3. Mutation Not Updating UI**
+
 ```bash
 # Steps to debug:
 # 1. Open DevTools mutations panel
@@ -264,6 +298,7 @@ function App() {
 ```
 
 **4. Infinite Refetch Loop**
+
 ```bash
 # Steps to debug:
 # 1. Open DevTools and monitor query timeline
@@ -283,6 +318,7 @@ When using the Chrome DevTools MCP server, AI agents can:
 5. **Monitor network requests** alongside query state
 
 **Example AI Agent Workflow:**
+
 ```bash
 # AI agent can automate this troubleshooting flow:
 # 1. Navigate to page with issue

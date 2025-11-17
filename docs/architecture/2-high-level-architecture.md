@@ -4,25 +4,27 @@
 
 This application uses a **hybrid architecture** combining LLM agents for natural language processing with deterministic rules engines for compliance-critical business logic. The system is deployed as a monorepo containing a Hono-based API backend and a React frontend with TanStack tooling.
 
-The architecture satisfies PEAK6's "multi-agent preferred" requirement through 2 LLM Agents (Conversational Extractor + Pitch Generator) working in concert with 3 Deterministic Rules Engines (Routing + Discount + Compliance). All insurance knowledge is served from a local JSON-based knowledge pack loaded at startup (async, non-blocking), with structured RAG queries for retrieval and cuid2-based citation tracking for auditability.
+The architecture satisfies the "multi-agent preferred" requirement through 2 LLM Agents (Conversational Extractor + Pitch Generator) working in concert with 3 Deterministic Rules Engines (Routing + Discount + Compliance). All insurance knowledge is served from a local JSON-based knowledge pack loaded at startup (async, non-blocking), with structured RAG queries for retrieval and cuid2-based citation tracking for auditability.
 
 The frontend provides two distinct user flows: "Get Quote" (conversational intake) and "Analyze Policy" (savings identification), both feeding into the same backend orchestration layer. The system achieves insurance compliance through hard-coded prohibited statement filters and mandatory disclaimer injection, ensuring 100% regulatory adherence.
 
 ## 2.2 Platform and Infrastructure Choice
 
-**Platform:** Local Development / Cloud Agnostic (Deployment TBD based on PEAK6 feedback)
+**Platform:** Local Development / Cloud Agnostic (Deployment TBD based on client feedback)
 
 **Key Services:**
-- **Compute:** Node.js runtime for Hono API server
-- **LLM API:** OpenAI GPT-4o-mini (extraction), GPT-4o (pitch generation)
-- **Storage:** Local filesystem for knowledge pack JSON files
+
+- **Compute:** Bun runtime for Hono API server (development) / Node.js or Bun (production)
+- **LLM API:** Google Gemini 2.5 Flash Lite (extraction and pitch generation)
+- **Storage:** Local filesystem for knowledge pack JSON files (loaded at startup, in-memory Maps)
 - **Frontend Hosting:** Static deployment (Vercel/Netlify/Cloudflare Pages candidates)
 
 **Deployment Host and Regions:**
-- Development: Local (http://localhost:3000 frontend, http://localhost:7070 API)
-- Production: TBD - architecture supports serverless (Vercel/Cloudflare Workers) or containerized (Docker/Railway) deployment
 
-**Rationale:** Cloud-agnostic design allows PEAK6 to deploy on their preferred infrastructure. The knowledge pack architecture (local files) means zero external dependencies at runtime except LLM API calls for text processing.
+- Development: Local (http://localhost:3000 frontend, http://localhost:7070 API) - Bun hot reload
+- Production: TBD - architecture supports serverless (Vercel/Cloudflare Workers) or containerized (Docker/Fly.io/Railway) deployment
+
+**Rationale:** Cloud-agnostic design allows for deployment on preferred infrastructure. The knowledge pack architecture (local files loaded at startup) means zero external dependencies at runtime except LLM API calls for text processing.
 
 ## 2.3 Repository Structure
 
@@ -31,6 +33,7 @@ The frontend provides two distinct user flows: "Get Quote" (conversational intak
 **Monorepo Tool:** Bun workspaces (native Bun, zero additional tooling)
 
 **Package Organization:**
+
 ```
 apps/
   web/          - Frontend React application
@@ -84,7 +87,7 @@ graph TB
     end
 
     KP[(Knowledge Pack<br/>JSON Files<br/>Loaded at Startup)]
-    LLM_API[OpenAI API<br/>GPT-4o/GPT-4o-mini]
+    LLM_API[Google Gemini API<br/>Gemini 2.5 Flash Lite]
     ProgramLog[logs/program.log]
     ComplianceLog[logs/compliance.log]
 
