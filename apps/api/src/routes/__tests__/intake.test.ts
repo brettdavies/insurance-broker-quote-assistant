@@ -1,6 +1,7 @@
-import { beforeEach, describe, expect, it } from 'bun:test'
+import { beforeAll, beforeEach, describe, expect, it } from 'bun:test'
 import { Hono } from 'hono'
 import { ConversationalExtractor } from '../../services/conversational-extractor'
+import { loadDisclaimers } from '../../services/disclaimers-loader'
 import type { LLMProvider } from '../../services/llm-provider'
 import { createIntakeRoute } from '../intake'
 
@@ -24,6 +25,11 @@ const createMockLLMProvider = (): LLMProvider => {
 describe('POST /api/intake', () => {
   let app: Hono
   let extractor: ConversationalExtractor
+
+  beforeAll(async () => {
+    // Load disclaimers for compliance filter tests
+    await loadDisclaimers()
+  })
 
   beforeEach(() => {
     const mockLLMProvider = createMockLLMProvider()

@@ -199,7 +199,8 @@ export class ConversationalExtractor {
       }
 
       // Merge with passed-in known/inferred/suppressed fields
-      const mergedKnownFields = { ...knownFields, ...extractedKnownFields }
+      // Known fields take precedence over extracted fields (known fields are broker-set and should never be overwritten)
+      const mergedKnownFields = { ...extractedKnownFields, ...knownFields }
       const mergedInferredFields = { ...inferredFields, ...extractedInferredFieldsMap }
       const mergedSuppressedFields = [...(suppressedFields || []), ...extractedSuppressedFields]
 
@@ -216,14 +217,15 @@ export class ConversationalExtractor {
       // Step 2: Check if we need LLM (if no remaining text or we have enough fields)
       if (remainingText.trim().length === 0) {
         // All patterns extracted, no need for LLM
+        // Merge deterministic profile with known fields (known fields take precedence)
+        const finalProfile = { ...deterministicProfile, ...mergedKnownFields }
         return {
-          profile: deterministicProfile,
-          known: deterministicProfile,
+          profile: finalProfile,
+          known: mergedKnownFields,
+          inferred: mergedInferredFields,
           extractionMethod: 'key-value',
-          confidence: Object.fromEntries(
-            Object.keys(deterministicProfile).map((key) => [key, 1.0])
-          ),
-          missingFields: this.calculateMissingFields(deterministicProfile),
+          confidence: Object.fromEntries(Object.keys(finalProfile).map((key) => [key, 1.0])),
+          missingFields: this.calculateMissingFields(finalProfile),
         }
       }
 
@@ -291,15 +293,25 @@ export class ConversationalExtractor {
       // Convert final fields to profile
       const finalProfile = this.normalizedFieldsToProfile(currentFields)
 
+      // Merge final profile with known fields (known fields take precedence)
+      const mergedFinalProfile = { ...finalProfile, ...mergedKnownFields }
+
       // Return combined result
+      // Use llmResult.known and llmResult.inferred to preserve known/inferred separation
+      // But merge with mergedKnownFields to ensure known fields are never overwritten
+      const finalKnownFields = { ...llmResult.known, ...mergedKnownFields }
+      const finalInferredFields = llmResult.inferred || {}
+
       return {
-        profile: finalProfile,
-        known: finalProfile,
+        profile: mergedFinalProfile,
+        known: finalKnownFields,
+        inferred: finalInferredFields,
         extractionMethod: 'llm',
         confidence: llmResult.confidence,
-        missingFields: this.calculateMissingFields(finalProfile),
+        missingFields: this.calculateMissingFields(mergedFinalProfile),
         reasoning: llmResult.reasoning,
         tokenUsage: llmResult.tokenUsage,
+        inferenceReasons: llmResult.inferenceReasons,
       }
     } catch (error) {
       // Log error but return partial result (graceful degradation)

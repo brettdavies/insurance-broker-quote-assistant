@@ -23,7 +23,14 @@ import { render } from '@testing-library/react'
 import { UnifiedChatInterface } from '../../intake/UnifiedChatInterface'
 
 // Mock the API client
-const mockPolicyUpload = vi.fn()
+const mockPolicyUpload = vi.fn() as ReturnType<typeof vi.fn> & {
+  mock: {
+    calls: unknown[][]
+    results: Array<{ type: 'return' | 'throw'; value: unknown }>
+    resolvedValue: (value: unknown) => void
+  }
+  mockResolvedValue: (value: unknown) => void
+}
 vi.mock('@/lib/api-client', () => {
   return {
     api: {

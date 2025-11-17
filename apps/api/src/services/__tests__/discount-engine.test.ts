@@ -47,6 +47,12 @@ describe('Discount Engine Integration', () => {
     // They will call getCarrierByName (which we mocked above) and use getFieldValue
   }
 
+  beforeEach(() => {
+    // Clear any existing mocks before each test
+    ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+  })
+
   afterEach(() => {
     // Restore original implementations
     ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()

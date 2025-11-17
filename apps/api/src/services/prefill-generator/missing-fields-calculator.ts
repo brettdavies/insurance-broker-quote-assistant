@@ -6,7 +6,7 @@
  */
 
 import type { MissingField, UserProfile } from '@repo/shared'
-import { checkRequiredFields, isFieldMissing } from '@repo/shared'
+import { checkRequiredFields, isFieldMissing, unifiedFieldMetadata } from '@repo/shared'
 import {
   getCarrierFieldRequirements,
   getProductFieldRequirements,
@@ -106,4 +106,58 @@ export function getMissingFields(
   }
 
   return missing
+}
+
+/**
+ * Get all required fields for a product type (not just missing ones)
+ *
+ * Used for completeness calculation - returns all fields that are required
+ * for the given product/state/carrier combination, regardless of whether
+ * they're present in the profile.
+ *
+ * @param productType - Product type
+ * @param state - Optional state code
+ * @param carrier - Optional carrier name
+ * @returns Array of all required field names
+ */
+export function getAllRequiredFields(
+  productType?: string,
+  state?: string,
+  carrier?: string
+): string[] {
+  const requiredFields = new Set<string>()
+  const product = productType || undefined
+  const stateCode = state || undefined
+
+  // Get base required fields for all products
+  // Only include state and productType as always-required for completeness calculation
+  // (name, email, phone, zip are required for prefill but not for routing/completeness)
+  requiredFields.add('state')
+  requiredFields.add('productType')
+
+  // Get product-specific required fields from knowledge pack
+  if (product) {
+    const productRequirements = getProductFieldRequirements(product)
+    for (const req of productRequirements) {
+      requiredFields.add(req.field)
+    }
+  }
+
+  // Add carrier-specific requirements if carrier is known
+  if (carrier && product) {
+    const carrierRequirements = getCarrierFieldRequirements(carrier, product, stateCode)
+    for (const req of carrierRequirements) {
+      requiredFields.add(req.field)
+    }
+  }
+
+  // Add state-specific requirements if state is known
+  if (stateCode && product) {
+    const stateRequirements = getStateFieldRequirements(stateCode, product)
+    for (const req of stateRequirements) {
+      requiredFields.add(req.field)
+    }
+  }
+
+  return Array.from(requiredFields)
 }

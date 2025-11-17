@@ -11,6 +11,7 @@
 import { describe, expect, it } from 'bun:test'
 import type { UserProfile } from '@repo/shared'
 import { getMissingFields } from '../../services/prefill-generator'
+import { getAllRequiredFields } from '../../services/prefill-generator/missing-fields-calculator'
 
 /**
  * Calculate intake completeness percentage
@@ -27,19 +28,22 @@ function calculateCompleteness(
   state?: string,
   carrier?: string
 ): number {
-  const missing = getMissingFields(profile, productType, state, carrier)
+  // Get all required fields for this product/state/carrier combination
+  const allRequiredFields = getAllRequiredFields(
+    productType || profile.productType || undefined,
+    state || profile.state || undefined,
+    carrier
+  )
 
-  // Calculate total required fields: captured + missing
-  const capturedCount = Object.keys(profile).filter((key) => {
-    const value = profile[key as keyof UserProfile]
+  if (allRequiredFields.length === 0) return 100
+
+  // Count how many required fields are present in the profile
+  const presentCount = allRequiredFields.filter((fieldName) => {
+    const value = profile[fieldName as keyof UserProfile]
     return value !== undefined && value !== null && value !== ''
   }).length
 
-  const totalRequired = capturedCount + missing.length
-
-  if (totalRequired === 0) return 100
-
-  return Math.round((capturedCount / totalRequired) * 100)
+  return Math.round((presentCount / allRequiredFields.length) * 100)
 }
 
 describe('Intake Completeness Evaluation Harness', () => {

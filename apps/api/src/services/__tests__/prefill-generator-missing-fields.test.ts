@@ -8,6 +8,7 @@
  */
 
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
+import { join } from 'node:path'
 import type { UserProfile } from '@repo/shared'
 import {
   createTestCarrier,
@@ -18,6 +19,8 @@ import {
   cleanupTestKnowledgePack,
   setupTestKnowledgePack,
 } from '../../__tests__/helpers/knowledge-pack-test-setup'
+import { loadKnowledgePack } from '../knowledge-pack-loader'
+import * as knowledgePackRAG from '../knowledge-pack-rag'
 import { getMissingFields } from '../prefill-generator'
 
 describe('getMissingFields - Product-Specific Requirements', () => {
@@ -159,6 +162,11 @@ describe('getMissingFields - Product-Specific Requirements', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 30, // Always required
+      name: 'John Doe', // Always required
+      email: 'john@example.com', // Always required
+      phone: '555-1234', // Always required
+      zip: '90210', // Always required
       vehicles: 2,
       drivers: 1,
       vins: 'ABC123',
@@ -276,6 +284,17 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
       }
     }
 
+    // Clear any mocks that might be active from other tests
+    ;(knowledgePackRAG.getCarrierByName as any).mockRestore?.()
+    ;(knowledgePackRAG.getCarrierBundleDiscounts as any).mockRestore?.()
+
+    // Reload the real knowledge pack to ensure clean state
+    const projectRoot = process.cwd().includes('apps/api')
+      ? join(process.cwd(), '..', '..')
+      : process.cwd()
+    const realKnowledgePackDir = join(projectRoot, 'knowledge_pack')
+    await loadKnowledgePack(realKnowledgePackDir)
+
     await setupTestKnowledgePack({
       products: [
         createTestProduct('auto', 'Auto Insurance', [
@@ -313,11 +332,13 @@ describe('getMissingFields - Carrier-Specific Requirements', () => {
       productType: 'auto',
       vehicles: 2,
       drivers: 1,
-      // Missing age (carrier-specific important)
+      // Missing age (always required as critical, but carrier also requires it)
     }
 
     const missing = getMissingFields(profile, 'auto', 'CA', 'TestCarrier')
-    expect(missing.some((f) => f.field === 'age' && f.priority === 'important')).toBe(true)
+    // Age is always required (critical), so it should be in missing list with critical priority
+    // The carrier requirement for age doesn't override the always-required critical priority
+    expect(missing.some((f) => f.field === 'age' && f.priority === 'critical')).toBe(true)
   })
 
   it('should add carrier-specific important requirements (creditScore)', () => {

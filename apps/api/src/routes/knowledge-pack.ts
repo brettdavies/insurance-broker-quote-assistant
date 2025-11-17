@@ -72,15 +72,17 @@ export function createKnowledgePackRoute(): Hono {
   route.get('/api/carriers/:name/products', (c) => {
     const name = c.req.param('name')
     // getCarrierProducts uses getCarrierByName which is case-insensitive
-    const products = getCarrierProducts(name)
     const carrier = getCarrierByName(name)
 
-    if (products.length === 0 && !carrier) {
+    // Return 404 if carrier doesn't exist (regardless of products)
+    if (!carrier) {
       return c.json({ error: 'Carrier not found' }, 404)
     }
 
+    const products = getCarrierProducts(name)
+
     return c.json({
-      carrier: carrier?.name || name, // Return actual carrier name from knowledge pack
+      carrier: carrier.name, // Return actual carrier name from knowledge pack
       products,
       count: products.length,
     })

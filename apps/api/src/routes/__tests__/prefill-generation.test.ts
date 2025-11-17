@@ -21,6 +21,7 @@ describe('POST /api/generate-prefill', () => {
       phone: '555-1234',
       state: 'CA',
       productType: 'auto',
+      age: 35,
       vehicles: 2,
       drivers: 1,
     }
@@ -58,6 +59,7 @@ describe('POST /api/generate-prefill', () => {
       phone: '555-5678',
       state: 'CA',
       productType: 'auto',
+      age: 30,
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -80,6 +82,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 28,
       vehicles: 1,
     }
 
@@ -104,6 +107,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 32,
       // Missing vehicles and drivers (critical)
     }
 
@@ -126,6 +130,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 40,
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -148,6 +153,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 35,
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -170,6 +176,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'CA',
       productType: 'auto',
+      age: 33,
       vehicles: 2,
       drivers: 1,
     }
@@ -234,6 +241,7 @@ describe('POST /api/generate-prefill', () => {
     const profile: UserProfile = {
       state: 'XX', // Invalid state code
       productType: 'auto',
+      age: 25,
     }
 
     const req = new Request('http://localhost:7070/api/generate-prefill', {
@@ -266,7 +274,8 @@ describe('Prefill generation integrated with intake endpoint', () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        message: 'I need auto insurance in California. I have 2 vehicles and 1 driver.',
+        message:
+          'I need auto insurance in California. I am 30 years old. I have 2 vehicles and 1 driver.',
       }),
     })
 
