@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "generated": "2025-11-09",
+  "description": "Synthetic FAQs for insurance broker assistant (per PEAK6 spec requirements)",
+  "faqs": [
+    {
+      "id": "faq_001",
+      "question": "What factors affect my auto insurance rate?",
+      "answer": "Auto insurance rates are determined by multiple factors including: driving record (accidents, violations), age and experience, vehicle type and value, coverage limits selected, deductible amount, location (ZIP code), credit-based insurance score (in most states), annual mileage, and available discounts. Each carrier weighs these factors differently.",
+      "category": "pricing",
+      "products": ["auto"]
+    },
+    {
+      "id": "faq_002",
+      "question": "What is a multi-policy discount?",
+      "answer": "A multi-policy discount (also called bundling discount) is a savings offered when you purchase multiple insurance products from the same carrier. For example, bundling auto and home insurance typically saves 10-25% on both policies. Requirements and savings vary by carrier.",
+      "category": "discounts",
+      "products": ["auto", "home", "renters", "umbrella"]
+    },
+    {
+      "id": "faq_003",
+      "question": "What are state minimum insurance requirements?",
+      "answer": "Each state mandates minimum liability coverage for auto insurance. These minimums vary significantly - for example, California requires 15/30/5 (bodily injury per person/per accident/property damage in thousands), while Texas requires 30/60/25. Most agents recommend higher limits than state minimums for better protection.",
+      "category": "requirements",
+      "products": ["auto"]
+    },
+    {
+      "id": "faq_004",
+      "question": "What's the difference between replacement cost and actual cash value?",
+      "answer": "Replacement cost coverage pays to replace damaged property with new items of similar quality without deducting for depreciation. Actual cash value (ACV) coverage pays the depreciated value of the item at the time of loss. Replacement cost premiums are typically 10-20% higher but provide better protection.",
+      "category": "coverage",
+      "products": ["home", "renters"]
+    },
+    {
+      "id": "faq_005",
+      "question": "Do I need renters insurance if I rent an apartment?",
+      "answer": "While not legally required, renters insurance is highly recommended. Your landlord's policy covers the building structure but not your personal belongings or liability. Renters insurance typically costs $15-30/month and covers personal property, liability protection, additional living expenses if displaced, and medical payments to others.",
+      "category": "requirements",
+      "products": ["renters"]
+    },
+    {
+      "id": "faq_006",
+      "question": "What is an umbrella policy?",
+      "answer": "An umbrella policy provides additional liability coverage beyond your auto and home policy limits. It typically starts at $1 million in coverage and costs $150-300/year for the first $1 million. Required if you have significant assets to protect or higher risk exposure (pools, teenage drivers, rental properties).",
+      "category": "coverage",
+      "products": ["umbrella"]
+    },
+    {
+      "id": "faq_007",
+      "question": "How can I lower my insurance premium?",
+      "answer": "Common ways to reduce premiums include: increasing deductibles, bundling policies (multi-policy discount), maintaining good credit, installing safety/security devices, taking defensive driving courses, reducing coverage on older vehicles, reviewing coverage annually, shopping carriers every 1-2 years, and asking about available discounts (safe driver, good student, paperless, etc.).",
+      "category": "savings",
+      "products": ["auto", "home", "renters"]
+    },
+    {
+      "id": "faq_008",
+      "question": "What is a deductible and how does it affect my rate?",
+      "answer": "A deductible is the amount you pay out-of-pocket before insurance coverage begins. Common auto deductibles range from $250-$2,500. Higher deductibles lower your premium (typically 15-30% savings from $500 to $1,000 deductible). Choose a deductible you can afford to pay in an emergency.",
+      "category": "coverage",
+      "products": ["auto", "home", "renters"]
+    },
+    {
+      "id": "faq_009",
+      "question": "Does my credit score affect my insurance rate?",
+      "answer": "In most states, insurers use credit-based insurance scores as one factor in pricing. Studies show correlation between credit history and claim frequency. Better credit typically results in lower rates (10-30% difference). Some states (CA, MA, HI) prohibit or limit credit score usage in insurance pricing.",
+      "category": "pricing",
+      "products": ["auto", "home", "renters"]
+    },
+    {
+      "id": "faq_010",
+      "question": "What is gap insurance and do I need it?",
+      "answer": "Gap insurance covers the difference between what you owe on a car loan/lease and the vehicle's actual cash value if totaled. Recommended if you: put less than 20% down, financed for 60+ months, leased the vehicle, or purchased a vehicle that depreciates quickly. Typical cost: $20-40/year when added to auto policy.",
+      "category": "coverage",
+      "products": ["auto"]
+    },
+    {
+      "id": "faq_011",
+      "question": "Are flood and earthquake covered by homeowners insurance?",
+      "answer": "Standard homeowners policies typically exclude flood and earthquake damage. Flood insurance is available through the National Flood Insurance Program (NFIP) or private carriers. Earthquake insurance is available as a separate policy or endorsement. Cost varies significantly by location and risk.",
+      "category": "coverage",
+      "products": ["home"]
+    },
+    {
+      "id": "faq_012",
+      "question": "What discounts are commonly available?",
+      "answer": "Common insurance discounts include: multi-policy (bundle), safe driver (no accidents/violations), good student (B average or higher), defensive driving course completion, vehicle safety features (anti-lock brakes, airbags, anti-theft), home safety features (security system, fire extinguishers), paperless/auto-pay, loyalty (multi-year customer), and occupation-based (military, teachers, engineers). Availability and amounts vary by carrier.",
+      "category": "discounts",
+      "products": ["auto", "home", "renters"]
+    }
+  ]
+}

@@ -136,9 +136,9 @@ def main() -> None:
             sys.exit(0)
 
         # Determine output file path
-        # TODO: Proper categorization logic based on page metadata
+        # Extractions stored generically (contains both carrier and state data)
         tm = TrackerManager()
-        raw_dir = tm.output_base / 'carriers' / 'uncategorized'
+        raw_dir = tm.output_base / 'extractions'
         raw_dir.mkdir(parents=True, exist_ok=True)
         raw_file = raw_dir / f"data_{page_id}.raw.json"
 

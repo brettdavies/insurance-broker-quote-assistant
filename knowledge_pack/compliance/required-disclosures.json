@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "generated": "2025-11-09",
+  "description": "Required disclosures for insurance broker communications (per PEAK6 spec requirements)",
+  "general": [
+    "This is not a binding quote. Final rates subject to underwriting approval.",
+    "All information provided is for informational purposes only and does not constitute an offer of insurance.",
+    "Licensed insurance agent consultation required before policy issuance.",
+    "Actual savings and eligibility may vary based on underwriting review.",
+    "Quotes and savings estimates based on publicly available information and may not reflect current rates."
+  ],
+  "byState": {
+    "CA": [
+      "California residents: This quote does not include earthquake coverage. Earthquake insurance available separately.",
+      "California Insurance Code requires disclosure of credit-based insurance score usage in underwriting."
+    ],
+    "TX": [
+      "Texas residents: Rates shown are estimates. Final rates determined by Texas Department of Insurance approved filings.",
+      "Texas law prohibits discrimination based on credit score alone."
+    ],
+    "FL": [
+      "Florida residents: Hurricane coverage may require separate policy or rider. Flood insurance available through NFIP.",
+      "Florida law requires disclosure of sinkhole coverage availability."
+    ],
+    "NY": [
+      "New York residents: Rates subject to New York Department of Financial Services approval.",
+      "New York Insurance Law prohibits unfair discrimination in rates and underwriting."
+    ],
+    "IL": [
+      "Illinois residents: Rates shown are estimates based on Illinois Department of Insurance approved filings.",
+      "Illinois law requires disclosure of factors used in rate determination."
+    ]
+  },
+  "byProduct": {
+    "auto": [
+      "Auto insurance quotes require driver information, vehicle details, and coverage selections.",
+      "State minimum liability coverage requirements vary. Recommended coverage may exceed minimums.",
+      "Gap insurance and rental car coverage available as optional add-ons."
+    ],
+    "home": [
+      "Home insurance quotes require property details, coverage amount, and deductible selection.",
+      "Flood and earthquake coverage typically require separate policies.",
+      "Actual replacement cost may differ from estimated dwelling coverage."
+    ],
+    "renters": [
+      "Renters insurance covers personal property and liability. Landlord's policy covers building structure.",
+      "Replacement cost vs. actual cash value options available for personal property coverage."
+    ],
+    "umbrella": [
+      "Umbrella policies typically require underlying auto and home liability coverage.",
+      "Coverage limits start at $1 million. Higher limits available based on underwriting."
+    ]
+  },
+  "handoff": {
+    "required": true,
+    "message": "To proceed with this quote, please contact a licensed insurance agent who can review your specific needs and provide a binding quote.",
+    "contactInfo": "Agent contact information and license number must be provided before policy issuance."
+  },
+  "dataUse": [
+    "Information you provide will be used for quote generation and may be shared with insurance carriers for underwriting purposes.",
+    "Your privacy is important. See our privacy policy for details on data handling and storage."
+  ]
+}

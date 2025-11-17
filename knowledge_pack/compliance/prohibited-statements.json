@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "generated": "2025-11-09",
+  "description": "Prohibited statements for insurance broker communications (per PEAK6 spec requirements)",
+  "patterns": [
+    {
+      "phrase": "guaranteed lowest price",
+      "reason": "Cannot guarantee pricing without underwriting",
+      "category": "pricing",
+      "severity": "high"
+    },
+    {
+      "phrase": "guaranteed approval",
+      "reason": "All policies subject to underwriting approval",
+      "category": "approval",
+      "severity": "high"
+    },
+    {
+      "phrase": "instant approval",
+      "reason": "All policies subject to underwriting approval",
+      "category": "approval",
+      "severity": "high"
+    },
+    {
+      "phrase": "no credit check",
+      "reason": "Most insurers use credit-based insurance scores",
+      "category": "approval",
+      "severity": "high"
+    },
+    {
+      "phrase": "no questions asked",
+      "reason": "All policies require disclosure and underwriting",
+      "category": "approval",
+      "severity": "high"
+    },
+    {
+      "phrase": "cheapest insurance",
+      "reason": "Cannot guarantee lowest price",
+      "category": "pricing",
+      "severity": "medium"
+    },
+    {
+      "phrase": "best insurance",
+      "reason": "Subjective claim, not verifiable",
+      "category": "guarantee",
+      "severity": "medium"
+    },
+    {
+      "phrase": "100% coverage",
+      "reason": "All policies have exclusions and limits",
+      "category": "guarantee",
+      "severity": "high"
+    },
+    {
+      "phrase": "unlimited coverage",
+      "reason": "All policies have limits",
+      "category": "guarantee",
+      "severity": "high"
+    },
+    {
+      "phrase": "will definitely save",
+      "reason": "Savings not guaranteed without quote",
+      "category": "pricing",
+      "severity": "medium"
+    },
+    {
+      "phrase": "always the lowest",
+      "reason": "Cannot guarantee pricing",
+      "category": "pricing",
+      "severity": "high"
+    },
+    {
+      "phrase": "never pay more",
+      "reason": "Rates can increase based on claims/risk",
+      "category": "pricing",
+      "severity": "medium"
+    },
+    {
+      "phrase": "zero down payment",
+      "reason": "Down payment requirements vary by carrier/state",
+      "category": "pricing",
+      "severity": "medium"
+    },
+    {
+      "phrase": "no money down",
+      "reason": "Down payment requirements vary by carrier/state",
+      "category": "pricing",
+      "severity": "medium"
+    },
+    {
+      "phrase": "covers everything",
+      "reason": "All policies have exclusions",
+      "category": "guarantee",
+      "severity": "high"
+    }
+  ],
+  "regex_patterns": [
+    {
+      "pattern": "\\bguarantee(d|s)?\\s+(lowest|best|cheapest)",
+      "reason": "Prohibited guarantee claims",
+      "category": "guarantee",
+      "severity": "high"
+    },
+    {
+      "pattern": "\\bno\\s+(credit|questions|down)",
+      "reason": "Misleading approval/payment claims",
+      "category": "approval",
+      "severity": "high"
+    },
+    {
+      "pattern": "\\b(always|never|100%)\\b.*\\b(save|savings|discount)",
+      "reason": "Absolute savings claims not permitted",
+      "category": "pricing",
+      "severity": "medium"
+    }
+  ]
+}

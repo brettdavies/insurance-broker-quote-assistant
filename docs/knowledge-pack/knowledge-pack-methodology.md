@@ -1,1000 +1,534 @@
 # Knowledge Pack Data Gathering Methodology
 
-**Version**: 1.0
-**Date**: 2025-11-05
-**Project**: Insurance Broker Quote Assistant (IQuote Pro)
-**Purpose**: Document the complete methodology for creating an auditable, source-tracked knowledge pack with cuid2-based data lineage and conflict resolution
+**Version**: 2.0 (Simplified Demo)  
+**Date**: 2025-11-09  
+**Project**: Insurance Broker Quote Assistant (IQuote Pro)  
+**Purpose**: Document the streamlined 7-phase methodology for creating the PEAK6 5-day demo knowledge pack with entity-level source tracking
 
 ---
 
 ## Overview
 
-This document defines the comprehensive methodology for gathering, validating, and assembling the knowledge pack that powers the Insurance Broker Quote Assistant. The methodology ensures every data point is traceable to its source, conflicts are resolved transparently, and a complete audit trail exists for compliance purposes.
+This document defines the simplified methodology for gathering, validating, and assembling the knowledge pack that powers the Insurance Broker Quote Assistant. The approach balances demo constraints (5-day timeline) with production patterns (entity-level sources, footnote citations, offline operation).
 
-### Key Requirements
+### Key Requirements (PEAK6 Spec)
 
-✅ **Every data point has ≥1 source** (URI + line/element reference)  
-✅ **Multiple sources allowed** per data point (captures conflicts)  
-✅ **Child data points inherit** parent sources if no direct source  
-✅ **Every data point has unique ID (cuid2)** for audit trail
-✅ **Track ALL sources during scraping** (duplicates/conflicts included)
-✅ **Separate data cleaning phase** to resolve conflicts transparently
+- ✅ **Offline operation** - No runtime web access required
+- ✅ **Entity-level sources** - Each carrier/discount/state tracks source URL + accessed date
+- ✅ **Footnote-style citations** - Industry standard format for broker outputs
+- ✅ **Compliance filters** - Prohibited statements + required disclosures
+- ✅ **Docker-mountable** - Knowledge pack loaded at `/knowledge_pack` (read-only)
+- ✅ **Source-authority deduplication** - Carrier official > State regulatory > 3rd party
 
----
+### Simplified Approach (vs v1.0 Production)
 
-## Seven-Phase Methodology
-
-### Phase 1: Enhanced JSON Schema Design (1 hour)
-
-**Objective**: Define data structures that support granular source tracking and audit trails.
-
-**Status**: ✅ Complete
-**Note**: Completed 2025-11-05. Created 4 schema files (342 lines) in knowledge_pack/schemas/. Git commit: 82b1198.
-
-#### 1.1 Source Metadata Structure
-
-Every field in the knowledge pack uses a metadata envelope for source tracking. See [sot-schemas.md#field-metadata-envelope](sot-schemas.md#field-metadata-envelope) for complete specification.
-
-**Core concept:**
-```json
-{
-  "_id": "fld_ckm9x7whp2",
-  "value": 15,
-  "_sources": [...],      // Direct source citations (≥1 required if not inherited)
-  "_inheritedFrom": null, // OR parent field ID
-  "_resolution": {...}    // Conflict resolution metadata (if applicable)
-}
-```
-
-**See also:** [Complete schemas →](sot-schemas.md#core-concepts)
-
-#### 1.2 Source Inheritance Rules
-
-When a child data point has no direct sources, it inherits from its parent. See [sot-schemas.md#8-source-inheritance-rules](sot-schemas.md#8-source-inheritance-rules) for complete specification and examples.
-
-#### 1.3 cuid2 Generation Conventions
-
-All entity IDs use **cuid2** format with type prefixes for global uniqueness. See [sot-id-conventions.md](sot-id-conventions.md) for complete specification.
-
-**Quick reference:**
-- Carriers: `carr_{cuid2}` (e.g., `carr_ckm9x7w8k0`)
-- Discounts: `disc_{cuid2}`
-- Fields: `fld_{cuid2}`
-- [See all prefixes →](sot-id-conventions.md#complete-id-prefix-reference)
-
-All IDs tracked in `audit-trail.json` for cross-reference.
-
-#### 1.4 Schema Files to Create
-
-| File | Purpose |
-|------|---------|
-| `schemas/carrier-schema.json` | Carrier data structure with source tracking |
-| `schemas/state-schema.json` | State data structure with source tracking |
-| `schemas/source-metadata.json` | Source object definition |
-| `schemas/resolution-metadata.json` | Conflict resolution tracking |
-
-**Complete schema specifications**: See [sot-schemas.md](sot-schemas.md) for all JSON schema definitions.
-
-**Deliverable**: 4 schema files in `knowledge_pack/schemas/`
-
-**See Also:**
-- 📖 [Complete Schemas](sot-schemas.md) - Full JSON schema specifications
-- 🔗 [ID Conventions](sot-id-conventions.md) - cuid2 usage for all entities
+**What Changed:**
+- ✂️ No granular field-level source tracking (entity-level sources instead)
+- ✂️ No complex conflict resolution workflows (source-authority deduplication)
+- ✂️ No per-field cuid2 IDs (only entity-level IDs: carriers, discounts, states)
+- ➕ LLM-based extraction with structured prompts (Claude Sonnet 4.5 or GPT-4o-mini)
+- ➕ Normalization during extraction (lowercase carriers/products, uppercase states)
+- ➕ Generic storage in `raw/extractions/` for mixed carrier/state data
 
 ---
 
-### Phase 2: Automated Data Discovery via Brave API (4-6 hours)
+## Seven-Phase Scraper Pipeline
 
-**Objective**: Execute all search queries via Brave Search API, discover and enrich URLs, fetch page content for extraction.
+### Phase 1: URL Discovery (4-6 hours)
 
-**Status**: ✅ Complete (Brave API integration implemented 2025-11-07)
-**Architecture**: Single-threaded deterministic execution with Brave Search API and crawl4ai
+**Objective**: Execute search queries via Brave Search API to discover relevant insurance pages.
 
-**Critical Rule**: DO NOT RESOLVE CONFLICTS YET - Just capture everything!
+**Status**: ✅ Complete (2025-11-07)  
+**Output**: 2,950 unique URLs discovered and tracked
 
-#### 2.1 Three-Step Automated Workflow
+#### 1.1 Search Execution
 
-**Step 1: Search Execution** (`brave-search.py`)
-1. **Load search queries** from search-tracker.json (476 queries from sot-search-queries.md)
-2. **Execute Brave API searches** with 1.1s rate limiting between requests
-3. **Extract URLs from results** (web.results array in Brave API response)
-4. **Enrich with Brave metadata**: title, description, page_age, language, type, subtype, hostname, source_name
-5. **Generate websearch ID** (websearch_{cuid2}) for each search execution
-6. **Save raw request/response** to `knowledge_pack/raw/websearches/websearch_{cuid2}.json`
-7. **Deduplicate URLs** via SHA256 hash and save to url-tracker.json
-8. **Update search status** to 'completed' with lastrunAt timestamp
+**Script**: `phase1-url-discovery/brave-search.py`
 
-**Step 2: URL Fetching** (`fetch-url.py`)
-1. **Load pending URLs** from url-tracker.json
-2. **Fetch page content** using crawl4ai (both HTML and markdown)
-3. **Generate page ID** (page_{cuid2})
-4. **Save raw files** to `knowledge_pack/raw/pages/{page_id}.{html|md}`
-5. **Register page** in page-tracker.json with metadata (size, status, etc.)
-6. **Update URL status** to 'completed' with fetchedAt timestamp
+1. Load search queries from `search-tracker.json` (476 queries)
+2. Execute Brave API searches with 1.1s rate limiting
+3. Extract URLs from results (web.results array)
+4. Enrich with Brave metadata: title, description, page_age, hostname
+5. Generate websearch ID (websearch_{cuid2}) for each API execution
+6. Save raw request/response to `raw/websearches/websearch_{cuid2}.json`
+7. Deduplicate URLs via SHA256 hash
+8. Update search status to 'completed' with lastrunAt timestamp
 
-**Step 3: Data Extraction** (Phase 3)
-1. **Load pages** from page-tracker.json
-2. **Extract data points** using LLM or pattern matching
-3. **Generate unique IDs** for each extracted field (fld_{cuid2})
-4. **Track element references** (CSS selectors, line numbers)
-5. **Save to raw data files** organized by category
+#### 1.2 Source Categories
 
-#### 2.2 Raw Data Entry Format
-
-```json
-{
-  "id": "raw_cm8r2s4b6g",
-  "dataPoint": "geico_multi_policy_discount_percentage",
-  "rawValue": "up to 15%",
-  "normalizedValue": 15,
-  "source": {
-    "uri": "https://www.geico.com/auto/discounts/",
-    "elementRef": "div.discount-card[data-discount='multi-policy'] > p.percentage",
-    "accessedDate": "2025-11-05T10:30:00Z",
-    "confidence": "high"
-  },
-  "context": {
-    "surroundingText": "Save money when you bundle auto and home insurance",
-    "pageTitle": "GEICO Auto Insurance Discounts",
-    "qualifier": "up to"
-  }
-}
-```
-
-#### 2.3 Source Categories
-
-**Carrier Official Sites** (Primary Sources):
+**Carrier Official Sites** (Authority: 5):
 - GEICO: geico.com/auto/discounts/, geico.com/information/states/
 - Progressive: progressive.com/auto/discounts/
 - State Farm: statefarm.com/insurance/auto/discounts
 
-**State Regulatory Sites** (Authoritative):
-- CA: insurance.ca.gov/01-consumers/
-- TX: tdi.texas.gov/consumer/
-- FL: floir.com/
-- NY: dfs.ny.gov/
-- IL: illinois.gov/sites/Insurance/
+**State Regulatory Sites** (Authority: 4):
+- CA: insurance.ca.gov
+- TX: tdi.texas.gov
+- FL: floir.com
+- NY: dfs.ny.gov
+- IL: illinois.gov
 
-**Industry Organizations** (Reference):
-- Insurance Information Institute: iii.org
-- NAIC: naic.org
+**Industry Organizations** (Authority: 3):
+- Insurance Information Institute: iii.org, NAIC: naic.org
 
-**Financial Sites** (Secondary):
-- Bankrate: bankrate.com/insurance/
-- NerdWallet: nerdwallet.com/insurance/
+**Financial Sites** (Authority: 2):
+- Bankrate: bankrate.com/insurance/, NerdWallet: nerdwallet.com/insurance/
 
-#### 2.4 Raw Data File Organization
-
-```
-knowledge_pack/raw/
-├── websearches/                    # Brave API request/response logs
-│   ├── websearch_{cuid2}.json     # Complete API call with metadata
-│   ├── websearch_{cuid2}.json     # (468 files from Step 1)
-│   └── ...
-├── pages/                          # Fetched HTML/markdown page content
-│   ├── page_{cuid2}.html          # Raw HTML from crawl4ai
-│   ├── page_{cuid2}.md            # Converted markdown
-│   └── ...                        # (2,950 files from Step 2)
-├── carriers/                       # Extracted data organized by carrier
-│   ├── geico/
-│   │   ├── discounts_auto.raw.json
-│   │   ├── discounts_home.raw.json
-│   │   ├── states_operating.raw.json
-│   │   ├── eligibility_auto.raw.json
-│   │   ├── eligibility_home.raw.json
-│   │   └── pricing_estimates.raw.json
-│   ├── progressive/
-│   │   └── [same structure]
-│   └── state-farm/
-│       └── [same structure]
-├── states/                         # Extracted state-specific data
-│   ├── CA_minimums.raw.json
-│   ├── CA_requirements.raw.json
-│   ├── CA_special.raw.json
-│   └── [same for TX, FL, NY, IL]
-└── industry/                       # Industry benchmarking data
-    ├── average_pricing_iii.raw.json
-    ├── average_pricing_bankrate.raw.json
-    └── discount_benchmarks.raw.json
-```
-
-#### 2.5 Implementation Details
-
-**Key Implementation Concepts:**
-- **Brave API Client**: Rate-limited (1.1s delay) with dual token management (FREE → PAID fallback)
-- **Search Tracker**: `search-tracker.json` tracks 476 searches with status, lastrunAt, and metadata
-- **URL Tracker**: `url-tracker.json` tracks 2,950 unique URLs with enrichment from Brave API (title, description, etc.)
-- **Page Tracker**: `page-tracker.json` tracks fetched pages (HTML + markdown) with size metadata
-- **Websearch Entity**: Separate from search entity - tracks individual Brave API execution instances
-- **URL Deduplication**: SHA256 hash (urlHash) prevents duplicate fetches across multi-search discovery
-- **Multi-Search Provenance**: URLs track both search_ids (originating queries) and websearch_ids (API executions)
-- **Audit Trail**: Complete Brave API request/response saved to `websearches/` for compliance verification
-- **Markdown Conversion**: Post-Phase 2 bulk conversion of HTML/PDF to markdown for easier review
-- **Quality Signals**: Capture specificity, freshness, geographic scope, qualifiers for later conflict resolution
-
-**Deliverable**: 30-50 `*.raw.json` files with all scraped data
-
-**See Also:**
-- 📖 [Agent Workflow](phase-2-agent-instructions.md) - Step-by-step autonomous execution
-- 🔗 [Search Queries](sot-search-queries.md) - 200+ queries for data gathering
-- 📊 [Raw Data Examples](knowledge-pack-examples.md#example-1-multi-policy-discount) - See raw scraping in action
+**Deliverable**:
+- `url-tracker.json` with 2,950 URLs
+- `raw/websearches/` with 468 Brave API responses
 
 ---
 
-### Phase 3: Conflict Detection (2-3 hours)
+### Phase 2: Page Fetching (6-8 hours)
 
-**Objective**: Systematically identify all conflicts where multiple sources provide different values for the same data point.
+**Objective**: Fetch HTML and markdown content for all discovered URLs using crawl4ai.
 
-**Status**: ⏳ Pending
-**Note**: Requires Phase 2 completion. Automated script will detect conflicts in raw data.
+**Status**: ✅ Complete (2025-11-08)  
+**Output**: 2,925 pages fetched (HTML + markdown)
 
-#### 3.1 Conflict Detection Script
+#### 2.1 Fetching Workflow
 
-Create `scripts/detect-conflicts.ts`:
+**Script**: `phase2-page-fetching/fetch-all-urls.py`
 
-**Pseudo-code**:
-```typescript
-for each dataPoint:
-  sources = getAllSourcesForDataPoint(dataPoint)
+1. Load pending URLs from `url-tracker.json`
+2. Fetch page content using crawl4ai (async, concurrent workers)
+3. Generate page ID (page_{cuid2}) for each URL
+4. Save raw files to `raw/pages/{page_id}.{html|md}`
+5. Register page in `page-tracker.json` with metadata (size, status, fetchedAt)
+6. Update URL status to 'completed' in `url-tracker.json`
 
-  if sources.length > 1:
-    values = sources.map(s => s.normalizedValue)
-    uniqueValues = [...new Set(values)]
+#### 2.2 File Organization
 
-    if uniqueValues.length > 1:
-      severity = calculateSeverity(uniqueValues, dataPoint)
-
-      logConflict({
-        id: generateConflictId(),
-        dataPoint: dataPoint,
-        conflictType: classifyConflict(values),
-        severity: severity,
-        sources: sources,
-        detectedDate: now(),
-        status: 'pending'
-      })
+```
+knowledge-pack-scraper/raw/
+├── websearches/              # Phase 1 output
+│   └── websearch_*.json      # (468 files)
+└── pages/                    # Phase 2 output
+    ├── page_*.html           # Raw HTML from crawl4ai
+    └── page_*.md             # Converted markdown
+                              # (2,925 × 2 = 5,850 files)
 ```
 
-#### 3.2 Conflict Types
+#### 2.3 Page Tracking
 
-| Type | Example | Detection Logic |
-|------|---------|-----------------|
-| **Range vs Specific** | "10-15%" vs "12%" | One value is range, other is specific number |
-| **Numeric Difference** | "$1200" vs "$1400" | Both numbers, differ by >5% |
-| **State Availability** | "All 50 states" vs "List of 47" | Array length differs |
-| **Boolean Difference** | `true` vs `false` | Direct contradiction |
-| **Missing Data** | Source A has value, B doesn't | One source missing data point |
-| **Date Mismatch** | Different effective dates | Temporal conflict |
-
-#### 3.3 Severity Classification
-
-```typescript
-function calculateSeverity(values, dataPoint) {
-  // Critical: Affects routing or compliance
-  if (dataPoint.affects === 'routing' || dataPoint.affects === 'compliance') {
-    return 'critical'
-  }
-
-  // High: Numeric difference >20%
-  if (numericDifference(values) > 0.20) {
-    return 'high'
-  }
-
-  // Medium: Numeric difference 10-20%
-  if (numericDifference(values) > 0.10) {
-    return 'medium'
-  }
-
-  // Low: Minor differences, doesn't affect logic
-  return 'low'
-}
-```
-
-#### 3.4 Conflict Log Format
+**Tracker**: `page-tracker.json`
 
 ```json
 {
-  "conflicts": [
-    {
-      "id": "conf_cm2b6c8l0q",
-      "dataPoint": "geico_multi_policy_discount_percentage",
-      "detectedDate": "2025-11-05T14:00:00Z",
-      "conflictType": "numeric_difference",
-      "severity": "low",
-      "sources": [
-        {
-          "id": "raw_cm8r2s4b6g",
-          "uri": "https://www.geico.com/auto/discounts/",
-          "value": 15,
-          "confidence": "high",
-          "sourceAuthority": 5
-        },
-        {
-          "id": "raw_cm0t4u6d8i",
-          "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
-          "value": 12,
-          "confidence": "medium",
-          "sourceAuthority": 3
-        }
-      ],
-      "analysis": {
-        "percentageDifference": 20,
-        "affectsRouting": false,
-        "affectsCompliance": false,
-        "recommendedAction": "Use primary source (higher authority)"
-      },
-      "resolution": null,
-      "status": "pending"
-    }
-  ]
-}
-```
-
-**Deliverable**: `knowledge_pack/conflicts.json` with all detected conflicts
-
-**See Also:**
-- 📖 [Conflict Detection Examples](knowledge-pack-examples.md#example-2-california-auto-minimums) - Real conflict scenarios
-- 🔗 [Resolution Schema](sot-schemas.md#4-resolution-object) - Data structure for conflicts
-
----
-
-### Phase 4: Conflict Resolution (2-3 hours)
-
-**Objective**: Resolve all conflicts using documented decision-making strategies, creating a transparent audit trail.
-
-**Status**: ⏳ Pending
-**Note**: Requires Phase 3 completion. Interactive resolution workflow using 7-step decision tree.
-
-#### 4.1 Resolution Strategies (Priority Order)
-
-See [sot-source-hierarchy.md](sot-source-hierarchy.md) for complete conflict resolution decision tree and source authority levels.
-
-See [sot-source-hierarchy.md#conflict-resolution-decision-tree](sot-source-hierarchy.md#conflict-resolution-decision-tree) for the complete 7-step conflict resolution decision tree and priority ordering.
-
-#### 4.2 Resolution Decision Format
-
-```json
-{
-  "conflictId": "conf_cm2b6c8l0q",
-  "dataPoint": "geico_multi_policy_discount_percentage",
-  "resolution": {
-    "selectedValue": 15,
-    "method": "authoritative_source",
-    "strategyRank": 1,
-    "rationale": "GEICO's official website (authority=5) takes precedence over NerdWallet (authority=3). Primary source is carrier's own site.",
-    "resolvedBy": "data_curator",
-    "resolvedDate": "2025-11-05T15:30:00Z",
-    "confidence": "high",
-    "reviewRequired": false,
-    "retainedSources": [
-      {
-        "id": "raw_cm8r2s4b6g",
-        "uri": "https://www.geico.com/auto/discounts/",
-        "elementRef": "div.discount-card > p.percentage",
-        "primary": true,
-        "note": "Official carrier source"
-      },
-      {
-        "id": "raw_cm0t4u6d8i",
-        "uri": "https://www.nerdwallet.com/article/insurance/geico-discounts",
-        "elementRef": "table > tr:nth-child(3) > td:nth-child(2)",
-        "primary": false,
-        "note": "Secondary source shows 12%, potentially outdated (no date visible)"
-      }
-    ]
-  }
-}
-```
-
-#### 4.3 Interactive Resolution Workflow
-
-For conflicts requiring manual review:
-
-```bash
-$ bun run resolve-conflicts
-
-Conflict 001/008 (severity: low)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Data Point: geico_multi_policy_discount_percentage
-
-Source 1 (authority: 5, confidence: high)
-  URI: https://www.geico.com/auto/discounts/
-  Value: 15%
-
-Source 2 (authority: 3, confidence: medium)
-  URI: https://www.nerdwallet.com/...
-  Value: 12%
-
-Recommended Strategy: authoritative_source
-Recommended Value: 15
-
-Actions:
-  [1] Accept recommended (15)
-  [2] Use alternative (12)
-  [3] Enter custom value
-  [4] Mark for expert review
-  [5] Skip (resolve later)
-
-Your choice: 1
-
-Rationale (required): [Enter reason]
-> Official GEICO source is authoritative
-
-✓ Resolution saved. Next conflict...
-```
-
-#### 4.4 Resolution Log
-
-Create `knowledge_pack/resolutions.json`:
-
-```json
-{
-  "meta": {
-    "totalConflicts": 8,
-    "resolvedConflicts": 8,
-    "pendingConflicts": 0,
-    "resolutionDate": "2025-11-05",
-    "curator": "data_curator"
-  },
-  "resolutions": [
-    {
-      "conflictId": "conf_cm2b6c8l0q",
-      "resolution": { /* See format above */ }
-    }
-  ],
-  "statistics": {
-    "byStrategy": {
-      "authoritative_source": 5,
-      "specificity_preference": 2,
-      "conservative_estimate": 1
-    },
-    "bySeverity": {
-      "critical": 0,
-      "high": 1,
-      "medium": 3,
-      "low": 4
-    }
+  "page_abc123": {
+    "url": "https://www.geico.com/auto/discounts/",
+    "url_id": "url_xyz789",
+    "status": "fetched",
+    "fetchedAt": "2025-11-08T14:30:00Z",
+    "sizeHtml": 45231,
+    "sizeMd": 12456
   }
 }
 ```
 
 **Deliverable**:
-- `knowledge_pack/clean/` directory with resolved data
-- `knowledge_pack/resolutions.json` with all decisions
-- `knowledge_pack/audit-trail.json` with complete lineage
-
-**See Also:**
-- 📖 [Source Hierarchy](sot-source-hierarchy.md) - Complete decision tree and authority levels
-- 📊 [Resolution Examples](knowledge-pack-examples.md#example-4-three-way-conflict-with-majority-consensus) - Real conflict resolutions
+- 2,925 HTML files in `raw/pages/`
+- 2,925 markdown files in `raw/pages/`
+- Updated `page-tracker.json` with fetch metadata
 
 ---
 
-### Phase 5: Knowledge Pack Assembly (1-2 hours)
+### Phase 3: Domain Analysis (2-3 hours)
 
-**Objective**: Transform clean, resolved data into production-ready JSON files for the RAG system.
+**Objective**: Analyze HTML patterns to identify boilerplate (navigation, headers, footers, ads) and content regions.
 
-**Status**: ⏳ Pending
-**Note**: Requires Phase 4 completion. Transform clean data into production format with citation compression.
+**Status**: ✅ Complete (2025-11-08)  
+**Output**: Domain pattern analysis for 15 unique domains
 
-#### 5.1 Production Format Design
+#### 3.1 Analysis Workflow
 
-```json
-{
-  "meta": {
-    "schemaVersion": "1.0",
-    "generatedDate": "2025-11-05T16:00:00Z",
-    "carrier": "GEICO",
-    "totalDataPoints": 157,
-    "totalSources": 42,
-    "conflictsResolved": 3
-  },
-  "carrier": {
-    "_id": "carr_jiia4ewjg2",
-    "_sources": [
-      {
-        "uri": "https://www.geico.com/",
-        "elementRef": "header > h1",
-        "accessedDate": "2025-11-05T12:00:00Z"
-      }
-    ],
-    "name": "GEICO",
-    "operatesIn": {
-      "_id": "fld_cm6f0g2p4u",
-      "_sources": [
-        {
-          "uri": "https://www.geico.com/information/states/",
-          "elementRef": "section#state-list",
-          "accessedDate": "2025-11-05T12:00:00Z"
-        }
-      ],
-      "value": ["CA", "TX", "FL", "NY", "IL"]
-    },
-    "discounts": [
-      {
-        "_id": "disc_cm5e9f1o3t",
-        "name": {
-          "_id": "fld_cm7g1h3q5v",
-          "_sources": [{"uri": "...", "elementRef": "..."}],
-          "value": "Multi-Policy Bundle"
-        },
-        "percentage": {
-          "_id": "fld_cm8h2i4r6w",
-          "_sources": [
-            {"uri": "https://www.geico.com/auto/discounts/", "primary": true},
-            {"uri": "https://www.nerdwallet.com/...", "primary": false}
-          ],
-          "_resolution": {
-            "conflictId": "conf_cm2b6c8l0q",
-            "method": "authoritative_source"
-          },
-          "value": 15
-        },
-        "states": {
-          "_id": "fld_cm9i3j5s7x",
-          "_sources": [],
-          "_inheritedFrom": "fld_cm6f0g2p4u",
-          "value": ["CA", "TX", "FL", "NY", "IL"]
-        }
-      }
-    ]
-  }
-}
-```
+**Script**: `phase3-domain-analysis/analyze-domains.py`
 
-#### 5.2 Field Naming Convention
+1. Group pages by domain (15 unique domains from 2,925 pages)
+2. Sample 10-20 pages per domain for pattern detection
+3. Identify common HTML patterns (headers, footers, navigation, ads)
+4. Generate domain-specific filtering rules
+5. Save domain analysis to `domain-analysis.json`
 
-- **Data fields**: `camelCase` (e.g., `operatesIn`, `percentage`)
-- **Metadata fields**: Prefixed with `_` (e.g., `_id`, `_sources`, `_resolution`)
-- **Special fields**: `_inheritedFrom` for source inheritance
+#### 3.2 Domain Patterns Identified
 
-#### 5.3 Directory Structure
+**Boilerplate Categories**:
+- Header navigation (`<header>`, `<nav>`, `.site-header`)
+- Footer content (`<footer>`, `.site-footer`, `.footer-links`)
+- Sidebars (`.sidebar`, `.widget-area`, `.aside`)
+- Ads/marketing (`.ad-`, `.promo-`, `.cta-`)
+- Social media (`[class*="social"]`, `.share-buttons`)
+- Legal disclaimers at page bottom
 
-```
-knowledge_pack/
-├── carriers/
-│   ├── geico.json         # Production file
-│   ├── progressive.json   # Production file
-│   └── state-farm.json    # Production file
-├── states/
-│   ├── CA.json           # Production file
-│   ├── TX.json           # Production file
-│   ├── FL.json           # Production file
-│   ├── NY.json           # Production file
-│   └── IL.json           # Production file
-├── products.json         # Production file
-├── compliance.json       # Production file
-├── schemas/              # JSON schemas
-├── raw/                  # Raw scraped data (preserved)
-├── clean/                # Cleaned data (intermediate)
-├── conflicts.json        # Conflict log
-├── resolutions.json      # Resolution decisions
-├── audit-trail.json      # Complete lineage
-├── validation-report.json # QA results
-└── README.md             # Documentation
-```
+**Content Regions**:
+- Main content (`<main>`, `<article>`, `.main-content`)
+- Discount cards/tables (`.discount-`, `.savings-`, `table`)
+- State information tables (`table`, `.state-list`)
+- Product descriptions (`.product-`, `.coverage-`)
 
-#### 5.4 Citation Compression
-
-For production files, compress source references:
-
-```json
-// Full format (in clean/)
-"_sources": [
-  {
-    "uri": "https://www.geico.com/auto/discounts/",
-    "elementRef": "div.discount-card > p.percentage",
-    "accessedDate": "2025-11-05T12:00:00Z",
-    "primary": true
-  }
-]
-
-// Compressed format (in production)
-"_sources": [
-  {
-    "uri": "https://www.geico.com/auto/discounts/",
-    "ref": "div.discount-card > p.percentage",
-    "date": "2025-11-05"
-  }
-]
-
-// Or reference by ID (most compact)
-"_sources": ["src_cm6z0a2j4o"]
-// With separate sources lookup table in audit-trail.json
-```
-
-**Deliverable**: 10 production JSON files ready for RAG consumption
-
-**See Also:**
-- 📖 [Production Schemas](sot-schemas.md#1-carrier-schema) - Complete schema specifications
-- 📊 [Complete Carrier Example](knowledge-pack-examples.md#example-5-complete-carrier-file-production-format) - Production format sample
+**Deliverable**:
+- `domain-analysis.json` with filtering rules for 15 domains
 
 ---
 
-### Phase 6: Validation & Quality Assurance (1-2 hours)
+### Phase 4: Page Filtering (8-10 hours)
 
-**Objective**: Verify data integrity, completeness, and compliance with requirements.
+**Objective**: Apply domain-specific filtering rules to remove boilerplate and extract clean content for LLM extraction.
 
-**Status**: ⏳ Pending
-**Note**: Requires Phase 5 completion. Automated validation checks against schema and business rules.
+**Status**: ✅ Complete (2025-11-09)  
+**Output**: 2,925 filtered markdown files ready for extraction
 
-#### 6.1 Automated Validation Checks
+#### 4.1 Filtering Workflow
 
-Create `scripts/validate-kb.ts`:
+**Script**: `phase4-page-filtering/filter-all-pages.py`
 
-```typescript
-// Validation Rules
-const validationChecks = [
-  {
-    name: 'ID Uniqueness',
-    check: () => allIdsAreUnique(),
-    critical: true
-  },
-  {
-    name: 'Every field has _id',
-    check: () => everyFieldHasId(),
-    critical: true
-  },
-  {
-    name: 'Every field has source OR inheritedFrom',
-    check: () => everyFieldHasSourceOrInheritance(),
-    critical: true
-  },
-  {
-    name: 'No orphaned inheritedFrom references',
-    check: () => allInheritedFromReferencesValid(),
-    critical: true
-  },
-  {
-    name: 'All source URIs are valid',
-    check: () => allSourceUrisValid(),
-    critical: false
-  },
-  {
-    name: 'All conflicts have resolutions',
-    check: () => allConflictsResolved(),
-    critical: true
-  },
-  {
-    name: 'Cross-references valid',
-    check: () => carrierStatesExistInStatesFolder(),
-    critical: true
-  },
-  {
-    name: 'Schema validation',
-    check: () => validateAgainstJsonSchema(),
-    critical: true
-  },
-  {
-    name: 'No zero-source data points',
-    check: () => noZeroSourceDataPoints(),
-    critical: true
-  }
-]
+1. Load pages from `page-tracker.json` (2,925 pages)
+2. Load domain filtering rules from `domain-analysis.json`
+3. Parse HTML and apply domain-specific filters
+4. Remove boilerplate (headers, footers, nav, ads, sidebars)
+5. Extract main content regions
+6. Convert to clean markdown
+7. Save filtered content to `raw/filtered/{page_id}.filtered.md`
+8. Update `page-tracker.json` with filtering status and content size
+
+#### 4.2 Filtering Rules
+
+**Common Removals**:
+- `<header>`, `<nav>`, `<footer>` elements
+- Elements matching `.ad-`, `.promo-`, `.cta-`, `.sidebar`
+- Social media widgets, share buttons
+- Cookie consent banners, newsletter signups
+- Author bios, related articles
+- Site-wide navigation, breadcrumbs
+
+**Content Extraction**:
+- `<main>`, `<article>`, `.main-content` regions
+- Tables with discount/pricing/state data
+- Lists of products, states, requirements
+- Structured discount cards/sections
+
+#### 4.3 File Organization
+
+```
+knowledge-pack-scraper/raw/
+├── pages/                   # Phase 2 output
+│   ├── page_*.html
+│   └── page_*.md
+└── filtered/                # Phase 4 output
+    └── page_*.filtered.md   # (2,925 files)
 ```
 
-#### 6.2 Coverage Metrics
+**Deliverable**:
+- 2,925 filtered markdown files in `raw/filtered/`
+- Updated `page-tracker.json` with filtering metadata
+
+---
+
+### Phase 5: Data Extraction (20-30 hours)
+
+**Objective**: Use LLM to extract structured insurance data from filtered pages (discounts, eligibility, state availability, pricing).
+
+**Status**: ⏳ In Progress  
+**Output Target**: ~2,925 extraction files in `raw/extractions/`
+
+#### 5.1 Extraction Workflow
+
+**Scripts**:
+- `extraction-prompt.md` - System prompt with few-shot examples and normalization rules
+- `extraction-schema.json` - JSON schema for LLM output validation
+- `extract-all-pages.py` - Async orchestrator (10 concurrent workers)
+- `save-extraction.py` - Save extracted data and update trackers
+
+**Process**:
+1. Load filtered pages from `page-tracker.json`
+2. For each page:
+   - Load filtered markdown content
+   - Send to LLM with system prompt
+   - Extract structured data points (discounts, eligibility, etc.)
+   - Validate against JSON schema
+   - Save to `raw/extractions/data_{page_id}.raw.json`
+   - Update `page-tracker.json` with extraction status
+3. Rate limiting: 10 requests/sec (Claude) or 500/day (GPT-4o-mini)
+4. Progress tracking with resume support
+
+#### 5.2 Normalization Rules (Critical)
+
+**Applied during extraction**:
+
+- **Carrier names**: ALWAYS lowercase ("geico", "progressive", "state farm")
+- **Product names**: ALWAYS lowercase ("auto", "home", "renters", "umbrella")
+- **State codes**: ALWAYS UPPERCASE ("CA", "TX", "FL", "NY", "IL")
+
+**Why**: Enables deterministic aggregation and deduplication without additional normalization logic.
+
+#### 5.3 Data Point Types
+
+- **discount**: Name, percentage, requirements, products, states
+- **eligibility**: Product, age limits, vehicle limits, requirements
+- **state_availability**: States where carrier operates
+- **product_offering**: Products offered (auto, home, renters, umbrella)
+- **pricing_estimate**: Product, state, average/range pricing
+- **compensation**: Agent commission rates (rare on public pages)
+- **state_minimum_coverage**: State-level minimum insurance requirements (from regulatory sources)
+- **state_requirement**: Special state-specific insurance requirements
+
+#### 5.4 Extraction Output Format
 
 ```json
 {
-  "coverage": {
-    "carriers": 3,
-    "states": 5,
-    "products": 4,
-    "totalDataPoints": 670,
-    "sourcedDataPoints": 670,
-    "unsourcedDataPoints": 0,
-    "inheritedDataPoints": 45,
-    "multiSourceDataPoints": 23,
-    "zeroSourceDataPoints": 0
-  }
-}
-```
-
-#### 6.3 Quality Metrics
-
-```json
-{
-  "quality": {
-    "averageSourcesPerDataPoint": 1.34,
-    "averageConfidenceScore": 4.2,
-    "highConfidenceDataPoints": 589,
-    "mediumConfidenceDataPoints": 73,
-    "lowConfidenceDataPoints": 8,
-    "primarySourceCoverage": 0.96
-  }
-}
-```
-
-#### 6.4 Validation Report Format
-
-```json
-{
-  "validationDate": "2025-11-05T17:00:00Z",
-  "validator": "validate-kb.ts v1.0",
-  "status": "PASS",
-  "criticalChecks": {
-    "passed": 7,
-    "failed": 0,
-    "total": 7
-  },
-  "nonCriticalChecks": {
-    "passed": 1,
-    "failed": 0,
-    "warnings": 0,
-    "total": 1
-  },
-  "details": [
+  "carrier": "geico",
+  "page_id": "page_abc123",
+  "source_url": "https://www.geico.com/auto/discounts/",
+  "accessed_date": "2025-11-09",
+  "data_points": [
     {
-      "check": "ID Uniqueness",
-      "status": "PASS",
-      "message": "All 670 IDs are unique"
-    },
-    {
-      "check": "Every field has source OR inheritedFrom",
-      "status": "PASS",
-      "message": "625 fields have direct sources, 45 fields inherit (100% coverage)"
-    }
-  ],
-  "coverage": { /* See 6.2 */ },
-  "quality": { /* See 6.3 */ },
-  "recommendations": []
-}
-```
-
-**Deliverable**: `knowledge_pack/validation-report.json` with QA results
-
-**See Also:**
-- 📖 [Validation Rules](sot-schemas.md#validation-rules) - Schema validation specifications
-- 🔗 [Quality Metrics](sot-schemas.md#required-validations) - Required validation checks
-
----
-
-### Phase 7: Documentation (1 hour)
-
-**Objective**: Create comprehensive documentation for methodology, sources, and audit trail.
-
-**Status**: ⏳ Pending
-**Note**: Requires Phase 6 completion. Generate README.md and audit-trail.json with complete data lineage.
-
-#### 7.1 README.md Structure
-
-```markdown
-# Knowledge Pack - Insurance Broker Quote Assistant
-
-## Overview
-This knowledge pack contains insurance carrier, state requirement, and compliance data for the IQuote Pro assistant. All data is sourced from publicly available information with complete audit trails.
-
-## Data Collection Methodology
-
-### Collection Period
-November 5-6, 2025
-
-### Source Hierarchy
-1. State Regulatory Sites (Highest Authority)
-2. Carrier Official Sites (Primary Sources)
-3. Industry Organizations (Reference)
-4. Financial Sites (Secondary/Benchmarking)
-
-### Process
-1. Raw data scraping (42 sources, 670 data points)
-2. Conflict detection (8 conflicts identified)
-3. Conflict resolution (8/8 resolved via documented strategies)
-4. Source tracking (100% coverage with citations)
-5. Validation (all checks passed)
-
-## Data Quality Metrics
-- Total Data Points: 670
-- Fully Sourced: 670 (100%)
-- Multi-Source: 23 (3.4%)
-- Inherited Sources: 45 (6.7%)
-- Conflicts Detected: 8
-- Conflicts Resolved: 8 (100%)
-- Average Confidence Score: 4.2/5.0
-
-## Source Summary
-
-### Carrier Sources (3 carriers × ~14 URLs = 42 primary sources)
-
-#### GEICO
-- Main: https://www.geico.com/ (accessed 2025-11-05)
-- Discounts: https://www.geico.com/auto/discounts/ (accessed 2025-11-05)
-- States: https://www.geico.com/information/states/ (accessed 2025-11-05)
-- [See audit-trail.json for 14 total GEICO sources]
-
-#### Progressive
-- [Similar structure]
-
-#### State Farm
-- [Similar structure]
-
-### State Regulatory Sources (5 states)
-- CA: https://www.insurance.ca.gov/ (accessed 2025-11-05)
-- TX: https://www.tdi.texas.gov/ (accessed 2025-11-05)
-- FL: https://www.floir.com/ (accessed 2025-11-05)
-- NY: https://www.dfs.ny.gov/ (accessed 2025-11-05)
-- IL: https://www2.illinois.gov/sites/Insurance/ (accessed 2025-11-05)
-
-### Industry Sources
-- Insurance Information Institute: https://www.iii.org/
-- NAIC: https://content.naic.org/
-
-## Files Structure
-
-### Production Files (Used by RAG)
-- `carriers/*.json` - 3 carrier files with embedded sources
-- `states/*.json` - 5 state files with embedded sources
-- `products.json` - Product definitions
-- `compliance.json` - Compliance rules
-
-### Audit & Quality Files
-- `raw/*.json` - Original scraped data (preserved)
-- `clean/*.json` - Cleaned data with resolutions
-- `conflicts.json` - All detected conflicts
-- `resolutions.json` - Resolution decisions
-- `audit-trail.json` - Complete data lineage
-- `validation-report.json` - QA results
-
-### Schema Files
-- `schemas/*.json` - JSON schemas for validation
-
-## Data Point Examples
-
-### Multi-Source Data Point
-```json
-"percentage": {
-  "_id": "fld_cm8h2i4r6w",
-  "_sources": [
-    {"uri": "https://www.geico.com/auto/discounts/", "primary": true},
-    {"uri": "https://www.nerdwallet.com/...", "primary": false}
-  ],
-  "_resolution": {"conflictId": "conf_cm2b6c8l0q", "method": "authoritative_source"},
-  "value": 15
-}
-```
-
-### Inherited Source
-```json
-"states": {
-  "_id": "fld_cm9i3j5s7x",
-  "_sources": [],
-  "_inheritedFrom": "fld_cm6f0g2p4u",
-  "value": ["CA", "TX", "FL", "NY", "IL"]
-}
-```
-
-## Compliance Notes
-- All data from publicly available sources
-- Pricing is approximate for demonstration purposes
-- Actual insurance rates require underwriting
-- See `compliance.json` for required disclaimers
-
-## Audit Trail
-For complete data lineage, see `audit-trail.json`. Every data point can be traced back to its original source(s).
-
-## Updates
-To update data:
-1. Scrape new sources → raw/
-2. Detect conflicts → conflicts.json
-3. Resolve conflicts → resolutions.json
-4. Regenerate production files
-5. Re-run validation
-
-Last Updated: 2025-11-05
-```
-
-#### 7.2 Audit Trail Format
-
-`knowledge_pack/audit-trail.json`:
-
-```json
-{
-  "meta": {
-    "generated": "2025-11-05T18:00:00Z",
-    "totalDataPoints": 670,
-    "totalSources": 42,
-    "totalConflicts": 8
-  },
-  "sources": {
-    "src_cm6z0a2j4o": {
-      "uri": "https://www.geico.com/auto/discounts/",
-      "elementRef": "div.discount-card > p.percentage",
-      "accessedDate": "2025-11-05T10:30:00Z",
-      "authority": 5,
-      "confidence": "high",
-      "usedBy": ["fld_cm8h2i4r6w", "fld_cm2l6m8v0a", "fld_cm6p0q2z4e"]
-    }
-  },
-  "dataPoints": {
-    "fld_cm8h2i4r6w": {
-      "path": "carriers/geico.json > discounts[0] > percentage",
-      "value": 15,
-      "sources": ["src_cm6z0a2j4o", "src_cm7a1b3k5p"],
-      "resolution": "conf_cm2b6c8l0q",
+      "type": "discount",
+      "data": {
+        "name": "Multi-Policy Bundle",
+        "percentage": 15,
+        "description": "Save 15% when you bundle auto and home insurance",
+        "products": ["auto", "home"],
+        "states": ["CA", "TX", "FL", "NY", "IL"],
+        "requirements": {
+          "mustHaveProducts": ["auto", "home"],
+          "minProducts": 2
+        },
+        "stackable": true
+      },
+      "context": "You could save up to 15% when you bundle...",
       "confidence": "high"
-    }
-  },
-  "conflicts": {
-    "conf_cm2b6c8l0q": {
-      "dataPoint": "fld_cm8h2i4r6w",
-      "sources": ["src_cm6z0a2j4o", "src_cm7a1b3k5p"],
-      "resolution": "authoritative_source",
-      "resolvedDate": "2025-11-05T15:30:00Z"
-    }
-  },
-  "lineage": [
-    {
-      "dataPoint": "fld_cm8h2i4r6w",
-      "trace": [
-        "Raw scrape: src-001 → raw-001 (value: '15%')",
-        "Raw scrape: src-045 → raw-045 (value: '12%')",
-        "Conflict detected: conflict-001 (2 values)",
-        "Resolution: authoritative_source → 15%",
-        "Clean data: clean/carriers/geico.json",
-        "Production: carriers/geico.json"
-      ]
     }
   ]
 }
 ```
 
-**Deliverable**: Complete README.md + audit-trail.json
-
-**See Also:**
-- 📖 [Complete Examples](knowledge-pack-examples.md) - See full audit trail examples
-- 🔗 [All Documentation Files](README.md) - Index of all knowledge pack docs
+**Deliverable**:
+- ~2,925 extraction files in `raw/extractions/`
+- All data normalized (lowercase carriers/products, uppercase states)
 
 ---
+
+### Phase 6: Carrier Aggregation (2-3 hours)
+
+**Objective**: Merge 2,925 page extractions by carrier with source-authority deduplication.
+
+**Status**: ⏳ Pending  
+**Output Target**: 3 aggregated carrier files (geico.json, progressive.json, state-farm.json)
+
+#### 6.1 Aggregation Workflow
+
+**Script**: `aggregate-by-carrier.py`
+
+1. Load all `data_page_*.raw.json` files from `raw/extractions/` (2,925 files)
+2. Group data points by carrier name (already normalized to lowercase)
+3. Apply source-authority deduplication:
+   - Carrier official site (authority: 5) > State regulatory (4) > Industry org (3) > Financial site (2)
+   - First-wins if same authority level (stable sort by encounter order)
+   - Includes deduplication for state data types (`state_minimum_coverage`, `state_requirement`)
+4. Generate aggregated carrier files in `aggregated/` directory
+5. Track multi-source data points for reference
+6. State-specific data points remain in aggregated carrier files (separated in Phase 7)
+
+#### 6.2 Source-Authority Deduplication
+
+**Authority Levels**:
+- `carrier_official` (5): geico.com, progressive.com, statefarm.com
+- `state_regulatory` (4): insurance.ca.gov, tdi.texas.gov, floir.com
+- `industry_org` (3): iii.org, naic.org
+- `financial_site` (2): bankrate.com, nerdwallet.com
+- `unknown` (1): Other sources
+
+**Deduplication Strategy**:
+1. Group identical data points (same type + key fields)
+2. For each group, select highest authority source
+3. Track duplicates removed for reporting
+
+#### 6.3 Aggregated Output Format
+
+**Note**: These are intermediate files. CUID2 IDs are added in Phase 7.
+
+```json
+{
+  "carrier": "geico",
+  "generated": "2025-11-09T14:00:00Z",
+  "total_data_points": 157,
+  "source_pages": 42,
+  "data_points": [
+    {
+      "type": "discount",
+      "data": {
+        "name": "Multi-Policy Bundle",
+        "percentage": 15,
+        "description": "...",
+        "products": ["auto", "home"],
+        "states": ["CA", "TX", "FL", "NY", "IL"]
+      },
+      "context": "...",
+      "confidence": "high",
+      "source_url": "https://www.geico.com/auto/discounts/",
+      "accessed_date": "2025-11-09",
+      "_source_page_id": "page_abc123"
+    }
+  ]
+}
+```
+
+**Deliverable**:
+- 3 aggregated carrier files: `aggregated/geico.json`, `aggregated/progressive.json`, `aggregated/state-farm.json`
+- Deduplication report with stats
+- No cuid2 IDs yet (added in Phase 7 transformation)
+
+---
+
+### Phase 7: Knowledge Pack Assembly (3-4 hours)
+
+**Objective**: Transform aggregated data to production runtime schema with cuid2 IDs and entity-level sources.
+
+**Status**: ⏳ Pending  
+**Output Target**: Production knowledge pack in `knowledge_pack/`
+
+#### 7.1 Transformation Workflow
+
+**Script**: `transform-to-kb.py`
+
+1. Load aggregated carrier files from `aggregated/`
+2. Separate carrier-specific vs state-specific data points during transformation
+3. Generate cuid2 IDs for all entities:
+   - Carriers: `carr_{cuid2}`
+   - Discounts: `disc_{cuid2}`
+   - States: `state_{cuid2}`
+4. Extract entity-level sources (URL + accessed date + confidence)
+5. Transform to runtime schema (packages/shared/src/types/knowledge-pack.ts)
+6. Save to `knowledge_pack/carriers/{carrier}.json`
+7. Generate state files for all discovered states in `knowledge_pack/states/{state}.json`
+   - Collect state data points (`state_minimum_coverage`, `state_requirement`) from all carrier files
+   - Group by state code and merge using source-authority deduplication
+   - Populate minimum coverages with extracted regulatory data
+   - Falls back to null placeholders only when data not extracted (coverage gap)
+   - Select highest authority source for entity-level citation
+8. Generate compliance files (prohibited-statements.json, required-disclosures.json)
+9. Generate FAQs, metadata.json, README.md
+
+#### 7.2 Entity-Level Source Tracking
+
+**Per Entity**:
+
+```typescript
+interface Discount {
+  id: string              // "disc_abc123" (cuid2)
+  name: string
+  percentage: number
+  description: string
+  products: string[]      // ["auto", "home"]
+  states: string[]        // ["CA", "TX", "FL"]
+  requirements: DiscountRequirements
+  stackable: boolean
+  source: Source          // Entity-level citation
+}
+
+interface Source {
+  uri: string             // "https://www.geico.com/auto/discounts/"
+  accessed: string        // "2025-11-09"
+  confidence: "high" | "medium" | "low"
+  elementRef?: string     // Optional CSS selector
+}
+```
+
+#### 7.3 Production Output Structure
+
+```
+knowledge_pack/
+├── carriers/
+│   ├── geico.json           # Runtime carrier data
+│   ├── progressive.json
+│   └── state-farm.json
+├── states/
+│   ├── CA.json              # State minimums/requirements
+│   ├── TX.json
+│   ├── FL.json
+│   ├── NY.json
+│   └── IL.json
+├── compliance/
+│   ├── prohibited-statements.json
+│   └── required-disclosures.json
+├── faqs.json
+├── metadata.json             # KB stats and version
+└── README.md                 # Source citations documentation
+```
+
+**Deliverable**:
+- Complete production knowledge pack in `knowledge_pack/`
+- Carrier files (geico.json, progressive.json, state-farm.json) with full data
+- State files (CA.json, TX.json, etc.) populated with extracted regulatory data
+  - State minimum coverages extracted from regulatory sources (insurance.ca.gov, tdi.texas.gov, etc.)
+  - Source-authority deduplication ensures regulatory sources override third-party sources
+  - Falls back to `null` placeholders only when extraction coverage is missing
+- TypeScript interfaces in `packages/shared/src/types/knowledge-pack.ts`
+- Docker-mountable at `/knowledge_pack` (read-only)
+
 
 ## Implementation Timeline
 
-| Phase | Duration | Effort | Deliverable |
-|-------|----------|--------|-------------|
-| 1. Schema Design | 1 hour | Light | 4 schema files |
-| 2. Raw Scraping | 4-6 hours | Heavy | 30-50 raw files |
-| 3. Conflict Detection | 2-3 hours | Medium | conflicts.json |
-| 4. Conflict Resolution | 2-3 hours | Medium | resolutions.json, clean/ |
-| 5. KB Assembly | 1-2 hours | Light | 10 production files |
-| 6. Validation | 1-2 hours | Light | validation-report.json |
-| 7. Documentation | 1 hour | Light | README.md, audit-trail.json |
-| **TOTAL** | **12-18 hours** | **Med-Heavy** | **Complete auditable KB** |
+| Phase | Duration | Effort | Status | Deliverable |
+|-------|----------|--------|--------|-------------|
+| 1. URL Discovery | 4-6 hours | Heavy | ✅ Complete | 2,950 URLs via Brave API |
+| 2. Page Fetching | 6-8 hours | Heavy | ✅ Complete | 2,925 HTML/markdown files |
+| 3. Domain Analysis | 2-3 hours | Medium | ✅ Complete | 15 domain filtering rules |
+| 4. Page Filtering | 8-10 hours | Heavy | ✅ Complete | 2,925 filtered content files |
+| 5. Data Extraction | 20-30 hours | Very Heavy | ⏳ In Progress | ~2,925 extraction files |
+| 6. Carrier Aggregation | 2-3 hours | Medium | ⏳ Pending | 3 aggregated carrier files |
+| 7. KB Assembly | 3-4 hours | Medium | ⏳ Pending | Production knowledge pack |
+| **TOTAL** | **45-64 hours** | **Heavy** | **4/7 Complete** | **Docker-mountable KB** |
 
 ---
 
-## Tools & Scripts
+## Pipeline Architecture
 
-### Required Scripts
+### Phase Directories
 ```
-scripts/
-├── 01-scrape-carriers.ts       # Web scraping with element refs
-├── 02-scrape-states.ts         # Scrape state regulatory sites
-├── 03-scrape-industry.ts       # Scrape industry/comparison sites
-├── 04-detect-conflicts.ts      # Find conflicts in raw data
-├── 05-resolve-conflicts.ts     # Interactive conflict resolution
-├── 06-generate-ids.ts          # Assign cuid2 IDs to all data points
-├── 07-build-audit-trail.ts     # Create complete lineage
-├── 08-assemble-kb.ts           # Transform clean → production
-├── 09-validate-kb.ts           # Run validation checks
-└── 10-generate-docs.ts         # Create README and reports
+knowledge-pack-scraper/
+├── phase1-url-discovery/         # Brave API search execution
+│   ├── brave-search.py
+│   └── search-tracker.json
+├── phase2-page-fetching/          # crawl4ai HTML/markdown fetching
+│   ├── fetch-all-urls.py
+│   └── url-tracker.json
+├── phase3-domain-analysis/        # HTML pattern detection
+│   ├── analyze-domains.py
+│   └── domain-analysis.json
+├── phase4-page-filtering/         # Boilerplate removal
+│   ├── filter-all-pages.py
+│   └── page-tracker.json
+├── phase5-data-extraction/        # LLM-based structured extraction
+│   ├── extraction-prompt.md
+│   ├── extraction-schema.json
+│   ├── extract-all-pages.py
+│   └── save-extraction.py
+├── phase6-aggregation/            # Source-authority deduplication
+│   └── aggregate-by-carrier.py
+├── phase7-assembly/               # Runtime schema transformation
+│   └── transform-to-kb.py
+└── lib/                           # Shared utilities
+    └── tracker_manager.py
 ```
 
-### Utility Modules
+### Data Flow
 ```
-scripts/utils/
-├── source-tracker.ts           # Track sources with element refs
-├── conflict-detector.ts        # Detect value conflicts
-├── id-generator.ts             # Generate consistent cuid2 IDs
-├── schema-validator.ts         # Validate against schemas
-├── citation-formatter.ts       # Format citations consistently
-└── quality-scorer.ts           # Calculate confidence scores
+Brave API → URLs → Pages (HTML/MD) → Filtered Content → LLM Extraction →
+Aggregation by Carrier → Production KB → Docker Mount
 ```
 
 ---
 
-## Success Criteria
+## Success Criteria (PEAK6 Spec)
 
-✅ **Data Coverage**: 3 carriers × 5 states × 4 products = 670 data points  
-✅ **Source Coverage**: Every data point has ≥1 source (100%)  
-✅ **Conflict Resolution**: All conflicts detected and resolved (8/8)  
+✅ **Offline Operation**: No runtime web access required
+✅ **Entity-Level Sources**: Each carrier/discount/state has source tracking
+✅ **Footnote Citations**: Industry standard format for broker outputs
+✅ **Compliance Filters**: Prohibited statements + required disclosures included
+✅ **Docker Integration**: Knowledge pack mountable at `/knowledge_pack` (read-only)
+✅ **Source-Authority Deduplication**: Carrier official > State regulatory > 3rd party  
 ✅ **Audit Trail**: Complete lineage from raw → production  
 ✅ **Validation**: All critical checks pass  
 ✅ **Documentation**: README.md with methodology and sources  
@@ -1004,28 +538,39 @@ scripts/utils/
 
 ## Benefits for PEAK6 Demo
 
-This methodology provides:
+This simplified methodology provides:
 
-1. **Full Auditability**: Trace any recommendation to original source
-2. **Conflict Transparency**: All disagreements documented with resolutions
-3. **Source Diversity**: Multiple sources strengthen data reliability
-4. **Change Tracking**: Can update individual sources without rebuilding
-5. **Regulatory Defense**: "Where did this number come from?" → audit-trail.json
-6. **Quality Assurance**: Automated validation catches errors
-7. **Maintainability**: Clear process for updates and expansions
+1. **Realistic Scope**: 45-64 hours total (includes actual LLM extraction time, not just scripting)
+2. **LLM-Powered Extraction**: Structured prompts with few-shot examples for accurate data extraction
+3. **Source Tracking**: Entity-level sources (not per-field) with footnote citations
+4. **Offline Guarantee**: No runtime web access required after KB generation
+5. **Docker Integration**: Knowledge pack mountable at `/knowledge_pack` (read-only)
+6. **Production Pattern**: Entity-level sources + source-authority deduplication scales to production
+7. **Compliance Ready**: Prohibited statements + required disclosures built-in
 
----
-
-## Next Steps
-
-1. Review and approve this methodology
-2. Create JSON schemas (Phase 1)
-3. Begin raw data scraping (Phase 2)
-4. Execute remaining phases sequentially
-5. Validate and document results
+**Simplified vs Production**:
+- ✂️ No granular field-level source tracking → Entity-level sources
+- ✂️ No complex conflict resolution → Source-authority deduplication
+- ➕ Normalization during extraction → Deterministic aggregation
+- ➕ Generic storage in `raw/extractions/` → Handles mixed carrier/state data
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: 2025-11-05  
-**Status**: Ready for Implementation
+## Current Status (2025-11-09)
+
+- ✅ Phases 1-4 Complete: 2,925 filtered pages ready for extraction
+- ⏳ Phase 5 In Progress: LLM extraction with normalized data
+- ⏳ Phase 6-7 Pending: Aggregation and KB assembly
+
+**Next Immediate Steps**:
+1. Test extraction on 100 pages (validate prompt quality)
+2. Iterate extraction prompt based on results
+3. Run full extraction on 2,925 pages (~20-30 hours)
+4. Run aggregation (merge by carrier)
+5. Transform to production KB with cuid2 IDs
+
+---
+
+**Document Version**: 2.0 (Simplified Demo)
+**Last Updated**: 2025-11-09
+**Status**: 4 of 7 Phases Complete
