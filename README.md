@@ -1,5 +1,7 @@
 # Insurance Broker Quote Assistant (IQuote Pro)
 
+> **Project Overview:** See [PROJECT.md](PROJECT.md) for a high-level overview, achievements, and technical highlights.
+
 A compliance-first multi-agent AI platform that transforms how insurance brokers qualify shoppers and prepare quotes. Built with a hybrid architecture combining deterministic rules engines for regulatory compliance with LLM agents for natural language understanding, this system delivers **100% routing accuracy** and **95% intake completeness** while maintaining complete auditability through entity-level source tracking.
 
 ## Quick Links
