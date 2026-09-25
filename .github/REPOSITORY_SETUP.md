@@ -10,55 +10,41 @@ Since we're on a **free GitHub account**, we cannot enforce merge strategies thr
 
 ### Default Branch
 
-✅ **Already configured**: `development` is set as the default branch
+✅ **Already configured**: `main` is the default branch
 
-- All new PRs default to targeting `development`
-- New clones checkout `development` by default
+- New clones check out `main` by default
+- Feature PRs target `dev`, the integration branch
 
 ### Branch Protection (via GitHub Actions)
 
 ✅ **Already configured**: GitHub Actions protect both branches
 
 - `.github/workflows/protect-main.yml` - Blocks direct commits to `main`
-- `.github/workflows/protect-development.yml` - Blocks direct commits to `development`
+- `.github/workflows/protect-dev.yml` - Blocks direct commits to `dev`
 - `.github/workflows/ci.yml` - Runs tests on both branches
 
 ## Merge Button Settings
 
-To encourage proper merge strategies, configure these **repository-level defaults**:
-
-### How to Configure
-
-Go to: **Settings → General → Pull Requests**
-
-### Recommended Settings
+✅ **Already configured** under **Settings → General → Pull Requests**:
 
 ```
 Pull Requests Section:
 
-☑ Allow merge commits
-  ☑ Default to merge commit
+☐ Allow merge commits
 
 ☑ Allow squash merging
   Default commit message: Pull request title and description
 
-☐ Allow rebase merging  ← Disable to simplify workflow
+☐ Allow rebase merging
 ```
 
 ### Why These Settings?
 
-1. **Enable both merge commit and squash**: Allows flexibility for different branches
-2. **Default to merge commit**: Most PRs go to `development` which needs merge commits
-3. **Disable rebase**: Simplifies workflow and prevents confusion
-
-### Limitation
-
-⚠️ **Important**: These are only _defaults_ - contributors can still choose any enabled merge strategy. We rely on:
-
-- Team discipline
-- Code review process
-- Clear documentation in CONTRIBUTING.md
-- PR template reminders
+1. **Squash only**: every PR, into `dev` or `main`, lands as one commit
+2. **PR title and description as the commit message**: the squash commit
+   carries the PR's summary
+3. **No merge commits or rebase merges**: there is no strategy to choose per
+   PR, so nothing relies on contributors picking the right button
 
 ## What We Cannot Do on Free Tier
 
@@ -87,7 +73,7 @@ Pull Requests Section:
 
 **Active Workflows**:
 
-1. `ci.yml` - Runs on push/PR to `main` and `development`
+1. `ci.yml` - Runs on push/PR to `main` and `dev`
    - Type checking
    - Linting
    - Unit and integration tests
@@ -96,7 +82,7 @@ Pull Requests Section:
    - Blocks direct commits
    - Validates PR merges
 
-3. `protect-development.yml` - Runs on push to `development`
+3. `protect-dev.yml` - Runs on push to `dev`
    - Blocks direct commits
    - Validates PR merges
 
@@ -119,16 +105,16 @@ Since we're on free tier and cannot enforce status checks, we rely on:
 │ refactor/*  │
 └──────┬──────┘
        │
-       │ PR with "Create a merge commit"
+       │ PR with "Squash and merge"
        ↓
 ┌─────────────┐
-│ development │  ← Default branch, merge commits only
+│     dev     │  ← Integration branch
 └──────┬──────┘
        │
        │ PR with "Squash and merge"
        ↓
 ┌─────────────┐
-│    main     │  ← Production, squash merges only
+│    main     │  ← Production, default branch
 └─────────────┘
 ```
 
@@ -136,10 +122,10 @@ Since we're on free tier and cannot enforce status checks, we rely on:
 
 | Source Branch | Target Branch | Merge Strategy   | Why                                              |
 | ------------- | ------------- | ---------------- | ------------------------------------------------ |
-| `feature/*`   | `development` | **Merge commit** | Preserve detailed commit history                 |
-| `fix/*`       | `development` | **Merge commit** | Track individual bug fixes                       |
-| `refactor/*`  | `development` | **Merge commit** | Show refactoring evolution                       |
-| `development` | `main`        | **Squash merge** | Clean production history, one commit per release |
+| `feature/*`   | `dev`         | **Squash merge** | One commit per feature, described by its PR      |
+| `fix/*`       | `dev`         | **Squash merge** | One commit per fix, described by its PR          |
+| `refactor/*`  | `dev`         | **Squash merge** | One commit per refactor, described by its PR     |
+| `dev`         | `main`        | **Squash merge** | Clean production history, one commit per release |
 
 ## Repository Settings Checklist
 
@@ -147,8 +133,8 @@ Use this checklist when setting up the repository:
 
 ### General Settings
 
-- [x] Default branch set to `development`
-- [ ] Configure merge button settings (see above)
+- [x] Default branch set to `main`
+- [x] Merge button settings configured (squash only, see above)
 - [ ] Add repository description
 - [ ] Add repository topics/tags
 - [ ] Configure social preview image (optional)
@@ -199,8 +185,7 @@ If you decide to upgrade for better control:
 
 1. Upgrade account to GitHub Pro/Team
 2. Configure Branch Protection Rules:
-   - `development`: Require merge commits only
-   - `main`: Require squash merges only
+   - `dev` and `main`: Require squash merges only
 3. Set required reviewers (1+)
 4. Enable required status checks
 5. Set up CODEOWNERS file
@@ -217,5 +202,5 @@ Contact repository administrators for:
 
 ---
 
-**Last Updated**: 2025-11-04
+**Last Updated**: 2026-09-25
 **Maintained By**: Repository Administrators

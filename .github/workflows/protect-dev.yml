@@ -1,9 +1,9 @@
-name: Protect Development Branch
+name: Protect Dev Branch
 
 on:
   push:
     branches:
-      - development
+      - dev
 
 jobs:
   check-direct-commit:
@@ -34,7 +34,7 @@ jobs:
             // Check if commit message indicates a PR merge
             const commitMessage = commit.data.commit.message;
             const isPRMerge = commitMessage.includes('Merge pull request') ||
-                             commitMessage.match(/^Merge branch .* into development/) ||
+                             commitMessage.match(/^Merge branch .* into dev\b/) ||
                              commitMessage.includes('(#') && commitMessage.includes(')');
 
             // Try to find associated PR
@@ -57,16 +57,16 @@ jobs:
 
             if (!isValid) {
               core.setFailed(
-                '❌ Direct commits to development branch are not allowed!\n\n' +
+                '❌ Direct commits to dev branch are not allowed!\n\n' +
                 'Please follow these steps:\n' +
                 '1. Create a feature branch: git checkout -b feature/your-feature\n' +
                 '2. Make your changes and commit them\n' +
                 '3. Push your branch: git push -u origin feature/your-feature\n' +
-                '4. Create a Pull Request targeting development on GitHub\n' +
+                '4. Create a Pull Request targeting dev on GitHub\n' +
                 '5. Merge the PR once approved\n\n' +
                 'To fix this:\n' +
                 '1. Revert this commit: git revert HEAD\n' +
-                '2. Push the revert: git push origin development\n' +
+                '2. Push the revert: git push origin dev\n' +
                 '3. Follow the proper PR workflow above'
               );
             } else {
